@@ -41,3 +41,11 @@ Route::prefix('/api')->group(function(){
   Route::get('/views', [API::class, 'views'])->name('api');
 
 });
+
+Route::domain('dashboard.lwoabreu.com')->group(function () {
+
+  Route::get('/', function () {
+    dd('Deu certo');
+  });
+
+});
