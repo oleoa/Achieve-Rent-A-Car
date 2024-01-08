@@ -14,11 +14,12 @@
       <nav class="h-navbar px-margin w-full fixed top-0 bg-white flex justify-between items-center">
 
         <!-- Logo -->
-        <img src="{{url('/img/logo.png')}}" alt="" class="h-16">
+        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo.png')}}" alt="" class="h-16"></a>
 
         <!-- Right Part -->
         <div class="flex items-center justify-center gap-4">
 
+          <!-- Items -->
           <a href="{{route('home', $locale)}}"><h5>Sobre</h5></a>
           <a href="{{route('home', $locale)}}"><h5>Reservas</h5></a>
           <a href="{{route('home', $locale)}}"><h5>Veículos</h5></a>
