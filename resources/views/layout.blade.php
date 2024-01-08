@@ -26,11 +26,11 @@
 
           <!-- Flags -->
           <div class="flex justify-center items-center gap-4">
-            <a href="{{route($current, ['pt'])}}">
-              <img src="{{ asset('img/pt.png') }}" alt="Portuguese Flag" class="w-6 h-4">
-            </a>
             <a href="{{route($current, ['en'])}}">
               <img src="{{ asset('img/en.png') }}" alt="English Flag" class="w-6 h-4">
+            </a>
+            <a href="{{route($current, ['pt'])}}">
+              <img src="{{ asset('img/pt.png') }}" alt="Portuguese Flag" class="w-6 h-4">
             </a>
           </div>
 
