@@ -11,10 +11,10 @@
     <body>
 
       <!-- Navbar -->
-      <nav class="h-navbar px-margin w-full fixed top-0 bg-white flex justify-between items-center">
+      <nav class="h-navbar px-margin w-full fixed top-0 bg-neutral-950 text-white flex justify-between items-center">
 
         <!-- Logo -->
-        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo.png')}}" alt="" class="h-16"></a>
+        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-16"></a>
 
         <!-- Right Part -->
         <div class="flex items-center justify-center gap-4">
@@ -39,7 +39,7 @@
       </nav>
 
       <!-- Main Content -->
-      <main class="pt-navbar px-margin bg-slate-900 h-screen">
+      <main class="pt-navbar px-margin bg-neutral-900 h-screen">
 
         @yield('main')
 
