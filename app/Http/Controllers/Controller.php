@@ -44,8 +44,7 @@ class Controller extends BaseController
     if(!$this->localeExists) return view('404', $this->data);
     if(!array_key_exists('title', $this->data)) $this->title();
     if(!array_key_exists('current', $this->data)) return view('404', $this->data);
-    Views::create(['page' => $this->data['current']]);
-    $this->data['countries'] = ['USA', 'Canada', 'UK', 'Australia', 'India'];
+    Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale']]);
     return view($view, $this->data);
   }
 

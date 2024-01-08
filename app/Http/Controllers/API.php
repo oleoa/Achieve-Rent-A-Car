@@ -9,10 +9,9 @@ use App\Models\Views;
 
 class API extends Controller
 {
-  public function index()
+  public function views()
   {
     $views = Views::all()->toArray();
-    dd($views);
-    return [1,2,3];
+    return $views;
   }
 }

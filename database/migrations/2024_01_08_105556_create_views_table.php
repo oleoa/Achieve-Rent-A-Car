@@ -14,6 +14,7 @@ return new class extends Migration
     Schema::create('views', function (Blueprint $table) {
       $table->id();
       $table->string('page');
+      $table->string('locale');
       $table->timestamps();
     });
   }
