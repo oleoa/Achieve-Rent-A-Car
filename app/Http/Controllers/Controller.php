@@ -34,6 +34,7 @@ class Controller extends BaseController
     if (!in_array($locale, ['en', 'pt', 'fr', 'de', 'es']))
       return;
 
+    $this->data['locale'] = $locale;
     app()->setLocale($locale);
   }
 
@@ -42,6 +43,7 @@ class Controller extends BaseController
     if(!array_key_exists('title', $this->data)) $this->title();
     if(!array_key_exists('current', $this->data)) return view('404');
     //Views::create(['page' => $this->data['current']]);
+    $this->data['countries'] = ['USA', 'Canada', 'UK', 'Australia', 'India'];
     return view($view, $this->data);
   }
 

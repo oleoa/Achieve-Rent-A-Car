@@ -16,4 +16,6 @@
 
   h6 { @apply text-base; }
 
+  a { @apply hover:text-blue-400 }
+  
 }
