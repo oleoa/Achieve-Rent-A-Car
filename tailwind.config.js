@@ -14,7 +14,7 @@ export default {
       },
       spacing: {
         'navbar': '5rem',
-        'footer': '15rem',
+        'footer': '5rem',
         'margin': '15rem',
       },
     },
