@@ -42,7 +42,7 @@ class Controller extends BaseController
   {
     if(!array_key_exists('title', $this->data)) $this->title();
     if(!array_key_exists('current', $this->data)) return view('404');
-    //Views::create(['page' => $this->data['current']]);
+    Views::create(['page' => $this->data['current']]);
     $this->data['countries'] = ['USA', 'Canada', 'UK', 'Australia', 'India'];
     return view($view, $this->data);
   }
