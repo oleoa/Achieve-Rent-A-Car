@@ -20,18 +20,16 @@
         <div class="flex items-center justify-center gap-4">
 
           <!-- Items -->
-          <a href="{{route('home', $locale)}}"><h5>Sobre</h5></a>
-          <a href="{{route('home', $locale)}}"><h5>Reservas</h5></a>
-          <a href="{{route('home', $locale)}}"><h5>Veículos</h5></a>
-          <a href="{{route('home', $locale)}}"><h5>FAQ</h5></a>
-          <a href="{{route('home', $locale)}}"><h5>Contate-Nos</h5></a>
+          <a href="{{route('about', $locale)}}"><h5>@lang('About')</h5></a>
+          <a href="{{route('faq', $locale)}}"><h5>@lang('FAQ')</h5></a>
+          <a href="{{route('contact', $locale)}}"><h5>@lang('Contact')</h5></a>
 
           <!-- Flags -->
           <div class="flex justify-center items-center gap-4">
-            <a href="{{route('home', ['pt'])}}">
+            <a href="{{route($current, ['pt'])}}">
               <img src="{{ asset('img/pt.png') }}" alt="Portuguese Flag" class="w-6 h-4">
             </a>
-            <a href="{{route('home', ['en'])}}">
+            <a href="{{route($current, ['en'])}}">
               <img src="{{ asset('img/en.png') }}" alt="English Flag" class="w-6 h-4">
             </a>
           </div>

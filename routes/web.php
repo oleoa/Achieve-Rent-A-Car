@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
 use App\Http\Controllers\Home;
+use App\Http\Controllers\About;
+use App\Http\Controllers\FAQ;
+use App\Http\Controllers\Contact;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +26,11 @@ Route::get('/', function(){
 Route::prefix('/{locale}')->group(function(){
 
   Route::get('/', [Home::class, 'index'])->name('home');
+
+  Route::get('/about', [About::class, 'index'])->name('about');
+
+  Route::get('/faq', [FAQ::class, 'index'])->name('faq');
+
+  Route::get('/contact', [Contact::class, 'index'])->name('contact');
 
 });
