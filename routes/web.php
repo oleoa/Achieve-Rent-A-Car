@@ -38,6 +38,6 @@ Route::prefix('/{locale}')->group(function(){
 
 Route::prefix('/api')->group(function(){
 
-  Route::get('/test', [API::class, 'index'])->name('home');
+  Route::get('/test', [API::class, 'index'])->name('api');
 
 });
