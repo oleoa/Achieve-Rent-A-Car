@@ -11,6 +11,7 @@ class Home extends Controller
   public function index()
   {
     $this->title('Home');
+    $this->current('home');
     return $this->load('home');
   }
 

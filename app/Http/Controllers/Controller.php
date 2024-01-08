@@ -6,6 +6,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
+use App\Models\Views;
+
 class Controller extends BaseController
 {
   use AuthorizesRequests, ValidatesRequests;
@@ -30,6 +32,8 @@ class Controller extends BaseController
   protected function load($view)
   {
     if(!array_key_exists('title', $this->data)) $this->title();
+    if(!array_key_exists('current', $this->data)) return view('404');
+    //Views::create(['page' => $this->data['current']]);
     return view($view, $this->data);
   }
 
