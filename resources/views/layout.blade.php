@@ -7,6 +7,18 @@
     <title>@lang($title)</title>
   </head>
     <body>
-      @yield('main')
+      <nav class="h-navbar px-margin w-full fixed top-0 bg-white flex justify-between items-center">
+        <img src="{{url('/img/logo.png')}}" alt="" class="h-16">
+        <div class="flex gap-4">
+          <h1>Items</h1>
+          <h1>Items</h1>
+          <h1>Items</h1>
+          <h1>Items</h1>
+          <h1>Items</h1>
+        </div>
+      </nav>
+      <main class="pt-navbar px-margin bg-slate-900 h-screen">
+        @yield('main')
+      </main>
     </body>
 </html>

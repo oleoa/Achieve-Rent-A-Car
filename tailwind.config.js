@@ -12,6 +12,10 @@ export default {
         flagYellow: '#FFD700',
         flagRed: '#DA291C'
       },
+      spacing: {
+        'navbar': '5rem',
+        'margin': '15rem',
+      },
     },
   },
   plugins: [],
