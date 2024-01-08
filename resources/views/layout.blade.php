@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Rent A Car Madeira">
+    <meta name="author" content="Leonardo Abreu de Paulo">
+    <meta name="description" content="Procura alugar um carro para conhecer a Madeira? Então veio ao sítio certo! Na Rent-a-Car Madeira, oferecemos o melhor servião, ao melhor preço! Estamos aqui disponíveis para tornar a sua viagem perfeita!">
     @vite('resources/css/app.css')
     <title>@lang($title)</title>
   </head>
