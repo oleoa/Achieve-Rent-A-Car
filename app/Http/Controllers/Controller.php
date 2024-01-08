@@ -29,6 +29,14 @@ class Controller extends BaseController
     $this->data['current'] = $current;
   }
 
+  protected function locale(String $locale): void
+  {
+    if (!in_array($locale, ['en', 'pt', 'fr', 'de', 'es']))
+      return;
+
+    app()->setLocale($locale);
+  }
+
   protected function load($view)
   {
     if(!array_key_exists('title', $this->data)) $this->title();

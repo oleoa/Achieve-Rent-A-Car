@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
 use App\Http\Controllers\Home;
 
@@ -15,4 +16,12 @@ use App\Http\Controllers\Home;
 |
 */
 
-Route::get('/', [Home::class, 'index'])->name('home');
+Route::get('/', function(){
+  return redirect()->route('home', ['en']);
+});
+
+Route::prefix('/{locale}')->group(function(){
+
+  Route::get('/', [Home::class, 'index'])->name('home');
+
+});
