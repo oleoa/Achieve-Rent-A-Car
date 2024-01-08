@@ -7,6 +7,7 @@ use App\Http\Controllers\Home;
 use App\Http\Controllers\About;
 use App\Http\Controllers\FAQ;
 use App\Http\Controllers\Contact;
+use App\Http\Controllers\API;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +33,11 @@ Route::prefix('/{locale}')->group(function(){
   Route::get('/faq', [FAQ::class, 'index'])->name('faq');
 
   Route::get('/contact', [Contact::class, 'index'])->name('contact');
+
+});
+
+Route::prefix('/api')->group(function(){
+
+  Route::get('/test', [API::class, 'index'])->name('home');
 
 });
