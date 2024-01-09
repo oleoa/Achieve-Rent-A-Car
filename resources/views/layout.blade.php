@@ -91,7 +91,7 @@
       </div>
 
       <!-- Main Content -->
-      <div class="pt-navbar">
+      <div class="pt-navbar pb-4">
 
         @yield('main')
 
