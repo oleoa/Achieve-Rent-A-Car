@@ -17,10 +17,10 @@
       <nav class="h-navbar px-margin bg-white w-full fixed top-0 hidden xl:flex justify-between items-center">
 
         <!-- Logo -->
-        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-16"></a>
+        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-14"></a>
 
         <!-- Right Part -->
-        <div class="flex items-center justify-center gap-4">
+        <div class="flex items-center justify-center gap-6">
 
           <!-- Items -->
           <a class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Home')</h5></a>
@@ -43,18 +43,20 @@
       </nav>
 
       <!-- Sidebar -->
-      <div class="flex xl:hidden h-navbar top-0 fixed w-full justify-between items-center px-4 bg-white">
+      <div class="flex xl:hidden h-navbar top-0 fixed w-full justify-center items-center bg-white">
 
         <!-- Garfo -->
-        <button id="openSidebar">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+        <div class="left-0 top-0 fixed flex justify-center items-center h-navbar pl-4">
+          <button id="openSidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
 
         <!-- Logo -->
-        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-12"></a>
+        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6"></a>
 
         <!-- Sidebar Itself -->
         <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-48 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
@@ -73,11 +75,11 @@
       </div>
 
       <!-- Main Content -->
-      <main class="pt-navbar xl:px-margin px-4">
+      <div class="pt-navbar">
 
         @yield('main')
 
-      </main>
+      </div>
 
       <!-- Footer -->
       <footer class="w-full xl:px-margin bg-black h-footer flex justify-start items-center">
