@@ -19,7 +19,7 @@ php artisan migrate:fresh --seed
 folder=$(git rev-parse --show-toplevel)
 
 # Start the server
-exec php "$folder"/artisan serve --host=0.0.0.0 --port=8000 & npm run dev &
+exec php "$folder"/artisan serve --host=192.168.0.174 --port=8000 & npm run dev -- --host 192.168.0.174 --port 8888 &
 
 trap stop_commands INT
 wait
