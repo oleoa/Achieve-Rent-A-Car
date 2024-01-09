@@ -7,7 +7,7 @@
     <meta name="title" content="Rent A Car Madeira">
     <meta name="author" content="Leonardo Abreu de Paulo">
     <meta name="description" content="Procura alugar um carro para conhecer a Madeira? Então veio ao sítio certo! Na Rent-a-Car Madeira, oferecemos o melhor servião, ao melhor preço! Estamos aqui disponíveis para tornar a sua viagem perfeita!">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>@lang($title)</title>
   </head>
 
@@ -43,18 +43,34 @@
       </nav>
 
       <!-- Sidebar -->
-      <nav class="flex xl:hidden h-navbar top-0 fixed w-full justify-between items-center px-4">
+      <div class="flex xl:hidden h-navbar top-0 fixed w-full justify-between items-center px-4 bg-white">
 
         <!-- Garfo -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        <button id="openSidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
 
         <!-- Logo -->
-        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-16"></a>
+        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-12"></a>
 
-      </nav>
+        <!-- Sidebar Itself -->
+        <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-48 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
+          <!-- Sidebar content goes here -->
+          <div class="p-4">
+              <span class="text-lg font-semibold">Sidebar</span>
+              <button id="closeSidebar" class="text-white focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+              </button>
+          </div>
+          <!-- Add additional sidebar links or content here -->
+        </nav>
+
+      </div>
 
       <!-- Main Content -->
       <main class="pt-navbar xl:px-margin px-4">
