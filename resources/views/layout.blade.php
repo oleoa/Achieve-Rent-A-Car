@@ -14,7 +14,7 @@
     <body>
 
       <!-- Navbar -->
-      <nav class="h-navbar px-margin w-full fixed top-0 bg-neutral-950 text-white flex justify-between items-center">
+      <nav class="h-navbar px-margin bg-white w-full fixed top-0 flex justify-between items-center">
 
         <!-- Logo -->
         <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-16"></a>
@@ -23,9 +23,10 @@
         <div class="flex items-center justify-center gap-4">
 
           <!-- Items -->
-          <a href="{{route('about', $locale)}}"><h5>@lang('About')</h5></a>
-          <a href="{{route('faq', $locale)}}"><h5>@lang('FAQ')</h5></a>
-          <a href="{{route('contact', $locale)}}"><h5>@lang('Contact')</h5></a>
+          <a class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Home')</h5></a>
+          <a class="@if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('About')</h5></a>
+          <a class="@if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('FAQ')</h5></a>
+          <a class="@if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Contact')</h5></a>
 
           <!-- Flags -->
           <div class="flex justify-center items-center gap-4">
@@ -42,7 +43,7 @@
       </nav>
 
       <!-- Main Content -->
-      <main class="pt-navbar px-margin bg-neutral-900 h-screen">
+      <main class="pt-navbar px-margin h-screen">
 
         @yield('main')
 
