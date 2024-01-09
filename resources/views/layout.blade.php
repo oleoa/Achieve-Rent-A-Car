@@ -57,14 +57,14 @@
       </nav>
 
       <!-- Main Content -->
-      <main class="pt-navbar px-margin h-screen">
+      <main class="pt-navbar xl:px-margin px-4">
 
         @yield('main')
 
       </main>
 
       <!-- Footer -->
-      <footer class="w-full px-margin bg-black h-footer flex justify-start items-center">
+      <footer class="w-full xl:px-margin bg-black h-footer flex justify-start items-center">
 
         <!-- Links -->
         <div class="p-4 flex gap-4 text-white justify-center items-center">
