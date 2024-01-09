@@ -14,7 +14,7 @@
     <body>
 
       <!-- Navbar -->
-      <nav class="h-navbar px-margin bg-white w-full fixed top-0 flex justify-between items-center">
+      <nav class="h-navbar px-margin bg-white w-full fixed top-0 hidden xl:flex justify-between items-center">
 
         <!-- Logo -->
         <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-16"></a>
@@ -39,6 +39,20 @@
           </div>
 
         </div>
+
+      </nav>
+
+      <!-- Sidebar -->
+      <nav class="flex xl:hidden h-navbar top-0 fixed w-full justify-between items-center px-4">
+
+        <!-- Garfo -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <!-- Logo -->
+        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-16"></a>
 
       </nav>
 
