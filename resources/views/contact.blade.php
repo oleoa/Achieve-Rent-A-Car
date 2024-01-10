@@ -12,7 +12,8 @@
         <a href="mailto:info@achieverentacar.com"><h3>info@achieverentacar.com</h3></a>
       </div>
     </div>
-    <form action="" class="flex flex-col space-y-4 col-span-2 xl:p-0 pb-4">
+    <form action="{{route('contact-send')}}" method="POST" class="flex flex-col space-y-4 col-span-2 xl:p-0 pb-4">
+      @csrf
       <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="name" placeholder="Name">
       <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="email" name="email" placeholder="Email">
       <textarea class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" name="message" placeholder="Message" cols="30" rows="5"></textarea>
