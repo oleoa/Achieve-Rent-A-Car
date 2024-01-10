@@ -29,6 +29,13 @@ class API extends Controller
     return Views::all()->toArray();
   }
 
+  public function faq(Request $request)
+  {
+    if(!$this->validateKey($request)) return ['success' => false, 'message' => 'Invalid API key'];
+    
+    return FAQ::all()->toArray();
+  }
+
   public function storeFAQ(Request $request)
   {
     if(!$this->validateKey($request)) return ['success' => false, 'message' => 'Invalid API key'];
