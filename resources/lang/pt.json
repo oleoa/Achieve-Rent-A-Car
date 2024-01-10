@@ -1,14 +1,16 @@
 {
-  "'Your message has been sent successfully.'": "'Sua mensagem foi enviada com sucesso.'",
+  "Contact Us": "Contate-nos",
+  "Your message has been sent successfully.": "Sua mensagem foi enviada com sucesso.",
   "Name": "Nome",
   "Phone number for WhatsApp with prefix": "Número de telefone para WhatsApp com prefixo",
   "Message": "Mensagem",
   "Send": "Enviar",
   "Your Email": "Seu Email",
+
+  "Page not found": "Página não encontrada",
   
   "Home Page": "Página Inicial",
   "About Us": "Sobre Nós",
-  "Contact Us": "Contate-nos",
   "About": "Sobre",
   "Contact": "Contate-Nos",
   "Rent A Car In Madeira Island": "Alugue um carro na Ilha da Madeira",
