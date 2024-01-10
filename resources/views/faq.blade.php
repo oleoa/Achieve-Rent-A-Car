@@ -5,8 +5,8 @@
 
     <!-- Image -->
     <div style="background-image: url('/img/faq.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
-      <h2 class="text-white text-center font-bold hidden xl:block text-4xl">@lang('Frequently Asked Question')</h2>
-      <h1 class="text-white text-center font-bold text-6xl">@lang('FAQ')</h1>
+      <h2 class="text-white text-center font-black hidden xl:block text-4xl">@lang('Frequently Asked Question')</h2>
+      <h1 class="text-white text-center font-black text-6xl">@lang('FAQ')</h1>
     </div>
 
     <!-- Help -->
