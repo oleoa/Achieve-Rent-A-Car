@@ -46,9 +46,9 @@ class Controller extends BaseController
 
   protected function load($view)
   {
-    if(!$this->localeExists) return view('404', $this->data);
+    if(!$this->localeExists) abort(404);
     if(!array_key_exists('title', $this->data)) $this->title();
-    if(!array_key_exists('current', $this->data)) return view('404', $this->data);
+    if(!array_key_exists('current', $this->data)) abort(404);
     Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale']]);
     return view($view, $this->data);
   }

@@ -40,6 +40,10 @@ Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
 
 Route::prefix('/api')->group(function(){
 
-  Route::get('/views', [API::class, 'views'])->name('api');
+  Route::get('/views', [API::class, 'views']);
+
+  Route::get('/faq/add', [API::class, 'storeFAQ']);
+
+  Route::get('/faq/delete', [API::class, 'deleteFAQ']);
 
 });

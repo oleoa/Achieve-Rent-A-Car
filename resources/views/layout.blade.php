@@ -60,7 +60,7 @@
 
         <!-- Sidebar Itself -->
         <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
-                    
+
           <!-- Items -->
           <div class="flex justify-between pr-4">
             <a class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h4 class="p-4">@lang('Home')</h4></a>

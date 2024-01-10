@@ -14,9 +14,9 @@
     <body class="h-screen flex items-center justify-center">
 
       <main class="flex flex-col items-center justify-center gap-6">
-        <h1 class="text-9xl font-black">404</h1>
+        <h1 class="text-9xl font-black"><span class="text-flagBlue">4</span></span><span class="text-flagYellow">0</span><span class="text-flagBlue">4</span></h1>
         <h2 class="text-4xl">@lang('Page not found')</h2>
-        <a href="{{route('home', $locale)}}" class="px-4 py-2 bg-flagBlue rounded-lg text-white text-xl hover:text-black hover:bg-flagYellow">@lang('Home')</a>
+        <a href="{{route('home', ['en'])}}" class="px-4 py-2 bg-flagRed rounded-lg text-white text-xl hover:text-white hover:bg-red-400">@lang('Home')</a>
       </main>
 
     </body>
