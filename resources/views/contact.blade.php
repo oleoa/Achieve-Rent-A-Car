@@ -20,10 +20,16 @@
     </div>
     <form action="{{route('contact-send')}}" method="POST" class="flex flex-col space-y-4 col-span-2 xl:p-0 pb-4">
       @csrf
-      <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="name" placeholder="Name">
-      <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="email" name="email" placeholder="Email">
-      <textarea class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" name="message" placeholder="Message" cols="30" rows="5"></textarea>
+      <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="name" placeholder="@lang('Name')">
+      <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="email" name="email" placeholder="@lang('Your Email')">
+      <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="phone" placeholder="@lang('Phone number for WhatsApp with prefix')">
+      <textarea class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" name="message" placeholder="@lang('Message')" cols="30" rows="5"></textarea>
       <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md hover:bg-zinc-10 hover:shadow-xl" type="submit" value="@lang('Send')">
+      @if(session('success'))
+        <div class="alert alert-success text-green-600">
+          @lang(session('success'))
+        </div>
+      @endif
     </form>
   </main>
 @endsection
