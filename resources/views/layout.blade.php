@@ -11,7 +11,7 @@
     <title>@lang($title)</title>
   </head>
 
-    <body>
+    <body class="min-h-screen flex flex-col justify-between">
 
       <!-- Navbar -->
       <nav class="h-navbar px-margin bg-white w-full fixed top-0 hidden xl:flex justify-between items-center">
