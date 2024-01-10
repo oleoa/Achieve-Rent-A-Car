@@ -46,6 +46,6 @@ Route::prefix('/api')->group(function(){
 
   Route::post('/faq/add', [API::class, 'storeFAQ']);
 
-  Route::post('/faq/delete', [API::class, 'deleteFAQ']);
+  Route::get('/faq/delete', [API::class, 'deleteFAQ']);
 
 });
