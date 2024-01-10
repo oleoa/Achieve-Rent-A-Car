@@ -19,7 +19,7 @@ use App\Http\Controllers\API;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-/*
+
 Route::get('/', function(){
   return redirect()->route('home', ['en']);
 });
@@ -47,4 +47,3 @@ Route::prefix('/api')->group(function(){
   Route::get('/faq/delete', [API::class, 'deleteFAQ']);
 
 });
-*/
