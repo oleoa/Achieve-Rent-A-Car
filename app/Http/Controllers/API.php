@@ -18,8 +18,8 @@ class API extends Controller
 
   public function views(Request $request)
   {
-    dd($request->all());
-    $views = Views::all()->toArray();
-    return $views;
+    $keySent = $request->input('key');
+    if ($keySent != $this->key) return response()->json(['error' => 'Invalid key'], 401); 
+    return Views::all()->toArray();
   }
 }
