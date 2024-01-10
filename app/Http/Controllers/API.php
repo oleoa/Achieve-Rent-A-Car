@@ -49,6 +49,7 @@ class API extends Controller
 
   public function deleteFAQ(Request $request)
   {
+    return $request->toArray();
     if(!$this->validateKey($request)) return ['success' => false, 'message' => 'Invalid API key'];
 
     $id = $request->id;
