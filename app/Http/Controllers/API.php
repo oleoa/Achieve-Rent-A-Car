@@ -16,8 +16,9 @@ class API extends Controller
     $this->key = env('API_KEY');
   }
 
-  public function views()
+  public function views(Request $request)
   {
+    dd($request->all());
     $views = Views::all()->toArray();
     return $views;
   }

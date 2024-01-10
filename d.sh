@@ -4,7 +4,7 @@
 git pull
 
 # Copy the .env.example to .env for the default configs
-cp .env.dev .env
+# cp .env.dev .env
 
 # Generate the key
 php artisan key:generate
