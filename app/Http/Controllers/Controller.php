@@ -21,6 +21,11 @@ class Controller extends BaseController
     $this->localeExists = false;
   }
 
+  protected function data(String $key, $value): void
+  {
+    $this->data[$key] = $value;
+  }
+
   protected function title(String $title = Null): void
   {
     $this->data['title'] = ($title == Null? 'Achieve Rent A Car' : $title.' - Achieve Rent A Car');
