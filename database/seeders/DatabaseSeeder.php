@@ -14,40 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-      DB::table("faq")->insert([
-        "id" => 1,
-        "question" => "What is the meaning of life?",
-        "answer" => "42"
-      ]);
-
-      DB::table("faq")->insert([
-        "id" => 2,
-        "question" => "What is the meaning of life?",
-        "answer" => "42"
-      ]);
-
-      DB::table("faq")->insert([
-        "id" => 3,
-        "question" => "What is the meaning of life?",
-        "answer" => "42"
-      ]);
-
-      DB::table("faq")->insert([
-        "id" => 4,
-        "question" => "What is the meaning of life?",
-        "answer" => "42"
-      ]);
-
-      DB::table("faq")->insert([
-        "id" => 5,
-        "question" => "What is the meaning of life?",
-        "answer" => "42"
-      ]);
-
-      DB::table("faq")->insert([
-        "id" => 6,
-        "question" => "What is the meaning of life?",
-        "answer" => "42"
-      ]);
+      
     }
 }
