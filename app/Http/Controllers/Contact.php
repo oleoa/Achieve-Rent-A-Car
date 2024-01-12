@@ -30,7 +30,7 @@ class Contact extends Controller
     ]);
 
     $data = $request->all();
-
+    
     Mail::to(env('MAIL_USERNAME'))->send(new ContactMail($data));
 
     return redirect()->back()->with('success', 'Your message has been sent successfully.');
