@@ -7,7 +7,6 @@ use App\Http\Controllers\Home;
 use App\Http\Controllers\About;
 use App\Http\Controllers\FAQ;
 use App\Http\Controllers\Contact;
-use App\Http\Controllers\API;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,5 +36,3 @@ Route::prefix('/{locale}')->group(function(){
 });
 
 Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
-
-Route::middleware('auth:api')->post('/api/translation', [API::class, 'translation']);
