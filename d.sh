@@ -1,9 +1,6 @@
 # Generate the key
 php artisan key:generate
 
-# Clear and seed the database
-php artisan migrate:fresh --seed
-
 # Get the current folder
 folder=$(git rev-parse --show-toplevel)
 

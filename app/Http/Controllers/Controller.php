@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-
 use App\Models\Views;
+use App\Models\Discounts;
 
 class Controller extends BaseController
 {
@@ -19,6 +19,9 @@ class Controller extends BaseController
   {
     $this->data = array();
     $this->localeExists = false;
+    $discount = Discounts::where('active', true)->first();
+    if($discount) $this->data['discount'] = $discount->toArray();
+    else $this->data['discount'] = false;
   }
 
   protected function data(String $key, $value): void

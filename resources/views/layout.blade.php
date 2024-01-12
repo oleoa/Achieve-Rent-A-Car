@@ -13,8 +13,15 @@
 
     <body class="min-h-screen flex flex-col justify-between">
 
+      <!-- Discounts -->
+      @if($discount)
+        <div class="fixed top-0 left-0 w-full h-navbar py-4 px-margin" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
+          <p>{{$discount['text']}}</p>
+        </div>
+      @endif
+
       <!-- Navbar -->
-      <nav class="h-navbar px-margin bg-white w-full fixed top-0 hidden xl:flex justify-between items-center">
+      <nav class="h-navbar px-margin bg-white w-full fixed top-0 hidden xl:flex justify-between items-center" @if($discount) style="top: 5rem;" @endif>
 
         <!-- Logo -->
         <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-14"></a>
@@ -89,7 +96,7 @@
       </div>
 
       <!-- Main Content -->
-      <div class="pt-navbar pb-4">
+      <div class="pt-navbar pb-4" @if($discount) style="padding-top: 10rem;" @endif>
 
         @yield('main')
 
