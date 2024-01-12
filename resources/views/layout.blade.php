@@ -12,91 +12,96 @@
   </head>
 
     <body class="min-h-screen flex flex-col justify-between">
+      
+      <!-- Header Content -->
+      <nav class="fixed top-0 left-0 w-full flex flex-col" id="headerContent">
 
-      <!-- Discounts -->
-      @if($discount)
-        <div class="fixed top-0 left-0 w-full h-navbar py-4 px-margin" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
-          <p>{{$discount['text']}}</p>
-        </div>
-      @endif
-
-      <!-- Navbar -->
-      <nav class="h-navbar px-margin bg-white w-full fixed top-0 hidden xl:flex justify-between items-center" @if($discount) style="top: 5rem;" @endif>
-
-        <!-- Logo -->
-        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-14"></a>
-
-        <!-- Right Part -->
-        <div class="flex items-center justify-center gap-6">
-
-          <!-- Items -->
-          <a class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Home')</h5></a>
-          <a class="@if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('About')</h5></a>
-          <a class="@if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('FAQ')</h5></a>
-          <a class="@if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Contact')</h5></a>
-
-          <!-- Flags -->
-          <div class="flex justify-center items-center gap-4">
-            <a href="{{route($current, ['en'])}}">
-              <img src="{{ asset('img/en.png') }}" alt="English Flag" class="w-6 h-4">
-            </a>
-            <a href="{{route($current, ['pt'])}}">
-              <img src="{{ asset('img/pt.png') }}" alt="Portuguese Flag" class="w-6 h-4">
-            </a>
+        <!-- Discounts -->
+        @if($discount)
+          <div class="text-sm xl:text-xl w-full min-h-navbar py-4 xl:px-margin px-4" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
+            <p>{{$discount['text']}}</p>
           </div>
+        @endif
+
+        <!-- Navbar -->
+        <nav class="h-navbar px-margin bg-white w-full hidden xl:flex justify-between items-center">
+
+          <!-- Logo -->
+          <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="" class="h-14"></a>
+
+          <!-- Right Part -->
+          <div class="flex items-center justify-center gap-6">
+
+            <!-- Items -->
+            <a class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Home')</h5></a>
+            <a class="@if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('About')</h5></a>
+            <a class="@if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('FAQ')</h5></a>
+            <a class="@if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Contact')</h5></a>
+
+            <!-- Flags -->
+            <div class="flex justify-center items-center gap-4">
+              <a href="{{route($current, ['en'])}}">
+                <img src="{{ asset('img/en.png') }}" alt="English Flag" class="w-6 h-4">
+              </a>
+              <a href="{{route($current, ['pt'])}}">
+                <img src="{{ asset('img/pt.png') }}" alt="Portuguese Flag" class="w-6 h-4">
+              </a>
+            </div>
+
+          </div>
+
+        </nav>
+
+        <!-- Sidebar -->
+        <div class="flex xl:hidden h-navbar relative w-full justify-center items-center bg-white">
+
+          <!-- Garfo -->
+          <div class="left-0 top-0 absolute flex justify-center items-center h-navbar pl-4">
+            <button id="openSidebar">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Logo -->
+          <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6"></a>
+
+          <!-- Sidebar Itself -->
+          <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
+
+            <!-- Items -->
+            <div class="flex justify-between pr-4">
+              <a class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h4 class="p-4">@lang('Home')</h4></a>
+              <button id="closeSidebar" class="text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <a class="@if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h4 class="p-4">@lang('About')</h4></a>
+            <a class="@if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h4 class="p-4">@lang('FAQ')</h4></a>
+            <a class="@if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h4 class="p-4">@lang('Contact')</h4></a>
+
+            <!-- Flags -->
+            <div class="flex justify-start items-center gap-4 p-4">
+              <a href="{{route($current, ['en'])}}">
+                <img src="{{ asset('img/en.png') }}" alt="English Flag" class="w-6 h-4">
+              </a>
+              <a href="{{route($current, ['pt'])}}">
+                <img src="{{ asset('img/pt.png') }}" alt="Portuguese Flag" class="w-6 h-4">
+              </a>
+            </div>
+
+          </nav>
 
         </div>
 
       </nav>
 
-      <!-- Sidebar -->
-      <div class="flex xl:hidden h-navbar top-0 fixed w-full justify-center items-center bg-white">
-
-        <!-- Garfo -->
-        <div class="left-0 top-0 fixed flex justify-center items-center h-navbar pl-4">
-          <button id="openSidebar">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Logo -->
-        <a href="{{route('home', $locale)}}"><img src="{{url('/img/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6"></a>
-
-        <!-- Sidebar Itself -->
-        <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
-
-          <!-- Items -->
-          <div class="flex justify-between pr-4">
-            <a class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h4 class="p-4">@lang('Home')</h4></a>
-            <button id="closeSidebar" class="text-white">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-          <a class="@if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h4 class="p-4">@lang('About')</h4></a>
-          <a class="@if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h4 class="p-4">@lang('FAQ')</h4></a>
-          <a class="@if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h4 class="p-4">@lang('Contact')</h4></a>
-
-          <!-- Flags -->
-          <div class="flex justify-start items-center gap-4 p-4">
-            <a href="{{route($current, ['en'])}}">
-              <img src="{{ asset('img/en.png') }}" alt="English Flag" class="w-6 h-4">
-            </a>
-            <a href="{{route($current, ['pt'])}}">
-              <img src="{{ asset('img/pt.png') }}" alt="Portuguese Flag" class="w-6 h-4">
-            </a>
-          </div>
-
-        </nav>
-
-      </div>
-
       <!-- Main Content -->
-      <div class="pt-navbar pb-4" @if($discount) style="padding-top: 10rem;" @endif>
+      <div class="pt-navbar pb-4" id="mainContent">
 
         @yield('main')
 

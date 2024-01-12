@@ -25,3 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+function updatePadding() {
+  var headerContent = document.getElementById('headerContent').offsetHeight;
+  document.getElementById('mainContent').style.paddingTop = headerContent + 'px';
+}
+
+// Initial padding update
+updatePadding();
+
+// Recalculate padding on window resize (optional)
+window.addEventListener('resize', function () {
+  updatePadding();
+});
