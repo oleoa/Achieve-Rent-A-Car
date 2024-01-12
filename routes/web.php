@@ -38,4 +38,4 @@ Route::prefix('/{locale}')->group(function(){
 
 Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
 
-Route::post('/api/translation', [API::class, 'translation']);
+Route::middleware('auth:api')->post('/api/translation', [API::class, 'translation']);
