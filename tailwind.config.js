@@ -19,6 +19,9 @@ export default {
         'whatsapp_expanded': '22rem',
         'whatsapp_text': '18rem',
       },
+      animation: {
+        'spin-slow': 'spin 2s linear infinite',
+      },
     },
   },
   plugins: [],
