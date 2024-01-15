@@ -38,6 +38,16 @@
 
     </div>
 
+    <!-- Left Image -->
+    <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
+      <div class="flex flex-col items-start justify-center gap-4 xl:order-1 order-2">
+        <h2>Title</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus officiis facilis eaque accusantium assumenda omnis perferendis fugit optio distinctio enim, iste animi. Obcaecati laborum vel quis nam reiciendis sed.</p>
+        <a href="" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 hover:text-white">Button</a>
+      </div>
+      <img src="https://www.zagope.pt/wp-content/uploads/2018/08/Aeroporto-Internacional-do-Funchal-1.jpg" alt="Left Image" class="rounded-lg xl:order-2 order-1">
+    </div>
+
   </main>
 
 @endsection

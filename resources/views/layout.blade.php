@@ -131,7 +131,7 @@
       </div>
 
       <!-- Footer -->
-      <footer class="w-full xl:px-margin bg-black h-footer flex justify-start items-center">
+      <footer class="w-full xl:px-margin bg-flagBlue h-footer flex justify-start items-center">
 
         <!-- Links -->
         <div class="p-4 flex gap-4 text-white justify-center items-center">
