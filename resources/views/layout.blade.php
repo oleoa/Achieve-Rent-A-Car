@@ -131,10 +131,10 @@
       </div>
 
       <!-- Footer -->
-      <footer class="w-full xl:px-margin bg-flagBlue h-footer flex justify-start items-center">
+      <footer class="w-full xl:px-margin bg-flagBlue min-h-footer flex flex-col justify-center items-start">
 
         <!-- Links -->
-        <div class="p-4 flex gap-4 text-white justify-center items-center">
+        <div class="py-4 flex gap-4 text-white justify-center items-center">
 
           <!-- Title -->
           <h2>Links</h2>
@@ -155,6 +155,12 @@
           </a>
 
         </div>
+
+        <!-- Separator -->
+        <div class="bg-flagYellow w-full h-1 rounded"></div>
+
+        <!-- Reserved -->
+        <p class="py-4 text-white">@lang('© 2023 Achieve Rent A Cars . All rights reserved.')</p>
 
       </footer>
 
