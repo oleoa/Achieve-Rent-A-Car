@@ -55,18 +55,6 @@
       <img src="https://www.zagope.pt/wp-content/uploads/2018/08/Aeroporto-Internacional-do-Funchal-1.jpg" alt="Left Image" class="rounded-lg xl:order-2 order-1">
     </div>
 
-    <!-- Separator -->
-    <div class="py-4 flex items-center justify-center xl:px-margin px-4">
-      <div class="xl:w-1/3 w-full">
-        <x-separator/>
-      </div>
-    </div>
-
-    <!-- Instagram -->
-    <div class="w-full xl:px-margin px-4 grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 py-4">
-      
-    </div>
-
   </main>
 
 @endsection
