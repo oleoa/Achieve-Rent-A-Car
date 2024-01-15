@@ -19,8 +19,10 @@ class Home extends Controller
     foreach($data['data'] as $key => $value) {
       $images[] = $value['media_url'];
     }
-    
-    dd($images);
+
+    return $images;
+
+    $this->data('images', $images);
 
     $this->title('Home');
     $this->current('home');
