@@ -16,6 +16,8 @@ export default {
         'navbar': '5rem',
         'footer': '5rem',
         'margin': '15rem',
+        'homeTitle': '30rem',
+        'homeTitleXL': '47rem',
         'whatsapp_expanded': '22rem',
         'whatsapp_text': '18rem',
       },

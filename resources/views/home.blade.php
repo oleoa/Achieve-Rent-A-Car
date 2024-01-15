@@ -4,7 +4,7 @@
   <main class="min-h-screen">
 
     <!-- Image -->
-    <div style="background-image: url('/img/titles/home.jpeg'); height: 47rem;" class="flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
+    <div style="background-image: url('/img/titles/home.jpeg')" class="xl:h-homeTitleXL h-homeTitle flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
       <h1 class="text-white text-center font-black text-6xl px-4">@lang('Achieve Rent A Car')</h1>
     </div>
 
