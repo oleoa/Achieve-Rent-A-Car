@@ -4,7 +4,7 @@
   <main>
 
     <!-- Image -->
-    <div style="background-image: url('/img/faq.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
+    <div style="background-image: url('/img/titles/faq.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
       <h2 class="text-white text-center font-black hidden xl:block text-4xl">@lang('Frequently Asked Question')</h2>
       <h1 class="text-white text-center font-black text-6xl">@lang('FAQ')</h1>
     </div>
@@ -12,12 +12,8 @@
     <!-- Help -->
     <div class="flex flex-col justify-center items-center py-8 xl:px-margin px-4 gap-8">
       <h1 class="xl:text-5xl">@lang('Let us help you')</h1>
-      <div class="h-1 w-4/5 xl:w-1/3 grid grid-cols-3">
-        <span class="h-full w-full bg-flagBlue rounded-l-lg"></span>
-        <div class="w-full h-full bg-flagYellow flex items-center justify-center">
-          <span class="h-full w-2 bg-flagRed"></span>
-        </div>
-        <span class="h-full w-full bg-flagBlue rounded-r-lg"></span>
+      <div class="w-4/5 xl:w-1/3">
+        <x-separator/>
       </div>
       <p class="text-lg text-center">
         @lang('Here you will find helpful information about our booking process and can learn more about the details you may need to complete your reservation.')
