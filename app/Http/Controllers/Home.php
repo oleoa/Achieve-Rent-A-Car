@@ -14,7 +14,8 @@ class Home extends Controller
     $response = Http::get('https://graph.instagram.com/me/media?fields=media_url,caption&access_token=IGQWRNdERydHlCbHBLMnlFcWRDSzc3LWZASVXZA4bEd3V1ljalBGRE85VE52T1JTaEx3YTNNMXh6aXYyY18zVHNlYmgxbHRQZAUtMUTNfcUh3bnpDT3p2QW5GZAlRPbFlZAM3NrTXBROWRxbkxKQUsxNEtNb2RYX0JsNTBUNzVLdVdwa25pUQZDZD');
 
     $data = $response->json();
-
+    dd($data['data']);
+    
     $images = [];
     foreach($data['data'] as $key => $value) {
       $images[] = $value['media_url'];
