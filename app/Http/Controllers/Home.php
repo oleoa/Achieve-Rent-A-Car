@@ -20,10 +20,7 @@ class Home extends Controller
       $images[] = $value['media_url'];
     }
 
-    return $images;
-
     $this->data('images', $images);
-
     $this->title('Home');
     $this->current('home');
     $this->locale($locale);
