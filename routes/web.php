@@ -23,9 +23,11 @@ Route::get('/', function () {
   return 'First sub domain';
 })->domain('test.' . env('APP_URL'));
 
+/*
 Route::get('/', function(){
   return redirect()->route('home', ['en']);
 });
+*/
 
 Route::prefix('/{locale}')->group(function(){
 
