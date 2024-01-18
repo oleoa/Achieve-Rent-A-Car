@@ -30,7 +30,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->routes(function () {
 
-            Route::domain('admin.' . config('app.domain'))
+            Route::domain('admin.' . env('APP_URL'))
                 ->middleware('web')
                 ->group(base_path('routes/admin.php'));
 
