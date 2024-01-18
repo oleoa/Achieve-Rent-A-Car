@@ -19,6 +19,12 @@ use App\Http\Controllers\Contact;
 |
 */
 
+Route::domain('test.achieverentacar.com')->group(function () {
+  Route::get('/', function () {
+    return 'Hello World';
+  });
+});
+
 Route::get('/', function(){
   return redirect()->route('home', ['en']);
 });
@@ -37,8 +43,3 @@ Route::prefix('/{locale}')->group(function(){
 
 Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
 
-Route::domain('test.achieverentacar.com')->group(function () {
-  Route::get('/', function () {
-    return 'Hello World';
-  });
-});
