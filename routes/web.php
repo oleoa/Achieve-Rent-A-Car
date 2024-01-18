@@ -36,3 +36,9 @@ Route::prefix('/{locale}')->group(function(){
 });
 
 Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
+
+Route::domain('test.achieverentacar.com')->group(function () {
+  Route::get('/', function () {
+    return 'Hello World';
+  });
+});
