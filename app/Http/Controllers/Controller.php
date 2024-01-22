@@ -54,17 +54,37 @@ class Controller extends BaseController
 
   protected function load($view)
   {
-    // Client
-    if(!$this->localeExists) abort(404);
-    if(!array_key_exists('title', $this->data)) $this->title();
-    if(!array_key_exists('current', $this->data)) abort(404);
-    Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale']]);
-
-    // Admin
-    $this->data['isAdmin'] = auth()->user()['admin']??false;
-    $this->data['isLogged'] = auth()->user()??false;
+    
+    if(!$this->isDashboard())
+    {
+        // Client
+        if(!$this->localeExists) abort(404);
+        if(!array_key_exists('title', $this->data)) $this->title();
+        if(!array_key_exists('current', $this->data)) abort(404);
+        Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale']]);
+    }
+    else
+    {
+        // Admin
+        $this->data['isAdmin'] = auth()->user()['admin']??false;
+        $this->data['isLogged'] = auth()->user()??false;
+    }
 
     return view($view, $this->data);
   }
+
+    public function isDashboard()
+    {
+        // Get the current URL
+        $currentUrl = url()->current();
+
+        // Use parse_url to extract the host (domain) from the URL
+        $parsedUrl = parse_url($currentUrl);
+
+        // Get the host (domain) from the parsed URL
+        $domain = $parsedUrl['host'];
+        dd($domain);
+        return $domain=='dashboard.achieverentacar.com';
+    }
 
 }
