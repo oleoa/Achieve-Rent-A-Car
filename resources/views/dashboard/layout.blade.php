@@ -37,7 +37,7 @@
         @endif
 
         <!-- Logo -->
-        <a href="{{route('views')}}"><img src="{{url('/img/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6"></a>
+        <a href="{{route('views')}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6"></a>
 
         <!-- Sidebar Itself -->
         <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full p-4 text-xl flex flex-col gap-4">
