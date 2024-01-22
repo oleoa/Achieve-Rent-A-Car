@@ -54,7 +54,7 @@ class Controller extends BaseController
 
   protected function load($view)
   {
-    
+
     if(!$this->isDashboard())
     {
         // Client
@@ -83,7 +83,7 @@ class Controller extends BaseController
 
         // Get the host (domain) from the parsed URL
         $domain = $parsedUrl['host'];
-        dd($domain);
+        
         return $domain=='dashboard.achieverentacar.com';
     }
 
