@@ -39,6 +39,11 @@ class Controller extends BaseController
     $this->data['current'] = $current;
   }
 
+  protected function range(string $range):void
+  {
+    $this->data['range'] = $range;
+  }
+
   protected function locale(String $locale): void
   {
     $this->localeExists = in_array($locale, ['en', 'pt', 'fr', 'de', 'es'])? true : false;
@@ -49,10 +54,16 @@ class Controller extends BaseController
 
   protected function load($view)
   {
+    // Client
     if(!$this->localeExists) abort(404);
     if(!array_key_exists('title', $this->data)) $this->title();
     if(!array_key_exists('current', $this->data)) abort(404);
     Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale']]);
+
+    // Admin
+    $this->data['isAdmin'] = auth()->user()['admin']??false;
+    $this->data['isLogged'] = auth()->user()??false;
+
     return view($view, $this->data);
   }
 
