@@ -19,6 +19,12 @@ use App\Http\Controllers\Contact;
 |
 */
 
+Route::domain('test.achieverentacar.com')->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+});
+
 Route::get('/', function(){
   return redirect()->route('home', ['en']);
 });
