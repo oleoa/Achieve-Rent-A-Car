@@ -85,7 +85,7 @@ Route::domain('dashboard.achieverentacar.com')->group(function () {
 
 Route::get('/', function(){
   return redirect()->route('home', ['en']);
-});
+})->name('root');
 
 Route::prefix('/{locale}')->group(function(){
 

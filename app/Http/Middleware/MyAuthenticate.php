@@ -18,6 +18,13 @@ class MyAuthenticate
   {
     $currentRouteName = $request->route()->getName();
     $allowedNotAuthRoutes = [
+      "root",
+      "home",
+      "about",
+      "faq",
+      "contact",
+      "contact-send",
+
       "sign.in",
       "sign.out",
       "sign.ing-in",
