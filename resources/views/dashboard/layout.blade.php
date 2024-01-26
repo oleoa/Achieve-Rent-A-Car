@@ -74,7 +74,7 @@
           <a href="{{route('views')}}" class="hidden loaderActivator 2xl:flex items-center"><h1 class="text-flagBlue">Dashboard</h1><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-16"></a>
 
           <!-- Logo -->
-          <a href="{{route('views')}}" class="2xl:hidden loaderActivator flex items-center pl-8"><img src="{{url('/img/logo.png')}}" alt="Logo Achieve Rent A Car" class="h-12"></a>
+          <a href="{{route('views')}}" class="2xl:hidden loaderActivator flex items-center pl-8"><img src="{{url('/img/logos/logo.png')}}" alt="Logo Achieve Rent A Car" class="h-12"></a>
 
         </div>
 

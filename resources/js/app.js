@@ -27,8 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function updatePadding() {
-  var headerContent = document.getElementById('headerContent').offsetHeight;
-  document.getElementById('mainContent').style.paddingTop = headerContent + 'px';
+  var headerContent = document.getElementById('headerContent');
+  if(headerContent)
+    document.getElementById('mainContent').style.paddingTop = headerContent.offsetHeight + 'px';
 }
 
 // Initial padding update
