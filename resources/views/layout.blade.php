@@ -27,7 +27,7 @@
         <nav class="h-navbar px-margin bg-white w-full hidden xl:flex justify-between items-center">
 
           <!-- Logo -->
-          <a href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-14"></a>
+          <a href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-14 loaderActivator"></a>
 
           <!-- Right Part -->
           <div class="flex items-center justify-center gap-6">
@@ -66,7 +66,7 @@
           </div>
 
           <!-- Logo -->
-          <a href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6"></a>
+          <a href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6 loaderActivator"></a>
 
           <!-- Sidebar Itself -->
           <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
