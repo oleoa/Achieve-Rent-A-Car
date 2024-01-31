@@ -24,10 +24,14 @@
     "Contact.Us-Form-Input-Message": "Mensagem",
     "Contact.Us-Form-Button": "Enviar",
 
-    "We are available on WhatsApp!": "Estamos disponíveis no whatsapp!",
-    "Your message has been sent successfully.": "Sua mensagem foi enviada com sucesso.",
-    "Page not found": "Página não encontrada",
-    "We are here!": "Nós estamos aqui!",
+    "Whatsapp-Paragraph": "Estamos disponíveis no whatsapp!",
+    "Message-ContactSent": "Sua mensagem foi enviada com sucesso.",
+    "404": "Página não encontrada",
+
+    "Menu-Home": "Início",
+    "Menu-About": "Sobre Nós",
+    "Menu-FAQ": "FAQ",
+    "Menu-Contact": "Contate-Nos",
 
     "End": "Fim"
 }

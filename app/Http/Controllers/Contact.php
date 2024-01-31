@@ -33,6 +33,6 @@ class Contact extends Controller
     
     Mail::to(env('MAIL_USERNAME'))->send(new ContactMail($data));
 
-    return redirect()->back()->with('success', 'Your message has been sent successfully.');
+    return redirect()->back()->with('success', 'Message-ContactSent');
   }
 }

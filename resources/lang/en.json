@@ -24,5 +24,14 @@
     "Contact.Us-Form-Input-Message": "Message",
     "Contact.Us-Form-Button": "Send",
 
+    "Whatsapp-Paragraph": "We are available on WhatsApp!",
+    "Message-ContactSent": "Your message has been sent successfully.",
+    "404": "Page not found",
+
+    "Menu-Home": "Home",
+    "Menu-About": "About Us",
+    "Menu-FAQ": "FAQ",
+    "Menu-Contact": "Contact Us",
+
     "End": "End"
 }

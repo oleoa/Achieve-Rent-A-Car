@@ -33,10 +33,10 @@
           <div class="flex items-center justify-center gap-6">
 
             <!-- Items -->
-            <a class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Home')</h5></a>
-            <a class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('About')</h5></a>
-            <a class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('FAQ')</h5></a>
-            <a class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Contact')</h5></a>
+            <a class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Menu-Home')</h5></a>
+            <a class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('Menu-About')</h5></a>
+            <a class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('Menu-FAQ')</h5></a>
+            <a class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Menu-Contact')</h5></a>
 
             <!-- Flags -->
             <div class="flex justify-center items-center gap-4">
@@ -73,16 +73,16 @@
 
             <!-- Items -->
             <div class="flex justify-between pr-4">
-              <a class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h4 class="p-4">@lang('Home')</h4></a>
+              <a class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h4 class="p-4">@lang('Menu-Home')</h4></a>
               <button id="closeSidebar" class="text-white">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
-            <a class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h4 class="p-4">@lang('About')</h4></a>
-            <a class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h4 class="p-4">@lang('FAQ')</h4></a>
-            <a class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h4 class="p-4">@lang('Contact')</h4></a>
+            <a class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h4 class="p-4">@lang('Menu-About')</h4></a>
+            <a class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h4 class="p-4">@lang('Menu-FAQ')</h4></a>
+            <a class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h4 class="p-4">@lang('Menu-Contact')</h4></a>
 
             <!-- Flags -->
             <div class="flex justify-start items-center gap-4 p-4">
