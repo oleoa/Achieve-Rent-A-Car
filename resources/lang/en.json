@@ -2,11 +2,27 @@
     "Home-Banner-Subtitle": "Experience the best of Madeira Island with",
     "Home-Banner-Title": "Achieve Rent A Car",
     "Home-Section.1-Title": "Make car rental a pleasant experience",
-    "Home-Section.2-Title": "Achieve Rent A Car",
     "Home-Section.1-Card.1-Title": "Enjoy the best value for money on car rental in Madeira",
     "Home-Section.1-Card.1-Paragraph": "Our goal is to provide you with the best experience at the lowest possible cost. To achieve this, we do our best in everything, always thinking about you, including our prices.",
     "Home-Section.1-Card.2-Title": "Book with ease. Receive and return to your preferred location.",
     "Home-Section.1-Card.2-Paragraph": "Book your car with us online on our website or via Whatsapp. Receive and return the car at the locations of your choice: airport, hotel, local accommodation, anywhere in Madeira.",
+    "Home-Section.2-Title": "Achieve Rent A Car",
+    "Home-Section.2-Paragraph": "We are a family business with more than 20 years of experience in the car rental market in Madeira. We are proud to be a local company that offers a personalized service to our customers. We are always available to help you with any questions you may have. We are here to make your trip to Madeira a memorable one.",
+
+    "About.Us-Banner-Title": "About Us",
+
+    "FAQ-Banner-Subtitle": "Frequently Asked Question",
+    "FAQ-Banner-Title": "FAQ",
+    "FAQ-Section.1-Title": "Let us help you",
+    "FAQ-Section.1-Paragraph.1": "Here you will find helpful information about our booking process and can learn more about the details you may need to complete your reservation.",
+    "FAQ-Section.1-Paragraph.2": "Feel free to reach out to us or use the WhatsApp button if you have any other questions.",
+
+    "Contact.Us-Banner-Title": "Contact Us",
+    "Contact.Us-Form-Input-Name": "Name",
+    "Contact.Us-Form-Input-Email": "Email",
+    "Contact.Us-Form-Input-Phone": "Phone number for WhatsApp with prefix",
+    "Contact.Us-Form-Input-Message": "Message",
+    "Contact.Us-Form-Button": "Send",
 
     "End": "End"
 }

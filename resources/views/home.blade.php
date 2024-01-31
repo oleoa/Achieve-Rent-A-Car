@@ -3,7 +3,7 @@
 
   <main class="min-h-screen">
 
-    <!-- Image -->
+    <!-- Banner -->
     <div style="background-image: url('/img/titles/home-min.jpeg')" class="xl:h-homeTitleXL h-homeTitle flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
       <h2 class="text-white text-center font-black px-4">@lang('Home-Banner-Subtitle')</h2>
       <h1 class="text-white text-center font-black text-6xl px-4 pb-24">@lang('Home-Banner-Title')</h1>
@@ -48,8 +48,8 @@
     <!-- Slide -->
     <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4 py-4">
       <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
-        <h2 class="py-0">Title</h2>
-        <p class="text-center xl:text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus officiis facilis eaque accusantium assumenda omnis perferendis fugit optio distinctio enim, iste animi. Obcaecati laborum vel quis nam reiciendis sed.</p>
+        <h2 class="py-0">@lang('Home-Section.2-Title')</h2>
+        <p class="text-center xl:text-start">@lang('Home-Section.2-Paragraph')</p>
         <a href="" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 hover:text-white">Button</a>
       </div>
       <img src="https://www.zagope.pt/wp-content/uploads/2018/08/Aeroporto-Internacional-do-Funchal-1.jpg" alt="Left Image" class="rounded-lg xl:order-2 order-1">
