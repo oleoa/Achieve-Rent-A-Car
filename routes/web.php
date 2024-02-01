@@ -29,9 +29,9 @@ use App\Http\Controllers\Dashboard\Discounts;
 */
 
 /*
-Route::domain('dashboard.achieverentacar.com')->group(function () {
-*/
 Route::prefix('/dashboard')->group(function () {
+*/
+Route::domain('dashboard.achieverentacar.com')->group(function () {
     
     Route::get('/', function(){ return redirect()->route('views'); })->name('dashboard');
 
