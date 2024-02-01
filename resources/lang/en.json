@@ -1,4 +1,11 @@
 {
+    "Title-home": "Home",
+    "Title-about": "About Us",
+    "Title-faq": "FAQ",
+    "Title-contact": "Contact Us",
+    "Title-terms": "Terms and Conditions",
+    "Title-privacy": "Privacy Policies",
+
     "Home-Banner-Subtitle": "Experience the best of Madeira Island with",
     "Home-Banner-Title": "Achieve Rent A Car",
     "Home-Section.1-Title": "Make car rental a pleasant experience",
@@ -35,5 +42,5 @@
 
     "Footer-Legal-Terms": "Terms and Conditions.",
     "Footer-Legal-Privacy": "Privacy Policies.",
-    "Footer-Reserved": "© 2024 Achieve Rent A Car . All rights reserved."
+    "Footer-Reserved": "© 2024 Achieve Rent A Car. All rights reserved."
 }

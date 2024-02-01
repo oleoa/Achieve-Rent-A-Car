@@ -12,7 +12,6 @@ class FAQ extends Controller
   {
     $faq = FAQModel::all()->toArray();
     $this->data('faq', $faq);
-    $this->title('FAQ');
     $this->current('faq');
     $this->locale($locale);
     return $this->load('faq');

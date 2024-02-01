@@ -131,10 +131,10 @@
       </div>
 
       <!-- Footer -->
-      <footer class="w-full xl:px-margin bg-flagBlue min-h-footer flex flex-col justify-center items-start">
+      <footer class="w-full xl:px-margin bg-flagBlue min-h-footer flex flex-col justify-center items-start gap-4 py-4">
 
         <!-- Links -->
-        <div class="py-4 flex gap-4 text-white justify-center items-center">
+        <div class="flex gap-4 text-white justify-center items-center">
 
           <!-- Title -->
           <h2>Links</h2>
@@ -160,10 +160,10 @@
         <div class="bg-flagYellow w-full h-1 rounded"></div>
 
         <!-- Legal -->
-        <p class="py-4 text-white"><a>@lang('Footer-Legal-Terms')</a><a>@lang('Footer-Legal-Privacy')</a></p>
+        <p class="text-white"><a href="{{route('terms', $locale)}}">@lang('Footer-Legal-Terms')</a> <a href="{{route('privacy', $locale)}}">@lang('Footer-Legal-Privacy')</a></p>
 
         <!-- Reserved -->
-        <p class="py-4 text-white">@lang('Footer-Reserved')</p>
+        <p class="text-white">@lang('Footer-Reserved')</p>
 
       </footer>
 

@@ -8,6 +8,7 @@ use App\Http\Controllers\Home;
 use App\Http\Controllers\About;
 use App\Http\Controllers\FAQ;
 use App\Http\Controllers\Contact;
+use App\Http\Controllers\Legal;
 
 //Dashboard Controllers
 use App\Http\Controllers\AuthenticationDashboard;
@@ -96,6 +97,10 @@ Route::prefix('/{locale}')->group(function(){
   Route::get('/faq', [FAQ::class, 'index'])->name('faq');
 
   Route::get('/contact', [Contact::class, 'index'])->name('contact');
+
+  Route::get('/terms', [Legal::class, 'terms'])->name('terms');
+
+  Route::get('/privacy', [Legal::class, 'privacy'])->name('privacy');
 
 });
 

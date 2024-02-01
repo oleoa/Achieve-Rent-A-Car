@@ -29,11 +29,6 @@ class Controller extends BaseController
     $this->data[$key] = $value;
   }
 
-  protected function title(String $title = Null): void
-  {
-    $this->data['title'] = ($title == Null? 'Achieve Rent A Car' : $title.' - Achieve Rent A Car');
-  }
-
   protected function current(String $current): void
   {
     $this->data['current'] = $current;
@@ -59,8 +54,8 @@ class Controller extends BaseController
     {
         // Client
         if(!$this->localeExists) abort(404);
-        if(!array_key_exists('title', $this->data)) $this->title();
         if(!array_key_exists('current', $this->data)) abort(404);
+        $this->data['title'] = 'Title-'.$this->data['current'];
         Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale']]);
     }
     else
@@ -84,7 +79,7 @@ class Controller extends BaseController
         // Get the host (domain) from the parsed URL
         $domain = $parsedUrl['host'];
         
-        return $domain=='dashboard.achieverentacar.com';
+        return $domain == 'dashboard.achieverentacar.com';
     }
 
 }
