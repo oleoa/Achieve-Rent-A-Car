@@ -159,8 +159,11 @@
         <!-- Separator -->
         <div class="bg-flagYellow w-full h-1 rounded"></div>
 
+        <!-- Legal -->
+        <p class="py-4 text-white"><a>@lang('Footer-Legal-Terms')</a><a>@lang('Footer-Legal-Privacy')</a></p>
+
         <!-- Reserved -->
-        <p class="py-4 text-white">@lang('© 2023 Achieve Rent A Cars . All rights reserved.')</p>
+        <p class="py-4 text-white">@lang('Footer-Reserved')</p>
 
       </footer>
 
