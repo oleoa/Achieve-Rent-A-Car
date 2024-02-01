@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Client;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Client\Controller;
 use Illuminate\Http\Request;
 use App\Mail\Contact as ContactMail;
 use Illuminate\Support\Facades\Mail;
@@ -11,11 +11,7 @@ class Contact extends Controller
 {
   public function index($locale)
   {
-    $this->current('contact');
-
-    $this->locale($locale);
-
-    return $this->load('contact');
+    return $this->load('contact', $locale);
   }
 
   public function send(Request $request)

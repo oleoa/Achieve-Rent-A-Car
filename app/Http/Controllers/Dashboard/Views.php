@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Dashboard;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Dashboard\Controller;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Models\Views as ViewsModel;
 
-class ViewsDashboard extends Controller
+class Views extends Controller
 {  
   private string $range;
 

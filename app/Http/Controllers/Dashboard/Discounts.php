@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Dashboard;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Dashboard\Controller;
 use Illuminate\Http\Request;
 use App\Models\Discounts as DiscountsModel;
 
-class DiscountsDashboard extends Controller
+class Discounts extends Controller
 {
     public function index()
     {

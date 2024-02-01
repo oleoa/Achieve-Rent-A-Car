@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Client;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Client\Controller;
 use Illuminate\Http\Request;
 use App\Models\FAQ as FAQModel;
 
@@ -12,8 +12,6 @@ class FAQ extends Controller
   {
     $faq = FAQModel::all()->toArray();
     $this->data('faq', $faq);
-    $this->current('faq');
-    $this->locale($locale);
-    return $this->load('faq');
+    return $this->load('faq', $locale);
   }
 }

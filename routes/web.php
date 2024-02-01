@@ -4,18 +4,18 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
 //Clients Controllers
-use App\Http\Controllers\Home;
-use App\Http\Controllers\About;
-use App\Http\Controllers\FAQ;
-use App\Http\Controllers\Contact;
-use App\Http\Controllers\Legal;
+use App\Http\Controllers\Client\Home;
+use App\Http\Controllers\Client\About;
+use App\Http\Controllers\Client\FAQ;
+use App\Http\Controllers\Client\Contact;
+use App\Http\Controllers\Client\Legal;
 
 //Dashboard Controllers
-use App\Http\Controllers\AuthenticationDashboard;
-use App\Http\Controllers\ViewsDashboard;
-use App\Http\Controllers\FAQDashboard;
-use App\Http\Controllers\UsersDashboard;
-use App\Http\Controllers\DiscountsDashboard;
+use App\Http\Controllers\Dashboard\Authentication;
+use App\Http\Controllers\Dashboard\Views;
+use App\Http\Controllers\Dashboard\FAQ as FAQDashboard;
+use App\Http\Controllers\Dashboard\Users;
+use App\Http\Controllers\Dashboard\Discounts;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,11 +28,14 @@ use App\Http\Controllers\DiscountsDashboard;
 |
 */
 
+/*
 Route::domain('dashboard.achieverentacar.com')->group(function () {
+*/
+Route::prefix('/dashboard')->group(function () {
     
     Route::get('/', function(){ return redirect()->route('views'); })->name('dashboard');
 
-    Route::get('/views', [ViewsDashboard::class, 'index'])->name('views');
+    Route::get('/views', [Views::class, 'index'])->name('views');
 
     Route::name('faq.')->group(function () {
 
@@ -46,39 +49,39 @@ Route::domain('dashboard.achieverentacar.com')->group(function () {
 
     Route::name('discount.')->group(function () {
 
-        Route::get('/discounts', [DiscountsDashboard::class, 'index'])->name('list');
+        Route::get('/discounts', [Discounts::class, 'index'])->name('list');
 
-        Route::get('/discounts/enable', [DiscountsDashboard::class, 'enable'])->name('enable');
+        Route::get('/discounts/enable', [Discounts::class, 'enable'])->name('enable');
 
-        Route::get('/discounts/disable', [DiscountsDashboard::class, 'disable'])->name('disable');
+        Route::get('/discounts/disable', [Discounts::class, 'disable'])->name('disable');
         
-        Route::delete('/discounts/delete', [DiscountsDashboard::class, 'delete'])->name('delete');
+        Route::delete('/discounts/delete', [Discounts::class, 'delete'])->name('delete');
         
-        Route::post('/discounts/add', [DiscountsDashboard::class, 'add'])->name('add');
+        Route::post('/discounts/add', [Discounts::class, 'add'])->name('add');
 
     });
 
     Route::name('user.')->group(function () {
 
-        Route::get('/users', [UsersDashboard::class, 'index'])->name('list');
+        Route::get('/users', [Users::class, 'index'])->name('list');
         
-        Route::delete('/user/delete', [UsersDashboard::class, 'delete'])->name('delete');
+        Route::delete('/user/delete', [Users::class, 'delete'])->name('delete');
         
-        Route::post('/user/add', [UsersDashboard::class, 'add'])->name('add');
+        Route::post('/user/add', [Users::class, 'add'])->name('add');
         
-        Route::get('/user/setup', [UsersDashboard::class, 'setup'])->name('setup');
+        Route::get('/user/setup', [Users::class, 'setup'])->name('setup');
         
-        Route::post('/user/setup', [UsersDashboard::class, 'settingup'])->name('settingup');
+        Route::post('/user/setup', [Users::class, 'settingup'])->name('settingup');
 
     });
 
     Route::name('sign.')->group(function(){
 
-        Route::get('/signin', [AuthenticationDashboard::class, 'signin'])->name('in');
+        Route::get('/signin', [Authentication::class, 'signin'])->name('in');
         
-        Route::get('/signout', [AuthenticationDashboard::class, 'signout'])->name('out');
+        Route::get('/signout', [Authentication::class, 'signout'])->name('out');
         
-        Route::post('/signin', [AuthenticationDashboard::class, 'signing_in'])->name('ing-in');
+        Route::post('/signin', [Authentication::class, 'signing_in'])->name('ing-in');
     
     });
 
