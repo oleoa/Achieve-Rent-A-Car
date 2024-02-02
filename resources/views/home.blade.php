@@ -25,7 +25,7 @@
             <div class="rounded-lg shadow-lg">
                 <img src="https://media.wired.com/photos/5fb70f2ce7b75db783b7012c/master/pass/Gear-Photos-597589287.jpg" alt="" class="rounded-t-lg">
                 <div class="p-4">
-                <h4 class="text-2xl font-bold text-gray-800">@lang('Home-Section.1-Card.'.$i.'-Title')</h4>
+                <h3 class="text-2xl font-bold text-gray-800">@lang('Home-Section.1-Card.'.$i.'-Title')</h3>
                 <p class="mt-2 text-gray-600">
                     @lang('Home-Section.1-Card.'.$i.'-Paragraph')
                 </p>
