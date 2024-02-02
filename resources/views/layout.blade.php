@@ -51,6 +51,14 @@
     <meta property="og:url" content="https://achieverentacar.com/en"/>
     <meta property="og:image" content="https://achieverentacar.com/img/logos/logo.png"/>
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="Achieve Rent A Car"/>
+    <meta name="twitter:title" content="Madeira Island Achieve Rent A Car"/>
+    <meta name="twitter:description" content="Unforgettable Madeira adventure! Explore scenic routes, landscapes, and hidden gems with our affordable, reliable car rentals. Book now for a seamless journey!"/>
+    <meta name="twitter:creator" content="@o_leo_a"/>
+    <meta name="twitter:image" content="http://www.achieverentacar.com/img/logos/logo.png"/>
+
     <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
