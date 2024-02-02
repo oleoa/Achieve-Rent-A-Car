@@ -12,12 +12,11 @@ class Controller extends BaseController
 {
   use AuthorizesRequests, ValidatesRequests;
 
-  private Array $data;
-  private Bool $localeExists;
+  private Array $data = array();
+  private Bool $localeExists = false;
 
   protected function data(String $key, $value): void
   {
-    if(!$this->data) $this->data = array();
     $this->data[$key] = $value;
   }
 
