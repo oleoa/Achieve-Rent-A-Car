@@ -14,7 +14,7 @@
         <h1 class="font-bold">Welcome to Madeira Island, your gateway to adventure!</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam unde quibusdam ut accusantium expedita error nulla dolorem minima. Praesentium aspernatur a dolore fuga commodi expedita magnam cum ipsum non. Id!</p>
       </div>
-      <img src="{{url('/img/cards/about.jpeg')}}" alt="" class="rounded-xl">
+      <img src="{{url('/img/cards/about.jpeg')}}" alt="Madeira Island Image" class="rounded-xl">
     </div>
 
   </main>

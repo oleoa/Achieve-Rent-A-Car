@@ -23,7 +23,7 @@
 
         @for($i = 1; $i <= 3; $i++)
             <div class="rounded-lg shadow-lg">
-                <img src="{{asset('/img/cards/'.$i.'.png')}}" alt="" class="rounded-t-lg">
+                <img src="{{asset('/img/cards/'.$i.'.png')}}" alt="Madeira Island Image" class="rounded-t-lg">
                 <div class="p-4">
                     <h3 class="text-2xl font-bold text-gray-800">@lang('Home-Section.1-Card.'.$i.'-Title')</h3>
                     <p class="mt-2 text-gray-600">
