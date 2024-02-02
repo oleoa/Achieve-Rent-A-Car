@@ -172,7 +172,7 @@
         <div class="bg-flagYellow w-full h-1 rounded"></div>
 
         <!-- Legal -->
-        <p class="text-white"><a href="{{route('terms', $locale)}}">@lang('Footer-Legal-Terms')</a> <a href="{{route('privacy', $locale)}}">@lang('Footer-Legal-Privacy')</a></p>
+        <p class="text-white"><a title="Click here to see the Terms and Conditions" href="{{route('terms', $locale)}}">@lang('Footer-Legal-Terms')</a> <a title="Click here to see the Privacy Policies" href="{{route('privacy', $locale)}}">@lang('Footer-Legal-Privacy')</a></p>
 
         <!-- Reserved -->
         <p class="text-white">@lang('Footer-Reserved')</p>
