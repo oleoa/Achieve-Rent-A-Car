@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Achieve Rent A Car Madeira">
     <meta name="author" content="Leonardo Abreu de Paulo">
-    <meta name="description" content="Explore Madeira Island with ease! Rent a car with us for an unforgettable journey. Discover scenic routes, picturesque landscapes, and hidden gems. Affordable and reliable car rental services tailored to enhance your Madeira experience. Book now for a seamless travel adventure!">
+    <meta name="description" content="@lang('Meta-Description')">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>@lang($title)</title>
   </head>
