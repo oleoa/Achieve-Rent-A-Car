@@ -87,32 +87,24 @@ Route::domain('dashboard.achieverentacar.com')->group(function () {
 
 });
 
-Route::domain('achieverentacar.com')->group(function(){
+Route::get('/', function(){
+    return redirect()->route('home', ['en']);
+})->name('root');
 
-    Route::get('/', function(){
-      return redirect()->route('home', ['en']);
-    })->name('root');
-    
-    Route::prefix('/{locale}')->group(function(){
-    
-      Route::get('/', function(){
-        return redirect()->route('home', ['en']);
-      });
-    
-      Route::get('/achieve', [Home::class, 'index'])->name('home');
-    
-      Route::get('/about', [About::class, 'index'])->name('about');
-    
-      Route::get('/faq', [FAQ::class, 'index'])->name('faq');
-    
-      Route::get('/contact', [Contact::class, 'index'])->name('contact');
-    
-      Route::get('/terms', [Legal::class, 'terms'])->name('terms');
-    
-      Route::get('/privacy', [Legal::class, 'privacy'])->name('privacy');
-    
-    });
-    
-    Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
+Route::prefix('/{locale}')->group(function(){
+
+    Route::get('/', [Home::class, 'index'])->name('home');
+
+    Route::get('/about', [About::class, 'index'])->name('about');
+
+    Route::get('/faq', [FAQ::class, 'index'])->name('faq');
+
+    Route::get('/contact', [Contact::class, 'index'])->name('contact');
+
+    Route::get('/terms', [Legal::class, 'terms'])->name('terms');
+
+    Route::get('/privacy', [Legal::class, 'privacy'])->name('privacy');
 
 });
+
+Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
