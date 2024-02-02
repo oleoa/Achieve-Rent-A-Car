@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Achieve Rent A Car Madeira">
     <meta name="author" content="Leonardo Abreu de Paulo">
+    <link rel="alternate" href="https://achieverentacar.com/" hreflang="x-default"/>
     <link rel="alternate" href="https://achieverentacar.com/en" hreflang="en"/>
     <link rel="alternate" href="https://achieverentacar.com/en/about" hreflang="en"/>
     <link rel="alternate" href="https://achieverentacar.com/en/faq" hreflang="en"/>
