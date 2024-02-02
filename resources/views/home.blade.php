@@ -47,7 +47,6 @@
       <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
         <h2 class="py-0">@lang('Home-Section.2-Title')</h2>
         <p class="text-center xl:text-start">@lang('Home-Section.2-Paragraph')</p>
-        <a href="" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 hover:text-white">Button</a>
       </div>
       <img src="https://www.zagope.pt/wp-content/uploads/2018/08/Aeroporto-Internacional-do-Funchal-1.jpg" alt="Left Image" class="rounded-lg xl:order-2 order-1">
     </div>

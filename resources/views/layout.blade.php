@@ -27,16 +27,16 @@
         <nav class="h-navbar px-margin bg-white w-full hidden xl:flex justify-between items-center">
 
           <!-- Logo -->
-          <a href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-14 loaderActivator"></a>
+          <a href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-14 loaderActivator" title="Click to visit the Home Page"></a>
 
           <!-- Right Part -->
           <div class="flex items-center justify-center gap-6">
 
             <!-- Items -->
-            <a class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Menu-Home')</h5></a>
-            <a class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('Menu-About')</h5></a>
-            <a class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('Menu-FAQ')</h5></a>
-            <a class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Menu-Contact')</h5></a>
+            <a title="Click to visit the Home Page" class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Menu-Home')</h5></a>
+            <a title="Click to visit the About Page" class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('Menu-About')</h5></a>
+            <a title="Click to visit the FAQ Page" class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('Menu-FAQ')</h5></a>
+            <a title="Click to visit the Home Contact Us" class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Menu-Contact')</h5></a>
 
             <!-- Flags -->
             <div class="flex justify-center items-center gap-4">
