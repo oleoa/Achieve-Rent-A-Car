@@ -93,6 +93,10 @@ Route::get('/', function(){
 
 Route::prefix('/{locale}')->group(function(){
 
+  Route::get('/', function(){
+    return redirect()->route('home', ['en']);
+  });
+
   Route::get('/achieve', [Home::class, 'index'])->name('home');
 
   Route::get('/about', [About::class, 'index'])->name('about');
