@@ -18,6 +18,10 @@
     <link rel="alternate" href="https://achieverentacar.com/pt/contact" hreflang="pt"/>
     <link rel="alternate" href="https://achieverentacar.com/pt/terms" hreflang="pt"/>
     <link rel="alternate" href="https://achieverentacar.com/pt/privacy" hreflang="pt"/>
+    <meta property="og:title" content="Achieve Rent A Car"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://achieverentacar.com/en"/>
+    <meta property="og:image" content="https://achieverentacar.com/img/logos/logo.png"/>
     <meta name="description" content="@lang('Meta-Description')">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>@lang($title)</title>
