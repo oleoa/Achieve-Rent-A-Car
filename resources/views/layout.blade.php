@@ -31,17 +31,6 @@
     
     <!-- Canonical Pages For Search Engine Optimization -->
     <link rel="canonical" href="https://achieverentacar.com/en"/>
-    <link rel="canonical" href="https://achieverentacar.com/en/about"/>
-    <link rel="canonical" href="https://achieverentacar.com/en/faq"/>
-    <link rel="canonical" href="https://achieverentacar.com/en/contact"/>
-    <link rel="canonical" href="https://achieverentacar.com/en/terms"/>
-    <link rel="canonical" href="https://achieverentacar.com/en/privacy"/>
-    <link rel="canonical" href="https://achieverentacar.com/pt"/>
-    <link rel="canonical" href="https://achieverentacar.com/pt/about"/>
-    <link rel="canonical" href="https://achieverentacar.com/pt/faq"/>
-    <link rel="canonical" href="https://achieverentacar.com/pt/contact"/>
-    <link rel="canonical" href="https://achieverentacar.com/pt/terms"/>
-    <link rel="canonical" href="https://achieverentacar.com/pt/privacy"/>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Madeira Island Achieve Rent A Car"/>
