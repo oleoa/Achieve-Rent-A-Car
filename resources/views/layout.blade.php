@@ -2,10 +2,19 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
   <head>
+
+    <!-- Author (Me) -->
+    <meta name="author" content="Leonardo Abreu de Paulo, leonardo.abreu.de.paulo@gmail.com">
+
+    <!-- Needed Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title And Description For Search Engine Optimization -->
     <meta name="title" content="Achieve Rent A Car Madeira">
-    <meta name="author" content="Leonardo Abreu de Paulo">
+    <meta name="description" content="@lang('Meta-Description')">
+
+    <!-- Languages For Search Engine Optimization -->
     <link rel="alternate" href="https://achieverentacar.com/" hreflang="x-default"/>
     <link rel="alternate" href="https://achieverentacar.com/en" hreflang="en"/>
     <link rel="alternate" href="https://achieverentacar.com/en/about" hreflang="en"/>
@@ -19,13 +28,33 @@
     <link rel="alternate" href="https://achieverentacar.com/pt/contact" hreflang="pt"/>
     <link rel="alternate" href="https://achieverentacar.com/pt/terms" hreflang="pt"/>
     <link rel="alternate" href="https://achieverentacar.com/pt/privacy" hreflang="pt"/>
+    
+    <!-- Canonical Pages For Search Engine Optimization -->
+    <link rel="canonical" href="https://achieverentacar.com/en"/>
+    <link rel="canonical" href="https://achieverentacar.com/en/about"/>
+    <link rel="canonical" href="https://achieverentacar.com/en/faq"/>
+    <link rel="canonical" href="https://achieverentacar.com/en/contact"/>
+    <link rel="canonical" href="https://achieverentacar.com/en/terms"/>
+    <link rel="canonical" href="https://achieverentacar.com/en/privacy"/>
+    <link rel="canonical" href="https://achieverentacar.com/pt"/>
+    <link rel="canonical" href="https://achieverentacar.com/pt/about"/>
+    <link rel="canonical" href="https://achieverentacar.com/pt/faq"/>
+    <link rel="canonical" href="https://achieverentacar.com/pt/contact"/>
+    <link rel="canonical" href="https://achieverentacar.com/pt/terms"/>
+    <link rel="canonical" href="https://achieverentacar.com/pt/privacy"/>
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Achieve Rent A Car"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://achieverentacar.com/en"/>
     <meta property="og:image" content="https://achieverentacar.com/img/logos/logo.png"/>
-    <meta name="description" content="@lang('Meta-Description')">
+
+    <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <!-- Page Title -->
     <title>@lang($title)</title>
+    
   </head>
 
     <body class="min-h-screen flex flex-col justify-between">
