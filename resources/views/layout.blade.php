@@ -47,6 +47,7 @@
     <meta property="og:title" content="Madeira Island Achieve Rent A Car"/>
     <meta property="og:description" content="Unforgettable Madeira adventure! Explore scenic routes, landscapes, and hidden gems with our affordable, reliable car rentals. Book now for a seamless journey!"/>
     <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Achieve Rent a Car"/>
     <meta property="og:url" content="https://achieverentacar.com/en"/>
     <meta property="og:image" content="https://achieverentacar.com/img/logos/logo.png"/>
 
