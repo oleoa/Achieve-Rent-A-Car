@@ -11,7 +11,7 @@
 
     <!-- Help -->
     <div class="flex flex-col justify-center items-center py-8 xl:px-margin px-4 gap-8">
-      <h1 class="xl:text-5xl">@lang('FAQ-Section.1-Title')</h1>
+      <h2 class="xl:text-5xl">@lang('FAQ-Section.1-Title')</h2>
       <div class="w-4/5 xl:w-1/3">
         <x-separator/>
       </div>

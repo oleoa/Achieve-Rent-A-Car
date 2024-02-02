@@ -11,7 +11,7 @@
     <!-- Content -->
     <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-2 py-4 gap-4">
       <div class="flex flex-col gap-4">
-        <h1 class="font-bold">Welcome to Madeira Island, your gateway to adventure!</h1>
+        <h2 class="font-bold">Welcome to Madeira Island, your gateway to adventure!</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam unde quibusdam ut accusantium expedita error nulla dolorem minima. Praesentium aspernatur a dolore fuga commodi expedita magnam cum ipsum non. Id!</p>
       </div>
       <img src="{{url('/img/cards/about.jpeg')}}" alt="Madeira Island Image" class="rounded-xl">
