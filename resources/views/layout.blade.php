@@ -44,7 +44,8 @@
     <link rel="canonical" href="https://achieverentacar.com/pt/privacy"/>
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Achieve Rent A Car"/>
+    <meta property="og:title" content="Explore Madeira Island with Achieve Rent A Car"/>
+    <meta property="og:description" content="Unforgettable Madeira adventure! Explore scenic routes, landscapes, and hidden gems with our affordable, reliable car rentals. Book now for a seamless journey!"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://achieverentacar.com/en"/>
     <meta property="og:image" content="https://achieverentacar.com/img/logos/logo.png"/>
@@ -54,7 +55,7 @@
 
     <!-- Page Title -->
     <title>@lang($title)</title>
-    
+
   </head>
 
     <body class="min-h-screen flex flex-col justify-between">
