@@ -41,6 +41,7 @@ class Controller extends BaseController
 
     $this->data['current'] = $route;
     $this->data['title'] = 'Title-'.$this->data['current'];
+    $this->data['description'] = 'Description-'.$this->data['current'];
     Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale']]);
 
     return view($route, $this->data);

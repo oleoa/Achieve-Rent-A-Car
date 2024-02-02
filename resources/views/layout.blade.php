@@ -10,8 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Title And Description For Search Engine Optimization -->
-    <meta name="title" content="Achieve Rent A Car Madeira">
+    <!-- Description For Search Engine Optimization -->
     <meta name="description" content="@lang('Meta-Description')">
 
     <!-- Languages For Search Engine Optimization -->
