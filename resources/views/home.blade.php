@@ -30,25 +30,25 @@
                 <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="Click here to know us better">@lang('Home-Section.Explore-Button.LeanMore')</a>
             </div>
           </div>
-          <img src="{{asset('/img/tests/a.png')}}" alt="Left Image" class="rounded-lg xl:order-2 order-1">
+          <img src="{{asset('/img/tests/a.png')}}" alt="Madeira Island Image" class="rounded-lg xl:order-2 order-1 w-full">
         </div>
 
     </div>
 
     <!-- Cards Section -->
-    <div class="">
+    <div class="py-8 flex flex-col gap-8">
         
         <!-- Separator -->
-        <div class="pt-4 flex items-center justify-center xl:px-margin px-4">
+        <div class="flex items-center justify-center xl:px-margin px-4">
           <div class="xl:w-1/3 w-full">
             <x-separator/>
           </div>
         </div>
     
         <!-- Cards -->
-        <div class="grid xl:grid-cols-3 grid-cols-1 w-full xl:px-margin px-4 py-4 gap-4">
+        <div class="grid xl:grid-cols-3 w-full xl:px-margin px-4 gap-4">
     
-            <h2 class="xl:col-span-3 text-center font-bold text-4xl">@lang('Home-Section.Cards-Title')</h2>
+            <h2 class="xl:col-span-3 py-4 text-center font-bold text-4xl">@lang('Home-Section.Cards-Title')</h2>
     
             @for($i = 1; $i <= 3; $i++)
                 <div class="rounded-lg shadow-lg">
@@ -67,22 +67,44 @@
     </div>
 
     <!-- Section -->
-    <div>
+    <div class="py-8 flex flex-col gap-8 xl:px-margin px-4">
 
         <!-- Separator -->
-        <div class="py-8 flex items-center justify-center xl:px-margin px-4">
+        <div class="flex items-center justify-center">
           <div class="xl:w-1/3 w-full">
             <x-separator/>
           </div>
         </div>
     
-        <!-- Slide -->
-        <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4 py-4">
-          <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
-            <h2 class="py-0">@lang('Home-Section.2-Title')</h2>
-            <p class="text-center xl:text-start">@lang('Home-Section.2-Paragraph')</p>
-          </div>
-          <img src="https://www.zagope.pt/wp-content/uploads/2018/08/Aeroporto-Internacional-do-Funchal-1.jpg" alt="Left Image" class="rounded-lg xl:order-2 order-1">
+        <!-- Content -->
+        <div class="w-full flex flex-col items-center gap-8">
+
+            <!-- Text -->            
+            <div class="flex flex-col items-center justify-center gap-4 w-1/2">
+
+                <h3 class="py-0">@lang('Home-Section.2-Subtitle')</h3>
+                <h2 class="py-0 font-bold">@lang('Home-Section.2-Title')</h2>
+                <p class="text-center">@lang('Home-Section.2-Paragraph')</p>
+
+            </div>
+
+            <!-- Items -->
+            <div class="grid xl:grid-cols-3 gap-4 w-full">
+                @for ($i = 1; $i <= 3; $i++)
+                    <div class="grid grid-rows-3 items-center justify-items-center rounded-lg shadow-lg p-8">
+                        <img src="{{asset('/img/tests/'.$i.'.png')}}" alt="Item Image" class="rounded-lg h-12">
+                        <h2>@lang('Home-Section.2-Card.'.$i.'-Title')</h2>
+                        <p class="text-center">@lang('Home-Section.2-Card.'.$i.'-Paragraph')</p>
+                    </div>
+                @endfor
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-row items-center gap-4">
+                <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="Click here to go to the top">@lang('Home-Section.2-Button')</button>
+                <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('contact', $locale)}}" title="Click here to contact us">@lang('Home-Section.2-Button.LeanMore')</a>
+            </div>
+
         </div>
 
     </div>
