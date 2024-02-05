@@ -14,25 +14,37 @@
     "Title-terms": "Explore a Ilha da Madeira com a Achieve Rent A Car",
     "Title-privacy": "Explore a Ilha da Madeira com a Achieve Rent A Car",
 
+
     "Home-Banner-Subtitle": "Explore o melhor da Ilha da Madeira com a",
     "Home-Banner-Title": "Achieve Rent A Car",
-    "Home-Section.1-Title": "Faça do aluguer de carro uma experiência agradável",
-    "Home-Section.1-Card.1-Title": "Desfrute da melhor relação custo-benefício em aluguer de carros na Madeira",
-    "Home-Section.1-Card.1-Paragraph": "O nosso objetivo é proporcionar para si a melhor experiência pelo menor custo possível. Para tanto, fazemos o nosso melhor em tudo, pensando sempre em si, inclusive nos nossos preços.",
-    "Home-Section.1-Card.2-Title": "Reserve com facilidade. Receba e devolva em local de sua escolha.",
-    "Home-Section.1-Card.2-Paragraph": "Reserve seu carro connosco online em nosso site ou por Whatsapp. Receba e devolva o carro em locais de sua escolha: aeroporto, hotel, alojamento local, em qualquer lugar da Madeira.",
-    "Home-Section.1-Card.3-Title": "Embarque na Exploração da Ilha com a Achieve Rent A Car",
-    "Home-Section.1-Card.3-Paragraph": "Explore as maravilhas da Ilha da Madeira com a Achieve Rent A Car! Reserve convenientemente o seu carro online através do nosso site ou via Whatsapp. Desfrute da flexibilidade para recolher e devolver o seu carro de aluguer em locais da sua preferência, seja no aeroporto, hotel, alojamento local ou em qualquer outro lugar na encantadora Ilha da Madeira.",
+    
+    "Home-Section.Explore-Title": "Explore the Beauty of Madeira Island",
+    "Home-Section.Explore-Subtitle": "with Achieve Rent A Car",
+    "Home-Section.Explore-Paragraph": "Embark on a journey of awe-inspiring beauty as you immerse yourself in the breathtaking landscapes and vibrant culture that define Madeira Island. Unleash the spirit of exploration and discover every hidden gem at your own pace, thanks to the seamless convenience of renting a car from Achieve Rent A Car. Revel in the freedom to traverse the enchanting terrains, explore charming villages, and embrace the unique essence of Madeira Island with the unparalleled flexibility that comes with our car rental services. Your adventure awaits; let Achieve Rent A Car be your gateway to an unforgettable Madeira experience.",
+    "Home-Section.Explore-Button": "Explore",
+    "Home-Section.Explore-Button.LeanMore": "Saiba mais",
+
+    "Home-Section.Cards-Title": "Faça do aluguer de carro uma experiência agradável",
+    "Home-Section.Cards-Card.1-Title": "Desfrute da melhor relação custo-benefício em aluguer de carros na Madeira",
+    "Home-Section.Cards-Card.1-Paragraph": "O nosso objetivo é proporcionar para si a melhor experiência pelo menor custo possível. Para tanto, fazemos o nosso melhor em tudo, pensando sempre em si, inclusive nos nossos preços.",
+    "Home-Section.Cards-Card.2-Title": "Reserve com facilidade. Receba e devolva em local de sua escolha.",
+    "Home-Section.Cards-Card.2-Paragraph": "Reserve seu carro connosco online em nosso site ou por Whatsapp. Receba e devolva o carro em locais de sua escolha: aeroporto, hotel, alojamento local, em qualquer lugar da Madeira.",
+    "Home-Section.Cards-Card.3-Title": "Embarque na Exploração da Ilha com a Achieve Rent A Car",
+    "Home-Section.Cards-Card.3-Paragraph": "Explore as maravilhas da Ilha da Madeira com a Achieve Rent A Car! Reserve convenientemente o seu carro online através do nosso site ou via Whatsapp. Desfrute da flexibilidade para recolher e devolver o seu carro de aluguer em locais da sua preferência, seja no aeroporto, hotel, alojamento local ou em qualquer outro lugar na encantadora Ilha da Madeira.",
+
     "Home-Section.2-Title": "Title",
     "Home-Section.2-Paragraph": "Paragraph",
 
+
     "About.Us-Banner-Title": "Sobre Nós",
+
 
     "FAQ-Banner-Subtitle": "Perguntas Frequentes",
     "FAQ-Banner-Title": "FAQ",
     "FAQ-Section.1-Title": "Deixe-nos ajudá-lo",
     "FAQ-Section.1-Paragraph.1": "Aqui você encontrará informações úteis sobre nosso processo de reserva e poderá aprender mais sobre os detalhes que talvez precise para concluir sua reserva.",
     "FAQ-Section.1-Paragraph.2": "Sinta-se à vontade para entrar em contato conosco ou usar o botão do WhatsApp se tiver outras perguntas.",
+
 
     "Contact.Us-Banner-Title": "Contate-Nos",
     "Contact.Us-Form-Input-Name": "Nome",
@@ -41,14 +53,17 @@
     "Contact.Us-Form-Input-Message": "Mensagem",
     "Contact.Us-Form-Button": "Enviar",
 
+
     "Whatsapp-Paragraph": "Estamos disponíveis no whatsapp!",
     "Message-ContactSent": "Sua mensagem foi enviada com sucesso.",
     "404": "Página não encontrada",
+
 
     "Menu-Home": "Início",
     "Menu-About": "Sobre Nós",
     "Menu-FAQ": "FAQ",
     "Menu-Contact": "Contate-Nos",
+
 
     "Footer-Legal-Terms": "Termos e Condições.",
     "Footer-Legal-Privacy": "Politicas de Privacidade.",

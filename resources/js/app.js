@@ -53,10 +53,27 @@ for (var i = 0; i < buttons.length; i++) {
 var buttons = document.getElementsByClassName('loaderActivator');
 
 for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', function() {
-    var loadingDiv = document.getElementById('loading');
-    loadingDiv.style.display = (loadingDiv.style.display === 'hidden' || loadingDiv.style.display === '') ? 'flex' : 'hidden';
-  });
+    buttons[i].addEventListener('click', function() {
+        var loadingDiv = document.getElementById('loading');
+        loadingDiv.style.display = (loadingDiv.style.display === 'hidden' || loadingDiv.style.display === '') ? 'flex' : 'hidden';
+    });
+}
+
+var buttonsScrollTop = document.getElementsByClassName('scrollToTop');
+
+for (var i = 0; i < buttonsScrollTop.length; i++) {
+    buttonsScrollTop[i].addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+var buttonsScroll = document.getElementsByClassName('scrollToSell');
+
+for (var i = 0; i < buttonsScroll.length; i++) {
+    buttonsScroll[i].addEventListener('click', function() {
+        var targetSection = document.getElementById("sell");
+        if (targetSection) targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
 }
 
 var colorInput = document.getElementById('color');
@@ -65,25 +82,33 @@ var setColorBlue = document.getElementById('setColorBlue');
 var setColorYellow = document.getElementById('setColorYellow');
 var setColorRed = document.getElementById('setColorRed');
 
-setColorWhite.addEventListener('click', function() {
-  event.preventDefault();
-  colorInput.value = '#ffffff';
-});
+if(setColorWhite){
+    setColorWhite.addEventListener('click', function() {
+      event.preventDefault();
+      colorInput.value = '#ffffff';
+    });
+}
 
-setColorBlue.addEventListener('click', function() {
-  event.preventDefault();
-  colorInput.value = '#263E78';
-});
+if(setColorBlue){
+    setColorBlue.addEventListener('click', function() {
+      event.preventDefault();
+      colorInput.value = '#263E78';
+    });
+}
 
-setColorYellow.addEventListener('click', function() {
-  event.preventDefault();
-  colorInput.value = '#FFD700';
-});
+if(setColorYellow){
+    setColorYellow.addEventListener('click', function() {
+      event.preventDefault();
+      colorInput.value = '#FFD700';
+    });
+}
 
-setColorRed.addEventListener('click', function() {
-  event.preventDefault();
-  colorInput.value = '#DA291C';
-});
+if(setColorRed){
+    setColorRed.addEventListener('click', function() {
+      event.preventDefault();
+      colorInput.value = '#DA291C';
+    });
+}
 
 var textColorInput = document.getElementById('text_color');
 var setTextColorWhite = document.getElementById('setTextColorWhite');
@@ -91,22 +116,30 @@ var setTextColorBlue = document.getElementById('setTextColorBlue');
 var setTextColorYellow = document.getElementById('setTextColorYellow');
 var setTextColorRed = document.getElementById('setTextColorRed');
 
-setTextColorWhite.addEventListener('click', function() {
-  event.preventDefault();
-  textColorInput.value = '#ffffff';
-});
+if(setTextColorWhite){
+    setTextColorWhite.addEventListener('click', function() {
+      event.preventDefault();
+      textColorInput.value = '#ffffff';
+    });
+}
 
-setTextColorBlue.addEventListener('click', function() {
-  event.preventDefault();
-  textColorInput.value = '#263E78';
-});
+if(setTextColorBlue){
+    setTextColorBlue.addEventListener('click', function() {
+      event.preventDefault();
+      textColorInput.value = '#263E78';
+    });
+}
 
-setTextColorYellow.addEventListener('click', function() {
-  event.preventDefault();
-  textColorInput.value = '#FFD700';
-});
+if(setTextColorYellow){
+    setTextColorYellow.addEventListener('click', function() {
+      event.preventDefault();
+      textColorInput.value = '#FFD700';
+    });
+}
 
-setTextColorRed.addEventListener('click', function() {
-  event.preventDefault();
-  textColorInput.value = '#DA291C';
-});
+if(setTextColorRed){
+    setTextColorRed.addEventListener('click', function() {
+      event.preventDefault();
+      textColorInput.value = '#DA291C';
+    });
+}

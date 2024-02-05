@@ -14,25 +14,37 @@
     "Title-terms": "Explore Madeira Island with Achieve Rent A Car",
     "Title-privacy": "Explore Madeira Island with Achieve Rent A Car",
 
+
     "Home-Banner-Subtitle": "Explore the best of Madeira Island with",
     "Home-Banner-Title": "Achieve Rent A Car",
-    "Home-Section.1-Title": "Make car rental a pleasant experience",
-    "Home-Section.1-Card.1-Title": "Enjoy the best value for money on car rental in Madeira",
-    "Home-Section.1-Card.1-Paragraph": "Our goal is to provide you with the best experience at the lowest possible cost. To achieve this, we do our best in everything, always thinking about you, including our prices.",
-    "Home-Section.1-Card.2-Title": "Book with ease. Receive and return to your preferred location.",
-    "Home-Section.1-Card.2-Paragraph": "Book your car with us online on our website or via Whatsapp. Receive and return the car at the locations of your choice: airport, hotel, local accommodation, anywhere in Madeira.",
-    "Home-Section.1-Card.3-Title": "Embark on Island Exploration with Achieve Rent A Car",
-    "Home-Section.1-Card.3-Paragraph": "Explore the wonders of Madeira Island with Achieve Rent A Car! Conveniently book your car online through our website or via Whatsapp. Enjoy the flexibility to pick up and drop off your rental car at locations of your preference, be it the airport, hotel, local accommodation, or anywhere else on the enchanting Madeira Island.",
+
+    "Home-Section.Explore-Title": "Explore the Beauty of Madeira Island",
+    "Home-Section.Explore-Subtitle": "with Achieve Rent A Car",
+    "Home-Section.Explore-Paragraph": "Embark on a journey of awe-inspiring beauty as you immerse yourself in the breathtaking landscapes and vibrant culture that define Madeira Island. Unleash the spirit of exploration and discover every hidden gem at your own pace, thanks to the seamless convenience of renting a car from Achieve Rent A Car. Revel in the freedom to traverse the enchanting terrains, explore charming villages, and embrace the unique essence of Madeira Island with the unparalleled flexibility that comes with our car rental services. Your adventure awaits; let Achieve Rent A Car be your gateway to an unforgettable Madeira experience.",
+    "Home-Section.Explore-Button": "Explore",
+    "Home-Section.Explore-Button.LeanMore": "Learn More",
+
+    "Home-Section.Cards-Title": "Make car rental a pleasant experience",
+    "Home-Section.Cards-Card.1-Title": "Enjoy the best value for money on car rental in Madeira",
+    "Home-Section.Cards-Card.1-Paragraph": "Our goal is to provide you with the best experience at the lowest possible cost. To achieve this, we do our best in everything, always thinking about you, including our prices.",
+    "Home-Section.Cards-Card.2-Title": "Book with ease. Receive and return to your preferred location.",
+    "Home-Section.Cards-Card.2-Paragraph": "Book your car with us online on our website or via Whatsapp. Receive and return the car at the locations of your choice: airport, hotel, local accommodation, anywhere in Madeira.",
+    "Home-Section.Cards-Card.3-Title": "Embark on Island Exploration with Achieve Rent A Car",
+    "Home-Section.Cards-Card.3-Paragraph": "Explore the wonders of Madeira Island with Achieve Rent A Car! Conveniently book your car online through our website or via Whatsapp. Enjoy the flexibility to pick up and drop off your rental car at locations of your preference, be it the airport, hotel, local accommodation, or anywhere else on the enchanting Madeira Island.",
+
     "Home-Section.2-Title": "Achieve Rent A Car",
     "Home-Section.2-Paragraph": "We are a family business with more than 20 years of experience in the car rental market in Madeira. We are proud to be a local company that offers a personalized service to our customers. We are always available to help you with any questions you may have. We are here to make your trip to Madeira a memorable one.",
 
+
     "About.Us-Banner-Title": "About Us",
+
 
     "FAQ-Banner-Subtitle": "Frequently Asked Question",
     "FAQ-Banner-Title": "FAQ",
     "FAQ-Section.1-Title": "Let us help you",
     "FAQ-Section.1-Paragraph.1": "Here you will find helpful information about our booking process and can learn more about the details you may need to complete your reservation.",
     "FAQ-Section.1-Paragraph.2": "Feel free to reach out to us or use the WhatsApp button if you have any other questions.",
+
 
     "Contact.Us-Banner-Title": "Contact Us",
     "Contact.Us-Form-Input-Name": "Name",
@@ -41,15 +53,18 @@
     "Contact.Us-Form-Input-Message": "Message",
     "Contact.Us-Form-Button": "Send",
 
+
     "Whatsapp-Paragraph": "We are available on WhatsApp!",
     "Message-ContactSent": "Your message has been sent successfully.",
     "404": "Page not found",
+
 
     "Menu-Home": "Home",
     "Menu-About": "About Us",
     "Menu-FAQ": "FAQ",
     "Menu-Contact": "Contact Us",
 
+    
     "Footer-Legal-Terms": "Terms and Conditions.",
     "Footer-Legal-Privacy": "Privacy Policies.",
     "Footer-Reserved": "© 2024 Achieve Rent A Car. All rights reserved."

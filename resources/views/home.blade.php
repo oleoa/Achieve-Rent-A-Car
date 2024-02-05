@@ -9,46 +9,82 @@
       <h1 itemprop="https://schema.org/name" class="text-white text-center font-black text-6xl px-4 pb-24">@lang('Home-Banner-Title')</h1>
     </div>
 
-    <!-- Separator -->
-    <div class="pt-4 flex items-center justify-center xl:px-margin px-4">
-      <div class="xl:w-1/3 w-full">
-        <x-separator/>
-      </div>
-    </div>
+    <!-- Section -->
+    <div class="py-8 flex flex-col gap-8">
 
-    <!-- Cards -->
-    <div class="grid xl:grid-cols-3 grid-cols-1 w-full xl:px-margin px-4 py-4 gap-4">
-
-        <h2 class="xl:col-span-3 text-center font-bold text-4xl">@lang('Home-Section.1-Title')</h2>
-
-        @for($i = 1; $i <= 3; $i++)
-            <div class="rounded-lg shadow-lg">
-                <img src="{{asset('/img/cards/'.$i.'.png')}}" alt="Madeira Island Image" class="rounded-t-lg">
-                <div class="p-4">
-                    <h3 class="text-2xl font-bold text-gray-800">@lang('Home-Section.1-Card.'.$i.'-Title')</h3>
-                    <p class="mt-2 text-gray-600">
-                        @lang('Home-Section.1-Card.'.$i.'-Paragraph')
-                    </p>
-                </div>
+        <!-- Separator -->
+        <div class="flex items-center justify-center xl:px-margin px-4">
+          <div class="xl:w-1/3 w-full">
+            <x-separator/>
+          </div>
+        </div>
+    
+        <!-- Content -->
+        <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
+          <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
+            <h2 class="py-0 text-3xl">@lang('Home-Section.Explore-Title')</h2>
+            <h3 class="py-0 text-4xl">@lang('Home-Section.Explore-Subtitle')</h3>
+            <p class="text-center xl:text-start">@lang('Home-Section.Explore-Paragraph')</p>
+            <div class="flex flex-row gap-4">
+                <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="Click here to go to the top">@lang('Home-Section.Explore-Button')</button>
+                <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="Click here to know us better">@lang('Home-Section.Explore-Button.LeanMore')</a>
             </div>
-        @endfor
+          </div>
+          <img src="{{asset('/img/tests/a.png')}}" alt="Left Image" class="rounded-lg xl:order-2 order-1">
+        </div>
 
     </div>
 
-    <!-- Separator -->
-    <div class="py-8 flex items-center justify-center xl:px-margin px-4">
-      <div class="xl:w-1/3 w-full">
-        <x-separator/>
-      </div>
+    <!-- Cards Section -->
+    <div class="">
+        
+        <!-- Separator -->
+        <div class="pt-4 flex items-center justify-center xl:px-margin px-4">
+          <div class="xl:w-1/3 w-full">
+            <x-separator/>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="grid xl:grid-cols-3 grid-cols-1 w-full xl:px-margin px-4 py-4 gap-4">
+    
+            <h2 class="xl:col-span-3 text-center font-bold text-4xl">@lang('Home-Section.Cards-Title')</h2>
+    
+            @for($i = 1; $i <= 3; $i++)
+                <div class="rounded-lg shadow-lg">
+                    <img src="{{asset('/img/cards/'.$i.'.png')}}" alt="Madeira Island Image" class="rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-2xl font-bold text-gray-800">@lang('Home-Section.Cards-Card.'.$i.'-Title')</h3>
+                        <p class="mt-2 text-gray-600">
+                            @lang('Home-Section.Cards-Card.'.$i.'-Paragraph')
+                        </p>
+                    </div>
+                </div>
+            @endfor
+    
+        </div>
+
     </div>
 
-    <!-- Slide -->
-    <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4 py-4">
-      <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
-        <h2 class="py-0">@lang('Home-Section.2-Title')</h2>
-        <p class="text-center xl:text-start">@lang('Home-Section.2-Paragraph')</p>
-      </div>
-      <img src="https://www.zagope.pt/wp-content/uploads/2018/08/Aeroporto-Internacional-do-Funchal-1.jpg" alt="Left Image" class="rounded-lg xl:order-2 order-1">
+    <!-- Section -->
+    <div>
+
+        <!-- Separator -->
+        <div class="py-8 flex items-center justify-center xl:px-margin px-4">
+          <div class="xl:w-1/3 w-full">
+            <x-separator/>
+          </div>
+        </div>
+    
+        <!-- Slide -->
+        <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4 py-4">
+          <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
+            <h2 class="py-0">@lang('Home-Section.2-Title')</h2>
+            <p class="text-center xl:text-start">@lang('Home-Section.2-Paragraph')</p>
+          </div>
+          <img src="https://www.zagope.pt/wp-content/uploads/2018/08/Aeroporto-Internacional-do-Funchal-1.jpg" alt="Left Image" class="rounded-lg xl:order-2 order-1">
+        </div>
+
     </div>
 
   </main>
