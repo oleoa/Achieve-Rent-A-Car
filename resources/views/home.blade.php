@@ -22,8 +22,8 @@
         <!-- Content -->
         <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
           <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
-            <h2 class="py-0 text-3xl">@lang('Home-Section.Explore-Title')</h2>
-            <h3 class="py-0 text-4xl">@lang('Home-Section.Explore-Subtitle')</h3>
+            <h2 class="text-center xl:text-start py-0 xl:text-3xl text-xl">@lang('Home-Section.Explore-Title')</h2>
+            <h3 class="text-center xl:text-start py-0 xl:text-4xl text-3xl">@lang('Home-Section.Explore-Subtitle')</h3>
             <p class="text-center xl:text-start">@lang('Home-Section.Explore-Paragraph')</p>
             <div class="flex flex-row gap-4">
                 <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="Click here to go to the top">@lang('Home-Section.Explore-Button')</button>
@@ -80,10 +80,10 @@
         <div class="w-full flex flex-col items-center gap-8">
 
             <!-- Text -->            
-            <div class="flex flex-col items-center justify-center gap-4 w-1/2">
+            <div class="flex flex-col items-center justify-center gap-4 xl:w-1/2">
 
-                <h3 class="py-0">@lang('Home-Section.2-Subtitle')</h3>
-                <h2 class="py-0 font-bold">@lang('Home-Section.2-Title')</h2>
+                <h3 class="text-center py-0">@lang('Home-Section.2-Subtitle')</h3>
+                <h2 class="text-center py-0 font-bold">@lang('Home-Section.2-Title')</h2>
                 <p class="text-center">@lang('Home-Section.2-Paragraph')</p>
 
             </div>
@@ -91,9 +91,9 @@
             <!-- Items -->
             <div class="grid xl:grid-cols-3 gap-4 w-full">
                 @for ($i = 1; $i <= 3; $i++)
-                    <div class="grid grid-rows-3 items-center justify-items-center rounded-lg shadow-lg p-8">
+                    <div class="xl:grid xl:grid-rows-3 flex flex-col gap-4 xl:gap-0 items-center justify-items-center rounded-lg shadow-lg xl:p-8 p-4">
                         <img src="{{asset('/img/tests/'.$i.'.png')}}" alt="Item Image" class="rounded-lg h-12">
-                        <h2>@lang('Home-Section.2-Card.'.$i.'-Title')</h2>
+                        <h2 class="text-center">@lang('Home-Section.2-Card.'.$i.'-Title')</h2>
                         <p class="text-center">@lang('Home-Section.2-Card.'.$i.'-Paragraph')</p>
                     </div>
                 @endfor
