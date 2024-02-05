@@ -26,8 +26,8 @@
             <h3 class="text-center xl:text-start py-0 xl:text-4xl text-3xl">@lang('Home-Section.Explore-Subtitle')</h3>
             <p class="text-center xl:text-start">@lang('Home-Section.Explore-Paragraph')</p>
             <div class="flex flex-row gap-4">
-                <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="Click here to go to the top">@lang('Home-Section.Explore-Button')</button>
-                <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="Click here to know us better">@lang('Home-Section.Explore-Button.LeanMore')</a>
+                <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-Section.Explore-Button.Title')">@lang('Home-Section.Explore-Button')</button>
+                <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="@lang('Home-Section.Explore-Button.LeanMore.Title')">@lang('Home-Section.Explore-Button.LeanMore')</a>
             </div>
           </div>
           <img src="{{asset('/img/tests/a.png')}}" alt="Madeira Island Image" class="rounded-lg xl:order-2 order-1 w-full">
@@ -101,8 +101,8 @@
 
             <!-- Buttons -->
             <div class="flex flex-row items-center gap-4">
-                <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="Click here to go to the top">@lang('Home-Section.2-Button')</button>
-                <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('contact', $locale)}}" title="Click here to contact us">@lang('Home-Section.2-Button.LeanMore')</a>
+                <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-Section.2-Button.Title')">@lang('Home-Section.2-Button')</button>
+                <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('contact', $locale)}}" title="@lang('Home-Section.2-Button.LeanMore.Title')">@lang('Home-Section.2-Button.LeanMore')</a>
             </div>
 
         </div>
