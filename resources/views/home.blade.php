@@ -92,7 +92,7 @@
             <div class="grid xl:grid-cols-3 gap-4 w-full">
                 @for ($i = 1; $i <= 3; $i++)
                     <div class="xl:grid xl:grid-rows-3 flex flex-col gap-4 xl:gap-0 items-center justify-items-center rounded-lg shadow-lg xl:p-8 p-4">
-                        <img src="{{asset('/img/tests/'.$i.'.png')}}" alt="Item Image" class="rounded-lg h-12">
+                        <img src="{{asset('/img/items/'.$i.'.png')}}" alt="Item Image" class="rounded-lg h-12">
                         <h2 class="text-center">@lang('Home-Section.2-Card.'.$i.'-Title')</h2>
                         <p class="text-center">@lang('Home-Section.2-Card.'.$i.'-Paragraph')</p>
                     </div>

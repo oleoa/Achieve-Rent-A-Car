@@ -45,7 +45,7 @@
     <meta name="twitter:title" content="@lang('Meta-Twitter-Title')"/>
     <meta name="twitter:description" content="@lang('Meta-Twitter-Description')"/>
     <meta name="twitter:creator" content="@o_leo_a"/>
-    <meta name="twitter:image" content="http://www.achieverentacar.com/img/logos/logo.png"/>
+    <meta name="twitter:image" content="http://achieverentacar.com/img/logos/logo.png"/>
 
     <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -71,16 +71,16 @@
         <nav class="h-navbar px-margin bg-white w-full hidden xl:flex justify-between items-center">
 
           <!-- Logo -->
-          <a title="Click to visit the Home Page" href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-14 loaderActivator"></a>
+          <a title="@lang('Menu-Home.Title')" href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-14 loaderActivator"></a>
 
           <!-- Right Part -->
           <div class="flex items-center justify-center gap-6">
 
             <!-- Items -->
-            <a title="Click to visit the Home Page" class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Menu-Home')</h5></a>
-            <a title="Click to visit the About Page" class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('Menu-About')</h5></a>
-            <a title="Click to visit the FAQ Page" class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('Menu-FAQ')</h5></a>
-            <a title="Click to visit the Contact Us Page" class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Menu-Contact')</h5></a>
+            <a title="@lang('Menu-Home.Title')" class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Menu-Home')</h5></a>
+            <a title="@lang('Menu-About.Title')" class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('Menu-About')</h5></a>
+            <a title="@lang('Menu-FAQ.Title')" class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('Menu-FAQ')</h5></a>
+            <a title="@lang('Menu-Contact.Title')" class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Menu-Contact')</h5></a>
 
             <!-- Flags -->
             <div class="flex justify-center items-center gap-4">
@@ -110,23 +110,23 @@
           </div>
 
           <!-- Logo -->
-          <a title="Click to visit the Home Page" href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6 loaderActivator"></a>
+          <a title="@lang('Menu-Home.Title')" href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6 loaderActivator"></a>
 
           <!-- Sidebar Itself -->
           <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
 
             <!-- Items -->
             <div class="flex justify-between pr-4">
-              <a title="Click to visit the Home Page" class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h4 class="p-4">@lang('Menu-Home')</h4></a>
+              <a title="@lang('Menu-Home.Title')" class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h4 class="p-4">@lang('Menu-Home')</h4></a>
               <button id="closeSidebar" class="text-white">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
-            <a title="Click to visit the About Page" class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h4 class="p-4">@lang('Menu-About')</h4></a>
-            <a title="Click to visit the FAQ Page" class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h4 class="p-4">@lang('Menu-FAQ')</h4></a>
-            <a title="Click to visit the Contact US Page" class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h4 class="p-4">@lang('Menu-Contact')</h4></a>
+            <a title="@lang('Menu-About.Title')" class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h4 class="p-4">@lang('Menu-About')</h4></a>
+            <a title="@lang('Menu-FAQ.Title')" class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h4 class="p-4">@lang('Menu-FAQ')</h4></a>
+            <a title="@lang('Menu-Contact.Title')" class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h4 class="p-4">@lang('Menu-Contact')</h4></a>
 
             <!-- Flags -->
             <div class="flex justify-start items-center gap-4 p-4">
@@ -204,7 +204,7 @@
         <div class="bg-flagYellow w-full h-1 rounded"></div>
 
         <!-- Legal -->
-        <p class="text-white"><a title="Click here to see the Terms and Conditions" href="{{route('terms', $locale)}}">@lang('Footer-Legal-Terms')</a> <a title="Click here to see the Privacy Policies" href="{{route('privacy', $locale)}}">@lang('Footer-Legal-Privacy')</a></p>
+        <p class="text-white"><a title="@lang('Footer-Legal-Terms.Title')" href="{{route('terms', $locale)}}">@lang('Footer-Legal-Terms')</a> <a title="@lang('Footer-Legal-Privacy.Title')" href="{{route('privacy', $locale)}}">@lang('Footer-Legal-Privacy')</a></p>
 
         <!-- Reserved -->
         <p class="text-white">@lang('Footer-Reserved')</p>

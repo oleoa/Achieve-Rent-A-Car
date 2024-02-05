@@ -7,12 +7,23 @@
     "Meta-Twitter-Title": "Madeira Island Achieve Rent A Car",
     "Meta-Twitter-Description": "Aventura inesquecível na Madeira! Explore rotas cênicas, paisagens e tesouros escondidos com nossos aluguéis de carros acessíveis e confiáveis.",
 
+
     "Title-home": "Explore a Ilha da Madeira com a Achieve Rent A Car",
     "Title-about": "Explore a Ilha da Madeira com a Achieve Rent A Car",
     "Title-faq": "Explore a Ilha da Madeira com a Achieve Rent A Car",
     "Title-contact": "Explore a Ilha da Madeira com a Achieve Rent A Car",
     "Title-terms": "Explore a Ilha da Madeira com a Achieve Rent A Car",
     "Title-privacy": "Explore a Ilha da Madeira com a Achieve Rent A Car",
+
+    
+    "Menu-Home": "Início",
+    "Menu-Home.Title": "Clique para ir para a página inicial",
+    "Menu-About": "Sobre Nós",
+    "Menu-About.Title": "Clique para ir para a página sobre nós",
+    "Menu-FAQ": "FAQ",
+    "Menu-FAQ.Title": "Clique para ir para a página de perguntas frequentes",
+    "Menu-Contact": "Contate-Nos",
+    "Menu-Contact.Title": "Clique para ir para a página de contato",
 
 
     "Home-Banner-Subtitle": "Explore o melhor da Ilha da Madeira com a",
@@ -32,8 +43,17 @@
     "Home-Section.Cards-Card.3-Title": "Embarque na Exploração da Ilha com a Achieve Rent A Car",
     "Home-Section.Cards-Card.3-Paragraph": "Explore as maravilhas da Ilha da Madeira com a Achieve Rent A Car! Reserve convenientemente o seu carro online através do nosso site ou via Whatsapp. Desfrute da flexibilidade para recolher e devolver o seu carro de aluguer em locais da sua preferência, seja no aeroporto, hotel, alojamento local ou em qualquer outro lugar na encantadora Ilha da Madeira.",
 
-    "Home-Section.2-Title": "Title",
-    "Home-Section.2-Paragraph": "Paragraph",
+    "Home-Section.2-Subtitle": "Explore",
+    "Home-Section.2-Title": "Liberte-se para Explorar a Ilha da Madeira",
+    "Home-Section.2-Paragraph": "Com a Achieve Rent A Car, você pode vivenciar a liberdade definitiva para explorar a Ilha da Madeira no seu próprio ritmo. Quer você deseje descobrir tesouros escondidos ou visitar atrações populares, nossa ampla variedade de veículos garantirá uma jornada confortável e conveniente.",
+    "Home-Section.2-Card.1-Title": "Variedade de Veículos",
+    "Home-Section.2-Card.1-Paragraph": "Escolha entre nossa frota diversificada de veículos, incluindo carros compactos, SUVs e sedãs de luxo, de acordo com suas preferências e necessidades de viagem.",
+    "Home-Section.2-Card.2-Title": "Seguro Abrangente",
+    "Home-Section.2-Card.2-Paragraph": "Dirija com tranquilidade sabendo que nossos carros de aluguel estão totalmente cobertos com seguro abrangente, proporcionando a você proteção e segurança durante toda a sua jornada.",
+    "Home-Section.2-Card.3-Title": "Suporte ao Cliente 24/7",
+    "Home-Section.2-Card.3-Paragraph": "Nossa equipe dedicada de suporte ao cliente está disponível 24/7 para ajudar com quaisquer dúvidas ou preocupações durante o período de locação.",
+    "Home-Section.2-Button": "Reserve Agora",
+    "Home-Section.2-Button.LeanMore": "Saiba Mais",
 
 
     "About.Us-Banner-Title": "Sobre Nós",
@@ -59,13 +79,9 @@
     "404": "Página não encontrada",
 
 
-    "Menu-Home": "Início",
-    "Menu-About": "Sobre Nós",
-    "Menu-FAQ": "FAQ",
-    "Menu-Contact": "Contate-Nos",
-
-
     "Footer-Legal-Terms": "Termos e Condições.",
+    "Footer-Legal-Terms.Title": "Clique para ir para a página de termos e condições",
     "Footer-Legal-Privacy": "Politicas de Privacidade.",
+    "Footer-Legal-Privacy.Title": "Clique para ir para a página de politicas de privacidade",
     "Footer-Reserved": "© 2024 Achieve Rent A Car. Todos os direitos reservados."
 }

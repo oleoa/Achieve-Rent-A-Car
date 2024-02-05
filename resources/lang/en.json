@@ -7,6 +7,7 @@
     "Meta-Twitter-Title": "Madeira Island Achieve Rent A Car",
     "Meta-Twitter-Description": "Unforgettable Madeira adventure! Explore scenic routes, landscapes, and hidden gems with our affordable, reliable car rentals. Book now for a seamless journey!",
 
+
     "Title-home": "Explore Madeira Island with Achieve Rent A Car",
     "Title-about": "Explore Madeira Island with Achieve Rent A Car",
     "Title-faq": "Explore Madeira Island with Achieve Rent A Car",
@@ -14,6 +15,16 @@
     "Title-terms": "Explore Madeira Island with Achieve Rent A Car",
     "Title-privacy": "Explore Madeira Island with Achieve Rent A Car",
 
+    
+    "Menu-Home": "Home",
+    "Menu-Home.Title": "Click to visit the home page",
+    "Menu-About": "About Us",
+    "Menu-About.Title": "Click to visit the about us page",
+    "Menu-FAQ": "FAQ",
+    "Menu-FAQ.Title": "Click to visit the FAQ page",
+    "Menu-Contact": "Contact Us",
+    "Menu-Contact.Title": "Click to visit the contact us page",
+    
 
     "Home-Banner-Subtitle": "Explore the best of Madeira Island with",
     "Home-Banner-Title": "Achieve Rent A Car",
@@ -44,6 +55,7 @@
     "Home-Section.2-Button": "Book Now",
     "Home-Section.2-Button.LeanMore": "Learn More",
 
+    
     "About.Us-Banner-Title": "About Us",
 
 
@@ -66,14 +78,10 @@
     "Message-ContactSent": "Your message has been sent successfully.",
     "404": "Page not found",
 
-
-    "Menu-Home": "Home",
-    "Menu-About": "About Us",
-    "Menu-FAQ": "FAQ",
-    "Menu-Contact": "Contact Us",
-
     
     "Footer-Legal-Terms": "Terms and Conditions.",
+    "Footer-Legal-Terms.Title": "Click to visit the terms and conditions page",
     "Footer-Legal-Privacy": "Privacy Policies.",
+    "Footer-Legal-Privacy.Title": "Click to visit the privacy policies page",
     "Footer-Reserved": "© 2024 Achieve Rent A Car. All rights reserved."
 }
