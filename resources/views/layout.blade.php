@@ -79,6 +79,7 @@
             <!-- Items -->
             <a title="@lang('Menu-Home.Title')" class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Menu-Home')</h5></a>
             <a title="@lang('Menu-About.Title')" class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('Menu-About')</h5></a>
+            <a title="@lang('Menu-Seats.Title')" class="loaderActivator @if($current == 'seats') text-blue-400 underline @endif" href="{{route('seats', $locale)}}"><h5>@lang('Menu-Seats')</h5></a>
             <a title="@lang('Menu-FAQ.Title')" class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('Menu-FAQ')</h5></a>
             <a title="@lang('Menu-Contact.Title')" class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Menu-Contact')</h5></a>
 

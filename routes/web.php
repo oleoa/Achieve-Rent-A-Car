@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\App;
 //Clients Controllers
 use App\Http\Controllers\Client\Home;
 use App\Http\Controllers\Client\About;
+use App\Http\Controllers\Client\Seats;
 use App\Http\Controllers\Client\FAQ;
 use App\Http\Controllers\Client\Contact;
 use App\Http\Controllers\Client\Legal;
@@ -97,9 +98,12 @@ Route::prefix('/{locale}')->group(function(){
 
     Route::get('/about', [About::class, 'index'])->name('about');
 
+    Route::get('/seats', [Seats::class, 'index'])->name('seats');
+
     Route::get('/faq', [FAQ::class, 'index'])->name('faq');
 
     Route::get('/contact', [Contact::class, 'index'])->name('contact');
+    Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
 
     Route::get('/terms', [Legal::class, 'terms'])->name('terms');
 
@@ -107,4 +111,3 @@ Route::prefix('/{locale}')->group(function(){
 
 });
 
-Route::post('/contact', [Contact::class, 'send'])->name('contact-send');

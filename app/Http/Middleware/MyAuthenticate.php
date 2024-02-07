@@ -19,6 +19,7 @@ class MyAuthenticate
   public function handle(Request $request, Closure $next): Response
   {
     $currentRouteName = $request->route()->getName();
+    dd($request->getHost());
     $allowedNotAuthRoutes = [
       "root",
       "home",
