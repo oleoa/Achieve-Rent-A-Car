@@ -20,6 +20,8 @@
     "Menu-Home.Title": "Clique para ir para a página inicial",
     "Menu-About": "Sobre Nós",
     "Menu-About.Title": "Clique para ir para a página sobre nós",
+    "Menu-Seats": "Cadeiras Auto",
+    "Menu-Seats.Title": "Clique para ir para a página das cadeiras auto",
     "Menu-FAQ": "FAQ",
     "Menu-FAQ.Title": "Clique para ir para a página de perguntas frequentes",
     "Menu-Contact": "Contate-Nos",
@@ -61,6 +63,22 @@
 
 
     "About.Us-Banner-Title": "Sobre Nós",
+
+
+    "Seats-Banner-Title": "Cadeiras Auto",
+
+    "Seats-Section.1-Title": "Cadeiras Auto",
+    "Seats-Section.1-Paragraph": "Transporta o teu bebé de forma segura em viagens de carro com as melhores cadeiras auto do mercado. Estas cadeirinhas são uma medida de segurança essencial nos automóveis quando viajamos com bebés ou crianças, diminuindo drasticamente a probabilidade de lesões em caso de acidentes rodoviários. Uma cadeira bebé deve ser instalada no banco traseiro do carro e virada para a retaguarda do veículo até aos 15 meses de idade.",
+
+    "Seats-Section.Cards-Title": "Escolha a Cadeira Auto Certa para o seu Filho",
+    "Seats-Section.Cards-Card.1-Title": "Cadeira Auto Grupo 0",
+    "Seats-Section.Cards-Card.1-Paragraph": "A cadeira auto grupo 0 é apropriada para crianças com um peso até aos 10 kg. Esta cadeira auto é instalada no sentido contrário à marcha do veículo, no banco traseiro do carro.",
+    "Seats-Section.Cards-Card.2-Title": "Cadeira Auto Grupo 1",
+    "Seats-Section.Cards-Card.2-Paragraph": "A cadeira auto grupo 1 é apropriada para crianças com um peso entre os 9 e os 18 kg. Esta cadeira auto é instalada no sentido da marcha do veículo, no banco traseiro do carro.",
+    "Seats-Section.Cards-Card.3-Title": "Cadeira Auto Grupo 2",
+    "Seats-Section.Cards-Card.3-Paragraph": "A cadeira auto grupo 2 é apropriada para crianças com um peso entre os 15 e os 25 kg. Esta cadeira auto é instalada no sentido da marcha do veículo, no banco traseiro do carro.",
+    "Seats-Section.Cards-Card.4-Title": "Cadeira Auto Grupo 3",
+    "Seats-Section.Cards-Card.4-Paragraph": "A cadeira auto grupo 3 é apropriada para crianças com um peso entre os 22 e os 36 kg. Esta cadeira auto é instalada no sentido da marcha do veículo, no banco traseiro do carro.",
 
 
     "FAQ-Banner-Subtitle": "Perguntas Frequentes",

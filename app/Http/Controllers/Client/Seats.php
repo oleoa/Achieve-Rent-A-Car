@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 
-use App\Http\Controllers\Dashboard\Controller;
+use App\Http\Controllers\Client\Controller;
 use Illuminate\Http\Request;
 
 class Seats extends Controller

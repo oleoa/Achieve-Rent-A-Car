@@ -20,6 +20,8 @@
     "Menu-Home.Title": "Click to visit the home page",
     "Menu-About": "About Us",
     "Menu-About.Title": "Click to visit the about us page",
+    "Menu-Seats": "Baby Seats",
+    "Menu-Seats.Title": "Click to visit the baby seats page",
     "Menu-FAQ": "FAQ",
     "Menu-FAQ.Title": "Click to visit the FAQ page",
     "Menu-Contact": "Contact Us",
@@ -61,6 +63,22 @@
 
     
     "About.Us-Banner-Title": "About Us",
+
+    
+    "Seats-Banner-Title": "Baby Seats",
+
+    "Seats-Section.1-Title": "Baby Seats",
+    "Seats-Section.1-Paragraph": "At Achieve Rent A Car, we understand the importance of ensuring the safety and comfort of your little ones during your travels. Our baby seats are designed to provide the highest level of protection and security for your child, allowing you to embark on your journey with peace of mind. Our baby seats are suitable for children of various age groups, ensuring that your little ones are safe and secure throughout your journey.",
+
+    "Seats-Section.Cards-Title": "Choose the right baby seat for your child's safety and comfort.",
+    "Seats-Section.Cards-Card.1-Title": "Baby Seat Group 0",
+    "Seats-Section.Cards-Card.1-Paragraph": "Suitable for newborns and infants up to 10 kg (22 lbs).",
+    "Seats-Section.Cards-Card.2-Title": "Baby Seat Group 1",
+    "Seats-Section.Cards-Card.2-Paragraph": "Suitable for children weighing between 9 and 18 kg (20-40 lbs).",
+    "Seats-Section.Cards-Card.3-Title": "Baby Seat Group 2",
+    "Seats-Section.Cards-Card.3-Paragraph": "Suitable for children weighing between 15 and 25 kg (33-55 lbs).",
+    "Seats-Section.Cards-Card.4-Title": "Baby Seat Group 3",
+    "Seats-Section.Cards-Card.4-Paragraph": "Suitable for children weighing between 22 and 36 kg (48-79 lbs).",
 
 
     "FAQ-Banner-Subtitle": "Frequently Asked Question",
