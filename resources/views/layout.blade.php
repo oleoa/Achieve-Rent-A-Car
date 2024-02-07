@@ -114,18 +114,19 @@
           <a title="@lang('Menu-Home.Title')" href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6 loaderActivator"></a>
 
           <!-- Sidebar Itself -->
-          <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
+          <nav id="sidebar" class="bg-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full">
 
             <!-- Items -->
             <div class="flex justify-between pr-4">
               <a title="@lang('Menu-Home.Title')" class="loaderActivator @if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h4 class="p-4">@lang('Menu-Home')</h4></a>
-              <button id="closeSidebar" class="text-white">
+              <button id="closeSidebar" class="">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
             <a title="@lang('Menu-About.Title')" class="loaderActivator @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h4 class="p-4">@lang('Menu-About')</h4></a>
+            <a title="@lang('Menu-Seats.Title')" class="loaderActivator @if($current == 'seats') text-blue-400 underline @endif" href="{{route('seats', $locale)}}"><h4 class="p-4">@lang('Menu-Seats')</h4></a>
             <a title="@lang('Menu-FAQ.Title')" class="loaderActivator @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h4 class="p-4">@lang('Menu-FAQ')</h4></a>
             <a title="@lang('Menu-Contact.Title')" class="loaderActivator @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h4 class="p-4">@lang('Menu-Contact')</h4></a>
 

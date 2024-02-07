@@ -5,8 +5,8 @@
 
     <!-- Banner -->
     <div itemscope itemtype="https://schema.org/AutoRental" style="background-image: url('/img/titles/home-min.jpeg')" class="xl:h-homeTitleXL h-homeTitle flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
-      <h2 class="text-white text-center font-black px-4">@lang('Home-Banner-Subtitle')</h2>
-      <h1 itemprop="https://schema.org/name" class="text-white text-center font-black text-6xl px-4 pb-24">@lang('Home-Banner-Title')</h1>
+        <h2 class="text-white text-center font-black px-4 xl:flex hidden">@lang('Home-Banner-Subtitle')</h2>
+        <h1 itemprop="https://schema.org/name" class="text-white text-center font-black text-6xl px-4 xl:pb-24">@lang('Home-Banner-Title')</h1>
     </div>
 
     <!-- Section -->
