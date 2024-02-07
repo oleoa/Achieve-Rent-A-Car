@@ -19,23 +19,18 @@ class MyAuthenticate
   public function handle(Request $request, Closure $next): Response
   {
     $currentRouteName = $request->route()->getName();
-    dd($request->getHost());
+    
     $allowedNotAuthRoutes = [
-      "root",
-      "home",
-      "about",
-      "faq",
-      "contact",
-      "contact-send",
-      "terms",
-      "privacy",
-
       "sign.in",
       "sign.out",
       "sign.ing-in",
       "user.setup",
       "user.settingup"
     ];
+
+    $domain = $request->getHost();
+    if($domain != 'dashboard.achieverentacar.com')
+        return $next($request);
 
     if(in_array($currentRouteName, $allowedNotAuthRoutes))      
       return $next($request);
