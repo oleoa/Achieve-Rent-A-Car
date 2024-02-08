@@ -22,9 +22,11 @@
         <!-- Content -->
         <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
           <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
-            <h2 class="text-center xl:text-start py-0 xl:text-4xl">@lang('Home-1-Title')</h2>
-            <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem')</h3>
-            <h4 class="text-center xl:text-start py-0 xl:text-sm">@lang('Home-1-Author')</h4>
+            <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('Home-1-Title')</h2>
+            <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4">
+                <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('Home-1-Poem')</h3>
+                <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
+            </div>
             @if($locale != 'pt')
                 <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem.Translation')</h3>
                 <h4 class="text-center xl:text-start py-0 xl:text-sm">@lang('Home-1-Author.Translation')</h4>
