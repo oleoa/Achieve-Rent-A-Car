@@ -12,7 +12,7 @@
             <h2>@lang('About-1-Title')</h2>
             <p>@lang('About-1-Paragraph')</p>
         </div>
-        <img src="{{url('/img/about/1.png')}}" alt="Madeira Island Image" class="rounded-xl h-min">
+        <img src="{{url('/img/about/1.png')}}" alt="Madeira Island Image" class="rounded-xl">
     </div>
 
 @endsection
