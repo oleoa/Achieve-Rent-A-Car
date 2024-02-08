@@ -7,6 +7,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\Views;
 use App\Models\Discounts;
+use Jenssegers\Agent\Agent;
 
 class Controller extends BaseController
 {
@@ -39,11 +40,11 @@ class Controller extends BaseController
     if($discount) $this->data['discount'] = $discount->toArray();
     else $this->data['discount'] = false;
 
+    $agent = new Agent();
     $this->data['current'] = $route;
     $this->data['title'] = 'Title-'.$this->data['current'];
     $this->data['description'] = 'Description-'.$this->data['current'];
-    Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale']]);
-
+    Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
     return view($route, $this->data);
   }
 }

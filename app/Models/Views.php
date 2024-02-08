@@ -14,6 +14,7 @@ class Views extends Model
   protected $fillable = [
     'id',
     'page',
-    'locale'
+    'locale',
+    'mobile'
   ];
 }
