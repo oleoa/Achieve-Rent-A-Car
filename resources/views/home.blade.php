@@ -22,15 +22,20 @@
         <!-- Content -->
         <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
           <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
-            <h2 class="text-center xl:text-start py-0 xl:text-3xl text-xl">@lang('Home-Section.Explore-Title')</h2>
-            <h3 class="text-center xl:text-start py-0 xl:text-4xl text-3xl">@lang('Home-Section.Explore-Subtitle')</h3>
+            <h2 class="text-center xl:text-start py-0 xl:text-4xl">@lang('Home-Section.Explore-Title')</h2>
+            <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-Section.Explore-Poem')</h3>
+            <h4 class="text-center xl:text-start py-0 xl:text-sm">@lang('Home-Section.Explore-Author')</h4>
+            @if($locale != 'pt')
+                <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-Section.Explore-Poem.Translation')</h3>
+                <h4 class="text-center xl:text-start py-0 xl:text-sm">@lang('Home-Section.Explore-Author.Translation')</h4>
+            @endif
             <p class="text-center xl:text-start">@lang('Home-Section.Explore-Paragraph')</p>
             <div class="flex flex-row gap-4">
                 <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-Section.Explore-Button.Title')">@lang('Home-Section.Explore-Button')</button>
                 <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="@lang('Home-Section.Explore-Button.LeanMore.Title')">@lang('Home-Section.Explore-Button.LeanMore')</a>
             </div>
           </div>
-          <img src="{{asset('/img/tests/a.png')}}" alt="Madeira Island Image" class="rounded-lg xl:order-2 order-1 w-full">
+          <img src="{{asset('/img/home/1.png')}}" alt="Madeira Island Image" class="rounded-lg xl:order-2 order-1 w-full">
         </div>
 
     </div>
@@ -46,21 +51,35 @@
         </div>
     
         <!-- Cards -->
-        <div class="grid xl:grid-cols-3 w-full xl:px-margin px-4 gap-4">
+        <div class="grid xl:grid-cols-2 w-full xl:px-margin px-4 gap-4">
     
-            <h2 class="xl:col-span-3 py-4 text-center font-bold text-4xl">@lang('Home-Section.Cards-Title')</h2>
+            <h2 class="xl:col-span-2 py-4 text-center font-bold text-4xl">@lang('Home-Section.Cards-Title')</h2>
     
-            @for($i = 1; $i <= 3; $i++)
-                <div class="rounded-lg shadow-lg">
-                    <img src="{{asset('/img/cards/'.$i.'.png')}}" alt="Madeira Island Image" class="rounded-t-lg">
-                    <div class="p-4">
-                        <h3 class="text-2xl font-bold text-gray-800">@lang('Home-Section.Cards-Card.'.$i.'-Title')</h3>
-                        <p class="mt-2 text-gray-600">
-                            @lang('Home-Section.Cards-Card.'.$i.'-Paragraph')
+            <div class="rounded-lg shadow-lg">
+                <img src="{{asset('/img/home/2.png')}}" alt="Madeira Island Image" class="rounded-t-lg w-full">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold text-gray-800">@lang('Home-Section.Cards-Card.1-Title')</h3>
+                    <p class="mt-2 text-gray-600">
+                        @lang('Home-Section.Cards-Card.1-Paragraph')
+                    </p>
+                    @for($i = 1; $i <= 5; $i++)
+                        <p class="py-1 flex gap-2">
+                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#263e78" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            @lang('Home-Section.Cards-Card.1-List.'.$i)
                         </p>
-                    </div>
+                    @endfor
                 </div>
-            @endfor
+            </div>
+    
+            <div class="rounded-lg shadow-lg">
+                <img src="{{asset('/img/home/3.png')}}" alt="Madeira Island Image" class="rounded-t-lg w-full">
+                <div class="p-4">
+                    <h3 class="text-2xl font-bold text-gray-800">@lang('Home-Section.Cards-Card.2-Title')</h3>
+                    <p class="mt-2 text-gray-600">
+                        @lang('Home-Section.Cards-Card.2-Paragraph')
+                    </p>
+                </div>
+            </div>
     
         </div>
 
