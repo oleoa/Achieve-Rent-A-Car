@@ -29,7 +29,7 @@ class Controller extends BaseController
     app()->setLocale($locale);
   }
 
-  protected function load($route, $locale)
+  protected function load($view, $route, $locale)
   {
     // Checks if the locale exists
     $this->locale($locale);
@@ -45,6 +45,6 @@ class Controller extends BaseController
     $this->data['title'] = 'Title-'.$this->data['current'];
     $this->data['description'] = 'Description-'.$this->data['current'];
     Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
-    return view($route, $this->data);
+    return view($view, $this->data);
   }
 }

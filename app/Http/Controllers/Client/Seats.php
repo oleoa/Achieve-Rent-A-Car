@@ -9,6 +9,6 @@ class Seats extends Controller
 {
     public function index($locale)
     {
-        return $this->load('seats', $locale);
+        return $this->load('client.seats', 'seats', $locale);
     }
 }

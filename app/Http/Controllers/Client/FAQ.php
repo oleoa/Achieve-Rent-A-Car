@@ -12,6 +12,6 @@ class FAQ extends Controller
   {
     $faq = FAQModel::all()->toArray();
     $this->data('faq', $faq);
-    return $this->load('faq', $locale);
+    return $this->load('client.faq', 'faq', $locale);
   }
 }

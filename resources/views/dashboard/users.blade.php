@@ -1,4 +1,4 @@
-@extends('dashboard.layout')
+@extends('layouts.dashboard')
 @section('main')
 
   <div class="py-4 space-y-4">
@@ -23,7 +23,7 @@
               @csrf
               @method('delete')
               <input type="hidden" name="id" value="{{$user['id']}}">
-              <button type="submit" class="loaderActivator px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed">Delete</button>
+              <button type="submit" class=" px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed">Delete</button>
             </form>
           @endif
         </div>
@@ -40,7 +40,7 @@
           @lang('Is Admin')
           <input id="admin" type="checkbox" name="admin">
         </label>
-        <button type="submit" class="loaderActivator px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Add')</button>
+        <button type="submit" class=" px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Add')</button>
       </form>
     </div>
 

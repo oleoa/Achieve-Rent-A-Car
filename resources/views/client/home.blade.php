@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.client')
 @section('main')
 
   <main class="min-h-screen">
@@ -21,23 +21,23 @@
     
         <!-- Content -->
         <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
-          <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
-            <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('Home-1-Title')</h2>
-            <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4">
-                <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('Home-1-Poem')</h3>
-                <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
+            <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
+                <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('Home-1-Title')</h2>
+                <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4">
+                    <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('Home-1-Poem')</h3>
+                    <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
+                </div>
+                @if($locale != 'pt')
+                    <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem.Translation')</h3>
+                    <h4 class="text-center xl:text-start py-0 xl:text-sm">@lang('Home-1-Author.Translation')</h4>
+                @endif
+                <p class="xl:text-start text-justify">@lang('Home-1-Paragraph')</p>
+                <div class="flex flex-row gap-4">
+                    <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-1-Button.1.Title')">@lang('Home-1-Button.1')</button>
+                    <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="@lang('Home-1-Button.2.Title')">@lang('Home-1-Button.2')</a>
+                </div>
             </div>
-            @if($locale != 'pt')
-                <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem.Translation')</h3>
-                <h4 class="text-center xl:text-start py-0 xl:text-sm">@lang('Home-1-Author.Translation')</h4>
-            @endif
-            <p class="text-center xl:text-start">@lang('Home-1-Paragraph')</p>
-            <div class="flex flex-row gap-4">
-                <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-1-Button.1.Title')">@lang('Home-1-Button.1')</button>
-                <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="@lang('Home-1-Button.2.Title')">@lang('Home-1-Button.2')</a>
-            </div>
-          </div>
-          <img src="{{asset('/img/home/1.png')}}" alt="Madeira Island Image" class="rounded-lg xl:order-2 order-1 w-full">
+            <img src="{{asset('/img/home/1.png')}}" alt="Madeira Island Image" class="rounded-lg xl:order-2 order-1 w-full">
         </div>
 
     </div>
@@ -61,7 +61,7 @@
                 <img src="{{asset('/img/home/2.png')}}" alt="Madeira Island Image" class="rounded-t-lg w-full">
                 <div class="p-4">
                     <h3 class="text-2xl font-bold text-gray-800">@lang('Home-2-Card.1-Title')</h3>
-                    <p class="mt-2 text-gray-600">
+                    <p class="mt-2 text-gray-600 text-justify">
                         @lang('Home-2-Card.1-Paragraph')
                     </p>
                     @for($i = 1; $i <= 5; $i++)
@@ -77,7 +77,7 @@
                 <img src="{{asset('/img/home/3.png')}}" alt="Madeira Island Image" class="rounded-t-lg w-full">
                 <div class="p-4">
                     <h3 class="text-2xl font-bold text-gray-800">@lang('Home-2-Card.2-Title')</h3>
-                    <p class="mt-2 text-gray-600">
+                    <p class="mt-2 text-gray-600 text-justify">
                         @lang('Home-2-Card.2-Paragraph')
                     </p>
                 </div>
@@ -115,7 +115,7 @@
                     <div class="xl:grid xl:grid-rows-3 flex flex-col gap-4 xl:gap-0 items-center justify-items-center rounded-lg shadow-lg xl:p-8 p-4">
                         <img src="{{asset('/img/home/3-items/'.$i.'.png')}}" alt="Item Image" class="rounded-lg h-12">
                         <h2 class="text-center">@lang('Home-3-Card.'.$i.'-Title')</h2>
-                        <p class="text-center">@lang('Home-3-Card.'.$i.'-Paragraph')</p>
+                        <p>@lang('Home-3-Card.'.$i.'-Paragraph')</p>
                     </div>
                 @endfor
             </div>

@@ -9,11 +9,11 @@ class Legal extends Controller
 {
     public function terms($locale)
     {
-        return $this->load('terms', $locale);
+        return $this->load('client.terms', 'terms', $locale);
     }
 
     public function privacy($locale)
     {
-        return $this->load('privacy', $locale);
+        return $this->load('client.privacy', 'privacy', $locale);
     }
 }

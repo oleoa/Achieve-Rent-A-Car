@@ -45,19 +45,19 @@
           <!-- Items -->
           @if($isLogged)
             <div class="flex justify-between pr-4">
-              <a class="@if($current == 'views') text-flagYellow @endif loaderActivator" href="{{route('views')}}"><h5>@lang('Views')</h5></a>
+              <a class="@if($current == 'views') text-flagYellow @endif " href="{{route('views')}}"><h5>@lang('Views')</h5></a>
               <button id="closeSidebar" class="text-white">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
-            <a class="@if($current == 'faq') text-flagYellow @endif loaderActivator" href="{{route('faq.list')}}"><h5>@lang('FAQ')</h5></a>
-            <a class="@if($current == 'discounts') text-flagYellow @endif loaderActivator" href="{{route('discount.list')}}"><h5>@lang('Discounts')</h5></a>
+            <a class="@if($current == 'faq') text-flagYellow @endif " href="{{route('faq.list')}}"><h5>@lang('FAQ')</h5></a>
+            <a class="@if($current == 'discounts') text-flagYellow @endif " href="{{route('discount.list')}}"><h5>@lang('Discounts')</h5></a>
             @if($isAdmin)
-              <a class="@if($current == 'users') text-flagYellow @endif loaderActivator" href="{{route('user.list')}}"><h5>@lang('Users')</h5></a>
+              <a class="@if($current == 'users') text-flagYellow @endif " href="{{route('user.list')}}"><h5>@lang('Users')</h5></a>
             @endif
-            <a href="{{route('sign.out')}}" class="loaderActivator"><h5>@lang('Logout')</h5></a>
+            <a href="{{route('sign.out')}}" class=""><h5>@lang('Logout')</h5></a>
           @endif
 
         </nav>
@@ -71,10 +71,10 @@
         <div class="flex justify-start items-center">
   
           <!-- Logo -->
-          <a href="{{route('views')}}" class="hidden loaderActivator 2xl:flex items-center"><h1 class="text-flagBlue">Dashboard</h1><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-16"></a>
+          <a href="{{route('views')}}" class="hidden  2xl:flex items-center"><h1 class="text-flagBlue">Dashboard</h1><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-16"></a>
 
           <!-- Logo -->
-          <a href="{{route('views')}}" class="2xl:hidden loaderActivator flex items-center pl-8"><img src="{{url('/img/logos/logo.png')}}" alt="Logo Achieve Rent A Car" class="h-12"></a>
+          <a href="{{route('views')}}" class="2xl:hidden  flex items-center pl-8"><img src="{{url('/img/logos/logo.png')}}" alt="Logo Achieve Rent A Car" class="h-12"></a>
 
         </div>
 
@@ -83,13 +83,13 @@
 
           @if($isLogged)
             <!-- Items -->
-            <a class="@if($current == 'views') text-flagYellow @endif loaderActivator" href="{{route('views')}}"><h5>@lang('Views')</h5></a>
-            <a class="@if($current == 'faq') text-flagYellow @endif loaderActivator" href="{{route('faq.list')}}"><h5>@lang('FAQ')</h5></a>
-            <a class="@if($current == 'discounts') text-flagYellow @endif loaderActivator" href="{{route('discount.list')}}"><h5>@lang('Discounts')</h5></a>
+            <a class="@if($current == 'views') text-flagYellow @endif " href="{{route('views')}}"><h5>@lang('Views')</h5></a>
+            <a class="@if($current == 'faq') text-flagYellow @endif " href="{{route('faq.list')}}"><h5>@lang('FAQ')</h5></a>
+            <a class="@if($current == 'discounts') text-flagYellow @endif " href="{{route('discount.list')}}"><h5>@lang('Discounts')</h5></a>
             @if($isAdmin)
-              <a class="@if($current == 'users') text-flagYellow @endif loaderActivator" href="{{route('user.list')}}"><h5>@lang('Users')</h5></a>
+              <a class="@if($current == 'users') text-flagYellow @endif " href="{{route('user.list')}}"><h5>@lang('Users')</h5></a>
             @endif
-            <a href="{{route('sign.out')}}" class="loaderActivator"><h5>@lang('Logout')</h5></a>
+            <a href="{{route('sign.out')}}" class=""><h5>@lang('Logout')</h5></a>
           @endif
 
         </div>

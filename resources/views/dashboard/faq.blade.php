@@ -1,4 +1,4 @@
-@extends('dashboard.layout')
+@extends('layouts.dashboard')
 @section('main')
 
   <div class="py-4 space-y-4">
@@ -18,7 +18,7 @@
             @csrf
             @method('delete')
             <input type="hidden" name="id" value="{{$faq['id']}}">
-            <button type="submit" class="loaderActivator px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed">Delete</button>
+            <button type="submit" class=" px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed">Delete</button>
           </form>
         </div>
       @endforeach
@@ -33,7 +33,7 @@
         <textarea name="answer" placeholder="@lang('Answer in english')" class="p-4 bg-zinc-600 rounded shadow"></textarea>
         <input type="text" name="pergunta" placeholder="@lang('Pergunta em português')" class="p-4 bg-zinc-600 rounded shadow">
         <textarea name="resposta" placeholder="@lang('Resposta em português')" class="p-4 bg-zinc-600 rounded shadow"></textarea>
-        <button type="submit" class="loaderActivator px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Add')</button>
+        <button type="submit" class=" px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Add')</button>
       </form>
     </div>
 

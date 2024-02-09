@@ -1,4 +1,4 @@
-@extends('dashboard.layout')
+@extends('layouts.dashboard')
 @section('main')
   <div class="py-4 space-y-4">
 
@@ -8,7 +8,7 @@
         <form action="{{route('view.delete')}}" method="POST">
             @method('DELETE')
             @csrf
-            <input type="submit" class="hover:text-white cursor-pointer text-red-500 hover:bg-red-500 px-4 py-2 rounded-lg border-2 loaderActivator border-red-500" value="Delete All">
+            <input type="submit" class="hover:text-white cursor-pointer text-red-500 hover:bg-red-500 px-4 py-2 rounded-lg border-2  border-red-500" value="Delete All">
         </form>
     </div>
 
@@ -18,12 +18,12 @@
     <!-- Range -->
     <div class="p-4 bg-zinc-700 xl:flex xl:flex-row gap-4 xl:items-center rounded-lg grid grid-cols-2 w-full">
       <h3 class="col-span-2">@lang('Range')</h3>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2 loaderActivator border-zinc-500 @if($range == 'day') bg-zinc-500 @endif" href="{{route('views', ['range' => 'day'])}}">@lang('Last 24 hours')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2 loaderActivator border-zinc-500 @if($range == 'week') bg-zinc-500 @endif" href="{{route('views', ['range' => 'week'])}}">@lang('Last 7 days')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2 loaderActivator border-zinc-500 @if($range == 'month') bg-zinc-500 @endif" href="{{route('views', ['range' => 'month'])}}">@lang('Last 30 days')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2 loaderActivator border-zinc-500 @if($range == 'quarter') bg-zinc-500 @endif" href="{{route('views', ['range' => 'quarter'])}}">@lang('Last 90 days')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2 loaderActivator border-zinc-500 @if($range == 'year') bg-zinc-500 @endif" href="{{route('views', ['range' => 'year'])}}">@lang('Last 365 days')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2 loaderActivator border-zinc-500 @if($range == 'all') bg-zinc-500 @endif" href="{{route('views', ['range' => 'all'])}}">@lang('All time')</a>
+      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'day') bg-zinc-500 @endif" href="{{route('views', ['range' => 'day'])}}">@lang('Last 24 hours')</a>
+      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'week') bg-zinc-500 @endif" href="{{route('views', ['range' => 'week'])}}">@lang('Last 7 days')</a>
+      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'month') bg-zinc-500 @endif" href="{{route('views', ['range' => 'month'])}}">@lang('Last 30 days')</a>
+      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'quarter') bg-zinc-500 @endif" href="{{route('views', ['range' => 'quarter'])}}">@lang('Last 90 days')</a>
+      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'year') bg-zinc-500 @endif" href="{{route('views', ['range' => 'year'])}}">@lang('Last 365 days')</a>
+      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'all') bg-zinc-500 @endif" href="{{route('views', ['range' => 'all'])}}">@lang('All time')</a>
     </div>
 
     <!-- Description -->

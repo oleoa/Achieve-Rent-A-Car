@@ -8,6 +8,6 @@ class Home extends Controller
 {
   public function index($locale)
   {
-    return $this->load('home', $locale);
+    return $this->load('client.home', 'home', $locale);
   }
 }

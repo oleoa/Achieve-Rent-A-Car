@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
+use App\Http\Controllers\Tests;
+
 //Clients Controllers
 use App\Http\Controllers\Client\Home;
 use App\Http\Controllers\Client\About;
@@ -30,9 +32,9 @@ use App\Http\Controllers\Dashboard\Discounts;
 */
 
 /*
-    Route::domain('dashboard.achieverentacar.com')->group(function () {
+    Route::prefix('/dashboard')->group(function () {
 */
-Route::prefix('/dashboard')->group(function () {
+Route::domain('dashboard.achieverentacar.com')->group(function () {
     
     Route::get('/', function(){ return redirect()->route('views'); })->name('dashboard');
 
@@ -94,21 +96,20 @@ Route::get('/', function(){
 })->name('root');
 
 Route::prefix('/{locale}')->group(function(){
-
+    
     Route::get('/', [Home::class, 'index'])->name('home');
-
+    
     Route::get('/about', [About::class, 'index'])->name('about');
-
+    
     Route::get('/seats', [Seats::class, 'index'])->name('seats');
-
+    
     Route::get('/faq', [FAQ::class, 'index'])->name('faq');
-
+    
     Route::get('/contact', [Contact::class, 'index'])->name('contact');
     Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
-
+    
     Route::get('/terms', [Legal::class, 'terms'])->name('terms');
-
+    
     Route::get('/privacy', [Legal::class, 'privacy'])->name('privacy');
-
+    
 });
-

@@ -1,4 +1,4 @@
-@extends('dashboard.layout')
+@extends('layouts.dashboard')
 @section('main')
 
   <div class="py-4 space-y-4">
@@ -17,7 +17,7 @@
         <input type="text" name="name" placeholder="@lang('Name')" class="p-4 bg-zinc-500 rounded shadow">
         <input type="password" name="password" placeholder="@lang('Password')" class="p-4 bg-zinc-500 rounded shadow">
         <input type="password" name="password_confirmation" placeholder="@lang('Password Confirmation')" class="p-4 bg-zinc-500 rounded shadow">
-        <button type="submit" class="loaderActivator px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Setup')</button>
+        <button type="submit" class=" px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Setup')</button>
       </form>
     </div>
 

@@ -11,7 +11,7 @@ class Contact extends Controller
 {
   public function index($locale)
   {
-    return $this->load('contact', $locale);
+    return $this->load('client.contact', 'contact', $locale);
   }
 
   public function send(Request $request)

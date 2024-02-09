@@ -40,20 +40,10 @@ window.addEventListener('resize', function () {
   updatePadding();
 });
 
-var buttons = document.getElementsByClassName('loaderActivator');
+var links = document.querySelectorAll('a');
 
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', function() {
-    var loadingDiv = document.getElementById('loading');
-    loadingDiv.style.display = (loadingDiv.style.display === 'hidden' || loadingDiv.style.display === '') ? 'flex' : 'hidden';
-  });
-}
-
-
-var buttons = document.getElementsByClassName('loaderActivator');
-
-for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function() {
+for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function() {
         var loadingDiv = document.getElementById('loading');
         loadingDiv.style.display = (loadingDiv.style.display === 'hidden' || loadingDiv.style.display === '') ? 'flex' : 'hidden';
     });

@@ -1,4 +1,4 @@
-@extends('dashboard.layout')
+@extends('layouts.dashboard')
 @section('main')
 
   <div class="py-4 space-y-4">
@@ -19,15 +19,15 @@
           </div>
           <div class="bg-zinc-700 rounded-r-sm flex flex-col gap-4 items-center px-6 py-4 w-32">
             @if($discount['active'])
-              <a href="{{route('discount.disable', ['id' => $discount['id']])}}" class="loaderActivator px-4 py-2 border-2 border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 rounded-lg">Disable</a>
+              <a href="{{route('discount.disable', ['id' => $discount['id']])}}" class=" px-4 py-2 border-2 border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 rounded-lg">Disable</a>
             @else
-              <a href="{{route('discount.enable', ['id' => $discount['id']])}}" class="loaderActivator px-4 py-2 border-2 border-green-500 text-green-500 hover:text-white hover:bg-green-500 rounded-lg">Enable</a>
+              <a href="{{route('discount.enable', ['id' => $discount['id']])}}" class=" px-4 py-2 border-2 border-green-500 text-green-500 hover:text-white hover:bg-green-500 rounded-lg">Enable</a>
             @endif
             <form action="{{route('discount.delete')}}" method="post">
               @csrf
               @method('delete')
               <input type="hidden" name="id" value="{{$discount['id']}}">
-              <button type="submit" class="loaderActivator px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed">Delete</button>
+              <button type="submit" class=" px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed">Delete</button>
             </form>
           </div>
         </div>
@@ -65,7 +65,7 @@
           </div>
           <input type="color" name="text_color" id="text_color" class="px-2 py-1 bg-zinc-500 rounded shadow w-full">
         </div>
-        <button type="submit" class="loaderActivator px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Add')</button>
+        <button type="submit" class=" px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Add')</button>
       </form>
     </div>
 
