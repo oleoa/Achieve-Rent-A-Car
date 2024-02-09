@@ -22,14 +22,11 @@
             <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
                 <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('Home-1-Title')</h2>
                 <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4">
-                    <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('Home-1-Poem')</h3>
-                    @if($locale == 'pt')
-                        <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
-                    @endif
                     @if($locale != 'pt')
-                        <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem.Translation')</h3>
-                        <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author.Translation')</h4>
+                        <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
                     @endif
+                    <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem')</h3>
+                    <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
                 </div>
                 <p class="xl:text-start text-justify">@lang('Home-1-Paragraph')</p>
                 <div class="flex flex-row gap-4">
