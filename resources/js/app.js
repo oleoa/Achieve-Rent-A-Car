@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function updatePadding() {
-  var headerContent = document.getElementById('headerContent');
+  var headerContent = document.querySelector('nav');
   if(headerContent)
     document.getElementById('mainContent').style.paddingTop = headerContent.offsetHeight + 'px';
 }
