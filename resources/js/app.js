@@ -1,6 +1,6 @@
 import './bootstrap';
 
-const sidebar = document.getElementById('sidebar');
+const sidebar = document.querySelector('aside');
 const openSidebarBtn = document.getElementById('openSidebar');
 const closeSidebarBtn = document.getElementById('closeSidebar');
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function updatePadding() {
   var headerContent = document.querySelector('nav');
   if(headerContent)
-    document.getElementById('mainContent').style.paddingTop = headerContent.offsetHeight + 'px';
+    document.querySelector('main').style.paddingTop = headerContent.offsetHeight + 'px';
 }
 
 // Initial padding update

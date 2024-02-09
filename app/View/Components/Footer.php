@@ -6,14 +6,16 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class Separator extends Component
+class Footer extends Component
 {
+    public $locale;
+
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($locale)
     {
-        //
+        $this->locale = $locale;
     }
 
     /**
@@ -21,6 +23,6 @@ class Separator extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.client.separator');
+        return view('components.client.footer');
     }
 }

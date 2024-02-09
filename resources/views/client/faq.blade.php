@@ -1,8 +1,6 @@
 @extends('layouts.client')
 @section('main')
 
-  <main>
-
     <!-- Banner -->
     <div style="background-image: url('/img/titles/faq-min.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
       <h2 class="text-white text-center font-black hidden xl:block text-4xl">@lang('FAQ-Banner-Subtitle')</h2>
@@ -41,7 +39,5 @@
       @endforeach
 
     </div>
-
-  </main>
 
 @endsection

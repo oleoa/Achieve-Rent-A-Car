@@ -1,8 +1,6 @@
 @extends('layouts.client')
 @section('main')
 
-  <main class="min-h-screen">
-
     <!-- Banner -->
     <div itemscope itemtype="https://schema.org/AutoRental" style="background-image: url('/img/home/banner.jpeg')" class="xl:h-homeTitleXL h-homeTitle flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
         <h2 class="text-white text-center font-black px-4 xl:flex hidden">@lang('Home-Banner-Subtitle')</h2>
@@ -129,7 +127,5 @@
         </div>
 
     </div>
-
-  </main>
 
 @endsection

@@ -6,14 +6,17 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class Separator extends Component
+class Navbar extends Component
 {
+    public $current;
+    public $locale;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($current, $locale)
     {
-        //
+        $this->current = $current;
+        $this->locale = $locale;
     }
 
     /**
@@ -21,6 +24,6 @@ class Separator extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.client.separator');
+        return view('components.client.navbar');
     }
 }

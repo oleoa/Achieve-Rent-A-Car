@@ -1,8 +1,6 @@
 @extends('layouts.client')
 @section('main')
 
-  <main>
-  
     <!-- Banner -->
     <div style="background-image: url('/img/titles/contact-min.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
       <h1 class="text-white text-center font-black text-6xl">@lang('Contact.Us-Banner-Title')</h1>
@@ -45,7 +43,5 @@
       </form>
 
     </div>
-
-  </main>
 
 @endsection

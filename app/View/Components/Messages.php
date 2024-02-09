@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class Separator extends Component
+class Messages extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Separator extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.client.separator');
+        return view('components.dashboard.messages');
     }
 }

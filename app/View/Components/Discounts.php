@@ -24,6 +24,6 @@ class Discounts extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.discounts');
+        return view('components.client.discounts');
     }
 }
