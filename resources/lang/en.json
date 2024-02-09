@@ -137,6 +137,18 @@
     "Whatsapp-Paragraph": "We are available on WhatsApp!",
     "Whatsapp-Button.Alt": "Click to chat with one of us via WhatsApp",
 
-    "Message-ContactSent": "Your message has been successfully sent.",
-    "Message-ErrorContactSent": "An error occurred while sending the message. Please try again later."
+    "Message-ContactSent": "Sua mensagem foi enviada com sucesso.",
+
+    "404": "Page not found",
+    "500": "Internal server error",
+
+    "Footer-Social-Instagram.Title": "Click to visit us on Instagram",
+    "Footer-Social-Facebook.Title": "Click to visit us on Facebook",
+    "Footer-Social-Youtube.Title": "Click to visit us on Youtube",
+
+    "Footer-Legal-Terms": "Terms and Conditions.",
+    "Footer-Legal-Terms.Title": "Click to go to the terms and conditions page",
+    "Footer-Legal-Privacy": "Privacy Policies.",
+    "Footer-Legal-Privacy.Title": "Click to go to the privacy policies page",
+    "Footer-Reserved": "© 2024 Achieve Rent A Car.<br>All rights reserved."
 }
