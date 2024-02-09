@@ -22,7 +22,7 @@
             <h2 class="text-center xl:text-start py-0 xl:text-4xl text-xl">@lang('Seats-1-Title')</h2>
             <p class="text-center xl:text-start">@lang('Seats-1-Paragraph')</p>
           </div>
-          <img src="{{asset('/img/tests/b.jpg')}}" alt="Madeira Island Image" class="rounded-lg xl:order-2 order-1 w-full">
+          <img src="{{asset('/img/tests/b.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
         </div>
 
     </div>
@@ -37,7 +37,7 @@
     
             @for($i = 1; $i <= 4; $i++)
                 <div class="rounded-lg shadow-lg">
-                    <img src="{{asset('/img/tests/'.$i.'.png')}}" alt="Madeira Island Image" class="rounded-t-lg">
+                    <img src="{{asset('/img/tests/'.$i.'.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg">
                     <div class="p-4">
                         <h3 class="text-2xl font-bold text-gray-800">@lang('Seats-2-Card.'.$i.'-Title')</h3>
                         <p class="mt-2 text-gray-600">

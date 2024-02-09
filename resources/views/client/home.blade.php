@@ -35,7 +35,7 @@
                     <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="@lang('Home-1-Button.2.Title')">@lang('Home-1-Button.2')</a>
                 </div>
             </div>
-            <img src="{{asset('/img/home/1.png')}}" alt="Madeira Island Image" class="rounded-lg xl:order-2 order-1 w-full">
+            <img src="{{asset('/img/home/1.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
         </div>
 
     </div>
@@ -56,7 +56,7 @@
             <h2 class="xl:col-span-2 py-4 text-center font-bold text-4xl">@lang('Home-2-Title')</h2>
     
             <div class="rounded-lg shadow-lg">
-                <img src="{{asset('/img/home/2.png')}}" alt="Madeira Island Image" class="rounded-t-lg w-full">
+                <img src="{{asset('/img/home/2.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg w-full">
                 <div class="p-4">
                     <h3 class="text-2xl font-bold text-gray-800">@lang('Home-2-Card.1-Title')</h3>
                     <p class="mt-2 text-gray-600 text-justify">
@@ -72,7 +72,7 @@
             </div>
     
             <div class="rounded-lg shadow-lg">
-                <img src="{{asset('/img/home/3.png')}}" alt="Madeira Island Image" class="rounded-t-lg w-full">
+                <img src="{{asset('/img/home/3.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg w-full">
                 <div class="p-4">
                     <h3 class="text-2xl font-bold text-gray-800">@lang('Home-2-Card.2-Title')</h3>
                     <p class="mt-2 text-gray-600 text-justify">

@@ -37,7 +37,7 @@
         @endif
 
         <!-- Logo -->
-        <a href="{{route('views')}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-10 pl-6"></a>
+        <a href="{{route('views')}}"><img src="{{url('/img/logos/logo2.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-10 pl-6"></a>
 
         <!-- Sidebar Itself -->
         <nav id="sidebar" class="bg-zinc-800 text-white h-screen w-44 fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full p-4 text-xl flex flex-col gap-4">
@@ -62,7 +62,7 @@
 
         </nav>
 
-      </div>
+    </div>
       
       <!-- Navbar -->
       <nav class="h-navbar xl:px-20 2xl:px-margin w-full fixed z-40 top-0 bg-neutral-950 text-white hidden xl:flex justify-between items-center select-none">
@@ -71,10 +71,10 @@
         <div class="flex justify-start items-center">
   
           <!-- Logo -->
-          <a href="{{route('views')}}" class="hidden  2xl:flex items-center"><h1 class="text-flagBlue">Dashboard</h1><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-16"></a>
+          <a href="{{route('views')}}" class="hidden  2xl:flex items-center"><h1 class="text-flagBlue">Dashboard</h1><img src="{{url('/img/logos/logo2.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-16"></a>
 
           <!-- Logo -->
-          <a href="{{route('views')}}" class="2xl:hidden  flex items-center pl-8"><img src="{{url('/img/logos/logo.png')}}" alt="Logo Achieve Rent A Car" class="h-12"></a>
+          <a href="{{route('views')}}" class="2xl:hidden  flex items-center pl-8"><img src="{{url('/img/logos/logo.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-12"></a>
 
         </div>
 

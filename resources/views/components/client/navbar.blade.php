@@ -1,7 +1,7 @@
 <div class="h-navbar px-margin bg-white w-full hidden xl:flex justify-between items-center">
 
     <!-- Logo -->
-    <a title="@lang('Menu-Home.Title')" href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="Logo Achieve Rent A Car" class="h-14"></a>
+    <a title="@lang('Menu-Home.Title')" href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-14"></a>
 
     <!-- Right Part -->
     <div class="flex items-center justify-center gap-6">
@@ -16,10 +16,10 @@
         <!-- Flags -->
         <div class="flex justify-center items-center gap-4">
             <a title="@lang('Menu-Locale-En.Title')" href="{{route($current, ['en'])}}">
-                <img src="{{ asset('img/flags/en.png') }}" alt="English Flag" class="w-6 h-4">
+                <img src="{{ asset('img/flags/en.png') }}" alt="@lang('Menu-Locale-En.Alt')" class="w-6 h-4">
             </a>
             <a title="@lang('Menu-Locale-Pt.Title')" href="{{route($current, ['pt'])}}">
-                <img src="{{ asset('img/flags/pt.png') }}" alt="Portuguese Flag" class="w-6 h-4">
+                <img src="{{ asset('img/flags/pt.png') }}" alt="@lang('Menu-Locale-Pt.Alt')" class="w-6 h-4">
             </a>
         </div>
 

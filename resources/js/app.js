@@ -40,7 +40,7 @@ window.addEventListener('resize', function () {
   updatePadding();
 });
 
-var links = document.querySelectorAll('a');
+var links = document.querySelectorAll('a:not([target="_blank"])');
 
 for (var i = 0; i < links.length; i++) {
     links[i].addEventListener('click', function() {

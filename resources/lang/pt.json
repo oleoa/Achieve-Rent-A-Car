@@ -13,6 +13,9 @@
     "Title-terms": "Termos e Condições da Achieve Rent A Car",
     "Title-privacy": "Politicas de Privacidade da Achieve Rent A Car",
 
+    "Madeira.Island.Image.Alt": "Imagem da Ilha da Madeira",
+
+    "Menu-Logo.Alt": "Logo Achieve Rent A Car",
     "Menu-Home": "Início",
     "Menu-Home.Title": "Clique para ir para a página inicial",
     "Menu-About": "Sobre Nós",
@@ -25,11 +28,11 @@
     "Menu-Contact.Title": "Clique para ir para a página de contato",
     "Menu-Locale-En.Title": "Clique para mudar para Inglês",
     "Menu-Locale-Pt.Title": "Clique para mudar para Português",
-
+    "Menu-Locale-En.Alt": "Bandeira do Reino Unido",
+    "Menu-Locale-Pt.Alt": "Bandeira de Portugal",
 
     "Home-Banner-Subtitle": "Explore o melhor da Ilha da Madeira com a",
-    "Home-Banner-Title": "Achieve Rent A Car",
-    
+    "Home-Banner-Title": "Achieve Rent A Car",    
     "Home-1-Title": "Explore a beleza inigualável da Ilha da Madeira<br>De Norte a Sul, de Leste a Oeste, vá com Achieve Rent a Car",
     "Home-1-Poem": "“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”",
     "Home-1-Author": "Bailinho da Madeira, canção adaptada por Maximiano de Sousa, em 1949",
@@ -38,7 +41,6 @@
     "Home-1-Button.1.Title": "Clique para ir para a página de aluguer de carros na Madeira",
     "Home-1-Button.2": "Saiba mais",
     "Home-1-Button.2.Title": "Clique para saber mais sobre a Achieve Rent A Car",
-    
     "Home-2-Title": "Faça do aluguer de carro uma experiência agradável",
     "Home-2-Card.1-Title": "Desfrute da melhor relação custo-benefício em aluguer de carros na Madeira",
     "Home-2-Card.1-Paragraph": "O nosso objetivo é proporcionar para si a melhor experiência pelo menor custo possível. Para tanto, fazemos o nosso melhor em tudo. Pensando sempre em si, proporcionamos:",
@@ -49,7 +51,6 @@
     "Home-2-Card.1-List.5": "Quilometragem ilimitada",
     "Home-2-Card.2-Title": "Reserve com facilidade. Receba e devolva a viatura em locais de sua escolha.",
     "Home-2-Card.2-Paragraph": "Reserve de forma rápida e fácil: pode fazê-lo online, aqui mesmo em nosso site ou, se preferir, por Whatsapp. Receba e devolva a viatura com total conveniência, mesmo à sua porta, seja no aeroporto, no seu hotel, alojamento local ou em qualquer lugar na Ilha da Madeira. Levamos a viatura até si, onde estiver. Conte com o nosso atendimento gentil, rápido, sem esperas, sem filas, sem burocracias.",
-    
     "Home-3-Subtitle": "Explore",
     "Home-3-Title": "Liberte-se para Explorar a Ilha da Madeira",
     "Home-3-Paragraph": "Alugue um carro com a Achieve Rent a Car e usufrua da liberdade de explorar a belíssima Ilha da Madeira ao seu próprio ritmo. Seja por descobrir tesouros escondidos ou por visitar atrações populares, conte com todos os benefícios que a Achieve Rent a Car vai lhe proporcionar e garanta uma viagem segura, confortável e conveniente.",
@@ -64,17 +65,13 @@
     "Home-3-Button.2": "Saiba Mais",
     "Home-3-Button.2.Title": "Clique para saber mais sobre a Achieve Rent A Car",
 
-
     "About-Banner-Title": "Sobre Nós",
     "About-1-Title": "Um pouco sobre nós",
     "About-1-Paragraph": "A Achieve Rent a Car é uma empresa jovem, dinâmica e muito atenta às necessidades e desejos de seus clientes. O nosso objetivo é, através dos nossos produtos e serviços de excepcional qualidade, proporcionar a você que visita a nossa bela Ilha da Madeira, uma experiência memorável e inesquecível.<br><br>Somos uma família unida e muito motivada em prestar para si o melhor atendimento possível e contribuir para que a sua viagem por aqui seja segura, tranquila e muito agradável. Queremos mesmo que você fique plenamente satisfeito com tudo em relação a nós.<br><br>Então venha connosco!<br>Desfrute da nossa bela Ilha com toda a liberdade e flexibilidade que somente um carro pode lhe proporcionar. E conceda-nos a honra de fornecer a si a segurança, o conforto e a conveniência que você merece!<br><br>Achieve Rent a Car",
 
-
     "Seats-Banner-Title": "Cadeiras Auto",
-
     "Seats-1-Title": "Cadeiras Auto",
     "Seats-1-Paragraph": "Nós da Achieve Rent a Car, queremos que nossos clientes tenham uma experiência fantástica ao visitarem a nossa Ilha.<br>A segurança de todos é primordial para nós! E isso fica ainda mais sério quando envolve a segurança dos nossos pequenos clientes, que são os seus bebés e as suas crianças! Por isso, colocamos à sua disposição as melhores cadeiras auto do mercado. Abaixo, pode identificar o modelo e grupo que melhor se adapta às suas necessidades.",
-
     "Seats-2-Title": "Escolha a Cadeira Auto Certa para o seu Filho",
     "Seats-2-Card.1-Title": "Cadeira Auto Grupo 0",
     "Seats-2-Card.1-Paragraph": "A cadeira auto grupo 0 é apropriada para crianças com um peso até aos 10 kg. Esta cadeira auto é instalada no sentido contrário à marcha do veículo, no banco traseiro do carro.",
@@ -85,13 +82,11 @@
     "Seats-2-Card.4-Title": "Cadeira Auto Grupo 3",
     "Seats-2-Card.4-Paragraph": "A cadeira auto grupo 3 é apropriada para crianças com um peso entre os 22 e os 36 kg. Esta cadeira auto é instalada no sentido da marcha do veículo, no banco traseiro do carro.",
 
-
     "FAQ-Banner-Subtitle": "Perguntas Frequentes",
     "FAQ-Banner-Title": "FAQ",
     "FAQ-Section.1-Title": "Deixe-nos ajudá-lo",
     "FAQ-Section.1-Paragraph.1": "Encontre aqui as respostas para as perguntas mais frequentes sobre a Achieve Rent A Car.",
     "FAQ-Section.1-Paragraph.2": "Se não encontrar a resposta que procura, entre em contato conosco e teremos o maior prazer em ajudá-lo.",
-
 
     "Contact.Us-Banner-Title": "Contate-Nos",
     "Contact.Us-Form-Input-Name": "Nome",
@@ -100,10 +95,13 @@
     "Contact.Us-Form-Input-Message": "Mensagem",
     "Contact.Us-Form-Button": "Enviar",
 
-
     "Whatsapp-Paragraph": "Estamos disponíveis no whatsapp!",
+    "Whatsapp-Button.Alt": "Clique para falar com um de nós pelo whatsapp",
+
     "Message-ContactSent": "Sua mensagem foi enviada com sucesso.",
+
     "404": "Página não encontrada",
+    "500": "Erro no servidor",
 
     "Footer-Social-Instagram.Title": "Clique aqui para nos visitar no Instagram",
     "Footer-Social-Facebook.Title": "Clique aqui para nos visitar no Facebook",
