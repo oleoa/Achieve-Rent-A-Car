@@ -23,12 +23,14 @@
                 <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('Home-1-Title')</h2>
                 <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4">
                     <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('Home-1-Poem')</h3>
-                    <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
+                    @if($locale == 'pt')
+                        <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
+                    @endif
+                    @if($locale != 'pt')
+                        <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem.Translation')</h3>
+                        <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author.Translation')</h4>
+                    @endif
                 </div>
-                @if($locale != 'pt')
-                    <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem.Translation')</h3>
-                    <h4 class="text-center xl:text-start py-0 xl:text-sm">@lang('Home-1-Author.Translation')</h4>
-                @endif
                 <p class="xl:text-start text-justify">@lang('Home-1-Paragraph')</p>
                 <div class="flex flex-row gap-4">
                     <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-1-Button.1.Title')">@lang('Home-1-Button.1')</button>

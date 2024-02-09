@@ -21,7 +21,7 @@
     </div>
 
     <!-- Questions -->
-    <div class="xl:px-margin px-4 text-white flex flex-col gap-2">
+    <div class="xl:px-margin px-4 text-white flex flex-col gap-2 pb-4">
 
       @foreach ($faq as $f)
         <div class="faq flex flex-col gap-1">
