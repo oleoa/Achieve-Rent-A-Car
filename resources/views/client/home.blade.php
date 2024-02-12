@@ -7,9 +7,11 @@
         <h1 itemprop="https://schema.org/name" class="text-white text-center font-black text-6xl px-4 xl:pb-24">@lang('Home-Banner-Title')</h1>
     </div>
 
-    <!-- 0 -->    
-    <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
-    <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+    <!-- 0 -->
+    <div id="portal">
+        <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
+        <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+    </div>
 
     <!-- 1 -->
     <div class="pb-8 flex flex-col gap-8">
@@ -34,7 +36,7 @@
                 </div>
                 <p class="xl:text-start text-justify">@lang('Home-1-Paragraph')</p>
                 <div class="flex flex-row gap-4">
-                    <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-1-Button.1.Title')">@lang('Home-1-Button.1')</button>
+                    <button class="scrollToPortal shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-1-Button.1.Title')">@lang('Home-1-Button.1')</button>
                     <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="@lang('Home-1-Button.2.Title')">@lang('Home-1-Button.2')</a>
                 </div>
             </div>
@@ -123,7 +125,7 @@
 
             <!-- Buttons -->
             <div class="flex flex-row items-center gap-4">
-                <button class="scrollToTop shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-3-Button.1.Title')">@lang('Home-3-Button.1')</button>
+                <button class="scrollToPortal shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-3-Button.1.Title')">@lang('Home-3-Button.1')</button>
                 <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('contact', $locale)}}" title="@lang('Home-3-Button.2.Title')">@lang('Home-3-Button.2')</a>
             </div>
 

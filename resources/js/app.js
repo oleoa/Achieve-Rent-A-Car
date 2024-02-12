@@ -57,6 +57,15 @@ for (var i = 0; i < buttonsScrollTop.length; i++) {
     });
 }
 
+var scrollToPortal = document.getElementsByClassName('scrollToPortal');
+
+for (var i = 0; i < scrollToPortal.length; i++) {
+    scrollToPortal[i].addEventListener('click', function() {
+        var targetSection = document.getElementById("portal");
+        if (targetSection) targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+}
+
 var buttonsScroll = document.getElementsByClassName('scrollToSell');
 
 for (var i = 0; i < buttonsScroll.length; i++) {
