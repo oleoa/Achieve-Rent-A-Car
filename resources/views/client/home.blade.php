@@ -7,8 +7,12 @@
         <h1 itemprop="https://schema.org/name" class="text-white text-center font-black text-6xl px-4 xl:pb-24">@lang('Home-Banner-Title')</h1>
     </div>
 
+    <!-- 0 -->    
+    <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
+    <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+
     <!-- 1 -->
-    <div class="py-8 flex flex-col gap-8">
+    <div class="pb-8 flex flex-col gap-8">
 
         <!-- Separator -->
         <div class="flex items-center justify-center xl:px-margin px-4">
