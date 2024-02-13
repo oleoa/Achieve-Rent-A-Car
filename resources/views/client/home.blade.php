@@ -24,23 +24,31 @@
         </div>
     
         <!-- Content -->
-        <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
-            <div class="flex flex-col xl:items-start items-center justify-between gap-4 xl:order-1 order-2">
+        <div class="w-full xl:px-margin px-4 grid xl:grid-cols-5 grid-cols-1 gap-4">
+
+            <!-- Text -->
+            <div class="flex flex-col xl:items-start items-center justify-between gap-4 xl:order-1 order-2 xl:col-span-3">
+
+                <!-- Title -->
                 <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('Home-1-Title')</h2>
-                <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4">
+
+                <!-- Poem -->
+                <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4 w-full">
                     @if($locale != 'pt')
                         <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
                     @endif
                     <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('Home-1-Poem')</h3>
                     <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
                 </div>
+
+                <!-- Paragraph -->
                 <p class="xl:text-start text-justify">@lang('Home-1-Paragraph')</p>
-                <div class="flex flex-row gap-4">
-                    <button class="scrollToPortal shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-1-Button.1.Title')">@lang('Home-1-Button.1')</button>
-                    <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('about', $locale)}}" title="@lang('Home-1-Button.2.Title')">@lang('Home-1-Button.2')</a>
-                </div>
+
             </div>
-            <img src="{{asset('/img/home/1.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
+
+            <!-- Image -->
+            <img src="{{asset('/img/home/1.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 max-w-full h-auto w-full xl:col-span-2">
+
         </div>
 
     </div>
@@ -121,12 +129,6 @@
                         <p>@lang('Home-3-Card.'.$i.'-Paragraph')</p>
                     </div>
                 @endfor
-            </div>
-
-            <!-- Buttons -->
-            <div class="flex flex-row items-center gap-4">
-                <button class="scrollToPortal shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl" title="@lang('Home-3-Button.1.Title')">@lang('Home-3-Button.1')</button>
-                <a class="shadow-lg px-4 py-2 bg-flagBlue text-white rounded-md hover:bg-blue-700 hover:shadow-xl cursor-pointer hover:text-white" href="{{route('contact', $locale)}}" title="@lang('Home-3-Button.2.Title')">@lang('Home-3-Button.2')</a>
             </div>
 
         </div>
