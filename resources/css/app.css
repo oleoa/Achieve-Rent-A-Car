@@ -45,60 +45,21 @@ reservas.achieverentacar.com
 }
 
 .page-header {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.col-md-4 {
-    padding: 0px!important;
-    padding-right: 10px!important;
-    padding-left: 10px!important;
     margin: 0px!important;
-}
-
-.col-sm-6 {
-    padding: 5px!important;
-    margin: 0px!important;
-}
-
-.col-sm-12 {
-    padding: 5px!important;
-    margin: 0px!important;
-    width: 100%;
-}
-
-.container {
-    padding: 0px!important;
-    margin: 0px!important;
+    padding-bottom: 0px;
 }
 
 .form-container {
-    margin: 0px;
     padding: 0px!important;
 }
 
-.form-group {
-    margin: 0px;
-    padding-right: 10px!important;
-    padding-left: 10px!important;
-    padding-bottom: 5px!important;
-}
-
-.visible-sm-block {
-    display: none!important;
+.booking-bar--wide {
+    padding: 0px!important;
 }
 
 .btn {
     margin-top: 0px!important;
     border-radius: 8px;
-}
-
-.booking-bar--wide {
-    margin: 0px;
-    padding: 0px;
 }
 
 .page-wrap {
@@ -116,43 +77,26 @@ reservas.achieverentacar.com
 
 .page-header h2 {
     font-size: 2rem!important;
+    width: 100%;
+    text-align: center;
 }
 
 @media (min-width: 1280px) {
     
     .header-attachment {
         order: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     .rent-locations-dates {
         order: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-	    flex-direction: column;
-        gap: 32px;
     }
-    
-    .page-header {
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    }
-    
+        
     .page-header h2 {
         font-size: 3rem!important;
-    }
-    
-    .form-container {
-        display: flex;
-        align-items: center;
-        justify-content: start;
+        text-align: start;
+        padding-bottom: 15px;
     }
     
 }
+
 */
