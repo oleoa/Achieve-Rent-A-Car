@@ -71,8 +71,8 @@
             <div class="rounded-lg shadow-lg">
                 <img src="{{asset('/img/home/2.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg w-full">
                 <div class="p-4">
-                    <h3 class="text-2xl font-bold text-gray-800">@lang('Home-2-Card.1-Title')</h3>
-                    <p class="mt-2 text-gray-600 text-justify">
+                    <h3 class="text-2xl font-bold">@lang('Home-2-Card.1-Title')</h3>
+                    <p class="mt-2 text-justify">
                         @lang('Home-2-Card.1-Paragraph')
                     </p>
                     @for($i = 1; $i <= 5; $i++)
@@ -87,8 +87,8 @@
             <div class="rounded-lg shadow-lg">
                 <img src="{{asset('/img/home/3.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg w-full">
                 <div class="p-4">
-                    <h3 class="text-2xl font-bold text-gray-800">@lang('Home-2-Card.2-Title')</h3>
-                    <p class="mt-2 text-gray-600 text-justify">
+                    <h3 class="text-2xl font-bold">@lang('Home-2-Card.2-Title')</h3>
+                    <p class="mt-2 text-justify">
                         @lang('Home-2-Card.2-Paragraph')
                     </p>
                 </div>

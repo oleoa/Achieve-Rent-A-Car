@@ -6,8 +6,8 @@ use App\Http\Controllers\Client\Controller;
 
 class Home extends Controller
 {
-  public function index($locale)
-  {
-    return $this->load('client.home', 'home', $locale);
-  }
+    public function index($locale)
+    {
+        return $this->load('client.home', 'home', $locale);
+    }
 }
