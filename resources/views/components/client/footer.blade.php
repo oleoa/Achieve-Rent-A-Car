@@ -30,6 +30,9 @@
     </p>
 
     <!-- Reserved -->
-    <p class="text-white">@lang('Footer-Reserved')</p>
+    <div class="flex xl:flex-row flex-col gap-1">
+        <p class="text-white">@lang('Footer-@')</p>
+        <p class="text-white">@lang('Footer-Reserved')</p>
+    </div>
 
 </footer>
