@@ -4,7 +4,7 @@
     <!-- Banner -->
     <div itemscope itemtype="https://schema.org/AutoRental" style="background-image: url('/img/home/banner.jpeg')" class="xl:h-homeTitleXL h-homeTitle flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
         <h2 class="text-white text-center font-black px-4 xl:flex hidden">@lang('Home-Banner-Subtitle')</h2>
-        <h1 itemprop="https://schema.org/name" class="text-white text-center font-black text-6xl px-4 xl:pb-24">@lang('Home-Banner-Title')</h1>
+        <h1 itemprop="https://schema.org/name" class="text-white text-center font-black text-6xl px-4">@lang('Home-Banner-Title')</h1>
     </div>
 
     <!-- 0 -->
@@ -25,7 +25,7 @@
     
         <!-- Content -->
         <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
-            <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
+            <div class="flex flex-col xl:items-start items-center justify-between gap-4 xl:order-1 order-2">
                 <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('Home-1-Title')</h2>
                 <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4">
                     @if($locale != 'pt')
