@@ -2,19 +2,19 @@
 @section('main')
 
     <!-- Banner -->
-    <div itemscope itemtype="https://schema.org/AutoRental" style="background-image: url('/img/home/banner.jpeg')" class="xl:h-homeTitleXL h-homeTitle flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
+    <div id="home-banner" itemscope itemtype="https://schema.org/AutoRental" style="background-image: url('/img/home/banner.jpeg')" class="xl:h-homeTitleXL h-homeTitle flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
         <h2 class="text-white text-center font-black px-4 xl:flex hidden">@lang('Home-Banner-Subtitle')</h2>
         <h1 itemprop="https://schema.org/name" class="text-white text-center font-black text-6xl px-4">@lang('Home-Banner-Title')</h1>
     </div>
 
     <!-- 0 -->
-    <div id="portal">
+    <div id="portal" class="xl:px-0 px-4 xl:pt-0 pt-4">
         <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
         <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </div>
 
     <!-- 1 -->
-    <div class="pb-8 flex flex-col gap-8">
+    <div class="py-8 flex flex-col gap-8">
 
         <!-- Separator -->
         <div class="flex items-center justify-center xl:px-margin px-4">
@@ -31,7 +31,7 @@
                     @if($locale != 'pt')
                         <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
                     @endif
-                    <h3 class="text-center xl:text-start py-0 xl:text-2xl">@lang('Home-1-Poem')</h3>
+                    <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('Home-1-Poem')</h3>
                     <h4 class="py-0 text-sm text-end w-full">@lang('Home-1-Author')</h4>
                 </div>
                 <p class="xl:text-start text-justify">@lang('Home-1-Paragraph')</p>
