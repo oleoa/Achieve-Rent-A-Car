@@ -18,7 +18,7 @@
         </div>
 
         <!-- Image -->
-        <img src="{{url('/img/about/3.jpeg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl xl:col-span-2">
+        <img src="{{url('/img/about/3.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl xl:col-span-2">
 
     </div>
 

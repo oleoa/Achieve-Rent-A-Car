@@ -7,44 +7,69 @@
     </div>
 
     <!-- 1 -->
-    <div class="py-8 flex flex-col gap-8">
-
-        <!-- Separator -->
-        <div class="flex items-center justify-center xl:px-margin px-4">
-          <div class="xl:w-1/3 w-full">
-            <x-separator/>
-          </div>
-        </div>
+    <div class="py-4 flex flex-col gap-8">
     
         <!-- Content -->
         <div class="w-full xl:px-margin px-4 grid xl:grid-cols-2 grid-cols-1 gap-4">
-          <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
-            <h2 class="text-center xl:text-start py-0 xl:text-4xl text-xl">@lang('Seats-1-Title')</h2>
-            <p class="text-center xl:text-start">@lang('Seats-1-Paragraph')</p>
-          </div>
-          <img src="{{asset('/img/tests/b.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
+
+            <!-- Text -->
+            <div class="flex flex-col xl:items-start items-center justify-center gap-4 xl:order-1 order-2">
+
+                <!-- Title -->
+                <h2 class="text-center xl:text-start py-0 xl:text-4xl text-xl font-bold">@lang('Seats-1-Title')</h2>
+
+                <!-- Paragraph -->
+                <p class="text-justify xl:text-start">@lang('Seats-1-Paragraph')</p>
+
+            </div>
+
+            <!-- Image -->
+            <img src="{{asset('/img/tests/b.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
+
+        </div>
+
+        
+        <!-- Separator -->
+        <div class="flex items-center justify-center xl:px-margin px-4">
+            <div class="xl:w-1/3 w-full">
+                <x-separator/>
+            </div>
         </div>
 
     </div>
 
     <!-- 2 -->
-    <div class="py-8 flex flex-col gap-8">
+    <div class="py-4 flex flex-col gap-8">
             
+        <!-- Title -->
+        <h2 class="py-4 text-center font-bold text-4xl">@lang('Seats-2-Title')</h2>
+
         <!-- Cards -->
-        <div class="grid xl:grid-cols-4 w-full xl:px-margin px-4 gap-4">
+        <div class="grid xl:grid-cols-4 w-full xl:px-margin px-4 gap-4">    
     
-            <h2 class="xl:col-span-4 py-4 text-center font-bold text-4xl">@lang('Seats-2-Title')</h2>
-    
+            <!-- Cards -->
             @for($i = 1; $i <= 4; $i++)
+
+                <!-- Card -->
                 <div class="rounded-lg shadow-lg">
+
+                    <!-- Image -->
                     <img src="{{asset('/img/tests/'.$i.'.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg">
+
                     <div class="p-4">
-                        <h3 class="text-2xl font-bold text-gray-800">@lang('Seats-2-Card.'.$i.'-Title')</h3>
-                        <p class="mt-2 text-gray-600">
+
+                        <!-- Title -->
+                        <h3 class="text-2xl font-bold">@lang('Seats-2-Card.'.$i.'-Title')</h3>
+
+                        <!-- Paragraph -->
+                        <p class="py-2">
                             @lang('Seats-2-Card.'.$i.'-Paragraph')
                         </p>
+
                     </div>
+
                 </div>
+
             @endfor
     
         </div>
