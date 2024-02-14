@@ -6,6 +6,7 @@
     "Meta-Twitter-Description": "Rent a car on Madeira Island with Achieve Rent A Car. Explore Madeira Island with our affordable and reliable car rentals.",
 
     "Title-home": "Rent a car on Madeira Island with Achieve Rent A Car",
+    "Title-fleet": "Car Rental Fleet at Achieve Rent A Car",
     "Title-about": "Learn more about Achieve Rent A Car",
     "Title-seats": "Car Seats at Achieve Rent A Car",
     "Title-faq": "Frequently Asked Questions about Achieve Rent A Car",
@@ -18,6 +19,8 @@
     "Menu-Logo.Alt": "Achieve Rent A Car Logo",
     "Menu-Home": "Home",
     "Menu-Home.Title": "Click to go to the home page",
+    "Menu-Fleet": "Fleet",
+    "Menu-Fleet.Title": "Click to go to the fleet page",
     "Menu-About": "About Us",
     "Menu-About.Title": "Click to go to the about us page",
     "Menu-Seats": "Car Seats",
@@ -64,6 +67,8 @@
     "Home-3-Button.1.Title": "Click to go to rent a car in Madeira",
     "Home-3-Button.2": "Learn More",
     "Home-3-Button.2.Title": "Click to learn more about Achieve Rent A Car",
+
+    "Fleet-Banner-Title": "Fleet",
 
     "About-Banner-Title": "About Us",
     "About-1-Title": "A little about us",

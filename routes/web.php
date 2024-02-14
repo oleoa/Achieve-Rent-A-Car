@@ -3,8 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
-use App\Http\Controllers\Tests;
-
 //Clients Controllers
 use App\Http\Controllers\Client\Home;
 use App\Http\Controllers\Client\About;
@@ -12,6 +10,7 @@ use App\Http\Controllers\Client\Seats;
 use App\Http\Controllers\Client\FAQ;
 use App\Http\Controllers\Client\Contact;
 use App\Http\Controllers\Client\Legal;
+use App\Http\Controllers\Client\Fleet;
 
 //Dashboard Controllers
 use App\Http\Controllers\Dashboard\Authentication;
@@ -102,6 +101,8 @@ Route::prefix('/{locale}')->group(function(){
     Route::get('/about', [About::class, 'index'])->name('about');
     
     Route::get('/seats', [Seats::class, 'index'])->name('seats');
+    
+    Route::get('/fleet', [Fleet::class, 'index'])->name('fleet');
     
     Route::get('/faq', [FAQ::class, 'index'])->name('faq');
     

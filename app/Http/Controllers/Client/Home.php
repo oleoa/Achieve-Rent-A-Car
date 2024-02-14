@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Client\Controller;
+use App\Helpers\AchieveAPI;
 
 class Home extends Controller
 {

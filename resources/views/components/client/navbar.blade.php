@@ -8,6 +8,7 @@
 
         <!-- Items -->
         <a title="@lang('Menu-Home.Title')" class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Menu-Home')</h5></a>
+        <a title="@lang('Menu-Fleet.Title')" class=" @if($current == 'fleet') text-blue-400 underline @endif" href="{{route('fleet', $locale)}}"><h5>@lang('Menu-Fleet')</h5></a>
         <a title="@lang('Menu-About.Title')" class=" @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('Menu-About')</h5></a>
         <a title="@lang('Menu-Seats.Title')" class=" @if($current == 'seats') text-blue-400 underline @endif" href="{{route('seats', $locale)}}"><h5>@lang('Menu-Seats')</h5></a>
         <a title="@lang('Menu-FAQ.Title')" class=" @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('Menu-FAQ')</h5></a>
