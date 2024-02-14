@@ -28,7 +28,9 @@
                     </svg>
                 </button>
             </div>
+            <!--
             <a title="@lang('Menu-Fleet.Title')" class="@if($current == 'fleet') text-blue-400 underline @endif" href="{{route('fleet', $locale)}}"><h4 class="p-4">@lang('Menu-Fleet')</h4></a>
+            -->
             <a title="@lang('Menu-About.Title')" class="@if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h4 class="p-4">@lang('Menu-About')</h4></a>
             <a title="@lang('Menu-Seats.Title')" class="@if($current == 'seats') text-blue-400 underline @endif" href="{{route('seats', $locale)}}"><h4 class="p-4">@lang('Menu-Seats')</h4></a>
             <a title="@lang('Menu-FAQ.Title')" class="@if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h4 class="p-4">@lang('Menu-FAQ')</h4></a>
