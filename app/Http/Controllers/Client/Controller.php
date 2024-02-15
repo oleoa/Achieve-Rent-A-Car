@@ -35,7 +35,7 @@ class Controller extends BaseController
         $this->locale($locale);
         if(!$this->localeExists) abort(404);
 
-        // Creates the menu items
+        // Creates the menu items both for navbar and sidebar
         $this->data['menu'] = [
             'links' => [
                 'home' => [

@@ -2,7 +2,7 @@
 @section('main')
 
     <!-- Banner -->
-    <div style="background-image: url('/img/fleet/banner.webp')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
+    <div style="background-image: url('/img/fleet/banner.png')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
         <h1 class="text-white text-center font-black text-6xl">@lang('Fleet-Banner-Title')</h1>
     </div>
 

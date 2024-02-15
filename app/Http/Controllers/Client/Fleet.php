@@ -10,7 +10,6 @@ class Fleet extends Controller
 {
     public function index($locale)
     {
-        return redirect()->route('home', ['locale' => $locale]);
         $api = new AchieveAPI();
         $fleet = $api->fleet();
         $this->data('fleet', $fleet['fleets'][0]['groups']);
