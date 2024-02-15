@@ -12,6 +12,7 @@ class AchieveAPI
     private $token;
     private $expiration;
 
+    // Will create a new instance of the Guzzle client and authorize the token
     public function __construct()
     {
         $this->client = new Client([
@@ -21,6 +22,7 @@ class AchieveAPI
         $this->authorize();
     }
     
+    // Will search for the tokey using the API KEY
     private function authorize()
     {
         $response = $this->client->get($this::API_URL.'authorize?api_key='.env('API_KEY'));
@@ -33,6 +35,7 @@ class AchieveAPI
         return $data;
     }
 
+    // Will refresh the token if it's expired, otherwise it will do nothing
     private function refresh()
     {
         if($this->expiration > time()) return;
@@ -43,6 +46,7 @@ class AchieveAPI
         $this->expiration = $data['expiration'];
     }
 
+    // Will get the data from the API from the given endpoint
     private function get($endpoint)
     {
         // If the token is expired, refresh it
@@ -58,8 +62,22 @@ class AchieveAPI
         return $data;
     }
 
-    public function fleet()
+    // Will return the fleet
+    public function fleet($group = false)
     {
+        if($group) return $this->get('fleets/groups');
         return $this->get('fleets');
+    }
+
+    // Will return the vehicles
+    public function vehicles()
+    {
+        return $this->get('vehicles');
+    }
+
+    // Will return the bookings
+    public function bookings()
+    {
+        return $this->get('bookings');
     }
 }
