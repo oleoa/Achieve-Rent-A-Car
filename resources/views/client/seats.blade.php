@@ -24,7 +24,7 @@
             </div>
 
             <!-- Image -->
-            <img src="{{asset('/img/seats/b.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
+            <img src="{{asset('/img/seats/main.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
 
         </div>
 
@@ -45,10 +45,10 @@
         <h2 class="py-4 text-center font-bold text-4xl">@lang('Seats-2-Title')</h2>
 
         <!-- Cards -->
-        <div class="grid xl:grid-cols-4 w-full xl:px-margin px-4 gap-4">    
+        <div class="grid xl:grid-cols-5 w-full xl:px-margin px-4 gap-4">    
     
             <!-- Cards -->
-            @for($i = 1; $i <= 4; $i++)
+            @for($i = 1; $i <= 5; $i++)
 
                 <!-- Card -->
                 <div class="rounded-lg shadow-lg">
