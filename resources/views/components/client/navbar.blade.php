@@ -1,29 +1,28 @@
 <div class="h-navbar px-margin bg-white w-full hidden xl:flex justify-between items-center">
 
     <!-- Logo -->
-    <a title="@lang('Menu-Home.Title')" href="{{route('home', $locale)}}"><img src="{{url('/img/logos/logo2.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-14"></a>
+    <a title="@lang('Menu-Home.Title')" href="{{$menu['links']['home']['route']}}"><img src="{{url('/img/logos/logo2.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-14"></a>
 
     <!-- Right Part -->
     <div class="flex items-center justify-center gap-6">
 
         <!-- Items -->
-        <a title="@lang('Menu-Home.Title')" class="@if($current == 'home') text-blue-400 underline @endif" href="{{route('home', $locale)}}"><h5>@lang('Menu-Home')</h5></a>
-        <!--
-        <a title="@lang('Menu-Fleet.Title')" class=" @if($current == 'fleet') text-blue-400 underline @endif" href="{{route('fleet', $locale)}}"><h5>@lang('Menu-Fleet')</h5></a>
-        -->
-        <a title="@lang('Menu-About.Title')" class=" @if($current == 'about') text-blue-400 underline @endif" href="{{route('about', $locale)}}"><h5>@lang('Menu-About')</h5></a>
-        <a title="@lang('Menu-Seats.Title')" class=" @if($current == 'seats') text-blue-400 underline @endif" href="{{route('seats', $locale)}}"><h5>@lang('Menu-Seats')</h5></a>
-        <a title="@lang('Menu-FAQ.Title')" class=" @if($current == 'faq') text-blue-400 underline @endif" href="{{route('faq', $locale)}}"><h5>@lang('Menu-FAQ')</h5></a>
-        <a title="@lang('Menu-Contact.Title')" class=" @if($current == 'contact') text-blue-400 underline @endif" href="{{route('contact', $locale)}}"><h5>@lang('Menu-Contact')</h5></a>
+        @foreach ($menu['links'] as $item)
+            <a title="@lang('Menu-'.$item['name'].'.Title')" class="@if($item['current']) text-blue-400 underline @endif" href="{{$item['route']}}"><h5>@lang('Menu-'.$item['name'])</h5></a>
+        @endforeach
 
         <!-- Flags -->
         <div class="flex justify-center items-center gap-4">
-            <a title="@lang('Menu-Locale-En.Title')" href="{{route($current, ['en'])}}">
-                <img src="{{ asset('img/flags/en.png') }}" alt="@lang('Menu-Locale-En.Alt')" class="w-6 h-4">
-            </a>
-            <a title="@lang('Menu-Locale-Pt.Title')" href="{{route($current, ['pt'])}}">
-                <img src="{{ asset('img/flags/pt.png') }}" alt="@lang('Menu-Locale-Pt.Alt')" class="w-6 h-4">
-            </a>
+
+            @foreach ($menu['locale'] as $item)
+
+                <!-- Flag -->
+                <a title="@lang('Menu-Locale-'.$item['name'].'.Title')" href="{{$item['route']}}">
+                    <img src="{{ asset('img/flags/'.$item['name'].'.png') }}" alt="@lang('Menu-Locale-'.$item['name'].'.Alt')" class="w-6 h-4">
+                </a>
+
+            @endforeach
+
         </div>
 
     </div>

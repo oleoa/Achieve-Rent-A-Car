@@ -8,15 +8,14 @@ use Illuminate\Contracts\View\View;
 
 class Navbar extends Component
 {
-    public $current;
-    public $locale;
+    public $menu;
+    
     /**
      * Create a new component instance.
      */
-    public function __construct($current, $locale)
+    public function __construct($menu)
     {
-        $this->current = $current;
-        $this->locale = $locale;
+        $this->menu = $menu;
     }
 
     /**

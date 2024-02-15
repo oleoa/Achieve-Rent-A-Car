@@ -66,10 +66,10 @@
             <x-discounts :discount="$discount" :locale="$locale"/>
 
             <!-- Navbar -->
-            <x-navbar :current="$current" :locale="$locale"/>
+            <x-navbar :menu="$menu"/>
 
             <!-- Sidebar -->
-            <x-sidebar :current="$current" :locale="$locale"/>
+            <x-sidebar :menu="$menu"/>
 
         </nav>
 

@@ -35,16 +35,68 @@ class Controller extends BaseController
         $this->locale($locale);
         if(!$this->localeExists) abort(404);
 
+        // Creates the menu items
+        $this->data['menu'] = [
+            'links' => [
+                'home' => [
+                    'name' => 'Home',
+                    'route' => route('home', $this->data['locale']),
+                    'current' => $route == 'home'? true : false
+                ],
+                'fleet' => [
+                    'name' => 'Fleet',
+                    'route' => route('fleet', $this->data['locale']),
+                    'current' => $route == 'fleet'? true : false
+                ],
+                'about' => [
+                    'name' => 'About',
+                    'route' => route('about', $this->data['locale']),
+                    'current' => $route == 'about'? true : false
+                ],
+                'seats' => [
+                    'name' => 'Seats',
+                    'route' => route('seats', $this->data['locale']),
+                    'current' => $route == 'seats'? true : false
+                ],
+                'faq' => [
+                    'name' => 'FAQ',
+                    'route' => route('faq', $this->data['locale']),
+                    'current' => $route == 'faq'? true : false
+                ],
+                'contact' => [
+                    'name' => 'Contact',
+                    'route' => route('contact', $this->data['locale']),
+                    'current' => $route == 'contact'? true : false
+                ]
+            ],
+            'locale' => [
+                'en' => [
+                    'name' => 'en',
+                    'route' => route($route, 'en')
+                ],
+                'pt' => [
+                    'name' => 'pt',
+                    'route' => route($route, 'pt')
+                ]
+            ]
+        ];
+
         // Checks for discounts
         $discount = Discounts::where('active', true)->first();
         if($discount) $this->data['discount'] = $discount->toArray();
         else $this->data['discount'] = false;
 
-        $agent = new Agent();
+        // Sets the current page
         $this->data['current'] = $route;
+
+        // Sets the current page title
         $this->data['title'] = 'Title-'.$this->data['current'];
-        $this->data['description'] = 'Description-'.$this->data['current'];
+        
+        // Checks if the user is using a mobile device and logs the view
+        $agent = new Agent();        
         Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
+
+        // Returns the view
         return view($view, $this->data);
     }
 }
