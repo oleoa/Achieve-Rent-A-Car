@@ -12,13 +12,16 @@
         <!-- Text -->
         <div class="flex flex-col gap-4 xl:col-span-3">
 
+            <!-- Title -->
             <h2>@lang('About-1-Title')</h2>
+
+            <!-- Paragraph -->
             <p>@lang('About-1-Paragraph')</p>
 
         </div>
 
         <!-- Image -->
-        <img src="{{url('/img/about/3.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl xl:col-span-2">
+        <img src="{{url('/img/about/1.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl xl:col-span-2">
 
     </div>
 

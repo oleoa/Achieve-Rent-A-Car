@@ -24,7 +24,7 @@
             </div>
 
             <!-- Image -->
-            <img src="{{asset('/img/tests/b.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
+            <img src="{{asset('/img/seats/b.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg xl:order-2 order-1 w-full">
 
         </div>
 
@@ -54,7 +54,7 @@
                 <div class="rounded-lg shadow-lg">
 
                     <!-- Image -->
-                    <img src="{{asset('/img/tests/'.$i.'.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg">
+                    <img src="{{asset('/img/seats/'.$i.'.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg">
 
                     <div class="p-4">
 
