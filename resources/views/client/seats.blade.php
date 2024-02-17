@@ -59,10 +59,10 @@
                     <div class="p-4">
 
                         <!-- Title -->
-                        <h3 class="text-2xl font-bold">@lang('Seats-2-Card.'.$i.'-Title')</h3>
+                        <h3 class="text-xl font-bold">@lang('Seats-2-Card.'.$i.'-Title')</h3>
 
                         <!-- Paragraph -->
-                        <p class="py-2">
+                        <p class="py-2 text-base">
                             @lang('Seats-2-Card.'.$i.'-Paragraph')
                         </p>
 

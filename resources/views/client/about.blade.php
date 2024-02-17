@@ -10,7 +10,7 @@
     <div class="w-full xl:px-margin px-4 grid xl:grid-cols-5 py-4 gap-4">
 
         <!-- Text -->
-        <div class="flex flex-col gap-4 xl:col-span-3">
+        <div class="flex flex-col gap-4 xl:col-span-2">
 
             <!-- Title -->
             <h2>@lang('About-1-Title')</h2>
@@ -21,7 +21,7 @@
         </div>
 
         <!-- Image -->
-        <img src="{{url('/img/about/1.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl xl:col-span-2">
+        <img src="{{url('/img/about/1.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl xl:col-span-3">
 
     </div>
 
