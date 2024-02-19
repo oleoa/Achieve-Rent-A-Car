@@ -12,3 +12,6 @@ import './client';
 
 // Admin
 import './dashboard';
+
+// Fleet height iframe correction
+import './fleet'

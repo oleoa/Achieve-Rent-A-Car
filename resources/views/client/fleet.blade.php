@@ -6,23 +6,10 @@
         <h1 class="text-white text-center font-black text-6xl">@lang('Fleet-Banner-Title')</h1>
     </div>
 
-    <main class="xl:px-margin px-4">
-
-        <div class="grid xl:grid-cols-3 gap-4 py-4">
-
-            @foreach ($fleet as $unit)
-
-                <div class="shadow-2xl rounded-xl p-4 flex flex-col gap-4">
-
-                    <h2 class="text-center">{{ $unit['brand'] }} {{ $unit['model'] }}</h2>
-                    <img src="{{ $unit['image_url'] }}" alt="Fleet Image">
-
-                </div>
-    
-            @endforeach
-
-        </div>
-
-    </main>
+    <!-- Fleet -->
+    <div class="w-full py-4 xl:p-4">
+        <input type="hidden" value="{{count($fleet)}}" id="fleetLength">
+        <iframe src="https://reservas.achieverentacar.com/pt/frota?iframe" scrolling="no" id="anyrentBookingsIframe" style="width: 1px; min-width: 100%; border: 0px; overflow: hidden;"></iframe>
+    </div>
 
 @endsection
