@@ -9,7 +9,7 @@
     <!-- Fleet -->
     <div class="w-full">
         <input type="hidden" value="{{count($fleet)}}" id="fleetLength">
-        <iframe src="https://reservas.achieverentacar.com/{{$locale}}/frota?iframe" scrolling="no" id="anyrentBookingsIframe" style="width: 1px; min-width: 100%; border: 0px; overflow: hidden;"></iframe>
+        <iframe src="https://reservas.achieverentacar.com/{{$locale=='local'?'pt':$locale}}/frota?iframe" scrolling="no" id="anyrentBookingsIframe" style="width: 1px; min-width: 100%; border: 0px; overflow: hidden;"></iframe>
     </div>
 
 @endsection
