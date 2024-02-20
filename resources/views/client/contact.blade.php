@@ -47,15 +47,15 @@
         <form action="{{route('contact-send', $locale)}}" method="POST" class="flex flex-col space-y-4 col-span-2 xl:p-0 pb-4">
             @csrf
 
-            <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="name" placeholder="@lang('Contact.Us-Form-Input-Name')">
+            <input class="border-2 border-flagBlue shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="name" placeholder="@lang('Contact.Us-Form-Input-Name')">
 
-            <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="email" name="email" placeholder="@lang('Contact.Us-Form-Input-Email')">
+            <input class="border-2 border-flagBlue shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="email" name="email" placeholder="@lang('Contact.Us-Form-Input-Email')">
 
-            <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="phone" placeholder="@lang('Contact.Us-Form-Input-Phone')">
+            <input class="border-2 border-flagBlue shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="phone" placeholder="@lang('Contact.Us-Form-Input-Phone')">
 
-            <textarea class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md" name="message" placeholder="@lang('Contact.Us-Form-Input-Message')" cols="30" rows="5"></textarea>
+            <textarea class="border-2 border-flagBlue shadow-lg px-4 py-2 bg-zinc-200 rounded-md" name="message" placeholder="@lang('Contact.Us-Form-Input-Message')" cols="30" rows="5"></textarea>
 
-            <input class="shadow-lg px-4 py-2 bg-zinc-200 rounded-md hover:bg-zinc-10 hover:cursor-pointer hover:shadow-xl " type="submit" value="@lang('Contact.Us-Form-Button')">
+            <input class="shadow-lg px-4 py-2 bg-flagYellow rounded-md hover:text-black hover:cursor-pointer hover:shadow-xl text-center load" type="submit" value="@lang('Contact.Us-Form-Button')">
 
             @if(session('success'))
                 <div class="alert alert-success text-green-600">
