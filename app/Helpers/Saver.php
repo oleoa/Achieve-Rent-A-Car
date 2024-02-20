@@ -14,8 +14,7 @@ use App\Models\User;
 */
 class Saver
 {
-    /* Private functions */
-    private function get($filename)
+    public function get($filename)
     {
         // Will search for the file in the public directory
         $filepath = public_path($filename);
@@ -32,6 +31,7 @@ class Saver
         // Return the data
         return $data;
     }
+    
     private function save($filename, $data)
     {
         // Will search for the file in the public directory

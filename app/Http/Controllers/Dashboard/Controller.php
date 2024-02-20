@@ -14,6 +14,12 @@ class Controller extends BaseController
     private Array $data;
     protected Saver $saver;
 
+    public function __construct()
+    {
+        $this->data = [];
+        $this->saver = new Saver();
+    }
+
     protected function data(String $key, $value): void
     {
         $this->data[$key] = $value;
