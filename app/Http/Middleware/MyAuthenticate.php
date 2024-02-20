@@ -18,30 +18,46 @@ class MyAuthenticate
      */
     public function handle(Request $request, Closure $next): Response
     {
+        // Get the current route name
         $currentRouteName = $request->route()->getName();
+
+        // Get the domain 'achieverentacar.com' or 'dashboard.achieverentacar.com'
+        $domain = $request->getHost();
+
+        // Check if the route is in the /dashboard (only for local environment)
+        $isLocalDashboard = explode('/', $request->path())[0] == 'dashboard';
         
+        // The routes that are allowed to be accessed only without authentication
         $allowedNotAuthRoutes = [
             "dashboard.sign.in",
-            "dashboard.sign.out",
             "dashboard.sign.ing-in",
             "dashboard.user.setup",
             "dashboard.user.settingup"
         ];
 
-        $domain = $request->getHost();
-        $isDashboard = explode('/', $request->path())[0] == 'dashboard';
-        
-        // If the domain in not dashboard or not localhost, then it's the main site and it should not be authenticated
-        if($domain != 'dashboard.achieverentacar.com' && !$isDashboard)
-            return $next($request);
+        // For the dashboard, the user can be logged in or not
+        if($domain == 'dashboard.achieverentacar.com' || $isLocalDashboard)
+        {
+            //If the user is logged in
+            if(Auth::check())
+            {
+                // It should not be in any of the allowedNotAuthRoutes
+                if(in_array($currentRouteName, $allowedNotAuthRoutes))
+                {
+                    return redirect()->route('dashboard.views.list');
+                }
 
-        // If the route is in the allowedNotAuthRoutes, then it should not be authenticated
-        if(in_array($currentRouteName, $allowedNotAuthRoutes))
-            return $next($request);
-
-        // If the user is not logged in, then it should be redirected to the sign in page
-        if(Auth::guest())
-            return redirect()->route('dashboard.sign.in');
+            }
+            // If it's not logged in
+            else
+            {
+                // It should be in the allowedNotAuthRoutes
+                if(!in_array($currentRouteName, $allowedNotAuthRoutes))
+                {
+                    return redirect()->route('dashboard.sign.in');
+                }
+            }
+        }
 
         // If the user is logged in, then it should be good to go
         return $next($request);

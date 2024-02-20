@@ -1,10 +1,10 @@
 <!-- Laravel default errors messages -->
 @if ($errors->any())
-  <div class="text-red-500">
-    @foreach ($errors->all() as $error)
-      @lang($error)
-    @endforeach
-  </div>
+    <div class="text-red-500">
+        @foreach ($errors->all() as $error)
+        @lang($error)
+        @endforeach
+    </div>
 @endif
 
 <!-- Messages -->

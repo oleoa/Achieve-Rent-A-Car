@@ -18,8 +18,8 @@ class Authentication extends Controller
     {
         // Validate the request
         $validated = $request->validate([
-        'email' => 'required|email',
-        'password' => 'required'
+            'email' => 'required|email',
+            'password' => 'required'
         ]);
 
         // Attempt to sign in
@@ -30,7 +30,7 @@ class Authentication extends Controller
         
         // Redirect the user to the dashboard logged
         $request->session()->regenerate();
-        return redirect()->route('views');
+        return redirect()->route('dashboard.views.list');
     }
 
     public function signout()
@@ -41,6 +41,6 @@ class Authentication extends Controller
         session()->regenerateToken();
 
         // Redirect the user to the sign in page
-        return redirect()->route('sign.in');
+        return redirect()->route('dashboard.sign.in');
     }
 }

@@ -20,7 +20,7 @@
         <x-dashboard.sidebar :current="$current" :is="$is"/>
 
         <!-- Main Content -->
-        <main class="xl:pl-64 row-span-1">
+        <main class="xl:pl-64 xl:pr-0 pr-20 row-span-1">
 
             @yield('main')
 
