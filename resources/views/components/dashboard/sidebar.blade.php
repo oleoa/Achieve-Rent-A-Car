@@ -1,12 +1,12 @@
-<div class="flex xl:hidden h-navbar relative w-full justify-center items-center bg-white">
+<div class="flex xl:hidden h-navbar fixed top-0 left-0 w-full justify-center items-center bg-zinc-800">
 
     <!-- Garfo -->
     <div class="left-0 top-0 absolute flex justify-center items-center h-navbar pl-4">
         <button id="openSidebar">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
         </button>
     </div>
 
@@ -39,7 +39,7 @@
                     @endif
 
                     <!-- Item -->
-                    <a title="@lang('Menu-'.$item['name'].'.Title')" class="@if($item['current']) text-flagYellow @endif " href="{{$item['route']}}"><h5>@lang('Menu-'.$item['name'])</h5></a>
+                    <a title="@lang('Menu-'.$item['name'].'.Title')" class="@if($item['current']) text-flagYellow @endif" href="{{$item['route']}}"><h5>@lang('Menu-'.$item['name'])</h5></a>
 
                 @endforeach
 

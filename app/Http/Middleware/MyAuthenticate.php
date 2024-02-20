@@ -30,9 +30,9 @@ class MyAuthenticate
 
     $domain = $request->getHost();
     $isDashboard = explode('/', $request->path())[0] == 'dashboard';
-
+    
     // If the domain in not dashboard or not localhost, then it's the main site and it should not be authenticated
-    if($domain != 'dashboard.achieverentacar.com' || !$isDashboard)
+    if($domain != 'dashboard.achieverentacar.com' && !$isDashboard)
         return $next($request);
 
     // If the route is in the allowedNotAuthRoutes, then it should not be authenticated
