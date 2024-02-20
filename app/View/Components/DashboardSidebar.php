@@ -8,18 +8,16 @@ use Illuminate\Contracts\View\View;
 
 class Sidebar extends Component
 {
-    public $menu;
-    public $isLogged;
-    public $isAdmin;
+    public $current;
+    public $is;
     
     /**
      * Create a new component instance.
      */
-    public function __construct($menu, $isLogged, $isAdmin)
+    public function __construct($current, $is)
     {
-        $this->menu = $menu;
-        $this->isLogged = $isLogged;
-        $this->isAdmin = $isAdmin;
+        $this->current = $current;
+        $this->is = $is;
     }
 
     /**

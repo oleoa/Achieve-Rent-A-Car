@@ -31,16 +31,24 @@ use App\Http\Controllers\Dashboard\Discounts;
 */
 
 /*
-    Route::prefix('/dashboard')->group(function () {
+    Route::domain('dashboard.achieverentacar.com')->group(function () {
 */
 
 // DASHBOARD ROUTES
-Route::domain('dashboard.achieverentacar.com')->group(function () {
+Route::prefix('/dashboard')->name('dashboard.')->group(function () {
     
-    Route::get('/', function(){ return redirect()->route('views'); });
+    // To create a home page
+    Route::get('/', function(){
+        return redirect()->route('dashboard.views.list');
+    })->name('home');
 
-    Route::get('/views', [Views::class, 'index'])->name('views');
-    Route::delete('/views/delete', [Views::class, 'delete'])->name('view.delete');
+    Route::name('views.')->group(function(){
+
+        Route::get('/views', [Views::class, 'index'])->name('list');
+
+        Route::delete('/views/delete', [Views::class, 'delete'])->name('delete');
+
+    });
 
     Route::name('faq.')->group(function () {
 

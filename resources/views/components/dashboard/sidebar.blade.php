@@ -1,63 +1,37 @@
-<div class="flex xl:hidden h-navbar fixed top-0 left-0 w-full justify-center items-center bg-zinc-800">
-
-    <!-- Garfo -->
-    <div class="left-0 top-0 absolute flex justify-center items-center h-navbar pl-4">
-        <button id="openSidebar">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 text-white" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-    </div>
+<!-- The Fixed Sidebar For (OK) Computer -->
+<aside class="fixed top-0 left-0 w-64 h-screen bg-neutral-800 xl:flex flex-col gap-2 hidden">
 
     <!-- Logo -->
-    <a href="{{route('views')}}"><img src="{{url('/img/logos/logo2.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-10 pl-6"></a>
+    <a href="{{route('dashboard.home')}}" class="p-4 flex items-center justify-center"><img src="{{asset('/img/logos/logo2.png')}}" alt=""></a>
 
-    <!-- Sidebar Holder -->
-    <aside class="h-screen w-screen fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full flex flex-row">
-
-        <!-- Sidebar Itself -->
-        <div class="w-96 bg-white h-full z-40">
-
-            <!-- Items -->
-            @if($isLogged)
-
-                <div class="flex justify-between pr-4">
-                    <a class="@if($menu['views']['current']) text-flagYellow @endif " href="{{$menu['views']['route']}}"><h5>@lang('Views')</h5></a>
-                    <button id="closeSidebar" class="text-white">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                @foreach ($menu as $item)
-
-                    <!-- Skip first item -->
-                    @if ($loop->first)
-                        @continue
-                    @endif
-
-                    <!-- Item -->
-                    <a title="@lang('Menu-'.$item['name'].'.Title')" class="@if($item['current']) text-flagYellow @endif" href="{{$item['route']}}"><h5>@lang('Menu-'.$item['name'])</h5></a>
-
-                @endforeach
-
-                @if($isAdmin)
-
-                    <a class="@if($menu['users']['current']) text-flagYellow @endif " href="{{route('user.list')}}"><h5>@lang('Users')</h5></a>
-
-                @endif
-
-                <a href="{{route('sign.out')}}" class=""><h5>@lang('Logout')</h5></a>
-
-            @endif
-
+    <!-- User -->
+    <div class="grid grid-cols-3 gap-4 p-4">
+        <img src="{{asset('/img/users/ex.png')}}" alt="" class="rounded-full">
+        <div class="col-span-2">
+            <h3>Welcome</h3>
+            <p>Leonardo Abreu</p>
         </div>
+    </div>
 
-        <!-- Overlay -->
-        <div id="overlay" class="h-full w-full z-30"></div>
+    <a href="{{route('dashboard.views.list')}}" class="p-4 {{$current == 'views' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">
+        <p class="">Views</p>
+    </a>
+    <a href="{{route('dashboard.faq.list')}}" class="p-4 {{$current == 'faq' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">
+        <p class="">FAQ</p>
+    </a>
+    <a href="{{route('dashboard.discount.list')}}" class="p-4 {{$current == 'discount' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">
+        <p class="">Discounts</p>
+    </a>
+    <a href="{{route('dashboard.user.list')}}" class="p-4 {{$current == 'user' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">
+        <p class="">Users</p>
+    </a>
+    <a href="{{route('dashboard.sign.out')}}" class="p-4 {{$current == 'sign.out' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">
+        <p class="">Logout</p>
+    </a>
 
-    </aside>
+</aside>
 
-</div>
+<!-- The Fixed Sidebar For Phone -->
+<aside class="fixed top-0 right-0 w-20 h-screen bg-neutral-800 flex flex-col gap-2 xl:hidden">
+
+</aside>
