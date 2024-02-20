@@ -43,6 +43,7 @@ class Saver
         // Save the data to the file
         File::put($filepath, $data);
     }
+
     private function model($model, $type)
     {
         // Get all the types
