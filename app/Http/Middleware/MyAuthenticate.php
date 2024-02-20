@@ -21,23 +21,29 @@ class MyAuthenticate
     $currentRouteName = $request->route()->getName();
     
     $allowedNotAuthRoutes = [
-      "sign.in",
-      "sign.out",
-      "sign.ing-in",
-      "user.setup",
-      "user.settingup"
+        "sign.in",
+        "sign.out",
+        "sign.ing-in",
+        "user.setup",
+        "user.settingup"
     ];
 
     $domain = $request->getHost();
-    if($domain != 'dashboard.achieverentacar.com')
+    $isDashboard = explode('/', $request->path())[0] == 'dashboard';
+
+    // If the domain in not dashboard or not localhost, then it's the main site and it should not be authenticated
+    if($domain != 'dashboard.achieverentacar.com' || !$isDashboard)
         return $next($request);
 
-    if(in_array($currentRouteName, $allowedNotAuthRoutes))      
-      return $next($request);
+    // If the route is in the allowedNotAuthRoutes, then it should not be authenticated
+    if(in_array($currentRouteName, $allowedNotAuthRoutes))
+        return $next($request);
 
+    // If the user is not logged in, then it should be redirected to the sign in page
     if(Auth::guest())
-      return redirect()->route('sign.in');
+        return redirect()->route('sign.in');
 
+    // If the user is logged in, then it should be good to go
     return $next($request);
   }
 }
