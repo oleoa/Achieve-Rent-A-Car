@@ -19,52 +19,62 @@ class Views extends Controller
         // Filter the views by range
         if($this->range == 'day')
         {
-        $today = Carbon::now()->toDateString();
-        $filteredData = array_filter($views, function ($item) use ($today) {
-            $itemDate = Carbon::parse($item['created_at'])->toDateString();
-            return $itemDate === $today;
-        });
-        $views = array_values($filteredData);
+            $today = Carbon::now()->toDateString();
+
+            $filteredData = array_filter($views, function ($item) use ($today) {
+                $itemDate = Carbon::parse($item['created_at'])->toDateString();
+                return $itemDate === $today;
+            });
+
+            $views = array_values($filteredData);
         }
         elseif($this->range == 'week')
         {
-        $today = Carbon::now()->toDateString();
-        $weekAgo = Carbon::now()->subWeek()->toDateString();
-        $filteredData = array_filter($views, function ($item) use ($today, $weekAgo) {
-            $itemDate = Carbon::parse($item['created_at'])->toDateString();
-            return $itemDate >= $weekAgo && $itemDate <= $today;
-        });
-        $views = array_values($filteredData);
+            $today = Carbon::now()->toDateString();
+            $weekAgo = Carbon::now()->subWeek()->toDateString();
+
+            $filteredData = array_filter($views, function ($item) use ($today, $weekAgo) {
+                $itemDate = Carbon::parse($item['created_at'])->toDateString();
+                return $itemDate >= $weekAgo && $itemDate <= $today;
+            });
+
+            $views = array_values($filteredData);
         }
         elseif($this->range == 'month')
         {
-        $today = Carbon::now()->toDateString();
-        $monthAgo = Carbon::now()->subMonth()->toDateString();
-        $filteredData = array_filter($views, function ($item) use ($today, $monthAgo) {
-            $itemDate = Carbon::parse($item['created_at'])->toDateString();
-            return $itemDate >= $monthAgo && $itemDate <= $today;
-        });
-        $views = array_values($filteredData);
+            $today = Carbon::now()->toDateString();
+            $monthAgo = Carbon::now()->subMonth()->toDateString();
+
+            $filteredData = array_filter($views, function ($item) use ($today, $monthAgo) {
+                $itemDate = Carbon::parse($item['created_at'])->toDateString();
+                return $itemDate >= $monthAgo && $itemDate <= $today;
+            });
+
+            $views = array_values($filteredData);
         }
         elseif($this->range == 'quarter')
         {
-        $today = Carbon::now()->toDateString();
-        $quarterAgo = Carbon::now()->subQuarter()->toDateString();
-        $filteredData = array_filter($views, function ($item) use ($today, $quarterAgo) {
-            $itemDate = Carbon::parse($item['created_at'])->toDateString();
-            return $itemDate >= $quarterAgo && $itemDate <= $today;
-        });
-        $views = array_values($filteredData);
+            $today = Carbon::now()->toDateString();
+            $quarterAgo = Carbon::now()->subQuarter()->toDateString();
+
+            $filteredData = array_filter($views, function ($item) use ($today, $quarterAgo) {
+                $itemDate = Carbon::parse($item['created_at'])->toDateString();
+                return $itemDate >= $quarterAgo && $itemDate <= $today;
+            });
+
+            $views = array_values($filteredData);
         }
         elseif($this->range == 'year')
         {
-        $today = Carbon::now()->toDateString();
-        $yearAgo = Carbon::now()->subYear()->toDateString();
-        $filteredData = array_filter($views, function ($item) use ($today, $yearAgo) {
-            $itemDate = Carbon::parse($item['created_at'])->toDateString();
-            return $itemDate >= $yearAgo && $itemDate <= $today;
-        });
-        $views = array_values($filteredData);
+            $today = Carbon::now()->toDateString();
+            $yearAgo = Carbon::now()->subYear()->toDateString();
+
+            $filteredData = array_filter($views, function ($item) use ($today, $yearAgo) {
+                $itemDate = Carbon::parse($item['created_at'])->toDateString();
+                return $itemDate >= $yearAgo && $itemDate <= $today;
+            });
+            
+            $views = array_values($filteredData);
         }
 
         $data['views'] = $views;
@@ -136,7 +146,7 @@ class Views extends Controller
 
         // Get the range from the request
         $this->range = $request->input('range')??'all';
-        $this->range($this->range);
+        $this->data('range', $this->range);
 
         // Calculate the views
         $data = $this->calculateViews($views);
@@ -145,13 +155,15 @@ class Views extends Controller
         $this->data('data', $data);
 
         // Set the current page and load the view
-        $this->current('views');
-        return $this->load('dashboard.views');
+        return $this->load('dashboard.views', 'views');
     }
 
     public function delete()
     {
+        // Delete all the views
         ViewsModel::truncate();
-        return $this->load('dashboard.views');
+
+        // Redirect the user to the views list
+        return redirect()->route('views');
     }
 }

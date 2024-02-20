@@ -13,8 +13,9 @@ class Discounts extends Controller
         // Get all the existing discounts
         $existing = DiscountsModel::all()->toArray();
         $this->data('discounts', $existing);
-        $this->current('discounts');
-        return $this->load('dashboard.discounts');
+
+        // Load the view
+        return $this->load('dashboard.discounts', 'discounts');
     }
   
     public function delete(Request $request)

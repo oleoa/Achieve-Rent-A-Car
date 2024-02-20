@@ -13,10 +13,9 @@ class FAQ extends Controller
         // Get the existing FAQs
         $existing = FAQModel::all()->toArray();
         $this->data('faqs', $existing);
-        $this->current('faq');
 
         // Load the view
-        return $this->load('dashboard.faq');
+        return $this->load('dashboard.faq', 'faq');
     }
   
     public function delete(Request $request)

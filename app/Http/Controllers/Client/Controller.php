@@ -21,7 +21,7 @@ class Controller extends BaseController
         $this->data[$key] = $value;
     }
 
-    protected function locale(String $locale): void
+    private function locale(String $locale): void
     {
         $this->localeExists = in_array($locale, ['en', 'pt', 'fr', 'de', 'es'])? true : false;
         $this->data['locale'] = $locale;
@@ -93,7 +93,7 @@ class Controller extends BaseController
         $this->data['title'] = 'Title-'.$this->data['current'];
         
         // Checks if the user is using a mobile device and logs the view
-        $agent = new Agent();        
+        $agent = new Agent();
         Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
 
         // Returns the view

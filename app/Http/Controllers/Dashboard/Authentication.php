@@ -10,34 +10,37 @@ class Authentication extends Controller
 {
     public function signin()
     {
-        $this->current('signin');
-        return $this->load('dashboard.signin');
+        // Load the view
+        return $this->load('dashboard.signin', 'signin');
     }
 
-  public function signing_in(Request $request)
-  {
-    $validated = $request->validate([
-      'email' => 'required|email',
-      'password' => 'required'
-    ]);
+    public function signing_in(Request $request)
+    {
+        // Validate the request
+        $validated = $request->validate([
+        'email' => 'required|email',
+        'password' => 'required'
+        ]);
 
-    if(!Auth::attempt($validated)) {
-      session()->flash('error', 'The provided credentials do not match our records.');
-      return redirect()->route('sign.in');
+        // Attempt to sign in
+        if(!Auth::attempt($validated)) {
+            session()->flash('error', 'The provided credentials do not match our records.');
+            return redirect()->route('sign.in');
+        }
+        
+        // Redirect the user to the dashboard logged
+        $request->session()->regenerate();
+        return redirect()->route('views');
     }
-    
-    $request->session()->regenerate();
-    return redirect()->route('views');
-  }
 
-  public function signout()
-  {
-    auth()->logout();
+    public function signout()
+    {
+        // Sign out the user
+        auth()->logout();
+        session()->invalidate();
+        session()->regenerateToken();
 
-    session()->invalidate();
-
-    session()->regenerateToken();
-
-    return redirect()->route('views');
-  }
+        // Redirect the user to the sign in page
+        return redirect()->route('sign.in');
+    }
 }

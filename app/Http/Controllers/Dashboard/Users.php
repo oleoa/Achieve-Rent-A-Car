@@ -18,8 +18,9 @@ class Users extends Controller
         // Get all the existing users
         $existing = UserModel::all()->toArray();
         $this->data('users', $existing);
-        $this->current('users');
-        return $this->load('dashboard.users');
+        
+        // Load the view
+        return $this->load('dashboard.users', 'users');
     }
   
     public function delete(Request $request)
@@ -97,12 +98,13 @@ class Users extends Controller
             return redirect()->route('sign.in');
         }
 
-        // Load the view with the data
+        // Set the user data
         $this->data('token', $token);
         $this->data('email', $user->email);
         $this->data('id', $user->id);
-        $this->current('users');
-        return $this->load('dashboard.setup');
+        
+        // Load the view
+        return $this->load('dashboard.setup', 'users');
     }
   
     public function settingup(Request $request)

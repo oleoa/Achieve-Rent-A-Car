@@ -11,12 +11,11 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
-    private Array $data;
+    private Array $data = array();
     protected Saver $saver;
 
     public function __construct()
     {
-        $this->data = [];
         $this->saver = new Saver();
     }
 
@@ -25,21 +24,11 @@ class Controller extends BaseController
         $this->data[$key] = $value;
     }
 
-    protected function current(String $current): void
+    protected function load($view, $route)
     {
-        $this->data['current'] = $current;
-    }
-
-    protected function range(string $range):void
-    {
-        $this->data['range'] = $range;
-    }
-
-    protected function load($view)
-    {
-        if(!array_key_exists('current', $this->data)) return view('404', $this->data);
         $this->data['isAdmin'] = auth()->user()['admin']??false;
         $this->data['isLogged'] = auth()->user()??false;
+        $this->data['current'] = $route;
         return view($view, $this->data);
     }
 }
