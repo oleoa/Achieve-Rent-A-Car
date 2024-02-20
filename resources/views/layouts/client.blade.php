@@ -49,7 +49,7 @@
         <meta name="twitter:image" content="http://achieverentacar.com/img/logos/logo.png"/>
 
         <!-- Resources (CSS and JS) -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/client.js'])
 
         <!-- Page Title -->
         <title>@lang($title)</title>

@@ -7,7 +7,7 @@
     <meta name="title" content="Dashboard Achieve Rent A Car">
     <meta name="description" content="O dashboard para a melhor Rent A Car da Madeira">
     <meta name="author" content="Leonardo Abreu de Paulo">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/dashboard.js'])
     <title>@lang('Dashboard Achieve Rent A Car')</title>
   </head>
 

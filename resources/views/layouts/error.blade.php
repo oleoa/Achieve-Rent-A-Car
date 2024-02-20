@@ -7,7 +7,7 @@
     <meta name="title" content="Achieve Rent A Car Madeira">
     <meta name="author" content="Leonardo Abreu de Paulo">
     <meta name="description" content="Explore Madeira Island with ease! Rent a car with us for an unforgettable journey. Discover scenic routes, picturesque landscapes, and hidden gems. Affordable and reliable car rental services tailored to enhance your Madeira experience. Book now for a seamless travel adventure!">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite('resources/css/app.css')
     <title>404 - @lang('404')</title>
   </head>
 
