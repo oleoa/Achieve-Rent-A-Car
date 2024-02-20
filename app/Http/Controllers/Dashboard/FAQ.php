@@ -29,7 +29,7 @@ class FAQ extends Controller
         $this->saver->faq();
 
         // Redirect the user to the FAQ list
-        return redirect()->route('faq.list');
+        return redirect()->route('dashboard.faq.list');
     }
   
     public function add(Request $request)
@@ -68,7 +68,7 @@ class FAQ extends Controller
             $this->saver->faq();
     
             // Redirect the user to the FAQ list
-            return redirect()->route('faq.list');
+            return redirect()->route('dashboard.faq.list');
         }        
     }
 }
