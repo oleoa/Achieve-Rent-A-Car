@@ -14,7 +14,7 @@
     <body class="min-h-screen grid grid-rows-1">
 
         <!-- Loader -->
-        <x-loader/>
+        <x-loader :isLight="false"/>
 
         <!-- Sidebar -->
         <x-dashboard.sidebar :menu="$menu" :isLogged="$isLogged" :isAdmin="$isAdmin"/>

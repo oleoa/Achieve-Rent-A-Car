@@ -8,12 +8,14 @@ use Illuminate\Contracts\View\View;
 
 class Loader extends Component
 {
+    public $isLight;
+
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($isLight = true)
     {
-        //
+        $this->isLight = $isLight;
     }
 
     /**
