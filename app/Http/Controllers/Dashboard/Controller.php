@@ -26,6 +26,35 @@ class Controller extends BaseController
 
     protected function load($view, $route)
     {
+        // Creates the menu items both for navbar and sidebar
+        $this->data['menu'] = [
+            'views' => [
+                'name' => 'Views',
+                'route' => route('views'),
+                'current' => $route == 'views'? true : false
+            ],
+            'faq' => [
+                'name' => 'FAQ',
+                'route' => route('faq.list'),
+                'current' => $route == 'faq'? true : false
+            ],
+            'discounts' => [
+                'name' => 'Discounts',
+                'route' => route('discount.list'),
+                'current' => $route == 'discounts'? true : false
+            ],
+            'users' => [
+                'name' => 'Users',
+                'route' => route('user.list'),
+                'current' => $route == 'users'? true : false
+            ],
+            'logout' => [
+                'name' => 'Logout',
+                'route' => route('sign.out'),
+                'current' => $route == 'logout'? true : false
+            ]
+        ];
+
         $this->data['isAdmin'] = auth()->user()['admin']??false;
         $this->data['isLogged'] = auth()->user()??false;
         $this->data['current'] = $route;

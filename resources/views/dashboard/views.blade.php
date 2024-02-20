@@ -17,21 +17,21 @@
     
     <!-- Range -->
     <div class="p-4 bg-zinc-700 xl:flex xl:flex-row gap-4 xl:items-center rounded-lg grid grid-cols-2 w-full">
-      <h3 class="col-span-2">@lang('Range')</h3>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'day') bg-zinc-500 @endif" href="{{route('views', ['range' => 'day'])}}">@lang('Last 24 hours')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'week') bg-zinc-500 @endif" href="{{route('views', ['range' => 'week'])}}">@lang('Last 7 days')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'month') bg-zinc-500 @endif" href="{{route('views', ['range' => 'month'])}}">@lang('Last 30 days')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'quarter') bg-zinc-500 @endif" href="{{route('views', ['range' => 'quarter'])}}">@lang('Last 90 days')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'year') bg-zinc-500 @endif" href="{{route('views', ['range' => 'year'])}}">@lang('Last 365 days')</a>
-      <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'all') bg-zinc-500 @endif" href="{{route('views', ['range' => 'all'])}}">@lang('All time')</a>
+        <h3 class="col-span-2">@lang('Range')</h3>
+        <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'day') bg-zinc-500 @endif" href="{{route('views', ['range' => 'day'])}}">@lang('Last 24 hours')</a>
+        <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'week') bg-zinc-500 @endif" href="{{route('views', ['range' => 'week'])}}">@lang('Last 7 days')</a>
+        <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'month') bg-zinc-500 @endif" href="{{route('views', ['range' => 'month'])}}">@lang('Last 30 days')</a>
+        <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'quarter') bg-zinc-500 @endif" href="{{route('views', ['range' => 'quarter'])}}">@lang('Last 90 days')</a>
+        <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'year') bg-zinc-500 @endif" href="{{route('views', ['range' => 'year'])}}">@lang('Last 365 days')</a>
+        <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'all') bg-zinc-500 @endif" href="{{route('views', ['range' => 'all'])}}">@lang('All time')</a>
     </div>
 
     <!-- Description -->
     <div class="w-full rounded-lg p-4 hidden xl:grid grid-cols-7 gap-4">
-      <h3 class="flex items-center">@lang('Description')</h3>
-      <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg">@lang('Total')</h3>
-      <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg">@lang('Porcentage')</h3>
-      <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg col-span-4">@lang('Language')</h3>
+        <h3 class="flex items-center">@lang('Description')</h3>
+        <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg">@lang('Total')</h3>
+        <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg">@lang('Porcentage')</h3>
+        <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg col-span-4">@lang('Language')</h3>
     </div>
 
     <!-- Total -->
