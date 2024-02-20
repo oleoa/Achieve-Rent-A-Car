@@ -56,6 +56,7 @@ Route::prefix('/dashboard')->name('dashboard.')->group(function () {
         
         Route::delete('/faq/delete', [FAQDashboard::class, 'delete'])->name('delete');
         
+        Route::get('/faq/add', [FAQDashboard::class, 'add'])->name('add');
         Route::post('/faq/add', [FAQDashboard::class, 'add'])->name('add');
 
     });

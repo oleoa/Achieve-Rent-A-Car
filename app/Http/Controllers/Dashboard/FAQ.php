@@ -15,7 +15,7 @@ class FAQ extends Controller
         $this->data('faqs', $existing);
 
         // Load the view
-        return $this->load('dashboard.faq', 'faq');
+        return $this->load('dashboard.faq.list', 'faq');
     }
   
     public function delete(Request $request)
@@ -34,26 +34,41 @@ class FAQ extends Controller
   
     public function add(Request $request)
     {
-        // Replace the line breaks with <br> tags
-        $answer = $request->answer;
-        $answer = str_replace("\r\n", "<br>", $answer);
+        if($request->isMethod('get'))
+        {
+            return $this->load('dashboard.faq.add', 'faq');
+        }
+        elseif($request->isMethod('post'))
+        {
+            // Validate the request
+            $request->validate([
+                'question' => 'required',
+                'answer' => 'required',
+                'pergunta' => 'required',
+                'resposta' => 'required'
+            ]);
     
-        // Replace the line breaks with <br> tags
-        $resposta = $request->resposta;
-        $resposta = str_replace("\r\n", "<br>", $resposta);
+            // Replace the line breaks with <br> tags
+            $answer = $request->answer;
+            $answer = str_replace("\r\n", "<br>", $answer);
+        
+            // Replace the line breaks with <br> tags
+            $resposta = $request->resposta;
+            $resposta = str_replace("\r\n", "<br>", $resposta);
+        
+            // Create a new FAQ
+            $faq = new FAQModel;
+            $faq->question = $request->question;
+            $faq->pergunta = $request->pergunta;
+            $faq->answer = $answer;
+            $faq->resposta = $resposta;
+            $faq->save();
     
-        // Create a new FAQ
-        $faq = new FAQModel;
-        $faq->question = $request->question;
-        $faq->pergunta = $request->pergunta;
-        $faq->answer = $answer;
-        $faq->resposta = $resposta;
-        $faq->save();
-
-        // Save the new data to the file
-        $this->saver->faq();
-
-        // Redirect the user to the FAQ list
-        return redirect()->route('faq.list');
+            // Save the new data to the file
+            $this->saver->faq();
+    
+            // Redirect the user to the FAQ list
+            return redirect()->route('faq.list');
+        }        
     }
 }

@@ -1,5 +1,5 @@
 <!-- The Fixed Sidebar For (OK) Computer -->
-<aside class="fixed top-0 left-0 w-64 h-screen bg-neutral-800 xl:flex flex-col gap-2 hidden">
+<aside class="fixed top-0 xl:left-0 right-0 xl:w-64 w-20 h-screen bg-neutral-800 flex flex-col gap-2">
 
     <!-- Logo -->
     <a href="{{route('dashboard.home')}}" class="p-4 flex items-center justify-center"><img src="{{asset('/img/logos/logo2.png')}}" alt=""></a>
@@ -38,11 +38,5 @@
             <p class="">Login</p>
         </a>    
     @endif
-
-
-</aside>
-
-<!-- The Fixed Sidebar For Phone -->
-<aside class="fixed top-0 right-0 w-20 h-screen bg-neutral-800 flex flex-col gap-2 xl:hidden">
 
 </aside>
