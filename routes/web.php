@@ -31,11 +31,13 @@ use App\Http\Controllers\Dashboard\Discounts;
 */
 
 /*
+    Route::prefix('/dashboard')->group(function () {
+*/
+
+// DASHBOARD ROUTES
 Route::domain('dashboard.achieverentacar.com')->group(function () {
-    */
-Route::prefix('/dashboard')->group(function () {
     
-    Route::get('/', function(){ return redirect()->route('views'); })->name('dashboard');
+    Route::get('/', function(){ return redirect()->route('views'); });
 
     Route::get('/views', [Views::class, 'index'])->name('views');
     Route::delete('/views/delete', [Views::class, 'delete'])->name('view.delete');
@@ -90,6 +92,7 @@ Route::prefix('/dashboard')->group(function () {
 
 });
 
+// CLIENT ROUTES
 Route::get('/', function(){
     return redirect()->route('home', ['en']);
 })->name('root');
