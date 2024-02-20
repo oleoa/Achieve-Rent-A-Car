@@ -141,18 +141,18 @@ class Views extends Controller
 
     public function index(Request $request)
     {
-        // Get the views from the API
+        // Get the views and the range
         $views = ViewsModel::all()->toArray();
-
-        // Get the range from the request
         $this->range = $request->input('range')??'all';
-        $this->data('range', $this->range);
 
         // Calculate the views
         $data = $this->calculateViews($views);
 
+        // Set the range for the view
+        $this->data('range', $this->range);
+        
         // Set the data
-        $this->data('data', $data);
+        $this->data('views', $data);
 
         // Set the current page and load the view
         return $this->load('dashboard.views', 'views');

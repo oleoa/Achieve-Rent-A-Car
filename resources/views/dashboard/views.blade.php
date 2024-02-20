@@ -38,22 +38,22 @@
     <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
       <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Total')</h3>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['total']['total']}}</h3>
+        <h3>{{$views['total']['total']}}</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['porcentage']['total']}}%</h3>
+        <h3>{{$views['porcentage']['total']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('English')</h3>
-        <h3>{{$data['locale']['en']['total']['count']}}</h3>
+        <h3>{{$views['locale']['en']['total']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['en']['total']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['en']['total']['porcentage']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('Portuguese')</h3>
-        <h3>{{$data['locale']['pt']['total']['count']}}</h3>
+        <h3>{{$views['locale']['pt']['total']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['pt']['total']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['pt']['total']['porcentage']}}%</h3>
       </div>
     </div>
 
@@ -61,22 +61,22 @@
     <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
       <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Desktop')</h3>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['total']['desktop']}}</h3>
+        <h3>{{$views['total']['desktop']}}</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['porcentage']['desktop']}}%</h3>
+        <h3>{{$views['porcentage']['desktop']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('English')</h3>
-        <h3>{{$data['locale']['en']['desktop']['count']}}</h3>
+        <h3>{{$views['locale']['en']['desktop']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['en']['desktop']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['en']['desktop']['porcentage']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('Portuguese')</h3>
-        <h3>{{$data['locale']['pt']['desktop']['count']}}</h3>
+        <h3>{{$views['locale']['pt']['desktop']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['pt']['desktop']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['pt']['desktop']['porcentage']}}%</h3>
       </div>
     </div>
 
@@ -84,22 +84,22 @@
     <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
       <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Mobile')</h3>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['total']['mobile']}}</h3>
+        <h3>{{$views['total']['mobile']}}</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['porcentage']['mobile']}}%</h3>
+        <h3>{{$views['porcentage']['mobile']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('English')</h3>
-        <h3>{{$data['locale']['en']['mobile']['count']}}</h3>
+        <h3>{{$views['locale']['en']['mobile']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['en']['mobile']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['en']['mobile']['porcentage']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('Portuguese')</h3>
-        <h3>{{$data['locale']['pt']['mobile']['count']}}</h3>
+        <h3>{{$views['locale']['pt']['mobile']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['pt']['mobile']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['pt']['mobile']['porcentage']}}%</h3>
       </div>
     </div>
 
@@ -107,22 +107,22 @@
     <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
       <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Home')</h3>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['total']['home']}}</h3>
+        <h3>{{$views['total']['home']}}</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['porcentage']['home']}}%</h3>
+        <h3>{{$views['porcentage']['home']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('English')</h3>
-        <h3>{{$data['locale']['en']['home']['count']}}</h3>
+        <h3>{{$views['locale']['en']['home']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['en']['home']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['en']['home']['porcentage']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('Portuguese')</h3>
-        <h3>{{$data['locale']['pt']['home']['count']}}</h3>
+        <h3>{{$views['locale']['pt']['home']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['pt']['home']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['pt']['home']['porcentage']}}%</h3>
       </div>
     </div>
 
@@ -130,22 +130,22 @@
     <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
       <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('About')</h3>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['total']['about']}}</h3>
+        <h3>{{$views['total']['about']}}</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['porcentage']['about']}}%</h3>
+        <h3>{{$views['porcentage']['about']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('English')</h3>
-        <h3>{{$data['locale']['en']['about']['count']}}</h3>
+        <h3>{{$views['locale']['en']['about']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['en']['about']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['en']['about']['porcentage']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('Portuguese')</h3>
-        <h3>{{$data['locale']['pt']['about']['count']}}</h3>
+        <h3>{{$views['locale']['pt']['about']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['pt']['about']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['pt']['about']['porcentage']}}%</h3>
       </div>
     </div>
 
@@ -153,22 +153,22 @@
     <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
       <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('FAQ')</h3>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['total']['faq']}}</h3>
+        <h3>{{$views['total']['faq']}}</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['porcentage']['faq']}}%</h3>
+        <h3>{{$views['porcentage']['faq']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('English')</h3>
-        <h3>{{$data['locale']['en']['faq']['count']}}</h3>
+        <h3>{{$views['locale']['en']['faq']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['en']['faq']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['en']['faq']['porcentage']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('Portuguese')</h3>
-        <h3>{{$data['locale']['pt']['faq']['count']}}</h3>
+        <h3>{{$views['locale']['pt']['faq']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['pt']['faq']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['pt']['faq']['porcentage']}}%</h3>
       </div>
     </div>
 
@@ -176,22 +176,22 @@
     <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
       <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Contact Us')</h3>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['total']['contact']}}</h3>
+        <h3>{{$views['total']['contact']}}</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-        <h3>{{$data['porcentage']['contact']}}%</h3>
+        <h3>{{$views['porcentage']['contact']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('English')</h3>
-        <h3>{{$data['locale']['en']['contact']['count']}}</h3>
+        <h3>{{$views['locale']['en']['contact']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['en']['contact']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['en']['contact']['porcentage']}}%</h3>
       </div>
       <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
         <h3>@lang('Portuguese')</h3>
-        <h3>{{$data['locale']['pt']['contact']['count']}}</h3>
+        <h3>{{$views['locale']['pt']['contact']['count']}}</h3>
         <h3> | </h3>
-        <h3>{{$data['locale']['pt']['contact']['porcentage']}}%</h3>
+        <h3>{{$views['locale']['pt']['contact']['porcentage']}}%</h3>
       </div>
     </div>
 
