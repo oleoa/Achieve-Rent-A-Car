@@ -62,6 +62,9 @@
         <!-- Header Content -->
         <nav class="fixed top-0 left-0 w-full flex flex-col">
 
+            <!-- Info if the user is in the local site -->
+            <x-local-site :locale="$locale"/>
+
             <!-- Discounts -->
             <x-discounts :discount="$discount" :locale="$locale"/>
 
