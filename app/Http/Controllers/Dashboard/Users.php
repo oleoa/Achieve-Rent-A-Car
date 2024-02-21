@@ -34,7 +34,7 @@ class Users extends Controller
         $this->saver->users();
 
         // Redirect the user to the user list
-        return redirect()->route('user.list');
+        return redirect()->route('dashboard.user.list');
     }
   
     public function add(Request $request)
@@ -63,11 +63,11 @@ class Users extends Controller
         // If the user was not created
         if(!$info) {
             session()->flash("error", 'Server error. Please try again later.');
-            return redirect()->route('user.list');
+            return redirect()->route('dashboard.user.list');
         }
         
         // Send the email with the token code
-        $verificationLink = route('user.setup', ['token' => $verificationToken]);
+        $verificationLink = route('dashboard.user.setup', ['token' => $verificationToken]);
         Mail::to($request->email)->send(new SetupEmail($verificationLink));
         
         // Save the new data to the file
@@ -75,7 +75,7 @@ class Users extends Controller
 
         // Redirect the user to the user list
         session()->flash("success", 'User added successfully.');    
-        return redirect()->route('user.list');
+        return redirect()->route('dashboard.user.list');
     }
     
     public function setup(Request $request)
@@ -89,13 +89,13 @@ class Users extends Controller
         // If the user does not exist abort
         if(!$user) {
             session()->flash("error", 'Invalid token.');
-            return redirect()->route('sign.in');
+            return redirect()->route('dashboard.sign.in');
         }
     
         // If the user is already setted up abort
         if($user->setted_up) {
             session()->flash("error", 'User already setted up.');
-            return redirect()->route('sign.in');
+            return redirect()->route('dashboard.sign.in');
         }
 
         // Set the user data
@@ -127,13 +127,13 @@ class Users extends Controller
         // If the token is invalid abort
         if(!$user) {
             session()->flash("error", 'Invalid token.');
-            return redirect()->route('sign.in');
+            return redirect()->route('dashboard.sign.in');
         }
 
         // If the user is already setted up abort
         if($user->setted_up) {
             session()->flash("error", 'User already setted up.');
-            return redirect()->route('sign.in');
+            return redirect()->route('dashboard.sign.in');
         }
     
         // If the user does not exist abort
@@ -141,7 +141,7 @@ class Users extends Controller
         $user = UserModel::where('id', $id)->first();    
         if(!$user) {
             session()->flash("error", 'User does not exist.');
-            return redirect()->route('sign.in');
+            return redirect()->route('dashboard.sign.in');
         }
     
         // Set the user up
@@ -157,7 +157,7 @@ class Users extends Controller
         // Log the user in
         if(!Auth::attempt($validated)){
             session()->flash('error', 'The provided credentials do not match our records.');
-            return redirect()->route('sign.in');
+            return redirect()->route('dashboard.sign.in');
         }
         
         // Regenerate the session
@@ -165,6 +165,6 @@ class Users extends Controller
 
         // Redirect the user to the dashboard
         session()->flash("success", 'User setted successfully.');
-        return redirect()->route('views');
+        return redirect()->route('dashboard.views.list');
     }
 }
