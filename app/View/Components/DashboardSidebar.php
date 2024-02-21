@@ -10,16 +10,16 @@ class Sidebar extends Component
 {
     public $current;
     public $is;
-    public $user;
+    public $logged;
     
     /**
      * Create a new component instance.
      */
-    public function __construct($current, $is, $user)
+    public function __construct($current, $is, $logged)
     {
         $this->current = $current;
         $this->is = $is;
-        $this->user = $user;
+        $this->logged = $logged;
     }
 
     /**

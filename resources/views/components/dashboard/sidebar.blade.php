@@ -6,15 +6,15 @@
 
     @if($is['logged'])
         <!-- User -->
-        <a class="grid grid-cols-3 gap-4 p-4 hover:text-white hover:bg-neutral-700" href="{{route('dashboard.profile.editor')}}">
+        <a class="grid grid-cols-3 gap-4 p-4 hover:text-white hover:bg-neutral-700 {{$current == 'profile' ? 'bg-neutral-700' : ''}}" href="{{route('dashboard.profile.editor')}}">
 
             <div class="flex justify-center items-center">
-                <img src="{{asset($user['image'])}}" alt="Profile Picture" class="rounded-full w-16 h-16 object-cover object-center">
+                <img src="{{asset($logged['image'])}}" alt="Profile Picture" class="rounded-full w-16 h-16 object-cover object-center">
             </div>
 
             <div class="col-span-2">
                 <h3>Welcome</h3>
-                <p>{{$user['name']}}</p>
+                <p>{{$logged['name']}}</p>
             </div>
 
         </a>

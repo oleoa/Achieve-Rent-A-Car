@@ -44,7 +44,7 @@
             <input type="password" placeholder="Password" name="password" id="passwordInput" class="bg-neutral-700 p-4 rounded shadow">
 
             <!-- Submit -->
-            <button type="submit" class="bg-green-700 hover:bg-green-600 text-white p-4 rounded shadow">@lang('Save')</button>
+            <button type="submit" class="bg-green-700 hover:bg-green-600 text-white p-4 rounded shadow load">@lang('Save')</button>
 
             <!-- Error -->
             <x-messages/>
