@@ -9,3 +9,6 @@ import './colors';
 
 // Open and close the FAQ accordion
 import './faq';
+
+// Open the delete warning component
+import './delete';
