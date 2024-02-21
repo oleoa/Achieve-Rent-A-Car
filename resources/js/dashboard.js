@@ -6,3 +6,6 @@ import './loader';
 
 // Colors setup for discounts
 import './colors';
+
+// Open and close the FAQ accordion
+import './faq';

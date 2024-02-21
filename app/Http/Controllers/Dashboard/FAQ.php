@@ -8,11 +8,15 @@ use Illuminate\Http\Request;
 
 class FAQ extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         // Get the existing FAQs
-        $existing = FAQModel::all()->toArray();
-        $this->data('faqs', $existing);
+        $faqs = FAQModel::all()->toArray();
+        $this->data('faqs', $faqs);
+
+        // Get the filter language
+        $language = $request->input('language')??'en';
+        $this->data('language', $language);
 
         // Load the view
         return $this->load('dashboard.faq.list', 'faq');
