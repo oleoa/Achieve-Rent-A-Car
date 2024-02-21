@@ -33,7 +33,7 @@ use App\Http\Controllers\Dashboard\Discounts;
 /*
     Route::domain('dashboard.achieverentacar.com')->group(function () {
 */
-
+        
 // DASHBOARD ROUTES
 Route::prefix('/dashboard')->name('dashboard.')->group(function () {
     
