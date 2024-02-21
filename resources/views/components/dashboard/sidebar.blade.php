@@ -33,7 +33,7 @@
     @else
 
         <!-- Welcome -->
-        <h3 class="px-4 pb-4">Welcome,<br>please sign in</h3>
+        <h3 class="xl:px-4 xl:text-2xl text-base text-center">Welcome,<br>please sign in</h3>
 
     @endif
 
