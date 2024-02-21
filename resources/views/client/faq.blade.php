@@ -42,7 +42,7 @@
                 </div>
 
                 <!-- Answer -->
-                <div class="bg-flagYellow p-4 rounded hidden">
+                <div class="bg-flagYellow p-4 rounded hidden answer">
                     <p class="text-black font-medium">@lang($locale=='en'?$f['answer']:$f['resposta'])</p>
                 </div>
 

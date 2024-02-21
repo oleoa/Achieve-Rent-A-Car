@@ -38,21 +38,58 @@
                         <span class="xl:text-lg xl:pr-0 pr-20 font-semibold">@lang($language=='en'?$f['question']:$f['pergunta'])</span>
 
                         <!-- Delete Button -->
-                        <form class="absolute h-full flex items-center top-0 right-0 px-2 py-2" action="{{route('dashboard.faq.delete')}}" method="post">
-                            @csrf @method('delete')
+                        <button type="submit" id="faq-{{$f['id']}}" class="px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed delete">Delete</button>
 
-                            <!-- ID -->
-                            <input type="hidden" name="id" value="{{$f['id']}}">
+                    </div>
 
-                            <!-- Delete Button -->
-                            <button type="submit" class="px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed">Delete</button>
+                    <!-- Alert component -->
+                    <div class="hidden" id="delete-warning-faq-{{$f['id']}}">
 
-                        </form>
+                        <!-- Alert -->
+                        <div class="fixed top-0 left-0 w-screen h-screen bg-neutral-900/75 z-50 grid grid-cols-3 p-16 grid-rows-3">
+
+                            <!-- Holder -->
+                            <div></div>
+                            
+                            <!-- Alert -->
+                            <div class="bg-flagYellow text-black font-medium text-center p-4 rounded-xl flex flex-col justify-between gap-4">
+
+                                <!-- Title -->
+                                <h1>Warning</h1>
+
+                                <!-- Message -->
+                                <h2>Do you really wanna delete it?</h2>
+
+                                <!-- Buttons -->
+                                <div class="h-full flex gap-4 justify-center items-start pt-4">
+
+                                    <button id="faq-{{$f['id']}}" class="cancel text-3xl px-4 py-2 border-2 border-green-500 text-green-500 rounded-lg hover:text-white hover:bg-green-500">No</button>
+
+                                    <!-- Delete form -->
+                                    <form action="{{route('dashboard.faq.delete')}}" method="post">
+                                        @csrf @method('delete')
+                                        
+                                        <!-- Hidden input with the discount id -->
+                                        <input type="hidden" name="id" value="{{$f['id']}}">
+                                        
+                                        <!-- Delete button -->
+                                        <button class="load text-3xl px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed">Yes</button>
+                                        
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Holder -->
+                            <div></div>
+
+                        </div>
 
                     </div>
 
                     <!-- Answer Box -->
-                    <div class="bg-flagYellow p-4 rounded hidden">
+                    <div class="bg-flagYellow p-4 rounded hidden answer">
 
                         <!-- Answer -->
                         <p class="text-black font-medium">@lang($language=='en'?$f['answer']:$f['resposta'])</p>

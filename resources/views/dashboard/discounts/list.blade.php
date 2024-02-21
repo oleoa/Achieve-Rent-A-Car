@@ -38,18 +38,9 @@
 
                         @endif
 
-                        <!-- Delete form -->
-                        <form action="{{route('dashboard.discount.delete')}}" method="post">
-                            @csrf @method('delete')
-
-                            <!-- Hidden input with the discount id -->
-                            <input type="hidden" name="id" value="{{$discount['id']}}">
-
-                            <!-- Delete button -->
-                            <button type="submit" class="px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed delete" id="discount-{{$discount['id']}}">Delete</button>
+                        <!-- Delete button -->
+                        <button type="submit" class="px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed delete" id="discount-{{$discount['id']}}">Delete</button>
                             
-                        </form>
-
                         <!-- Alert component -->
                         <div class="hidden" id="delete-warning-discount-{{$discount['id']}}">
 
