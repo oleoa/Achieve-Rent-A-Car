@@ -12,7 +12,7 @@
             <input name="email" type="email" placeholder="Email" class="px-4 py-2 rounded-lg bg-zinc-700">
             <input name="password" type="password" placeholder="Password" class="px-4 py-2 rounded-lg bg-zinc-700">
             <button type="submit" class="px-4 py-2 bg-flagBlue hover:bg-blue-500 rounded-lg text-white load">@lang('Login')</button>
-            <x-form-messages-alerts/>
+            <x-messages/>
         </form>
         
     </div>

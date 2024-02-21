@@ -7,6 +7,7 @@
         <meta name="title" content="Dashboard Achieve Rent A Car">
         <meta name="description" content="O dashboard para a melhor Rent A Car da Madeira">
         <meta name="author" content="Leonardo Abreu de Paulo">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.css" rel="stylesheet">
         @vite(['resources/css/app.css', 'resources/js/dashboard.js'])
         <title>@lang('Title')</title>
     </head>
@@ -17,7 +18,7 @@
         <x-loader :isLight="false"/>
 
         <!-- Sidebar -->
-        <x-dashboard.sidebar :current="$current" :is="$is" :name="$name"/>
+        <x-dashboard.sidebar :current="$current" :is="$is" :user="$user"/>
 
         <!-- Main Content -->
         <main class="xl:pl-64 xl:pr-0 pr-20 row-span-1">

@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 use App\Mail\UpdateEmail;
 
 class Profile extends Controller
@@ -34,6 +35,7 @@ class Profile extends Controller
                 Rule::unique('users', 'email')->ignore(auth()->user()->id),
             ],
             'password' => 'required',
+            'image' => 'nullable|file|mimes:jpeg,png,jpg|max:2048'
         ]);
 
         // Get the old user to check the password and email
@@ -64,8 +66,23 @@ class Profile extends Controller
             session()->flash("info", 'Validate your email to update it. We have sent you an email with the instructions.');
         }
 
+        // Updates the image
+        if($request->file('image'))
+        {
+            // Saves the image in the storage
+            $response = Storage::disk('public')->put('users', $request->file('image'));
+
+            // Deletes the old image
+            if($user->image) Storage::disk('public')->delete(str_replace('storage/', '', $user->image));
+
+            // Updates the user image
+            $user->image = 'storage/'.$response;
+        }
+
+        // Updates the user
         $user->update();
 
+        // Redirects the user
         return redirect()->route('dashboard.profile.editor');
     }
 

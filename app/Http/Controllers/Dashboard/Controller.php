@@ -30,7 +30,7 @@ class Controller extends BaseController
         $this->data['is']['admin'] = auth()->user()['admin']??false;
         $this->data['is']['logged'] = auth()->user()??false;
         $this->data['current'] = $route;
-        $this->data['name'] = auth()->user()['name']??'';
+        $this->data['user'] = auth()->user();
         
         // Returns the view with the data
         return view($view, $this->data);

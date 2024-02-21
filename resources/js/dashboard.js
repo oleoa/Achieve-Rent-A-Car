@@ -6,6 +6,3 @@ import './loader';
 
 // Colors setup for discounts
 import './colors';
-
-// For the profile image
-import './profile';

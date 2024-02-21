@@ -103,16 +103,27 @@ if(setTextColorRed){
     });
 }
 
-textInput.addEventListener('input', function() {
-    textSample.innerHTML = textInput.value;
-});
-textoInput.addEventListener('input', function() {
-    textoSample.innerHTML = textoInput.value;
-});
-colorInput.addEventListener('input', function() {
-    divSample.style.backgroundColor = colorInput.value;
-});
-textColorInput.addEventListener('input', function() {
-    textSample.style.color = textColorInput.value;
-    textoSample.style.color = textColorInput.value;
-});
+if(textInput){
+    textInput.addEventListener('input', function() {
+        textSample.innerHTML = textInput.value;
+    });
+}
+
+if(textoInput){
+    textoInput.addEventListener('input', function() {
+        textoSample.innerHTML = textoInput.value;
+    });
+}
+
+if(colorInput){
+    colorInput.addEventListener('input', function() {
+        divSample.style.backgroundColor = colorInput.value;
+    });
+}
+
+if(textColorInput){
+    textColorInput.addEventListener('input', function() {
+        textSample.style.color = textColorInput.value;
+        textoSample.style.color = textColorInput.value;
+    });
+}
