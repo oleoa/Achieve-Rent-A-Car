@@ -21,20 +21,20 @@
         <x-dashboard.sidebar :current="$current" :is="$is" :logged="$logged"/>
 
         <!-- Main Content -->
-        <main class="xl:pl-64 xl:pr-0 pr-20 row-span-1">
+        <main class="xl:pl-64 pl-20 row-span-1">
 
             @yield('main')
 
         </main>
 
         <!-- Footer -->
-        <footer class="xl:pl-64 w-full bg-neutral-950 min-h-footer flex justify-start items-center">
+        <footer class="xl:pl-64 pl-20 w-full bg-neutral-950 min-h-footer flex justify-start items-center">
 
             <!-- Links -->
             <div class="flex gap-4 text-white justify-center items-center px-4">
 
                 <!-- Title -->
-                <h2 class="py-4">Made by <br><a href="https://github.com/leonardo-abreu-programmer" target="__blank">Leonardo Abreu de Paulo</a></h2>
+                <h2 class="py-4 xl:text-3xl text-xl">Made by <br><a href="https://github.com/leonardo-abreu-programmer" target="__blank">Leonardo Abreu de Paulo</a></h2>
 
             </div>
 

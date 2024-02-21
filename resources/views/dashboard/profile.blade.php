@@ -38,7 +38,6 @@
 
             </div>
 
-
             <!-- Password -->
             <label for="passwordInput">Password to confirm</label>
             <input type="password" placeholder="Password" name="password" id="passwordInput" class="bg-neutral-700 p-4 rounded shadow">
