@@ -23,48 +23,42 @@
             <div class="grid grid-cols-2 gap-4">
 
                 <!-- Box of the background color -->
-                <div class="p-4 bg-zinc-600 rounded shadow flex flex-col items-center gap-4">
+                <div class="p-4 bg-zinc-600 rounded shadow grid xl:grid-cols-2 items-center gap-4">
     
-                    <!-- Row of the title and color buttons -->
-                    <div class="flex flex-row justify-between w-full">
-    
-                        <label class="text-start w-full" for="color">@lang('Background Color')</label>
-    
-                        <div class="w-full flex justify-end gap-4">
-                            <button id="setColorBlack" class="rounded px-2 py-1 bg-black w-10 h-10"></button>
-                            <button id="setColorWhite" class="rounded px-2 py-1 bg-white w-10 h-10"></button>
-                            <button id="setColorBlue" class="rounded px-2 py-1 bg-flagBlue w-10 h-10"></button>
-                            <button id="setColorYellow" class="rounded px-2 py-1 bg-flagYellow w-10 h-10"></button>
-                            <button id="setColorRed" class="rounded px-2 py-1 bg-flagRed w-10 h-10"></button>
-                        </div>
-    
+                    <!-- Title -->
+                    <label class="text-start w-full" for="color">@lang('Wall Color')</label>
+
+                    <!-- Row of the buttons -->
+                    <div class="w-full xl:flex flex-row grid grid-cols-2 xl:justify-end justify-items-center gap-4">
+                        <button id="setColorBlack" class="rounded px-2 py-1 bg-black w-10 h-10"></button>
+                        <button id="setColorWhite" class="rounded px-2 py-1 bg-white w-10 h-10"></button>
+                        <button id="setColorBlue" class="rounded px-2 py-1 bg-flagBlue w-10 h-10"></button>
+                        <button id="setColorYellow" class="rounded px-2 py-1 bg-flagYellow w-10 h-10"></button>
+                        <button id="setColorRed" class="rounded px-2 py-1 bg-flagRed w-10 h-10"></button>
                     </div>
     
                     <!-- Input of the background color -->
-                    <input type="color" name="color" id="color" class="px-2 py-1 bg-zinc-500 rounded shadow w-full" value="#ffffff">
+                    <input type="color" name="color" id="color" class="px-2 py-1 bg-zinc-500 rounded shadow w-full xl:col-span-2" value="#ffffff">
     
                 </div>
     
                 <!-- Box of the text color -->
-                <div class="p-4 bg-zinc-600 rounded shadow flex flex-col items-center gap-4">
+                <div class="p-4 bg-zinc-600 rounded shadow grid xl:grid-cols-2 items-center gap-4">
 
-                    <!-- Row of the title and color buttons -->
-                    <div class="flex flex-row justify-between w-full">
-    
-                        <label class="text-start w-full" for="text_color">@lang('Text Color')</label>
-    
-                        <div class="w-full flex justify-end gap-4">
-                            <button id="setTextColorBlack" class="rounded px-2 py-1 bg-black w-10 h-10"></button>
-                            <button id="setTextColorWhite" class="rounded px-2 py-1 bg-white w-10 h-10"></button>
-                            <button id="setTextColorBlue" class="rounded px-2 py-1 bg-flagBlue w-10 h-10"></button>
-                            <button id="setTextColorYellow" class="rounded px-2 py-1 bg-flagYellow w-10 h-10"></button>
-                            <button id="setTextColorRed" class="rounded px-2 py-1 bg-flagRed w-10 h-10"></button>
-                        </div>
-    
+                    <!-- Title -->
+                    <label class="text-start w-full" for="text_color">@lang('Text Color')</label>
+
+                    <!-- Row of the buttons -->
+                    <div class="w-full xl:flex flex-row grid grid-cols-2 xl:justify-end justify-items-center gap-4">
+                        <button id="setTextColorBlack" class="rounded px-2 py-1 bg-black w-10 h-10"></button>
+                        <button id="setTextColorWhite" class="rounded px-2 py-1 bg-white w-10 h-10"></button>
+                        <button id="setTextColorBlue" class="rounded px-2 py-1 bg-flagBlue w-10 h-10"></button>
+                        <button id="setTextColorYellow" class="rounded px-2 py-1 bg-flagYellow w-10 h-10"></button>
+                        <button id="setTextColorRed" class="rounded px-2 py-1 bg-flagRed w-10 h-10"></button>
                     </div>
     
                     <!-- Input of the text color -->
-                    <input type="color" name="text_color" id="text_color" class="px-2 py-1 bg-zinc-500 rounded shadow w-full">
+                    <input type="color" name="text_color" id="text_color" class="px-2 py-1 bg-zinc-500 rounded shadow w-full xl:col-span-2">
     
                 </div>
 
