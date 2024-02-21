@@ -24,7 +24,7 @@
         <a href="{{route('dashboard.faq.list')}}" class="p-4 {{$current == 'faq' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">
             <p class="">FAQ</p>
         </a>
-        <a href="{{route('dashboard.discount.list')}}" class="p-4 {{$current == 'discount' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">
+        <a href="{{route('dashboard.discount.list')}}" class="p-4 {{$current == 'discounts' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">
             <p class="">Discounts</p>
         </a>
         <a href="{{route('dashboard.user.list')}}" class="p-4 {{$current == 'user' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer">

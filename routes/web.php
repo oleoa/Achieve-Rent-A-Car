@@ -71,6 +71,7 @@ Route::prefix('/dashboard')->name('dashboard.')->group(function () {
         
         Route::delete('/discounts/delete', [Discounts::class, 'delete'])->name('delete');
         
+        Route::get('/discounts/add', [Discounts::class, 'add'])->name('add');
         Route::post('/discounts/add', [Discounts::class, 'add'])->name('add');
 
     });

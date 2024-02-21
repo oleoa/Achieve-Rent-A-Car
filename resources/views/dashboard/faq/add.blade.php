@@ -6,7 +6,7 @@
         <!-- Title -->
         <div class="flex justify-between">
             <h1 class="text-white">Add FAQ</h1>
-            <a href="{{route('dashboard.faq.list')}}" class="px-4 py-2 border-2 border-flagBlue text-flagBlue rounded-lg hover:text-white hover:bg-flagBlue">List</a>
+            <a href="{{route('dashboard.faq.list')}}" class="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-lg hover:text-white hover:bg-blue-500">List</a>
         </div>
         
         <!-- Add FAQ -->

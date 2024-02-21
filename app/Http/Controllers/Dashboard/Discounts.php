@@ -15,7 +15,7 @@ class Discounts extends Controller
         $this->data('discounts', $existing);
 
         // Load the view
-        return $this->load('dashboard.discounts', 'discounts');
+        return $this->load('dashboard.discounts.list', 'discounts');
     }
   
     public function delete(Request $request)
@@ -29,11 +29,23 @@ class Discounts extends Controller
         $this->saver->discounts();
 
         // Redirect the user to the discount list
-        return redirect()->route('discount.list');
+        return redirect()->route('dashboard.discount.list');
     }
   
     public function add(Request $request)
     {
+        // If the request is a GET, load the view
+        if($request->isMethod('GET'))
+            return $this->load('dashboard.discounts.add', 'discounts');
+        
+        // Validate the request
+        $validated = $request->validate([
+            'text' => 'required',
+            'texto' => 'required',
+            'color' => 'required',
+            'text_color' => 'required'
+        ]);
+
         // Create a new discount
         $discount = new DiscountsModel;
         $discount->text = $request->text;
@@ -46,7 +58,7 @@ class Discounts extends Controller
         $this->saver->discounts();
 
         // Redirect the user to the discount list
-        return redirect()->route('discount.list');
+        return redirect()->route('dashboard.discount.list');
     }
   
     public function enable(Request $request)
@@ -68,7 +80,7 @@ class Discounts extends Controller
         $this->saver->discounts();
 
         // Redirect the user to the discount list
-        return redirect()->route('discount.list');
+        return redirect()->route('dashboard.discount.list');
     }
   
     public function disable(Request $request)
@@ -83,6 +95,6 @@ class Discounts extends Controller
         $this->saver->discounts();
 
         // Redirect the user to the discount list
-        return redirect()->route('discount.list');
+        return redirect()->route('dashboard.discount.list');
     }
 }
