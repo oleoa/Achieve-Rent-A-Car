@@ -36,7 +36,7 @@ use App\Http\Controllers\Dashboard\Discounts;
 */
     
 // DASHBOARD ROUTES
-Route::domain('dashboard.achieverentacar.com')->group(function () {
+Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
     
     // To create a home page
     Route::get('/', function(){
