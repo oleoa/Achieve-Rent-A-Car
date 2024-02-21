@@ -12,10 +12,10 @@ return new class extends Migration
   public function up(): void
   {
     Schema::create('views', function (Blueprint $table) {
-      $table->id();
-      $table->string('page');
-      $table->string('locale');
-      $table->timestamps();
+        $table->id();
+        $table->string('page');
+        $table->string('locale');
+        $table->timestamps();
     });
   }
 

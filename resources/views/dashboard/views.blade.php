@@ -5,195 +5,99 @@
 
         <!-- Title -->
         <div class="flex items-center justify-between gap-4">
+
+            <!-- Title -->
             <h1 class="">@lang('Views')</h1>
+
+            <!-- Delete All Button -->
             <form action="{{route('dashboard.views.delete')}}" method="POST">
                 @method('DELETE')
                 @csrf
                 <input type="submit" class="hover:text-white cursor-pointer text-red-500 hover:bg-red-500 px-4 py-2 rounded-lg border-2  border-red-500" value="Delete All">
             </form>
+
         </div>
 
-        <!-- Messages -->
-        <x-messages/>
-        
-        <!-- Range -->
-        <div class="p-4 bg-zinc-700 xl:flex xl:flex-row gap-4 xl:items-center rounded-lg grid grid-cols-2 w-full">
-            <h3 class="col-span-2">@lang('Range')</h3>
-            <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'day') bg-zinc-500 @endif" href="{{route('dashboard.views.list', ['range' => 'day'])}}">@lang('Last 24 hours')</a>
-            <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'week') bg-zinc-500 @endif" href="{{route('dashboard.views.list', ['range' => 'week'])}}">@lang('Last 7 days')</a>
-            <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'month') bg-zinc-500 @endif" href="{{route('dashboard.views.list', ['range' => 'month'])}}">@lang('Last 30 days')</a>
-            <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'quarter') bg-zinc-500 @endif" href="{{route('dashboard.views.list', ['range' => 'quarter'])}}">@lang('Last 90 days')</a>
-            <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'year') bg-zinc-500 @endif" href="{{route('dashboard.views.list', ['range' => 'year'])}}">@lang('Last 365 days')</a>
-            <a class="hover:text-white hover:bg-zinc-400 px-4 py-2 rounded-lg border-2  border-zinc-500 @if($range == 'all') bg-zinc-500 @endif" href="{{route('dashboard.views.list', ['range' => 'all'])}}">@lang('All time')</a>
-        </div>
+        <!-- Filters -->
+        <div class="w-full flex flex-col gap-4">
+            
+            <!-- Range -->
+            <div class="p-2 w-full bg-neutral-800 rounded flex gap-2">
+                <a class="px-4 py-2 {{$filters['range'] == 'today' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('range' => 'today')))}}">Today</a>
+                <a class="px-4 py-2 {{$filters['range'] == 'week' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('range' => 'week')))}}">Week</a>
+                <a class="px-4 py-2 {{$filters['range'] == 'motnh' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('range' => 'motnh')))}}">Month</a>
+                <a class="px-4 py-2 {{$filters['range'] == 'year' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('range' => 'year')))}}">Year</a>
+                <a class="px-4 py-2 {{$filters['range'] == 'all' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('range' => 'all')))}}">All</a>
+            </div>
 
-        <!-- Description -->
-        <div class="w-full rounded-lg p-4 hidden xl:grid grid-cols-7 gap-4">
-            <h3 class="flex items-center">@lang('Description')</h3>
-            <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg">@lang('Total')</h3>
-            <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg">@lang('Porcentage')</h3>
-            <h3 class="flex items-center bg-zinc-700 px-4 py-2 rounded-lg col-span-4">@lang('Language')</h3>
+            <!-- Language -->
+            <div class="p-2 w-full bg-neutral-800 rounded flex gap-2">
+                <a class="px-4 py-2 {{$filters['language'] == 'en' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('language' => 'en')))}}">English</a>
+                <a class="px-4 py-2 {{$filters['language'] == 'pt' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('language' => 'pt')))}}">Portuguese</a>
+                <a class="px-4 py-2 {{$filters['language'] == 'all' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('language' => 'all')))}}">All</a>
+            </div>
+            
+            <!-- Device -->
+            <div class="p-2 w-full bg-neutral-800 rounded flex gap-2">
+                <a class="px-4 py-2 {{$filters['device'] == '0' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('device' => '0')))}}">Computer</a>
+                <a class="px-4 py-2 {{$filters['device'] == '1' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('device' => '1')))}}">Moblie</a>
+                <a class="px-4 py-2 {{$filters['device'] == 'all' ? 'border-2 border-blue-500' : ''}} bg-neutral-700 hover:bg-neutral-600 hover:text-white rounded" href="{{route('dashboard.'.$current.'.list', array_replace($filters, array('device' => 'all')))}}">All</a>
+            </div>
+
         </div>
 
         <!-- Total -->
-        <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
-        <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Total')</h3>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['total']['total']}}</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['porcentage']['total']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('English')</h3>
-            <h3>{{$views['locale']['en']['total']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['en']['total']['porcentage']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('Portuguese')</h3>
-            <h3>{{$views['locale']['pt']['total']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['pt']['total']['porcentage']}}%</h3>
-        </div>
+        <div class="bg-neutral-800 rounded p-4 flex gap-4 items-center justify-start">
+            <h2>Total</h2>
+            <h3>{{$views['total']}} Views</h3>
+            <h3>{{$views['percentage']}}% Of All</h3>
         </div>
 
-        <!-- Desktop -->
-        <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
-        <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Desktop')</h3>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['total']['desktop']}}</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['porcentage']['desktop']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('English')</h3>
-            <h3>{{$views['locale']['en']['desktop']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['en']['desktop']['porcentage']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('Portuguese')</h3>
-            <h3>{{$views['locale']['pt']['desktop']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['pt']['desktop']['porcentage']}}%</h3>
-        </div>
-        </div>
+        <!-- Pages -->
+        <div class="grid xl:grid-cols-3 gap-4">
 
-        <!-- Mobile -->
-        <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
-        <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Mobile')</h3>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['total']['mobile']}}</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['porcentage']['mobile']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('English')</h3>
-            <h3>{{$views['locale']['en']['mobile']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['en']['mobile']['porcentage']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('Portuguese')</h3>
-            <h3>{{$views['locale']['pt']['mobile']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['pt']['mobile']['porcentage']}}%</h3>
-        </div>
-        </div>
+            <!-- Home -->
+            <div class="bg-neutral-700 text-center rounded flex flex-col gap-4 pb-4">
+                <h2 class="bg-neutral-800 rounded-t py-2">Home</h2>
+                <h3 class="flex justify-between px-4"><span>Views</span><span>{{$views['home']['total']}}</span></h3>
+                <h3 class="flex justify-between px-4"><span>Percentage</span><span>{{$views['home']['percentage']}}%</span></h3>
+            </div>
 
-        <!-- Home -->
-        <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
-        <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Home')</h3>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['total']['home']}}</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['porcentage']['home']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('English')</h3>
-            <h3>{{$views['locale']['en']['home']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['en']['home']['porcentage']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('Portuguese')</h3>
-            <h3>{{$views['locale']['pt']['home']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['pt']['home']['porcentage']}}%</h3>
-        </div>
-        </div>
+            <!-- Fleet -->
+            <div class="bg-neutral-700 text-center rounded flex flex-col gap-4 pb-4">
+                <h2 class="bg-neutral-800 rounded-t py-2">Fleet</h2>
+                <h3 class="flex justify-between px-4"><span>Views</span><span>{{$views['fleet']['total']}}</span></h3>
+                <h3 class="flex justify-between px-4"><span>Percentage</span><span>{{$views['fleet']['percentage']}}%</span></h3>
+            </div>
 
-        <!-- About -->
-        <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
-        <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('About')</h3>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['total']['about']}}</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['porcentage']['about']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('English')</h3>
-            <h3>{{$views['locale']['en']['about']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['en']['about']['porcentage']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('Portuguese')</h3>
-            <h3>{{$views['locale']['pt']['about']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['pt']['about']['porcentage']}}%</h3>
-        </div>
-        </div>
+            <!-- About Us -->
+            <div class="bg-neutral-700 text-center rounded flex flex-col gap-4 pb-4">
+                <h2 class="bg-neutral-800 rounded-t py-2">About Us</h2>
+                <h3 class="flex justify-between px-4"><span>Views</span><span>{{$views['about']['total']}}</span></h3>
+                <h3 class="flex justify-between px-4"><span>Percentage</span><span>{{$views['about']['percentage']}}%</span></h3>
+            </div>
 
-        <!-- FAQ -->
-        <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
-        <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('FAQ')</h3>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['total']['faq']}}</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['porcentage']['faq']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('English')</h3>
-            <h3>{{$views['locale']['en']['faq']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['en']['faq']['porcentage']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('Portuguese')</h3>
-            <h3>{{$views['locale']['pt']['faq']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['pt']['faq']['porcentage']}}%</h3>
-        </div>
-        </div>
+            <!-- Car Seats -->
+            <div class="bg-neutral-700 text-center rounded flex flex-col gap-4 pb-4">
+                <h2 class="bg-neutral-800 rounded-t py-2">Car Seats</h2>
+                <h3 class="flex justify-between px-4"><span>Views</span><span>{{$views['seats']['total']}}</span></h3>
+                <h3 class="flex justify-between px-4"><span>Percentage</span><span>{{$views['seats']['percentage']}}%</span></h3>
+            </div>
 
-        <!-- Contact -->
-        <div class="w-full bg-zinc-800 rounded-lg p-4 grid xl:grid-cols-7 grid-cols-2 gap-4">
-        <h3 class="flex items-center col-span-2 xl:col-span-1">@lang('Contact Us')</h3>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['total']['contact']}}</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg">
-            <h3>{{$views['porcentage']['contact']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('English')</h3>
-            <h3>{{$views['locale']['en']['contact']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['en']['contact']['porcentage']}}%</h3>
-        </div>
-        <div class="bg-zinc-700 flex gap-4 px-4 py-2 rounded-lg col-span-2">
-            <h3>@lang('Portuguese')</h3>
-            <h3>{{$views['locale']['pt']['contact']['count']}}</h3>
-            <h3> | </h3>
-            <h3>{{$views['locale']['pt']['contact']['porcentage']}}%</h3>
-        </div>
+            <!-- FAQ -->
+            <div class="bg-neutral-700 text-center rounded flex flex-col gap-4 pb-4">
+                <h2 class="bg-neutral-800 rounded-t py-2">FAQ</h2>
+                <h3 class="flex justify-between px-4"><span>Views</span><span>{{$views['faq']['total']}}</span></h3>
+                <h3 class="flex justify-between px-4"><span>Percentage</span><span>{{$views['faq']['percentage']}}%</span></h3>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="bg-neutral-700 text-center rounded flex flex-col gap-4 pb-4">
+                <h2 class="bg-neutral-800 rounded-t py-2">Contact Us</h2>
+                <h3 class="flex justify-between px-4"><span>Views</span><span>{{$views['contact']['total']}}</span></h3>
+                <h3 class="flex justify-between px-4"><span>Percentage</span><span>{{$views['contact']['percentage']}}%</span></h3>
+            </div>            
+
         </div>
 
     </div>
