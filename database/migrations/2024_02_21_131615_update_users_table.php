@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('views', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             // Modify the table structure without losing data
-            $table->boolean('mobile')->nullable()->after('locale');
+            $table->string('verification_email')->nullable()->after('email')->unique();
         });
     }
 
@@ -22,9 +22,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('views', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             // Revert the changes if needed
-            $table->dropColumn('mobile');
+            $table->dropColumn('verification_email');
         });
     }
 };

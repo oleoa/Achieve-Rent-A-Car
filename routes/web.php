@@ -14,6 +14,7 @@ use App\Http\Controllers\Client\Fleet;
 
 //Dashboard Controllers
 use App\Http\Controllers\Dashboard\Authentication;
+use App\Http\Controllers\Dashboard\Profile;
 use App\Http\Controllers\Dashboard\Views;
 use App\Http\Controllers\Dashboard\FAQ as FAQDashboard;
 use App\Http\Controllers\Dashboard\Users;
@@ -41,6 +42,16 @@ Route::prefix('/dashboard')->name('dashboard.')->group(function () {
     Route::get('/', function(){
         return redirect()->route('dashboard.views.list');
     })->name('home');
+
+    Route::name('profile.')->group(function(){
+
+        Route::get('/profile', [Profile::class, 'index'])->name('editor');
+
+        Route::get('/validate', [Profile::class, 'email'])->name('email');
+
+        Route::post('/profile', [Profile::class, 'update'])->name('update');
+
+    });
 
     Route::name('views.')->group(function(){
 

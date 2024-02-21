@@ -17,7 +17,7 @@
         <x-loader :isLight="false"/>
 
         <!-- Sidebar -->
-        <x-dashboard.sidebar :current="$current" :is="$is"/>
+        <x-dashboard.sidebar :current="$current" :is="$is" :name="$name"/>
 
         <!-- Main Content -->
         <main class="xl:pl-64 xl:pr-0 pr-20 row-span-1">

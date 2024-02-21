@@ -74,7 +74,7 @@
             <button type="submit" class="load px-4 py-2 border-2 border-zinc-600 text-white rounded-lg hover:bg-zinc-600">@lang('Add')</button>
 
             <!-- Messages -->
-            <x-form-messages-alerts/>
+            <x-messages/>
 
         </form>
         

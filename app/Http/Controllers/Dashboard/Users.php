@@ -74,7 +74,7 @@ class Users extends Controller
         $this->saver->users();
 
         // Redirect the user to the user list
-        session()->flash("success", 'User added successfully.');    
+        session()->flash("success", 'User added successfully.');
         return redirect()->route('dashboard.user.list');
     }
     

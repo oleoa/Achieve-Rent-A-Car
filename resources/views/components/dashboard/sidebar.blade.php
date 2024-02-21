@@ -6,13 +6,13 @@
 
     @if($is['logged'])
         <!-- User -->
-        <div class="grid grid-cols-3 gap-4 p-4">
+        <a class="grid grid-cols-3 gap-4 p-4 hover:text-white hover:bg-neutral-700" href="{{route('dashboard.profile.editor')}}">
             <img src="{{asset('/img/users/ex.png')}}" alt="" class="rounded-full">
             <div class="col-span-2">
                 <h3>Welcome</h3>
-                <p>Leonardo Abreu</p>
+                <p>{{$name}}</p>
             </div>
-        </div>
+        </a>
     @else
         <h3 class="px-4 pb-4">Welcome,<br>please sign in</h3>
     @endif
