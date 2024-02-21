@@ -47,10 +47,10 @@
         </div>
 
         <!-- Total -->
-        <div class="bg-neutral-800 rounded p-4 flex gap-4 items-center justify-start">
-            <h2>Total</h2>
-            <h3>{{$views['total']}} Views</h3>
-            <h3>{{$views['percentage']}}% Of All</h3>
+        <div class="bg-neutral-800 rounded px-4 py-2 flex gap-4 items-center justify-start">
+            <h3>Total</h3>
+            <p class="bg-neutral-700 px-4 py-2 rounded shadow">{{$views['total']}} Views</p>
+            <p class="bg-neutral-700 px-4 py-2 rounded shadow">{{$views['percentage']}}% Of All</p>
         </div>
 
         <!-- Pages -->
