@@ -23,6 +23,9 @@
 
     /*Section Paragraph*/
     p { @apply text-lg text-justify; }
+
+    /*Section Paragraph*/
+    ul { @apply list-disc list-inside; }
   
 }
 
