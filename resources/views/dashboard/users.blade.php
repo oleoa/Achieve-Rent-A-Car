@@ -12,13 +12,13 @@
             @foreach ($users as $user)
 
                 <!-- User -->
-                <div class="p-4 bg-zinc-700 relative rounded shadow flex flex-col gap-4 pr-28">
+                <div class="p-4 bg-zinc-700 relative rounded shadow flex flex-col gap-4 xl:pr-28">
 
                     <!-- Name -->
                     <h4>@lang($user['name'])</h4>
 
                     <!-- Email -->
-                    <p>@lang($user['email'])</p>
+                    <p class="xl:text-base text-xs">@lang($user['email'])</p>
 
                     <!-- Setted Up -->
                     @if(!$user['setted_up'])
@@ -33,8 +33,20 @@
                     <!-- Current Admin Logged -->
                     @if($is['admin'])
 
-                        <!-- Delete -->
-                        <form class="absolute h-full flex items-center top-0 right-0 px-6 py-2" action="{{route('dashboard.user.delete')}}" method="post">
+                        <!-- Delete For Computer -->
+                        <form class="absolute h-full xl:flex hidden items-center top-0 right-0 px-6 py-2" action="{{route('dashboard.user.delete')}}" method="post">
+                            @csrf @method('delete')
+
+                            <!-- ID -->
+                            <input type="hidden" name="id" value="{{$user['id']}}">
+
+                            <!-- Submit -->
+                            <button type="submit" class=" px-4 py-2 border-2 border-flagRed text-flagRed rounded-lg hover:text-white hover:bg-flagRed load">Delete</button>
+
+                        </form>
+
+                        <!-- Delete For Smartphone -->
+                        <form class="xl:hidden" action="{{route('dashboard.user.delete')}}" method="post">
                             @csrf @method('delete')
 
                             <!-- ID -->
