@@ -25,7 +25,7 @@ class Authentication extends Controller
         // Attempt to sign in
         if(!Auth::attempt($validated)) {
             session()->flash('error', 'The provided credentials do not match our records.');
-            return redirect()->route('sign.in');
+            return redirect()->route('dashboard.sign.in');
         }
         
         // Redirect the user to the dashboard logged
