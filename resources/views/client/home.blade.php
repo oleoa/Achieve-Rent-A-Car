@@ -8,11 +8,15 @@
         </div>
     </div>
 
-    <!-- 0 -->
-    <div class="xl:px-0 px-4">
-        <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
-        <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
-    </div>
+    @if($locale != 'translations')
+    
+        <!-- 0 -->
+        <div class="xl:px-0 px-4">
+            <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
+            <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+        </div>
+
+    @endif
 
     <!-- 1 -->
     <div class="py-8 flex flex-col gap-8">
