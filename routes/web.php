@@ -19,6 +19,7 @@ use App\Http\Controllers\Dashboard\Views;
 use App\Http\Controllers\Dashboard\FAQ as FAQDashboard;
 use App\Http\Controllers\Dashboard\Users;
 use App\Http\Controllers\Dashboard\Discounts;
+use App\Http\Controllers\Dashboard\Pages;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,11 +33,11 @@ use App\Http\Controllers\Dashboard\Discounts;
 */
 
 /*
-    Route::prefix('/dashboard')->name('dashboard.')->group(function () {
+    Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
 */
     
 // DASHBOARD ROUTES
-Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
+Route::prefix('/dashboard')->name('dashboard.')->group(function () {
 
     // To create a home page
     Route::get('/', function(){
@@ -58,6 +59,12 @@ Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(functi
         Route::get('/views', [Views::class, 'index'])->name('list');
 
         Route::delete('/views/delete', [Views::class, 'delete'])->name('delete');
+
+    });
+
+    Route::name('pages.')->group(function(){
+
+        Route::get('/pages', [Pages::class, 'index'])->name('index');
 
     });
 
