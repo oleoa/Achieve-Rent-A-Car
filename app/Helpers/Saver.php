@@ -14,6 +14,19 @@ use App\Models\User;
 */
 class Saver
 {
+    // Checks if the file exists and creates it if it doesn't
+    public function __construct()
+    {
+        $folder = public_path('saver');
+        $faq = public_path('saver/faq.json');
+        $discounts = public_path('saver/discounts.json');
+        $users = public_path('saver/users.json');
+        File::exists($folder)? : File::makeDirectory($folder);
+        File::exists($faq)? : File::put($faq, json_encode([]));
+        File::exists($discounts)? : File::put($discounts, json_encode([]));
+        File::exists($users)? : File::put($users, json_encode([]));
+    }
+
     public function get($filename)
     {
         // Will search for the file in the public directory
