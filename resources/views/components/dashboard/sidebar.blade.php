@@ -75,7 +75,7 @@
         </a>
 
         <!-- Logout -->
-        <a href="{{route('dashboard.sign.out')}}" class="p-4 {{$current == 'signout' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
+        <a href="{{route('dashboard.sign.out')}}" class="absolute bottom-0 w-full p-4 {{$current == 'signout' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
             <p class="xl:flex hidden">Logout</p>
             <div class="xl:w-6 w-8">
                 <x-font-awesome.logout/>
