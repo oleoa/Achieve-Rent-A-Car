@@ -1,2 +1,5 @@
 Debug on
 sed -i "s/^APP_DEBUG=false.*/APP_DEBUG=true/" .env
+
+Debug off
+sed -i "s/^APP_DEBUG=true.*/APP_DEBUG=false/" .env
