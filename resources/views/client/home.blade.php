@@ -40,7 +40,7 @@
                         @lang('home-list-li.'.$i)
                     </p>
 
-                    <div class="h-8 xl:w-auto w-8 fles items-center justify-center">
+                    <div class="h-8 xl:w-auto w-8 fles items-center justify-end">
 
                         @switch($i)
 
@@ -107,12 +107,14 @@
                     @for ($i = 1; $i <= 5; $i++)
                     
                         <!-- Carousel Item -->
-                        <div class="w-full bg-flagBlue flex flex-col justify-between px-32 rounded text-white py-4">
+                        <div class="w-full bg-flagBlue flex flex-col justify-between xl:px-32 px-4 rounded text-white xl:py-4 xl:pb-4 pb-12">
     
-                            <p class="py-4">@lang('home-reviews-'.$i.'-paragraph')</p>
+                            <p class="xl:py-4 py-2">@lang('home-reviews-'.$i.'-paragraph')</p>
     
-                            <div class="py-4 flex items-center justify-start gap-2">
-                                <p>@lang('home-reviews-'.$i.'-author')</p>                            
+                            <div class="py-4 xl:flex items-center justify-start grid grid-cols-2 gap-2">
+
+                                <p>@lang('home-reviews-'.$i.'-author')</p>
+
                                 <div class="h-4 flex gap-1">
                                     <x-font-awesome.star/>
                                     <x-font-awesome.star/>
@@ -120,6 +122,7 @@
                                     <x-font-awesome.star/>
                                     <x-font-awesome.star/>
                                 </div>
+
                             </div>
     
                         </div>
@@ -129,18 +132,18 @@
                 </div>
                 
                 <!-- Carousel Buttons -->
-                <div class="absolute top-0 w-full h-full flex justify-between items-center">
+                <div class="absolute top-0 w-full h-full flex justify-between xl:items-center items-end z-50">
                 
                     <!-- Previous Button -->
                     <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn">
-                        <div class="p-4 w-16">
+                        <div class="p-4 xl:h-auto h-16 w-16">
                             <x-font-awesome.arrow-left/>
                         </div>
                     </button>
                     
                     <!-- Next Button -->
-                    <button class="cursor-pointer w-32 h-full flex items-center justify-center" id="nextBtn">
-                        <div class="p-4 w-16">
+                    <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn">
+                        <div class="p-4 xl:h-auto h-16 w-16">
                             <x-font-awesome.arrow-right/>
                         </div>
                     </button>
@@ -148,7 +151,7 @@
                 </div>
     
                 <!-- Carousel Indicator -->
-                <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4">
+                <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 z-40">
                 
                     @for ($i = 0; $i <= 4; $i++)
                         <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="review-{{$i}}-indicator"></div>
