@@ -82,13 +82,25 @@
             </div>
         </a>
 
-        <!-- Logout -->
-        <a href="{{route('dashboard.sign.out')}}" class="absolute bottom-0 w-full p-4 {{$current == 'signout' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
-            <p class="xl:flex hidden">Logout</p>
-            <div class="xl:w-6 w-8">
-                <x-font-awesome.logout/>
-            </div>
-        </a>
+        <div class="absolute bottom-0 flex flex-col gap-4 py-4 w-full">
+
+            <!-- Debug -->
+            <a href="{{route('dashboard.debug.'.($is['debug']==true?'off':'on'))}}" class="w-full p-4 hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
+                <p class="xl:flex hidden">Turn Debug {{$is['debug']==true?'Off':'On'}}</p>
+                <div class="xl:w-6 w-8">
+                    <x-font-awesome.debug/>
+                </div>
+            </a>
+    
+            <!-- Logout -->
+            <a href="{{route('dashboard.sign.out')}}" class="w-full p-4 hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
+                <p class="xl:flex hidden">Logout</p>
+                <div class="xl:w-6 w-8">
+                    <x-font-awesome.logout/>
+                </div>
+            </a>
+
+        </div>
 
     @else
 

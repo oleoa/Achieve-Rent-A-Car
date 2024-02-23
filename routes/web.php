@@ -21,6 +21,7 @@ use App\Http\Controllers\Dashboard\FAQ as FAQDashboard;
 use App\Http\Controllers\Dashboard\Users;
 use App\Http\Controllers\Dashboard\Discounts;
 use App\Http\Controllers\Dashboard\Pages;
+use App\Http\Controllers\Dashboard\Debug;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,7 +37,7 @@ use App\Http\Controllers\Dashboard\Pages;
 /*
     Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
 */
-    
+
 // DASHBOARD ROUTES
 Route::prefix('/dashboard')->name('dashboard.')->group(function () {
 
@@ -107,6 +108,14 @@ Route::prefix('/dashboard')->name('dashboard.')->group(function () {
         
         Route::post('/user/setup', [Users::class, 'settingup'])->name('settingup');
 
+    });
+
+    Route::name('debug.')->group(function(){
+
+        Route::get('/debug/on', [Debug::class, 'on'])->name('on');
+        
+        Route::get('/debug/off', [Debug::class, 'off'])->name('off');
+    
     });
 
     Route::name('sign.')->group(function(){

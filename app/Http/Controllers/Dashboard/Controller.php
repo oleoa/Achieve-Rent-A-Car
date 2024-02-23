@@ -31,6 +31,7 @@ class Controller extends BaseController
         $this->data['is']['logged'] = auth()->user()??false;
         $this->data['current'] = $route;
         $this->data['logged'] = auth()->user();
+        $this->data['is']['debug'] = env('APP_DEBUG');
         
         // Returns the view with the data
         return view($view, $this->data);
