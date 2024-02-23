@@ -35,11 +35,11 @@ use App\Http\Controllers\Dashboard\Debug;
 */
 
 /*
-    Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
+    Route::prefix('/dashboard')->name('dashboard.')->group(function () {
 */
 
 // DASHBOARD ROUTES
-Route::prefix('/dashboard')->name('dashboard.')->group(function () {
+Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
 
     // To create a home page
     Route::get('/', function(){
