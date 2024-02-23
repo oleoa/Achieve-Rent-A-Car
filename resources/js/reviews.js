@@ -11,6 +11,11 @@ class Reviews
     {
         // Get the carousel slide, the length of the carousel, the previous and next buttons and the counter
         this.carouselSlide = document.querySelector('#carousel-slide');
+
+        // If the carousel slide does not exist, return
+        if(!this.carouselSlide)
+            return;
+
         this.carouselLength = (this.carouselSlide.children.length - 1);
         this.prevBtn = document.getElementById('prevBtn');
         this.nextBtn = document.getElementById('nextBtn');
@@ -147,7 +152,14 @@ class Reviews
         var indicator = document.getElementById('review-'+index+'-indicator');
         indicator.style.backgroundColor = 'rgb(255, 215, 0)';
     }
+
+    inHomePage()
+    {
+        // Check if the carousel slide exists
+        return this.carouselSlide != null;
+    }
 }
 
 const reviews = new Reviews();
-reviews.addEventListeners();
+if(reviews.inHomePage())
+    reviews.addEventListeners();
