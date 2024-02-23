@@ -18,23 +18,24 @@
 
     <!-- List -->
     <div class="xl:px-margin p-4">
-        <h2 class="text-center">Porque escolher a Achieve Rent a Car?</h2>
+
+        <h2 class="text-center">@lang('home-list-title')</h2>
+
         <ul>
-            <li>Preços com tudo incluído, sem surpresas</li>
-            <li>Seguro Premium incluído</li>
-            <li>Sem franquias, sem caução</li>
-            <li>Sem necessidade de cartão de crédito</li>
-            <li>Condutor adicional gratuito</li>
-            <li>Clientes satisfeitos</li>
-            <li>Contratação rápida, fácil e sem burocracias</li>
-            <li>Receba e devolva onde estiver, chave na mão</li>
-            <li>Atendimento rápido, sem esperas e sem filas</li>
+            @for ($i = 1; $i <= 9; $i++)
+                <li>@lang('home-list-li.'.$i)</li>
+            @endfor
         </ul>
+
     </div>
 
     <!-- Reviews -->
-    <div class="xl:px-margin px-4 w-full">
-        <iframe src="{{route('reviews')}}" frameborder="0" class="w-full h-full"></iframe>
+    <div class="xl:px-margin px-4 w-full space-y-4 h-fit">
+
+        <h2>@lang('home-reviews-title')</h2>
+
+        <iframe src="{{route('reviews', 'local')}}" frameborder="0" class="w-full h-full overflow-visible"></iframe>
+
     </div>
 
     <!-- 1 -->

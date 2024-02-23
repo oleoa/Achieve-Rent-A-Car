@@ -126,11 +126,12 @@ Route::get('/', function(){
     return redirect()->route('home', ['en']);
 })->name('root');
 
-Route::get('/reviews', [Iframes::class, 'reviews'])->name('reviews');
 
 Route::prefix('/{locale}')->group(function(){
     
     Route::get('/', [Home::class, 'index'])->name('home');
+    
+    Route::get('/reviews', [Iframes::class, 'reviews'])->name('reviews');
     
     Route::get('/about', [About::class, 'index'])->name('about');
     

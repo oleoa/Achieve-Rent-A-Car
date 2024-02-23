@@ -1,2 +1,2 @@
 // Carousel for the client
-import './carousel';
+import './reviews';

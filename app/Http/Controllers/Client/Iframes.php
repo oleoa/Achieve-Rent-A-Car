@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class Iframes extends Controller
 {
-    public function reviews(Request $request)
+    public function reviews($locale)
     {
-        return view('iframes.reviews');
+        return $this->load('iframes.reviews', 'reviews', $locale);
     }
 }
