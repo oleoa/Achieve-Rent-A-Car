@@ -95,7 +95,7 @@ class Reviews
     }
 
     clickedPrev()
-    {        
+    {
         // Clear the interval
         clearInterval(this.automation);
 
@@ -118,6 +118,10 @@ class Reviews
 
     slideIndicator(indicator)
     {
+        // Clear the interval
+        clearInterval(this.automation);
+
+
         // Get the index of the indicator clicked
         var index = indicator.target.id.split('-')[1];
 
