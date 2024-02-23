@@ -16,6 +16,13 @@
         </div>
     @endif
 
+    <!-- Separator -->
+    <div class="flex items-center justify-center xl:px-margin px-4 py-12">
+        <div class="xl:w-1/3 w-full">
+            <x-separator/>
+        </div>
+    </div>
+
     <!-- List -->
     <div class="xl:px-margin p-4 space-y-4">
 
@@ -46,12 +53,69 @@
 
     </div>
 
+    <!-- Separator -->
+    <div class="flex items-center justify-center xl:px-margin px-4 py-12">
+        <div class="xl:w-1/3 w-full">
+            <x-separator/>
+        </div>
+    </div>
+
     <!-- Reviews -->
-    <div class="xl:px-margin px-4 w-full space-y-4 h-fit">
+    <div class="xl:px-margin px-4 w-screen space-y-4 h-fit">
 
-        <h2>@lang('home-reviews-title')</h2>
+        <h2 class="text-center">@lang('home-reviews-title')</h2>
 
-        <iframe src="{{route('reviews', $locale)}}" frameborder="0" class="w-full h-full overflow-visible"></iframe>
+        <!-- Carousel Div For Carsousel And Buttons -->
+        <div class="relative z-10 w-full overflow-x-hidden">
+
+            <!-- Carousel Slide -->
+            <div id="carousel-slide" class="rounded grid transition-transform duration-500 h-full bg-black" style="grid-template-columns: @for($i = 1; $i <= 5; $i++) 100% @endfor">
+            
+                @for ($i = 1; $i <= 5; $i++)
+                
+                    <!-- Carousel Item -->
+                    <div class="w-full bg-flagBlue px-32 rounded text-white py-12">
+
+                        <p>@lang('home-reviews-'.$i.'-paragraph')</p>
+
+                        <p>@lang('home-reviews-'.$i.'-author')</p>
+
+                    </div>
+
+                @endfor
+
+            </div>
+            
+            <!-- Carousel Buttons -->
+            <div class="absolute top-0 w-full h-full flex justify-between items-center">
+            
+                <!-- Previous Button -->
+                <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn">
+                    <div class="p-4 w-16">
+                        <x-font-awesome.arrow-left/>
+                    </div>
+                </button>
+                
+                <!-- Next Button -->
+                <button class="cursor-pointer w-32 h-full flex items-center justify-center" id="nextBtn">
+                    <div class="p-4 w-16">
+                        <x-font-awesome.arrow-right/>
+                    </div>
+                </button>
+            
+            </div>
+
+            <!-- Carousel Indicator -->
+            <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4">
+            
+                @for ($i = 0; $i <= 4; $i++)
+                    <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="review-{{$i}}-indicator"></div>
+                @endfor
+
+            </div>
+            
+        </div>
+
 
     </div>
 

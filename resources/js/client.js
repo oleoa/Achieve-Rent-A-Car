@@ -15,3 +15,6 @@ import './banner';
 
 // Fleet height iframe correction
 import './fleet';
+
+// Carousel for the client
+import './reviews';
