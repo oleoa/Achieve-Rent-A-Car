@@ -16,6 +16,149 @@
         </div>
     @endif
 
+    <!-- Why choose achieve -->
+    <div class="xl:px-margin px-4 py-8 flex flex-col gap-8">
+
+        <!-- Separator -->
+        <div class="flex items-center justify-center">
+            <div class="xl:w-1/3 w-full">
+                <x-separator/>
+            </div>
+        </div>
+
+        <h2 class="text-center">@lang('home-list-title')</h2>
+
+        <p class="text-xl text-center">@lang('home-list-p')</p>
+
+        <div class="grid xl:grid-cols-3 gap-4 grid-rows-9 xl:grid-rows-3">
+
+            @for ($i = 1; $i <= 9; $i++)
+
+                <div class="px-4 py-2 bg-flagBlue text-white rounded flex justify-between items-center gap-4">
+
+                    <p>
+                        @lang('home-list-li.'.$i)
+                    </p>
+
+                    <div class="h-8 xl:w-auto w-8 fles items-center justify-center">
+
+                        @switch($i)
+
+                            @case(1)
+                                <x-font-awesome.hand-shake/>
+                                @break
+                            @case(2)
+                                <x-font-awesome.hand-holding-car/>
+                                @break
+                            @case(3)
+                                <x-font-awesome.file-shield/>
+                                @break
+                            @case(4)
+                                <x-font-awesome.no-credit-card/>
+                                @break
+                            @case(5)
+                                <x-font-awesome.free-aditional-driver/>
+                                @break
+                            @case(6)
+                                <x-font-awesome.smile/>
+                                @break
+                            @case(7)
+                                <x-font-awesome.double-check/>
+                                @break
+                            @case(8)
+                                <x-font-awesome.location/>
+                                @break
+                            @case(9)
+                                <x-font-awesome.plane/>
+                                @break
+                                
+                        @endswitch
+
+                    </div>
+
+                </div>
+
+            @endfor
+
+        </div>
+
+    </div>
+
+    <!-- Reviews -->
+    <div class="xl:px-margin px-4 py-8 w-screen flex flex-col gap-8 h-fit">
+
+        <!-- Separator -->
+        <div class="flex items-center justify-center">
+            <div class="xl:w-1/3 w-full">
+                <x-separator/>
+            </div>
+        </div>
+
+        <h2 class="text-center">@lang('home-reviews-title')</h2>
+
+        <!-- Carousel Div For Carsousel And Buttons -->
+        <div class="relative z-10 w-full overflow-x-hidden">
+
+            <!-- Carousel Slide -->
+            <div id="carousel-slide" class="rounded grid transition-transform duration-500 h-full bg-black" style="grid-template-columns: @for($i = 1; $i <= 5; $i++) 100% @endfor">
+            
+                @for ($i = 1; $i <= 5; $i++)
+                
+                    <!-- Carousel Item -->
+                    <div class="w-full bg-flagBlue flex flex-col justify-between px-32 rounded text-white py-4">
+
+                        <p class="py-4">@lang('home-reviews-'.$i.'-paragraph')</p>
+
+                        <div class="py-4 flex items-center justify-start gap-2">
+                            <p>@lang('home-reviews-'.$i.'-author')</p>                            
+                            <div class="h-4 flex gap-1">
+                                <x-font-awesome.star/>
+                                <x-font-awesome.star/>
+                                <x-font-awesome.star/>
+                                <x-font-awesome.star/>
+                                <x-font-awesome.star/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                @endfor
+
+            </div>
+            
+            <!-- Carousel Buttons -->
+            <div class="absolute top-0 w-full h-full flex justify-between items-center">
+            
+                <!-- Previous Button -->
+                <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn">
+                    <div class="p-4 w-16">
+                        <x-font-awesome.arrow-left/>
+                    </div>
+                </button>
+                
+                <!-- Next Button -->
+                <button class="cursor-pointer w-32 h-full flex items-center justify-center" id="nextBtn">
+                    <div class="p-4 w-16">
+                        <x-font-awesome.arrow-right/>
+                    </div>
+                </button>
+            
+            </div>
+
+            <!-- Carousel Indicator -->
+            <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4">
+            
+                @for ($i = 0; $i <= 4; $i++)
+                    <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="review-{{$i}}-indicator"></div>
+                @endfor
+
+            </div>
+            
+        </div>
+
+
+    </div>
+
     <!-- 1 -->
     <div class="py-8 flex flex-col gap-8">
 
