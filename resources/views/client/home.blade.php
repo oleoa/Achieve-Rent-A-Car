@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <!-- 0 -->
+    <!-- System -->
     @if($locale != 'translations')    
         <div class="xl:px-0 px-4">
             <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
@@ -16,15 +16,15 @@
         </div>
     @endif
 
-    <!-- Separator -->
-    <div class="flex items-center justify-center xl:px-margin px-4 py-12">
-        <div class="xl:w-1/3 w-full">
-            <x-separator/>
-        </div>
-    </div>
+    <!-- Why choose achieve -->
+    <div class="xl:px-margin px-4 py-8 flex flex-col gap-8">
 
-    <!-- List -->
-    <div class="xl:px-margin p-4 space-y-4">
+        <!-- Separator -->
+        <div class="flex items-center justify-center">
+            <div class="xl:w-1/3 w-full">
+                <x-separator/>
+            </div>
+        </div>
 
         <h2 class="text-center">@lang('home-list-title')</h2>
 
@@ -40,9 +40,40 @@
                         @lang('home-list-li.'.$i)
                     </p>
 
-                    <div class="w-8">
+                    <div class="h-8">
 
-                        <x-font-awesome.hand-shake/>
+                        @switch($i)
+
+                            @case(1)
+                                <x-font-awesome.hand-shake/>
+                                @break
+                            @case(2)
+                                <x-font-awesome.hand-holding-car/>
+                                @break
+                            @case(3)
+                                <x-font-awesome.file-shield/>
+                                @break
+                            @case(4)
+                                <x-font-awesome.no-credit-card/>
+                                @break
+                            @case(5)
+                                <x-font-awesome.free-aditional-driver/>
+                                @break
+                            @case(6)
+                                <x-font-awesome.smile/>
+                                @break
+                            @case(7)
+                                <x-font-awesome.double-check/>
+                                @break
+                            @case(8)
+                                <x-font-awesome.location/>
+                                @break
+                            @case(9)
+                                <x-font-awesome.plane/>
+                                @break
+                                
+                        @endswitch
+
                     </div>
 
                 </div>
@@ -53,15 +84,15 @@
 
     </div>
 
-    <!-- Separator -->
-    <div class="flex items-center justify-center xl:px-margin px-4 py-12">
-        <div class="xl:w-1/3 w-full">
-            <x-separator/>
-        </div>
-    </div>
-
     <!-- Reviews -->
-    <div class="xl:px-margin px-4 w-screen space-y-4 h-fit">
+    <div class="xl:px-margin px-4 py-8 w-screen flex flex-col gap-8 h-fit">
+
+        <!-- Separator -->
+        <div class="flex items-center justify-center">
+            <div class="xl:w-1/3 w-full">
+                <x-separator/>
+            </div>
+        </div>
 
         <h2 class="text-center">@lang('home-reviews-title')</h2>
 

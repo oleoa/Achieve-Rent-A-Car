@@ -24,6 +24,7 @@ class Controller extends BaseController
     private function locale(String $locale): void
     {
         $this->localeExists = in_array($locale, ['en', 'pt', 'fr', 'de', 'es', 'local', 'translations'])? true : false;
+        $locale = $locale == 'local' ? 'en' : $locale;
         $this->data['locale'] = $locale;
         if(!$this->localeExists) $this->data['locale'] = 'en';
         app()->setLocale($locale);
