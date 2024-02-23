@@ -14,7 +14,4 @@ import './faq';
 import './banner';
 
 // Fleet height iframe correction
-import './fleet'
-
-// Carousel for the client
-import './carousel';
+import './fleet';

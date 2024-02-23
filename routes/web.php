@@ -10,6 +10,7 @@ use App\Http\Controllers\Client\Seats;
 use App\Http\Controllers\Client\FAQ;
 use App\Http\Controllers\Client\Contact;
 use App\Http\Controllers\Client\Legal;
+use App\Http\Controllers\Client\Iframes;
 use App\Http\Controllers\Client\Fleet;
 
 //Dashboard Controllers
@@ -124,6 +125,8 @@ Route::prefix('/dashboard')->name('dashboard.')->group(function () {
 Route::get('/', function(){
     return redirect()->route('home', ['en']);
 })->name('root');
+
+Route::get('/reviews', [Iframes::class, 'reviews'])->name('reviews');
 
 Route::prefix('/{locale}')->group(function(){
     

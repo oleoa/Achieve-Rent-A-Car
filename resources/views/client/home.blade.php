@@ -8,15 +8,34 @@
         </div>
     </div>
 
-    @if($locale != 'translations')
-    
-        <!-- 0 -->
+    <!-- 0 -->
+    @if($locale != 'translations')    
         <div class="xl:px-0 px-4">
             <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
             <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
         </div>
-
     @endif
+
+    <!-- List -->
+    <div class="xl:px-margin p-4">
+        <h2 class="text-center">Porque escolher a Achieve Rent a Car?</h2>
+        <ul>
+            <li>Preços com tudo incluído, sem surpresas</li>
+            <li>Seguro Premium incluído</li>
+            <li>Sem franquias, sem caução</li>
+            <li>Sem necessidade de cartão de crédito</li>
+            <li>Condutor adicional gratuito</li>
+            <li>Clientes satisfeitos</li>
+            <li>Contratação rápida, fácil e sem burocracias</li>
+            <li>Receba e devolva onde estiver, chave na mão</li>
+            <li>Atendimento rápido, sem esperas e sem filas</li>
+        </ul>
+    </div>
+
+    <!-- Reviews -->
+    <div class="xl:px-margin px-4 w-full">
+        <iframe src="{{route('reviews')}}" frameborder="0" class="w-full h-full"></iframe>
+    </div>
 
     <!-- 1 -->
     <div class="py-8 flex flex-col gap-8">

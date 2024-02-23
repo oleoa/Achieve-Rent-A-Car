@@ -60,7 +60,7 @@
     <body class="min-h-screen grid grid-rows-1">
 
         <!-- Header Content -->
-        <nav class="fixed top-0 left-0 w-full flex flex-col">
+        <nav class="fixed top-0 left-0 w-full flex flex-col z-50">
 
             <!-- Info if the user is in the local site -->
             <x-local-site :locale="$locale"/>
