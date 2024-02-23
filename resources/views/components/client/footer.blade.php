@@ -1,7 +1,7 @@
 <footer class="w-full xl:px-margin px-4 bg-flagBlue min-h-footer flex flex-col justify-center items-start gap-4 py-4">
 
     <!-- Links -->
-    <div class="flex gap-4 text-white justify-center items-center">
+    <div class="dflex gap-4 text-white justify-center items-center hidden">
 
         <!-- Instagram -->
         <a title="@lang('Footer-Social-Instagram.Title')" href="https://www.instagram.com/achieverentacar/" target="_blank">
