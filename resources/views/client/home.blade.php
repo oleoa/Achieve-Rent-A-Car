@@ -105,11 +105,20 @@
                 @for ($i = 1; $i <= 5; $i++)
                 
                     <!-- Carousel Item -->
-                    <div class="w-full bg-flagBlue px-32 rounded text-white py-12">
+                    <div class="w-full bg-flagBlue flex flex-col justify-between px-32 rounded text-white py-4">
 
-                        <p>@lang('home-reviews-'.$i.'-paragraph')</p>
+                        <p class="py-4">@lang('home-reviews-'.$i.'-paragraph')</p>
 
-                        <p>@lang('home-reviews-'.$i.'-author')</p>
+                        <div class="py-4 flex items-center justify-start gap-2">
+                            <p>@lang('home-reviews-'.$i.'-author')</p>                            
+                            <div class="h-4 flex gap-1">
+                                <x-font-awesome.star/>
+                                <x-font-awesome.star/>
+                                <x-font-awesome.star/>
+                                <x-font-awesome.star/>
+                                <x-font-awesome.star/>
+                            </div>
+                        </div>
 
                     </div>
 
