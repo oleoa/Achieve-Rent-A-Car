@@ -23,13 +23,21 @@
         </div>
         
         <!-- Carousel Buttons -->
-        <div class="absolute top-0 p-4 w-full h-full flex justify-between items-center">
+        <div class="absolute top-0 w-full h-full flex justify-between items-center">
         
             <!-- Previous Button -->
-            <button class="bg-neutral-800 text-white px-4 py-2 cursor-pointer rounded" id="prevBtn">Previous</button>
-        
+            <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn">
+                <div class="p-4 w-16">
+                    <x-font-awesome.arrow-left/>
+                </div>
+            </button>
+            
             <!-- Next Button -->
-            <button class="bg-neutral-800 text-white px-4 py-2 cursor-pointer rounded" id="nextBtn">Next</button>
+            <button class="cursor-pointer w-32 h-full flex items-center justify-center" id="nextBtn">
+                <div class="p-4 w-16">
+                    <x-font-awesome.arrow-right/>
+                </div>
+            </button>
         
         </div>
 
