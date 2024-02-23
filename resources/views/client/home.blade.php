@@ -30,7 +30,7 @@
 
         <p class="text-xl text-center">@lang('home-list-p')</p>
 
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid xl:grid-cols-3 gap-4 grid-rows-9 xl:grid-rows-3">
 
             @for ($i = 1; $i <= 9; $i++)
 
