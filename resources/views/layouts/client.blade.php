@@ -57,7 +57,7 @@
     </head>
 
     <!-- Body -->
-    <body class="min-h-screen grid grid-rows-1">
+    <body class="min-h-screen grid grid-rows-1 w-full">
 
         <!-- Header Content -->
         <nav class="fixed top-0 left-0 w-full flex flex-col z-50">

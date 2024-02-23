@@ -21,11 +21,30 @@ class Reviews
         this.nextBtn = document.getElementById('nextBtn');
         this.counter = 0;
 
+        // Update the width of the carousel
+        this.updateWidth();
+        window.addEventListener('resize', this.updateWidth.bind(this));
+
         // Call the slideAutomatic method
         this.slideAtuomatic();
 
         // Paint the first indicator
         this.paintIndicator(0);
+    }
+
+    updateWidth()
+    {
+        // Get the width of the carousel
+        var setWidthScreen = document.getElementById('setWidthScreen');
+
+        // Set the width of the carousel to 0px
+        setWidthScreen.style.width = '0px';
+
+        // Get the width of the div above the carousel
+        var widthScreen = document.getElementById('divAboveWidth').offsetWidth;
+
+        // Set the width of the carousel to the width of the div above the carousel
+        setWidthScreen.style.width = widthScreen+'px';
     }
 
     slideAtuomatic()
@@ -125,7 +144,6 @@ class Reviews
     {
         // Clear the interval
         clearInterval(this.automation);
-
 
         // Get the index of the indicator clicked
         var index = indicator.target.id.split('-')[1];
