@@ -132,7 +132,7 @@
                 </div>
                 
                 <!-- Carousel Buttons -->
-                <div class="absolute top-0 w-full h-full flex justify-between xl:items-center items-end z-50">
+                <div class="absolute top-0 w-full h-full flex justify-between xl:items-center items-end xl:z-auto z-50">
                 
                     <!-- Previous Button -->
                     <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn">
@@ -151,7 +151,7 @@
                 </div>
     
                 <!-- Carousel Indicator -->
-                <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 z-40">
+                <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 xl:z-auto z-40">
                 
                     @for ($i = 0; $i <= 4; $i++)
                         <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="review-{{$i}}-indicator"></div>
