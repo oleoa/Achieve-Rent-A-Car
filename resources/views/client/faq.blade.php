@@ -35,16 +35,16 @@
             <!-- FAQ -->
             <div class="faq flex flex-col gap-1">
 
-                <!-- Question -->
-                <div id="question_box" class="select-none cursor-pointer w-full bg-flagBlue p-4 rounded-lg shadow flex items-center justify-between">
-                    <span class="text-lg font-semibold">@lang($locale=='en'?$f['question']:$f['pergunta'])</span>
-                    <span class="">+</span>
-                </div>
+              <!-- Question -->
+              <div id="question_box" class="select-none cursor-pointer w-full bg-flagRed p-4 rounded-lg shadow flex items-center justify-between">
+                <span class="text-lg font-semibold">@lang($locale=='en'?$f['question']:$f['pergunta'])</span>
+                <span class="">+</span>
+              </div>
 
-                <!-- Answer -->
-                <div class="bg-flagYellow p-4 rounded hidden answer">
-                    <p class="text-black font-medium">@lang($locale=='en'?$f['answer']:$f['resposta'])</p>
-                </div>
+              <!-- Answer -->
+              <div class="bg-flagYellow p-4 rounded hidden answer">
+                <p class="text-black font-medium">@lang($locale=='en'?$f['answer']:$f['resposta'])</p>
+              </div>
 
             </div>
 

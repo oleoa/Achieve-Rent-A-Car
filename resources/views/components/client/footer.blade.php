@@ -1,4 +1,4 @@
-<footer class="w-full xl:px-margin px-4 bg-flagBlue min-h-footer flex flex-col justify-center items-start gap-4 py-4">
+<footer class="w-full xl:px-margin px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4">
 
     <!-- Links -->
     <div class="dflex gap-4 text-white justify-center items-center hidden">

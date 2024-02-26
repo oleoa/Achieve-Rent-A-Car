@@ -19,7 +19,7 @@
     h6 { @apply text-base; }
 
     /*Links*/
-    a { @apply hover:text-blue-400; }
+    a { @apply hover:text-red-400; }
 
     /*Section Paragraph*/
     p { @apply text-lg text-justify; }
