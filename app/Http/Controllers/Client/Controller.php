@@ -83,11 +83,9 @@ class Controller extends BaseController
       ];
 
       // Checks for discounts
-      //$discount = Discounts::where('active', true)->first();
-      //if($discount) $this->data['discount'] = $discount->toArray();
-      /*else*/ $this->data['discount'] = false;
-
-      return ['it arrives here'];
+      $discount = Discounts::where('active', true)->first();
+      if($discount) $this->data['discount'] = $discount->toArray();
+      else $this->data['discount'] = false;
 
       // Sets the current page
       $this->data['current'] = $route;
@@ -96,11 +94,11 @@ class Controller extends BaseController
       $this->data['title'] = 'Title-'.$this->data['current'];
       
       // Checks if the user is using a mobile device and logs the view
-      //$agent = new Agent();
+      $agent = new Agent();
 
       // Creates the view if the user is not in local environment
-      //if($locale != 'local')
-          //Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
+      if($locale != 'local')
+          Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
 
       // Returns the view
       return view($view, $this->data);
