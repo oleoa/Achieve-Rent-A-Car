@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class Home extends Controller
 {
-    public function index(Request $request, $locale)
-    {
-        return $this->load('client.home', 'home', $locale);
-    }
+  public function index(Request $request, $locale)
+  {
+    return $this->load('client.home', 'home', $locale);
+  }
 }
