@@ -82,12 +82,12 @@ class Controller extends BaseController
         ]
       ];
 
-      return ['it arrives here'];
-
       // Checks for discounts
       $discount = Discounts::where('active', true)->first();
       if($discount) $this->data['discount'] = $discount->toArray();
       else $this->data['discount'] = false;
+
+      return ['it arrives here'];
 
       // Sets the current page
       $this->data['current'] = $route;
