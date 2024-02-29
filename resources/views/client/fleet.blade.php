@@ -12,7 +12,7 @@
     <div class="w-full" style="height: 584px">
       <iframe src="https://reservas.achieverentacar.com/{{$locale=='local'?'pt':$locale}}/frota?iframe" class="h-full" scrolling="no" id="anyrentBookingsIframe" style="width: 1px; min-width: 100%; border: 0px; overflow: hidden;"></iframe>
     </div>
-
+ 
   @endif    
 
 @endsection
