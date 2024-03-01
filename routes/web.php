@@ -41,92 +41,92 @@ use App\Http\Controllers\Dashboard\Debug;
 // DASHBOARD ROUTES
 Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
 
-    // To create a home page
-    Route::get('/', function(){
-        return redirect()->route('dashboard.views.list');
-    })->name('home');
+  // To create a home page
+  Route::get('/', function(){
+    return redirect()->route('dashboard.views.list');
+  })->name('home');
 
-    Route::name('profile.')->group(function(){
+  Route::name('profile.')->group(function(){
 
-        Route::get('/profile', [Profile::class, 'index'])->name('editor');
+    Route::get('/profile', [Profile::class, 'index'])->name('editor');
 
-        Route::get('/validate', [Profile::class, 'email'])->name('email');
+    Route::get('/validate', [Profile::class, 'email'])->name('email');
 
-        Route::post('/profile', [Profile::class, 'update'])->name('update');
+    Route::post('/profile', [Profile::class, 'update'])->name('update');
 
-    });
+  });
 
-    Route::name('views.')->group(function(){
+  Route::name('views.')->group(function(){
 
-        Route::get('/views', [Views::class, 'index'])->name('list');
+    Route::get('/views', [Views::class, 'index'])->name('list');
 
-        Route::delete('/views/delete', [Views::class, 'delete'])->name('delete');
+    Route::delete('/views/delete', [Views::class, 'delete'])->name('delete');
 
-    });
+  });
 
-    Route::name('pages.')->group(function(){
+  Route::name('pages.')->group(function(){
 
-        Route::get('/pages', [Pages::class, 'index'])->name('index');
+    Route::get('/pages', [Pages::class, 'index'])->name('index');
 
-    });
+  });
 
-    Route::name('faq.')->group(function () {
+  Route::name('faq.')->group(function () {
 
-        Route::get('/faq', [FAQDashboard::class, 'index'])->name('list');
-        
-        Route::delete('/faq/delete', [FAQDashboard::class, 'delete'])->name('delete');
-        
-        Route::get('/faq/add', [FAQDashboard::class, 'add'])->name('add');
-        Route::post('/faq/add', [FAQDashboard::class, 'add'])->name('add');
-
-    });
-
-    Route::name('discount.')->group(function () {
-
-        Route::get('/discounts', [Discounts::class, 'index'])->name('list');
-
-        Route::get('/discounts/enable', [Discounts::class, 'enable'])->name('enable');
-
-        Route::get('/discounts/disable', [Discounts::class, 'disable'])->name('disable');
-        
-        Route::delete('/discounts/delete', [Discounts::class, 'delete'])->name('delete');
-        
-        Route::get('/discounts/add', [Discounts::class, 'add'])->name('add');
-        Route::post('/discounts/add', [Discounts::class, 'add'])->name('add');
-
-    });
-
-    Route::name('user.')->group(function () {
-
-        Route::get('/users', [Users::class, 'index'])->name('list');
-        
-        Route::delete('/user/delete', [Users::class, 'delete'])->name('delete');
-        
-        Route::post('/user/add', [Users::class, 'add'])->name('add');
-        
-        Route::get('/user/setup', [Users::class, 'setup'])->name('setup');
-        
-        Route::post('/user/setup', [Users::class, 'settingup'])->name('settingup');
-
-    });
-
-    Route::name('debug.')->group(function(){
-
-        Route::get('/debug/on', [Debug::class, 'on'])->name('on');
-        
-        Route::get('/debug/off', [Debug::class, 'off'])->name('off');
+    Route::get('/faq', [FAQDashboard::class, 'index'])->name('list');
     
-    });
-
-    Route::name('sign.')->group(function(){
-
-        Route::get('/signin', [Authentication::class, 'signin'])->name('in');
-        
-        Route::get('/signout', [Authentication::class, 'signout'])->name('out');
-        
-        Route::post('/signin', [Authentication::class, 'signing_in'])->name('ing-in');
+    Route::delete('/faq/delete', [FAQDashboard::class, 'delete'])->name('delete');
     
-    });
+    Route::get('/faq/add', [FAQDashboard::class, 'add'])->name('add');
+    Route::post('/faq/add', [FAQDashboard::class, 'add'])->name('add');
+
+  });
+
+  Route::name('discount.')->group(function () {
+
+    Route::get('/discounts', [Discounts::class, 'index'])->name('list');
+
+    Route::get('/discounts/enable', [Discounts::class, 'enable'])->name('enable');
+
+    Route::get('/discounts/disable', [Discounts::class, 'disable'])->name('disable');
+    
+    Route::delete('/discounts/delete', [Discounts::class, 'delete'])->name('delete');
+    
+    Route::get('/discounts/add', [Discounts::class, 'add'])->name('add');
+    Route::post('/discounts/add', [Discounts::class, 'add'])->name('add');
+
+  });
+
+  Route::name('user.')->group(function () {
+
+    Route::get('/users', [Users::class, 'index'])->name('list');
+    
+    Route::delete('/user/delete', [Users::class, 'delete'])->name('delete');
+    
+    Route::post('/user/add', [Users::class, 'add'])->name('add');
+    
+    Route::get('/user/setup', [Users::class, 'setup'])->name('setup');
+    
+    Route::post('/user/setup', [Users::class, 'settingup'])->name('settingup');
+
+  });
+
+  Route::name('debug.')->group(function(){
+
+    Route::get('/debug/on', [Debug::class, 'on'])->name('on');
+    
+    Route::get('/debug/off', [Debug::class, 'off'])->name('off');
+  
+  });
+
+  Route::name('sign.')->group(function(){
+
+    Route::get('/signin', [Authentication::class, 'signin'])->name('in');
+    
+    Route::get('/signout', [Authentication::class, 'signout'])->name('out');
+    
+    Route::post('/signin', [Authentication::class, 'signing_in'])->name('ing-in');
+  
+  });
 
 });
 
