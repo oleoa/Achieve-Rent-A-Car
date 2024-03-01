@@ -34,17 +34,15 @@ use App\Http\Controllers\Dashboard\Debug;
 |
 */
 
-/*
-    Route::prefix('/dashboard')->name('dashboard.')->group(function () {
-*/
-
 // DASHBOARD ROUTES
-Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
+
+Route::prefix('/dashboard')->name('dashboard.')->group(function () {
+//Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(function () {
 
   // To create a home page
   Route::get('/', function(){
     return redirect()->route('dashboard.views.list');
-  })->name('home');
+  })->name('home')->middleware('auth');
 
   Route::name('profile.')->group(function(){
 
@@ -54,7 +52,7 @@ Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(functi
 
     Route::post('/profile', [Profile::class, 'update'])->name('update');
 
-  });
+  })->middleware('auth');
 
   Route::name('views.')->group(function(){
 
@@ -62,13 +60,13 @@ Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(functi
 
     Route::delete('/views/delete', [Views::class, 'delete'])->name('delete');
 
-  });
+  })->middleware('auth');
 
   Route::name('pages.')->group(function(){
 
     Route::get('/pages', [Pages::class, 'index'])->name('index');
 
-  });
+  })->middleware('auth');
 
   Route::name('faq.')->group(function () {
 
@@ -79,7 +77,7 @@ Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(functi
     Route::get('/faq/add', [FAQDashboard::class, 'add'])->name('add');
     Route::post('/faq/add', [FAQDashboard::class, 'add'])->name('add');
 
-  });
+  })->middleware('auth');
 
   Route::name('discount.')->group(function () {
 
@@ -94,15 +92,15 @@ Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(functi
     Route::get('/discounts/add', [Discounts::class, 'add'])->name('add');
     Route::post('/discounts/add', [Discounts::class, 'add'])->name('add');
 
-  });
+  })->middleware('auth');
 
   Route::name('user.')->group(function () {
 
-    Route::get('/users', [Users::class, 'index'])->name('list');
+    Route::get('/users', [Users::class, 'index'])->name('list')->middleware('auth');
     
-    Route::delete('/user/delete', [Users::class, 'delete'])->name('delete');
+    Route::delete('/user/delete', [Users::class, 'delete'])->name('delete')->middleware('auth');
     
-    Route::post('/user/add', [Users::class, 'add'])->name('add');
+    Route::post('/user/add', [Users::class, 'add'])->name('add')->middleware('auth');
     
     Route::get('/user/setup', [Users::class, 'setup'])->name('setup');
     
@@ -116,7 +114,7 @@ Route::domain('dashboard.achieverentacar.com')->name('dashboard.')->group(functi
     
     Route::get('/debug/off', [Debug::class, 'off'])->name('off');
   
-  });
+  })->middleware('auth');
 
   Route::name('sign.')->group(function(){
 
