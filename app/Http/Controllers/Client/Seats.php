@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class Seats extends Controller
 {
-    public function index($locale)
-    {
-        return $this->load('client.seats', 'seats', $locale);
-    }
+  public function index($locale)
+  {
+    return $this->load('client.seats', 'seats', $locale);
+  }
 }
