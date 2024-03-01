@@ -16,7 +16,6 @@ class Authentication extends Controller
 
   public function signing_in(Request $request)
   {
-    return ['it gets here'];
     // Validate the request
     $validated = $request->validate([
       'email' => 'required|email',
