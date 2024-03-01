@@ -1,6 +1,7 @@
 class Carousel
 {
   id;
+  nuts;
   carouselSlide;
   carouselLength;
   prevBtn;
@@ -8,10 +9,13 @@ class Carousel
   counter;
   automation;
 
-  constructor(id)
+  constructor(id, nuts)
   {
     // Set the id of the carousel
     this.id = id;
+
+    // Set the nuts of the carousel
+    this.nuts = nuts;
 
     // Get the carousel slide, the length of the carousel, the previous and next buttons and the counter
     this.carouselSlide = document.querySelector('#carousel-slide-'+this.id);
@@ -54,7 +58,7 @@ class Carousel
   slideAtuomatic()
   {
     // Set an interval to move the carousel every 3 seconds
-    this.automation = setInterval(this.slideNext.bind(this), 3000);
+    this.automation = setInterval(this.slideNext.bind(this), this.nuts);
   }
 
   slideNext()
@@ -179,9 +183,9 @@ class Carousel
 const isHome = document.getElementById('home-page');
 if(isHome)
 {
-  const reviews = new Carousel('reviews');
+  const reviews = new Carousel('reviews', 3000);
   reviews.addEventListeners();
 
-  const banner = new Carousel('banner');
+  const banner = new Carousel('banner', 5000);
   banner.addEventListeners();
 }
