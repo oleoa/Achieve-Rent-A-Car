@@ -1,86 +1,91 @@
 @extends('layouts.client')
 @section('main')
 
+  <div id="home-page"></div>
+
   <!-- Banner -->
   <div id="home-banner" itemscope itemtype="https://schema.org/AutoRental" style="background-image: url('/img/home/banner.jpg')" class="xl:h-homeTitleXL h-homeTitle xl:px-margin flex flex-col justify-center items-start bg-cover bg-no-repeat bg-center">
-      <div class="w-full grid grid-cols-2 p-4">
-          <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 rounded-xl bg-white/75 font-black xl:text-4xl text-lg">@lang('home-Banner-Title')</h1>
-      </div>
+    <div class="w-full grid grid-cols-2 p-4">
+      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 rounded-xl bg-white/75 font-black xl:text-4xl text-lg">@lang('home-Banner-Title')</h1>
+    </div>
   </div>
 
+  <!-- New Banner -->
+  <x-dashboard.banner-carousel/>
+
   <!-- System -->
-  @if($locale != 'translations')    
-      <div class="xl:px-0 px-4">
-          <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
-          <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
-      </div>
+  @if($locale != 'translations')
+    <div class="xl:px-0 px-4">
+      <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
+      <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+    </div>
   @endif
 
   <!-- Why choose achieve -->
   <div id="divAboveWidth" class="xl:px-margin px-4 py-8 flex flex-col gap-8">
 
-      <!-- Separator -->
-      <div class="flex items-center justify-center">
-          <div class="xl:w-1/3 w-full">
-              <x-separator/>
+    <!-- Separator -->
+    <div class="flex items-center justify-center">
+      <div class="xl:w-1/3 w-full">
+        <x-separator/>
+      </div>
+    </div>
+
+    <h2 class="text-center">@lang('home-list-title')</h2>
+
+    <p class="text-xl text-center">@lang('home-list-p')</p>
+
+    <div class="grid xl:grid-cols-3 gap-4 grid-rows-9 xl:grid-rows-3">
+
+      @for ($i = 1; $i <= 9; $i++)
+
+        <div class="px-4 py-2 bg-flagRed text-white rounded flex justify-between items-center gap-4">
+
+          <p>
+            @lang('home-list-li.'.$i)
+          </p>
+
+          <div class="h-8 xl:w-auto w-8 fles items-center justify-end">
+
+            @switch($i)
+
+              @case(1)
+                <x-font-awesome.hand-shake/>
+                @break
+              @case(2)
+                <x-font-awesome.hand-holding-car/>
+                @break
+              @case(3)
+                <x-font-awesome.file-shield/>
+                @break
+              @case(4)
+                <x-font-awesome.no-credit-card/>
+                @break
+              @case(5)
+                <x-font-awesome.free-aditional-driver/>
+                @break
+              @case(6)
+                <x-font-awesome.smile/>
+                @break
+              @case(7)
+                <x-font-awesome.double-check/>
+                @break
+              @case(8)
+                <x-font-awesome.location/>
+                @break
+              @case(9)
+                <x-font-awesome.plane/>
+                @break
+                    
+            @endswitch
+
           </div>
-      </div>
 
-      <h2 class="text-center">@lang('home-list-title')</h2>
+        </div>
 
-      <p class="text-xl text-center">@lang('home-list-p')</p>
+      @endfor
 
-      <div class="grid xl:grid-cols-3 gap-4 grid-rows-9 xl:grid-rows-3">
-
-          @for ($i = 1; $i <= 9; $i++)
-
-              <div class="px-4 py-2 bg-flagRed text-white rounded flex justify-between items-center gap-4">
-
-                  <p>
-                      @lang('home-list-li.'.$i)
-                  </p>
-
-                  <div class="h-8 xl:w-auto w-8 fles items-center justify-end">
-
-                      @switch($i)
-
-                          @case(1)
-                              <x-font-awesome.hand-shake/>
-                              @break
-                          @case(2)
-                              <x-font-awesome.hand-holding-car/>
-                              @break
-                          @case(3)
-                              <x-font-awesome.file-shield/>
-                              @break
-                          @case(4)
-                              <x-font-awesome.no-credit-card/>
-                              @break
-                          @case(5)
-                              <x-font-awesome.free-aditional-driver/>
-                              @break
-                          @case(6)
-                              <x-font-awesome.smile/>
-                              @break
-                          @case(7)
-                              <x-font-awesome.double-check/>
-                              @break
-                          @case(8)
-                              <x-font-awesome.location/>
-                              @break
-                          @case(9)
-                              <x-font-awesome.plane/>
-                              @break
-                              
-                      @endswitch
-
-                  </div>
-
-              </div>
-
-          @endfor
-
-      </div>
+    </div>
 
   </div>
 
@@ -102,7 +107,7 @@
       <div class="relative z-10 w-full overflow-x-hidden">
 
         <!-- Carousel Slide -->
-        <div id="carousel-slide" class="rounded grid transition-transform duration-500 h-full w-full" style="grid-template-columns: @for($i = 1; $i <= 5; $i++) 100% @endfor">
+        <div id="carousel-slide-reviews" class="rounded grid transition-transform duration-500 h-full w-full" style="grid-template-columns: @for($i = 1; $i <= 5; $i++) 100% @endfor">
         
           @for ($i = 1; $i <= 5; $i++)
           
@@ -135,14 +140,14 @@
           <div class="absolute top-0 w-full h-full flex justify-between xl:items-center items-end xl:z-auto z-50">
           
               <!-- Previous Button -->
-              <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn">
+              <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-reviews">
                 <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
                   <x-font-awesome.arrow-left/>
                 </div>
               </button>
               
               <!-- Next Button -->
-              <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn">
+              <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-reviews">
                 <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
                   <x-font-awesome.arrow-right/>
                 </div>
@@ -154,7 +159,7 @@
           <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 xl:z-auto z-40">
           
               @for ($i = 0; $i <= 4; $i++)
-                  <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="review-{{$i}}-indicator"></div>
+                <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-reviews"></div>
               @endfor
 
           </div>
