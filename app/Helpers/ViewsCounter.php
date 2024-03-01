@@ -85,7 +85,12 @@ class ViewsCounter
                 }
 
         $pages['total'] = $count;
-        $pages['percentage'] = number_format(($pages['total'] / count($this->views) * 100), 3);
+        if(count($this->views) == 0)
+          $pages['percentage'] = 0;
+        else if(count($this->views) == $count)
+          $pages['percentage'] = 100;
+        else if(count($this->views) > 0)
+          $pages['percentage'] = number_format(($pages['total'] / count($this->views) * 100), 3);
 
         return $pages;
     }
