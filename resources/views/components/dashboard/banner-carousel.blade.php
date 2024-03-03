@@ -1,58 +1,58 @@
 <!-- Banner Carousel -->
-<div class="relative z-10 w-full overflow-hidden xl:h-homeTitleXL h-homeTitle">
+<div class="relative z-10 w-full overflow-x-hidden xl:h-homeTitleXL h-homeTitle">
 
   <!-- Carousel Slide -->
-  <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 h-full w-full" style="grid-template-columns: @for($i = 1; $i <= 3; $i++) 100% @endfor">
+  <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 xl:h-homeTitleXL h-homeTitle w-full" style="grid-template-columns: @for($i = 1; $i <= 3; $i++) 100% @endfor">
       
-    <!-- Carousel Item -->
-    <div class="w-full h-full flex flex-col items-center justify-between">
+    <!-- Carousel Item 1 -->
+    <div class="w-full xl:h-homeTitleXL h-homeTitle relative bg-cover bg-center flex items-center justify-center" style="background-image: url(/img/about/2.jpeg)">
 
-      <img src="{{asset('/img/about/2.jpeg')}}" alt="Banner" class="object-center">
+      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 rounded-xl bg-white/75 font-black xl:text-4xl text-lg h-fit w-fit">@lang('home-Banner-Title')</h1>
 
     </div>
       
-    <!-- Carousel Item -->
-    <div class="w-full h-full flex flex-col items-center justify-between">
+    <!-- Carousel Item 1 -->
+    <div class="w-full xl:h-homeTitleXL h-homeTitle relative bg-cover bg-center flex items-center justify-center" style="background-image: url(/img/about/2.jpeg)">
 
-      <img src="{{asset('/img/home/banner.jpg')}}" alt="Banner" class="object-center">
+      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 rounded-xl bg-white/75 font-black xl:text-4xl text-lg h-fit w-fit">@lang('home-Banner-Title')</h1>
 
     </div>
       
-    <!-- Carousel Item -->
-    <div class="w-full h-full flex flex-col items-center justify-between">
+    <!-- Carousel Item 1 -->
+    <div class="w-full xl:h-homeTitleXL h-homeTitle relative bg-cover bg-center flex items-center justify-center" style="background-image: url(/img/about/2.jpeg)">
 
-      <img src="{{asset('/img/home/banner.jpg')}}" alt="Banner" class="">
+      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 rounded-xl bg-white/75 font-black xl:text-4xl text-lg h-fit w-fit">@lang('home-Banner-Title')</h1>
 
     </div>
 
   </div>
     
-    <!-- Carousel Buttons -->
-    <div class="absolute top-0 w-full h-full flex justify-between xl:items-center items-end xl:z-auto z-50">
-    
-        <!-- Previous Button -->
-        <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-banner">
-          <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
-            <x-font-awesome.arrow-left/>
-          </div>
-        </button>
-        
-        <!-- Next Button -->
-        <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-banner">
-          <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
-            <x-font-awesome.arrow-right/>
-          </div>
-        </button>
-    
-    </div>
+  <!-- Carousel Buttons -->
+  <div class="absolute top-0 w-full h-full flex justify-between xl:items-center items-end xl:z-auto z-50">
+  
+    <!-- Previous Button -->
+    <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-banner">
+      <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
+        <x-font-awesome.arrow-left/>
+      </div>
+    </button>
+      
+    <!-- Next Button -->
+    <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-banner">
+      <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
+        <x-font-awesome.arrow-right/>
+      </div>
+    </button>
+  
+  </div>
 
-    <!-- Carousel Indicator -->
-    <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 xl:z-auto z-40">
-    
-      @for ($i = 0; $i <= 2; $i++)
-        <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-banner"></div>
-      @endfor
+  <!-- Carousel Indicator -->
+  <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 xl:z-auto z-40">
+  
+    @for ($i = 0; $i <= 2; $i++)
+      <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-banner"></div>
+    @endfor
 
-    </div>
+  </div>
     
 </div>

@@ -186,6 +186,6 @@ if(isHome)
   const reviews = new Carousel('reviews', 3000);
   reviews.addEventListeners();
 
-  const banner = new Carousel('banner', 5000);
+  const banner = new Carousel('banner', 100000);
   banner.addEventListeners();
 }

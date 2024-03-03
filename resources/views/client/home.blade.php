@@ -3,13 +3,6 @@
 
   <div id="home-page"></div>
 
-  <!-- Banner -->
-  <div id="home-banner" itemscope itemtype="https://schema.org/AutoRental" style="background-image: url('/img/home/banner.jpg')" class="xl:h-homeTitleXL h-homeTitle xl:px-margin flex flex-col justify-center items-start bg-cover bg-no-repeat bg-center">
-    <div class="w-full grid grid-cols-2 p-4">
-      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 rounded-xl bg-white/75 font-black xl:text-4xl text-lg">@lang('home-Banner-Title')</h1>
-    </div>
-  </div>
-
   <!-- New Banner -->
   <x-dashboard.banner-carousel/>
 
