@@ -26,21 +26,6 @@
     </div>
 
   </div>
-    
-  <!-- Carousel Buttons -->
-  <div class="absolute top-0 w-full h-full flex justify-between xl:items-center items-end xl:z-auto z-50">
-  
-    <!-- Previous Button -->
-    <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-banner">
-      <i class="fas fa-arrow-left p-4 xl:h-auto h-16 w-16 text-4xl rounded-xl text-white"></i>
-    </button>
-      
-    <!-- Next Button -->
-    <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-banner">
-      <i class="fas fa-arrow-right p-4 xl:h-auto h-16 w-16 text-4xl rounded-xl text-white"></i>
-    </button>
-  
-  </div>
 
   <!-- Carousel Indicator -->
   <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 xl:z-auto z-40">

@@ -32,12 +32,6 @@ class Carousel
     // Update the width of the carousel
     this.updateWidth();
     window.addEventListener('resize', this.updateWidth.bind(this));
-
-    // Call the slideAutomatic method
-    this.slideAtuomatic();
-
-    // Paint the first indicator
-    this.paintIndicator(0);
   }
 
   updateWidth()
@@ -55,7 +49,7 @@ class Carousel
     setWidthScreen.style.width = widthScreen+'px';
   }
 
-  slideAtuomatic()
+  addSlideAtuomatic()
   {
     // Set an interval to move the carousel every 3 seconds
     this.automation = setInterval(this.slideNext.bind(this), this.nuts);
@@ -135,11 +129,17 @@ class Carousel
     this.slidePrev();
   }
 
-  addEventListeners()
+  addArrows()
   {
     // Add event listeners to the next and previous buttons
     this.nextBtn.addEventListener('click', this.clickedNext.bind(this));
     this.prevBtn.addEventListener('click', this.clickedPrev.bind(this));
+  }
+
+  addIndicators()
+  {
+    // Paint the first indicator
+    this.paintIndicator(0);
 
     // Add event listeners to the indicators
     for(var i = 0; i <= this.carouselLength; i++){
@@ -184,8 +184,11 @@ const isHome = document.getElementById('home-page');
 if(isHome)
 {
   const reviews = new Carousel('reviews', 3000);
-  reviews.addEventListeners();
+  reviews.addSlideAtuomatic();
+  reviews.addArrows();
+  reviews.addIndicators();
 
-  const banner = new Carousel('banner', 100000);
-  banner.addEventListeners();
+  const banner = new Carousel('banner', 5000);
+  banner.addSlideAtuomatic();
+  banner.addIndicators();
 }
