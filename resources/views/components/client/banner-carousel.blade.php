@@ -32,16 +32,12 @@
   
     <!-- Previous Button -->
     <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-banner">
-      <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
-        <x-font-awesome.arrow-left/>
-      </div>
+      <i class="fas fa-arrow-left p-4 xl:h-auto h-16 w-16 text-4xl rounded-xl text-white"></i>
     </button>
       
     <!-- Next Button -->
     <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-banner">
-      <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
-        <x-font-awesome.arrow-right/>
-      </div>
+      <i class="fas fa-arrow-right p-4 xl:h-auto h-16 w-16 text-4xl rounded-xl text-white"></i>
     </button>
   
   </div>
@@ -50,7 +46,9 @@
   <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 xl:z-auto z-40">
   
     @for ($i = 0; $i <= 2; $i++)
+    
       <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-banner"></div>
+
     @endfor
 
   </div>

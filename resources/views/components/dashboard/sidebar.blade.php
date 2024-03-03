@@ -44,60 +44,60 @@
 
         <!-- Views -->
         <a href="{{route('dashboard.views.list')}}" class="p-4 {{$current == 'views' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
-            <p class="xl:flex hidden">Views</p>
-            <div class="xl:w-6 w-8">
-                <x-font-awesome.views/>
-            </div>
+          <p class="xl:flex hidden">Views</p>
+          <div class="xl:w-6 w-8 flex items-center justify-center">
+            <i class="fas fa-eye text-3xl h-full"></i>
+          </div>
         </a>
 
         <!-- FAQ -->
         <a href="{{route('dashboard.faq.list')}}" class="p-4 {{$current == 'faq' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
-            <p class="xl:flex hidden">FAQ</p>
-            <div class="xl:w-6 w-8">
-                <x-font-awesome.f-a-q/>
-            </div>
+          <p class="xl:flex hidden">FAQ</p>
+          <div class="xl:w-6 w-8 flex items-center justify-center">
+            <i class="fas fa-question text-3xl h-full"></i>
+          </div>
         </a>
 
         <!-- Discounts -->
         <a href="{{route('dashboard.discount.list')}}" class="p-4 {{$current == 'discounts' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
-            <p class="xl:flex hidden">Discounts</p>
-            <div class="xl:w-6 w-8">
-                <x-font-awesome.discounts/>
-            </div>
+          <p class="xl:flex hidden">Discounts</p>
+          <div class="xl:w-6 w-8">
+            <i class="fas fa-tags text-3xl h-full"></i>
+          </div>
         </a>
 
         <!-- Users -->
         <a href="{{route('dashboard.user.list')}}" class="p-4 {{$current == 'users' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
-            <p class="xl:flex hidden">Users</p>
-            <div class="xl:w-6 w-8">
-                <x-font-awesome.users/>
-            </div>
+          <p class="xl:flex hidden">Users</p>
+          <div class="xl:w-6 w-8">
+            <i class="fas fa-users text-2xl h-full"></i>
+          </div>
         </a>
 
         <!-- Pages -->
         <a href="{{route('dashboard.pages.index')}}" class="p-4 {{$current == 'pages' ? 'bg-neutral-700' : ''}} hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
-            <p class="xl:flex hidden">Pages</p>
-            <div class="xl:w-6 w-8">
-                <x-font-awesome.pages/>
-            </div>
+          <p class="xl:flex hidden">Pages</p>
+          <div class="xl:w-6 w-8">
+            <i class="fas fa-file text-3xl h-full"></i>
+          </div>
         </a>
 
         <div class="absolute bottom-0 flex flex-col gap-4 py-4 w-full">
 
             <!-- Debug -->
             <a href="{{route('dashboard.debug.'.($is['debug']==true?'off':'on'))}}" class="w-full p-4 hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
-                <p class="xl:flex hidden">Turn Debug {{$is['debug']==true?'Off':'On'}}</p>
-                <div class="xl:w-6 w-8">
-                    <x-font-awesome.debug/>
-                </div>
+              <p class="xl:flex hidden">Turn Debug {{$is['debug']==true?'Off':'On'}}</p>
+              <div class="xl:w-6 w-8">
+                <i class="fas fa-bug text-3xl h-full"></i>
+              </div>
             </a>
     
             <!-- Logout -->
             <a href="{{route('dashboard.sign.out')}}" class="w-full p-4 hover:bg-neutral-700 hover:text-white cursor-pointer flex xl:justify-between justify-center items-center">
-                <p class="xl:flex hidden">Logout</p>
-                <div class="xl:w-6 w-8">
-                    <x-font-awesome.logout/>
-                </div>
+              <p class="xl:flex hidden">Logout</p>
+              <div class="xl:w-6 w-8">
+                <i class="fas fa-sign-out-alt text-3xl h-full"></i>
+              </div>
             </a>
 
         </div>

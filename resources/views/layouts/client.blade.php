@@ -48,6 +48,9 @@
         <meta name="twitter:creator" content="@o_leo_a"/>
         <meta name="twitter:image" content="http://achieverentacar.com/img/logos/logo.png"/>
 
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous"></script>
+
         <!-- Resources (CSS and JS) -->
         @vite(['resources/css/app.css', 'resources/js/client.js'])
 

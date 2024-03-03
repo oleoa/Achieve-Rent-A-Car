@@ -8,6 +8,7 @@
         <meta name="description" content="O dashboard para a melhor Rent A Car da Madeira">
         <meta name="author" content="Leonardo Abreu de Paulo">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous"></script>
         @vite(['resources/css/app.css', 'resources/js/dashboard.js'])
         <title>@lang('Title')</title>
     </head>

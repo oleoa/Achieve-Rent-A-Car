@@ -4,7 +4,7 @@
   <div id="home-page"></div>
 
   <!-- New Banner -->
-  <x-dashboard.banner-carousel/>
+  <x-client.banner-carousel/>
 
   <!-- System -->
   @if($locale != 'translations')
@@ -43,31 +43,31 @@
             @switch($i)
 
               @case(1)
-                <x-font-awesome.hand-shake/>
+                <i class="fas fa-handshake w-full h-full text-3xl"></i>
                 @break
               @case(2)
                 <x-font-awesome.hand-holding-car/>
                 @break
               @case(3)
-                <x-font-awesome.file-shield/>
+                <i class="fas fa-file-shield w-full h-full text-3xl"></i>
                 @break
               @case(4)
                 <x-font-awesome.no-credit-card/>
                 @break
               @case(5)
-                <x-font-awesome.free-aditional-driver/>
+                <i class="fa-solid fa-person-circle-plus w-full h-full text-3xl"></i>
                 @break
               @case(6)
-                <x-font-awesome.smile/>
+                <i class="fas fa-smile w-full h-full text-3xl"></i>
                 @break
               @case(7)
-                <x-font-awesome.double-check/>
+                <i class="fas fa-check-double w-full h-full text-3xl"></i>
                 @break
               @case(8)
-                <x-font-awesome.location/>
+                <i class="fas fa-map-marked-alt w-full h-full text-3xl"></i>
                 @break
               @case(9)
-                <x-font-awesome.plane/>
+                <i class="fas fa-paper-plane w-full h-full text-3xl"></i>
                 @break
                     
             @endswitch
@@ -114,11 +114,11 @@
                 <p>@lang('home-reviews-'.$i.'-author')</p>
 
                 <div class="h-4 flex gap-1">
-                  <x-font-awesome.star/>
-                  <x-font-awesome.star/>
-                  <x-font-awesome.star/>
-                  <x-font-awesome.star/>
-                  <x-font-awesome.star/>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
                 </div>
 
               </div>
@@ -134,16 +134,12 @@
           
               <!-- Previous Button -->
               <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-reviews">
-                <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
-                  <x-font-awesome.arrow-left/>
-                </div>
+                <i class="fas fa-arrow-left p-4 xl:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
               </button>
               
               <!-- Next Button -->
               <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-reviews">
-                <div class="p-4 xl:h-auto h-16 w-16 bg-red-500 rounded-xl">
-                  <x-font-awesome.arrow-right/>
-                </div>
+                <i class="fas fa-arrow-right p-4 xl:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
               </button>
           
           </div>

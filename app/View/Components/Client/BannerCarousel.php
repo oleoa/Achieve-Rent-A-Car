@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Dashboard;
+namespace App\View\Components\Client;
 
 use Closure;
 use Illuminate\View\Component;
@@ -21,6 +21,6 @@ class BannerCarousel extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.dashboard.banner-carousel');
+        return view('components.client.banner-carousel');
     }
 }
