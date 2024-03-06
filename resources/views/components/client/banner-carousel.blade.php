@@ -1,5 +1,5 @@
 <!-- Banner Carousel -->
-<div class="relative z-10 w-screen overflow-x-hidden xl:h-homeTitleXL h-homeTitle select-none">
+<div class="relative z-10 xl:w-full w-screen overflow-x-hidden xl:h-homeTitleXL h-homeTitle select-none">
 
   <!-- Carousel Slide -->
   <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 xl:h-homeTitleXL h-homeTitle w-full" style="grid-template-columns: @for($i = 1; $i <= 3; $i++) 100% @endfor">
