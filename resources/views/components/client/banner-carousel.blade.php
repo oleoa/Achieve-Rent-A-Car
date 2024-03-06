@@ -1,5 +1,5 @@
 <!-- Banner Carousel -->
-<div class="relative z-10 w-full overflow-x-hidden xl:h-homeTitleXL h-homeTitle select-none">
+<div class="relative z-10 w-screen overflow-x-hidden xl:h-homeTitleXL h-homeTitle select-none">
 
   <!-- Carousel Slide -->
   <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 xl:h-homeTitleXL h-homeTitle w-full" style="grid-template-columns: @for($i = 1; $i <= 3; $i++) 100% @endfor">
@@ -14,10 +14,10 @@
     </div>
       
     <!-- Carousel Item 3 -->
-    <div class="w-full xl:h-homeTitleXL h-homeTitle relative bg-cover xl:bg-center bg-right grid xl:grid-cols-2 xl:content-center content-start py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner3.png)">
+    <div class="w-full xl:h-homeTitleXL h-homeTitle relative bg-cover bg-center grid xl:grid-cols-2 xl:content-center content-start py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner3.png)">
 
       <span></span>
-      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 text-end rounded-xl bg-white/75 font-black xl:text-4xl text-3xl h-fit w-fit">
+      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 xl:text-end rounded-xl bg-white/75 font-black xl:text-4xl text-3xl h-fit w-fit">
         @lang('home-Banner-Title.3')
       </h1>
 
