@@ -8,7 +8,7 @@
 
   <!-- System -->
   @if($locale != 'translations')
-    <div class="xl:px-0 px-4">
+    <div class="xl:px-margin px-4">
       <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </div>
