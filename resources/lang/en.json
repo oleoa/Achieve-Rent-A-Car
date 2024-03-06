@@ -34,7 +34,9 @@
     "Menu-Locale-en.Alt": "United Kingdom Flag",
     "Menu-Locale-pt.Alt": "Portugal Flag",
 
-    "home-Banner-Title": "Welcome to your best car rental experience on Madeira Island!",
+    "home-Banner-Title.1": "Welcome to your best car rental experience on Madeira Island!",
+    "home-Banner-Title.2": "Discover the ultimate driving adventure with Madeira's premier car rental service!",
+    "home-Banner-Title.3": "Your gateway to unforgettable moments starts with our premium car rentals in Madeira!",
     "home-button-booknow": "Book Now",
     "home-button-booknow.Title": "Click to go to the car rental page in Madeira",
     "home-1-Title": "Explore the unmatched beauty of Madeira Island<br>From North to South, from East to West, go with Achieve Rent a Car",

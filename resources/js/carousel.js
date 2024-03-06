@@ -32,6 +32,11 @@ class Carousel
     // Update the width of the carousel
     this.updateWidth();
     window.addEventListener('resize', this.updateWidth.bind(this));
+
+    this.touchStartX = 0;
+    this.touchEndX = 0;
+    this.mouseStartX = 0;
+    this.mouseEndX = 0;
   }
 
   updateWidth()
@@ -148,6 +153,62 @@ class Carousel
     }
   }
 
+  addSlice()
+  {
+    // Track the finger
+    document.addEventListener('touchstart', this.touchstart.bind(this), false);
+    document.addEventListener('touchend', this.touchend.bind(this), false);
+
+    // Track the mouse
+    document.addEventListener('mousedown', this.mousedown.bind(this), false);
+    document.addEventListener('mouseup', this.mouseup.bind(this), false);
+  }
+
+  touchstart(event)
+  {
+    this.touchStartX = event.touches[0].clientX;
+  }
+
+  touchend(event)
+  {
+    this.touchEndX = event.changedTouches[0].clientX;
+    this.handleGesture('finger');
+  }
+
+  mousedown(event)
+  {
+    this.mouseStartX = event.clientX;
+  }
+
+  mouseup(event)
+  {
+    this.mouseEndX = event.clientX;
+    this.handleGesture('mouse');
+  }
+
+  handleGesture(type)
+  {
+    // Clear the interval
+    clearInterval(this.automation);
+
+    if(type == 'mouse')
+    {
+      if (this.mouseEndX < this.mouseStartX) { // Swipe left
+        this.slideNext();
+      } else if (this.mouseEndX > this.mouseStartX) { // Swipe right
+        this.slidePrev();
+      }
+    }
+    else if(type == 'finger')
+    {
+      if (this.touchEndX < this.touchStartX) { // Swipe left
+        this.slideNext();
+      } else if (this.touchEndX > this.touchStartX) { // Swipe right
+        this.slidePrev();
+      }
+    }
+  }
+
   slideIndicator(indicator)
   {
     // Clear the interval
@@ -191,4 +252,5 @@ if(isHome)
   const banner = new Carousel('banner', 5000);
   banner.addSlideAtuomatic();
   banner.addIndicators();
+  banner.addSlice();
 }
