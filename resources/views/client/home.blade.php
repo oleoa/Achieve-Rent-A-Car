@@ -6,9 +6,14 @@
   <!-- New Banner -->
   <x-client.banner-carousel/>
 
+  <!-- Rent Now Cell Button -->
+  <div class="w-full xl:px-margin p-4 flex justify-center items-center xl:hidden">
+    <a title="@lang('home-button-booknow.Title')" href="#system" class="notActivateLoader text-center p-4 rounded-md text-white bg-flagRed w-full text-2xl">@lang('home-button-booknow')</a>
+  </div>
+
   <!-- System -->
   @if($locale != 'translations')
-    <div class="xl:px-margin px-4">
+    <div class="xl:px-margin px-4 xl:py-0 py-4" id="system">
       <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </div>
