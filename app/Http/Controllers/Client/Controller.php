@@ -33,9 +33,8 @@ class Controller extends BaseController
 
     protected function load($view, $route, $locale)
     {
-      // Checks if the locale exists
-      $this->locale($locale);
-      if(!$this->localeExists) abort(404);
+      // Sets the lamguage as it came just for the menu to load
+      $this->data['locale'] = $locale;
 
       // Creates the menu items both for navbar and sidebar
       $this->data['menu'] = [
@@ -82,6 +81,10 @@ class Controller extends BaseController
           ]
         ]
       ];
+      
+      // Checks if the locale exists
+      $this->locale($locale);
+      if(!$this->localeExists) abort(404);
 
       // Checks for discounts
       $discount = Discounts::where('active', true)->first();
@@ -99,7 +102,7 @@ class Controller extends BaseController
 
       // Creates the view if the user is not in local environment
       if($locale != 'local' && $locale != 'locale')
-          Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
+        Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
 
       // Returns the view
       return view($view, $this->data);
