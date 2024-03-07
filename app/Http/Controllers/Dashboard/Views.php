@@ -9,38 +9,44 @@ use App\Helpers\ViewsCounter;
 
 class Views extends Controller
 {
-    public function index(Request $request)
-    {
-        // Get the views and the range
-        $views = ViewsModel::all()->toArray();
-        $range = $request->input('range')??'all'; // today, week, month, year or all
-        $language = $request->input('language')??'all'; // en, pt or all
-        $device = $request->input('device')??'all'; // 0 for desktop, 1 for mobile and all for both
+  public function index(Request $request)
+  {
+    // Get the views and the range
+    $views = ViewsModel::all()->toArray();
+    $range = $request->input('range')??'all'; // today, week, month, year or all
+    $language = $request->input('language')??'all'; // en, pt or all
+    $device = $request->input('device')??'all'; // 0 for desktop, 1 for mobile and all for both
+    $start = $request->input('start')??null;
+    $end = $request->input('end')??null;
 
-        // Calculate the views
-        $counter = new ViewsCounter($views, $range, $language, $device);
-        $data = $counter->get();
+    // Calculate the views
+    $counter = new ViewsCounter($views, $range, $language, $device);
+    if($range == 'range')
+      $counter->setRange($start, $end);
+    $data = $counter->get();
 
-        // Inform the view about the filters
-        $this->data('filters', array(
-            'range' => $range,
-            'language' => $language,
-            'device' => $device
-        ));
-        
-        // Pass the data
-        $this->data('views', $data);
+    // Inform the view about the filters
+    $this->data('filters', array(
+      'range' => $range,
+      'language' => $language,
+      'device' => $device,
+      'start' => $start,
+      'end' => $end
+    ));
 
-        // Set the current page and load the view
-        return $this->load('dashboard.views', 'views');
-    }
+    // Pass the data
+    $this->data('views', $data);
 
-    public function delete()
-    {
-        // Delete all the views
-        ViewsModel::truncate();
+    // Set the current page and load the view
+    return $this->load('dashboard.views', 'views');
+  }
 
-        // Redirect the user to the views list
-        return redirect()->route('dashboard.views');
-    }
+  public function delete()
+  {
+    // Delete all the views
+    ViewsModel::truncate();
+
+    // Redirect the user to the views list
+    return redirect()->route('dashboard.views');
+  }
 }
