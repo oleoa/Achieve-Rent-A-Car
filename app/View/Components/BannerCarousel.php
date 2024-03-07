@@ -6,16 +6,14 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class Navbar extends Component
+class BannerCarousel extends Component
 {
-    public $menu;
-    
     /**
      * Create a new component instance.
      */
-    public function __construct($menu)
+    public function __construct()
     {
-        $this->menu = $menu;
+        //
     }
 
     /**
@@ -23,6 +21,6 @@ class Navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.navbar');
+        return view('components.banner-carousel');
     }
 }

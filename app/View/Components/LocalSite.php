@@ -23,6 +23,6 @@ class LocalSite extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.client.local-site');
+        return view('components.local-site');
     }
 }

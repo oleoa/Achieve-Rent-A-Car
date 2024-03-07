@@ -21,6 +21,6 @@ class Separator extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.client.separator');
+        return view('components.separator');
     }
 }

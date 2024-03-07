@@ -21,6 +21,6 @@ class Whatsapp extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.client.whatsapp');
+        return view('components.whatsapp');
     }
 }
