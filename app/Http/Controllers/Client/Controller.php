@@ -23,8 +23,9 @@ class Controller extends BaseController
 
     private function locale(String $locale): void
     {
-      $this->localeExists = in_array($locale, ['en', 'pt', 'fr', 'de', 'es', 'local', 'translations'])? true : false;
-      $locale = $locale == 'local' ? 'en' : $locale;
+      $this->localeExists = in_array($locale, ['en', 'pt', 'fr', 'de', 'es', 'local', 'locale', 'translations'])? true : false;
+      if($locale == 'local') $locale = 'pt';
+      if($locale == 'locale') $locale = 'en';
       $this->data['locale'] = $locale;
       if(!$this->localeExists) $this->data['locale'] = 'en';
       app()->setLocale($locale);
@@ -97,7 +98,7 @@ class Controller extends BaseController
       $agent = new Agent();
 
       // Creates the view if the user is not in local environment
-      if($locale != 'local')
+      if($locale != 'local' && $locale != 'locale')
           Views::create(['page' => $this->data['current'], 'locale' => $this->data['locale'], 'mobile' => $agent->isMobile()]);
 
       // Returns the view
