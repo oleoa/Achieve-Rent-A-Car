@@ -174,11 +174,9 @@ const banner = new Carousel('banner', 6000);
 banner.addSlideAtuomatic();
 banner.addIndicators();
 
-const bannerMobile = new Carousel('banner-mobile', 60000);
+const bannerMobile = new Carousel('banner-mobile', 6000);
 bannerMobile.addSlideAtuomatic();
 bannerMobile.addIndicators();
-bannerMobile.clickedNext();
-bannerMobile.clickedNext();
 
 //const reviews = new Carousel('reviews', 3000);
 //reviews.addSlideAtuomatic();
