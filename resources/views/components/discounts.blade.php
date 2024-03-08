@@ -7,7 +7,7 @@
         @lang($discount['texto'])
       @endif
     </p>
-    <p class="w-full h-full text-center xl:hidden block">
+    <p class="w-full h-full text-start xl:hidden block">
       @if ($locale=='en')
         @lang($discount['text_mobile'])
       @elseif ($locale=='pt')

@@ -253,4 +253,8 @@ if(isHome)
   banner.addSlideAtuomatic();
   banner.addIndicators();
   banner.addSlice();
+
+  const bannerMobile = new Carousel('banner-mobile', 5000);
+  bannerMobile.addSlideAtuomatic();
+  bannerMobile.addIndicators();
 }

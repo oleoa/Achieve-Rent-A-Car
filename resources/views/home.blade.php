@@ -5,6 +5,7 @@
 
   <!-- New Banner -->
   <x-banner-carousel/>
+  <x-banner-carousel-mobile/>
 
   <!-- Rent Now Cell Button -->
   <div class="w-full xl:px-margin p-4 flex justify-center items-center xl:hidden">
@@ -88,7 +89,7 @@
   </div>
 
   <!-- Reviews -->
-  <div id="setWidthScreen" class="w-4">
+  <div id="setWidthScreen" class="w-4 hidden">
 
     <div class="xl:px-margin px-4 py-8 w-full flex flex-col gap-8 h-fit">
 

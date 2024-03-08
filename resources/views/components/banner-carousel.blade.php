@@ -1,37 +1,29 @@
 <!-- Banner Carousel -->
-<div class="relative z-10 xl:w-full w-screen overflow-x-hidden xl:h-homeTitleXL h-homeTitle select-none">
+<div class="relative z-10 xl:w-full w-screen overflow-x-hidden xl:h-homeTitleXL h-homeTitle select-none xl:block hidden">
 
   <!-- Carousel Slide -->
   <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 xl:h-homeTitleXL h-homeTitle w-full" style="grid-template-columns: @for($i = 1; $i <= 3; $i++) 100% @endfor">
       
     <!-- Carousel Item 1 -->
-    <div class="w-full xl:h-homeTitleXL h-homeTitle relative bg-cover xl:bg-center bg-right grid xl:grid-cols-2 xl:content-center content-start py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner1.jpg)">
+    <div class="grid w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-bottom xl:grid-cols-2 xl:content-end content-start py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner1.png)">
 
-      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 rounded-xl bg-white/75 font-black xl:text-4xl text-3xl h-fit w-fit">
-        @lang('home-Banner-Title.1')
-      </h1>
+    </div>
+      
+    <!-- Carousel Item 2 -->
+    <div class="grid w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-center xl:grid-cols-2 xl:content-end content-start py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner2.png)">
 
     </div>
       
     <!-- Carousel Item 3 -->
-    <div class="w-full xl:h-homeTitleXL h-homeTitle relative bg-cover bg-center grid xl:grid-cols-2 xl:content-center content-start py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner3.png)">
-
-      <span></span>
-      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 xl:text-end rounded-xl bg-white/75 font-black xl:text-4xl text-3xl h-fit w-fit">
-        @lang('home-Banner-Title.3')
-      </h1>
+    <div class="grid w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-center xl:grid-cols-2 xl:content-end content-start py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner3.png)">
 
     </div>
 
-    <!-- Carousel Item 2 -->
-    <div class="w-full xl:h-homeTitleXL h-homeTitle relative bg-cover xl:bg-center bg-right grid xl:grid-cols-2 xl:content-center content-start py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner2.png)">
+  </div>
 
-      <h1 itemprop="https://schema.org/name" class="text-flagRed p-4 rounded-xl bg-white/75 font-black xl:text-4xl text-3xl h-fit w-fit">
-        @lang('home-Banner-Title.2')
-      </h1>
-
-    </div>
-
+  <!-- Reviews Image -->
+  <div class="absolute bottom-0 left-0 xl:px-margin px-4 py-4 w-full h-full grid grid-cols-3 content-end">
+    <img src="{{asset('/img/home/reviews.png')}}" alt="Google Reviews" class="bg-white/70 rounded-md py-1 px-2 w-2/5">
   </div>
 
   <!-- Carousel Indicator -->
