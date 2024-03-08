@@ -170,13 +170,15 @@ class Carousel
   }
 }
 
-const banner = new Carousel('banner', 7000);
+const banner = new Carousel('banner', 6000);
 banner.addSlideAtuomatic();
 banner.addIndicators();
 
-const bannerMobile = new Carousel('banner-mobile', 5000);
+const bannerMobile = new Carousel('banner-mobile', 60000);
 bannerMobile.addSlideAtuomatic();
 bannerMobile.addIndicators();
+bannerMobile.clickedNext();
+bannerMobile.clickedNext();
 
 //const reviews = new Carousel('reviews', 3000);
 //reviews.addSlideAtuomatic();
