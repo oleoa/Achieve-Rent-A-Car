@@ -5,18 +5,18 @@
   <div id="carousel-slide-banner-mobile" class="rounded grid transition-transform duration-500 xl:h-homeTitleXL h-homeTitle w-full" style="grid-template-columns: @for($i = 1; $i <= 3; $i++) 100% @endfor">
       
     <!-- Carousel Item 1 Mobile -->
-    <div class="grid xl:hidden w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-center xl:grid-cols-2 content-end py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner1mobile.png)">
-
+    <div class="w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-center py-12 flex justify-center items-start xl:px-margin px-4" style="background-image: url(/img/home/banner1mobile.png)">
+      <h1 class="text-white bg-flagRed/70 px-2 py-1 rounded-md font-semibold text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">{{strtoupper('Rent a Car na Ilha da Madeira')}}</h1>
     </div>
 
     <!-- Carousel Item 2 Mobile -->
-    <div class="grid xl:hidden w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-center xl:grid-cols-2 content-end py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner2mobile.png)">
-
+    <div class="w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-center py-12 flex justify-center items-start xl:px-margin px-4" style="background-image: url(/img/home/banner2mobile.png)">
+      <h1 class="text-white bg-flagRed/70 px-2 py-1 rounded-md font-semibold text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">{{strtoupper('Rent a Car na Ilha da Madeira')}}</h1>
     </div>
 
     <!-- Carousel Item 3 Mobile -->
-    <div class="grid xl:hidden w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-center xl:grid-cols-2 content-end py-4 xl:px-margin px-4" style="background-image: url(/img/home/banner3mobile.png)">
-
+    <div class="w-full xl:h-homeTitleXL h-homeTitle bg-cover bg-center py-12 flex justify-center items-start xl:px-margin px-4" style="background-image: url(/img/home/banner3mobile.png)">
+      <h1 class="text-white bg-flagRed/70 px-2 py-1 rounded-md font-semibold text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">{{strtoupper('Rent a Car na Ilha da Madeira')}}</h1>
     </div>
 
   </div>

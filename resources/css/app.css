@@ -22,7 +22,7 @@
     a { @apply hover:text-red-400; }
 
     /*Section Paragraph*/
-    p { @apply text-lg text-justify; }
+    p { @apply text-justify; }
 
     /*Section Paragraph*/
     ul { @apply list-disc list-inside; }

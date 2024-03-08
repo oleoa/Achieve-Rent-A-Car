@@ -1,7 +1,7 @@
 class Carousel
 {
   id;
-  nuts;
+  secondsPerSlide;
   carouselSlide;
   carouselLength;
   prevBtn;
@@ -9,13 +9,13 @@ class Carousel
   counter;
   automation;
 
-  constructor(id, nuts)
+  constructor(id, secondsPerSlide)
   {
     // Set the id of the carousel
     this.id = id;
 
-    // Set the nuts of the carousel
-    this.nuts = nuts;
+    // Set the secondsPerSlide of the carousel
+    this.secondsPerSlide = secondsPerSlide;
 
     // Get the carousel slide, the length of the carousel, the previous and next buttons and the counter
     this.carouselSlide = document.querySelector('#carousel-slide-'+this.id);
@@ -28,36 +28,6 @@ class Carousel
     this.prevBtn = document.getElementById('prevBtn-'+this.id);
     this.nextBtn = document.getElementById('nextBtn-'+this.id);
     this.counter = 0;
-
-    // Update the width of the carousel
-    this.updateWidth();
-    window.addEventListener('resize', this.updateWidth.bind(this));
-
-    this.touchStartX = 0;
-    this.touchEndX = 0;
-    this.mouseStartX = 0;
-    this.mouseEndX = 0;
-  }
-
-  updateWidth()
-  {
-    // Get the width of the carousel
-    var setWidthScreen = document.getElementById('setWidthScreen');
-
-    // Set the width of the carousel to 0px
-    setWidthScreen.style.width = '0px';
-
-    // Get the width of the div above the carousel
-    var widthScreen = document.getElementById('divAboveWidth').offsetWidth;
-
-    // Set the width of the carousel to the width of the div above the carousel
-    setWidthScreen.style.width = widthScreen+'px';
-  }
-
-  addSlideAtuomatic()
-  {
-    // Set an interval to move the carousel every 3 seconds
-    this.automation = setInterval(this.slideNext.bind(this), this.nuts);
   }
 
   slideNext()
@@ -134,81 +104,6 @@ class Carousel
     this.slidePrev();
   }
 
-  addArrows()
-  {
-    // Add event listeners to the next and previous buttons
-    this.nextBtn.addEventListener('click', this.clickedNext.bind(this));
-    this.prevBtn.addEventListener('click', this.clickedPrev.bind(this));
-  }
-
-  addIndicators()
-  {
-    // Paint the first indicator
-    this.paintIndicator(0);
-
-    // Add event listeners to the indicators
-    for(var i = 0; i <= this.carouselLength; i++){
-      var indicator = document.getElementById('carousel-'+i+'-indicator-'+this.id);
-      indicator.addEventListener('click', this.slideIndicator.bind(this));
-    }
-  }
-
-  addSlice()
-  {
-    // Track the finger
-    document.addEventListener('touchstart', this.touchstart.bind(this), false);
-    document.addEventListener('touchend', this.touchend.bind(this), false);
-
-    // Track the mouse
-    document.addEventListener('mousedown', this.mousedown.bind(this), false);
-    document.addEventListener('mouseup', this.mouseup.bind(this), false);
-  }
-
-  touchstart(event)
-  {
-    this.touchStartX = event.touches[0].clientX;
-  }
-
-  touchend(event)
-  {
-    this.touchEndX = event.changedTouches[0].clientX;
-    this.handleGesture('finger');
-  }
-
-  mousedown(event)
-  {
-    this.mouseStartX = event.clientX;
-  }
-
-  mouseup(event)
-  {
-    this.mouseEndX = event.clientX;
-    this.handleGesture('mouse');
-  }
-
-  handleGesture(type)
-  {
-    // Clear the interval
-    clearInterval(this.automation);
-
-    if(type == 'mouse')
-    {
-      if (this.mouseEndX < this.mouseStartX) { // Swipe left
-        this.slideNext();
-      } else if (this.mouseEndX > this.mouseStartX) { // Swipe right
-        this.slidePrev();
-      }
-    }
-    else if(type == 'finger')
-    {
-      if (this.touchEndX < this.touchStartX) { // Swipe left
-        this.slideNext();
-      } else if (this.touchEndX > this.touchStartX) { // Swipe right
-        this.slidePrev();
-      }
-    }
-  }
-
   slideIndicator(indicator)
   {
     // Clear the interval
@@ -239,22 +134,51 @@ class Carousel
     var indicator = document.getElementById('carousel-'+index+'-indicator-'+this.id);
     indicator.style.backgroundColor = 'rgb(255, 215, 0)';
   }
+
+  /* PUBLIC FUNCTIONS FOR NEEDED FUNCTIONS */
+  addSlideAtuomatic()
+  {
+    // Set an interval to move the carousel every 3 seconds
+    this.automation = setInterval(this.slideNext.bind(this), this.secondsPerSlide);
+  }
+
+  addArrows()
+  {
+    // Unhide the next and previous buttons
+    const carouselButtonsDiv = document.getElementById('carousel-buttons-div');
+    carouselButtonsDiv.style.display = 'flex';
+
+    // Add event listeners to the next and previous buttons
+    this.nextBtn.addEventListener('click', this.clickedNext.bind(this));
+    this.prevBtn.addEventListener('click', this.clickedPrev.bind(this));
+  }
+
+  addIndicators()
+  {
+    // Unhide the indicators
+    const carouselIndicatorsDiv = document.getElementById('carousel-indicators-div');
+    carouselIndicatorsDiv.style.display = 'flex';
+
+    // Paint the first indicator
+    this.paintIndicator(0);
+
+    // Add event listeners to the indicators
+    for(var i = 0; i <= this.carouselLength; i++){
+      var indicator = document.getElementById('carousel-'+i+'-indicator-'+this.id);
+      indicator.addEventListener('click', this.slideIndicator.bind(this));
+    }
+  }
 }
 
-const isHome = document.getElementById('home-page');
-if(isHome)
-{
-  const reviews = new Carousel('reviews', 3000);
-  reviews.addSlideAtuomatic();
-  reviews.addArrows();
-  reviews.addIndicators();
+const banner = new Carousel('banner', 5000);
+banner.addSlideAtuomatic();
+banner.addIndicators();
 
-  const banner = new Carousel('banner', 5000);
-  banner.addSlideAtuomatic();
-  banner.addIndicators();
-  banner.addSlice();
+//const bannerMobile = new Carousel('banner-mobile', 5000);
+//bannerMobile.addSlideAtuomatic();
+//bannerMobile.addIndicators();
 
-  const bannerMobile = new Carousel('banner-mobile', 5000);
-  bannerMobile.addSlideAtuomatic();
-  bannerMobile.addIndicators();
-}
+//const reviews = new Carousel('reviews', 3000);
+//reviews.addSlideAtuomatic();
+//reviews.addArrows();
+//reviews.addIndicators();
