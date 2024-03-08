@@ -156,7 +156,7 @@ class Carousel
   addIndicators()
   {
     // Unhide the indicators
-    const carouselIndicatorsDiv = document.getElementById('carousel-indicators-div');
+    const carouselIndicatorsDiv = document.getElementById('carousel-indicators-div-'+this.id);
     carouselIndicatorsDiv.style.display = 'flex';
 
     // Paint the first indicator
@@ -170,13 +170,13 @@ class Carousel
   }
 }
 
-const banner = new Carousel('banner', 5000);
+const banner = new Carousel('banner', 7000);
 banner.addSlideAtuomatic();
 banner.addIndicators();
 
-//const bannerMobile = new Carousel('banner-mobile', 5000);
-//bannerMobile.addSlideAtuomatic();
-//bannerMobile.addIndicators();
+const bannerMobile = new Carousel('banner-mobile', 5000);
+bannerMobile.addSlideAtuomatic();
+bannerMobile.addIndicators();
 
 //const reviews = new Carousel('reviews', 3000);
 //reviews.addSlideAtuomatic();
