@@ -7,33 +7,33 @@
   <div id="carousel-slide-banner-mobile" class="rounded xl:hidden grid transition-transform duration-500 w-screen" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
     
     <!-- Carousel Item 1 -->
-    <div class="w-full flex flex-col items-center justify-center h-homeTitle bg-cover bg-bottom" style="background-image: url('/img/home/banner1mobile.png')">
+    <div class="px-4 w-full flex flex-col items-center justify-center h-homeTitle bg-cover bg-bottom" style="background-image: url('/img/home/banner1mobile.png')">
 
-      <h2 class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Achieve Rent A Car</h2>
+      <h2 class="text-white text-xl text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Achieve Rent A Car</h2>
 
-      <h1 class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Rent a Car na Ilha da Madeira</h1>
+      <h1 class="text-white text-2xl text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Rent a Car na Ilha da Madeira</h1>
 
       <p class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">A melhor relação Preço / Qualidade para alugar um carro na Ilha da Madeira</p>
       
     </div>
     
     <!-- Carousel Item 2 -->
-    <div class="w-full flex flex-col items-center justify-center h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner2mobile.png')">
+    <div class="px-4 w-full flex flex-col items-center justify-center h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner2mobile.png')">
 
-      <h2 class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Achieve Rent A Car</h2>
+      <h2 class="text-white text-xl text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Achieve Rent A Car</h2>
 
-      <h1 class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Rent a Car na Ilha da Madeira</h1>
+      <h1 class="text-white text-2xl text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Rent a Car na Ilha da Madeira</h1>
 
       <p class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Seguro Premium incluído. Sem depósito, sem franquia. Sem cartão de crédito.</p>
 
     </div>
     
     <!-- Carousel Item 3 -->
-    <div class="w-full flex flex-col items-center justify-center h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner3mobile.png')">
+    <div class="px-4 w-full flex flex-col items-center justify-center h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner3mobile.png')">
 
-      <h2 class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Achieve Rent A Car</h2>
+      <h2 class="text-white text-xl text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Achieve Rent A Car</h2>
 
-      <h1 class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Rent a Car na Ilha da Madeira</h1>
+      <h1 class="text-white text-2xl text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Rent a Car na Ilha da Madeira</h1>
 
       <p class="text-white text-center font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,100)]">Receba e devolva onde preferir. Atendimento altamente recomendado. Quilometragem ilimitada.</p>
 
