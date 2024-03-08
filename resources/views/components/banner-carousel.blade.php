@@ -10,11 +10,11 @@
     <div class="w-full flex items-center justify-start px-margin h-homeTitleXL bg-cover bg-bottom" style="background-image: url('/img/home/banner1.png')">
 
       <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
-        <h1>Rent a car - Ilha da Madeira</h1>
-        <p>A melhor relação preço qualidade.</p>
-        <p>Sem depósito, sem franquia.</p>
-        <p>Quilometragem ilimitada.</p>
-        <p>Sem cartão de crédito.</p>
+        <h1>@lang('home-banner-1-title')</h1>
+        <p>@lang('home-banner-1-p.1')</p>
+        <p>@lang('home-banner-1-p.2')</p>
+        <p>@lang('home-banner-1-p.3')</p>
+        <p>@lang('home-banner-1-p.4')</p>
       </div>
       
     </div>
@@ -23,9 +23,9 @@
     <div class="w-full flex items-center justify-end px-margin h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner2.png')">
 
       <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
-        <h1>Rent a car - Ilha da Madeira</h1>
-        <p>Condutor adicional gratuito.</p>
-        <p>Seguro Premium incluído.</p>
+        <h1 class="text-end">@lang('home-banner-2-title')</h1>
+        <p class="text-end">@lang('home-banner-2-p.1')</p>
+        <p class="text-end">@lang('home-banner-2-p.2')</p>
       </div>
 
     </div>
@@ -34,10 +34,10 @@
     <div class="w-full flex items-center justify-start pl-margin h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner3.png')">
 
       <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
-        <h1>Rent a car - Ilha da Madeira</h1>
-        <p>Receba e devolva onde preferir.</p>
-        <p>Contratação rápida e fácil.</p>
-        <p>Atendimento 5 estrelas.</p>
+        <h1>@lang('home-banner-3-title')</h1>
+        <p>@lang('home-banner-3-p.1')</p>
+        <p>@lang('home-banner-3-p.2')</p>
+        <p>@lang('home-banner-3-p.3')</p>
       </div>
 
     </div>

@@ -34,9 +34,21 @@
     "Menu-Locale-en.Alt": "United Kingdom Flag",
     "Menu-Locale-pt.Alt": "Portugal Flag",
 
-    "home-Banner-Title.1": "Welcome to your best car rental experience on Madeira Island!",
-    "home-Banner-Title.2": "Discover the ultimate driving adventure with Madeira's premier car rental service!",
-    "home-Banner-Title.3": "Your gateway to unforgettable moments starts with our premium car rentals in Madeira!",
+    "home-banner-1-title": "Rent a car - Madeira Island",
+    "home-banner-1-p.1": "The best price-quality ratio.",
+    "home-banner-1-p.2": "No deposit, no deductible.",
+    "home-banner-1-p.3": "Unlimited mileage.",
+    "home-banner-1-p.4": "No credit card.",
+
+    "home-banner-2-title": "Rent a car - Madeira Island",
+    "home-banner-2-p.1": "Free additional driver.",
+    "home-banner-2-p.2": "Premium insurance included.",
+
+    "home-banner-3-title": "Rent a car - Madeira Island",
+    "home-banner-3-p.1": "Receive and return wherever you prefer.",
+    "home-banner-3-p.2": "Quick and easy hiring.",
+    "home-banner-3-p.3": "5 star service.",
+
     "home-button-booknow": "Book Now",
     "home-button-booknow.Title": "Click to go to the car rental page in Madeira",
     "home-1-Title": "Explore the unmatched beauty of Madeira Island<br>From North to South, from East to West, go with Achieve Rent a Car",
