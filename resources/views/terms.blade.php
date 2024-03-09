@@ -6,7 +6,7 @@
     @if($locale == 'pt')
 
       <h3>
-        TERMOS E CONDIÇÕES - SITE
+        TERMOS E CONDIÇÕES
       </h3>
 
       <h4>
@@ -184,7 +184,7 @@
     @elseif($locale == 'en')
 
       <h3>
-        TERMS & CONDITIONS - SITE
+        TERMS & CONDITIONS
       </h3>
 
       <h4>
