@@ -68,7 +68,7 @@ class Carousel
   blurDiv(id)
   {
     if(!this.isBlurPast) return;
-    let allDivs = document.querySelectorAll('.reviews-item');
+    let allDivs = document.querySelectorAll('.'+this.id+'-item');
     allDivs.forEach(element => {
       element.classList.add('blur-sm');
     });
@@ -82,14 +82,14 @@ class Carousel
     if (this.counter >= this.carouselLength)
     {
       this.counter = 0;
-      this.blurDiv(this.counter);
+      if(this.isBlurPast) this.blurDiv(this.counter);
       this.carouselSlide.style.transform = 'translateX('+this.positions[0]+')';
       this.paintIndicator(this.counter);
       return;
     }
 
     this.counter++;
-    this.blurDiv(this.counter);
+    if(this.isBlurPast) this.blurDiv(this.counter);
     this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
     this.paintIndicator(this.counter);
   }
@@ -100,14 +100,14 @@ class Carousel
     if (this.counter <= 0)
     {
       this.counter = this.carouselLength;
-      this.blurDiv(this.counter);
+      if(this.isBlurPast) this.blurDiv(this.counter);
       this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
       this.paintIndicator(this.counter);
       return;
     }
 
     this.counter--;
-    this.blurDiv(this.counter);
+    if(this.isBlurPast) this.blurDiv(this.counter);
     this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
     this.paintIndicator(this.counter);
   }
@@ -129,25 +129,25 @@ class Carousel
     clearInterval(this.automation);
     var index = indicator.target.id.split('-')[1];
     this.counter = index;
-    this.blurDiv(this.counter);
+    if(this.isBlurPast) this.blurDiv(this.counter);
     this.paintIndicator(index);
     this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
   }
 
   paintIndicator(index)
   {
-    let defaultColor = document.getElementById('carousel-default-indicator-color-'+this.id).value;
-    let selectedColor = document.getElementById('carousel-selected-indicator-color-'+this.id).value;
+    let defaultColor = document.getElementById('carousel-default-indicator-color-'+this.id);
+    let selectedColor = document.getElementById('carousel-selected-indicator-color-'+this.id);
 
     for(var i = 0; i <= this.carouselLength; i++){
       var indicatorClear = document.getElementById('carousel-'+i+'-indicator-'+this.id);
-      indicatorClear.classList.add(defaultColor);
-      indicatorClear.classList.remove(selectedColor);
+      if(defaultColor) indicatorClear.classList.add(defaultColor.value);
+      if(selectedColor) indicatorClear.classList.remove(selectedColor.value);
     }
     
     var indicator = document.getElementById('carousel-'+index+'-indicator-'+this.id);
-    indicator.classList.add(selectedColor);
-    indicator.classList.remove(defaultColor);
+    if(defaultColor) indicator.classList.remove(defaultColor.value);
+    if(selectedColor) indicator.classList.add(selectedColor.value);
   }
 
   /* PUBLIC FUNCTIONS FOR NEEDED FUNCTIONS */
@@ -200,3 +200,8 @@ const reviews = new Carousel('reviews', 10000, 3);
 reviews.addSlideAutomatic();
 reviews.addIndicators();
 reviews.blurPast();
+
+const reviewsMobile = new Carousel('reviews-mobile', 10000, 1);
+reviewsMobile.addSlideAutomatic();
+reviewsMobile.addIndicators();
+reviewsMobile.blurPast();
