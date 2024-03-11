@@ -66,7 +66,7 @@
       
   </div>
 
-  <!-- Carousel Banner -->
+  <!-- Carousel Banner Mobile -->
   @php $slides = 3; @endphp
   <div class="relative z-10 w-full overflow-x-hidden">
 
@@ -134,29 +134,26 @@
       
   </div>
 
-
   <!-- Rent Now Cell Button -->
   <div class="w-full xl:px-margin p-4 flex justify-center items-center xl:hidden">
     <a title="@lang('home-button-booknow.Title')" href="#system" class="notActivateLoader text-center p-4 rounded-md text-white bg-flagRed w-full text-2xl">@lang('home-button-booknow')</a>
   </div>
 
   <!-- System -->
-  @if($locale != 'translations')
-    <div class="xl:px-margin px-4 xl:py-0 py-4" id="system">
-      <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
-      <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+  <div class="xl:px-margin px-4 xl:py-0 py-4" id="system">
+    <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
+    <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+  </div>
+
+  <!-- Separator -->
+  <div class="flex items-center justify-center p-4">
+    <div class="xl:w-1/3 w-full">
+      <x-separator/>
     </div>
-  @endif
+  </div>
 
   <!-- Why choose achieve -->
   <div class="xl:px-margin px-4 py-8 flex flex-col gap-8">
-
-    <!-- Separator -->
-    <div class="flex items-center justify-center">
-      <div class="xl:w-1/3 w-full">
-        <x-separator/>
-      </div>
-    </div>
 
     <h2 class="text-center">@lang('home-list-title')</h2>
 
@@ -216,17 +213,15 @@
 
   </div>
 
-  <!-- Reviews -->
-  @php $slides = 5; @endphp
-
   <!-- Separator -->
-  <div class="flex items-center justify-center py-4">
+  <div class="flex items-center justify-center p-4">
     <div class="xl:w-1/3 w-full">
       <x-separator/>
     </div>
   </div>
 
-  <!-- Carousel Section -->
+  <!-- Reviews -->
+  @php $slides = 5; @endphp
   <div class="relative z-10 w-full overflow-x-hidden">
 
     <!-- Carousel Slide -->
@@ -287,16 +282,15 @@
       
   </div>
 
-
-  <!-- 1 -->
-  <div class="py-8 flex flex-col gap-8">
-
-    <!-- Separator -->
-    <div class="flex items-center justify-center xl:px-margin px-4">
-      <div class="xl:w-1/3 w-full">
-        <x-separator/>
-      </div>
+  <!-- Separator -->
+  <div class="flex items-center justify-center p-4">
+    <div class="xl:w-1/3 w-full">
+      <x-separator/>
     </div>
+  </div>
+
+  <!-- Poem -->
+  <div class="py-8 flex flex-col gap-8">
   
     <!-- Content -->
     <div class="w-full xl:px-margin px-4 grid xl:grid-cols-5 grid-cols-1 gap-4">
@@ -328,15 +322,15 @@
 
   </div>
 
-  <!-- 2 -->
-  <div class="py-8 flex flex-col gap-8">
-      
-    <!-- Separator -->
-    <div class="flex items-center justify-center xl:px-margin px-4">
-      <div class="xl:w-1/3 w-full">
-        <x-separator/>
-      </div>
+  <!-- Separator -->
+  <div class="flex items-center justify-center p-4">
+    <div class="xl:w-1/3 w-full">
+      <x-separator/>
     </div>
+  </div>
+
+  <!-- Pleasant Experience -->
+  <div class="py-8 flex flex-col gap-8">
 
     <!-- Cards -->
     <div class="grid xl:grid-cols-2 w-full xl:px-margin px-4 gap-4">
@@ -373,15 +367,15 @@
 
   </div>
 
-  <!-- 3 -->
-  <div class="py-8 flex flex-col gap-8 xl:px-margin px-4">
-
-    <!-- Separator -->
-    <div class="flex items-center justify-center">
-      <div class="xl:w-1/3 w-full">
-        <x-separator/>
-      </div>
+  <!-- Separator -->
+  <div class="flex items-center justify-center p-4">
+    <div class="xl:w-1/3 w-full">
+      <x-separator/>
     </div>
+  </div>
+
+  <!-- Explore Madeira -->
+  <div class="py-8 flex flex-col gap-8 xl:px-margin px-4">
   
     <!-- Content -->
     <div class="w-full flex flex-col items-center gap-8">
