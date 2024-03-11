@@ -4,6 +4,9 @@ import './bootstrap';
 // Loader for both client and admin
 import './loader';
 
+// Whatsapp balloon
+import './whats';
+
 // Sidebar for both client and admin
 import './sidebar';
 
