@@ -9,11 +9,15 @@ class Carousel
   counter;
   automation;
   positions;
+  slidesPerView;
+  isBlurPast;
 
   constructor(id, secondsPerSlide, slidesPerView)
   {
     this.id = id;
     this.secondsPerSlide = secondsPerSlide;
+    this.slidesPerView = slidesPerView;
+    this.isBlurPast = false;
 
     this.carouselSlide = document.querySelector('#carousel-slide-'+this.id);
     if(!this.carouselSlide) return;
@@ -23,13 +27,23 @@ class Carousel
     this.nextBtn = document.getElementById('nextBtn-'+this.id);
     this.counter = 0;
 
-    if(slidesPerView == 1)
+    this.adjustPositions();
+
+    this.carouselSlide.style.transform = 'translateX('+this.positions[0]+')';
+
+    this.adjustSize();
+    window.addEventListener('resize', this.adjustSize.bind(this));
+  }
+
+  adjustPositions()
+  {
+    if(this.slidesPerView == 1)
     {
       this.positions = [];
       for(let i = 0; i <= this.carouselLength; i++)
-        this.positions.push(i*-100);
+        this.positions.push((i*-100)+'%');
     }
-    else if(slidesPerView == 3)
+    else if(this.slidesPerView == 3)
     {
       this.positions = [];
       let computedCarousel = window.getComputedStyle(this.carouselSlide);
@@ -37,30 +51,29 @@ class Carousel
       let currentValue = (contentWidth/3);
       for(let i = 0; i <= this.carouselLength; i++)
       {
-        this.positions.push(currentValue);
+        this.positions.push(currentValue+'px');
         currentValue -= (contentWidth/3);
       }
     }
-
-    this.carouselSlide.style.transform = 'translateX('+this.positions[0]+'px)';
-
-    this.adjustSize();
-    window.addEventListener('resize', this.adjustSize.bind(this));
   }
 
   adjustSize()
   {
     const pageWidth = document.documentElement.clientWidth;
     this.carouselSlide.style.width = pageWidth+'px';
-    this.positions = [];
-    let computedCarousel = window.getComputedStyle(this.carouselSlide);
-    let contentWidth = parseFloat(computedCarousel.width) - (parseFloat(computedCarousel.paddingLeft) + parseFloat(computedCarousel.paddingRight) );
-    let currentValue = (contentWidth/3);
-    for(let i = 0; i <= this.carouselLength; i++)
-    {
-      this.positions.push(currentValue);
-      currentValue -= (contentWidth/3);
-    }
+    this.adjustPositions();
+    this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
+  }
+
+  blurDiv(id)
+  {
+    if(!this.isBlurPast) return;
+    let allDivs = document.querySelectorAll('.reviews-item');
+    allDivs.forEach(element => {
+      element.classList.add('blur-sm');
+    });
+    const div = document.getElementById(id+'-'+this.id);
+    div.classList.remove('blur-sm');
   }
 
   slideNext()
@@ -69,13 +82,15 @@ class Carousel
     if (this.counter >= this.carouselLength)
     {
       this.counter = 0;
-      this.carouselSlide.style.transform = 'translateX('+this.positions[0]+'px)';
+      this.blurDiv(this.counter);
+      this.carouselSlide.style.transform = 'translateX('+this.positions[0]+')';
       this.paintIndicator(this.counter);
       return;
     }
 
     this.counter++;
-    this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + 'px)';
+    this.blurDiv(this.counter);
+    this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
     this.paintIndicator(this.counter);
   }
 
@@ -85,13 +100,15 @@ class Carousel
     if (this.counter <= 0)
     {
       this.counter = this.carouselLength;
-      this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + 'px)';
+      this.blurDiv(this.counter);
+      this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
       this.paintIndicator(this.counter);
       return;
     }
 
     this.counter--;
-    this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + 'px)';
+    this.blurDiv(this.counter);
+    this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
     this.paintIndicator(this.counter);
   }
 
@@ -112,8 +129,9 @@ class Carousel
     clearInterval(this.automation);
     var index = indicator.target.id.split('-')[1];
     this.counter = index;
+    this.blurDiv(this.counter);
     this.paintIndicator(index);
-    this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + 'px)';
+    this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
   }
 
   paintIndicator(index)
@@ -134,7 +152,7 @@ class Carousel
 
   /* PUBLIC FUNCTIONS FOR NEEDED FUNCTIONS */
 
-  addSlideAtuomatic()
+  addSlideAutomatic()
   {
     if(!this.carouselSlide) return;
     this.automation = setInterval(this.slideNext.bind(this), this.secondsPerSlide);
@@ -163,16 +181,22 @@ class Carousel
       indicator.addEventListener('click', this.slideIndicator.bind(this));
     }
   }
+
+  blurPast()
+  {
+    this.isBlurPast = true;
+  }
 }
 
 const banner = new Carousel('banner', 6000, 1);
-banner.addSlideAtuomatic();
+banner.addSlideAutomatic();
 banner.addIndicators();
 
 const bannerMobile = new Carousel('banner-mobile', 6000, 1);
-bannerMobile.addSlideAtuomatic();
+bannerMobile.addSlideAutomatic();
 bannerMobile.addIndicators();
 
-const reviews = new Carousel('reviews', 5000, 3);
-reviews.addSlideAtuomatic();
+const reviews = new Carousel('reviews', 10000, 3);
+reviews.addSlideAutomatic();
 reviews.addIndicators();
+reviews.blurPast();
