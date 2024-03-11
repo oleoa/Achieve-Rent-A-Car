@@ -9,7 +9,7 @@ class Carousel
   counter;
   automation;
 
-  constructor(id, secondsPerSlide, isDesktop = true)
+  constructor(id, secondsPerSlide)
   {
     // Set the id of the carousel
     this.id = id;
@@ -29,19 +29,14 @@ class Carousel
     this.nextBtn = document.getElementById('nextBtn-'+this.id);
     this.counter = 0;
 
-    if(isDesktop)
-    {
-      // Adjust the size of the carousel
-      // This feature must exists or else the inner padding would break the page
-      this.adjustSize();
-      window.addEventListener('resize', this.adjustSize.bind(this));
-    }
+    this.adjustSize();
+    window.addEventListener('resize', this.adjustSize.bind(this));
   }
 
   adjustSize()
   {
-    const pageWidth = window.innerWidth;
-    this.carouselSlide.style.width = (pageWidth-17)+'px';
+    const pageWidth = document.documentElement.clientWidth;
+    this.carouselSlide.style.width = pageWidth+'px';
   }
 
   slideNext()
@@ -188,7 +183,7 @@ const banner = new Carousel('banner', 6000);
 banner.addSlideAtuomatic();
 banner.addIndicators();
 
-const bannerMobile = new Carousel('banner-mobile', 6000, false);
+const bannerMobile = new Carousel('banner-mobile', 6000);
 bannerMobile.addSlideAtuomatic();
 bannerMobile.addIndicators();
 
