@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('main')
 
-  <div id="home-page"></div>
+  <div id="home-page" class="w-full"></div>
 
   <!-- New Banner -->
   <x-banner-carousel/>
@@ -89,81 +89,7 @@
   </div>
 
   <!-- Reviews -->
-  <div id="setWidthScreen" class="w-4 hidden">
-
-    <div class="xl:px-margin px-4 py-8 w-full flex flex-col gap-8 h-fit">
-
-      <!-- Separator -->
-      <div class="flex items-center justify-center">
-        <div class="xl:w-1/3 w-full">
-          <x-separator/>
-        </div>
-      </div>
-
-      <h2 class="text-center">@lang('home-reviews-title')</h2>
-
-      <!-- Carousel Div For Carsousel And Buttons -->
-      <div class="relative z-10 w-full overflow-x-hidden">
-
-        <!-- Carousel Slide -->
-        <div id="carousel-slide-reviews" class="rounded grid transition-transform duration-500 h-full w-full" style="grid-template-columns: @for($i = 1; $i <= 5; $i++) 100% @endfor">
-        
-          @for ($i = 1; $i <= 5; $i++)
-          
-            <!-- Carousel Item -->
-            <div class="w-full bg-neutral-200 flex flex-col justify-between xl:px-32 px-4 rounded text-red-500 xl:py-4 xl:pb-4 pb-12">
-
-              <p class="xl:py-4 py-2">@lang('home-reviews-'.$i.'-paragraph')</p>
-
-              <div class="py-4 xl:flex items-center justify-start grid grid-cols-2 gap-2">
-
-                <p>@lang('home-reviews-'.$i.'-author')</p>
-
-                <div class="h-4 flex gap-1">
-                  <i class="fas fa-star text-yellow-400"></i>
-                  <i class="fas fa-star text-yellow-400"></i>
-                  <i class="fas fa-star text-yellow-400"></i>
-                  <i class="fas fa-star text-yellow-400"></i>
-                  <i class="fas fa-star text-yellow-400"></i>
-                </div>
-
-              </div>
-
-            </div>
-
-          @endfor
-
-        </div>
-          
-          <!-- Carousel Buttons -->
-          <div class="absolute top-0 w-full h-full flex justify-between xl:items-center items-end xl:z-auto z-50">
-          
-              <!-- Previous Button -->
-              <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-reviews">
-                <i class="fas fa-arrow-left p-4 xl:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
-              </button>
-              
-              <!-- Next Button -->
-              <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-reviews">
-                <i class="fas fa-arrow-right p-4 xl:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
-              </button>
-          
-          </div>
-
-          <!-- Carousel Indicator -->
-          <div class="absolute bottom-0 w-full flex justify-center items-center gap-2 p-4 xl:z-auto z-40">
-          
-              @for ($i = 0; $i <= 4; $i++)
-                <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-reviews"></div>
-              @endfor
-
-          </div>
-          
-      </div>
-
-    </div>
-
-  </div>
+  <x-home.reviews/>
 
   <!-- 1 -->
   <div class="py-8 flex flex-col gap-8">

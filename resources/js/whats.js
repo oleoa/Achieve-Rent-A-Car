@@ -1,1 +1,1 @@
-balloon = document.getElementById('whatsappBalloon');
+const balloon = document.getElementById('whatsappBalloon');

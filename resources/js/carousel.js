@@ -28,6 +28,17 @@ class Carousel
     this.prevBtn = document.getElementById('prevBtn-'+this.id);
     this.nextBtn = document.getElementById('nextBtn-'+this.id);
     this.counter = 0;
+
+    // Adjust the size of the carousel
+    // This feature must exists or else the inner padding would break the page
+    this.adjustSize();
+    window.addEventListener('resize', this.adjustSize.bind(this));
+  }
+
+  adjustSize()
+  {
+    const pageWidth = window.innerWidth;
+    this.carouselSlide.style.width = (pageWidth-17)+'px';
   }
 
   slideNext()
@@ -145,7 +156,7 @@ class Carousel
   addArrows()
   {
     // Unhide the next and previous buttons
-    const carouselButtonsDiv = document.getElementById('carousel-buttons-div');
+    const carouselButtonsDiv = document.getElementById('carousel-buttons-div-'+this.id);
     carouselButtonsDiv.style.display = 'flex';
 
     // Add event listeners to the next and previous buttons
@@ -178,7 +189,7 @@ const bannerMobile = new Carousel('banner-mobile', 6000);
 bannerMobile.addSlideAtuomatic();
 bannerMobile.addIndicators();
 
-//const reviews = new Carousel('reviews', 3000);
-//reviews.addSlideAtuomatic();
-//reviews.addArrows();
-//reviews.addIndicators();
+const reviews = new Carousel('reviews', 3000);
+reviews.addSlideAtuomatic();
+reviews.addArrows();
+reviews.addIndicators();
