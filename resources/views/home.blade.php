@@ -213,64 +213,34 @@
   </div>
 
   <!-- Reviews -->
-  @php $slides = 3; @endphp
+  @php $slides = 4; @endphp
   <h2 class="text-center py-4 font-semibold">@lang('home-reviews-title')</h2>
   <!-- Reviews Computer -->
   <div class="relative z-10 w-full overflow-x-hidden xl:block hidden">
 
     <!-- Carousel Slide -->
     <div id="carousel-slide-reviews" class="grid transition-transform duration-500 w-full xl:px-margin px-4 py-8" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) calc(100%/3) @endfor">
-                
-      <!-- Carousel Item -->
-      <div class="reviews-item w-full p-4" id="0-reviews">
+      
+      @for ($i = 1; $i <= $slides; $i++)
+      
+        <!-- Carousel Item -->
+        <div class="reviews-item w-full p-4" id="{{$i-1}}-reviews">
 
-        <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
+          <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
 
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w60-h60-p-rp-mo-br100" alt="Valentina Vucicic" class="h-20 w-20">
-  
-          <h2 class="font-bold">Valentina Vucicic</h2>
-  
-          <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
-  
-          <p>Highly recommended! We rented and enjoyed it from the start till the end. Everything was super, it went smoothly, and the customer service was very attentive, helping us with all the questions we had. Madeira is an incredible island. We will come again and we will book again!</p>
+            <img src="@lang('home-new-reviews-'.$i.'-image')" alt="Valentina Vucicic" class="h-20 w-20">
+    
+            <h2 class="font-bold">@lang('home-new-reviews-'.$i.'-author')</h2>
+    
+            <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
+    
+            <p>@lang('home-new-reviews-'.$i.'-comment')</p>
 
-        </div>
-
-      </div>
-
-      <!-- Carousel Item -->
-      <div class="reviews-item w-full p-4 blur-sm" id="1-reviews">
-
-        <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
-
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjUGFeGXzYyfRv0CbY_WNEBIdRESzuV4hQ5RLIC-p2MORA=w60-h60-p-rp-mo-br100" alt="Mario Keglevic" class="h-20 w-20">
-  
-          <h2 class="font-bold">Mario Keglevic</h2>
-  
-          <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
-  
-          <p>Top service, clean car. Even on non working hours,  the staff was very supportive when we needed.</p>
+          </div>
 
         </div>
-
-      </div>
-                
-      <!-- Carousel Item -->
-      <div class="reviews-item w-full p-4 blur-sm" id="2-reviews">
-
-        <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
-
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjW6WsjBSIVo0sT9rxbTTTaePw1Cg7PtP_rHDU-txrnX0IA=w60-h60-p-rp-mo-br100" alt="Valentina Vucicic" class="h-20 w-20">
-  
-          <h2 class="font-bold">Alex Giurgi</h2>
-  
-          <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
-  
-          <p>I had a very good experience. Highly recommend it for renting a car. Thank you.</p>
-
-        </div>
-
-      </div>
+      
+      @endfor
 
     </div>
 
@@ -309,57 +279,27 @@
 
     <!-- Carousel Slide -->
     <div id="carousel-slide-reviews-mobile" class="grid transition-transform duration-500 w-full py-8" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
-                
-      <!-- Carousel Item -->
-      <div class="reviews-mobile-item w-full p-4" id="0-reviews-mobile">
+    
+      @for ($i = 1; $i <= $slides; $i++)
+          
+        <!-- Carousel Item -->
+        <div class="reviews-mobile-item w-full p-4" id="{{$i-1}}-reviews-mobile">
 
-        <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
+          <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
 
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w60-h60-p-rp-mo-br100" alt="Valentina Vucicic" class="h-20 w-20">
-  
-          <h2 class="font-bold">Valentina Vucicic</h2>
-  
-          <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
-  
-          <p>Highly recommended! We rented and enjoyed it from the start till the end. Everything was super, it went smoothly, and the customer service was very attentive, helping us with all the questions we had. Madeira is an incredible island. We will come again and we will book again!</p>
+            <img src="@lang('home-new-reviews-'.$i.'-image')" alt="Valentina Vucicic" class="h-20 w-20">
+    
+            <h2 class="font-bold">@lang('home-new-reviews-'.$i.'-author')</h2>
+    
+            <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
+    
+            <p>@lang('home-new-reviews-'.$i.'-comment')</p>
 
-        </div>
-
-      </div>
-
-      <!-- Carousel Item -->
-      <div class="reviews-mobile-item w-full p-4 blur-sm" id="1-reviews-mobile">
-
-        <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
-
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjUGFeGXzYyfRv0CbY_WNEBIdRESzuV4hQ5RLIC-p2MORA=w60-h60-p-rp-mo-br100" alt="Mario Keglevic" class="h-20 w-20">
-  
-          <h2 class="font-bold">Mario Keglevic</h2>
-  
-          <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
-  
-          <p>Top service, clean car. Even on non working hours,  the staff was very supportive when we needed.</p>
+          </div>
 
         </div>
-
-      </div>
-                
-      <!-- Carousel Item -->
-      <div class="reviews-mobile-item w-full p-4 blur-sm" id="2-reviews-mobile">
-
-        <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
-
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjW6WsjBSIVo0sT9rxbTTTaePw1Cg7PtP_rHDU-txrnX0IA=w60-h60-p-rp-mo-br100" alt="Valentina Vucicic" class="h-20 w-20">
-  
-          <h2 class="font-bold">Alex Giurgi</h2>
-  
-          <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
-  
-          <p>I had a very good experience. Highly recommend it for renting a car. Thank you.</p>
-
-        </div>
-
-      </div>
+        
+      @endfor
 
     </div>
 

@@ -185,6 +185,7 @@ class Carousel
   blurPast()
   {
     this.isBlurPast = true;
+    this.blurDiv(0);
   }
 }
 
