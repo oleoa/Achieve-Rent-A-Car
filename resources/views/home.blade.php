@@ -56,6 +56,9 @@
     <!-- Carousel Indicator -->
     <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 xl:z-auto z-40" id="carousel-indicators-div-banner">
     
+      <input type="hidden" id="carousel-selected-indicator-color-banner" value="bg-flagYellow">
+      <input type="hidden" id="carousel-default-indicator-color-banner" value="bg-white">
+    
       @for ($i = 0; $i <= $slides-1; $i++)
       
         <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-banner"></div>
@@ -123,6 +126,9 @@
 
     <!-- Carousel Indicator -->
     <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 xl:z-auto z-40" id="carousel-indicators-div-banner-mobile">
+    
+      <input type="hidden" id="carousel-selected-indicator-color-banner-mobile" value="bg-flagYellow">
+      <input type="hidden" id="carousel-default-indicator-color-banner-mobile" value="bg-white">
     
       @for ($i = 0; $i <= $slides-1; $i++)
       
@@ -207,36 +213,50 @@
   </div>
 
   <!-- Reviews -->
-  @php $slides = 5; @endphp
+  @php $slides = 3; @endphp
   <div class="relative z-10 w-full overflow-x-hidden">
 
     <!-- Carousel Slide -->
-    <div id="carousel-slide-reviews" class="rounded grid transition-transform duration-500 w-full" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
-      
-      @for ($i = 1; $i <= 5; $i++)
-          
-        <!-- Carousel Item -->
-        <div class="w-full bg-neutral-200 flex flex-col justify-between xl:px-margin px-4 rounded text-red-500 xl:py-4 xl:pb-4 pb-12">
+    <div id="carousel-slide-reviews" class="grid transition-transform duration-500 w-full xl:px-margin px-4" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) calc(100%/3) @endfor">
+                
+      <!-- Carousel Item -->
+      <div class="w-full flex flex-col justify-start items-center px-4 pb-12 pt-4 bg-red-500">
 
-          <p class="xl:py-4 py-2">@lang('home-reviews-'.$i.'-paragraph')</p>
+        <img src="https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w60-h60-p-rp-mo-br100" alt="Valentina Vucicic" class="h-16 w-16">
 
-          <div class="py-4 xl:flex items-center justify-start grid grid-cols-2 gap-2">
+        <h2>Name</h2>
 
-            <p>@lang('home-reviews-'.$i.'-author')</p>
+        <h3>Rate</h3>
 
-            <div class="h-4 flex gap-1">
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-            </div>
+        <p>Comment</p>
 
-          </div>
+      </div>
+                
+      <!-- Carousel Item -->
+      <div class="w-full flex flex-col justify-start items-center px-4 pb-12 pt-4 bg-blue-500">
 
-        </div>
+        <img src="https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w60-h60-p-rp-mo-br100" alt="Valentina Vucicic" class="h-16 w-16">
 
-      @endfor
+        <h2>Name</h2>
+
+        <h3>Rate</h3>
+
+        <p>Comment</p>
+
+      </div>
+                
+      <!-- Carousel Item -->
+      <div class="w-full flex flex-col justify-start items-center px-4 pb-12 pt-4 bg-green-500">
+
+        <img src="https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w60-h60-p-rp-mo-br100" alt="Valentina Vucicic" class="h-16 w-16">
+
+        <h2>Name</h2>
+
+        <h3>Rate</h3>
+
+        <p>Comment</p>
+
+      </div>
 
     </div>
 
@@ -258,9 +278,12 @@
     <!-- Carousel Indicator -->
     <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 xl:z-auto z-40" id="carousel-indicators-div-reviews">
     
+      <input type="hidden" id="carousel-selected-indicator-color-reviews" value="bg-flagBlue">
+      <input type="hidden" id="carousel-default-indicator-color-reviews" value="bg-black">
+
       @for ($i = 0; $i <= $slides-1; $i++)
       
-        <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-reviews"></div>
+        <div class="w-4 h-4 rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-reviews"></div>
 
       @endfor
 
