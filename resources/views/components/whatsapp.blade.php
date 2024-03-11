@@ -1,8 +1,18 @@
 <div class="fixed bottom-1 right-1 xl:bottom-16 xl:right-5 z-40 flex flex-col items-end">
 
-  <div id="whatsappBalloon">
+  <div id="whatsappBalloon" class="pr-10 xl:hidden hidden">
 
-    <img src="{{asset('/img/whatsapp/balloon.png')}}" alt="Balloon" class="h-28">
+    <div class="relative">
+
+      <div class="absolute py-4 px-6 flex justify-center items-center">
+
+        <p class="text-start text-sm xl:text-base">@lang('Whatsapp-Paragraph')</p>
+
+      </div>
+
+      <img src="{{asset('/img/whatsapp/balloon.png')}}" alt="Balloon" class="h-28">
+
+    </div>
 
   </div>
 
