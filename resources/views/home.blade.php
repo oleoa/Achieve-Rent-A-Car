@@ -3,10 +3,10 @@
 
   <!-- Carousel Banner Computer -->
   @php $slides = 3; @endphp
-  <div class="relative z-10 w-full overflow-x-hidden">
+  <div class="relative z-10 w-full h-homeTitleXL overflow-x-hidden xl:block hidden">
 
     <!-- Carousel Slide -->
-    <div id="carousel-slide-banner" class="rounded xl:grid hidden transition-transform duration-500 w-full" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
+    <div id="carousel-slide-banner" class="rounded xl:grid hidden transition-transform duration-500 h-homeTitleXL w-full" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
       
       <!-- Carousel Item 1 -->
       <div class="w-full flex items-center justify-start px-margin h-homeTitleXL bg-cover bg-bottom" style="background-image: url('/img/home/banner1.png')">
@@ -71,10 +71,10 @@
 
   <!-- Carousel Banner Mobile -->
   @php $slides = 3; @endphp
-  <div class="relative z-10 w-full overflow-x-hidden">
+  <div class="relative z-10 w-full h-homeTitle overflow-x-hidden xl:hidden">
 
     <!-- Carousel Slide -->
-    <div id="carousel-slide-banner-mobile" class="rounded xl:hidden grid transition-transform duration-500 w-screen" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
+    <div id="carousel-slide-banner-mobile" class="rounded xl:hidden h-homeTitle grid transition-transform duration-500 w-screen" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
       
       <!-- Carousel Item 1 -->
       <div class="p-4 w-full flex flex-col items-start justify-start gap-1 h-homeTitle bg-cover bg-bottom" style="background-image: url('/img/home/banner1mobile.png')">
