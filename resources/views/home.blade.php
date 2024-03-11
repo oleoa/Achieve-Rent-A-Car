@@ -145,15 +145,8 @@
     <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
   </div>
 
-  <!-- Separator -->
-  <div class="flex items-center justify-center p-4">
-    <div class="xl:w-1/3 w-full">
-      <x-separator/>
-    </div>
-  </div>
-
   <!-- Why choose achieve -->
-  <div class="xl:px-margin px-4 py-8 flex flex-col gap-8">
+  <div class="xl:px-margin px-4 py-8 flex flex-col gap-8 bg-flagBlue/20">
 
     <h2 class="text-center">@lang('home-list-title')</h2>
 
@@ -211,13 +204,6 @@
 
     </div>
 
-  </div>
-
-  <!-- Separator -->
-  <div class="flex items-center justify-center p-4">
-    <div class="xl:w-1/3 w-full">
-      <x-separator/>
-    </div>
   </div>
 
   <!-- Reviews -->
@@ -282,13 +268,6 @@
       
   </div>
 
-  <!-- Separator -->
-  <div class="flex items-center justify-center p-4">
-    <div class="xl:w-1/3 w-full">
-      <x-separator/>
-    </div>
-  </div>
-
   <!-- Poem -->
   <div class="py-8 flex flex-col gap-8">
   
@@ -302,7 +281,7 @@
         <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('home-1-Title')</h2>
 
         <!-- Poem -->
-        <div class="bg-zinc-200 rounded p-4 flex flex-col gap-4 w-full">
+        <div class="bg-flagBlue/20 rounded p-4 flex flex-col gap-4 w-full">
           @if($locale != 'pt')
             <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
           @endif
@@ -322,15 +301,8 @@
 
   </div>
 
-  <!-- Separator -->
-  <div class="flex items-center justify-center p-4">
-    <div class="xl:w-1/3 w-full">
-      <x-separator/>
-    </div>
-  </div>
-
   <!-- Pleasant Experience -->
-  <div class="py-8 flex flex-col gap-8">
+  <div class="py-8 flex flex-col gap-8 bg-flagBlue/20">
 
     <!-- Cards -->
     <div class="grid xl:grid-cols-2 w-full xl:px-margin px-4 gap-4">
@@ -365,13 +337,6 @@
 
     </div>
 
-  </div>
-
-  <!-- Separator -->
-  <div class="flex items-center justify-center p-4">
-    <div class="xl:w-1/3 w-full">
-      <x-separator/>
-    </div>
   </div>
 
   <!-- Explore Madeira -->
