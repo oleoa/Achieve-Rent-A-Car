@@ -189,20 +189,25 @@ class Carousel
   }
 }
 
-const banner = new Carousel('banner', 6000, 1);
-banner.addSlideAutomatic();
-banner.addIndicators();
 
-const bannerMobile = new Carousel('banner-mobile', 6000, 1);
-bannerMobile.addSlideAutomatic();
-bannerMobile.addIndicators();
-
-const reviews = new Carousel('reviews', 10000, 3);
-reviews.addSlideAutomatic();
-reviews.addIndicators();
-reviews.blurPast();
-
-const reviewsMobile = new Carousel('reviews-mobile', 10000, 1);
-reviewsMobile.addSlideAutomatic();
-reviewsMobile.addIndicators();
-reviewsMobile.blurPast();
+const isHome = document.getElementById('home-page');
+if(isHome)
+{
+  const banner = new Carousel('banner', 6000, 1);
+  banner.addSlideAutomatic();
+  banner.addIndicators();
+  
+  const bannerMobile = new Carousel('banner-mobile', 6000, 1);
+  bannerMobile.addSlideAutomatic();
+  bannerMobile.addIndicators();
+  
+  const reviews = new Carousel('reviews', 10000, 3);
+  reviews.addSlideAutomatic();
+  reviews.addIndicators();
+  reviews.blurPast();
+  
+  const reviewsMobile = new Carousel('reviews-mobile', 10000, 1);
+  reviewsMobile.addSlideAutomatic();
+  reviewsMobile.addIndicators();
+  reviewsMobile.blurPast();
+}

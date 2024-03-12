@@ -7,7 +7,7 @@
   </div>
 
   <!-- Fleet -->
-  <div class="xl:px-margin">
+  <div class="2xl:px-margin">
     <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
       <iframe src="https://reservas.achieverentacar.com/{{$locale=='local'?'pt':$locale}}/frota?iframe" frameborder="0" class="absolute top-0 left-0 bottom-0 right-0 w-full h-full"></iframe>
     </div>

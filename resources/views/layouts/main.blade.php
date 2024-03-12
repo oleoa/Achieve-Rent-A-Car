@@ -77,15 +77,15 @@
 
       <!-- Discounts -->
       @if($discount)
-        <div class="text-xs xl:text-xl w-full py-3 xl:px-margin px-4 flex justify-center items-center font-semibold" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
-          <p class="w-full h-full text-center xl:block hidden">
+        <div class="text-xs 2xl:text-xl w-full py-3 2xl:px-margin px-4 flex justify-center items-center font-semibold" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
+          <p class="w-full h-full text-center 2xl:block hidden">
             @if ($locale=='en')
               @lang($discount['text'])
             @elseif ($locale=='pt')
               @lang($discount['texto'])
             @endif
           </p>
-          <p class="w-full h-full text-start xl:hidden block">
+          <p class="w-full h-full text-start 2xl:hidden block">
             @if ($locale=='en')
               @lang($discount['text_mobile'])
             @elseif ($locale=='pt')
@@ -97,7 +97,7 @@
 
 
       <!-- Navbar -->
-      <div class="h-navbar px-margin bg-white w-full hidden xl:flex justify-between items-center font-bold">
+      <div class="h-navbar px-margin bg-white w-full hidden 2xl:flex justify-between items-center font-bold">
 
         <!-- Logo -->
         <a title="@lang('Menu-Home.Title')" href="{{$menu['links']['home']['route']}}"><img src="{{url('/img/logos/logo2.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-14"></a>
@@ -129,7 +129,7 @@
       </div>
       
       <!-- Sidebar -->
-      <div class="flex xl:hidden h-navbar relative w-full justify-center items-center bg-white">
+      <div class="flex 2xl:hidden h-navbar relative w-full justify-center items-center bg-white">
 
         <!-- Garfo -->
         <div class="left-0 top-0 absolute flex justify-center items-center h-navbar pl-4">
@@ -211,9 +211,9 @@
     </main>
 
     <!-- Whatsapp button -->
-    <div class="fixed bottom-1 right-1 xl:bottom-16 xl:right-5 z-40 flex flex-col items-end">
+    <div class="fixed bottom-1 right-1 2xl:bottom-16 2xl:right-5 z-40 flex flex-col items-end">
 
-      <div id="whatsappBalloon" class="pr-10 xl:hidden hidden">
+      <div id="whatsappBalloon" class="pr-10 2xl:hidden hidden">
     
         <div class="relative">
     
@@ -238,7 +238,7 @@
     </div>    
 
     <!-- Footer -->
-    <footer class="w-full xl:px-margin px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4">
+    <footer class="w-full 2xl:px-margin px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4">
 
       <!-- Links -->
       <div class="hidden gap-4 text-white justify-center items-center">
@@ -259,13 +259,13 @@
       <div class="bg-flagYellow w-full h-1 rounded"></div>
 
       <!-- Legal -->
-      <p class="text-white flex xl:flex-row flex-col gap-1">
+      <p class="text-white flex 2xl:flex-row flex-col gap-1">
         <a title="@lang('Footer-Legal-Terms.Title')" href="{{route('terms', $locale)}}">@lang('Footer-Legal-Terms')</a>
         <a title="@lang('Footer-Legal-Privacy.Title')" href="{{route('privacy', $locale)}}">@lang('Footer-Legal-Privacy')</a>
       </p>
 
       <!-- Reserved -->
-      <div class="flex xl:flex-row flex-col gap-1">
+      <div class="flex 2xl:flex-row flex-col gap-1">
         <p class="text-white">@lang('Footer-@')</p>
         <p class="text-white">@lang('Footer-Reserved')</p>
       </div>

@@ -1,9 +1,9 @@
 @extends('layouts.main')
 @section('main')
 
-    <div class="xl:px-margin px-4 py-4 flex flex-col gap-4">
+    <div class="2xl:px-margin px-4 py-4 flex flex-col gap-4">
 
-        <h1 class="text-3xl xl:text-4xl xl:text-start text-center">@lang('Privacy-Title')</h1>
+        <h1 class="text-3xl 2xl:text-4xl 2xl:text-start text-center">@lang('Privacy-Title')</h1>
         <p>@lang('Privacy-Paragraph')</p>
 
         <h2 class="font-bold text-xl">@lang('Privacy-1.1')</h2>
