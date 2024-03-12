@@ -13,7 +13,7 @@
     <div class="w-full 2xl:px-margin px-4 grid 2xl:grid-cols-2 grid-cols-1 gap-4">
 
       <!-- Text -->
-      <div class="flex flex-col 2xl:items-start items-center justify-center gap-4 2xl:order-1 order-2">
+      <div class="flex flex-col 2xl:items-start items-center justify-center gap-4 order-1">
 
         <!-- Title -->
         <h2 class="text-center 2xl:text-start py-0 2xl:text-4xl text-xl font-bold">@lang('Seats-1-Title')</h2>
@@ -24,7 +24,7 @@
       </div>
 
       <!-- Image -->
-      <img src="{{asset('/img/seats/main.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg 2xl:order-2 order-1 w-full">
+      <img src="{{asset('/img/seats/main.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg order-2 w-full">
 
     </div>
 
@@ -45,7 +45,7 @@
     <h2 class="py-4 text-center font-bold text-4xl">@lang('Seats-2-Title')</h2>
 
     <!-- Cards -->
-    <div class="grid 2xl:grid-cols-2 w-full 2xl:px-margin px-4 gap-8 justify-items-center">
+    <div class="grid lg:grid-cols-2 w-full 2xl:px-margin px-4 gap-8 justify-items-center">
 
       <!-- Cards -->
       @for($i = 1; $i <= 2; $i++)
