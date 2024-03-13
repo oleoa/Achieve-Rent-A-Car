@@ -146,7 +146,7 @@
   <!-- System -->
   <div @class([
     '2xl:px-margin lg:px-0 px-4 lg:py-0 py-4',
-    'hidden' => $tld == 'com'
+    'hidden' => $tld == 'pt'
   ]) id="system">
     <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
     <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
