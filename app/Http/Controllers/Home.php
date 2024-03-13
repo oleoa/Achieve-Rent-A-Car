@@ -13,7 +13,17 @@ class Home extends Controller
   }
   public function index_pt(Request $request, $locale)
   {
-    return $request->getHttpHost();
+    $out1 = "achieverentacar.com";
+    $out2 = "achieverentacar.pt";
+    $out3 = "www.achieverentacar.com";
+    $out4 = "www.achieverentacar.pt";
+
+    $domain = $request->getHttpHost();
+
+    $domain = explode('.', $domain);
+    $domain = $domain[count($domain)-1];
+    return $domain;
+
     return $this->load('home_pt', 'home', $locale);
   }
 }
