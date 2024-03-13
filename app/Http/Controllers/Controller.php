@@ -31,8 +31,17 @@ class Controller extends BaseController
       app()->setLocale($locale);
     }
 
-    protected function load($view, $route, $locale)
+    protected function load($view, $route, $locale, $request = null)
     {
+      // Get the tld
+      if($request)
+      {
+        $domain = $request->getHttpHost();
+        $tld = explode('.', $domain);
+        $this->data['tld'] = $tld[count($tld)-1];
+      }
+      if(!$request) $this->data['tld'] = 'com';
+
       // Sets the lamguage as it came just for the menu to load
       $this->data['locale'] = $locale;
 
