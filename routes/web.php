@@ -28,16 +28,8 @@ Route::get('/', function(){
 
 Route::prefix('/{locale}')->group(function(){
     
-  //Route::prefix('/com')->group(function(){
-  Route::domain('achieverentacar.com')->domain('www.achieverentacar.com')->group(function(){
-    Route::get('/', [Home::class, 'index'])->name('home');
-  });
-    
-  //Route::prefix('/pt')->group(function(){
-  Route::domain('achieverentacar.pt')->domain('www.achieverentacar.pt')->group(function(){
-    Route::get('/', [Home::class, 'index_pt'])->name('home');
-  });
-  
+  Route::get('/', [Home::class, 'index'])->name('home');
+
   Route::get('/about', [About::class, 'index'])->name('about');
   
   Route::get('/seats', [Seats::class, 'index'])->name('seats');
