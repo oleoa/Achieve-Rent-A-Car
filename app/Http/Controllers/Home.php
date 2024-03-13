@@ -13,6 +13,7 @@ class Home extends Controller
   }
   public function index_pt(Request $request, $locale)
   {
+    return $request->getHttpHost();
     return $this->load('home_pt', 'home', $locale);
   }
 }
