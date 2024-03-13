@@ -16,10 +16,10 @@
 
         <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
           <h1>@lang('home-banner-1-title')</h1>
-          <p>@lang('home-banner-1-p.1')</p>
-          <p>@lang('home-banner-1-p.2')</p>
-          <p>@lang('home-banner-1-p.3')</p>
-          <p>@lang('home-banner-1-p.4')</p>
+          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.1')</p>
+          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.2')</p>
+          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.3')</p>
+          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.4')</p>
         </div>
         
       </div>
@@ -29,8 +29,8 @@
 
         <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
           <h1 class="text-end">@lang('home-banner-2-title')</h1>
-          <p class="text-end">@lang('home-banner-2-p.1')</p>
-          <p class="text-end">@lang('home-banner-2-p.2')</p>
+          <p class="flex gap-2 items-end justify-end">@lang('home-banner-2-p.1')<i class="fa-solid fa-check"></i></p>
+          <p class="flex gap-2 items-end justify-end">@lang('home-banner-2-p.2')<i class="fa-solid fa-check"></i></p>
         </div>
 
       </div>
@@ -40,9 +40,9 @@
 
         <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
           <h1>@lang('home-banner-3-title')</h1>
-          <p>@lang('home-banner-3-p.1')</p>
-          <p>@lang('home-banner-3-p.2')</p>
-          <p>@lang('home-banner-3-p.3')</p>
+          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.1')</p>
+          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.2')</p>
+          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.3')</p>
         </div>
 
       </div>

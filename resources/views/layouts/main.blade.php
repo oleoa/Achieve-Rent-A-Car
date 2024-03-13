@@ -141,7 +141,7 @@
         </div>
       
         <!-- Logo -->
-        <a title="@lang('Menu-Home.Title')" href="{{$menu['links']['home']['route']}}"><img src="{{url('/img/logos/logo.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-16"></a>
+        <a title="@lang('Menu-Home.Title')" href="{{$menu['links']['home']['route']}}"><img src="{{url('/img/logos/logo3.png')}}" alt="@lang('Menu-Logo.Alt')" class="h-16"></a>
       
         <!-- Sidebar Holder -->
         <aside class="h-screen w-screen fixed top-0 left-0 transition-transform duration-300 transform -translate-x-full flex flex-row">
