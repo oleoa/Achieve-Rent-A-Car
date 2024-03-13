@@ -11,4 +11,8 @@ class Home extends Controller
   {
     return $this->load('home', 'home', $locale);
   }
+  public function index_pt(Request $request, $locale)
+  {
+    return $this->load('home_pt', 'home', $locale);
+  }
 }
