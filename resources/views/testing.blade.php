@@ -138,7 +138,7 @@
       <video class="w-full h-full md:flex hidden object-cover" autoplay muted loop>
         <source src="{{asset('/video/homePC.mp4')}}" type="video/mp4">
       </video>
-      <video class="w-full h-full md:hidden flex object-cover" autoplay muted loop>
+      <video class="w-full h-full md:hidden flex object-cover" autoplay="" muted="" loop="" preload="auto" playsinline="">
         <source src="{{asset('/video/homeMB.mp4')}}" type="video/mp4">
       </video>
     </div>
