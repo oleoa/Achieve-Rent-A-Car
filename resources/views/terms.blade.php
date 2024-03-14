@@ -19,7 +19,7 @@
 
       <ul>
         <li>Recebeu a viatura com o depósito de combustível cheio e em perfeitas condições de utilização e funcionamento.</li>
-        <li>Tem conhecimento de que a viatura somente deverá ser conduzida pelo Locatário e/ou pelo condutor adicional e que este último deve obrigatoriamente estar incluído neste contrat</li>
+        <li>Tem conhecimento de que a viatura somente deverá ser conduzida pelo Locatário e/ou pelo condutor adicional e que este último deve obrigatoriamente estar incluído neste contrato.</li>
         <li>Não utilizará a viatura para transportes de mercadorias em violação dos regulamentos alfandegários ou que sejam de qualquer forma ilegais.</li>
         <li>Não utilizará a viatura para transportes de mercadorias ou passageiros em troca de qualquer remuneração implícita ou explícita.</li>
         <li>Não fará sublocação da viatura.</li>
