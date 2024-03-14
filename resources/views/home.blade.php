@@ -146,7 +146,9 @@
   @endif
 
   <!-- System -->
-  <div id="system">
+  <div @class([
+    'hidden' => $tld == 'pt',
+  ]) id="system">
     <anyrent-iframe data-locale="{{$locale=='pt'?'pt':'en'}}"></anyrent-iframe>
     <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
   </div>
