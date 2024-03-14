@@ -106,7 +106,7 @@
       
           <!-- Items -->
           @foreach ($menu['links'] as $item)
-            <a title="@lang('Menu-'.$item['name'].'.Title')" class="@if($item['current']) text-red-400 underline @endif" href="{{$item['route']}}"><h5 class="text-sm">@lang('Menu-'.$item['name'])</h5></a>
+            <a title="@lang('Menu-'.$item['name'].'.Title')" class="@if($item['current']) text-red-400 underline @endif" href="{{$item['route']}}"><h5 class="xl:text-lg text-sm">@lang('Menu-'.$item['name'])</h5></a>
           @endforeach
       
           <!-- Flags -->

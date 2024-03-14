@@ -29,8 +29,6 @@ Route::get('/', function(){
 Route::prefix('/{locale}')->group(function(){
     
   Route::get('/', [Home::class, 'index'])->name('home');
-    
-  Route::get('/testing', [Home::class, 'testing'])->name('testing');
 
   Route::get('/about', [About::class, 'index'])->name('about');
   

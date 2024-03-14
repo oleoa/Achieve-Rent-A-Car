@@ -11,8 +11,4 @@ class Home extends Controller
   {
     return $this->load('home', 'home', $locale, $request);
   }
-  public function testing(Request $request, $locale)
-  {
-    return $this->load('testing', 'testing', $locale, $request);
-  }
 }

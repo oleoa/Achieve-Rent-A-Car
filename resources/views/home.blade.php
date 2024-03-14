@@ -4,143 +4,152 @@
   <!-- Identification for js -->
   <span id="home-page"></span>
 
-  <!-- Carousel Banner Computer/Tablet -->
-  @php $slides = 3; @endphp
-  <div class="relative z-10 w-full h-homeTitleXL overflow-x-hidden md:flex hidden">
+  @if($tld == 'com')
 
-    <!-- Carousel Slide -->
-    <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 h-homeTitleXL w-full" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
-      
-      <!-- Carousel Item 1 -->
-      <div class="w-full flex items-center justify-start xl:px-margin px-4 h-homeTitleXL bg-cover bg-bottom" style="background-image: url('/img/home/banner1.png')">
+    <!-- Carousel Banner Computer/Tablet -->
+    @php $slides = 3; @endphp
+    <div class="relative z-10 w-full h-homeTitleXL overflow-x-hidden md:flex hidden">
 
-        <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
-          <h1>@lang('home-banner-1-title')</h1>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.1')</p>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.2')</p>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.3')</p>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.4')</p>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.5')</p>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.6')</p>
+      <!-- Carousel Slide -->
+      <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 h-homeTitleXL w-full" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
+        
+        <!-- Carousel Item 1 -->
+        <div class="w-full flex items-center justify-start xl:px-margin px-4 h-homeTitleXL bg-cover bg-bottom" style="background-image: url('/img/home/banner1.png')">
+
+          <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
+            <h1>@lang('home-banner-1-title')</h1>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.1')</p>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.2')</p>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.3')</p>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.4')</p>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.5')</p>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.6')</p>
+          </div>
+          
         </div>
         
-      </div>
-      
-      <!-- Carousel Item 2 -->
-      <div class="w-full flex items-center justify-end xl:px-margin px-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner2.png')">
+        <!-- Carousel Item 2 -->
+        <div class="w-full flex items-center justify-end xl:px-margin px-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner2.png')">
 
-        <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
-          <h1 class="text-end">@lang('home-banner-2-title')</h1>
-          <p class="flex gap-2 items-end justify-end">@lang('home-banner-2-p.1')<i class="fa-solid fa-check"></i></p>
-          <p class="flex gap-2 items-end justify-end">@lang('home-banner-2-p.2')<i class="fa-solid fa-check"></i></p>
+          <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
+            <h1 class="text-end">@lang('home-banner-2-title')</h1>
+            <p class="flex gap-2 items-end justify-end">@lang('home-banner-2-p.1')<i class="fa-solid fa-check"></i></p>
+            <p class="flex gap-2 items-end justify-end">@lang('home-banner-2-p.2')<i class="fa-solid fa-check"></i></p>
+          </div>
+
         </div>
-
-      </div>
-      
-      <!-- Carousel Item 3 -->
-      <div class="w-full flex items-center justify-start xl:pl-margin pl-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner3.png')">
-
-        <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
-          <h1>@lang('home-banner-3-title')</h1>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.1')</p>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.2')</p>
-          <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.3')</p>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Reviews Image -->
-    <x-google-review/>
-
-    <!-- Carousel Indicator -->
-    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-banner">
-    
-      <input type="hidden" id="carousel-selected-indicator-color-banner" value="bg-flagYellow">
-      <input type="hidden" id="carousel-default-indicator-color-banner" value="bg-white">
-    
-      @for ($i = 0; $i <= $slides-1; $i++)
-      
-        <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-banner"></div>
-
-      @endfor
-
-    </div>
-      
-  </div>
-
-  <!-- Carousel Banner Mobile -->
-  @php $slides = 3; @endphp
-  <div class="relative z-10 w-full h-homeTitle overflow-x-hidden md:hidden">
-
-    <!-- Carousel Slide -->
-    <div id="carousel-slide-banner-mobile" class="rounded grid h-homeTitle transition-transform duration-500 w-screen" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
-      
-      <!-- Carousel Item 1 -->
-      <div class="p-4 w-full flex flex-col items-start justify-start gap-1 h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner1mobile.png')">
-
-        <h1 class="text-flagRed px-2 py-1 rounded-md bg-white/85 font-medium text-2xl">@lang('home-banner-1-title')</h1>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.1')</p>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.2')</p>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.3')</p>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.4')</p>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.5')</p>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.6')</p>
         
+        <!-- Carousel Item 3 -->
+        <div class="w-full flex items-center justify-start xl:pl-margin pl-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner3.png')">
+
+          <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
+            <h1>@lang('home-banner-3-title')</h1>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.1')</p>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.2')</p>
+            <p class="flex gap-2 items-end justify-start"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.3')</p>
+          </div>
+
+        </div>
+
       </div>
+
+      <!-- Reviews Image -->
+      <x-google-review/>
+
+      <!-- Carousel Indicator -->
+      <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-banner">
       
-      <!-- Carousel Item 2 -->
-      <div class="p-4 w-full flex flex-col items-start justify-start gap-1 h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner2mobile.png')">
-
-        <h1 class="px-2 py-1 rounded-md bg-white/50 text-flagRed font-medium text-2xl">@lang('home-banner-2-title')</h1>
-        <p class="rounded-md px-2 py-1 bg-white/50 text-flagRed text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-2-p.1')</p>
-        <p class="rounded-md px-2 py-1 bg-white/50 text-flagRed text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-2-p.2')</p>
-
-      </div>
+        <input type="hidden" id="carousel-selected-indicator-color-banner" value="bg-flagYellow">
+        <input type="hidden" id="carousel-default-indicator-color-banner" value="bg-white">
       
-      <!-- Carousel Item 3 -->
-      <div class="p-4 w-full flex flex-col items-start justify-start gap-1 h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner3mobile.png')">
+        @for ($i = 0; $i <= $slides-1; $i++)
+        
+          <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-banner"></div>
 
-        <h1 class="text-flagRed px-2 py-1 rounded-md bg-white/75 font-medium text-2xl">@lang('home-banner-3-title')</h1>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/75 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.1')</p>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/75 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.2')</p>
-        <p class="text-flagRed rounded-md px-2 py-1 bg-white/75 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.3')</p>
+        @endfor
 
       </div>
-
+        
     </div>
 
-    <!-- Reviews Image -->
-    <x-google-review/>
+      <!-- Carousel Banner Mobile -->
+    @php $slides = 3; @endphp
+    <div class="relative z-10 w-full h-homeTitle overflow-x-hidden md:hidden">
 
-    <!-- Carousel Indicator -->
-    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-banner-mobile">
-    
-      <input type="hidden" id="carousel-selected-indicator-color-banner-mobile" value="bg-flagYellow">
-      <input type="hidden" id="carousel-default-indicator-color-banner-mobile" value="bg-white">
-    
-      @for ($i = 0; $i <= $slides-1; $i++)
+      <!-- Carousel Slide -->
+      <div id="carousel-slide-banner-mobile" class="rounded grid h-homeTitle transition-transform duration-500 w-screen" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
+        
+        <!-- Carousel Item 1 -->
+        <div class="p-4 w-full flex flex-col items-start justify-start gap-1 h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner1mobile.png')">
+
+          <h1 class="text-flagRed px-2 py-1 rounded-md bg-white/85 font-medium text-2xl">@lang('home-banner-1-title')</h1>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.1')</p>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.2')</p>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.3')</p>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.4')</p>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.5')</p>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/85 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-1-p.6')</p>
+          
+        </div>
+        
+        <!-- Carousel Item 2 -->
+        <div class="p-4 w-full flex flex-col items-start justify-start gap-1 h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner2mobile.png')">
+
+          <h1 class="px-2 py-1 rounded-md bg-white/50 text-flagRed font-medium text-2xl">@lang('home-banner-2-title')</h1>
+          <p class="rounded-md px-2 py-1 bg-white/50 text-flagRed text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-2-p.1')</p>
+          <p class="rounded-md px-2 py-1 bg-white/50 text-flagRed text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-2-p.2')</p>
+
+        </div>
+        
+        <!-- Carousel Item 3 -->
+        <div class="p-4 w-full flex flex-col items-start justify-start gap-1 h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner3mobile.png')">
+
+          <h1 class="text-flagRed px-2 py-1 rounded-md bg-white/75 font-medium text-2xl">@lang('home-banner-3-title')</h1>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/75 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.1')</p>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/75 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.2')</p>
+          <p class="text-flagRed rounded-md px-2 py-1 bg-white/75 text-lg font-medium flex gap-2 items-center"><i class="fa-solid fa-check"></i>@lang('home-banner-3-p.3')</p>
+
+        </div>
+
+      </div>
+
+      <!-- Reviews Image -->
+      <x-google-review/>
+
+      <!-- Carousel Indicator -->
+      <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-banner-mobile">
       
-        <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-banner-mobile"></div>
+        <input type="hidden" id="carousel-selected-indicator-color-banner-mobile" value="bg-flagYellow">
+        <input type="hidden" id="carousel-default-indicator-color-banner-mobile" value="bg-white">
+      
+        @for ($i = 0; $i <= $slides-1; $i++)
+        
+          <div class="w-4 h-4 bg-white rounded-full cursor-pointer" id="carousel-{{$i}}-indicator-banner-mobile"></div>
 
-      @endfor
+        @endfor
 
+      </div>
+        
     </div>
-      
-  </div>
 
-  <!-- Rent Now Cell Button -->
-  <div class="w-full md:margin p-4 flex justify-center items-center md:hidden">
-    <a title="@lang('home-button-booknow.Title')" href="#system" class="notActivateLoader text-center p-4 rounded-md text-white bg-flagRed w-full text-2xl">@lang('home-button-booknow')</a>
-  </div>
+  @else
+  
+    <div class="w-full overflow-hidden">
+      <video class="w-full h-homeTitleXL md:flex hidden object-cover object-center" autoplay muted loop>
+        <source src="{{asset('/video/pc-'.($locale=="pt"?"pt":"en").'.mp4')}}" type="video/mp4">
+      </video>
+      <video class="w-full h-full md:hidden flex object-cover" autoplay="" muted="" loop="" preload="auto" playsinline="">
+        <source src="{{asset('/video/mb-'.($locale=="pt"?"pt":"en").'.mp4')}}" type="video/mp4">
+      </video>
+    </div>
+
+  @endif
 
   <!-- System -->
   <div @class([
-      '2xl:margin md:px-0 px-4 md:py-0 py-4',
       'hidden' => $tld == 'pt'
     ]) id="system">
-    <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
+    <anyrent-iframe data-locale="{{$locale=='pt'?'pt':'en'}}"></anyrent-iframe>
     <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
   </div>
 
