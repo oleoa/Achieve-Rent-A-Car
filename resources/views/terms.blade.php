@@ -58,16 +58,16 @@
       </ul>
 
       <h5>
-        3 - As reservas somente serão confirmadas após o pagamento de 20% do valor total do aluguer.
-        Em caso de cancelamentos de reservas informados por e-mail, serão aplicadas as seguintes regras:
+        3 - Em caso de cancelamentos de reservas informados por e-mail, serão aplicadas as seguintes regras:
       </h5>
       <ul>
-        <li>Até 5 dias antes do dia da reserva, será reembolsado 100% do valor pago, menos taxas.</li>
-        <li>Até 72 horas antes do horário do levantamento, será reembolsado 50% do valor total, menos taxas.</li>
-        <li>Menos de 72 horas antes do horário do levantamento, não haverá reembolso do valor pago.</li>
+        <li>Até 72 horas antes do horário do levantamento, será reembolsado 100% do valor total, menos taxas.</li>
+        <li>A menos de 72 horas antes do horário do levantamento, não haverá reembolso do valor pago.</li>
       </ul>
 
-      <h5>Caso uma reserva tenha a data do seu levantamento adiada, o prazo a ser considerado em caso de cancelamento será a partir da primeira data e hora acordadas, anterior ao adiamento.</h5>
+      <h5>
+        Caso uma reserva tenha a data do seu levantamento adiada, o prazo a ser considerado em caso de cancelamento será a partir da primeira data e hora acordadas, anterior ao adiamento.
+      </h5>
 
       <h5>
         4 - O período mínimo de aluguer a ser cobrado é de um dia (24H). Em casos de atrasos superiores a 1 hora na devolução do carro, será cobrado do Locatário um dia de aluguer extra. Este valor deverá ser pago no ato da devolução do carro.
@@ -88,7 +88,7 @@
       </h5>
       
       <h5>
-        7 - Os preços incluem: IVA, seguro Premium, manutenção e assistência em viagem 24h.
+        7 - Os preços incluem: IVA, seguro Premium com cobertura para todos os riscos, manutenção e assistência em viagem 24h.
       </h5>
 
       <h5>
@@ -105,7 +105,9 @@
         <li>Furto ou roubo do veículo.</li>
         <li>Incêndio, raio ou explosão.</li>
         <li>Choque, colisão e capotamento.</li>
-        <li>Vandalismo (somente aos causados por alheios ao locatário) e atos de terrorismo.</li>
+        <li>Fenómenos da natureza e queda de aeronaves.</li>
+        <li>Quebra de vidros.</li>
+        <li>Greves, tumultos, comoções civis, vandalismo, atos de terrorismo.</li>
       </ul>
 
       <h5>O seguro Premium não cobre os itens abaixo e, caso ocorram, deverá o Locatário pagar à Locadora o respetivo valor no momento da devolução da viatura:</h5>
@@ -113,7 +115,7 @@
         <li>Abastecimento com combustível errado - taxa de 700€.</li>
         <li>Danos causados ao motor ou à caixa de velocidades ou à embreagem - terão os valores calculados de acordo com os danos, com as peças afetadas e com o modelo da viatura.</li>
         <li>Danos ao interior da viatura - terão os valores calculados de acordo com os danos e com as partes afetadas.</li>
-        <li>Vidros, espelhos, fechaduras, jantes e pneus - terão os valores calculados de acordo com os danos e peças afetadas.</li>
+        <li>Espelhos, fechaduras, jantes e pneus - terão os valores calculados de acordo com os danos e peças afetadas.</li>
         <li>Danos intencionais causados pelo locatário ou por pessoas sob sua responsabilidade ao veículo ou a terceiros - terão os valores calculados de acordo com os danos e peças afetadas.</li>
         <li>Danos por pessoa que esteja a conduzir sem autorização legal e/ou sem autorização da Locadora; sob o efeito de álcool, de estupefacientes ou por pessoa que sofra de insanidade mental - terão os valores calculados de acordo com os danos e peças afetadas.</li>
         <li>Danos por participações em provas desportivas, Rally's, desafios, concursos, competições - terão os valores calculados de acordo com os danos e peças afetadas.</li>
@@ -127,6 +129,7 @@
           <li>Para o transporte de mercadorias proibidas ou ilegais, ou em violação das normas aduaneiras.</li>
         </ul>
         <li>Danos por acidentes que não sejam comunicados à Locadora e à polícia - terão os valores calculados de acordo com os danos e peças afetadas.</li>
+        <li>Danos ou perdas de pertences do Locatário deixados no veículo.</li>
       </ul>
 
       <h5>
@@ -236,16 +239,16 @@
       </ul>
 
       <h5>
-        3 - Bookings will only be confirmed after payment of 20% of the total rental price.
-        In case of cancellations informed by email, the following rules will apply:
+        3 - In case of cancellations informed by email, the following rules will apply:
       </h5>
       <ul>
-        <li>Up to 5 days before the day of booking, 100% of the amount paid will be refunded, minus fees.</li>
-        <li>Up to 72 hours before the pick-up time, 50% of the total amount will be refunded, minus fees.</li>
+        <li>Up to 72 hours before the pick-up time, 100% of the total amount will be refunded, minus fees.</li>
         <li>Less than 72 hours before the pick-up time, there will be no refund of the amount paid.</li>
       </ul>
 
-      <h5>If a booking has its pick-up date postponed, the period to be considered in case of cancellation will be from the first agreed date and time, prior to the postponement.</h5>
+      <h5>
+        If a booking has its pick-up date postponed, the period to be considered in case of cancellation will be from the first agreed date and time, prior to the postponement.
+      </h5>
 
       <h5>
         4 - The minimum rental period that can be paid is one day (24H). In cases of delays of more than 1 hour in returning the car, the Lessee will be charged one extra day's rental. This amount must be paid when returning the car.
@@ -266,7 +269,7 @@
       </h5>
       
       <h5>
-        7 - Prices include: VAT, Premium insurance, maintenance and 24-hour roadside assistance.
+        7 - Prices include: VAT, Premium insurance with coverage for all risks, maintenance and 24-hour roadside assistance.
       </h5>
 
       <h5>
@@ -283,7 +286,9 @@
         <li>Theft of the vehicle.</li>
         <li>Fire, lightning or explosion.</li>
         <li>Shock, collision and rollover.</li>
-        <li>Vandalism (only those caused by people outside the Lessee) and acts of terrorism.</li>
+        <li>Natural phenomena and aircraft crashes.</li>
+        <li>Breaking glass.</li>
+        <li>Strikes, riots, civil commotions, vandalism, acts of terrorism.</li>
       </ul>
 
       <h5>Premium insurance does not cover the items below and if they occur, the Lessee must pay the Lessor the amounts mentioned when returning the vehicle:</h5>
@@ -292,7 +297,7 @@
         <li>Filling up with the wrong fuel - fee of €700.</li>
         <li>Damage to the engine/gearbox/clutch - the values will be calculated according to the damage and affected parts.</li>
         <li>Damage to the interior of the vehicle - the values will be calculated according to the damage and affected parts.</li>
-        <li>Glass, mirrors, locks, rims and tires - will have their values calculated according to the damage and affected parts.</li>
+        <li>Mirrors, locks, rims and tires - will have their values calculated according to the damage and affected parts.</li>
         <li>Intentional damage caused by the Lessee or people under his responsibility to the vehicle or third parties - will have the values calculated according to the damage and affected parts.</li>
         <li>Damage caused by a person driving without legal authorization and/or without authorization from the Lessor; under the influence of alcohol, drugs or by a person suffering from mental insanity - the values will be calculated according to the damage and affected parts.</li>
         <li>Damages for participation in sporting events, rallies, challenges, contests, competitions - the values will be calculated according to the damage and affected parts.</li>
@@ -306,6 +311,7 @@
           <li>For the transport of prohibited or illegal goods, or in violation of customs regulation.</li>
         </ul>
         <li>Damage due to accidents that are not reported to the Lessor and the police- the values will be calculated according to the damage and affected parts.</li>
+        <li>Damage or loss of Renter's belongings left in the vehicle.</li>
       </ul>
 
       <h5>
