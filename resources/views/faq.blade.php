@@ -3,18 +3,18 @@
 
   <!-- Banner -->
   <div style="background-image: url('/img/faq/banner.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
-    <h2 class="text-white text-center font-black hidden 2xl:block text-4xl">@lang('FAQ-Banner-Subtitle')</h2>
+    <h2 class="text-white text-center font-black hidden md:block text-4xl">@lang('FAQ-Banner-Subtitle')</h2>
     <h1 class="text-white text-center font-black text-6xl">@lang('FAQ-Banner-Title')</h1>
   </div>
 
   <!-- Help -->
-  <div class="flex flex-col justify-center items-center py-8 2xl:px-margin px-4 gap-8">
+  <div class="flex flex-col justify-center items-center py-8 xl:px-margin px-4 gap-8">
 
     <!-- Title -->
-    <h2 class="2xl:text-5xl">@lang('FAQ-Section.1-Title')</h2>
+    <h2 class="md:text-5xl">@lang('FAQ-Section.1-Title')</h2>
 
     <!-- Separator -->
-    <div class="w-4/5 2xl:w-1/3">
+    <div class="w-4/5 xl:w-1/3">
       <x-separator/>
     </div>
 
@@ -28,7 +28,7 @@
   </div>
 
     <!-- Questions -->
-    <div class="2xl:px-margin px-4 text-white flex flex-col gap-2 pb-4">
+    <div class="xl:px-margin px-4 text-white flex flex-col gap-2 pb-4">
 
         @foreach ($faq as $f)
 

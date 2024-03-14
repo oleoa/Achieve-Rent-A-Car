@@ -1,7 +1,7 @@
 const balloon = document.getElementById('whatsappBalloon');
 setTimeout(() => {
-  balloon.classList.remove('2xl:hidden');
-  balloon.classList.add('2xl:block');
+  balloon.classList.remove('md:hidden');
+  balloon.classList.add('md:block');
   balloon.classList.remove('hidden');
   setTimeout(() => {
     balloon.classList.add('hidden');

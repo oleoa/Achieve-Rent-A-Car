@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('main')
 
-  <article class="text-start 2xl:px-margin px-4 py-4 space-y-4">
+  <article class="text-start md:px-margin px-4 py-4 space-y-4">
       
     @if($locale == 'pt')
 

@@ -4,15 +4,15 @@
   <!-- Identification for js -->
   <span id="home-page"></span>
 
-  <!-- Carousel Banner Computer -->
+  <!-- Carousel Banner Computer/Tablet -->
   @php $slides = 3; @endphp
-  <div class="relative z-10 w-full h-homeTitleXL overflow-x-hidden 2xl:block hidden">
+  <div class="relative z-10 w-full h-homeTitleXL overflow-x-hidden md:flex hidden">
 
     <!-- Carousel Slide -->
-    <div id="carousel-slide-banner" class="rounded 2xl:grid hidden transition-transform duration-500 h-homeTitleXL w-full" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
+    <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 h-homeTitleXL w-full" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
       
       <!-- Carousel Item 1 -->
-      <div class="w-full flex items-center justify-start px-margin h-homeTitleXL bg-cover bg-bottom" style="background-image: url('/img/home/banner1.png')">
+      <div class="w-full flex items-center justify-start xl:px-margin px-4 h-homeTitleXL bg-cover bg-bottom" style="background-image: url('/img/home/banner1.png')">
 
         <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
           <h1>@lang('home-banner-1-title')</h1>
@@ -27,7 +27,7 @@
       </div>
       
       <!-- Carousel Item 2 -->
-      <div class="w-full flex items-center justify-end px-margin h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner2.png')">
+      <div class="w-full flex items-center justify-end xl:px-margin px-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner2.png')">
 
         <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
           <h1 class="text-end">@lang('home-banner-2-title')</h1>
@@ -38,7 +38,7 @@
       </div>
       
       <!-- Carousel Item 3 -->
-      <div class="w-full flex items-center justify-start pl-margin h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner3.png')">
+      <div class="w-full flex items-center justify-start xl:pl-margin pl-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner3.png')">
 
         <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
           <h1>@lang('home-banner-3-title')</h1>
@@ -52,14 +52,10 @@
     </div>
 
     <!-- Reviews Image -->
-    <div class="absolute bottom-0 left-0 2xl:px-margin px-4 py-4 w-full h-full grid 2xl:grid-cols-3 content-end">
-
-      <img src="{{asset('/img/home/reviews.png')}}" alt="Google Reviews" class="bg-white/70 rounded-md py-1 px-2 w-2/5">
-
-    </div>
+    <x-google-review/>
 
     <!-- Carousel Indicator -->
-    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 2xl:z-auto z-40" id="carousel-indicators-div-banner">
+    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-banner">
     
       <input type="hidden" id="carousel-selected-indicator-color-banner" value="bg-flagYellow">
       <input type="hidden" id="carousel-default-indicator-color-banner" value="bg-white">
@@ -76,10 +72,10 @@
 
   <!-- Carousel Banner Mobile -->
   @php $slides = 3; @endphp
-  <div class="relative z-10 w-full h-homeTitle overflow-x-hidden 2xl:hidden">
+  <div class="relative z-10 w-full h-homeTitle overflow-x-hidden md:hidden">
 
     <!-- Carousel Slide -->
-    <div id="carousel-slide-banner-mobile" class="rounded 2xl:hidden h-homeTitle grid transition-transform duration-500 w-screen" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
+    <div id="carousel-slide-banner-mobile" class="rounded grid h-homeTitle transition-transform duration-500 w-screen" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
       
       <!-- Carousel Item 1 -->
       <div class="p-4 w-full flex flex-col items-start justify-start gap-1 h-homeTitle bg-cover bg-center" style="background-image: url('/img/home/banner1mobile.png')">
@@ -116,14 +112,10 @@
     </div>
 
     <!-- Reviews Image -->
-    <div class="absolute bottom-0 left-0 2xl:px-margin px-4 py-4 w-full h-full grid 2xl:grid-cols-3 content-end">
-
-      <img src="{{asset('/img/home/reviews.png')}}" alt="Google Reviews" class="bg-white/70 rounded-md py-1 px-2 w-1/3 lg:w-1/5">
-
-    </div>
+    <x-google-review/>
 
     <!-- Carousel Indicator -->
-    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 2xl:z-auto z-40" id="carousel-indicators-div-banner-mobile">
+    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-banner-mobile">
     
       <input type="hidden" id="carousel-selected-indicator-color-banner-mobile" value="bg-flagYellow">
       <input type="hidden" id="carousel-default-indicator-color-banner-mobile" value="bg-white">
@@ -139,21 +131,21 @@
   </div>
 
   <!-- Rent Now Cell Button -->
-  <div class="w-full 2xl:px-margin p-4 flex justify-center items-center lg:hidden">
+  <div class="w-full md:margin p-4 flex justify-center items-center md:hidden">
     <a title="@lang('home-button-booknow.Title')" href="#system" class="notActivateLoader text-center p-4 rounded-md text-white bg-flagRed w-full text-2xl">@lang('home-button-booknow')</a>
   </div>
 
   <!-- System -->
   <div @class([
-    '2xl:px-margin lg:px-0 px-4 lg:py-0 py-4',
-    'hidden' => $tld == 'pt'
-  ]) id="system">
+      '2xl:margin md:px-0 px-4 md:py-0 py-4',
+      'hidden' => $tld == 'pt'
+    ]) id="system">
     <anyrent-iframe data-locale="{{$locale=='local'?'pt':$locale}}"></anyrent-iframe>
     <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
   </div>
 
   <!-- Why choose achieve -->
-  <div class="2xl:px-margin px-4 py-8 flex flex-col gap-8 bg-flagBlue/20">
+  <div class="xl:px-margin px-4 py-8 flex flex-col gap-8 bg-flagBlue/20">
 
     <h2 class="text-center">@lang('home-list-title')</h2>
 
@@ -169,7 +161,7 @@
             @lang('home-list-li.'.$i)
           </p>
 
-          <div class="h-8 2xl:w-auto w-8 fles items-center justify-end">
+          <div class="h-8 md:w-auto w-8 fles items-center justify-end">
 
             @switch($i)
 
@@ -216,11 +208,12 @@
   <!-- Reviews -->
   @php $slides = 4; @endphp
   <h2 class="text-center py-4 font-semibold">@lang('home-reviews-title')</h2>
+  
   <!-- Reviews Computer -->
-  <div class="relative z-10 w-full overflow-x-hidden 2xl:block hidden">
+  <div class="relative z-10 w-full overflow-x-hidden xl:block hidden">
 
     <!-- Carousel Slide -->
-    <div id="carousel-slide-reviews" class="grid transition-transform duration-500 w-full 2xl:px-margin px-4 py-8" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) calc(100%/3) @endfor">
+    <div id="carousel-slide-reviews" class="grid transition-transform duration-500 w-full md:margin px-4 py-8" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) calc(100%/3) @endfor">
       
       @for ($i = 1; $i <= $slides; $i++)
       
@@ -246,22 +239,22 @@
     </div>
 
     <!-- Carousel Buttons -->
-    <div class="absolute top-0 w-full h-full hidden justify-between 2xl:items-center items-end 2xl:z-auto z-50" id="carousel-buttons-div-reviews">
+    <div class="absolute top-0 w-full h-full hidden justify-between md:items-center items-end md:z-auto z-50" id="carousel-buttons-div-reviews">
           
       <!-- Previous Button -->
       <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-reviews">
-        <i class="fas fa-arrow-left p-4 2xl:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
+        <i class="fas fa-arrow-left p-4 md:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
       </button>
       
       <!-- Next Button -->
       <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-reviews">
-        <i class="fas fa-arrow-right p-4 2xl:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
+        <i class="fas fa-arrow-right p-4 md:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
       </button>
 
     </div>
 
     <!-- Carousel Indicator -->
-    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 2xl:z-auto z-40" id="carousel-indicators-div-reviews">
+    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-reviews">
     
       <input type="hidden" id="carousel-selected-indicator-color-reviews" value="bg-flagBlue">
 
@@ -275,8 +268,8 @@
       
   </div>
 
-  <!-- Reviews Mobile -->
-  <div class="relative z-10 w-full overflow-x-hidden 2xl:hidden">
+  <!-- Reviews Mobile/Tablet -->
+  <div class="relative z-10 w-full overflow-x-hidden xl:hidden">
 
     <!-- Carousel Slide -->
     <div id="carousel-slide-reviews-mobile" class="grid transition-transform duration-500 w-full py-8" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
@@ -305,22 +298,22 @@
     </div>
 
     <!-- Carousel Buttons -->
-    <div class="absolute top-0 w-full h-full hidden justify-between 2xl:items-center items-end 2xl:z-auto z-50" id="carousel-buttons-div-reviews-mobile">
+    <div class="absolute top-0 w-full h-full hidden justify-between md:items-center items-end md:z-auto z-50" id="carousel-buttons-div-reviews-mobile">
           
       <!-- Previous Button -->
       <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-reviews-mobile">
-        <i class="fas fa-arrow-left p-4 2xl:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
+        <i class="fas fa-arrow-left p-4 md:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
       </button>
       
       <!-- Next Button -->
       <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-reviews-mobile">
-        <i class="fas fa-arrow-right p-4 2xl:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
+        <i class="fas fa-arrow-right p-4 md:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
       </button>
 
     </div>
 
     <!-- Carousel Indicator -->
-    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 2xl:z-auto z-40" id="carousel-indicators-div-reviews-mobile">
+    <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-reviews-mobile">
     
       <input type="hidden" id="carousel-selected-indicator-color-reviews-mobile" value="bg-flagBlue">
 
@@ -335,33 +328,25 @@
   </div>
 
   <!-- Poem -->
-  <div class="py-8 flex flex-col gap-8">
-  
-    <!-- Content -->
-    <div class="w-full 2xl:px-margin px-4 grid 2xl:grid-cols-5 lg:grid-cols-2 grid-cols-1 gap-4">
+  <div class="w-full xl:px-margin px-4 flex flex-col gap-4 py-8">
 
-      <!-- Text -->
-      <div class="flex flex-col 2xl:items-start items-center justify-between gap-4 2xl:order-1 order-2 2xl:col-span-3">
+    <!-- Text -->
+    <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('home-1-Title')</h2>
 
-        <!-- Title -->
-        <h2 class="text-center 2xl:text-start py-0 2xl:text-4xl text-2xl">@lang('home-1-Title')</h2>
+    <!-- Poem -->
+    <div class="bg-flagBlue/20 rounded px-4 py-12 flex flex-col justify-between gap-4 w-full xl:col-span-2">
 
-        <!-- Poem -->
-        <div class="bg-flagBlue/20 rounded p-4 flex flex-col gap-4 w-full">
-          @if($locale != 'pt')
-            <h3 class="text-start py-0 2xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
-          @endif
-          <h3 class="text-start py-0 2xl:text-2xl text-xl">@lang('home-1-Poem')</h3>
-          <h4 class="py-0 text-sm text-end w-full">@lang('home-1-Author')</h4>
-        </div>
+      @if($locale != 'pt')
+        <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
+      @endif
 
-        <!-- Paragraph -->
-        <p class="2xl:text-start text-justify">@lang('home-1-Paragraph')</p>
+      <h3 class="text-center py-0 xl:text-2xl text-xl">@lang('home-1-Poem')</h3>
 
-      </div>
+      <h4 class="py-0 text-sm text-end w-full">@lang('home-1-Author')</h4>
 
-      <!-- Image -->
-      <img src="{{asset('/img/home/1.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-lg 2xl:order-2 order-1 max-w-full h-auto w-full 2xl:col-span-2">
+      
+      <!-- Paragraph -->
+      <p class="xl:text-start text-justify">@lang('home-1-Paragraph')</p>
 
     </div>
 
@@ -371,7 +356,7 @@
   <div class="py-8 flex flex-col gap-8 bg-flagBlue/20">
 
     <!-- Cards -->
-    <div class="grid lg:grid-cols-2 w-full 2xl:px-margin px-4 gap-4">
+    <div class="grid lg:grid-cols-2 w-full xl:px-margin px-4 gap-4">
 
       <h2 class="lg:col-span-2 py-4 text-center font-bold text-4xl">@lang('home-2-Title')</h2>
 
@@ -406,13 +391,13 @@
   </div>
 
   <!-- Explore Madeira -->
-  <div class="py-8 flex flex-col gap-8 2xl:px-margin px-4">
+  <div class="py-8 flex flex-col gap-8 xl:px-margin px-4">
   
     <!-- Content -->
     <div class="w-full flex flex-col items-center gap-8">
 
       <!-- Text -->            
-      <div class="flex flex-col items-center justify-center gap-4 2xl:w-1/2">
+      <div class="flex flex-col items-center justify-center gap-4 xl:w-1/2">
 
         <h3 class="text-center py-0">@lang('home-3-Subtitle')</h3>
         <h2 class="text-center py-0 font-bold">@lang('home-3-Title')</h2>
@@ -423,7 +408,7 @@
       <!-- Items -->
       <div class="grid lg:grid-cols-3 gap-4 w-full">
         @for ($i = 1; $i <= 3; $i++)
-          <div class="2xl:grid 2xl:grid-rows-3 flex flex-col gap-4 2xl:gap-0 items-center justify-items-center rounded-lg shadow-lg 2xl:p-8 p-4">
+          <div class="md:grid md:grid-rows-3 flex flex-col gap-4 md:gap-0 items-center justify-items-center rounded-lg shadow-lg md:p-8 p-4">
             <img src="{{asset('/img/home/3-items/'.$i.'.png')}}" alt="Item Image" class="rounded-lg h-12">
             <h2 class="text-center">@lang('home-3-Card.'.$i.'-Title')</h2>
             <p>@lang('home-3-Card.'.$i.'-Paragraph')</p>

@@ -28,11 +28,10 @@
     ul { @apply list-disc list-inside; }
 
     /* Input Default */
-    input { @apply px-4 py-2 bg-zinc-600 rounded shadow; }
+    input { 
+      @apply px-4 py-2 bg-zinc-600 rounded shadow;
+      color-scheme: dark;
+     }
     textarea { @apply px-4 py-2 bg-zinc-600 rounded shadow; }
   
-}
-
-input {
-  color-scheme: dark;
 }

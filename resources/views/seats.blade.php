@@ -6,20 +6,20 @@
     <h1 class="text-white text-center font-black text-6xl">@lang('Seats-Banner-Title')</h1>
   </div>
 
-  <!-- 1 -->
+  <!-- Intro -->
   <div class="py-4 flex flex-col gap-8">
   
     <!-- Content -->
-    <div class="w-full 2xl:px-margin px-4 grid 2xl:grid-cols-2 grid-cols-1 gap-4">
+    <div class="w-full xl:px-margin px-4 grid md:grid-cols-2 grid-cols-1 gap-4">
 
       <!-- Text -->
-      <div class="flex flex-col 2xl:items-start items-center justify-center gap-4 order-1">
+      <div class="flex flex-col md:items-start items-center justify-center gap-4 order-1">
 
         <!-- Title -->
-        <h2 class="text-center 2xl:text-start py-0 2xl:text-4xl text-xl font-bold">@lang('Seats-1-Title')</h2>
+        <h2 class="text-center md:text-start py-0 md:text-4xl text-xl font-bold">@lang('Seats-1-Title')</h2>
 
         <!-- Paragraph -->
-        <p class="text-justify 2xl:text-start">@lang('Seats-1-Paragraph')</p>
+        <p class="text-justify md:text-start">@lang('Seats-1-Paragraph')</p>
 
       </div>
 
@@ -30,22 +30,22 @@
 
       
     <!-- Separator -->
-    <div class="flex items-center justify-center 2xl:px-margin px-4">
-      <div class="2xl:w-1/3 w-full">
+    <div class="flex items-center justify-center md:px-margin px-4">
+      <div class="md:w-1/3 w-full">
         <x-separator/>
       </div>
     </div>
 
   </div>
 
-  <!-- 2 -->
+  <!-- Seats -->
   <div class="py-4 flex flex-col gap-8">
           
     <!-- Title -->
     <h2 class="py-4 text-center font-bold text-4xl">@lang('Seats-2-Title')</h2>
 
     <!-- Cards -->
-    <div class="grid lg:grid-cols-2 w-full 2xl:px-margin px-4 gap-8 justify-items-center">
+    <div class="grid md:grid-cols-2 w-full xl:px-margin px-4 gap-8 justify-items-center">
 
       <!-- Cards -->
       @for($i = 1; $i <= 2; $i++)
