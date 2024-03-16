@@ -70,9 +70,9 @@
       </h5>
 
       <h5>
-        4 - O período mínimo de aluguer a ser cobrado é de um dia (24H). Em casos de atrasos superiores a 1 hora na devolução do carro, será cobrado do Locatário um dia de aluguer extra. Este valor deverá ser pago no ato da devolução do carro.
-        Sempre que levantamentos e/ou devoluções ocorram entre 06:01 PM e 07:59 AM, serão cobradas as tarifas de serviços fora de horas no valor de 20€ por cada evento, inclusive em casos de atrasos, adiantamentos, cancelamentos e ou desvios de voos ou por outros motivos, mesmo que a referida tarifa não tenha sido previamente inserida no orçamento e ou reserva e ou contrato.
-        Caso o levantamento da viatura ocorra em data ou hora posterior ao especificado no contrato por motivos de atrasos, adiantamentos, cancelamentos e ou desvios de voos ou por outros motivos alheios à Locadora, o valor do contrato de aluguer permanecerá inalterado.
+        4 - O período mínimo de aluguer a ser cobrado é de um dia (24H).<br>
+        Em casos de atrasos superiores a 1 hora na devolução do carro sem que a Locadora seja avisada com antecedência, poderá ser cobrado do Locatário um dia de aluguer extra. 
+        Levantamentos e devoluções que ocorrerem entre 09:01 PM e 07:59 AM, serão acrescidas de tarifas de serviços fora de horas no valor de 20€ cada.<br>
         Se o Locatário desejar alterar o horário de levantamento e ou o horário de devolução da viatura, deverá contactar a Locadora com uma antecedência mínima de 4 horas ao horário pretendido ou ao horário que está no contrato, o que resultar menor.
         A entrega prematura da viatura não incorrerá em reembolso de valores.
       </h5>
@@ -251,10 +251,10 @@
       </h5>
 
       <h5>
-        4 - The minimum rental period that can be paid is one day (24H). In cases of delays of more than 1 hour in returning the car, the Lessee will be charged one extra day's rental. This amount must be paid when returning the car.
-        Whenever pick-ups and/or returns occur between 06:01 PM and 07:59 AM, an out-of-hours service fee of €20 will be charged for each event, including in cases of delays, advances, cancellations and/or deviations in flights or for other reasons, even if it has not previously been included in the quote and/or reservation and/or contract.
-        If the vehicle is picked up on a date or time later than that specified in the contract due to delays, advances, cancellations and/or flight diversions or for other reasons beyond the control of the Lessor, the value of the rental contract will remain unchanged.
-        If the Lessee wishes to change the pick-up time or the time for returning the vehicle, he must contact the Lessor at least 4 hours before the desired time or the time stated in the contract, whichever is shorter.
+        4 - The minimum rental period to be charged is one day (24H).<br>
+        In cases of delays of more than 1 hour in returning the car without the Lessor being notified in advance, the Lessee may be charged for an extra day's rental.
+        Pick-ups and returns that occur between 09:01 PM and 07:59 AM will be subject to out-of-hours service fees of €20 each.<br>
+        If the Lessee wishes to change the pick-up time or the time for returning the vehicle, he must contact the Lessor at least 4 hours in advance of the desired time or the time stated in the contract, whichever is shorter.
         Premature delivery of the vehicle will not result in refunds.
       </h5>
 
