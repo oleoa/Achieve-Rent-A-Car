@@ -26,6 +26,7 @@ class Contact extends Controller
     $data = $request->all();
     
     Mail::to(env('MAIL_USERNAME'))->send(new ContactMail($data));
+    Mail::to(env('MY_MAIL'))->send(new ContactMail($data));
 
     return redirect()->back()->with('success', 'Message-ContactSent');
   }
