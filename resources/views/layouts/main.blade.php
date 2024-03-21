@@ -3,6 +3,9 @@
 
   <!-- Head -->
   <head>
+    
+    <!-- Favicon Google Ads -->
+    <link rel="icon" href="{{asset('/favicon.ico')}}">
 
     <!-- Author (Me) -->
     <meta name="author" content="Leonardo Abreu de Paulo, leonardo.abreu.de.paulo@gmail.com">
