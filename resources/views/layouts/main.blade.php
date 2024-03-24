@@ -133,6 +133,16 @@
         <i class="fa-solid fa-envelope-open-text"></i>
       </a>
 
+      <!-- English -->
+      <a href="{{route($current, ['locale' => 'en'])}}">
+        <img src="{{asset('/img/flags/en.png')}}" alt="England Flag" class="px-4">
+      </a>
+
+      <!-- Portuguese -->
+      <a href="{{route($current, ['locale' => 'pt'])}}">
+        <img src="{{asset('/img/flags/pt.png')}}" alt="Portugal Flag" class="px-4">
+      </a>
+
     </aside>
 
     <!-- Loader -->
