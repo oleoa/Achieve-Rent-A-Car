@@ -4,12 +4,6 @@ import './bootstrap';
 // Loader for both client and admin
 import './loader';
 
-// Whatsapp balloon
-import './whats';
-
-// Sidebar for both client and admin
-import './sidebar';
-
 // Open and close the FAQ accordion
 import './faq';
 
