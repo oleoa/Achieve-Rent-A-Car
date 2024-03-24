@@ -101,25 +101,37 @@
     </nav>
 
     <!-- Sidebar -->
-    <aside class="w-16 h-full fixed top-0 left-0 bg-white z-40 py-4 flex flex-col items-center gap-4 [&>i]:text-xl [&>i]:text-flagRed" id="sidebar">
+    <aside class="w-16 h-full fixed top-0 left-0 bg-white z-40 py-4 flex flex-col items-center gap-4 [&>a>i]:text-xl [&>a>i]:text-flagRed" id="sidebar">
 
       <!-- Home -->
-      <i class="fa-solid fa-house"></i>
+      <a href="{{route('home', ['locale' => $locale])}}">
+        <i class="fa-solid fa-house"></i>
+      </a>
 
       <!-- Fleet -->
-      <i class="fa-solid fa-car-rear"></i>
+      <a href="{{route('fleet', ['locale' => $locale])}}">
+        <i class="fa-solid fa-car-rear"></i>
+      </a>
 
       <!-- About Us -->
-      <i class="fa-solid fa-people-group"></i>
+      <a href="{{route('about', ['locale' => $locale])}}">
+        <i class="fa-solid fa-people-group"></i>
+      </a>
 
       <!-- Car Seats -->
-      <i class="fa-solid fa-baby"></i>
+      <a href="{{route('seats', ['locale' => $locale])}}">
+        <i class="fa-solid fa-baby"></i>
+      </a>
 
       <!-- FAQ -->
-      <i class="fa-solid fa-circle-question"></i>
+      <a href="{{route('faq', ['locale' => $locale])}}">
+        <i class="fa-solid fa-circle-question"></i>
+      </a>
 
       <!-- Contact -->
-      <i class="fa-solid fa-envelope-open-text"></i>
+      <a href="{{route('contact', ['locale' => $locale])}}">
+        <i class="fa-solid fa-envelope-open-text"></i>
+      </a>
 
     </aside>
 
@@ -137,7 +149,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full xl:px-margin px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-50">
+    <footer class="w-full xl:pl-80 xl:pr-64 px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-50">
 
       <!-- Links -->
       <div class="hidden gap-4 text-white justify-center items-center">
@@ -155,18 +167,17 @@
       </div>
 
       <!-- Separator -->
-      <div class="bg-flagYellow w-full h-1 rounded"></div>
+      <div class="bg-flagYellow w-full h-1 rounded hidden"></div>
 
       <!-- Legal -->
       <p class="text-white flex md:flex-row flex-col gap-1">
-        <a title="@lang('Footer-Legal-Terms.Title')" href="{{route('terms', $locale)}}">@lang('Footer-Legal-Terms')</a>
-        <a title="@lang('Footer-Legal-Privacy.Title')" href="{{route('privacy', $locale)}}">@lang('Footer-Legal-Privacy')</a>
+        <a class="hover:text-white" title="@lang('Footer-Legal-Terms.Title')" href="{{route('terms', $locale)}}">@lang('footer.terms')</a>
+        <a class="hover:text-white" title="@lang('Footer-Legal-Privacy.Title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
       </p>
 
       <!-- Reserved -->
       <div class="flex md:flex-row flex-col gap-1">
-        <p class="text-white">@lang('Footer-@')</p>
-        <p class="text-white">@lang('Footer-Reserved')</p>
+        <p class="text-white">@lang('footer.@')</p>
       </div>
 
     </footer>
