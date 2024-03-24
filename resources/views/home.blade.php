@@ -38,7 +38,7 @@
   
               </div>
   
-              <p class="font-semibold">{{$reviews[$i]['comment'][$language]}}</p>
+              <p class="font-semibold text-start w-full">{{$reviews[$i]['comment'][$language]}}</p>
     
             </div>
     

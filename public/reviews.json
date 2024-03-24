@@ -30,5 +30,37 @@
       "pt": "100% recomendo! Um excelente serviço ao cliente e um excelente carro para a Madeira. Respostas rápidas e ótima relação custo-benefício. Reservamos um carro e o retiramos no mesmo dia e foi um ótimo preço em comparação com outros locais de aluguel.",
       "en": "100% recommend! Such great customer service and a great car for Madeira. Quick replies and great value for money. We booked a car and picked it up the same day and it was a great price compared to other rental places."
     }
+  },
+  "5": {
+    "name": "Hanna Ellola",
+    "photo": "https://lh3.googleusercontent.com/a-/ALV-UjVBNXXElhW9dc3-viOoWCdwK1ecsXahcxnxF0fnzkMV5w=w80-h80-p-rp-mo-br100",
+    "comment": {
+      "pt": "Serviço excelente! Bons veículos, conseguimos o que precisávamos.",
+      "en": "Excellent service! Good vehicles, we got what we needed."
+    }
+  },
+  "6": {
+    "name": "Niki Veliki",
+    "photo": "https://lh3.googleusercontent.com/a/ACg8ocIBuCHZR404CjQVSQHx7dh_BNamfNs2NQV4nYPUyonC=w80-h80-p-rp-mo-ba3-br100",
+    "comment": {
+      "pt": "Muito pontual com instruções claras sobre tudo, a equipe é ótima 💯",
+      "en": "Very punctual with clear instructions about everything, staff is great 💯"
+    }
+  },
+  "7": {
+    "name": "Nuno Martins",
+    "photo": "https://lh3.googleusercontent.com/a/ACg8ocKjUsOSW3wBLEkkbcAmZvGyXMBODoBlZmN70KLBy5rv=w80-h80-p-rp-mo-br100",
+    "comment": {
+      "pt": "Simplesmente fantástico! Serviço 5 estrelasAchieve rent a car impecáveis! Recomendo!",
+      "en": "Simply amazing! 5-star serviceAchieve rent a car impeccable! I recommend!"
+    }
+  },
+  "8": {
+    "name": "RGA ORTOPEDICA",
+    "photo": "https://lh3.googleusercontent.com/a/ACg8ocI7k2zRlOsqO0l1ddFBugo0cF6MBf_JoyMegE5gUqrt=w80-h80-p-rp-mo-br100",
+    "comment": {
+      "pt": "O Pessoal atende muito bem , qualidade dos carros . Recomendo",
+      "en": "The staff are very helpful, the quality of the cars. I recommend"
+    }
   }
 }
