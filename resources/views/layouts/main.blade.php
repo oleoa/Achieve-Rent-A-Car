@@ -76,7 +76,7 @@
     </script>
 
     <!-- Header Content -->
-    <nav class="fixed top-0 left-0 w-full flex flex-col z-50">
+    <nav class="fixed top-0 left-0 w-full flex flex-col z-30">
 
       <!-- Discounts -->
       @if($discount)
@@ -101,10 +101,7 @@
     </nav>
 
     <!-- Sidebar -->
-    <aside class="w-16 h-full fixed top-0 left-0 bg-white z-50 py-4 flex flex-col items-center gap-4 [&>i]:text-xl [&>i]:text-flagRed" id="sidebar">
-
-      <!-- Menu -->
-      <i class="fa-solid fa-bars"></i>
+    <aside class="w-16 h-full fixed top-0 left-0 bg-white z-40 py-4 flex flex-col items-center gap-4 [&>i]:text-xl [&>i]:text-flagRed" id="sidebar">
 
       <!-- Home -->
       <i class="fa-solid fa-house"></i>
@@ -140,7 +137,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full xl:px-margin px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4">
+    <footer class="w-full xl:px-margin px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-50">
 
       <!-- Links -->
       <div class="hidden gap-4 text-white justify-center items-center">
