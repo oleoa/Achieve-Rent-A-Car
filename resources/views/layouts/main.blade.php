@@ -82,16 +82,16 @@
       @if($discount)
         <div class="text-xs md:text-xl w-full py-3 md:px-margin px-4 flex justify-center items-center font-semibold" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
           <p class="w-full h-full text-center md:block hidden">
-            @if ($locale=='en')
+            @if ($language=='en')
               @lang($discount['text'])
-            @elseif ($locale=='pt')
+            @elseif ($language=='pt')
               @lang($discount['texto'])
             @endif
           </p>
           <p class="w-full h-full text-start md:hidden block">
-            @if ($locale=='en')
+            @if ($language=='en')
               @lang($discount['text_mobile'])
-            @elseif ($locale=='pt')
+            @elseif ($language=='pt')
               @lang($discount['texto_mobile'])
             @endif
           </p>

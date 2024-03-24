@@ -9,6 +9,10 @@ class Fleet extends Controller
 {
   public function index($locale)
   {
-    return $this->load('fleet', 'fleet', $locale);
+    $this->setLocale($locale);
+    $this->isCurrent('fleet');
+    $this->setDiscount();
+    $this->createView();
+    return view('fleet', $this->data);
   }
 }

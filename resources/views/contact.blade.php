@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@php
+  $title = 'contact.title';
+@endphp
 @section('main')
 
   <!-- Banner -->

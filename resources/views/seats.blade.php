@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@php
+  $title = 'seats.title';
+@endphp
 @section('main')
 
   <!-- Banner -->

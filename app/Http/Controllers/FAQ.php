@@ -11,7 +11,11 @@ class FAQ extends Controller
   public function index($locale)
   {
     $faq = FAQModel::all()->toArray();
-    $this->data('faq', $faq);
-    return $this->load('faq', 'faq', $locale);
+    $this->data['faq'] = $faq;
+    $this->setLocale($locale);
+    $this->isCurrent('faq');
+    $this->setDiscount();
+    $this->createView();
+    return view('faq', $this->data);
   }
 }

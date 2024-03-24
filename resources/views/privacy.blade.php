@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@php
+  $title = 'privacy.title';
+@endphp
 @section('main')
 
     <div class="md:px-margin px-4 py-4 flex flex-col gap-4">

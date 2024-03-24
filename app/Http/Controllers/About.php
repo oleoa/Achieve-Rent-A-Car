@@ -8,6 +8,10 @@ class About extends Controller
 {
   public function index($locale)
   {
-    return $this->load('about', 'about', $locale);
+    $this->setLocale($locale);
+    $this->isCurrent('about');
+    $this->setDiscount();
+    $this->createView();
+    return view('about', $this->data);
   }
 }

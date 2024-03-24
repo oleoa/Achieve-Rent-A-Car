@@ -1,9 +1,12 @@
 @extends('layouts.main')
+@php
+  $title = 'terms.title';
+@endphp
 @section('main')
 
   <article class="text-start md:px-margin px-4 py-4 space-y-4">
       
-    @if($locale == 'pt')
+    @if($language == 'pt')
 
       <h3>
         TERMOS E CONDIÇÕES
@@ -184,7 +187,7 @@
 
       <h5>17 - Declaro que autorizo à Locadora que proceda à recolha, processamento, tratamento e armazenamento de meus dados pessoais, nomeadamente nome, nº de identificação civil, nº de identificação fiscal, passaporte e dados da carta de condução. Os dados serão utilizados durante o tempo necessário à resolução do serviço contratado e permanecerão em arquivo para fins de cumprimento de obrigações legais, jurídicas e para prossecução de interesses legítimos da empresa. Os dados jamais serão compartilhados. Em caso de violação do presente contrato por parte do Locatário, os seus dados pessoais poderão ser comunicados ou revelados a terceiros na medida do necessário para a recuperação dos prejuízos relativos ao incumprimento.</h5>
       
-    @elseif($locale == 'en')
+    @elseif($language == 'en')
 
       <h3>
         TERMS & CONDITIONS

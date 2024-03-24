@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@php
+  $title = 'about.title';
+@endphp
 @section('main')
 
   <!-- Banner -->

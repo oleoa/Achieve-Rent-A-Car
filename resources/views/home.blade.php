@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@php
+  $title = 'home.title';
+@endphp
 @section('main')
 
   <!-- Identification for js -->
@@ -9,7 +12,7 @@
 
     <article class="xl:px-96">
 
-      <anyrent-iframe data-locale="{{$locale=='pt'?'pt':'en'}}"></anyrent-iframe>
+      <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
 
     </article>

@@ -7,8 +7,12 @@ use Illuminate\Http\Request;
 
 class Home extends Controller
 {
-  public function index(Request $request, $locale)
+  public function index($locale)
   {
-    return $this->load('home', 'home', $locale, $request);
+    $this->setLocale($locale);
+    $this->isCurrent('home');
+    $this->setDiscount();
+    $this->createView();
+    return view('home', $this->data);
   }
 }
