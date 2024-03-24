@@ -4,7 +4,7 @@ return [
   'home' => 'Home',
   'fleet' => 'Fleet',
   'about' => 'About Us',
-  'Seats' => 'Car Seats',
+  'seats' => 'Car Seats',
   'faq' => 'FAQ',
   'contact' => 'Contact',
 ];

@@ -84,7 +84,7 @@
     <!-- Poem -->
     <div class="bg-flagBlue/20 rounded px-4 py-12 flex flex-col justify-between gap-4 w-full xl:col-span-2">
 
-      @if($locale != 'pt')
+      @if($language != 'pt')
         <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
       @endif
 

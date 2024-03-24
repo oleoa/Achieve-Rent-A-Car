@@ -25,11 +25,11 @@ class Controller extends BaseController
     $localeExists = in_array($locale, ['en', 'pt', 'local', 'locale'])? true : false;
     if(!$localeExists) abort(404);
     $this->data['locale'] = $locale;
-    app()->setLocale($locale);
     $this->data['language'] = '';
     if($locale == 'locale') $this->data['language'] = 'en';
     else if($locale == 'local') $this->data['language'] = 'pt';
     else $this->data['language'] = $locale;
+    app()->setLocale($this->data['language']);
   }
 
   protected function setDiscount(): void
