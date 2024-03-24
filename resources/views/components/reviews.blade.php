@@ -1,15 +1,6 @@
 <div>
 
-  <!-- Reviews Title -->
   @php $slides = 4; @endphp
-  <div class="w-full xl:px-96 flex justify-center items-center">
-    <div class="col-span-5 flex justify-center items-center">
-      <h2 class="text-center text-white font-black text-5xl rounded-md w-full">@lang('home.reviews.title')</h2>
-    </div>
-    <div class="flex justify-end">
-      <img src="{{asset('/img/home/reviews.png')}}" alt="Google Reviews" class="bg-white rounded-md w-36 px-1">
-    </div>
-  </div>
   
   <!-- Reviews Computer -->
   <div class="relative z-10 w-full overflow-x-hidden xl:block hidden">
