@@ -2,8 +2,13 @@
 
   <!-- Reviews -->
   @php $slides = 4; @endphp
-  <div class="w-full flex items-center justify-center">
-    <h2 class="text-center text-white font-black text-3xl w-fit px-4 py-2 rounded-md">@lang('home-reviews-title')</h2>
+  <div class="w-full xl:px-96 flex justify-center items-center">
+    <div class="col-span-5 flex justify-center items-center">
+      <h2 class="text-center text-white font-black text-5xl rounded-md w-full">@lang('home-reviews-title')</h2>
+    </div>
+    <div class="flex justify-end">
+      <img src="{{asset('/img/home/reviews.png')}}" alt="Google Reviews" class="bg-white rounded-md w-36 px-1">
+    </div>
   </div>
   
   <!-- Reviews Computer -->
