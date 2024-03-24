@@ -7,4 +7,6 @@ return [
   'seats' => 'Cadeiras Auto',
   'faq' => 'Perguntas Frequentes',
   'contact' => 'Contate-nos',
+  'privacy' => 'Politicas de Privacidade',
+  'terms' => 'Termos e Condições',
 ];

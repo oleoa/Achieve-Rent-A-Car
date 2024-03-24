@@ -1,7 +1,5 @@
 @extends('layouts.main')
-@php
-  $title = 'terms.title';
-@endphp
+@php $title = 'title.terms'; @endphp
 @section('main')
 
   <article class="text-start md:px-margin px-4 py-4 space-y-4">

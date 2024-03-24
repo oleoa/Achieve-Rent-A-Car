@@ -7,4 +7,6 @@ return [
   'seats' => 'Car Seats',
   'faq' => 'FAQ',
   'contact' => 'Contact',
+  'privacy' => 'Privacy Policy',
+  'terms' => 'Terms and Conditions',
 ];
