@@ -1,0 +1,34 @@
+{
+  "1": {
+    "name": "Valentina Vucicic",
+    "photo": "https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w80-h80-p-rp-mo-br100",
+    "comment": {
+      "pt": "Altamente recomendado! Alugamos e aproveitamos do início ao fim. Foi tudo super, correu bem e o atendimento foi muito atencioso, ajudando-nos com todas as dúvidas que tínhamos. A Madeira é uma ilha incrível. Voltaremos e reservaremos novamente!",
+      "en": "Highly recommended! We rented and enjoyed it from the start till the end. Everything was super, it went smoothly, and the customer service was very attentive, helping us with all the questions we had. Madeira is an incredible island. We will come again and we will book again!"
+    }
+  },
+  "2": {
+    "name": "Mario Keglevic",
+    "photo": "https://lh3.googleusercontent.com/a-/ALV-UjUGFeGXzYyfRv0CbY_WNEBIdRESzuV4hQ5RLIC-p2MORA=w80-h80-p-rp-mo-br100",
+    "comment": {
+      "pt": "Atendimento top, carro limpo. Mesmo fora do horário de trabalho, a equipe nos apoiou muito quando precisávamos.",
+      "en": "Top service, clean car. Even on non working hours, the staff was very supportive when we needed."
+    }
+  },
+  "3": {
+    "name": "Alex Giurgi",
+    "photo": "https://lh3.googleusercontent.com/a-/ALV-UjW6WsjBSIVo0sT9rxbTTTaePw1Cg7PtP_rHDU-txrnX0IA=w80-h80-p-rp-mo-br100",
+    "comment": {
+      "pt": "Tive uma experiência muito boa. Recomendo para alugar um carro. Obrigado.",
+      "en": "I had a very good experience. Highly recommend it for renting a car. Thank you."
+    }
+  },
+  "4": {
+    "name": "Lewis",
+    "photo": "https://lh3.googleusercontent.com/a/ACg8ocK_7DArnsXWvTuEOKH61Xp5tQJbAux2EqfW3wJXWY36=w80-h80-p-rp-mo-br100",
+    "comment": {
+      "pt": "100% recomendo! Um excelente serviço ao cliente e um excelente carro para a Madeira. Respostas rápidas e ótima relação custo-benefício. Reservamos um carro e o retiramos no mesmo dia e foi um ótimo preço em comparação com outros locais de aluguel.",
+      "en": "100% recommend! Such great customer service and a great car for Madeira. Quick replies and great value for money. We booked a car and picked it up the same day and it was a great price compared to other rental places."
+    }
+  }
+}
