@@ -108,7 +108,7 @@
           <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
         </button>
 
-        <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent A Car Logo" class="w-full h-12">
+        <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent A Car Logo" class="w-full h-12 object-contain">
 
       </div>
 
