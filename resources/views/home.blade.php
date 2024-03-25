@@ -216,30 +216,30 @@
     <!-- Cards -->
     <div class="grid lg:grid-cols-2 w-full xl:px-margin px-4 gap-4">
 
-      <h2 class="lg:col-span-2 py-4 text-center font-bold text-4xl">@lang('home.pleasant.expereince.title')</h2>
+      <h2 class="lg:col-span-2 py-4 text-center font-bold text-4xl">@lang('home.pleasant.experience.title')</h2>
 
       <div class="rounded-lg shadow-lg">
-        <img src="{{asset('/img/pages/home/2.png')}}" alt="" class="rounded-t-lg w-full">
+        <img src="{{asset('/img/pages/home/2.png')}}" alt="@lang('home.pleasant.experience.card.1.image')" class="rounded-t-lg w-full">
         <div class="p-4">
-          <h3 class="text-2xl font-bold">@lang('home.pleasant.expereince.card.1.title')</h3>
+          <h3 class="text-2xl font-bold">@lang('home.pleasant.experience.card.1.title')</h3>
           <p class="mt-2 text-justify">
-            @lang('home.pleasant.expereince.card.1.paragraph')
+            @lang('home.pleasant.experience.card.1.paragraph')
           </p>
           @for($i = 1; $i <= 5; $i++)
             <p class="py-1 flex gap-2">
               <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#263e78" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-              @lang('home.pleasant.expereince.card.1.item.'.$i)
+              @lang('home.pleasant.experience.card.1.item.'.$i)
             </p>
           @endfor
         </div>
       </div>
 
       <div class="rounded-lg shadow-lg">
-        <img src="{{asset('/img/pages/home/3.png')}}" alt="" class="rounded-t-lg w-full">
+        <img src="{{asset('/img/pages/home/3.png')}}" alt="@lang('home.pleasant.experience.card.2.image')" class="rounded-t-lg w-full">
         <div class="p-4">
-          <h3 class="text-2xl font-bold">@lang('home.pleasant.expereince.card.2.title')</h3>
+          <h3 class="text-2xl font-bold">@lang('home.pleasant.experience.card.2.title')</h3>
           <p class="mt-2 text-justify">
-            @lang('home.pleasant.expereince.card.2.paragraph')
+            @lang('home.pleasant.experience.card.2.paragraph')
           </p>
         </div>
       </div>

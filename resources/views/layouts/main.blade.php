@@ -214,12 +214,12 @@
       <div class="hidden gap-4 text-white justify-center items-center">
 
         <!-- Instagram -->
-        <a title="@lang('Footer-Social-Instagram.Title')" href="https://www.instagram.com/achieverentacar/" target="_blank">
+        <a href="https://www.instagram.com/achieverentacar/" target="_blank">
           <i class="fab fa-instagram text-4xl hover:text-white"></i>
         </a>
 
         <!-- Youtube -->
-        <a title="Click here to visit us on Youtube" href="https://www.youtube.com/@achieverentacar" target="_blank">
+        <a href="https://www.youtube.com/@achieverentacar" target="_blank">
           <i class="fab fa-youtube text-4xl hover:text-white"></i>
         </a>
 
@@ -230,8 +230,8 @@
 
       <!-- Legal -->
       <p class="text-white flex md:flex-row flex-col gap-1">
-        <a class="hover:text-white" title="@lang('Footer-Legal-Terms.Title')" href="{{route('terms', $locale)}}">@lang('footer.terms')</a>
-        <a class="hover:text-white" title="@lang('Footer-Legal-Privacy.Title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
+        <a class="hover:text-white" title="@lang('footer.terms.title')" href="{{route('terms', $locale)}}">@lang('footer.terms')</a>
+        <a class="hover:text-white" title="@lang('footer.privacy.title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
       </p>
 
       <!-- Reserved -->
