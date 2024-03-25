@@ -56,7 +56,7 @@
           <!-- Image -->
           <img src="{{asset('/img/seats/'.$i.'.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg w-96">
 
-          <div class="p-4">
+          <div class="p-4 flex flex-col gap-4">
 
             <!-- Title -->
             <h3 class="text-xl font-bold">@lang('Seats-2-Card.'.$i.'-Title')</h3>
@@ -65,6 +65,10 @@
             <p class="py-2 text-base text-center">
               @lang('Seats-2-Card.'.$i.'-Paragraph')
             </p>
+
+            <a class="px-4 py-2 rounded-md border-2 border-black bg-black text-white hover:bg-white hover:text-black" target="_blank" href="{{asset('/manuals/'.$i.'.pdf')}}">
+              @lang('Seats-2-Button')
+            </a>
 
           </div>
 
