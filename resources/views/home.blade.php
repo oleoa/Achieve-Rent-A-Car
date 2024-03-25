@@ -124,7 +124,7 @@
   </div>
 
   <!-- Why choose achieve -->
-  <div class="xl:px-margin px-4 py-8 flex flex-col gap-8 bg-flagBlue/20">
+  <div class="xl:px-64 px-4 py-8 flex flex-col gap-8 bg-white">
 
     <h2 class="text-center">@lang('home.why.choose.arac.title')</h2>
 
@@ -184,8 +184,36 @@
 
   </div>
 
+  <!-- Why choose achieve -->
+  <article class="w-full xl:px-64 bg-flagBlue/20 py-4">
+    <h2 class="text-center w-full text-4xl font-semibold py-4"> Por que a Achieve? </h2>
+    <div class="w-full grid grid-cols-3 gap-4">
+      <div class="w-full flex flex-col justify-center items-center bg-white p-4 rounded-md gap-4">
+        <i class="fas fa-handshake text-3xl"></i>
+        <h3 class="text-center font-semibold text-lg">Preços com tudo incluído, sem surpresas</h3>
+        <p>
+          
+        </p>
+      </div>
+      <div class="w-full flex flex-col justify-center items-center bg-white p-4 rounded-md gap-4">
+        <x-font-awesome.no-credit-card/>
+        <h3 class="text-center font-semibold text-lg">Sem necessidade de cartão de crédito</h3>
+        <p>
+
+        </p>
+      </div>
+      <div class="w-full flex flex-col justify-center items-center bg-white p-4 rounded-md gap-4">
+        <i class="fa-solid fa-person-circle-plus text-3xl"></i>
+        <h3 class="text-center font-semibold text-lg">Condutor adicional gratuito</h3>
+        <p>
+
+        </p>
+      </div>
+    </div>
+  </article>
+
   <!-- Poem -->
-  <div class="w-full xl:px-margin px-4 flex flex-col gap-4 py-8">
+  <div class="w-full xl:px-64 px-4 flex flex-col gap-4 py-8">
 
     <!-- Text -->
     <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
@@ -213,7 +241,7 @@
   <div class="py-8 flex flex-col gap-8 bg-flagBlue/20">
 
     <!-- Cards -->
-    <div class="grid lg:grid-cols-2 w-full xl:px-margin px-4 gap-4">
+    <div class="grid lg:grid-cols-2 w-full xl:px-64 px-4 gap-4">
 
       <h2 class="lg:col-span-2 py-4 text-center font-bold text-4xl">@lang('home.pleasant.experience.title')</h2>
 
@@ -248,7 +276,7 @@
   </div>
 
   <!-- Explore Madeira -->
-  <div class="py-8 flex flex-col gap-8 xl:px-margin px-4">
+  <div class="py-8 flex flex-col gap-8 xl:px-64 px-4">
   
     <!-- Content -->
     <div class="w-full flex flex-col items-center gap-8">
@@ -279,3 +307,33 @@
   </div>
 
 @endsection
+
+<!--
+
+PREÇO
+Preços com tudo incluído, sem surpresas
+
+PREÇO
+Sem necessidade de cartão de crédito
+
+PREÇO
+Condutor adicional gratuito
+
+SEGURO
+Seguro Premium incluído
+
+SEGURO
+Sem franquias, sem caução
+
+SEGURO
+Receba e devolva onde estiver, chave na mão
+
+AUTORIDADE
+Clientes satisfeitos
+
+AUTORIDADE
+Contratação rápida, fácil e sem burocracias
+
+AUTORIDADE
+Atendimento rápido, sem esperas e sem filas
+-->

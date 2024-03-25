@@ -11,7 +11,7 @@
   <div class="py-4 flex flex-col gap-8">
   
     <!-- Content -->
-    <div class="w-full xl:px-margin px-4 grid md:grid-cols-2 grid-cols-1 gap-4">
+    <div class="w-full xl:px-64 px-4 grid md:grid-cols-2 grid-cols-1 gap-4">
 
       <!-- Text -->
       <div class="flex flex-col md:items-start items-center justify-center gap-4 order-1">
@@ -31,7 +31,7 @@
 
       
     <!-- Separator -->
-    <div class="flex items-center justify-center md:px-margin px-4">
+    <div class="flex items-center justify-center md:px-64 px-4">
       <div class="md:w-1/3 w-full">
         <x-separator/>
       </div>
@@ -46,7 +46,7 @@
     <h2 class="py-4 text-center font-bold text-4xl">@lang('seats.seats.title')</h2>
 
     <!-- Cards -->
-    <div class="grid md:grid-cols-2 w-full xl:px-margin px-4 gap-8 justify-items-center">
+    <div class="grid md:grid-cols-2 w-full xl:px-64 px-4 gap-8 justify-items-center">
 
       <!-- Cards -->
       @for($i = 1; $i <= 2; $i++)

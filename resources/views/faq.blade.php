@@ -7,7 +7,7 @@
     <h1 class="text-white text-center font-black text-6xl">@lang('faq.banner.title')</h1>
   </div>
 
-  <div class="flex flex-col justify-center items-center py-8 xl:px-margin px-4 gap-8">
+  <div class="flex flex-col justify-center items-center py-8 xl:px-64 px-4 gap-8">
 
     <h2 class="md:text-5xl">@lang('faq.title')</h2>
 
@@ -24,7 +24,7 @@
   </div>
 
     <!-- Questions -->
-    <div class="xl:px-margin px-4 text-white flex flex-col gap-2 pb-4">
+    <div class="xl:px-64 px-4 text-white flex flex-col gap-2 pb-4">
 
       @foreach ($faq as $f)
 
