@@ -106,11 +106,19 @@
       'hover:w-48 [&>a>span]:hover:block'
     ]) id="sidebar">
 
+      <!-- Menu -->
+      <button id="menu" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed w-min"
+      ])>
+        <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
+      </button>
+
       <!-- Home -->
       <a href="{{route('home', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed text-white' => $current == 'home'
+        'bg-flagRed/70 text-white' => $current == 'home'
       ])>
         <i class="fa-solid fa-house min-w-12 flex items-center justify-center"></i>
         <span class="whitespace-nowrap overflow-x-hidden">Home</span>
@@ -120,7 +128,7 @@
       <a href="{{route('fleet', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed text-white' => $current == 'fleet'
+        'bg-flagRed/70 text-white' => $current == 'fleet'
       ])>
         <i class="fa-solid fa-car-rear min-w-12 flex items-center justify-center"></i>
         <span class="whitespace-nowrap overflow-x-hidden">Fleet</span>
@@ -130,7 +138,7 @@
       <a href="{{route('about', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed text-white' => $current == 'about'
+        'bg-flagRed/70 text-white' => $current == 'about'
       ])>
         <i class="fa-solid fa-people-group min-w-12 flex items-center justify-center"></i>
         <span class="whitespace-nowrap overflow-x-hidden">About Us</span>
@@ -140,7 +148,7 @@
       <a href="{{route('seats', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed text-white' => $current == 'seats'
+        'bg-flagRed/70 text-white' => $current == 'seats'
       ])>
         <i class="fa-solid fa-baby min-w-12 flex items-center justify-center"></i>
         <span class="whitespace-nowrap overflow-x-hidden">Car Seats</span>
@@ -150,7 +158,7 @@
       <a href="{{route('faq', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed text-white' => $current == 'faq'
+        'bg-flagRed/70 text-white' => $current == 'faq'
       ])>
         <i class="fa-solid fa-circle-question min-w-12 flex items-center justify-center"></i>
         <span class="whitespace-nowrap overflow-x-hidden">FAQ</span>
@@ -160,20 +168,28 @@
       <a href="{{route('contact', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed text-white' => $current == 'contact'
+        'bg-flagRed/70 text-white' => $current == 'contact'
       ])>
         <i class="fa-solid fa-envelope-open-text min-w-12 flex items-center justify-center"></i>
         <span class="whitespace-nowrap overflow-x-hidden">Contact</span>
       </a>
 
       <!-- English -->
-      <a href="{{route($current, ['locale' => 'en'])}}">
-        <img src="{{asset('/img/flags/en.png')}}" alt="England Flag" class="w-8">
+      <a href="{{route($current, ['locale' => 'en'])}}" @class([
+        'h-12 flex items-center text-flagRed hover:bg-flagRed hover:text-white rounded-md mt-auto',
+        'bg-flagRed/70 text-white' => $language == 'en'
+      ])>
+        <img src="{{asset('/img/flags/en.png')}}" alt="England Flag" class="px-3 max-w-12">
+        <span class="whitespace-nowrap overflow-x-hidden">English</span>
       </a>
 
       <!-- Portuguese -->
-      <a href="{{route($current, ['locale' => 'pt'])}}">
-        <img src="{{asset('/img/flags/pt.png')}}" alt="Portugal Flag" class="w-8">
+      <a href="{{route($current, ['locale' => 'pt'])}}" @class([
+        'h-12 flex items-center text-flagRed hover:bg-flagRed hover:text-white rounded-md',
+        'bg-flagRed/70 text-white' => $language == 'pt'
+      ])>
+        <img src="{{asset('/img/flags/pt.png')}}" alt="Portugal Flag" class="px-3 max-w-12">
+        <span class="whitespace-nowrap overflow-x-hidden">Portuguese</span>
       </a>
 
     </aside>
