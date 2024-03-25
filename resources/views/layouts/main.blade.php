@@ -76,7 +76,7 @@
     </script>
 
     <!-- Header Content -->
-    <nav class="fixed top-0 left-0 w-full flex flex-col z-30">
+    <nav class="fixed top-0 left-0 w-full flex flex-col z-30 xl:pl-16">
 
       <!-- Discounts -->
       @if(isset($discount) && $discount)
@@ -98,18 +98,42 @@
         </div>
       @endif
 
+      <!-- Navbar -->
+      <div class="w-screen bg-white xl:hidden flex gap-4 p-4">
+        
+        <button title="@lang('menu.button.title')" id="menu-mobile" @class([
+          "hover:bg-flagRed hover:text-white",
+          "h-12 flex items-center rounded-md text-flagRed w-min"
+        ])>
+          <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
+        </button>
+
+        <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent A Car Logo" class="w-full h-12">
+
+      </div>
+
     </nav>
 
     <!-- Sidebar -->
     <aside @class([
-      'w-16 h-screen fixed left-0 top-0 bg-white z-40 [&>a>span]:hidden p-2 flex flex-col gap-2 transition-width duration-300',
-      'hover:w-48 [&>a>span]:hover:block'
-    ]) id="sidebar">
+        'xl:w-16 w-48 h-full fixed left-0 top-0 bg-white z-40 xl:[&>a>span]:hidden p-2 flex flex-col gap-2 transition-all duration-300 xl:-translate-x-0 -translate-x-full',
+        'hover:w-48 [&>a>span]:hover:block'
+      ]) id="sidebar">
 
       <!-- Menu -->
       <button title="@lang('menu.button.title')" id="menu" @class([
+        'xl:flex hidden',
         "hover:bg-flagRed hover:text-white",
-        "h-12 flex items-center rounded-md text-flagRed w-min"
+        "h-12 items-center rounded-md text-flagRed w-min"
+      ])>
+        <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
+      </button>
+
+      <!-- Close Menu -->
+      <button title="@lang('menu.button.title')" id="close-menu" @class([
+        'xl:hidden flex',
+        "hover:bg-flagRed hover:text-white",
+        "h-12 items-center rounded-md text-flagRed w-min pl-auto"
       ])>
         <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
       </button>
@@ -201,7 +225,7 @@
     </div>
 
     <!-- Main Content -->
-    <main class="row-span-1 pl-16">
+    <main class="row-span-1 xl:pl-16">
 
       @yield('main')
 

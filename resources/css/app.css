@@ -36,7 +36,9 @@
   
 }
 
-#anyrentBookingsIframe
-{
-  border-radius: 0.375rem/* 6px */;
+@media (min-width: 1280px) {
+  #anyrentBookingsIframe
+  {
+    border-radius: 0.375rem/* 6px */;
+  }
 }
