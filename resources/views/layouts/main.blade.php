@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Description For Search Engine Optimization -->
-    <meta name="description" content="@lang('Meta-Description')">
+    <meta name="description" content="@lang('meta.description')">
 
     <!-- Languages For Search Engine Optimization -->
     <link rel="alternate" href="https://achieverentacar.com/" hreflang="x-default"/>
@@ -36,8 +36,8 @@
     <link rel="canonical" href="https://achieverentacar.com/en"/>
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="@lang('Meta-Facebook-Title')"/>
-    <meta property="og:description" content="@lang('Meta-Facebook-Description')"/>
+    <meta property="og:title" content="@lang('meta.facebook.title')"/>
+    <meta property="og:description" content="@lang('meta.facebook.description')"/>
     <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="Achieve Rent a Car"/>
     <meta property="og:url" content="https://achieverentacar.com/en"/>
@@ -46,10 +46,10 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="Achieve Rent A Car"/>
-    <meta name="twitter:title" content="@lang('Meta-Twitter-Title')"/>
-    <meta name="twitter:description" content="@lang('Meta-Twitter-Description')"/>
+    <meta name="twitter:title" content="@lang('meta.twitter.title')"/>
+    <meta name="twitter:description" content="@lang('meta.twitter.description')"/>
     <meta name="twitter:creator" content="@o_leo_a"/>
-    <meta name="twitter:image" content="http://achieverentacar.com/img/logos/logo.png"/>
+    <meta name="twitter:image" content="https://achieverentacar.com/img/main/2.jpg"/>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous"></script>
