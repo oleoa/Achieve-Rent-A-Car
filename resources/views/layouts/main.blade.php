@@ -121,7 +121,7 @@
         'bg-flagRed/70 text-white' => $current == 'home'
       ])>
         <i class="fa-solid fa-house min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">Home</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.home')</span>
       </a>
 
       <!-- Fleet -->
@@ -131,7 +131,7 @@
         'bg-flagRed/70 text-white' => $current == 'fleet'
       ])>
         <i class="fa-solid fa-car-rear min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">Fleet</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.fleet')</span>
       </a>
 
       <!-- About Us -->
@@ -141,7 +141,7 @@
         'bg-flagRed/70 text-white' => $current == 'about'
       ])>
         <i class="fa-solid fa-people-group min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">About Us</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.about')</span>
       </a>
 
       <!-- Car Seats -->
@@ -151,7 +151,7 @@
         'bg-flagRed/70 text-white' => $current == 'seats'
       ])>
         <i class="fa-solid fa-baby min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">Car Seats</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.seats')</span>
       </a>
 
       <!-- FAQ -->
@@ -161,7 +161,7 @@
         'bg-flagRed/70 text-white' => $current == 'faq'
       ])>
         <i class="fa-solid fa-circle-question min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">FAQ</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.faq')</span>
       </a>
 
       <!-- Contact -->
@@ -171,7 +171,7 @@
         'bg-flagRed/70 text-white' => $current == 'contact'
       ])>
         <i class="fa-solid fa-envelope-open-text min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">Contact</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.contact')</span>
       </a>
 
       <!-- English -->
@@ -180,7 +180,7 @@
         'bg-flagRed/70 text-white' => $language == 'en'
       ])>
         <img src="{{asset('/img/flags/en.png')}}" alt="England Flag" class="px-3 max-w-12">
-        <span class="whitespace-nowrap overflow-x-hidden">English</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.en')</span>
       </a>
 
       <!-- Portuguese -->
@@ -189,7 +189,7 @@
         'bg-flagRed/70 text-white' => $language == 'pt'
       ])>
         <img src="{{asset('/img/flags/pt.png')}}" alt="Portugal Flag" class="px-3 max-w-12">
-        <span class="whitespace-nowrap overflow-x-hidden">Portuguese</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.pt')</span>
       </a>
 
     </aside>
