@@ -12,3 +12,5 @@ import './banner';
 
 // Carousels
 import './carousel';
+
+import './sidebar';

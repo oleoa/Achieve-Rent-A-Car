@@ -76,13 +76,13 @@
     
             <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
     
-              <img src="@lang('home-new-reviews-'.$i.'-image')" alt="Valentina Vucicic" class="h-20 w-20">
+              <img src="{{$reviews[$i]['photo']}}" alt="Valentina Vucicic" class="h-20 w-20">
       
-              <h2 class="font-bold">@lang('home-new-reviews-'.$i.'-author')</h2>
+              <h2 class="font-bold">{{$reviews[$i]['name']}}</h2>
       
               <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
       
-              <p>@lang('home-new-reviews-'.$i.'-comment')</p>
+              <p>{{$reviews[$i]['comment'][$language]}}</p>
     
             </div>
     

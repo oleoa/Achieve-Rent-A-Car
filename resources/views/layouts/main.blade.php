@@ -101,46 +101,79 @@
     </nav>
 
     <!-- Sidebar -->
-    <aside class="w-16 h-full fixed top-0 left-0 bg-white z-40 py-4 flex flex-col items-center gap-4 [&>a>i]:text-xl [&>a>i]:text-flagRed" id="sidebar">
+    <aside @class([
+      'w-16 h-screen fixed left-0 top-0 bg-white z-40 [&>a>span]:hidden p-2 flex flex-col gap-2 transition-width duration-300',
+      'hover:w-48 [&>a>span]:hover:block'
+    ]) id="sidebar">
 
       <!-- Home -->
-      <a href="{{route('home', ['locale' => $locale])}}">
-        <i class="fa-solid fa-house"></i>
+      <a href="{{route('home', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed text-white' => $current == 'home'
+      ])>
+        <i class="fa-solid fa-house min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">Home</span>
       </a>
 
       <!-- Fleet -->
-      <a href="{{route('fleet', ['locale' => $locale])}}">
-        <i class="fa-solid fa-car-rear"></i>
+      <a href="{{route('fleet', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed text-white' => $current == 'fleet'
+      ])>
+        <i class="fa-solid fa-car-rear min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">Fleet</span>
       </a>
 
       <!-- About Us -->
-      <a href="{{route('about', ['locale' => $locale])}}">
-        <i class="fa-solid fa-people-group"></i>
+      <a href="{{route('about', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed text-white' => $current == 'about'
+      ])>
+        <i class="fa-solid fa-people-group min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">About Us</span>
       </a>
 
       <!-- Car Seats -->
-      <a href="{{route('seats', ['locale' => $locale])}}">
-        <i class="fa-solid fa-baby"></i>
+      <a href="{{route('seats', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed text-white' => $current == 'seats'
+      ])>
+        <i class="fa-solid fa-baby min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">Car Seats</span>
       </a>
 
       <!-- FAQ -->
-      <a href="{{route('faq', ['locale' => $locale])}}">
-        <i class="fa-solid fa-circle-question"></i>
+      <a href="{{route('faq', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed text-white' => $current == 'faq'
+      ])>
+        <i class="fa-solid fa-circle-question min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">FAQ</span>
       </a>
 
       <!-- Contact -->
-      <a href="{{route('contact', ['locale' => $locale])}}">
-        <i class="fa-solid fa-envelope-open-text"></i>
+      <a href="{{route('contact', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed text-white' => $current == 'contact'
+      ])>
+        <i class="fa-solid fa-envelope-open-text min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">Contact</span>
       </a>
 
       <!-- English -->
       <a href="{{route($current, ['locale' => 'en'])}}">
-        <img src="{{asset('/img/flags/en.png')}}" alt="England Flag" class="px-4">
+        <img src="{{asset('/img/flags/en.png')}}" alt="England Flag" class="w-8">
       </a>
 
       <!-- Portuguese -->
       <a href="{{route($current, ['locale' => 'pt'])}}">
-        <img src="{{asset('/img/flags/pt.png')}}" alt="Portugal Flag" class="px-4">
+        <img src="{{asset('/img/flags/pt.png')}}" alt="Portugal Flag" class="w-8">
       </a>
 
     </aside>
