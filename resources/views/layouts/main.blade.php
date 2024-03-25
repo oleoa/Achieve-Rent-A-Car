@@ -107,7 +107,7 @@
     ]) id="sidebar">
 
       <!-- Menu -->
-      <button id="menu" @class([
+      <button title="@lang('menu.button.title')" id="menu" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed w-min"
       ])>
@@ -115,7 +115,7 @@
       </button>
 
       <!-- Home -->
-      <a href="{{route('home', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.home.title')" href="{{route('home', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'home'
@@ -125,7 +125,7 @@
       </a>
 
       <!-- Fleet -->
-      <a href="{{route('fleet', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.fleet.title')" href="{{route('fleet', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'fleet'
@@ -135,7 +135,7 @@
       </a>
 
       <!-- About Us -->
-      <a href="{{route('about', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.about.title')" href="{{route('about', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'about'
@@ -145,7 +145,7 @@
       </a>
 
       <!-- Car Seats -->
-      <a href="{{route('seats', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.seats.title')" href="{{route('seats', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'seats'
@@ -155,7 +155,7 @@
       </a>
 
       <!-- FAQ -->
-      <a href="{{route('faq', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.faq.title')" href="{{route('faq', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'faq'
@@ -165,7 +165,7 @@
       </a>
 
       <!-- Contact -->
-      <a href="{{route('contact', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.contact.title')" href="{{route('contact', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'contact'
@@ -175,7 +175,7 @@
       </a>
 
       <!-- English -->
-      <a href="{{route($current, ['locale' => 'en'])}}" @class([
+      <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => 'en'])}}" @class([
         'h-12 flex items-center text-flagRed hover:bg-flagRed hover:text-white rounded-md mt-auto',
         'bg-flagRed/70 text-white' => $language == 'en'
       ])>
@@ -184,7 +184,7 @@
       </a>
 
       <!-- Portuguese -->
-      <a href="{{route($current, ['locale' => 'pt'])}}" @class([
+      <a title="@lang('menu.pt.title')" href="{{route($current, ['locale' => 'pt'])}}" @class([
         'h-12 flex items-center text-flagRed hover:bg-flagRed hover:text-white rounded-md',
         'bg-flagRed/70 text-white' => $language == 'pt'
       ])>
