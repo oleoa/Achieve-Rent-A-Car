@@ -66,8 +66,7 @@ class Carousel
 
   adjustSize()
   {
-    const sidebarWidth = document.getElementById('sidebar').offsetWidth;
-    const pageWidth = document.documentElement.clientWidth-sidebarWidth;
+    const pageWidth = document.documentElement.clientWidth;
     this.carouselSlide.style.width = pageWidth+'px';
     this.adjustPositions();
     this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
@@ -178,9 +177,6 @@ class Carousel
   addArrows()
   {
     if(!this.carouselSlide) return;
-    const carouselButtonsDiv = document.getElementById('carousel-buttons-div-'+this.id);
-    carouselButtonsDiv.style.display = 'flex';
-
     this.nextBtn.addEventListener('click', this.clickedNext.bind(this));
     this.prevBtn.addEventListener('click', this.clickedPrev.bind(this));
   }
@@ -219,4 +215,5 @@ if(isHome)
   reviewsMobile.addSlideAutomatic();
   reviewsMobile.addIndicators();
   reviewsMobile.blurPast();
+  reviewsMobile.addArrows();
 }

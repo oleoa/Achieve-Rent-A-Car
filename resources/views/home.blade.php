@@ -2,7 +2,7 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <div id="system" class="xl:pt-8 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col gap-4" style="background-image: url('/img/main/1.jpg')">
+  <div id="system" class="xl:pt-8 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col xl:gap-4" style="background-image: url('/img/main/1.jpg')">
 
     <article class="xl:px-96">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
@@ -74,7 +74,7 @@
           <!-- Carousel Item -->
           <div class="reviews-mobile-item w-full p-4" id="{{$i-1}}-reviews-mobile">
     
-            <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl">
+            <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl bg-white">
     
               <img src="{{$reviews[$i]['photo']}}" alt="Valentina Vucicic" class="h-20 w-20">
       
@@ -92,31 +92,30 @@
     
       </div>
     
-      <!-- Carousel Buttons -->
-      <div class="absolute top-0 w-full h-full hidden justify-between md:items-center items-end md:z-auto z-50" id="carousel-buttons-div-reviews-mobile">
-            
-        <!-- Previous Button -->
-        <button class="cursor-pointer w-32 flex items-center justify-center" id="prevBtn-reviews-mobile">
-          <i class="fas fa-arrow-left p-4 md:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
-        </button>
-        
-        <!-- Next Button -->
-        <button class="cursor-pointer w-32 flex items-center justify-center" id="nextBtn-reviews-mobile">
-          <i class="fas fa-arrow-right p-4 md:h-auto bg-flagRed h-16 w-16 text-4xl rounded-xl text-white"></i>
-        </button>
-    
-      </div>
-    
       <!-- Carousel Indicator -->
-      <div class="absolute bottom-0 w-full hidden justify-center items-center gap-2 p-4 md:z-auto z-40" id="carousel-indicators-div-reviews-mobile">
+      <div class="absolute bottom-0 w-full xl:hidden flex justify-between items-center gap-2 px-4 z-40" id="carousel-indicators-div-reviews-mobile">
       
-        <input type="hidden" id="carousel-selected-indicator-color-reviews-mobile" value="bg-flagBlue">
+        <input type="hidden" id="carousel-selected-indicator-color-reviews-mobile" value="bg-white">
+
+        <!-- Previous Button -->
+        <button class="cursor-pointer w-8 h-8 bg-white text-black rounded-full flex items-center justify-center" id="prevBtn-reviews-mobile">
+          <i class="fas fa-arrow-left text-lg"></i>
+        </button>
+
+        <div class="flex gap-2 items-center">
+
+          @for ($i = 0; $i <= count($reviews)-1; $i++)
+          
+            <div class="w-4 h-4 rounded-full cursor-pointer border-2 border-white" id="carousel-{{$i}}-indicator-reviews-mobile"></div>
+      
+          @endfor
+
+        </div>
     
-        @for ($i = 0; $i <= count($reviews)-1; $i++)
-        
-          <div class="w-4 h-4 rounded-full cursor-pointer border-2 border-flagBlue" id="carousel-{{$i}}-indicator-reviews-mobile"></div>
-    
-        @endfor
+        <!-- Next Button -->
+        <button class="cursor-pointer w-8 h-8 bg-white text-black rounded-full flex items-center justify-center" id="nextBtn-reviews-mobile">
+          <i class="fas fa-arrow-right text-lg"></i>
+        </button>
     
       </div>
         
