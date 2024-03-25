@@ -4,7 +4,7 @@
 
   <div id="system" class="xl:pt-8 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col xl:gap-4" style="background-image: url('/img/main/1.jpg')">
 
-    <article class="xl:px-96">
+    <article class="xl:px-96 p-4">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>
@@ -67,7 +67,7 @@
     <div class="relative z-10 w-full overflow-x-hidden xl:hidden">
     
       <!-- Carousel Slide -->
-      <div id="carousel-slide-reviews-mobile" class="grid transition-transform duration-500 w-full py-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) 100% @endfor">
+      <div id="carousel-slide-reviews-mobile" class="grid transition-transform duration-500 w-full xl:py-8 pb-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) 100% @endfor">
       
         @for ($i = 1; $i <= count($reviews); $i++)
             
