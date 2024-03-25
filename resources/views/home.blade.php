@@ -2,7 +2,7 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <div id="system" class="xl:pt-8 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col xl:gap-4" style="background-image: url('/img/main/1.jpg')">
+  <div id="system" class="xl:pt-4 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col" style="background-image: url('/img/main/1.jpg')">
 
     <article class="xl:px-96 p-4">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
@@ -15,14 +15,14 @@
     <div class="relative z-10 w-full overflow-x-hidden xl:block hidden">
     
       <!-- Carousel Slide -->
-      <div id="carousel-slide-reviews" class="grid transition-transform duration-500 w-full md:margin px-4 pb-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) calc(100%/3) @endfor">
+      <div id="carousel-slide-reviews" class="grid transition-transform duration-500 w-full px-4 pb-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) calc(100%/3) @endfor">
         
         @for ($i = 1; $i <= count($reviews); $i++)
         
           <!-- Carousel Item -->
           <div class="reviews-item w-full p-4 cursor-pointer" id="{{$i-1}}-reviews">
     
-            <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-lg shadow-2xl bg-white">
+            <div class="flex flex-col justify-start items-center h-full p-6 gap-4 rounded-lg shadow-2xl bg-white">
   
               <div class="flex w-full gap-8 items-start">
                 
@@ -74,7 +74,7 @@
           <!-- Carousel Item -->
           <div class="reviews-mobile-item w-full p-4" id="{{$i-1}}-reviews-mobile">
     
-            <div class="flex flex-col justify-start items-center h-full p-12 gap-4 rounded-md shadow-2xl bg-white">
+            <div class="flex flex-col justify-start items-center h-full p-6 gap-4 rounded-md shadow-2xl bg-white">
     
               <img src="{{$reviews[$i]['photo']}}" alt="Valentina Vucicic" class="h-20 w-20">
       
