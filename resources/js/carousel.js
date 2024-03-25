@@ -66,7 +66,13 @@ class Carousel
 
   adjustSize()
   {
-    const pageWidth = document.documentElement.clientWidth;
+    let pageWidth = 0;
+    if(this.slidesPerView > 1)
+    {
+      const sidebar = document.getElementById('sidebar');
+      pageWidth = document.documentElement.clientWidth-sidebar.clientWidth;
+    }
+    else pageWidth = document.documentElement.clientWidth;
     this.carouselSlide.style.width = pageWidth+'px';
     this.adjustPositions();
     this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
