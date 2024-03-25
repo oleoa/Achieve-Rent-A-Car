@@ -5,6 +5,9 @@ menu.addEventListener('click', () => {
   sidebar.classList.toggle('[&>a>span]:hover:block');
   sidebar.classList.toggle('xl:w-16');
   sidebar.classList.toggle('xl:[&>a>span]:hidden');
+  const icon = document.getElementById('menu-icon');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-xmark');
 });
 
 const menuMobile = document.getElementById('menu-mobile');

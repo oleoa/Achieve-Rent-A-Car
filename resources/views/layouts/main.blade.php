@@ -126,7 +126,7 @@
         "hover:bg-flagRed hover:text-white",
         "h-12 items-center rounded-md text-flagRed w-min"
       ])>
-        <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
+        <i class="fa-solid fa-bars min-w-12 flex items-center justify-center" id="menu-icon"></i>
       </button>
 
       <!-- Close Menu -->
@@ -135,7 +135,7 @@
         "hover:bg-flagRed hover:text-white",
         "h-12 items-center rounded-md text-flagRed w-min pl-auto"
       ])>
-        <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
+        <i class="fa-solid fa-xmark min-w-12 flex items-center justify-center"></i>
       </button>
 
       <!-- Home -->
