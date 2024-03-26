@@ -36,7 +36,10 @@
   
 }
 
-#anyrentBookingsIframe
-{
+body::-webkit-scrollbar {
+  width: 0rem;
+}
+
+#anyrentBookingsIframe{
   border-radius: 0.375rem/* 6px */;
 }
