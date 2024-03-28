@@ -7,6 +7,8 @@ return [
   'seats.title' => 'Escolha a Cadeira Auto certa para o seu Filho',
   'seats.card.1.title' => 'Cadeira Auto - Grupos 1 e 2',
   'seats.card.1.paragraph' => 'A Cadeira Auto - Grupos 1 e 2 é apropriada para crianças com peso entre os 09 kg e os 25 kg.',
+  'seats.card.1.button' => 'Baixar Manual.',
   'seats.card.2.title' => 'Assento Elevatório - Grupo 3',
   'seats.card.2.paragraph' => 'O Assento Elevatório - Grupo 3 é apropriado para crianças com um peso entre os 22 kg e os 36 kg.',
+  'seats.card.2.button' => 'Baixar Manual.',
 ];

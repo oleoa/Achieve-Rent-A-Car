@@ -7,6 +7,8 @@ return [
   'seats.title' => 'Choose the Right Car Seat for Your Child',
   'seats.card.1.title' => 'Groups 1 & 2 - Car Seat',
   'seats.card.1.paragraph' => 'The groups 1 & 2 - Car Seat are suitable for children weighing between 09 kg and 25 kg.',
+  'seats.card.1.button' => 'Download Manual.',
   'seats.card.2.title' => 'Group 3 - Booster Car Seat',
   'seats.card.2.paragraph' => 'The group 3 - Booster Car Seat is suitable for children weighing between 22 kg and 36 kg.',
+  'seats.card.2.button' => 'Download Manual.',
 ];
