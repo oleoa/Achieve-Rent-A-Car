@@ -134,7 +134,7 @@
         With <b>full satisfied customers</b>, a <b>quick, easy and hassle-free hiring</b> and an <b>express service</b> we at <b>Achieve Rent A Car</b> will offer you the best Madeira Island experience that you can Achieve.
       </p>
       <div class="flex gap-4">
-        <button class="scrollToTopBtn text-flagRed" href="#system">Book Now <i class="fa-solid fa-angle-right"></i></button>
+        <button class="scrollToTopBtn text-flagRed hover:text-red-400" href="#system">Book Now <i class="fa-solid fa-angle-right"></i></button>
         <a class="text-flagRed" href="{{route('contact', ['locale' => $locale])}}">Contact Us <i class="fa-solid fa-angle-right"></i></a>
       </div>
     </div>
