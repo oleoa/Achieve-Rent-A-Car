@@ -123,67 +123,76 @@
 
   </div>
 
-  <!-- Why choose achieve -->
-  <article class="w-full py-8 grid xl:grid-cols-3 gap-4 bg-flagRed/20 2xl:px-64">
-    
-    <!-- Budget Friendly -->
-    <h2 class="xl:col-span-3 text-center w-full text-4xl font-semibold">@lang('home.why.choose.arac.title.1')</h2>
+  <!-- New Why Choose Achieve -->
+  <article class="grid grid-cols-7 2xl:px-64 p-4 gap-12 py-8">
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <i class="fas fa-handshake text-3xl"></i>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.1')</h3>
+    <div class="col-span-3 flex flex-col gap-4">
+      <h3 class="text-xl gap-2 flex items-center"><i class="fa-solid fa-user-shield text-flagRed"></i>Why Achieve?</h3>
+      <h2 class="text-6xl">The Achieve<br>Difference</h2>
+      <p class="text-start">
+        At Achieve Rent a Car, we focous on providing the best customer experience, so that <b>you</b> can Achieve the best out of Madeira Island.<br>
+        With <b>full satisfied customers</b>, a <b>quick, easy and hassle-free hiring</b> and an <b>express service</b> we at <b>Achieve Rent A Car</b> will offer you the best Madeira Island experience that you can Achieve.
+      </p>
+      <div class="flex gap-4">
+        <button class="scrollToTopBtn text-flagRed" href="#system">Book Now <i class="fa-solid fa-angle-right"></i></button>
+        <a class="text-flagRed" href="{{route('contact', ['locale' => $locale])}}">Contact Us <i class="fa-solid fa-angle-right"></i></a>
+      </div>
     </div>
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <x-font-awesome.no-credit-card/>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.2')</h3>
-    </div>
+    <div class="col-span-4 flex gap-4">
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <i class="fa-solid fa-person-circle-plus text-3xl"></i>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.3')</h3>
-    </div>
+      <div class="w-full flex flex-col pt-28 gap-4">
 
-    <!-- Secure -->
-    <h2 class="xl:col-span-3 text-center w-full text-4xl font-semibold pt-8">@lang('home.why.choose.arac.title.2')</h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4">
+            <x-font-awesome.hand-holding-car/>
+            <h4>@lang('home.why.choose.arac.item.4')</h4>
+          </div>
+          <p class="text-start">At Achieve Rent A Car, we understand that peace of mind is paramount when you hit the road. That's why we've curated a comprehensive Premium Insurance package, meticulously designed to safeguard your journey from unexpected hiccups.</p>
+        </div>
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <x-font-awesome.hand-holding-car/>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.4')</h3>
-    </div>
+        <span class="w-full h-0.5 bg-flagRed"></span>
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <i class="fas fa-file-shield text-3xl"></i>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.5')</h3>
-    </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4">
+            <i class="fas fa-map-marked-alt text-3xl"></i>
+            <h4>@lang('home.why.choose.arac.item.6')</h4>
+          </div>
+          <p class="text-start">At Achieve Rent A Car, we offer turnkey convenience with our 'Receive and Return at Your Location' service. Simply tell us where you need the car, and we'll handle the rest. It's hassle-free renting, tailored to your convenience.</p>
+        </div>
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <i class="fas fa-map-marked-alt text-3xl"></i>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.6')</h3>
-    </div>
+      </div>
 
-    <!-- Full Satisfaction -->
-    <h2 class="xl:col-span-3 text-center w-full text-4xl font-semibold pt-8">@lang('home.why.choose.arac.title.3')</h2>
+      <span class="w-1 h-full bg-flagRed"></span>
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <i class="fas fa-smile text-3xl"></i>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.7')</h3>
-    </div>
+      <div class="w-full flex flex-col pb-28 gap-4">
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <i class="fas fa-check-double text-3xl"></i>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.8')</h3>
-    </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4">
+            <x-font-awesome.no-credit-card/>
+            <h4>@lang('home.why.choose.arac.item.2')</h4>
+          </div>
+          <p class="text-start">At Achieve Rent A Car, we believe in hassle-free rentals. That's why we offer a no-credit-card-required booking option. Simply reserve your vehicle with ease and enjoy the journey ahead, worry-free.</p>
+        </div>
 
-    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-      <i class="fas fa-paper-plane text-3xl"></i>
-      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.9')</h3>
+        <span class="w-full h-0.5 bg-flagRed"></span>
+
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4">
+            <i class="fa-solid fa-person-circle-plus text-3xl"></i>
+            <h4>@lang('home.why.choose.arac.item.3')</h4>
+          </div>
+          <p class="text-start">At Achieve Rent A Car, we make sharing the driving duties effortless. Enjoy the freedom of a free additional driver with every rental. It's our way of ensuring everyone gets to experience the journey together, without any extra cost.</p>
+        </div>
+
+      </div>
+
     </div>
 
   </article>
 
   <!-- Poem -->
-  <div class="w-full xl:px-64 px-4 flex flex-col gap-4 py-4">
+  <div class="w-full xl:px-64 px-4 flex flex-col gap-4 py-4 bg-flagRed/20">
 
     <!-- Text -->
     <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
