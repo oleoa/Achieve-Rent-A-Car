@@ -141,7 +141,7 @@
 
     <div class="col-span-4 flex gap-4">
 
-      <div class="w-full flex flex-col pt-28 gap-4">
+      <div class="w-full flex flex-col pt-16 gap-4">
 
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
@@ -165,7 +165,7 @@
 
       <span class="w-1 h-full bg-flagRed"></span>
 
-      <div class="w-full flex flex-col pb-28 gap-4">
+      <div class="w-full flex flex-col pb-16 gap-4">
 
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
