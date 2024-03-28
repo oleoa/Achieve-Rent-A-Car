@@ -116,8 +116,8 @@
 
     <!-- Sidebar -->
     <aside @class([
-        'xl:w-16 w-48 h-full fixed left-0 top-0 bg-white z-40 xl:[&>a>span]:hidden p-2 flex flex-col gap-2 transition-all duration-300 xl:-translate-x-0 -translate-x-full',
-        'hover:w-48 [&>a>span]:hover:block'
+        'xl:w-16 w-64 h-full fixed left-0 top-0 bg-white z-40 xl:[&>a>span]:hidden p-2 flex flex-col gap-2 transition-all duration-300 xl:-translate-x-0 -translate-x-full',
+        'hover:w-64 [&>a>span]:hover:block'
       ]) id="sidebar">
 
       <!-- Menu -->
@@ -158,16 +158,6 @@
         <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.fleet')</span>
       </a>
 
-      <!-- About Us -->
-      <a title="@lang('menu.about.title')" href="{{route('about', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'about'
-      ])>
-        <i class="fa-solid fa-people-group min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.about')</span>
-      </a>
-
       <!-- Car Seats -->
       <a title="@lang('menu.seats.title')" href="{{route('seats', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
@@ -176,6 +166,36 @@
       ])>
         <i class="fa-solid fa-baby min-w-12 flex items-center justify-center"></i>
         <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.seats')</span>
+      </a>
+
+      <!-- Local Accommodation -->
+      <a title="@lang('menu.accommodations.title')" href="{{route('home', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed/70 text-white' => $current == 'accommodations'
+      ])>
+        <i class="fa-solid fa-bed min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.accommodations')</span>
+      </a>
+
+      <!-- Restaurants -->
+      <a title="@lang('menu.restaurants.title')" href="{{route('home', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed/70 text-white' => $current == 'restaurants'
+      ])>
+        <i class="fa-solid fa-utensils min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.restaurants')</span>
+      </a>
+
+      <!-- About Us -->
+      <a title="@lang('menu.about.title')" href="{{route('about', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white",
+        "h-12 flex items-center rounded-md text-flagRed",
+        'bg-flagRed/70 text-white' => $current == 'about'
+      ])>
+        <i class="fa-solid fa-people-group min-w-12 flex items-center justify-center"></i>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.about')</span>
       </a>
 
       <!-- FAQ -->
