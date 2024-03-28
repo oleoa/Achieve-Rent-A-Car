@@ -124,10 +124,10 @@
   </div>
 
   <!-- Why choose achieve -->
-  <article class="w-full py-8 grid grid-cols-3 gap-4 bg-flagRed/20 2xl:px-64">
+  <article class="w-full py-8 grid xl:grid-cols-3 gap-4 bg-flagRed/20 2xl:px-64">
     
     <!-- Budget Friendly -->
-    <h2 class="col-span-3 text-center w-full text-4xl font-semibold">@lang('home.why.choose.arac.title.1')</h2>
+    <h2 class="xl:col-span-3 text-center w-full text-4xl font-semibold">@lang('home.why.choose.arac.title.1')</h2>
 
     <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
       <i class="fas fa-handshake text-3xl"></i>
@@ -145,7 +145,7 @@
     </div>
 
     <!-- Secure -->
-    <h2 class="col-span-3 text-center w-full text-4xl font-semibold pt-8">@lang('home.why.choose.arac.title.2')</h2>
+    <h2 class="xl:col-span-3 text-center w-full text-4xl font-semibold pt-8">@lang('home.why.choose.arac.title.2')</h2>
 
     <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
       <x-font-awesome.hand-holding-car/>
@@ -163,7 +163,7 @@
     </div>
 
     <!-- Full Satisfaction -->
-    <h2 class="col-span-3 text-center w-full text-4xl font-semibold pt-8">@lang('home.why.choose.arac.title.3')</h2>
+    <h2 class="xl:col-span-3 text-center w-full text-4xl font-semibold pt-8">@lang('home.why.choose.arac.title.3')</h2>
 
     <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
       <i class="fas fa-smile text-3xl"></i>
@@ -276,24 +276,3 @@
   </div>
 
 @endsection
-
-<!--
-
-SEGURO
-Seguro Premium incluído
-
-SEGURO
-Sem franquias, sem caução
-
-SEGURO
-Receba e devolva onde estiver, chave na mão
-
-AUTORIDADE
-Clientes satisfeitos
-
-AUTORIDADE
-Contratação rápida, fácil e sem burocracias
-
-AUTORIDADE
-Atendimento rápido, sem esperas e sem filas
--->
