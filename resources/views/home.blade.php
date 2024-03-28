@@ -4,7 +4,7 @@
 
   <div id="system" class="xl:pt-4 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col" style="background-image: url('/img/main/1.jpg')">
 
-    <article class="2xl:px-64 p-4">
+    <article class="2xl:px-64 xl:px-32 p-4">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>
@@ -124,7 +124,7 @@
   </div>
 
   <!-- New Why Choose Achieve -->
-  <article class="grid grid-cols-7 2xl:px-64 p-4 gap-12 py-8">
+  <article class="grid grid-cols-7 xl:px-32 2xl:px-64 p-4 gap-12 py-8">
 
     <div class="col-span-3 flex flex-col gap-4">
       <h3 class="text-xl gap-2 flex items-center"><i class="fa-solid fa-user-shield text-flagRed"></i>Why Achieve?</h3>
@@ -192,7 +192,7 @@
   </article>
 
   <!-- Poem -->
-  <div class="w-full xl:px-64 px-4 flex flex-col gap-4 py-4 bg-flagRed/20">
+  <div class="w-full xl:px-32 2xl:px-64 px-4 flex flex-col gap-4 py-4 bg-flagRed/20">
 
     <!-- Text -->
     <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
@@ -219,7 +219,7 @@
   <div class="py-8 flex flex-col gap-8 bg-flagRed/20">
 
     <!-- Cards -->
-    <div class="grid lg:grid-cols-2 w-full xl:px-64 px-4 gap-4">
+    <div class="grid lg:grid-cols-2 w-full xl:px-32 2xl:px-64 px-4 gap-4">
 
       <h2 class="lg:col-span-2 py-4 text-center font-bold text-4xl">@lang('home.pleasant.experience.title')</h2>
 
@@ -254,7 +254,7 @@
   </div>
 
   <!-- Explore Madeira -->
-  <div class="py-8 flex flex-col gap-8 xl:px-64 px-4">
+  <div class="py-8 flex flex-col gap-8 2xl:px-64 xl:px-32 px-4">
   
     <!-- Content -->
     <div class="w-full flex flex-col items-center gap-8">
