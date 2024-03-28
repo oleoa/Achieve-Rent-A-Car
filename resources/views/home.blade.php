@@ -4,7 +4,7 @@
 
   <div id="system" class="xl:pt-4 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col" style="background-image: url('/img/main/1.jpg')">
 
-    <article class="xl:px-96 p-4">
+    <article class="2xl:px-64 p-4">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>
@@ -124,92 +124,80 @@
   </div>
 
   <!-- Why choose achieve -->
-  <div class="xl:px-64 px-4 py-8 flex flex-col gap-8 bg-white">
-
-    <h2 class="text-center">@lang('home.why.choose.arac.title')</h2>
-
-    <p class="text-xl text-center">@lang('home.why.choose.arac.paragraph')</p>
-
-    <div class="grid lg:grid-cols-3 gap-4 grid-rows-9 lg:grid-rows-3">
-
-      @for ($i = 1; $i <= 9; $i++)
-
-        <div class="px-4 py-2 bg-flagRed text-white rounded flex justify-between items-center gap-4">
-
-          <p>
-            @lang('home.why.choose.arac.item.'.$i)
-          </p>
-
-          <div class="h-8 md:w-auto w-8 fles items-center justify-end">
-
-            @switch($i)
-
-              @case(1)
-                <i class="fas fa-handshake w-full h-full text-3xl"></i>
-                @break
-              @case(2)
-                <x-font-awesome.hand-holding-car/>
-                @break
-              @case(3)
-                <i class="fas fa-file-shield w-full h-full text-3xl"></i>
-                @break
-              @case(4)
-                <x-font-awesome.no-credit-card/>
-                @break
-              @case(5)
-                <i class="fa-solid fa-person-circle-plus w-full h-full text-3xl"></i>
-                @break
-              @case(6)
-                <i class="fas fa-smile w-full h-full text-3xl"></i>
-                @break
-              @case(7)
-                <i class="fas fa-check-double w-full h-full text-3xl"></i>
-                @break
-              @case(8)
-                <i class="fas fa-map-marked-alt w-full h-full text-3xl"></i>
-                @break
-              @case(9)
-                <i class="fas fa-paper-plane w-full h-full text-3xl"></i>
-                @break
-                    
-            @endswitch
-
-          </div>
-
+  <article class="w-full py-4 flex flex-col bg-flagBlue/20">
+    
+    <!-- Budget Friendly -->
+    <div class="py-4 xl:px-64">
+      <h2 class="text-center w-full text-4xl font-semibold py-4">@lang('home.why.choose.arac.title.1')</h2>
+  
+      <div class="w-full grid grid-cols-3 gap-4">
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <i class="fas fa-handshake text-3xl"></i>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.1')</h3>
         </div>
-
-      @endfor
-
-    </div>
-
-  </div>
-
-  <!-- Why choose achieve -->
-  <article class="w-full xl:px-64 bg-flagBlue/20 py-4">
-    <h2 class="text-center w-full text-4xl font-semibold py-4"> Por que a Achieve? </h2>
-    <div class="w-full grid grid-cols-3 gap-4">
-      <div class="w-full flex flex-col justify-center items-center bg-white p-4 rounded-md gap-4">
-        <i class="fas fa-handshake text-3xl"></i>
-        <h3 class="text-center font-semibold text-lg">Preços com tudo incluído, sem surpresas</h3>
-        <p>
-          
-        </p>
-      </div>
-      <div class="w-full flex flex-col justify-center items-center bg-white p-4 rounded-md gap-4">
-        <x-font-awesome.no-credit-card/>
-        <h3 class="text-center font-semibold text-lg">Sem necessidade de cartão de crédito</h3>
-        <p>
-
-        </p>
-      </div>
-      <div class="w-full flex flex-col justify-center items-center bg-white p-4 rounded-md gap-4">
-        <i class="fa-solid fa-person-circle-plus text-3xl"></i>
-        <h3 class="text-center font-semibold text-lg">Condutor adicional gratuito</h3>
-        <p>
-
-        </p>
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <x-font-awesome.no-credit-card/>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.2')</h3>
+        </div>
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <i class="fa-solid fa-person-circle-plus text-3xl"></i>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.3')</h3>
+        </div>
+  
       </div>
     </div>
+
+    <!-- Secure -->
+    <div class="py-4 xl:px-64">
+      <h2 class="text-center w-full text-4xl font-semibold py-4">@lang('home.why.choose.arac.title.2')</h2>
+  
+      <div class="w-full grid grid-cols-3 gap-4">
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <x-font-awesome.hand-holding-car/>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.4')</h3>
+        </div>
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <i class="fas fa-file-shield text-3xl"></i>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.5')</h3>
+        </div>
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <i class="fas fa-map-marked-alt text-3xl"></i>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.6')</h3>
+        </div>
+  
+      </div>
+    </div>
+
+    <!-- Full Satisfaction -->
+    <div class="py-4 xl:px-64">
+      <h2 class="text-center w-full text-4xl font-semibold py-4">@lang('home.why.choose.arac.title.3')</h2>
+  
+      <div class="w-full grid grid-cols-3 gap-4">
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <i class="fas fa-smile text-3xl"></i>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.7')</h3>
+        </div>
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <i class="fas fa-check-double text-3xl"></i>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.8')</h3>
+        </div>
+  
+        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+          <i class="fas fa-paper-plane text-3xl"></i>
+          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.9')</h3>
+        </div>
+  
+      </div>
+    </div>
+
   </article>
 
   <!-- Poem -->
@@ -309,15 +297,6 @@
 @endsection
 
 <!--
-
-PREÇO
-Preços com tudo incluído, sem surpresas
-
-PREÇO
-Sem necessidade de cartão de crédito
-
-PREÇO
-Condutor adicional gratuito
 
 SEGURO
 Seguro Premium incluído

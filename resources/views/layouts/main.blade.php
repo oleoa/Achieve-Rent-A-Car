@@ -199,7 +199,7 @@
       </a>
 
       <!-- English -->
-      <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => 'en'])}}" @class([
+      <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'locale' : 'en'])}}" @class([
         'h-12 flex items-center text-flagRed hover:bg-flagRed hover:text-white rounded-md mt-auto',
         'bg-flagRed/70 text-white' => $language == 'en'
       ])>
@@ -208,7 +208,7 @@
       </a>
 
       <!-- Portuguese -->
-      <a title="@lang('menu.pt.title')" href="{{route($current, ['locale' => 'pt'])}}" @class([
+      <a title="@lang('menu.pt.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'local' : 'pt'])}}" @class([
         'h-12 flex items-center text-flagRed hover:bg-flagRed hover:text-white rounded-md',
         'bg-flagRed/70 text-white' => $language == 'pt'
       ])>
