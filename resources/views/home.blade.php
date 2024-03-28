@@ -124,99 +124,80 @@
   </div>
 
   <!-- Why choose achieve -->
-  <article class="w-full py-4 flex flex-col bg-flagBlue/20">
+  <article class="w-full py-8 grid grid-cols-3 gap-4 bg-flagRed/20 2xl:px-64">
     
     <!-- Budget Friendly -->
-    <div class="py-4 xl:px-64">
-      <h2 class="text-center w-full text-4xl font-semibold py-4">@lang('home.why.choose.arac.title.1')</h2>
-  
-      <div class="w-full grid grid-cols-3 gap-4">
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <i class="fas fa-handshake text-3xl"></i>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.1')</h3>
-        </div>
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <x-font-awesome.no-credit-card/>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.2')</h3>
-        </div>
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <i class="fa-solid fa-person-circle-plus text-3xl"></i>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.3')</h3>
-        </div>
-  
-      </div>
+    <h2 class="col-span-3 text-center w-full text-4xl font-semibold">@lang('home.why.choose.arac.title.1')</h2>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <i class="fas fa-handshake text-3xl"></i>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.1')</h3>
+    </div>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <x-font-awesome.no-credit-card/>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.2')</h3>
+    </div>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <i class="fa-solid fa-person-circle-plus text-3xl"></i>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.3')</h3>
     </div>
 
     <!-- Secure -->
-    <div class="py-4 xl:px-64">
-      <h2 class="text-center w-full text-4xl font-semibold py-4">@lang('home.why.choose.arac.title.2')</h2>
-  
-      <div class="w-full grid grid-cols-3 gap-4">
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <x-font-awesome.hand-holding-car/>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.4')</h3>
-        </div>
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <i class="fas fa-file-shield text-3xl"></i>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.5')</h3>
-        </div>
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <i class="fas fa-map-marked-alt text-3xl"></i>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.6')</h3>
-        </div>
-  
-      </div>
+    <h2 class="col-span-3 text-center w-full text-4xl font-semibold pt-8">@lang('home.why.choose.arac.title.2')</h2>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <x-font-awesome.hand-holding-car/>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.4')</h3>
+    </div>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <i class="fas fa-file-shield text-3xl"></i>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.5')</h3>
+    </div>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <i class="fas fa-map-marked-alt text-3xl"></i>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.6')</h3>
     </div>
 
     <!-- Full Satisfaction -->
-    <div class="py-4 xl:px-64">
-      <h2 class="text-center w-full text-4xl font-semibold py-4">@lang('home.why.choose.arac.title.3')</h2>
-  
-      <div class="w-full grid grid-cols-3 gap-4">
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <i class="fas fa-smile text-3xl"></i>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.7')</h3>
-        </div>
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <i class="fas fa-check-double text-3xl"></i>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.8')</h3>
-        </div>
-  
-        <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
-          <i class="fas fa-paper-plane text-3xl"></i>
-          <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.9')</h3>
-        </div>
-  
-      </div>
+    <h2 class="col-span-3 text-center w-full text-4xl font-semibold pt-8">@lang('home.why.choose.arac.title.3')</h2>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <i class="fas fa-smile text-3xl"></i>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.7')</h3>
+    </div>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <i class="fas fa-check-double text-3xl"></i>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.8')</h3>
+    </div>
+
+    <div class="w-full flex justify-start items-center bg-white px-4 py-2 shadow-2xl rounded-md gap-4">
+      <i class="fas fa-paper-plane text-3xl"></i>
+      <h3 class="font-semibold text-base">@lang('home.why.choose.arac.item.9')</h3>
     </div>
 
   </article>
 
   <!-- Poem -->
-  <div class="w-full xl:px-64 px-4 flex flex-col gap-4 py-8">
+  <div class="w-full xl:px-64 px-4 flex flex-col gap-4 py-4">
 
     <!-- Text -->
     <h2 class="text-center xl:text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
 
     <!-- Poem -->
-    <div class="bg-flagBlue/20 rounded px-4 py-12 flex flex-col justify-between gap-4 w-full xl:col-span-2">
+    <div class="bg-flagRed/20 rounded px-4 py-12 flex flex-col justify-between gap-4 w-full xl:col-span-2">
+
+      <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
 
       @if($language != 'pt')
-        <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
+        <h3 class="text-center py-0 xl:text-2xl text-xl">@lang('home.poem.poem')</h3>
       @endif
 
-      <h3 class="text-center py-0 xl:text-2xl text-xl">@lang('home.poem.poem')</h3>
-
       <h4 class="py-0 text-sm text-end w-full">@lang('home.poem.author')</h4>
-
       
       <!-- Paragraph -->
       <p class="xl:text-start text-justify">@lang('home.poem.paragraph')</p>
@@ -226,7 +207,7 @@
   </div>
 
   <!-- Pleasant Experience -->
-  <div class="py-8 flex flex-col gap-8 bg-flagBlue/20">
+  <div class="py-8 flex flex-col gap-8 bg-flagRed/20">
 
     <!-- Cards -->
     <div class="grid lg:grid-cols-2 w-full xl:px-64 px-4 gap-4">
