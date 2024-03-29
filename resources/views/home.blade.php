@@ -193,26 +193,32 @@
   </article>
 
   <!-- Poem -->
-  <div class="w-full lg:px-32 2xl:px-64 px-4 flex flex-col gap-4 py-8 bg-flagRed/20">
+  <div class="w-full lg:px-32 2xl:px-64 px-4 flex flex-col gap-4 py-8 bg-flagRed/70 text-white">
 
-    <!-- Text -->
     <h2 class="text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
 
-    <!-- Poem -->
-    <div class="bg-flagRed/20 rounded px-4 py-4 flex flex-col justify-between gap-4 w-full xl:col-span-2">
+    <div class="flex gap-4">
 
-      <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
+      <img src="{{asset('/img/pages/home/sousa.jpeg')}}" alt="Maximiano de Sousa" class="h-48 rounded-md">
 
-      @if($language != 'pt')
-        <h3 class="text-center py-0 xl:text-2xl text-xl">@lang('home.poem.poem')</h3>
-      @endif
+      <div class="flex flex-col justify-between w-full gap-4">
 
-      <h4 class="py-0 text-sm text-end w-full">@lang('home.poem.author')</h4>
-      
-      <!-- Paragraph -->
-      <p class="xl:text-start text-justify">@lang('home.poem.paragraph')</p>
+        <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
+    
+        @if($language != 'pt')
+          <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('home.poem.poem')</h3>
+        @endif
+        
+        <h4 class="py-0 text-sm text-start w-full">@lang('home.poem.author')</h4>
+
+      </div>
+  
 
     </div>
+
+    
+    <!-- Paragraph -->
+    <p class="xl:text-start text-justify">@lang('home.poem.paragraph')</p>
 
   </div>
 
@@ -255,7 +261,7 @@
   </div>
 
   <!-- Explore Madeira -->
-  <div class="py-8 flex flex-col gap-8 2xl:px-64 lg:px-32 px-4 bg-flagRed/20">
+  <div class="py-8 flex flex-col gap-8 2xl:px-64 lg:px-32 px-4 bg-flagRed/70 text-white">
   
     <!-- Content -->
     <div class="w-full flex flex-col items-center gap-8">
