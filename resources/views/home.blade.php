@@ -4,7 +4,7 @@
 
   <div id="system" class="xl:pt-4 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col" style="background-image: url('/img/main/1.jpg')">
 
-    <article class="2xl:px-64 lg:px-32 p-4">
+    <article class="2xl:px-64 lg:px-20 p-4">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>
@@ -12,7 +12,7 @@
     <span id="home-page"></span>
     
     <!-- Reviews Computer -->
-    <div class="relative z-10 w-full overflow-x-hidden xl:block hidden">
+    <div class="relative z-10 w-full overflow-x-hidden lg:block hidden">
     
       <!-- Carousel Slide -->
       <div id="carousel-slide-reviews" class="grid transition-transform duration-500 w-full px-4 pb-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) calc(100%/3) @endfor">
@@ -64,7 +64,7 @@
     </div>
     
     <!-- Reviews Mobile -->
-    <div class="relative z-10 w-full overflow-x-hidden xl:hidden">
+    <div class="relative z-10 w-full overflow-x-hidden lg:hidden">
     
       <!-- Carousel Slide -->
       <div id="carousel-slide-reviews-mobile" class="grid transition-transform duration-500 w-full xl:py-8 pb-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) 100% @endfor">
@@ -124,7 +124,7 @@
   </div>
 
   <!-- New Why Choose Achieve -->
-  <article class="grid lg:grid-cols-7 lg:px-32 2xl:px-64 p-4 gap-12 py-8">
+  <article class="grid lg:grid-cols-7 lg:px-20 2xl:px-64 p-4 gap-12 py-8">
 
     <div class="lg:col-span-3 flex flex-col gap-4">
       <h3 class="text-xl gap-2 flex items-center"><i class="fa-solid fa-user-shield text-flagRed"></i>Why Achieve?</h3>
@@ -193,7 +193,7 @@
   </article>
 
   <!-- Poem -->
-  <div class="w-full lg:px-32 2xl:px-64 px-4 flex flex-col gap-4 py-8 bg-flagRed/70 text-white">
+  <div class="w-full lg:px-20 2xl:px-64 px-4 flex flex-col gap-4 py-8 bg-flagRed/70 text-white">
 
     <h2 class="text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
 
@@ -226,7 +226,7 @@
   <div class="py-8 flex flex-col gap-8">
 
     <!-- Cards -->
-    <div class="grid lg:grid-cols-2 w-full lg:px-32 2xl:px-64 px-4 gap-4">
+    <div class="grid lg:grid-cols-2 w-full lg:px-20 2xl:px-64 px-4 gap-4">
 
       <h2 class="lg:col-span-2 py-4 text-center font-bold text-4xl">@lang('home.pleasant.experience.title')</h2>
 
@@ -261,7 +261,7 @@
   </div>
 
   <!-- Explore Madeira -->
-  <div class="py-8 flex flex-col gap-8 2xl:px-64 lg:px-32 px-4 bg-flagRed/70 text-white">
+  <div class="py-8 flex flex-col gap-8 2xl:px-64 lg:px-20 px-4 bg-flagRed/70 text-white">
   
     <!-- Content -->
     <div class="w-full flex flex-col items-center gap-8">
