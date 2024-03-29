@@ -124,9 +124,9 @@
   </div>
 
   <!-- New Why Choose Achieve -->
-  <article class="grid grid-cols-7 lg:px-32 2xl:px-64 p-4 gap-12 py-8">
+  <article class="grid lg:grid-cols-7 lg:px-32 2xl:px-64 p-4 gap-12 py-8">
 
-    <div class="col-span-3 flex flex-col gap-4">
+    <div class="lg:col-span-3 flex flex-col gap-4">
       <h3 class="text-xl gap-2 flex items-center"><i class="fa-solid fa-user-shield text-flagRed"></i>Why Achieve?</h3>
       <h2 class="text-6xl">The Achieve<br>Difference</h2>
       <p class="text-start">
@@ -139,9 +139,9 @@
       </div>
     </div>
 
-    <div class="col-span-4 flex gap-4">
+    <div class="lg:col-span-4 flex lg:flex-row flex-col gap-4">
 
-      <div class="w-full flex flex-col pt-16 gap-4">
+      <div class="w-full flex flex-col lg:pt-16 gap-4">
 
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
@@ -163,9 +163,10 @@
 
       </div>
 
-      <span class="w-1 h-full bg-flagRed"></span>
+      <span class="w-1 h-full bg-flagRed lg:block hidden"></span>
+      <span class="w-full h-0.5 bg-flagRed block lg:hidden"></span>
 
-      <div class="w-full flex flex-col pb-16 gap-4">
+      <div class="w-full flex flex-col lg:pb-16 gap-4">
 
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
