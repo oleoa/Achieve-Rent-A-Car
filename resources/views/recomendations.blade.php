@@ -10,12 +10,12 @@
 
     @foreach ($recomendations as $r)
     
-      <div class="rounded-md shadow-2xl w-full flex flex-col gap-2 pb-2 items-start">
+      <div class="rounded-md shadow-2xl w-full flex flex-col gap-4 pb-4 items-start">
         <img src="{{asset($r['img'])}}" alt="{{$r['name']}} Image" class="rounded-t-md w-full h-32 object-cover">
-        <div class="flex flex-col gap-2 justify-between h-full px-2">
+        <div class="flex flex-col gap-4 justify-between h-full px-4">
           <h2>{{$r['name']}}</h2>
           <p class="text-start">{{$r['description']}}</p>
-          <div class="flex gap-2">
+          <div class="flex gap-4">
             <a class="px-4 py-2 rounded-md bg-flagRed/70 text-white w-fit hover:text-white hover:bg-flagRed cursor-pointer">Saiba Mais</a>
             <a class="px-4 py-2 rounded-md bg-flagRed/70 text-white w-fit hover:text-white hover:bg-flagRed cursor-pointer">Achar no mapa</a>
           </div>
