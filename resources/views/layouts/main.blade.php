@@ -78,6 +78,20 @@
     <!-- Header Content -->
     <nav class="fixed top-0 left-0 w-full flex flex-col z-30 xl:pl-16">
 
+      <!-- Navbar -->
+      <div class="w-screen bg-white xl:hidden flex gap-4 p-4">
+        
+        <button title="@lang('menu.button.title')" id="menu-mobile" @class([
+          "hover:bg-flagRed hover:text-white",
+          "h-12 flex items-center rounded-md text-flagRed w-min"
+        ])>
+          <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
+        </button>
+
+        <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent A Car Logo" class="w-full h-12 object-contain">
+
+      </div>
+
       <!-- Discounts -->
       @if(isset($discount) && $discount)
         <div class="text-xs md:text-xl w-full py-3 md:px-64 px-4 flex justify-center items-center font-semibold" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
@@ -98,20 +112,6 @@
         </div>
       @endif
 
-      <!-- Navbar -->
-      <div class="w-screen bg-white xl:hidden flex gap-4 p-4">
-        
-        <button title="@lang('menu.button.title')" id="menu-mobile" @class([
-          "hover:bg-flagRed hover:text-white",
-          "h-12 flex items-center rounded-md text-flagRed w-min"
-        ])>
-          <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
-        </button>
-
-        <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent A Car Logo" class="w-full h-12 object-contain">
-
-      </div>
-
     </nav>
 
     <!-- Sidebar -->
@@ -122,7 +122,7 @@
 
       <!-- Menu -->
       <button title="@lang('menu.button.title')" id="menu" @class([
-        'xl:flex hidden',
+        'lg:flex hidden',
         "hover:bg-flagRed hover:text-white",
         "h-12 items-center rounded-md text-flagRed w-min"
       ])>
@@ -131,7 +131,7 @@
 
       <!-- Close Menu -->
       <button title="@lang('menu.button.title')" id="close-menu" @class([
-        'xl:hidden flex',
+        'lg:hidden flex',
         "hover:bg-flagRed hover:text-white",
         "h-12 items-center rounded-md text-flagRed w-min pl-auto"
       ])>
