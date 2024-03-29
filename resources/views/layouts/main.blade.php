@@ -169,7 +169,7 @@
       </a>
 
       <!-- Local Accommodation -->
-      <a title="@lang('menu.accommodations.title')" href="{{route('home', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.accommodations.title')" href="{{route('accommodations', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'accommodations'
@@ -179,10 +179,10 @@
       </a>
 
       <!-- Restaurants -->
-      <a title="@lang('menu.restaurants.title')" href="{{route('home', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.restaurants.title')" href="{{route('recomendations', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'restaurants'
+        'bg-flagRed/70 text-white' => $current == 'recomendations'
       ])>
         <i class="fa-solid fa-utensils min-w-12 flex items-center justify-center"></i>
         <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.restaurants')</span>

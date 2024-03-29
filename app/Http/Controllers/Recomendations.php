@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Accommodations extends Controller
+class Recomendations extends Controller
 {
     public function index($locale)
     {
         $this->setLocale($locale);
-        $this->isCurrent('accommodations');
+        $this->isCurrent('recomendations');
         $this->setDiscount();
         $this->createView();
-        return view('accommodations', $this->data);
+        return view('recomendations', $this->data);
     }
 }
