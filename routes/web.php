@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home;
 use App\Http\Controllers\Fleet;
 use App\Http\Controllers\Seats;
-use App\Http\Controllers\Accommodations;
+use App\Http\Controllers\Stays;
 use App\Http\Controllers\Recomendations;
 use App\Http\Controllers\About;
 use App\Http\Controllers\FAQ;
@@ -36,7 +36,7 @@ Route::prefix('/{locale}')->group(function(){
   
   Route::get('/seats', [Seats::class, 'index'])->name('seats');
   
-  Route::get('/accommodations', [Accommodations::class, 'index'])->name('accommodations');
+  Route::get('/stays', [Stays::class, 'index'])->name('stays');
   
   Route::get('/recomendations', [Recomendations::class, 'index'])->name('recomendations');
 

@@ -169,13 +169,13 @@
       </a>
 
       <!-- Local Accommodation -->
-      <a title="@lang('menu.accommodations.title')" href="{{route('accommodations', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.stays.title')" href="{{route('stays', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'accommodations'
+        'bg-flagRed/70 text-white' => $current == 'stays'
       ])>
         <i class="fa-solid fa-bed min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.accommodations')</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.stays')</span>
       </a>
 
       <!-- Restaurants -->
