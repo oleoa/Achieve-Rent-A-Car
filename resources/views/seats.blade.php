@@ -67,7 +67,7 @@
               @lang('seats.seats.card.'.$i.'.paragraph')
             </p>
 
-            <a class="px-4 py-2 transition-all duration-300 rounded-md border-2 border-black bg-black text-white hover:bg-white hover:text-black" target="_blank" href="{{asset('/manuals/'.$i.'.pdf')}}">
+            <a class="px-4 py-2 transition-all duration-300 rounded-md border-2 border-black bg-black text-white hover:bg-white hover:text-black" target="_blank" href="{{asset('/files/'.$i.'.pdf')}}">
               @lang('seats.seats.card.'.$i.'.button')
             </a>
 
