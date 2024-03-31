@@ -1,7 +1,7 @@
 const menu = document.getElementById('menu');
 menu.addEventListener('click', () => {
   const sidebar = document.getElementById('sidebar');
-  sidebar.classList.toggle('hover:w-64');
+  sidebar.classList.toggle('hover:w-40');
   sidebar.classList.toggle('[&>a>span]:hover:block');
   sidebar.classList.toggle('lg:w-16');
   sidebar.classList.toggle('lg:[&>a>span]:hidden');
