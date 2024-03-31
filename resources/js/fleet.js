@@ -6,5 +6,7 @@ window.addEventListener('resize', function () {
 
 function updatePadding() {
   var headerContent = document.querySelector('nav');
-  document.getElementById('fleet').style.paddingTop = (headerContent.offsetHeight + 208) + 'px';
+  let fleet = document.getElementById('fleet');
+  if (fleet)
+    fleet.style.paddingTop = (headerContent.offsetHeight + 208) + 'px';
 }
