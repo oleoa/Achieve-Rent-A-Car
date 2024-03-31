@@ -279,7 +279,7 @@
       <div class="grid lg:grid-cols-3 gap-4 w-full">
         @php $icons = ['fa-car-rear', 'fa-lock', 'fa-headset'] @endphp
         @for ($i = 1; $i <= 3; $i++)
-          <div class="md:grid md:grid-rows-3 flex flex-col gap-4 md:gap-0 items-center justify-items-center rounded-lg shadow-2xl md:p-8 p-4">
+          <div class="md:grid md:grid-rows-3 flex flex-col gap-4 md:gap-0 items-center justify-items-center bg-flagRed/70 rounded-lg shadow-2xl md:p-8 p-4">
             <i class="fa-solid {{$icons[$i-1]}} text-5xl py-4"></i>
             <h2 class="text-center">@lang('home.explore.card.'.$i.'.title')</h2>
             <p>@lang('home.explore.card.'.$i.'.paragraph')</p>
