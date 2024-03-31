@@ -169,7 +169,7 @@
       </a>
 
       <!-- Local Accommodation -->
-      <a title="@lang('menu.stays.title')" href="{{route('stays', ['locale' => $locale])}}" @class([
+      <a title="@lang('menu.stays.title')" href="{{route('home', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white hidden",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'stays'
@@ -179,8 +179,8 @@
       </a>
 
       <!-- Recommendations -->
-      <a title="@lang('menu.recommendations.title')" href="{{route('recommendations', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
+      <a title="@lang('menu.recommendations.title')" href="{{route('home', ['locale' => $locale])}}" @class([
+        "hover:bg-flagRed hover:text-white hidden",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'recommendations'
       ])>

@@ -36,9 +36,9 @@ Route::prefix('/{locale}')->group(function(){
   
   Route::get('/seats', [Seats::class, 'index'])->name('seats');
   
-  Route::get('/stays', [Stays::class, 'index'])->name('stays');
+  //Route::get('/stays', [Stays::class, 'index'])->name('stays');
   
-  Route::get('/recommendations', [recommendations::class, 'index'])->name('recommendations');
+  //Route::get('/recommendations', [recommendations::class, 'index'])->name('recommendations');
 
   Route::get('/about', [About::class, 'index'])->name('about');
   
