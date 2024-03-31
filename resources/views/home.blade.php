@@ -127,15 +127,14 @@
   <article class="grid lg:grid-cols-7 lg:px-20 2xl:px-64 p-4 gap-12 py-8">
 
     <div class="lg:col-span-3 flex flex-col gap-4">
-      <h3 class="text-xl gap-2 flex items-center"><i class="fa-solid fa-user-shield text-flagRed"></i>Why Achieve?</h3>
-      <h2 class="text-6xl">The Achieve<br>Difference</h2>
+      <h3 class="text-xl gap-2 flex items-center"><i class="fa-solid fa-user-shield text-flagRed"></i>@lang('home.why.achieve.subtitle')</h3>
+      <h2 class="text-6xl">@lang('home.why.achieve.title')</h2>
       <p class="text-start">
-        At Achieve Rent a Car, we focous on providing the best customer experience, so that <b>you</b> can Achieve the best out of Madeira Island.<br>
-        With <b>full satisfied customers</b>, a <b>quick, easy and hassle-free hiring</b> and an <b>express service</b> we at <b>Achieve Rent A Car</b> will offer you the best Madeira Island experience that you can Achieve.
+        @lang('home.why.achieve.paragraph')
       </p>
       <div class="flex gap-4">
-        <button class="scrollToTopBtn text-flagRed hover:text-red-400" href="#system">Book Now <i class="fa-solid fa-angle-right"></i></button>
-        <a class="text-flagRed" href="{{route('contact', ['locale' => $locale])}}">Contact Us <i class="fa-solid fa-angle-right"></i></a>
+        <button title="@lang('home.why.achieve.book.now.title')" class="scrollToTopBtn flex gap-2 items-center text-flagRed hover:text-red-400" href="#system">@lang('home.why.achieve.book.now')<i class="fa-solid fa-angle-right"></i></button>
+        <a title="@lang('home.why.achieve.contact.us.title')" class="text-flagRed flex items-center gap-2" href="{{route('contact', ['locale' => $locale])}}">@lang('home.why.achieve.contact.us')<i class="fa-solid fa-angle-right"></i></a>
       </div>
     </div>
 
@@ -146,9 +145,11 @@
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
             <x-font-awesome.hand-holding-car/>
-            <h4>@lang('home.why.choose.arac.item.4')</h4>
+            <h4>@lang('home.why.achieve.item.1.title')</h4>
           </div>
-          <p class="text-start">At Achieve Rent A Car, we understand that peace of mind is paramount when you hit the road. That's why we've curated a comprehensive Premium Insurance package, meticulously designed to safeguard your journey from unexpected hiccups.</p>
+          <p class="text-start">
+            @lang('home.why.achieve.item.1.paragraph')
+          </p>
         </div>
 
         <span class="w-full h-0.5 bg-flagRed"></span>
@@ -156,9 +157,11 @@
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
             <i class="fas fa-map-marked-alt text-3xl"></i>
-            <h4>@lang('home.why.choose.arac.item.6')</h4>
+            <h4>@lang('home.why.achieve.item.2.title')</h4>
           </div>
-          <p class="text-start">At Achieve Rent A Car, we offer turnkey convenience with our 'Receive and Return at Your Location' service. Simply tell us where you need the car, and we'll handle the rest. It's hassle-free renting, tailored to your convenience.</p>
+          <p class="text-start">
+            @lang('home.why.achieve.item.2.paragraph')
+          </p>
         </div>
 
       </div>
@@ -171,9 +174,11 @@
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
             <x-font-awesome.no-credit-card/>
-            <h4>@lang('home.why.choose.arac.item.2')</h4>
+            <h4>@lang('home.why.achieve.item.3.title')</h4>
           </div>
-          <p class="text-start">At Achieve Rent A Car, we believe in hassle-free rentals. That's why we offer a no-credit-card-required booking option. Simply reserve your vehicle with ease and enjoy the journey ahead, worry-free.</p>
+          <p class="text-start">
+            @lang('home.why.achieve.item.3.paragraph')
+          </p>
         </div>
 
         <span class="w-full h-0.5 bg-flagRed"></span>
@@ -181,9 +186,11 @@
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
             <i class="fa-solid fa-person-circle-plus text-3xl"></i>
-            <h4>@lang('home.why.choose.arac.item.3')</h4>
+            <h4>@lang('home.why.achieve.item.4.title')</h4>
           </div>
-          <p class="text-start">At Achieve Rent A Car, we make sharing the driving duties effortless. Enjoy the freedom of a free additional driver with every rental. It's our way of ensuring everyone gets to experience the journey together, without any extra cost.</p>
+          <p class="text-start">
+            @lang('home.why.achieve.item.4.paragraph')
+          </p>
         </div>
 
       </div>
