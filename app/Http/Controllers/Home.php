@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
+use App\Models\Review;
 
 class Home extends Controller
 {
@@ -14,6 +15,7 @@ class Home extends Controller
     $this->isCurrent('home');
     $this->setDiscount();
     $this->createView();
+    $this->data['reviews'] = Review::all();
 
     $pathToReviews = public_path('reviews.json');
     if (File::exists($pathToReviews)) {
