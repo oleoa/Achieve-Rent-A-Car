@@ -1,5 +1,5 @@
 <?php
 
 return [
-  'banner' => 'Our Recomendations'
+  'banner' => 'Our recommendations'
 ];

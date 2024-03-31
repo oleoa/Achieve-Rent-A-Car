@@ -170,7 +170,7 @@
 
       <!-- Local Accommodation -->
       <a title="@lang('menu.stays.title')" href="{{route('stays', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
+        "hover:bg-flagRed hover:text-white hidden",
         "h-12 flex items-center rounded-md text-flagRed",
         'bg-flagRed/70 text-white' => $current == 'stays'
       ])>
@@ -178,14 +178,14 @@
         <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.stays')</span>
       </a>
 
-      <!-- Restaurants -->
-      <a title="@lang('menu.restaurants.title')" href="{{route('recomendations', ['locale' => $locale])}}" @class([
+      <!-- Recommendations -->
+      <a title="@lang('menu.recommendations.title')" href="{{route('recommendations', ['locale' => $locale])}}" @class([
         "hover:bg-flagRed hover:text-white",
         "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'recomendations'
+        'bg-flagRed/70 text-white' => $current == 'recommendations'
       ])>
         <i class="fa-solid fa-utensils min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.restaurants')</span>
+        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.recommendations')</span>
       </a>
 
       <!-- About Us -->

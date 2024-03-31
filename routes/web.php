@@ -6,7 +6,7 @@ use App\Http\Controllers\Home;
 use App\Http\Controllers\Fleet;
 use App\Http\Controllers\Seats;
 use App\Http\Controllers\Stays;
-use App\Http\Controllers\Recomendations;
+use App\Http\Controllers\recommendations;
 use App\Http\Controllers\About;
 use App\Http\Controllers\FAQ;
 use App\Http\Controllers\Contact;
@@ -38,7 +38,7 @@ Route::prefix('/{locale}')->group(function(){
   
   Route::get('/stays', [Stays::class, 'index'])->name('stays');
   
-  Route::get('/recomendations', [Recomendations::class, 'index'])->name('recomendations');
+  Route::get('/recommendations', [recommendations::class, 'index'])->name('recommendations');
 
   Route::get('/about', [About::class, 'index'])->name('about');
   
