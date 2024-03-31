@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 
-class recommendations extends Controller
+class Recommendations extends Controller
 {
     public function index($locale)
     {

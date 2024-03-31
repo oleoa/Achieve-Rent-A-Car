@@ -6,7 +6,7 @@ use App\Http\Controllers\Home;
 use App\Http\Controllers\Fleet;
 use App\Http\Controllers\Seats;
 use App\Http\Controllers\Stays;
-use App\Http\Controllers\recommendations;
+use App\Http\Controllers\Recommendations;
 use App\Http\Controllers\About;
 use App\Http\Controllers\FAQ;
 use App\Http\Controllers\Contact;
