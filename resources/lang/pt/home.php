@@ -5,7 +5,7 @@ return
   'reviews.title' => 'O que os nossos clientes dizem',
 
   'why.achieve.subtitle' => 'Por que Achieve?',
-  'why.achieve.title' => 'O Achieve<br>Diferencial',
+  'why.achieve.title' => 'O Diferencial<br>Da Achieve',
   'why.achieve.paragraph' => 'Na Achieve Rent a Car, apostamos em proporcionar a melhor experiência ao cliente, para que <b>você</b> possa tirar o melhor partido da Ilha da Madeira.<br>Com <b>clientes totalmente satisfeitos</b>, um <b>contratação rápida, fácil e sem complicações</b> e um <b>serviço expresso</b> nós da <b>Achieve Rent A Car</b> iremos oferecer-lhe a melhor experiência na Ilha da Madeira que pode Alcançar.',
   'why.achieve.book.now' => 'Reserve Agora',
   'why.achieve.book.now.title' => 'Clique aqui para reservar agora',
