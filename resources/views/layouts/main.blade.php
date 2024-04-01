@@ -116,8 +116,8 @@
 
     <!-- Sidebar -->
     <aside @class([
-        'lg:w-16 w-40 h-full fixed left-0 top-0 bg-white z-40 lg:[&>a>span]:hidden p-2 flex flex-col gap-2 transition-all duration-500 lg:-translate-x-0 -translate-x-full',
-        'hover:w-40 [&>a>span]:hover:block'
+        'lg:w-16 w-48 h-full fixed left-0 top-0 bg-white z-40 lg:[&>a>span]:hidden p-2 flex flex-col gap-2 transition-all duration-500 lg:-translate-x-0 -translate-x-full',
+        'hover:w-48 [&>a>span]:hover:block'
       ]) id="sidebar">
 
       <!-- Menu -->

@@ -216,9 +216,9 @@
 
     <h2 class="text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
 
-    <div class="flex gap-4 p-4 bg-flagRed/70 rounded-md shadow-2xl">
+    <div class="flex md:flex-row flex-col gap-4 p-4 bg-flagRed/70 rounded-md shadow-2xl">
 
-      <img src="{{asset('/img/pages/home/sousa.jpeg')}}" alt="Maximiano de Sousa" class="h-48 rounded-md">
+      <img src="{{asset('/img/pages/home/sousa.jpeg')}}" alt="Maximiano de Sousa" class="h-48 rounded-md object-cover">
 
       <div class="flex flex-col justify-between w-full gap-4">
 
