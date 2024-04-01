@@ -80,7 +80,7 @@
     @endif
 
     <!-- Header Content -->
-    <nav class="fixed top-0 left-0 w-full flex flex-col z-30 xl:pl-16">
+    <nav class="fixed top-0 left-0 w-full flex flex-col z-30">
 
       <!-- Navbar -->
       <div class="w-screen bg-white flex gap-4 p-4">
@@ -92,7 +92,9 @@
           <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
         </button>
 
-        <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent A Car Logo" class="w-full h-12 object-contain">
+        <a href="{{route('home', ['locale' => $locale])}}" class="w-full flex items-center justify-center">
+          <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent A Car Logo" class="h-12 object-contain">
+        </a>
 
       </div>
 
