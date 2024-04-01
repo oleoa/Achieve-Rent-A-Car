@@ -65,15 +65,19 @@
   <!-- Body -->
   <body class="min-h-screen grid grid-rows-1">
 
-    <!-- Clixtell Tracking Code -->
-    <script type='text/javascript'>
-      var script=document.createElement('script');
-      var prefix=document.location.protocol;
-      script.async=true;script.type='text/javascript';
-      var target=prefix + '//scripts.clixtell.com/track.js';
-      script.src=target;var elem=document.head;
-      elem.appendChild(script);
-    </script>
+    @if ($locale != 'locale' && $locale != 'local')
+
+      <!-- Clixtell Tracking Code -->
+      <script type='text/javascript'>
+        var script=document.createElement('script');
+        var prefix=document.location.protocol;
+        script.async=true;script.type='text/javascript';
+        var target=prefix + '//scripts.clixtell.com/track.js';
+        script.src=target;var elem=document.head;
+        elem.appendChild(script);
+      </script>
+        
+    @endif
 
     <!-- Header Content -->
     <nav class="fixed top-0 left-0 w-full flex flex-col z-30 xl:pl-16">
