@@ -17,15 +17,6 @@ class Home extends Controller
     $this->createView();
     $this->data['reviews'] = Review::all();
 
-    $pathToReviews = public_path('reviews.json');
-    if (File::exists($pathToReviews)) {
-      $jsonReviews = File::get($pathToReviews);
-      $arrayReviews = json_decode($jsonReviews, true);
-      $this->data['reviews'] = $arrayReviews;
-    } else {
-      $this->data['reviews'] = [];
-    }
-
     return view('home', $this->data);
   }
 }

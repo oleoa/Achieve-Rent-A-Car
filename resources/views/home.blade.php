@@ -17,20 +17,20 @@
       <!-- Carousel Slide -->
       <div id="carousel-slide-reviews" class="grid transition-transform duration-500 w-full px-4 pb-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) calc(100%/3) @endfor">
         
-        @for ($i = 1; $i <= count($reviews); $i++)
+        @foreach ($reviews as $review)
         
           <!-- Carousel Item -->
-          <div class="reviews-item w-full p-4 cursor-pointer" id="{{$i-1}}-reviews">
+          <div class="reviews-item w-full p-4 cursor-pointer" id="{{$review['order']}}-reviews" style="order: {{$review['order']}};">
     
             <div class="flex flex-col justify-start items-center h-full p-6 gap-4 rounded-lg shadow-2xl bg-white">
   
               <div class="flex w-full gap-8 items-start">
                 
-                <img src="{{$reviews[$i]['photo']}}" alt="Valentina Vucicic" class="h-20 w-20">
+                <img src="{{$review['image']}}" alt="Valentina Vucicic" class="h-20 w-20">
                 
                 <div class="flex flex-col gap-2">
   
-                  <h2 class="font-bold">{{$reviews[$i]['name']}}</h2>
+                  <h2 class="font-bold">{{$review['name']}}</h2>
           
                   <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>              
   
@@ -38,13 +38,19 @@
   
               </div>
   
-              <p class="font-semibold text-start w-full">{{$reviews[$i]['comment'][$language]}}</p>
+              <p class="font-semibold text-start w-full">
+                @if ($language == 'pt')
+                  {{$review['comentario']}}  
+                @elseif ($language == 'en')
+                  {{$review['comment']}}
+                @endif
+              </p>
     
             </div>
     
           </div>
         
-        @endfor
+        @endforeach
     
       </div>
     
@@ -69,26 +75,32 @@
       <!-- Carousel Slide -->
       <div id="carousel-slide-reviews-mobile" class="grid transition-transform duration-500 w-full xl:py-8 pb-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) 100% @endfor">
       
-        @for ($i = 1; $i <= count($reviews); $i++)
+        @foreach ($reviews as $review)
             
           <!-- Carousel Item -->
-          <div class="reviews-mobile-item w-full p-4" id="{{$i-1}}-reviews-mobile">
+          <div class="reviews-mobile-item w-full p-4" id="{{$review['order']}}-reviews-mobile" style="order: {{$review['order']}};">
     
             <div class="flex flex-col justify-start items-center h-full p-6 gap-4 rounded-md shadow-2xl bg-white">
     
-              <img src="{{$reviews[$i]['photo']}}" alt="Valentina Vucicic" class="h-20 w-20">
+              <img src="{{$review['image']}}" alt="Valentina Vucicic" class="h-20 w-20">
       
-              <h2 class="font-bold">{{$reviews[$i]['name']}}</h2>
+              <h2 class="font-bold">{{$review['name']}}</h2>
       
               <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
       
-              <p>{{$reviews[$i]['comment'][$language]}}</p>
+              <p>
+                @if ($language == 'pt')
+                  {{$review['comentario']}}  
+                @elseif ($language == 'en')
+                  {{$review['comment']}}
+                @endif
+              </p>
     
             </div>
     
           </div>
           
-        @endfor
+        @endforeach
     
       </div>
     
