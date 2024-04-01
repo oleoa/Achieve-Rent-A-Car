@@ -79,10 +79,10 @@
     <nav class="fixed top-0 left-0 w-full flex flex-col z-30 xl:pl-16">
 
       <!-- Navbar -->
-      <div class="w-screen bg-white xl:hidden flex gap-4 p-4">
+      <div class="w-screen bg-white flex gap-4 p-4">
         
         <button title="@lang('menu.button.title')" id="menu-mobile" @class([
-          "hover:bg-flagRed hover:text-white",
+          "hover:bg-flagRed hover:text-white xl:hidden",
           "h-12 flex items-center rounded-md text-flagRed w-min"
         ])>
           <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
@@ -116,13 +116,13 @@
 
     <!-- Sidebar -->
     <aside @class([
-        'lg:w-16 w-48 h-full fixed left-0 top-0 bg-white z-40 lg:[&>a>span]:hidden p-2 flex flex-col gap-2 transition-all duration-500 lg:-translate-x-0 -translate-x-full',
+        'xl:w-16 w-48 h-full fixed left-0 top-0 bg-white z-40 xl:[&>a>span]:hidden p-2 flex flex-col gap-2 transition-all duration-500 xl:-translate-x-0 -translate-x-full',
         'hover:w-48 [&>a>span]:hover:block'
       ]) id="sidebar">
 
       <!-- Menu -->
       <button title="@lang('menu.button.title')" id="menu" @class([
-        'lg:flex hidden',
+        'xl:flex hidden',
         "hover:bg-flagRed hover:text-white",
         "h-12 items-center rounded-md text-flagRed w-min"
       ])>
@@ -131,7 +131,7 @@
 
       <!-- Close Menu -->
       <button title="@lang('menu.button.title')" id="close-menu" @class([
-        'lg:hidden flex',
+        'xl:hidden flex',
         "hover:bg-flagRed hover:text-white",
         "h-12 items-center rounded-md text-flagRed w-min pl-auto"
       ])>
@@ -245,7 +245,7 @@
     </div>
 
     <!-- Main Content -->
-    <main class="row-span-1 lg:pl-16">
+    <main class="row-span-1 xl:pl-16">
 
       @yield('main')
 
