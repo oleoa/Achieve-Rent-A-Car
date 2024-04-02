@@ -2,7 +2,7 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <div id="system" class="xl:pt-4 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col" style="background-image: url('/img/main/1.jpg')">
+  <div id="system" class="xl:pt-16 pb-16 bg-no-repeat bg-cover bg-bottom flex flex-col gap-8" style="background-image: url('/img/main/1.jpg')">
 
     <article class="px-default py-4">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
@@ -140,7 +140,7 @@
   </div>
 
   <!-- New Why Choose Achieve -->
-  <article class="grid lg:grid-cols-7 px-default gap-12 py-8">
+  <article class="grid lg:grid-cols-7 px-default gap-12 py-16">
 
     <div class="lg:col-span-3 flex flex-col gap-4">
       <h3 class="text-xl gap-2 flex items-center"><i class="fa-solid fa-user-shield text-flagRed"></i>@lang('home.why.achieve.subtitle')</h3>
@@ -216,7 +216,7 @@
   </article>
 
   <!-- Poem -->
-  <div class="w-full px-default flex flex-col gap-4 py-8 bg-flagRed/70 text-white">
+  <div class="w-full px-default flex flex-col gap-4 py-16 bg-flagRed/70 text-white">
 
     <h2 class="text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
 
@@ -246,7 +246,7 @@
   </div>
 
   <!-- Pleasant Experience -->
-  <div class="py-8 flex flex-col gap-8">
+  <div class="py-16 flex flex-col gap-8">
 
     <!-- Cards -->
     <div class="grid lg:grid-cols-2 w-full px-default gap-4">
@@ -284,7 +284,7 @@
   </div>
 
   <!-- Explore Madeira -->
-  <div class="py-8 flex flex-col gap-8 px-default bg-flagRed/70 text-white">
+  <div class="py-16 flex flex-col gap-8 px-default bg-flagRed/70 text-white">
   
     <!-- Content -->
     <div class="w-full flex flex-col items-center gap-8">
