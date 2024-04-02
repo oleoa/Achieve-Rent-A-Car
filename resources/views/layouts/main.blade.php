@@ -54,6 +54,11 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous"></script>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+
     <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -63,7 +68,7 @@
   </head>
 
   <!-- Body -->
-  <body class="min-h-screen grid grid-rows-1">
+  <body class="min-h-screen grid grid-rows-1 maven-pro">
 
     @if ($locale != 'locale' && $locale != 'local')
 
