@@ -44,9 +44,6 @@ body::-webkit-scrollbar {
   border-radius: 0.375rem/* 6px */;
 }
 
-.maven-pro {
-  font-family: "Maven Pro", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.px-default {
+  @apply 2xl:px-64 xl:px-32 px-4;
 }

@@ -54,11 +54,6 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous"></script>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
-
     <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -68,7 +63,7 @@
   </head>
 
   <!-- Body -->
-  <body class="min-h-screen grid grid-rows-1 maven-pro">
+  <body class="min-h-screen grid grid-rows-1">
 
     @if ($locale != 'locale' && $locale != 'local')
 
@@ -86,22 +81,6 @@
 
     <!-- Header Content -->
     <nav class="fixed top-0 left-0 w-full flex flex-col z-30">
-
-      <!-- Navbar -->
-      <div class="w-screen bg-white flex gap-4 p-4">
-        
-        <button title="@lang('menu.button.title')" id="menu-mobile" @class([
-          "hover:bg-flagRed hover:text-white xl:hidden",
-          "h-12 flex items-center rounded-md text-flagRed w-min"
-        ])>
-          <i class="fa-solid fa-bars min-w-12 flex items-center justify-center"></i>
-        </button>
-
-        <a href="{{route('home', ['locale' => $locale])}}" class="w-full flex items-center justify-center">
-          <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent A Car Logo" class="h-12 object-contain">
-        </a>
-
-      </div>
 
       <!-- Discounts -->
       @if(isset($discount) && $discount)
@@ -123,131 +102,10 @@
         </div>
       @endif
 
+      <!-- Navbar -->
+      <x-navbar :locale="$locale" :language="$language"/>
+
     </nav>
-
-    <!-- Sidebar -->
-    <aside @class([
-        'xl:w-16 w-48 h-full fixed left-0 top-0 bg-white z-40 xl:[&>a>span]:hidden p-2 flex flex-col gap-2 transition-all duration-500 xl:-translate-x-0 -translate-x-full',
-        'hover:w-48 [&>a>span]:hover:block'
-      ]) id="sidebar">
-
-      <!-- Menu -->
-      <button title="@lang('menu.button.title')" id="menu" @class([
-        'xl:flex hidden',
-        "hover:bg-flagRed hover:text-white",
-        "h-12 items-center rounded-md text-flagRed w-min"
-      ])>
-        <i class="fa-solid fa-bars min-w-12 flex items-center justify-center" id="menu-icon"></i>
-      </button>
-
-      <!-- Close Menu -->
-      <button title="@lang('menu.button.title')" id="close-menu" @class([
-        'xl:hidden flex',
-        "hover:bg-flagRed hover:text-white",
-        "h-12 items-center rounded-md text-flagRed w-min pl-auto"
-      ])>
-        <i class="fa-solid fa-xmark min-w-12 flex items-center justify-center"></i>
-      </button>
-
-      <!-- Home -->
-      <a title="@lang('menu.home.title')" href="{{route('home', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'home'
-      ])>
-        <i class="fa-solid fa-house min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.home')</span>
-      </a>
-
-      <!-- Fleet -->
-      <a title="@lang('menu.fleet.title')" href="{{route('fleet', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'fleet'
-      ])>
-        <i class="fa-solid fa-car-rear min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.fleet')</span>
-      </a>
-
-      <!-- Car Seats -->
-      <a title="@lang('menu.seats.title')" href="{{route('seats', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'seats'
-      ])>
-        <i class="fa-solid fa-baby min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.seats')</span>
-      </a>
-
-      <!-- Local Accommodation -->
-      <a title="@lang('menu.stays.title')" href="{{route('home', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white hidden",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'stays'
-      ])>
-        <i class="fa-solid fa-bed min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.stays')</span>
-      </a>
-
-      <!-- Recommendations -->
-      <a title="@lang('menu.recommendations.title')" href="{{route('home', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white hidden",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'recommendations'
-      ])>
-        <i class="fa-solid fa-utensils min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.recommendations')</span>
-      </a>
-
-      <!-- About Us -->
-      <a title="@lang('menu.about.title')" href="{{route('about', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'about'
-      ])>
-        <i class="fa-solid fa-people-group min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.about')</span>
-      </a>
-
-      <!-- FAQ -->
-      <a title="@lang('menu.faq.title')" href="{{route('faq', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'faq'
-      ])>
-        <i class="fa-solid fa-circle-question min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.faq')</span>
-      </a>
-
-      <!-- Contact -->
-      <a title="@lang('menu.contact.title')" href="{{route('contact', ['locale' => $locale])}}" @class([
-        "hover:bg-flagRed hover:text-white",
-        "h-12 flex items-center rounded-md text-flagRed",
-        'bg-flagRed/70 text-white' => $current == 'contact'
-      ])>
-        <i class="fa-solid fa-envelope-open-text min-w-12 flex items-center justify-center"></i>
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.contact')</span>
-      </a>
-
-      <!-- English -->
-      <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'locale' : 'en'])}}" @class([
-        'h-12 flex items-center text-flagRed hover:bg-flagRed hover:text-white rounded-md mt-auto',
-        'bg-flagRed/70 text-white' => $language == 'en'
-      ])>
-        <img src="{{asset('/img/flags/en.png')}}" alt="England Flag" class="px-3 max-w-12">
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.en')</span>
-      </a>
-
-      <!-- Portuguese -->
-      <a title="@lang('menu.pt.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'local' : 'pt'])}}" @class([
-        'h-12 flex items-center text-flagRed hover:bg-flagRed hover:text-white rounded-md',
-        'bg-flagRed/70 text-white' => $language == 'pt'
-      ])>
-        <img src="{{asset('/img/flags/pt.png')}}" alt="Portugal Flag" class="px-3 max-w-12">
-        <span class="whitespace-nowrap overflow-x-hidden">@lang('menu.pt')</span>
-      </a>
-
-    </aside>
 
     <!-- Loader -->
     <div role="status" id="loading" class="hidden h-screen w-screen bg-zinc-200/70 z-50 fixed top-0 left-0 items-center justify-center">
@@ -256,14 +114,14 @@
     </div>
 
     <!-- Main Content -->
-    <main class="row-span-1 xl:pl-16">
+    <main class="row-span-1" id="mainContent">
 
       @yield('main')
 
     </main>
 
     <!-- Footer -->
-    <footer class="w-full xl:pl-80 xl:pr-64 px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-20">
+    <footer class="w-full xl:px-64 px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-20">
 
       <!-- Links -->
       <div class="hidden gap-4 text-white justify-center items-center">
