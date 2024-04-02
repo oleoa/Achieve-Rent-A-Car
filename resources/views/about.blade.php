@@ -10,15 +10,18 @@
 
     @for ($i = 1; $i <= 3; $i++)
         
-      <div class="grid xl:grid-cols-5 py-4 gap-8 justify-center">
+      <div class="grid xl:grid-cols-2 py-12 gap-12 justify-center">
         <div @class([
-          "flex flex-col gap-4 xl:col-span-3",
+          "flex flex-col gap-8",
           "xl:order-2" => ($i % 2 == 0),
         ])>
-          <h2 class="font-semibold">@lang('about.item.'.$i.'.title')</h2>
+          <h2 class="font-semibold">
+            @lang('about.item.'.$i.'.title')
+            <span class="w-full h-0.5 my-2 bg-flagRed/50 rounded-full flex"></span>
+          </h2>
           <p>@lang('about.item.'.$i.'.paragraph')</p>
         </div>
-        <img src="{{url('/img/pages/about/'.$i.'.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl h-full object-cover xl:col-span-2">
+        <img src="{{url('/img/pages/about/'.$i.'.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl w-full h-full object-cover">
       </div>
 
     @endfor
