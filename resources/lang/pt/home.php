@@ -4,21 +4,30 @@ return
 [
   'reviews.title' => 'O que os nossos clientes dizem',
 
-  'why.achieve.subtitle' => 'Por que Achieve?',
-  'why.achieve.title' => 'O Diferencial<br>Da Achieve',
-  'why.achieve.paragraph' => 'Na Achieve Rent a Car, apostamos em proporcionar a melhor experiência ao cliente, para que <b>você</b> possa tirar o melhor partido da Ilha da Madeira.<br>Com <b>clientes totalmente satisfeitos</b>, um <b>contratação rápida, fácil e sem complicações</b> e um <b>serviço expresso</b> nós da <b>Achieve Rent A Car</b> iremos oferecer-lhe a melhor experiência na Ilha da Madeira que pode Alcançar.',
+  'why.achieve.title' => 'Por que escolher<br>a Achieve Rent A Car?',
+
+  'why.achieve.paragraph' => '
+    Porque para nós <b>você é muito mais</b> do apenas um aluguer de carro.<br>
+    Priorizamos <b>a sua satisfação</b> e fazemos o nosso melhor para que você <b>sinta-se acolhido</b> e <b>alcance</b> os objetivos que deseja para a sua viagem.<br>
+    Enviaremos todas as informações de que precisa para sentir-se <b>seguro</b>, <b>bem acompanhado</b> e <b>orientado</b>.<br>
+    Veja por si mesmo como os nossos queridos clientes sentem-se em relação aos nossos serviços, visite o nosso <a target="_blank" class="text-flagRed underline font-bold" title="Clique aqui para ver as nossas reviews" href=":link">Google Reviews</a>.',
+
   'why.achieve.book.now' => 'Reserve Agora',
   'why.achieve.book.now.title' => 'Clique aqui para reservar agora',
   'why.achieve.contact.us' => 'Contate-Nos',
   'why.achieve.contact.us.title' => 'Clique aqui para entrar em contato conosco',
+
   'why.achieve.item.1.title' => 'Seguro Premium incluído',
-  'why.achieve.item.1.paragraph' => 'Na Achieve Rent A Car, entendemos que a tranquilidade é fundamental quando você pega a estrada. É por isso que selecionamos um pacote abrangente de Seguro Premium, meticulosamente projetado para proteger sua viagem contra contratempos inesperados.',
-  'why.achieve.item.2.title' => 'Receba e devolva onde estiver, chave na mão',
-  'why.achieve.item.2.paragraph' => 'Na Achieve Rent A Car, oferecemos conveniência pronta para uso com nosso serviço "Receber e devolver no seu local". Basta nos dizer onde você precisa do carro e nós cuidaremos do resto. É um aluguel descomplicado, feito sob medida para sua conveniência.',
+  'why.achieve.item.1.paragraph' => 'Entendemos que a <b>tranquilidade</b> é fundamental quando você viaja. É por isso que incluímos o <b>Seguro Premium</b>, com <b>isenção de franquia</b> e com a <b>abrangência</b> que você precisa para proteger-se de contratempos inesperados.',
+  
+  'why.achieve.item.2.title' => 'Receba e devolva onde estiver',
+  'why.achieve.item.2.paragraph' => 'Seja à porta do aeroporto ou do seu hotel, receba no <b>seu lugar de escolha</b> e devolva <b>onde preferir</b>. Sem filas, sem esperas e sem longas caminhadas.',
+  
   'why.achieve.item.3.title' => 'Sem necessidade de cartão de crédito',
-  'why.achieve.item.3.paragraph' => 'Na Achieve Rent A Car, acreditamos em aluguéis sem complicações. É por isso que oferecemos uma opção de reserva sem necessidade de cartão de crédito. Basta reservar seu veículo com facilidade e aproveitar a viagem sem preocupações.',
+  'why.achieve.item.3.paragraph' => 'Acreditamos em alugueres <b>sem complicações</b>. <b>Não exigimos cartão de crédito</b>.',
+  
   'why.achieve.item.4.title' => 'Condutor adicional gratuito',
-  'why.achieve.item.4.paragraph' => 'Na Achieve Rent A Car, facilitamos o compartilhamento das tarefas de direção. Aproveite a liberdade de um motorista adicional gratuito em cada locação. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
+  'why.achieve.item.4.paragraph' => 'Facilitamos o compartilhamento das tarefas de direção. Aproveite a liberdade de um motorista adicional gratuito em cada locação. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
 
   'poem.title' => 'Explore a beleza inigualável da Ilha da Madeira <br> De Norte a Sul, de Leste a Oeste, vá com Achieve Rent a Car',
   'poem.author' => 'Bailinho da Madeira, canção adaptada por Maximiano de Sousa, em 1949',

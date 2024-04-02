@@ -143,20 +143,25 @@
   <article class="grid lg:grid-cols-7 px-default gap-12 py-16">
 
     <div class="lg:col-span-3 flex flex-col gap-4">
-      <h3 class="text-xl gap-2 flex items-center"><i class="fa-solid fa-user-shield text-flagRed"></i>@lang('home.why.achieve.subtitle')</h3>
-      <h2 class="text-6xl">@lang('home.why.achieve.title')</h2>
+      <h2 class="text-5xl">
+        @lang('home.why.achieve.title')
+      </h2>
       <p class="text-start">
-        @lang('home.why.achieve.paragraph')
+        @lang('home.why.achieve.paragraph', ['link' => "https://www.google.com/search?sca_esv=a9443e757acfc69c&tbm=lcl&sxsrf=ACQVn0_ttAqFgT9Dzfq9tWv6-mqFV0U1xw:1711973259387&q=Achieve+Rent+a+Car+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2NDEzM7UwNjQxMDMxMrU0NjMz2MDI-IpRyjE5IzO1LFUhKDWvRCFRwTmxCMgsy0wtL17EikcSAB9GV0BUAAAA&rldimm=9466583140642593660&hl=en-PT&sa=X&ved=2ahUKEwiogPav_aCFAxVsRqQEHXMyAkIQ9fQKegQIPxAF&biw=1626&bih=1035&dpr=1#lkt=LocalPoiReviews"])
       </p>
       <div class="flex gap-4">
-        <button title="@lang('home.why.achieve.book.now.title')" class="scrollToTopBtn flex gap-2 items-center text-flagRed hover:text-red-400" href="#system">@lang('home.why.achieve.book.now')<i class="fa-solid fa-angle-right"></i></button>
-        <a title="@lang('home.why.achieve.contact.us.title')" class="text-flagRed flex items-center gap-2" href="{{route('contact', ['locale' => $locale])}}">@lang('home.why.achieve.contact.us')<i class="fa-solid fa-angle-right"></i></a>
+        <button title="@lang('home.why.achieve.book.now.title')" class="scrollToTopBtn flex gap-2 items-center text-flagRed hover:text-red-400 font-bold underline" href="#system">
+          @lang('home.why.achieve.book.now')
+        </button>
+        <a title="@lang('home.why.achieve.contact.us.title')" class="text-flagRed flex items-center gap-2 font-bold underline" href="{{route('contact', ['locale' => $locale])}}">
+          @lang('home.why.achieve.contact.us')
+        </a>
       </div>
     </div>
 
     <div class="lg:col-span-4 flex lg:flex-row flex-col gap-4">
 
-      <div class="w-full flex flex-col lg:pt-16 gap-4">
+      <div class="w-full flex flex-col lg:pt-32 gap-4">
 
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
@@ -185,7 +190,7 @@
       <span class="w-1 h-full bg-flagRed lg:block hidden"></span>
       <span class="w-full h-0.5 bg-flagRed block lg:hidden"></span>
 
-      <div class="w-full flex flex-col lg:pb-16 gap-4">
+      <div class="w-full flex flex-col lg:pb-32 gap-4">
 
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-4">
