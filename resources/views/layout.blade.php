@@ -54,6 +54,21 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous"></script>
 
+    <style>
+
+      #system {
+        background-image: url('{{ asset('/img/main/1-phone.jpg') }}');
+      }
+  
+      @media (min-width: 425px) {
+        #system {
+          background-image: url('{{ asset('/img/main/1.jpg') }}');
+        }
+      }
+
+  </style>
+  
+
     <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
