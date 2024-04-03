@@ -1,7 +1,7 @@
 <?php
 
 return [
-  'button.title' => 'Click here to toggle the menu view',
+  'toggle.title' => 'Click here to toggle the menu view',
   'home' => 'Home',
   'home.title' => 'Click here to see our home page',
   'fleet' => 'Fleet',

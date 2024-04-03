@@ -1,7 +1,7 @@
 <?php
 
 return [
-  'button.title' => 'Clique aqui para alternar a visualização do menu',
+  'toggle.title' => 'Clique aqui para alternar a visualização do menu',
   'home' => 'Início',
   'home.title' => 'Clique aqui para ver a nossa página inicial',
   'fleet' => 'Frota',

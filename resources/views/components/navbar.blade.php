@@ -3,7 +3,7 @@
     "[&>a]:flex [&>a]:items-center [&>a]:justify-center text-flagRed/40 hover:[&>a]:text-flagRed [&>a]:h-fit",
 ])>
 
-    <button class="absolute left-0 px-8 py-2 lg:hidden sidebar-toggle">
+    <button title="@lang('menu.toggle.title')" class="absolute left-0 px-8 py-2 lg:hidden sidebar-toggle">
         <i class="fas fa-bars text-flagRed text-xl"></i>
     </button>
 
@@ -19,7 +19,7 @@
             "flex-col p-4 bg-flagRed items-start left-0 top-0 h-full relative", {{-- Phone --}}
         ])>
 
-            <button class="absolute right-0 top-0 p-4 lg:hidden sidebar-toggle">
+            <button title="@lang('menu.toggle.title')" class="absolute right-0 top-0 p-4 lg:hidden sidebar-toggle">
                 <i class="fas fa-xmark text-white text-xl"></i>
             </button>
 
