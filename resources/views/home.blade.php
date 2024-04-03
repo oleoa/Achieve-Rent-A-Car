@@ -140,9 +140,9 @@
   </div>
 
   <!-- New Why Choose Achieve -->
-  <article class="grid lg:grid-cols-7 px-default gap-12 py-16">
+  <article class="grid lg:grid-cols-2 px-default gap-12 py-16">
 
-    <div class="lg:col-span-3 flex flex-col gap-4">
+    <div class="flex flex-col gap-4">
       <h2 class="text-5xl">
         @lang('home.why.achieve.title')
       </h2>
@@ -159,7 +159,7 @@
       </div>
     </div>
 
-    <div class="lg:col-span-4 flex lg:flex-row flex-col gap-4">
+    <div class="flex lg:flex-row flex-col gap-4">
 
       <div class="w-full flex flex-col lg:pt-32 gap-4">
 
