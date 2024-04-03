@@ -6,7 +6,7 @@
     <h1 class="text-white text-center font-black text-6xl">@lang('contact.banner')</h1>
   </div>
 
-  <div class="xl:px-64 xl:grid xl:grid-cols-3 px-4 py-8">
+  <div class="xl:grid xl:grid-cols-3 px-default py-8">
       
     <div class="xl:flex xl:flex-col flex flex-col items-center md:grid md:grid-cols-2 gap-4 col-span-1 pb-4 order-2 p-4">
 

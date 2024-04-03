@@ -24,7 +24,7 @@
   </div>
 
     <!-- Questions -->
-    <div class="xl:px-64 px-4 text-white flex flex-col gap-2 pb-4">
+    <div class="px-default text-white flex flex-col gap-2 pb-4">
 
       @foreach ($faq as $f)
 

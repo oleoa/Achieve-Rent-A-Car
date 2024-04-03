@@ -121,7 +121,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full xl:px-64 px-4 bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-20">
+    <footer class="w-full px-default bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-20">
 
       <!-- Links -->
       <div class="hidden gap-4 text-white justify-center items-center">

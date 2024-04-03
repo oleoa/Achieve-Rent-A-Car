@@ -6,7 +6,7 @@
     <h1 class="text-white text-center font-black text-6xl">@lang('recommendations.banner')</h1>
   </div>
   
-  <article class="grid grid-cols-3 gap-4 py-4 2xl:px-64 lg:px-20 px-4">
+  <article class="grid grid-cols-3 gap-4 py-4 px-default">
 
     @foreach ($recommendations as $r)
       @if ($r['active'])

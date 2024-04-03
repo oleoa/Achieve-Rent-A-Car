@@ -2,7 +2,7 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <div id="system" class="xl:pt-16 pb-16 bg-no-repeat bg-cover bg-bottom flex flex-col gap-8" style="background-image: url('/img/main/1.jpg')">
+  <div id="system" class="xl:pt-16 xl:pb-16 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col xl:gap-8" style="background-image: url('/img/main/1.jpg')">
 
     <article class="px-default py-4">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>

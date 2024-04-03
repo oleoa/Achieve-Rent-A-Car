@@ -2,7 +2,7 @@
 @php $title = 'title.privacy'; @endphp
 @section('main')
 
-  <div class="md:px-64 px-4 py-4 flex flex-col gap-4">
+  <div class="px-default py-4 flex flex-col gap-4">
 
     <h1 class="text-3xl md:text-4xl md:text-start text-center">@lang('privacy.title')</h1>
     <p>@lang('privacy.paragraph')</p>

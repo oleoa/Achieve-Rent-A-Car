@@ -11,7 +11,7 @@
   <div class="py-4 flex flex-col gap-8">
   
     <!-- Content -->
-    <div class="w-full xl:px-64 px-4 grid md:grid-cols-2 grid-cols-1 gap-4">
+    <div class="w-full px-default grid md:grid-cols-2 grid-cols-1 gap-4">
 
       <!-- Text -->
       <div class="flex flex-col md:items-start items-center justify-center gap-4 order-1">

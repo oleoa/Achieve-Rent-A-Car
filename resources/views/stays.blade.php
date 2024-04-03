@@ -6,7 +6,7 @@
     <h1 class="text-white text-center font-black text-6xl">@lang('stays.banner')</h1>
   </div>
 
-  <article class="lg:px-32 p-4">
+  <article class="px-default py-4">
 
     <section class="shadow-2xl grid grid-cols-3 gap-4 p-4 rounded-md">
       <div class="flex flex-col gap-4">

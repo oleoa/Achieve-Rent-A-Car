@@ -6,14 +6,14 @@
     <h1 class="text-white text-center font-black text-6xl">@lang('about.banner')</h1>
   </div>
 
-  <div class="w-full md:px-64 px-4 flex flex-col gap-4 pb-12">
+  <div class="w-full px-default flex flex-col gap-4 pb-12">
 
     @for ($i = 1; $i <= 3; $i++)
         
-      <div class="grid xl:grid-cols-2 py-12 gap-12 justify-center">
+      <div class="grid lg:grid-cols-2 py-12 gap-12 justify-center">
         <div @class([
           "flex flex-col gap-8",
-          "xl:order-2" => ($i % 2 == 0),
+          "lg:order-2" => ($i % 2 == 0),
         ])>
           <h2 class="font-semibold">
             @lang('about.item.'.$i.'.title')

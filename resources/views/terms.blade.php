@@ -2,7 +2,7 @@
 @php $title = 'title.terms'; @endphp
 @section('main')
 
-  <article class="text-start xl:px-64 px-4 py-4 space-y-4">
+  <article class="text-start px-default py-4 space-y-4">
       
     <h3>
       @lang('terms.title')
