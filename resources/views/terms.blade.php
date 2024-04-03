@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layout')
 @php $title = 'title.terms'; @endphp
 @section('main')
 

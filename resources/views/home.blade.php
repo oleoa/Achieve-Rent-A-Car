@@ -1,7 +1,8 @@
-@extends('layouts.main')
+@extends('layout')
 @php $title = 'title.home'; @endphp
 @section('main')
 
+  {{--
   <div id="system" class="xl:pt-16 pb-16 bg-no-repeat bg-cover bg-bottom flex flex-col gap-8" style="background-image: url('/img/main/1.jpg')">
 
     <article class="px-default py-4">
@@ -138,6 +139,7 @@
     @endif
 
   </div>
+  --}}
 
   <!-- New Why Choose Achieve -->
   <article class="grid lg:grid-cols-2 px-default gap-12 py-16">

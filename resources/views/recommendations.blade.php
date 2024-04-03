@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layout')
 @php $title = 'title.recommendations'; @endphp
 @section('main')
 
