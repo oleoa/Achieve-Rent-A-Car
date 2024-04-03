@@ -90,7 +90,7 @@
       
               <div class="flex flex-col justify-start items-center h-full p-6 gap-4 rounded-md shadow-2xl bg-white">
       
-                <img src="{{$review['image']}}" alt="Valentina Vucicic" class="h-20 w-20">
+                <img src="{{$review['image']}}" alt="Valentina Vucicic" height="80" width="80" class="h-20 w-20">
         
                 <h2 class="font-bold">{{$review['name']}}</h2>
         
