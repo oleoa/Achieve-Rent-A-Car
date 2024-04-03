@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\File;
-use Illuminate\Http\Request;
-use App\Models\Review;
 
 class Home extends Controller
 {
@@ -15,8 +13,8 @@ class Home extends Controller
     $this->isCurrent('home');
     $this->setDiscount();
     $this->createView();
-    $this->data['reviews'] = Review::all();
-
+    $this->data['reviews'] = json_decode(File::get(public_path('reviews.json')), true);
+    
     return view('home', $this->data);
   }
 }
