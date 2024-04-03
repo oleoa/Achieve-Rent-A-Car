@@ -118,7 +118,7 @@
           <input type="hidden" id="carousel-selected-indicator-color-reviews-mobile" value="bg-white">
 
           <!-- Previous Button -->
-          <button class="cursor-pointer w-8 h-8 bg-white text-black rounded-full flex items-center justify-center" id="prevBtn-reviews-mobile">
+          <button title="@lang('home.reviews.previous.title')" class="cursor-pointer w-8 h-8 bg-white text-black rounded-full flex items-center justify-center" id="prevBtn-reviews-mobile">
             <i class="fas fa-arrow-left text-lg"></i>
           </button>
 
@@ -133,7 +133,7 @@
           </div>
       
           <!-- Next Button -->
-          <button class="cursor-pointer w-8 h-8 bg-white text-black rounded-full flex items-center justify-center" id="nextBtn-reviews-mobile">
+          <button title="@lang('home.reviews.next.title')" class="cursor-pointer w-8 h-8 bg-white text-black rounded-full flex items-center justify-center" id="nextBtn-reviews-mobile">
             <i class="fas fa-arrow-right text-lg"></i>
           </button>
       
@@ -188,7 +188,7 @@
   </article>
 
   <!-- Explore Madeira -->
-  <div class="py-16 flex flex-col gap-8 px-default bg-flagRed/70 text-white">
+  <div class="py-16 flex flex-col gap-8 px-default">
   
     <!-- Content -->
     <div class="w-full flex flex-col items-center gap-8">
@@ -206,7 +206,7 @@
       <div class="grid lg:grid-cols-3 gap-4 w-full">
         @php $icons = ['fa-car-rear', 'fa-lock', 'fa-headset'] @endphp
         @for ($i = 1; $i <= 3; $i++)
-          <div class="md:grid md:grid-rows-3 flex flex-col gap-4 md:gap-0 items-center justify-items-center bg-flagRed/70 rounded-lg shadow-2xl md:p-8 p-4">
+          <div class="md:grid md:grid-rows-3 border-b-4 border-flagRed flex flex-col gap-4 md:gap-0 items-center justify-items-center rounded-lg shadow-2xl md:p-8 p-4">
             <i class="fa-solid {{$icons[$i-1]}} text-5xl py-4"></i>
             <h2 class="text-center">@lang('home.explore.card.'.$i.'.title')</h2>
             <p>@lang('home.explore.card.'.$i.'.paragraph')</p>
@@ -226,7 +226,7 @@
 
       <h2 class="lg:col-span-2 py-4 text-center font-bold text-4xl">@lang('home.pleasant.experience.title')</h2>
 
-      <div class="rounded-lg shadow-2xl">
+      <div class="rounded-lg shadow-2xl border-b-4 border-flagRed">
         <img src="{{asset('/img/pages/home/2.png')}}" alt="@lang('home.pleasant.experience.card.1.image')" class="rounded-t-lg w-full">
         <div class="p-4">
           <h3 class="text-2xl font-bold">@lang('home.pleasant.experience.card.1.title')</h3>
@@ -242,7 +242,7 @@
         </div>
       </div>
 
-      <div class="rounded-lg shadow-2xl">
+      <div class="rounded-lg shadow-2xl border-b-4 border-flagRed">
         <img src="{{asset('/img/pages/home/3.png')}}" alt="@lang('home.pleasant.experience.card.2.image')" class="rounded-t-lg w-full">
         <div class="p-4">
           <h3 class="text-2xl font-bold">@lang('home.pleasant.experience.card.2.title')</h3>

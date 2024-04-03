@@ -3,6 +3,8 @@
 return
 [
   'reviews.title' => 'Our customer reviews',
+  'reviews.previous.title' => 'Previous review',
+  'reviews.next.title' => 'Next review',
 
   'why.achieve.title' => 'Why Choose Achieve Rent A Car?',
   'why.achieve.paragraph' => 'Because to us <b>you are much more</b> than just a car rental.<br>We prioritize <b>your satisfaction</b> and do our best to make you <b>feel welcomed</b> and <b>achieve</b> the goals you desire for your trip.<br>We will provide all the information you need to feel <b>safe</b>, <b>well accompanied</b>, and <b>guided</b>.<br>Check out how our customers feel about our services, access our <a target="_blank" class="text-flagRed underline font-bold" title="Click here to see our reviews" href=":link">Google Reviews</a>.',

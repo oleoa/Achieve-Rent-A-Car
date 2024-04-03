@@ -18,30 +18,30 @@
     <meta name="description" content="@lang('meta.description')">
 
     <!-- Languages For Search Engine Optimization -->
-    <link rel="alternate" href="https://achieverentacar.com/" hreflang="x-default"/>
-    <link rel="alternate" href="https://achieverentacar.com/en" hreflang="en"/>
-    <link rel="alternate" href="https://achieverentacar.com/en/about" hreflang="en"/>
-    <link rel="alternate" href="https://achieverentacar.com/en/faq" hreflang="en"/>
-    <link rel="alternate" href="https://achieverentacar.com/en/contact" hreflang="en"/>
-    <link rel="alternate" href="https://achieverentacar.com/en/terms" hreflang="en"/>
-    <link rel="alternate" href="https://achieverentacar.com/en/privacy" hreflang="en"/>
-    <link rel="alternate" href="https://achieverentacar.com/pt" hreflang="pt"/>
-    <link rel="alternate" href="https://achieverentacar.com/pt/about" hreflang="pt"/>
-    <link rel="alternate" href="https://achieverentacar.com/pt/faq" hreflang="pt"/>
-    <link rel="alternate" href="https://achieverentacar.com/pt/contact" hreflang="pt"/>
-    <link rel="alternate" href="https://achieverentacar.com/pt/terms" hreflang="pt"/>
-    <link rel="alternate" href="https://achieverentacar.com/pt/privacy" hreflang="pt"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/" hreflang="x-default"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/en" hreflang="en"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/en/about" hreflang="en"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/en/faq" hreflang="en"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/en/contact" hreflang="en"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/en/terms" hreflang="en"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/en/privacy" hreflang="en"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/pt" hreflang="pt"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/pt/about" hreflang="pt"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/pt/faq" hreflang="pt"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/pt/contact" hreflang="pt"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/pt/terms" hreflang="pt"/>
+    <link rel="alternate" href="{{env('APP_URL')}}/pt/privacy" hreflang="pt"/>
     
     <!-- Canonical Pages For Search Engine Optimization -->
-    <link rel="canonical" href="https://achieverentacar.com/en"/>
+    <link rel="canonical" href="{{env('APP_URL')}}/en"/>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="@lang('meta.facebook.title')"/>
     <meta property="og:description" content="@lang('meta.facebook.description')"/>
     <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="Achieve Rent a Car"/>
-    <meta property="og:url" content="https://achieverentacar.com/en"/>
-    <meta property="og:image" content="https://achieverentacar.com/img/main/2.jpg"/>
+    <meta property="og:url" content="{{env('APP_URL')}}/en"/>
+    <meta property="og:image" content="{{env('APP_URL')}}/img/main/2.jpg"/>
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary"/>
@@ -49,7 +49,7 @@
     <meta name="twitter:title" content="@lang('meta.twitter.title')"/>
     <meta name="twitter:description" content="@lang('meta.twitter.description')"/>
     <meta name="twitter:creator" content="@o_leo_a"/>
-    <meta name="twitter:image" content="https://achieverentacar.com/img/main/2.jpg"/>
+    <meta name="twitter:image" content="{{env('APP_URL')}}/img/main/2.jpg"/>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous"></script>
@@ -142,7 +142,7 @@
       <div class="bg-flagYellow w-full h-1 rounded hidden"></div>
 
       <!-- Legal -->
-      <p class="text-white flex md:flex-row flex-col gap-1">
+      <p class="text-white flex md:flex-row flex-col gap-1 text-lg">
         <a class="hover:text-white hover:underline" title="@lang('footer.terms.title')" href="{{route('terms', $locale)}}">@lang('footer.terms')</a>
         <a class="hover:text-white hover:underline" title="@lang('footer.privacy.title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
       </p>
