@@ -52,7 +52,7 @@
     <meta name="twitter:image" content="{{env('APP_URL')}}/img/main/2.jpg"/>
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous" defer></script>
 
     <style>
 

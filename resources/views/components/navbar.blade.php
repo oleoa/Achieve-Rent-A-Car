@@ -76,11 +76,11 @@
             <div class="flex flex-row gap-4 justify-start lg:p-0 p-4 lg:mt-0 mt-auto bg-white lg:w-fit w-full">
 
                 <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'locale' : 'en'])}}" class="flex gap-2 items-center">
-                    <img src="{{asset('/img/flags/en.jpg')}}" alt="England Flag" class="object-cover max-w-8 max-h-6">
+                    <img src="{{asset('/img/flags/en.jpg')}}" alt="England Flag" height="24" width="32" class="object-cover rounded">
                 </a>
             
                 <a title="@lang('menu.pt.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'local' : 'pt'])}}" class="flex gap-2 items-center">
-                    <img src="{{asset('/img/flags/pt.jpg')}}" alt="Portugal Flag" class="object-cover max-w-8 max-h-6">
+                    <img src="{{asset('/img/flags/pt.jpg')}}" alt="Portugal Flag" height="24" width="32" class="object-cover rounded">
                 </a>
 
             </div>
