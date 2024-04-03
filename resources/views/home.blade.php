@@ -2,7 +2,6 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  {{--
   <div id="system" class="xl:pt-16 pb-16 bg-no-repeat bg-cover bg-bottom flex flex-col gap-8" style="background-image: url('/img/main/1.jpg')">
 
     <article class="px-default py-4">
@@ -139,116 +138,78 @@
     @endif
 
   </div>
-  --}}
 
   <!-- New Why Choose Achieve -->
-  <article class="grid lg:grid-cols-2 px-default gap-12 py-16">
+  <article class="flex flex-col px-default gap-4 py-16">
 
-    <div class="flex flex-col gap-4">
-      <h2 class="text-5xl">
-        @lang('home.why.achieve.title')
-      </h2>
-      <p class="text-start">
-        @lang('home.why.achieve.paragraph', ['link' => "https://www.google.com/search?sca_esv=a9443e757acfc69c&tbm=lcl&sxsrf=ACQVn0_ttAqFgT9Dzfq9tWv6-mqFV0U1xw:1711973259387&q=Achieve+Rent+a+Car+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2NDEzM7UwNjQxMDMxMrU0NjMz2MDI-IpRyjE5IzO1LFUhKDWvRCFRwTmxCMgsy0wtL17EikcSAB9GV0BUAAAA&rldimm=9466583140642593660&hl=en-PT&sa=X&ved=2ahUKEwiogPav_aCFAxVsRqQEHXMyAkIQ9fQKegQIPxAF&biw=1626&bih=1035&dpr=1#lkt=LocalPoiReviews"])
-      </p>
-      <div class="flex gap-4">
-        <button title="@lang('home.why.achieve.book.now.title')" class="scrollToTopBtn flex gap-2 items-center text-flagRed hover:text-red-400 font-bold underline" href="#system">
-          @lang('home.why.achieve.book.now')
-        </button>
-        <a title="@lang('home.why.achieve.contact.us.title')" class="text-flagRed flex items-center gap-2 font-bold underline" href="{{route('contact', ['locale' => $locale])}}">
-          @lang('home.why.achieve.contact.us')
-        </a>
-      </div>
+    <h2 class="text-5xl">@lang('home.why.achieve.title')</h2>
+
+    <p class="text-start">@lang('home.why.achieve.paragraph', ['link' => "https://www.google.com/search?sca_esv=a9443e757acfc69c&tbm=lcl&sxsrf=ACQVn0_ttAqFgT9Dzfq9tWv6-mqFV0U1xw:1711973259387&q=Achieve+Rent+a+Car+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2NDEzM7UwNjQxMDMxMrU0NjMz2MDI-IpRyjE5IzO1LFUhKDWvRCFRwTmxCMgsy0wtL17EikcSAB9GV0BUAAAA&rldimm=9466583140642593660&hl=en-PT&sa=X&ved=2ahUKEwiogPav_aCFAxVsRqQEHXMyAkIQ9fQKegQIPxAF&biw=1626&bih=1035&dpr=1#lkt=LocalPoiReviews"])</p>
+
+    <div class="flex gap-4">
+
+      <button title="@lang('home.why.achieve.book.now.title')" class="scrollToTopBtn flex gap-2 items-center text-flagRed hover:text-red-400 font-bold underline" href="#system">@lang('home.why.achieve.book.now')</button>
+
+      <a title="@lang('home.why.achieve.contact.us.title')" class="text-flagRed flex items-center gap-2 font-bold underline" href="{{route('contact', ['locale' => $locale])}}">@lang('home.why.achieve.contact.us')</a>
+
     </div>
 
-    <div class="flex lg:flex-row flex-col gap-4">
+    <div class="grid lg:grid-cols-3 gap-8 py-4">
 
-      <div class="w-full flex flex-col lg:pt-32 gap-4">
-
-        <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-4">
+      @for ($i = 1; $i <= 6; $i++)
+      
+        <div class="shadow-2xl border-b-4 py-12 border-flagRed p-4 flex gap-4 items-center flex-col justify-start rounded-md">
+          @if($i == 1)
             <x-font-awesome.hand-holding-car/>
-            <h4>@lang('home.why.achieve.item.1.title')</h4>
-          </div>
-          <p class="text-start">
-            @lang('home.why.achieve.item.1.paragraph')
-          </p>
-        </div>
-
-        <span class="w-full h-0.5 bg-flagRed"></span>
-
-        <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-4">
-            <i class="fas fa-map-marked-alt text-3xl"></i>
-            <h4>@lang('home.why.achieve.item.2.title')</h4>
-          </div>
-          <p class="text-start">
-            @lang('home.why.achieve.item.2.paragraph')
-          </p>
-        </div>
-
-      </div>
-
-      <span class="w-1 h-full bg-flagRed lg:block hidden"></span>
-      <span class="w-full h-0.5 bg-flagRed block lg:hidden"></span>
-
-      <div class="w-full flex flex-col lg:pb-32 gap-4">
-
-        <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-4">
+          @elseif($i == 2)
+            <i class="fa-solid fa-map-marked-alt text-4xl"></i>
+          @elseif($i == 3)
             <x-font-awesome.no-credit-card/>
-            <h4>@lang('home.why.achieve.item.3.title')</h4>
-          </div>
-          <p class="text-start">
-            @lang('home.why.achieve.item.3.paragraph')
-          </p>
+          @elseif($i == 4)
+          <i class="fa-solid fa-person-circle-plus text-4xl"></i>
+          @elseif($i == 5)
+            <i class="fa-solid fa-headset text-4xl"></i>
+          @else
+            <i class="fa-solid fa-road-circle-check text-4xl"></i>
+          @endif
+          <h3>@lang('home.why.achieve.item.'.$i.'.title')</h3>
+          <p class="text-center">@lang('home.why.achieve.item.'.$i.'.paragraph')</p>
         </div>
 
-        <span class="w-full h-0.5 bg-flagRed"></span>
-
-        <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-4">
-            <i class="fa-solid fa-person-circle-plus text-3xl"></i>
-            <h4>@lang('home.why.achieve.item.4.title')</h4>
-          </div>
-          <p class="text-start">
-            @lang('home.why.achieve.item.4.paragraph')
-          </p>
-        </div>
-
-      </div>
+      @endfor
 
     </div>
 
   </article>
 
-  <!-- Poem -->
-  <div class="w-full px-default flex flex-col gap-4 py-16 bg-flagRed/70 text-white">
+  <!-- Explore Madeira -->
+  <div class="py-16 flex flex-col gap-8 px-default bg-flagRed/70 text-white">
+  
+    <!-- Content -->
+    <div class="w-full flex flex-col items-center gap-8">
 
-    <h2 class="text-start py-0 xl:text-4xl text-2xl">@lang('home.poem.title')</h2>
+      <!-- Text -->            
+      <div class="flex flex-col items-center justify-center gap-4 xl:w-2/3">
 
-    <div class="flex md:flex-row flex-col gap-4 p-4 bg-flagRed/70 rounded-md shadow-2xl">
-
-      <img src="{{asset('/img/pages/home/sousa.jpeg')}}" alt="Maximiano de Sousa" class="h-48 rounded-md object-cover">
-
-      <div class="flex flex-col justify-between w-full gap-4">
-
-        <h3 class="text-start py-0 xl:text-2xl text-xl">“A Madeira é um jardim, no mundo não há igual;<br>Seu encanto não tem fim, é filha de Portugal.”</h3>
-    
-        @if($language != 'pt')
-          <h3 class="text-start py-0 xl:text-2xl text-xl">@lang('home.poem.poem')</h3>
-        @endif
-        
-        <h4 class="py-0 text-sm text-start w-full">@lang('home.poem.author')</h4>
+        <h3 class="text-center py-0">@lang('home.explore.subtitle')</h3>
+        <h2 class="text-center py-0 font-bold">@lang('home.explore.title')</h2>
+        <p class="text-center">@lang('home.explore.paragraph')</p>
 
       </div>
-  
+
+      <!-- Items -->
+      <div class="grid lg:grid-cols-3 gap-4 w-full">
+        @php $icons = ['fa-car-rear', 'fa-lock', 'fa-headset'] @endphp
+        @for ($i = 1; $i <= 3; $i++)
+          <div class="md:grid md:grid-rows-3 flex flex-col gap-4 md:gap-0 items-center justify-items-center bg-flagRed/70 rounded-lg shadow-2xl md:p-8 p-4">
+            <i class="fa-solid {{$icons[$i-1]}} text-5xl py-4"></i>
+            <h2 class="text-center">@lang('home.explore.card.'.$i.'.title')</h2>
+            <p>@lang('home.explore.card.'.$i.'.paragraph')</p>
+          </div>
+        @endfor
+      </div>
 
     </div>
-
-    
-    <!-- Paragraph -->
-    <p class="xl:text-start text-justify">@lang('home.poem.paragraph')</p>
 
   </div>
 
@@ -284,37 +245,6 @@
             @lang('home.pleasant.experience.card.2.paragraph')
           </p>
         </div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- Explore Madeira -->
-  <div class="py-16 flex flex-col gap-8 px-default bg-flagRed/70 text-white">
-  
-    <!-- Content -->
-    <div class="w-full flex flex-col items-center gap-8">
-
-      <!-- Text -->            
-      <div class="flex flex-col items-center justify-center gap-4 xl:w-2/3">
-
-        <h3 class="text-center py-0">@lang('home.explore.subtitle')</h3>
-        <h2 class="text-center py-0 font-bold">@lang('home.explore.title')</h2>
-        <p class="text-center">@lang('home.explore.paragraph')</p>
-
-      </div>
-
-      <!-- Items -->
-      <div class="grid lg:grid-cols-3 gap-4 w-full">
-        @php $icons = ['fa-car-rear', 'fa-lock', 'fa-headset'] @endphp
-        @for ($i = 1; $i <= 3; $i++)
-          <div class="md:grid md:grid-rows-3 flex flex-col gap-4 md:gap-0 items-center justify-items-center bg-flagRed/70 rounded-lg shadow-2xl md:p-8 p-4">
-            <i class="fa-solid {{$icons[$i-1]}} text-5xl py-4"></i>
-            <h2 class="text-center">@lang('home.explore.card.'.$i.'.title')</h2>
-            <p>@lang('home.explore.card.'.$i.'.paragraph')</p>
-          </div>
-        @endfor
       </div>
 
     </div>

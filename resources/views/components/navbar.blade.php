@@ -25,7 +25,7 @@
 
             <a title="@lang('menu.home.title')" href="{{route('home', ['locale' => $locale])}}" @class([
                 "flex gap-2",
-                "lg:text-flagRed text-white" => $current == 'home',
+                "lg:text-flagRed text-white underline" => $current == 'home',
             ])>
                 <i class="fa-solid fa-house lg:min-w-min min-w-8 flex items-center justify-start"></i>
                 @lang('menu.home')
@@ -33,7 +33,7 @@
             
             <a title="@lang('menu.fleet.title')" href="{{route('fleet', ['locale' => $locale])}}" @class([
                 "flex gap-2",
-                "lg:text-flagRed text-white" => $current == 'fleet',
+                "lg:text-flagRed text-white underline" => $current == 'fleet',
             ])>
                 <i class="fa-solid fa-car-rear lg:min-w-min min-w-8 flex items-center justify-start"></i>
                 @lang('menu.fleet')
@@ -41,7 +41,7 @@
             
             <a title="@lang('menu.seats.title')" href="{{route('seats', ['locale' => $locale])}}" @class([
                 "flex gap-2",
-                "lg:text-flagRed text-white" => $current == 'seats',
+                "lg:text-flagRed text-white underline" => $current == 'seats',
             ])>
                 <i class="fa-solid fa-baby lg:min-w-min min-w-8 flex items-center justify-start"></i>
                 @lang('menu.seats')
@@ -49,7 +49,7 @@
             
             <a title="@lang('menu.about.title')" href="{{route('about', ['locale' => $locale])}}" @class([
                 "flex gap-2",
-                "lg:text-flagRed text-white" => $current == 'about',
+                "lg:text-flagRed text-white underline" => $current == 'about',
             ])>
                 <i class="fa-solid fa-people-group lg:min-w-min min-w-8 flex items-center justify-start"></i>
                 @lang('menu.about')
@@ -57,7 +57,7 @@
             
             <a title="@lang('menu.faq.title')" href="{{route('faq', ['locale' => $locale])}}" @class([
                 "flex gap-2",
-                "lg:text-flagRed text-white" => $current == 'faq',
+                "lg:text-flagRed text-white underline" => $current == 'faq',
             ])>
                 <i class="fa-solid fa-circle-question lg:min-w-min min-w-8 flex items-center justify-start"></i>
                 @lang('menu.faq')
@@ -65,13 +65,13 @@
             
             <a title="@lang('menu.contact.title')" href="{{route('contact', ['locale' => $locale])}}" @class([
                 "flex gap-2",
-                "lg:text-flagRed text-white" => $current == 'contact',
+                "lg:text-flagRed text-white underline" => $current == 'contact',
             ])>
                 <i class="fa-solid fa-envelope-open-text lg:min-w-min min-w-8 flex items-center justify-start"></i>
                 @lang('menu.contact')
             </a>
 
-            <div class="flex flex-row gap-4 justify-between lg:mt-0 mt-auto">
+            <div class="flex flex-row gap-4 justify-start lg:p-0 p-4 lg:mt-0 mt-auto bg-white lg:w-fit w-full">
 
                 <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'locale' : 'en'])}}" class="flex gap-2 items-center">
                     <img src="{{asset('/img/flags/en.png')}}" alt="England Flag" class="object-cover max-w-8 max-h-6">

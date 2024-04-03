@@ -207,12 +207,12 @@ class Carousel
 const isHome = document.getElementById('home-page');
 if(isHome)
 {  
-  const reviews = new Carousel('reviews', 10000, 3);
+  const reviews = new Carousel('reviews', 20000, 3);
   reviews.addSlideAutomatic();
   reviews.addIndicators();
   reviews.blurPast();
   
-  const reviewsMobile = new Carousel('reviews-mobile', 10000, 1);
+  const reviewsMobile = new Carousel('reviews-mobile', 20000, 1);
   reviewsMobile.addSlideAutomatic();
   reviewsMobile.addIndicators();
   reviewsMobile.blurPast();

@@ -143,8 +143,8 @@
 
       <!-- Legal -->
       <p class="text-white flex md:flex-row flex-col gap-1">
-        <a class="hover:text-white" title="@lang('footer.terms.title')" href="{{route('terms', $locale)}}">@lang('footer.terms')</a>
-        <a class="hover:text-white" title="@lang('footer.privacy.title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
+        <a class="hover:text-white hover:underline" title="@lang('footer.terms.title')" href="{{route('terms', $locale)}}">@lang('footer.terms')</a>
+        <a class="hover:text-white hover:underline" title="@lang('footer.privacy.title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
       </p>
 
       <!-- Reserved -->

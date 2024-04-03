@@ -4,13 +4,13 @@ return
 [
   'reviews.title' => 'O que os nossos clientes dizem',
 
-  'why.achieve.title' => 'Por que escolher<br>a Achieve Rent A Car?',
+  'why.achieve.title' => 'Por que escolher a Achieve Rent A Car?',
 
   'why.achieve.paragraph' => '
     Porque para nós <b>você é muito mais</b> do apenas um aluguer de carro.<br>
     Priorizamos <b>a sua satisfação</b> e fazemos o nosso melhor para que você <b>sinta-se acolhido</b> e <b>alcance</b> os objetivos que deseja para a sua viagem.<br>
     Enviaremos todas as informações de que precisa para sentir-se <b>seguro</b>, <b>bem acompanhado</b> e <b>orientado</b>.<br>
-    Veja por si mesmo como os nossos queridos clientes sentem-se em relação aos nossos serviços, visite o nosso <a target="_blank" class="text-flagRed underline font-bold" title="Clique aqui para ver as nossas reviews" href=":link">Google Reviews</a>.',
+    Confira como os nossos clientes sentem-se em relação aos nossos serviços, aceda ao nosso <a target="_blank" class="text-flagRed underline font-bold" title="Clique aqui para ver as nossas reviews" href=":link">Google Reviews</a>.',
 
   'why.achieve.book.now' => 'Reserve Agora',
   'why.achieve.book.now.title' => 'Clique aqui para reservar agora',
@@ -23,11 +23,17 @@ return
   'why.achieve.item.2.title' => 'Receba e devolva onde estiver',
   'why.achieve.item.2.paragraph' => 'Seja à porta do aeroporto ou do seu hotel, receba no <b>seu lugar de escolha</b> e devolva <b>onde preferir</b>. Sem filas, sem esperas e sem longas caminhadas.',
   
-  'why.achieve.item.3.title' => 'Sem necessidade de cartão de crédito',
-  'why.achieve.item.3.paragraph' => 'Acreditamos em alugueres <b>sem complicações</b>. <b>Não exigimos cartão de crédito</b>.',
+  'why.achieve.item.3.title' => 'Sem cartão de crédito',
+  'why.achieve.item.3.paragraph' => 'Acreditamos em alugueres <b>sem complicações</b>. Não exigimos caução e não bloqueamos o seu cartão de crédito.',
   
   'why.achieve.item.4.title' => 'Condutor adicional gratuito',
   'why.achieve.item.4.paragraph' => 'Facilitamos o compartilhamento das tarefas de direção. Aproveite a liberdade de um motorista adicional gratuito em cada locação. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
+  
+  'why.achieve.item.5.title' => 'Suporte 24h',
+  'why.achieve.item.5.paragraph' => 'Facilitamos o compartilhamento das tarefas de direção. Aproveite a liberdade de um motorista adicional gratuito em cada locação. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
+  
+  'why.achieve.item.6.title' => 'Kilometragem ilimitada',
+  'why.achieve.item.6.paragraph' => 'Facilitamos o compartilhamento das tarefas de direção. Aproveite a liberdade de um motorista adicional gratuito em cada locação. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
 
   'poem.title' => 'Explore a beleza inigualável da Ilha da Madeira <br> De Norte a Sul, de Leste a Oeste, vá com Achieve Rent a Car',
   'poem.author' => 'Bailinho da Madeira, canção adaptada por Maximiano de Sousa, em 1949',
