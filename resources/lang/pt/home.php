@@ -5,35 +5,23 @@ return
   'reviews.title' => 'O que os nossos clientes dizem',
 
   'why.achieve.title' => 'Por que escolher a Achieve Rent A Car?',
-
-  'why.achieve.paragraph' => '
-    Porque para nós <b>você é muito mais</b> do apenas um aluguer de carro.<br>
-    Priorizamos <b>a sua satisfação</b> e fazemos o nosso melhor para que você <b>sinta-se acolhido</b> e <b>alcance</b> os objetivos que deseja para a sua viagem.<br>
-    Enviaremos todas as informações de que precisa para sentir-se <b>seguro</b>, <b>bem acompanhado</b> e <b>orientado</b>.<br>
-    Confira como os nossos clientes sentem-se em relação aos nossos serviços, aceda ao nosso <a target="_blank" class="text-flagRed underline font-bold" title="Clique aqui para ver as nossas reviews" href=":link">Google Reviews</a>.',
-
+  'why.achieve.paragraph' => 'Porque para nós <b>você é muito mais</b> do apenas um aluguer de carro.<br>Priorizamos <b>a sua satisfação</b> e fazemos o nosso melhor para que você <b>sinta-se acolhido</b> e <b>alcance</b> os objetivos que deseja para a sua viagem.<br>Enviaremos todas as informações de que precisa para sentir-se <b>seguro</b>, <b>bem acompanhado</b> e <b>orientado</b>.<br>Confira como os nossos clientes sentem-se em relação aos nossos serviços, aceda ao nosso <a target="_blank" class="text-flagRed underline font-bold" title="Clique aqui para ver as nossas reviews" href=":link">Google Reviews</a>.',
   'why.achieve.book.now' => 'Reserve Agora',
   'why.achieve.book.now.title' => 'Clique aqui para reservar agora',
   'why.achieve.contact.us' => 'Contate-Nos',
   'why.achieve.contact.us.title' => 'Clique aqui para entrar em contato conosco',
-
   'why.achieve.item.1.title' => 'Seguro Premium incluído',
-  'why.achieve.item.1.paragraph' => 'Entendemos que a <b>tranquilidade</b> é fundamental quando você viaja. É por isso que incluímos o <b>Seguro Premium</b>, com <b>isenção de franquia</b> e com a <b>abrangência</b> que você precisa para proteger-se de contratempos inesperados.',
-  
+  'why.achieve.item.1.paragraph' => 'A <b>tranquilidade</b> é fundamental quando você viaja. O <b>Seguro Premium</b> possui <b>isenção de franquia</b> e a <b>abrangência</b> que você precisa para proteger-se de contratempos inesperados.',
   'why.achieve.item.2.title' => 'Receba e devolva onde estiver',
-  'why.achieve.item.2.paragraph' => 'Seja à porta do aeroporto ou do seu hotel, receba no <b>seu lugar de escolha</b> e devolva <b>onde preferir</b>. Sem filas, sem esperas e sem longas caminhadas.',
-  
+  'why.achieve.item.2.paragraph' => 'Seja à porta do aeroporto ou do seu hotel, receba e devolva <b>onde preferir</b>. Sem filas, sem esperas e sem longas caminhadas.',
   'why.achieve.item.3.title' => 'Sem cartão de crédito',
   'why.achieve.item.3.paragraph' => 'Acreditamos em alugueres <b>sem complicações</b>. Não exigimos caução e não bloqueamos o seu cartão de crédito.',
-  
   'why.achieve.item.4.title' => 'Condutor adicional gratuito',
-  'why.achieve.item.4.paragraph' => 'Facilitamos o compartilhamento das tarefas de direção. Aproveite a liberdade de um motorista adicional gratuito em cada locação. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
-  
-  'why.achieve.item.5.title' => 'Suporte 24h',
-  'why.achieve.item.5.paragraph' => 'Facilitamos o compartilhamento das tarefas de direção. Aproveite a liberdade de um motorista adicional gratuito em cada locação. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
-  
-  'why.achieve.item.6.title' => 'Kilometragem ilimitada',
-  'why.achieve.item.6.paragraph' => 'Facilitamos o compartilhamento das tarefas de direção. Aproveite a liberdade de um motorista adicional gratuito em cada locação. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
+  'why.achieve.item.4.paragraph' => 'Aproveite a <b>liberdade</b> de condutores adicionais gratuitos. É a nossa maneira de garantir que todos vivam a viagem juntos, sem nenhum custo extra.',
+  'why.achieve.item.5.title' => 'Assistência em viagem ',
+  'why.achieve.item.5.paragraph' => 'Durante toda a sua estadia, pode contar com a nossa assistência em viagem 24/7. <b>Estamos aqui para o ajudar</b> no que for preciso.',
+  'why.achieve.item.6.title' => 'Quilometragem ilimitada',
+  'why.achieve.item.6.paragraph' => 'Explore a Madeira sem limites, vá aonde quiser com libertade total, <b>sem preocupações</b> com custos adicionais.',
 
   'poem.title' => 'Explore a beleza inigualável da Ilha da Madeira <br> De Norte a Sul, de Leste a Oeste, vá com Achieve Rent a Car',
   'poem.author' => 'Bailinho da Madeira, canção adaptada por Maximiano de Sousa, em 1949',

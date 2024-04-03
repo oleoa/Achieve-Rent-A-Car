@@ -162,17 +162,17 @@
           @if($i == 1)
             <x-font-awesome.hand-holding-car/>
           @elseif($i == 2)
-            <i class="fa-solid fa-map-marked-alt text-4xl"></i>
+            <i class="fa-solid fa-map-marked-alt text-4xl h-12"></i>
           @elseif($i == 3)
             <x-font-awesome.no-credit-card/>
           @elseif($i == 4)
-          <i class="fa-solid fa-person-circle-plus text-4xl"></i>
+          <i class="fa-solid fa-person-circle-plus text-4xl h-12"></i>
           @elseif($i == 5)
-            <i class="fa-solid fa-headset text-4xl"></i>
+            <i class="fa-solid fa-route text-4xl h-12"></i>
           @else
-            <i class="fa-solid fa-road-circle-check text-4xl"></i>
+            <i class="fa-solid fa-road-circle-check text-4xl h-12"></i>
           @endif
-          <h3>@lang('home.why.achieve.item.'.$i.'.title')</h3>
+          <h3 class="text-center">@lang('home.why.achieve.item.'.$i.'.title')</h3>
           <p class="text-center">@lang('home.why.achieve.item.'.$i.'.paragraph')</p>
         </div>
 
