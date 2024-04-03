@@ -227,7 +227,7 @@
       <h2 class="lg:col-span-2 py-4 text-center font-bold text-4xl">@lang('home.pleasant.experience.title')</h2>
 
       <div class="rounded-lg shadow-2xl border-b-4 border-flagRed">
-        <img src="{{asset('/img/pages/home/2.png')}}" alt="@lang('home.pleasant.experience.card.1.image')" class="rounded-t-lg w-full">
+        <img src="{{asset('/img/pages/home/2.png')}}" width="578" height="292" alt="@lang('home.pleasant.experience.card.1.image')" class="rounded-t-lg w-full">
         <div class="p-4">
           <h3 class="text-2xl font-bold">@lang('home.pleasant.experience.card.1.title')</h3>
           <p class="mt-2 text-justify">
@@ -243,7 +243,7 @@
       </div>
 
       <div class="rounded-lg shadow-2xl border-b-4 border-flagRed">
-        <img src="{{asset('/img/pages/home/3.png')}}" alt="@lang('home.pleasant.experience.card.2.image')" class="rounded-t-lg w-full">
+        <img src="{{asset('/img/pages/home/3.png')}}" width="578" height="292" alt="@lang('home.pleasant.experience.card.2.image')" class="rounded-t-lg w-full">
         <div class="p-4">
           <h3 class="text-2xl font-bold">@lang('home.pleasant.experience.card.2.title')</h3>
           <p class="mt-2 text-justify">

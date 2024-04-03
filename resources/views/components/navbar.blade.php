@@ -9,8 +9,8 @@
         </button>
     </div>
 
-    <img src="{{asset('/img/logos/logo.png')}}" alt="Achieve Rent a Car Log" height="48" class="block lg:hidden max-h-12 lg:px-0 px-14 object-cover">
-    <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent a Car Log" height="48" class="hidden lg:block max-h-12 lg:px-0 px-14 object-cover">
+    <img src="{{asset('/img/logos/logo.png')}}" alt="Achieve Rent a Car Log" height="48" width="213" class="block lg:hidden max-h-12 lg:px-0 px-14 object-cover">
+    <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent a Car Log" height="48" width="306" class="hidden lg:block max-h-12 lg:px-0 px-14 object-cover">
     
     <div id="sidebar" class="lg:static fixed z-50 lg:flex lg:items-center lg:justify-end grid grid-cols-2 gap-0 top-0 left-0 w-full h-full transition-transform duration-300 transform -translate-x-full lg:-translate-x-0">
 
