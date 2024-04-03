@@ -76,7 +76,7 @@
   <!-- Body -->
   <body class="min-h-screen grid grid-rows-1">
 
-    @if ($locale != 'locale' && $locale != 'local')
+    @if (/*$locale != 'locale' && $locale != 'local'*/false)
 
       <!-- Clixtell Tracking Code -->
       <script type='text/javascript'>
