@@ -57,12 +57,12 @@
     <style>
 
       #system {
-        background-image: url('{{ asset('/img/main/1-phone.jpg') }}');
+        background-image: url("{{ asset('/img/main/1-phone.jpg') }}");
       }
   
-      @media (min-width: 425px) {
+      @media (min-width: 426px) {
         #system {
-          background-image: url('{{ asset('/img/main/1.jpg') }}');
+          background-image: url("{{ asset('/img/main/1.jpg') }}");
         }
       }
 
