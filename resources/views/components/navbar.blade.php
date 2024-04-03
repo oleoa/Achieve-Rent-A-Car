@@ -14,7 +14,7 @@
 
         <div @class([
             "flex gap-6", {{-- Both --}}
-            "[&>a]:flex [&>a]:items-center [&>a]:justify-center text-white/50 lg:text-flagRed/50 lg:hover:[&>a]:text-flagRed hover:[&>a]:text-white [&>a]:h-fit", {{-- Children --}}
+            "[&>a]:flex [&>a]:items-center [&>a]:justify-center text-white/50 lg:text-flagRed/70 lg:hover:[&>a]:text-flagRed hover:[&>a]:text-white [&>a]:h-fit", {{-- Children --}}
             "lg:flex-row lg:bg-white lg:p-0 lg:h-full lg:items-center lg:w-full lg:static lg:w-fit lg:justify-end", {{-- Computer --}}
             "flex-col p-4 bg-flagRed items-start left-0 top-0 h-full relative", {{-- Phone --}}
         ])>
