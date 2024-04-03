@@ -2,9 +2,9 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <div id="system" class="xl:pt-16 pt-4 xl:pb-16 pb-4 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8">
+  <div id="system" class="xl:pt-16 xl:pb-16 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8">
 
-    <article id="systemArticle" class="px-default">
+    <article id="systemArticle" class="2xl:px-64 xl:px-32 px-0">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>
@@ -78,7 +78,7 @@
       </div>
       
       <!-- Reviews Mobile -->
-      <div class="relative z-10 w-full overflow-x-hidden xl:hidden">
+      <div class="relative z-10 w-full overflow-x-hidden xl:hidden bg-flagRed">
       
         <!-- Carousel Slide -->
         <div id="carousel-slide-reviews-mobile" class="grid transition-transform duration-500 w-full xl:py-8 pb-8" style="grid-template-columns: @for($i = 1; $i <= count($reviews); $i++) 100% @endfor">
@@ -113,7 +113,7 @@
         </div>
       
         <!-- Carousel Indicator -->
-        <div class="absolute bottom-0 w-full xl:hidden flex justify-between items-center gap-2 px-4 z-40" id="carousel-indicators-div-reviews-mobile">
+        <div class="absolute bottom-0 w-full py-2 xl:hidden flex justify-between items-center gap-2 px-4 z-40" id="carousel-indicators-div-reviews-mobile">
         
           <input type="hidden" id="carousel-selected-indicator-color-reviews-mobile" value="bg-white">
 
@@ -139,7 +139,7 @@
       
         </div>
           
-      </div> 
+      </div>
 
     @endif
 

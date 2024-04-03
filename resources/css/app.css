@@ -58,4 +58,8 @@ body::-webkit-scrollbar {
     min-height: 770px;
     height: auto;
   }
+
+  #anyrentBookingsIframe{
+    border-radius: 0rem;
+  }
 }

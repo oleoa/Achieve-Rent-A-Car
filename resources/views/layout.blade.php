@@ -55,12 +55,8 @@
     <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous" defer></script>
 
     <style>
-
-      #system {
-        background-image: url("{{ asset('/img/main/1-phone.jpg') }}");
-      }
   
-      @media (min-width: 426px) {
+      @media (min-width: 1280px) {
         #system {
           background-image: url("{{ asset('/img/main/1.jpg') }}");
         }
