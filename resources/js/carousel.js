@@ -210,11 +210,9 @@ if(isHome)
   const reviews = new Carousel('reviews', 20000, 3);
   reviews.addSlideAutomatic();
   reviews.addIndicators();
-  reviews.blurPast();
   
   const reviewsMobile = new Carousel('reviews-mobile', 20000, 1);
   reviewsMobile.addSlideAutomatic();
   reviewsMobile.addIndicators();
-  reviewsMobile.blurPast();
   reviewsMobile.addArrows();
 }
