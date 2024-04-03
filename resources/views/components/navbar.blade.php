@@ -3,9 +3,11 @@
     "[&>a]:flex [&>a]:items-center [&>a]:justify-center text-flagRed/40 hover:[&>a]:text-flagRed [&>a]:h-fit",
 ])>
 
-    <button title="@lang('menu.toggle.title')" class="absolute left-0 px-8 py-2 lg:hidden sidebar-toggle">
-        <i class="fas fa-bars text-flagRed text-xl"></i>
-    </button>
+    <div class="absolute left-0 top-0 w-full h-full px-8 flex items-center">
+        <button title="@lang('menu.toggle.title')" class="lg:hidden sidebar-toggle">
+            <i class="fas fa-bars text-flagRed text-xl"></i>
+        </button>
+    </div>
 
     <img src="{{asset('/img/logos/logo.png')}}" alt="Achieve Rent a Car Log" class="block lg:hidden max-h-12 lg:px-0 px-14 object-cover">
     <img src="{{asset('/img/logos/logo2.png')}}" alt="Achieve Rent a Car Log" class="hidden lg:block max-h-12 lg:px-0 px-14 object-cover">
