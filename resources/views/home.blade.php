@@ -2,9 +2,9 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <div id="system" class="xl:pt-16 xl:pb-16 pb-4 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8">
+  <div id="system" class="xl:pt-16 pt-4 xl:pb-16 pb-4 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8">
 
-    <article class="px-default py-4">
+    <article id="systemArticle" class="px-default">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>

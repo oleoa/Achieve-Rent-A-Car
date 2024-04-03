@@ -47,3 +47,15 @@ body::-webkit-scrollbar {
 .px-default {
   @apply 2xl:px-64 xl:px-32 px-4;
 }
+
+#systemArticle {
+  min-height: 355px;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  #systemArticle {
+    min-height: 770px;
+    height: auto;
+  }
+}
