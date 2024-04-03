@@ -35,7 +35,7 @@
     <!-- Canonical Pages For Search Engine Optimization -->
     <link rel="canonical" href="{{env('APP_URL')}}/en"/>
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook / Instagram / Whatsapp -->
     <meta property="og:title" content="@lang('meta.facebook.title')"/>
     <meta property="og:description" content="@lang('meta.facebook.description')"/>
     <meta property="og:type" content="website"/>
