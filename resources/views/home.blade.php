@@ -4,9 +4,7 @@
 
   <div id="system" class="xl:pt-16 xl:pb-16 pb-4 bg-no-repeat bg-cover bg-bottom flex flex-col xl:gap-8" style="background-image: url('/img/main/1.jpg')">
 
-    <article class="px-default py-4 relative">
-      <div class="w-full absolute lg:hidden" style="height: 770px;"></div>
-      <div class="w-full absolute hidden lg:block" style="height: 355px;"></div>
+    <article class="px-default py-4">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>
