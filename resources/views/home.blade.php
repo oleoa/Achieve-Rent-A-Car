@@ -139,7 +139,6 @@
 
   </div>
 
-  <!-- New Why Choose Achieve -->
   <article class="flex flex-col px-default gap-4 py-16">
 
     <h2 class="text-5xl">@lang('home.why.achieve.title')</h2>
