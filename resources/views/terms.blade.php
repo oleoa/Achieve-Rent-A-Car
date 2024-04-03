@@ -81,7 +81,7 @@
     </h5>
 
     <ul>
-      @for ($i = 1; $i <= 8; $i++)
+      @for ($i = 1; $i <= 7; $i++)
         <li>@lang('terms.9.'.$i)</li>
       @endfor
     </ul>
@@ -91,15 +91,20 @@
     </h5>
 
     <ul>
-      @for ($i = 9; $i <= 19; $i++)
+      @for ($i = 8; $i <= 18; $i++)
         <li>@lang('terms.9.'.$i)</li>
+        @if($i == 11)
+          <ul class="ps-6">
+            <li>@lang('terms.9.11.1')</li>
+          </ul>
+        @endif
       @endfor
       <ul class="ps-6">
         @for ($i = 1; $i <= 3; $i++)
-          <li>@lang('terms.9.19.'.$i)</li>
+          <li>@lang('terms.9.18.'.$i)</li>
         @endfor
       </ul>
-      @for ($i = 20; $i <= 21; $i++)
+      @for ($i = 19; $i <= 20; $i++)
         <li>@lang('terms.9.'.$i)</li>
       @endfor
     </ul>
