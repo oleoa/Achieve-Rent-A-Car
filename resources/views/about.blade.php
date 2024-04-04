@@ -8,22 +8,20 @@
 
   <div class="w-full px-default flex flex-col gap-4 pb-12">
 
-    @for ($i = 1; $i <= 3; $i++)
-        
-      <div class="grid lg:grid-cols-2 py-12 gap-12 justify-center">
-        <div @class([
-          "flex flex-col gap-8",
-          "lg:order-2" => ($i % 2 == 0),
-        ])>
-          <h2 class="font-semibold">
-            @lang('about.item.'.$i.'.title')
-            <span class="w-full h-0.5 my-2 bg-flagRed/50 rounded-full flex"></span>
-          </h2>
-          <p>@lang('about.item.'.$i.'.paragraph')</p>
-        </div>
-        <img src="{{url('/img/pages/about/'.$i.'.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl w-full h-full object-cover">
+    <div class="grid lg:grid-cols-2 py-12 gap-12 justify-center">
+      <div class="flex flex-col">
+        <h2 class="font-semibold">
+          @lang('about.item.1.title')
+          <span class="w-full h-0.5 my-2 bg-flagRed/50 rounded-full flex"></span>
+        </h2>
+        <p class="pb-8">@lang('about.item.1.paragraph')</p>
+        <h2 class="font-semibold">
+          @lang('about.item.2.title')
+          <span class="w-full h-0.5 my-2 bg-flagRed/50 rounded-full flex"></span>
+        </h2>
+        <p>@lang('about.item.2.paragraph')</p>
       </div>
-
-    @endfor
+      <img src="{{url('/img/pages/about/1.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl w-full h-full object-cover">
+    </div>
     
 @endsection
