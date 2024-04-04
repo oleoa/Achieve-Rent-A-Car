@@ -120,8 +120,8 @@
 
     <!-- Loader -->
     <div role="status" id="loading" class="hidden h-screen w-screen bg-zinc-200/70 z-50 fixed top-0 left-0 items-center justify-center">
-      <img src="{{url('/img/loader/car.png')}}" alt="Loader" class="animate-spin-slow absolute z-30 w-28">
-      <img src="{{url('/img/loader/island.png')}}" alt="Loader" class="absolute z-20 h-14">
+      <img src="{{url('/img/loader/car.webp')}}" alt="Loader" class="animate-spin-slow absolute z-30 w-28">
+      <img src="{{url('/img/loader/island.webp')}}" alt="Loader" class="absolute z-20 h-14">
     </div>
 
     <!-- Main Content -->
