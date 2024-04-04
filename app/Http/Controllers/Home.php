@@ -14,7 +14,6 @@ class Home extends Controller
     $this->isCurrent('home');
     $this->setDiscount();
     $this->createView();
-    //$this->data['reviews'] = json_decode(File::get(public_path('reviews.json')), true);
     $this->data['reviews'] = Review::all()->toArray();
     
     return view('home', $this->data);
