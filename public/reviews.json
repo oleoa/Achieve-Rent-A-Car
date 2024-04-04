@@ -1,0 +1,72 @@
+[
+  {
+    "order": "1",
+    "name": "Valentina Vucicic",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w80-h80-p-rp-mo-br100",
+    "comment": "Highly recommended! We rented and enjoyed it from the start till the end. Everything was super, it went smoothly, and the customer service was very attentive, helping us with all the questions we had. Madeira is an incredible island. We will come again and we will book again!",
+    "comentario": "Altamente recomendado! Alugamos e aproveitamos do início ao fim. Foi tudo super, correu bem e o atendimento foi muito atencioso, ajudando-nos com todas as dúvidas que tínhamos. A Madeira é uma ilha incrível. Voltaremos e reservaremos novamente!"
+  },
+  {
+    "order": "4",
+    "name": "Mario Keglevic",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjUGFeGXzYyfRv0CbY_WNEBIdRESzuV4hQ5RLIC-p2MORA=w80-h80-p-rp-mo-br100",
+    "comment": "Top service, clean car. Even on non-working hours, the staff was very supportive when we needed.",
+    "comentario": "Atendimento top, carro limpo. Mesmo fora do horário de trabalho, a equipe nos apoiou muito quando precisávamos."
+  },
+  {
+    "order": "2",
+    "name": "Rui Valderrama",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKDHyMm2A0_AJ72osSpxkKh6pXem6XgJ0fgp9J54KRA=w80-h80-p-rp-mo-br100",
+    "comment": "Hello. Despite the bad luck of not landing at the airport the first time. There are evils that come with good, as I found an excellent service with Mr. Luciano taking care of everything personally and being very helpful. It was one of the positive things about my stay. I will recommend it to friends and family. Pleasure and see you any day.",
+    "comentario": "Olá. Apesar do azar de não ter aterrado a primeira vez no aeroporto. Há males que vêm por bem, pois encontrei um serviço de excelência com o Sr. Luciano a tratar de tudo pessoalmente e bastante prestável. Foi das coisas positivas na minha estadia. Vou recomendar a amigos e familiares"
+  },
+  {
+    "order": "5",
+    "name": "RGA ORTOPEDICA",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocI7k2zRlOsqO0l1ddFBugo0cF6MBf_JoyMegE5gUqrt=w80-h80-p-rp-mo-br100",
+    "comment": "The staff are very helpful, the quality of the cars. I recommend",
+    "comentario": "O Pessoal atende muito bem , qualidade dos carros . Recomendo"
+  },
+  {
+    "order": "6",
+    "name": "Niki Veliki",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIBuCHZR404CjQVSQHx7dh_BNamfNs2NQV4nYPUyonC=w80-h80-p-rp-mo-ba3-br100",
+    "comment": "Very punctual with clear instructions about everything, staff is great 👏",
+    "comentario": "Muito pontual com instruções claras sobre tudo, a equipe é ótima 👏"
+  },
+  {
+    "order": "7",
+    "name": "Hanna Ellola",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjVBNXXElhW9dc3-viOoWCdwK1ecsXahcxnxF0fnzkMV5w=w80-h80-p-rp-mo-br100",
+    "comment": "Excellent service! Good vehicles, we got what we needed.",
+    "comentario": "Serviço excelente! Bons veículos, conseguimos o que precisávamos."
+  },
+  {
+    "order": "8",
+    "name": "Nuno Martins",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKjUsOSW3wBLEkkbcAmZvGyXMBODoBlZmN70KLBy5rv=w80-h80-p-rp-mo-br100",
+    "comment": "Simply amazing! 5-star serviceAchieve rent a car impeccable! I recommend!",
+    "comentario": "Simplesmente fantástico! Serviço 5 estrelasAchieve rent a car impecáveis! Recomendo!"
+  },
+  {
+    "order": "9",
+    "name": "Kinga Bugajska",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKKb-pUF1gbwVZBL7cwxFMnT3MnJGgmURKxssiYEGjJ=w80-h80-p-rp-mo-br100",
+    "comment": "All OK. No surprises, documents per Internet. Good cooperation.",
+    "comentario": "Tudo bem. Sem surpresas, documentos por Internet. Boa cooperação."
+  },
+  {
+    "order": "3",
+    "name": "Mário Navalho",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJOeabxjth4vQqRquMSQyd2kxcH0lZ8NcL8wr_9jE85=w80-h80-p-rp-mo-br100",
+    "comment": "Another good experience. Very simple and fast rental process, new vehicles and hassle-free delivery and return process at the airport. I recommend.",
+    "comentario": "Mais uma boa experiência. Processo de aluguer muito simples e rápido, viaturas novas e processo de entrega e devolução no aeroporto sem problemas. Recomendo."
+  },
+  {
+    "order": "0",
+    "name": "Ulises de Freitas",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjWiiWSG3I-NHYt26aBczZo0vvRDxAjBFxw54cJtL3LU1Fw=w80-h80-p-rp-mo-br100",
+    "comment": "Before you decide to rent a car, it's essential to be aware of my exceptional experience with Achieve Rent a Car. From the outset, there were no hidden extra charges, and the vehicles provided were in prime condition, appearing practically new.",
+    "comentario": "Antes de decidir alugar um carro, é essencial conhecer minha experiência excepcional com a Achieve Rent a Car. Desde o início não houve cobranças extras ocultas e os veículos disponibilizados estavam em ótimas condições, parecendo praticamente novos."
+  }
+]

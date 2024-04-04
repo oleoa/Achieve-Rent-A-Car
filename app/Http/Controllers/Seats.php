@@ -9,6 +9,10 @@ class Seats extends Controller
 {
   public function index($locale)
   {
-    return $this->load('seats', 'seats', $locale);
+    $this->setLocale($locale);
+    $this->isCurrent('seats');
+    $this->setDiscount();
+    $this->createView();
+    return view('seats', $this->data);
   }
 }

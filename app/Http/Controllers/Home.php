@@ -3,12 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class Home extends Controller
 {
-  public function index(Request $request, $locale)
+  public function index($locale)
   {
-    return $this->load('home', 'home', $locale, $request);
+    $this->setLocale($locale);
+    $this->isCurrent('home');
+    $this->setDiscount();
+    $this->createView();
+    $this->data['reviews'] = json_decode(File::get(public_path('reviews.json')), true);
+    
+    return view('home', $this->data);
   }
 }

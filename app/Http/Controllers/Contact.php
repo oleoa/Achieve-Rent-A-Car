@@ -11,7 +11,11 @@ class Contact extends Controller
 {
   public function index($locale)
   {
-    return $this->load('contact', 'contact', $locale);
+    $this->setLocale($locale);
+    $this->isCurrent('contact');
+    $this->setDiscount();
+    $this->createView();
+    return view('contact', $this->data);
   }
 
   public function send(Request $request)

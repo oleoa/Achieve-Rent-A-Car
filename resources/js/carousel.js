@@ -11,6 +11,7 @@ class Carousel
   positions;
   slidesPerView;
   isBlurPast;
+  cards;
 
   constructor(id, secondsPerSlide, slidesPerView)
   {
@@ -33,6 +34,12 @@ class Carousel
 
     this.adjustSize();
     window.addEventListener('resize', this.adjustSize.bind(this));
+
+    this.cards = [];
+    for(let i = 0; i <= this.carouselLength; i++){
+      this.cards.push(document.getElementById(i+'-'+this.id));
+      this.cards[i].addEventListener('click', () => {this.slideCard(i)});
+    }
   }
 
   adjustPositions()
@@ -59,7 +66,8 @@ class Carousel
 
   adjustSize()
   {
-    const pageWidth = document.documentElement.clientWidth;
+    let pageWidth = 0;
+    pageWidth = document.documentElement.clientWidth;
     this.carouselSlide.style.width = pageWidth+'px';
     this.adjustPositions();
     this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
@@ -124,6 +132,15 @@ class Carousel
     this.slidePrev();
   }
 
+  slideCard(index)
+  {
+    clearInterval(this.automation);
+    this.counter = index;
+    if(this.isBlurPast) this.blurDiv(this.counter);
+    this.paintIndicator(index);
+    this.carouselSlide.style.transform = 'translateX(' + this.positions[this.counter] + ')';
+  }
+
   slideIndicator(indicator)
   {
     clearInterval(this.automation);
@@ -161,9 +178,6 @@ class Carousel
   addArrows()
   {
     if(!this.carouselSlide) return;
-    const carouselButtonsDiv = document.getElementById('carousel-buttons-div-'+this.id);
-    carouselButtonsDiv.style.display = 'flex';
-
     this.nextBtn.addEventListener('click', this.clickedNext.bind(this));
     this.prevBtn.addEventListener('click', this.clickedPrev.bind(this));
   }
@@ -192,22 +206,13 @@ class Carousel
 
 const isHome = document.getElementById('home-page');
 if(isHome)
-{
-  const banner = new Carousel('banner', 6000, 1);
-  banner.addSlideAutomatic();
-  banner.addIndicators();
-  
-  const bannerMobile = new Carousel('banner-mobile', 6000, 1);
-  bannerMobile.addSlideAutomatic();
-  bannerMobile.addIndicators();
-  
-  const reviews = new Carousel('reviews', 10000, 3);
+{  
+  const reviews = new Carousel('reviews', 20000, 3);
   reviews.addSlideAutomatic();
   reviews.addIndicators();
-  reviews.blurPast();
   
-  const reviewsMobile = new Carousel('reviews-mobile', 10000, 1);
+  const reviewsMobile = new Carousel('reviews-mobile', 20000, 1);
   reviewsMobile.addSlideAutomatic();
   reviewsMobile.addIndicators();
-  reviewsMobile.blurPast();
+  reviewsMobile.addArrows();
 }

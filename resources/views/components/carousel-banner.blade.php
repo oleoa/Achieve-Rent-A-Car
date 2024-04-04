@@ -6,7 +6,7 @@
   <div id="carousel-slide-banner" class="rounded grid transition-transform duration-500 h-homeTitleXL w-full" style="grid-template-columns: @for($i = 1; $i <= $slides; $i++) 100% @endfor">
     
     <!-- Carousel Item 1 -->
-    <div class="w-full flex items-center justify-start xl:px-margin px-4 h-homeTitleXL bg-cover bg-bottom" style="background-image: url('/img/home/banner1.png')">
+    <div class="w-full flex items-center justify-start xl:px-64 px-4 h-homeTitleXL bg-cover bg-bottom" style="background-image: url('/img/home/banner1.png')">
 
       <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
         <h1>@lang('home-banner-1-title')</h1>
@@ -21,7 +21,7 @@
     </div>
     
     <!-- Carousel Item 2 -->
-    <div class="w-full flex items-center justify-end xl:px-margin px-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner2.png')">
+    <div class="w-full flex items-center justify-end xl:px-64 px-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner2.png')">
 
       <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
         <h1 class="text-end">@lang('home-banner-2-title')</h1>
@@ -32,7 +32,7 @@
     </div>
     
     <!-- Carousel Item 3 -->
-    <div class="w-full flex items-center justify-start xl:pl-margin pl-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner3.png')">
+    <div class="w-full flex items-center justify-start xl:pl-64 pl-4 h-homeTitleXL bg-cover bg-center" style="background-image: url('/img/home/banner3.png')">
 
       <div class="bg-white/70 text-flagRed px-4 py-2 rounded-md font-semibold text-2xl">
         <h1>@lang('home-banner-3-title')</h1>

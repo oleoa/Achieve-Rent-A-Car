@@ -3,12 +3,14 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Home;
-use App\Http\Controllers\About;
+use App\Http\Controllers\Fleet;
 use App\Http\Controllers\Seats;
+use App\Http\Controllers\Stays;
+use App\Http\Controllers\Recommendations;
+use App\Http\Controllers\About;
 use App\Http\Controllers\FAQ;
 use App\Http\Controllers\Contact;
 use App\Http\Controllers\Legal;
-use App\Http\Controllers\Fleet;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,12 +31,16 @@ Route::get('/', function(){
 Route::prefix('/{locale}')->group(function(){
     
   Route::get('/', [Home::class, 'index'])->name('home');
-
-  Route::get('/about', [About::class, 'index'])->name('about');
+  
+  Route::get('/fleet', [Fleet::class, 'index'])->name('fleet');
   
   Route::get('/seats', [Seats::class, 'index'])->name('seats');
   
-  Route::get('/fleet', [Fleet::class, 'index'])->name('fleet');
+  //Route::get('/stays', [Stays::class, 'index'])->name('stays');
+  
+  //Route::get('/recommendations', [recommendations::class, 'index'])->name('recommendations');
+
+  Route::get('/about', [About::class, 'index'])->name('about');
   
   Route::get('/faq', [FAQ::class, 'index'])->name('faq');
   

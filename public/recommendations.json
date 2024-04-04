@@ -1,0 +1,82 @@
+{
+  "1": {
+    "name": "Santo António",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17TilIbaVX55UjQdRUPi1Dbw6xfr2ci5G45KfezdR6w&s",
+    "description": "Santo António é um dos mais respeitados e saboros restaurantes da Ilha da Madeira, com um cardápio pricipalmente de espetadas.",
+    "active": true,
+    "local": "https://maps.google.com/maps?hl=en&gl=pt&um=1&ie=UTF-8&fb=1&sa=X&ftid=0xc605f2c126a2b0b:0x36562a3e50f974c8",
+    "website": "https://www.restaurantesantoantonio.com/"
+  },
+  "2": {
+    "name": "Casa de Pedra",
+    "img": "https://media-cdn.tripadvisor.com/media/photo-s/0e/f3/00/f1/snack-bar-casa-de-pedra.jpg",
+    "description": "Casa de Pedra é um simples porém delicioso restaurante na Ilha da Madeira, com um cardápio focado em picados e com uma vista mar de tirar o fôlego.",
+    "active": true,
+    "local": "https://maps.app.goo.gl/fgDzn6eaayv9hDkN9",
+    "website": ""
+  },
+  "3": {
+    "name": "Taberna do Petisco",
+    "img": "https://www.madeiramazing.com/wp-content/uploads/2020/04/Caf%C3%A9-Cabo-A%C3%A9reo-Sao-Jorge-Madeira-Espetada_2-4.jpg",
+    "description": "Taberna do Petisco é um dos mais respeitados e saboros restaurantes da Ilha da Madeira, com um cardápio pricipalmente de espetadas.",
+    "active": true,
+    "local": "",
+    "website": ""
+  },
+  "4": {
+    "name": "Osaka",
+    "img": "https://www.tripmadeira.com/v1/en/resources/images/placestoeat-international8.jpg",
+    "description": "Osaka é um restaurante japonês  na Ilha da Madeira, com um cardápio pricipalmente de sushi e sashimi.",
+    "active": true,
+    "local": "",
+    "website": ""
+  },
+  "5": {
+    "name": "Prova La Pasta",
+    "img": "https://media-cdn.tripadvisor.com/media/photo-s/2b/3e/b4/6d/ao-entrar-no-la-pasta.jpg",
+    "description": "Prova La Pasta é um dos mais respeitados e saboros restaurantes da Ilha da Madeira, com um cardápio pricipalmente de massas",
+    "active": false,
+    "local": "",
+    "website": ""
+  },
+  "6": {
+    "name": "Allora",
+    "img": "https://lh5.googleusercontent.com/p/AF1QipOuFFZDGpAVyjNNkS_4pV5G0xsjzZWlAaIKcBOC",
+    "description": "Allora é um dos mais respeitados e saboros restaurantes da Ilha da Madeira, com um cardápio pricipalmente de pizzas e massas",
+    "active": true,
+    "local": "",
+    "website": ""
+  },
+  "7": {
+    "name": "La Carbonara",
+    "img": "https://cms.infoportugal.info/media/fotos/final/Santa_Cruz/STC976.jpg",
+    "description": "La Carbonara é um dos mais respeitados e saboros restaurantes da Ilha da Madeira, com um cardápio pricipalmente de massas e pizzas",
+    "active": true,
+    "local": "",
+    "website": ""
+  },
+  "8": {
+    "name": "Cachalote",
+    "img": "https://restaurantecachalote.com/img/slide_3.jpg",
+    "description": "Cachalote é um dos mais respeitados e saboros restaurantes da Ilha da Madeira, com um cardápio pricipalmente de peixes e mariscos.",
+    "active": true,
+    "local": "",
+    "website": ""
+  },
+  "9": {
+    "name": "Abrigo do poiso",
+    "img": "https://discoverportugal2day.com/wp-content/uploads/2023/04/abrigo_poiso2.webp",
+    "description": "Abrigo do poiso é um dos mais respeitados e saboros restaurantes da Ilha da Madeira, com um cardápio pricipalmente de espetadas.",
+    "active": true,
+    "local": "",
+    "website": ""
+  },
+  "10": {
+    "name": "Cabo Aéreo",
+    "img": "https://visitmadeira.com/media/jlwheyfp/miradoura-do-cabo-a%C3%A9reo4-filipe-mendonca.jpg?width=1920&height=1080&rnd=133245569207270000",
+    "description": "Cabo Aéreo é um dos mais respeitados e saboros restaurantes da Ilha da Madeira, com um cardápio pricipalmente de espetadas.",
+    "active": true,
+    "local": "",
+    "website": ""
+  }
+}

@@ -1,28 +1,27 @@
-@extends('layouts.main')
+@extends('layout')
+@php $title = 'title.about'; @endphp
 @section('main')
 
-  <!-- Banner -->
-  <div style="background-image: url('/img/about/2.jpeg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
-    <h1 class="text-white text-center font-black text-6xl">@lang('About-Banner-Title')</h1>
+  <div style="background-image: url('/img/pages/about/2.jpeg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
+    <h1 class="text-white text-center font-black text-6xl">@lang('about.banner')</h1>
   </div>
 
-  <!-- Content -->
-  <div class="w-full md:px-margin px-4 grid md:grid-cols-5 py-4 gap-4">
+  <div class="w-full px-default flex flex-col gap-4 pb-12">
 
-    <!-- Text -->
-    <div class="flex flex-col gap-4 md:col-span-2">
-
-      <!-- Title -->
-      <h2>@lang('About-1-Title')</h2>
-
-      <!-- Paragraph -->
-      <p>@lang('About-1-Paragraph')</p>
-
+    <div class="grid lg:grid-cols-2 py-12 gap-12 justify-center">
+      <div class="flex flex-col">
+        <h2 class="font-semibold">
+          @lang('about.item.1.title')
+          <span class="w-full h-0.5 my-2 bg-flagRed/50 rounded-full flex"></span>
+        </h2>
+        <p class="pb-8">@lang('about.item.1.paragraph')</p>
+        <h2 class="font-semibold">
+          @lang('about.item.2.title')
+          <span class="w-full h-0.5 my-2 bg-flagRed/50 rounded-full flex"></span>
+        </h2>
+        <p>@lang('about.item.2.paragraph')</p>
+      </div>
+      <img src="{{url('/img/pages/about/1.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl w-full h-full object-cover">
     </div>
-
-    <!-- Image -->
-    <img src="{{url('/img/about/1.jpg')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-xl md:col-span-3">
-
-  </div>
-
+    
 @endsection

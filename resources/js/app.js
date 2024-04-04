@@ -1,20 +1,10 @@
-// Laravel Default
 import './bootstrap';
 
-// Loader for both client and admin
 import './loader';
-
-// Whatsapp balloon
-import './whats';
-
-// Sidebar for both client and admin
-import './sidebar';
-
-// Open and close the FAQ accordion
 import './faq';
-
-// Calculate the height of the nav with the discount and add to the banner padding
-import './banner';
-
-// Carousels
 import './carousel';
+import './sidebar';
+import './scroll';
+import './fleet';
+import './banner';
+import './system';
