@@ -22,19 +22,21 @@
           @foreach ($reviews as $review)
           
             <!-- Carousel Item -->
-            <div class="reviews-item w-full p-4 cursor-pointer" id="{{$review['order']}}-reviews" style="order: {{$review['order']}};">
+            <div class="reviews-item w-full p-4" id="{{$review['order']}}-reviews" style="order: {{$review['order']}};">
       
               <div class="flex flex-col justify-start items-center h-full p-6 gap-4 rounded-lg shadow-2xl bg-white">
     
-                <div class="flex w-full gap-8 items-start">
+                <div class="flex w-full gap-8 items-center">
                   
                   <img src="{{$review['image']}}" alt="Valentina Vucicic" class="h-20 w-20">
                   
-                  <div class="flex flex-col gap-2">
+                  <div class="flex flex-col">
     
                     <h2 class="font-bold">{{$review['name']}}</h2>
-            
-                    <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>              
+                    
+                    <a href="{{$review['url']}}" target="_blank" class="w-fit">
+                      <img src="{{asset('/img/pages/home/reviews.webp')}}" alt="Google Reviews" height="64" width="114" class="object-cover">
+                    </a>
     
                   </div>
     
@@ -93,9 +95,11 @@
                 <img src="{{$review['image']}}" alt="Valentina Vucicic" height="80" width="80" class="h-20 w-20">
         
                 <h2 class="font-bold">{{$review['name']}}</h2>
-        
-                <h3 class="[&>i]:text-yellow-400 text-base"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
-        
+
+                <a href="{{$review['url']}}" target="_blank" class="w-fit">
+                  <img src="{{asset('/img/pages/home/reviews.webp')}}" alt="Google Reviews" height="64" width="114" class="object-cover">
+                </a>
+                
                 <p>
                   @if ($language == 'pt')
                     {{$review['comentario']}}  
