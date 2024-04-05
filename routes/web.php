@@ -32,7 +32,7 @@ Route::prefix('/{locale}')->group(function(){
     
   Route::get('/', [Home::class, 'index'])->name('home');
   
-  Route::get('/fleet', [Fleet::class, 'index'])->name('fleet');
+  //Route::get('/fleet', [Fleet::class, 'index'])->name('fleet');
   
   Route::get('/seats', [Seats::class, 'index'])->name('seats');
   
