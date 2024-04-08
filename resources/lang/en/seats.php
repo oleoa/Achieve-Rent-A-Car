@@ -2,6 +2,7 @@
 
 return [
   'banner' => 'Car Seats',
+  'banner.phone' => 'Car<br>Seats',
   'title' => 'Car Seats',
   'paragraph' => 'We at Achieve Rent a Car want our customers to have a fantastic experience when visiting our Island. <br> Safety for everyone is paramount to us! And this becomes even more serious when it comes to the safety of our little customers, who are your babies and your children! Therefore, we offer you the best car seats on the market. Below, you can identify the model and group that best suits your needs.',
   'seats.title' => 'Choose the Right Car Seat for Your Child',

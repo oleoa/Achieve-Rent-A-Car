@@ -2,6 +2,7 @@
 
 return [
   'banner' => 'Cadeiras Auto',
+  'banner.phone' => 'Cadeiras<br>Auto',
   'title' => 'Cadeiras Auto',
   'paragraph' => 'Nós da Achieve Rent a Car, queremos que nossos clientes tenham uma experiência fantástica ao visitarem a nossa Ilha. <br> A segurança de todos é primordial para nós! E isso fica ainda mais sério quando envolve a segurança dos nossos pequenos clientes, que são os seus bebés e as suas crianças! Por isso, colocamos à sua disposição as melhores cadeiras auto do mercado. Abaixo, pode identificar o modelo e grupo que melhor se adapta às suas necessidades.',
   'seats.title' => 'Escolha a Cadeira Auto certa para o seu Filho',

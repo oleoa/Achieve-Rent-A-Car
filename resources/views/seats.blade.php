@@ -4,14 +4,15 @@
 
   <!-- Banner -->
   <div style="background-image: url('/img/pages/seats/banner.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
-    <h1 class="text-white text-center font-black text-6xl">@lang('seats.banner')</h1>
+    <h1 class="text-white text-center font-black text-6xl md:hidden">@lang('seats.banner.phone')</h1>
+    <h1 class="text-white text-center font-black text-6xl md:block hidden">@lang('seats.banner')</h1>
   </div>
 
   <!-- Intro -->
   <div class="py-4 flex flex-col gap-8">
   
     <!-- Content -->
-    <div class="w-full px-default grid md:grid-cols-2 grid-cols-1 gap-4">
+    <div class="w-full px-default grid md:grid-cols-2 gap-4">
 
       <!-- Text -->
       <div class="flex flex-col md:items-start items-center justify-center gap-4 order-1">
@@ -29,14 +30,6 @@
 
     </div>
 
-      
-    <!-- Separator -->
-    <div class="flex items-center justify-center md:px-64 px-4">
-      <div class="md:w-1/3 w-full">
-        <x-separator/>
-      </div>
-    </div>
-
   </div>
 
   <!-- Seats -->
@@ -52,7 +45,7 @@
       @for($i = 1; $i <= 2; $i++)
 
         <!-- Card -->
-        <div class="rounded-lg flex flex-col items-center w-96 text-center">
+        <div class="rounded-lg flex flex-col items-center md:w-96 text-center">
 
           <!-- Image -->
           <img src="{{asset('/img/pages/seats/'.$i.'.png')}}" alt="@lang('Madeira.Island.Image.Alt')" class="rounded-t-lg w-96">
