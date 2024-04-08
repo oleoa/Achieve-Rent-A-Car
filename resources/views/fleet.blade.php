@@ -2,14 +2,18 @@
 @php $title = 'title.fleet'; @endphp
 @section('main')
 
-<div class="min-h-screen">
-  
-    <div style="background-image: url('/img/pages/fleet/banner.jpg')" class="h-52 flex flex-col justify-center items-center bg-no-repeat bg-center">
-      <h1 class="text-white text-center font-black text-6xl">@lang('fleet.title')</h1>
-    </div>
-
-    <iframe id="fleet" src="https://reservas.achieverentacar.com/{{$language}}/frota?iframe" frameborder="0" class="absolute top-0 left-0 bottom-0 right-0 w-full h-full pt-52"></iframe>
-    
+  <div style="background-image: url('/img/pages/fleet/banner.jpg')" class="h-52 flex flex-col justify-center items-center bg-no-repeat bg-center">
+    <h1 class="text-white text-center font-black text-6xl">@lang('fleet.title')</h1>
   </div>
+
+  <article class="grid xl:grid-cols-3 px-default gap-4 py-4">
+
+    @for ($i = 1; $i <= 7; $i++)
+
+      <img src="{{asset('/img/pages/fleet/'.$i.'.png')}}" alt="@lang('fleet.alt')" class="rounded-md shadow-2xl">
+
+    @endfor
+
+  </article>
   
 @endsection

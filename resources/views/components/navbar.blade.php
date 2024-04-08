@@ -32,6 +32,14 @@
                 <i class="fa-solid fa-house lg:min-w-min min-w-8 flex items-center justify-start"></i>
                 @lang('menu.home')
             </a>
+
+            <a title="@lang('menu.fleet.title')" href="{{route('fleet', ['locale' => $locale])}}" @class([
+                "flex gap-2",
+                "lg:text-flagRed text-white underline" => $current == 'fleet',
+            ])>
+                <i class="fa-solid fa-car lg:min-w-min min-w-8 flex items-center justify-start"></i>
+                @lang('menu.fleet')
+            </a>
             
             <a title="@lang('menu.seats.title')" href="{{route('seats', ['locale' => $locale])}}" @class([
                 "flex gap-2",

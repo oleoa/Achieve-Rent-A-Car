@@ -15,7 +15,6 @@ export default {
       spacing: {
         'navbar': '5rem',
         'footer': '5rem',
-        'margin': '15rem',
         'homeTitle': '28rem',
         'homeTitleXL': '35rem',
         'whatsapp_expanded': '22rem',
