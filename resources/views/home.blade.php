@@ -4,7 +4,7 @@
 
   <div id="system" class="xl:pt-16 xl:pb-16 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8">
 
-    <article id="systemArticle" class="2xl:px-64 xl:px-32 px-0">
+    <article id="systemArticle" class="px-default px-0">
       <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>
