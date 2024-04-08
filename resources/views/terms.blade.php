@@ -93,11 +93,6 @@
     <ul>
       @for ($i = 8; $i <= 18; $i++)
         <li>@lang('terms.9.'.$i)</li>
-        @if($i == 11)
-          <ul class="ps-6">
-            <li>@lang('terms.9.11.1')</li>
-          </ul>
-        @endif
       @endfor
       <ul class="ps-6">
         @for ($i = 1; $i <= 3; $i++)
