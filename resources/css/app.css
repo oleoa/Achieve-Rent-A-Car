@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 }
 
 .px-default {
-  @apply 2xl:px-64 xl:px-32 px-4;
+  @apply 2xl:px-36 px-4;
 }
 
 #systemArticle {
