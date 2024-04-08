@@ -11,10 +11,12 @@
 
     <section class="shadow-2xl flex flex-col xl:flex-row gap-4 p-4 rounded-md">
 
-      <div class="flex flex-col gap-4 min-w-max">
+      <div class="flex flex-col gap-4 xl:min-w-max">
+
         <h2 class="font-bold xl:text-3xl text-xl">@lang('stays.ap.1.title')</h2>
-        <h3 class="xl:text-2xl text-base">@lang('stays.ap.1.description')</h3>
-        <p class="flex items-center xl:gap-2 gap-1 px-4 py-2 bg-flagYellow rounded-md w-fit">
+        <h3 class="xl:text-2xl text-lg">@lang('stays.ap.1.description')</h3>
+
+        <div class="items-center gap-2 px-4 py-2 bg-flagYellow rounded-md xl:flex hidden">
           @lang('stays.ap.1.guests')
           <i class="fa-solid fa-circle flex items-center" style="font-size: 0.25rem;"></i>
           @lang('stays.ap.1.bedrooms')
@@ -22,7 +24,15 @@
           @lang('stays.ap.1.beds')
           <i class="fa-solid fa-circle flex items-center" style="font-size: 0.25rem;"></i>
           @lang('stays.ap.1.baths')
-        </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 xl:hidden">
+          <span class="rounded-md bg-flagYellow p-2">@lang('stays.ap.1.guests')</span>
+          <span class="rounded-md bg-flagYellow p-2">@lang('stays.ap.1.bedrooms')</span>
+          <span class="rounded-md bg-flagYellow p-2">@lang('stays.ap.1.beds')</span>
+          <span class="rounded-md bg-flagYellow p-2">@lang('stays.ap.1.baths')</span>
+        </div>
+
         <a target="_blank" href="https://www.airbnb.com/rooms/49396733?adults=1&children=0&infants=0&pets=0&wishlist_item_id=11003373859489&check_in=2024-08-06&check_out=2024-08-09&source_impression_id=p3_1711750108_4h4YTI4FVG3ezbXR&previous_page_section_name=1000" class="hover:bg-white hover:text-flagRed text-white text-3xl px-4 py-2 border-2 border-flagRed rounded-md bg-flagRed flex items-center justify-center gap-2 w-fit">
           <i class="fa-brands fa-airbnb"></i>
           <span class="text-base">
