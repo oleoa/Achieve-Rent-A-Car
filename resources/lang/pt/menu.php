@@ -8,7 +8,7 @@ return [
   'fleet.title' => 'Clique aqui para ver a nossa frota',
   'seats' => 'Cadeiras Auto',
   'seats.title' => 'Clique aqui para ver as nossas cadeiras auto',
-  'stays' => 'Nossas Estadias',
+  'stays' => 'Alojamentos',
   'stays.title' => 'Clique aqui para ver os nossos alojamentos locais',
   'recommendations' => 'Recomendações',
   'recommendations.title' => 'Clique aqui para ver os nossos restaurantes recomendados',

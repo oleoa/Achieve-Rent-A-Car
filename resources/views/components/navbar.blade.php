@@ -41,6 +41,14 @@
                 @lang('menu.seats')
             </a>
             
+            <a title="@lang('menu.stays.title')" href="{{route('stays', ['locale' => $locale])}}" @class([
+                "flex gap-2",
+                "lg:text-flagRed text-white underline" => $current == 'stays',
+            ])>
+                <i class="fa-solid fa-bed lg:min-w-min min-w-8 flex items-center justify-start"></i>
+                @lang('menu.stays')
+            </a>
+            
             <a title="@lang('menu.about.title')" href="{{route('about', ['locale' => $locale])}}" @class([
                 "flex gap-2",
                 "lg:text-flagRed text-white underline" => $current == 'about',
