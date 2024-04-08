@@ -2,7 +2,7 @@
 @php $title = 'title.about'; @endphp
 @section('main')
 
-  <div style="background-image: url('/img/pages/stays/2.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
+  <div style="background-image: url('/img/pages/stays/banner.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">
     <h1 class="text-white text-center font-black xl:text-6xl xl:block hidden">@lang('stays.banner')</h1>
     <h1 class="text-white text-center font-black xl:hidden">@lang('stays.banner.phone')</h1>
   </div>
@@ -48,11 +48,11 @@
       </div>
 
       <div class="grid xl:grid-cols-4 grid-cols-2 xl:grid-rows-2 gap-4">
-        <img class="object-cover xl:h-full rounded-md col-span-2 xl:row-span-2" src="https://a0.muscache.com/im/pictures/miso/Hosting-49396733/original/f2c1c289-d3f9-4189-a721-7ae5525d891e.jpeg?im_w=960" alt="Image of the stay">
-        <img class="object-cover xl:h-full rounded-md" src="https://a0.muscache.com/im/pictures/miso/Hosting-49396733/original/c6ca3076-ba8d-49d5-b11c-3d9f08567c9d.jpeg?im_w=720" alt="Image of the stay">
-        <img class="object-cover xl:h-full rounded-md" src="https://a0.muscache.com/im/pictures/a5e1b1f0-ce51-4889-9981-4663393e91af.jpg?im_w=720" alt="Image of the stay">
-        <img class="object-cover xl:h-full rounded-md" src="https://a0.muscache.com/im/pictures/e3ab714a-a6e0-41c6-8c2b-5b0843be9292.jpg?im_w=720" alt="Image of the stay">
-        <img class="object-cover xl:h-full rounded-md" src="https://a0.muscache.com/im/pictures/fe8493e6-cef5-46af-854b-145efe6880fc.jpg?im_w=720" alt="Image of the stay">
+        <img class="object-cover xl:h-full rounded-md col-span-2 xl:row-span-2" src="{{asset('/img/pages/stays/1.jpg')}}" alt="Image of the stay">
+        <img class="object-cover xl:h-full rounded-md" src="{{asset('/img/pages/stays/2.jpg')}}" alt="Image of the stay">
+        <img class="object-cover xl:h-full rounded-md" src="{{asset('/img/pages/stays/3.jpg')}}" alt="Image of the stay">
+        <img class="object-cover xl:h-full rounded-md" src="{{asset('/img/pages/stays/4.jpg')}}" alt="Image of the stay">
+        <img class="object-cover xl:h-full rounded-md" src="{{asset('/img/pages/stays/5.jpg')}}" alt="Image of the stay">
       </div>
 
     </section>
