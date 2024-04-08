@@ -2,6 +2,7 @@
 
 return [
   'banner' => 'Nossos Alojamentos',
+  'banner.phone' => 'Nossos<br>Alojamentos',
   'ap.check.airbnb' => 'Veja no Airbnb',
   'ap.find.map' => 'Encontre no Google Maps',
   'ap.1.title' => 'Apartamento Incrível no Funchal',

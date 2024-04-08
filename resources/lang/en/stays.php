@@ -2,6 +2,7 @@
 
 return [
   'banner' => 'Our Accommodations',
+  'banner.phone' => 'Our<br>Accommodations',
   'ap.check.airbnb' => 'Check on Airbnb',
   'ap.find.map' => 'Find on Google Maps',
   'ap.1.title' => 'Funchal Amazing Apartment',
