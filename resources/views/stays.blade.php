@@ -1,5 +1,5 @@
 @extends('layout')
-@php $title = 'title.about'; @endphp
+@php $title = 'title.stays'; @endphp
 @section('main')
 
   <div style="background-image: url('/img/pages/stays/banner.jpg')" class="h-52 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center">

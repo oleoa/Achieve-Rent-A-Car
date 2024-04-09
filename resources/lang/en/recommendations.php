@@ -1,5 +1,6 @@
 <?php
 
 return [
-  'banner' => 'Our recommendations'
+  'banner' => 'Our Recommendations',
+  'banner.phone' => 'Our<br>Recommendations',
 ];
