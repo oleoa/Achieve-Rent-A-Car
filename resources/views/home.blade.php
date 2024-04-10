@@ -2,11 +2,11 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <div id="system" class="xl:pt-16 xl:pb-16 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8">
+  <div id="system" class="xl:pt-16 xl:pb-16 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8 gap-2">
 
     <article id="systemArticle" class="px-default px-0">
       <div class="w-full h-full relative">
-        <div class="w-full h-full absolute bg-white/75 rounded-md animate-pulse" id="systemLoader"></div>
+        <div class="w-full h-full absolute xl:bg-white/75 bg-black/75 rounded-md animate-pulse" id="systemLoader"></div>
         <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       </div>
       <script id="jedeyeScript" src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
