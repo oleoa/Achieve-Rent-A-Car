@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
   width: 0rem;
 }
 
-#anyrentBookingsIframe{
+#anyrentBookingsIframe {
   border-radius: 0.375rem/* 6px */;
 }
 
@@ -48,13 +48,13 @@ body::-webkit-scrollbar {
   @apply 2xl:px-36 px-4;
 }
 
-#systemArticle {
+#systemArticle, #systemLoader {
   min-height: 355px;
   height: auto;
 }
 
 @media (max-width: 1024px) {
-  #systemArticle {
+  #systemArticle, #systemLoader {
     min-height: 770px;
     height: auto;
   }

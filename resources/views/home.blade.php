@@ -5,8 +5,11 @@
   <div id="system" class="xl:pt-16 xl:pb-16 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8">
 
     <article id="systemArticle" class="px-default px-0">
-      <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
-      <script src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+      <div class="w-full h-full relative">
+        <div class="w-full h-full absolute bg-white/75 rounded-md animate-pulse" id="systemLoader"></div>
+        <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
+      </div>
+      <script id="jedeyeScript" src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
     </article>
 
     @if ($reviews)
