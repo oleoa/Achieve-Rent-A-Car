@@ -32,7 +32,7 @@
 }
 
 .px-default {
-  @apply laptop:px-36 tablet:px-20 px-4;
+  @apply laptop:px-32 tablet:px-20 px-4;
 }
 
 .anyrent-height {

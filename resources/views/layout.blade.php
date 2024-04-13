@@ -68,7 +68,6 @@
 
     </style>
   
-
     <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -79,20 +78,6 @@
 
   <!-- Body -->
   <body class="min-h-screen grid grid-rows-1">
-
-    @if (/*$locale != 'locale' && $locale != 'local'*/false)
-
-      <!-- Clixtell Tracking Code -->
-      <script type='text/javascript'>
-        var script=document.createElement('script');
-        var prefix=document.location.protocol;
-        script.async=true;script.type='text/javascript';
-        var target=prefix + '//scripts.clixtell.com/track.js';
-        script.src=target;var elem=document.head;
-        elem.appendChild(script);
-      </script>
-        
-    @endif
 
     <!-- Header Content -->
     <nav class="fixed top-0 left-0 w-full flex flex-col z-30">
@@ -120,6 +105,9 @@
       <!-- Navbar -->
       <x-navbar :locale="$locale" :language="$language"/>
 
+      <!-- Sidebar -->
+      <x-sidebar :locale="$locale" :language="$language"/>
+
     </nav>
 
     <!-- Loader -->
@@ -129,7 +117,10 @@
     </div>
 
     <!-- Main Content -->
-    <main class="row-span-1" id="mainContent">
+    <main @class([
+      "row-span-1",
+      "pt-20" => $current != "home",
+    ]) id="mainContent">
 
       @yield('main')
 
