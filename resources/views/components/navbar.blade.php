@@ -1,5 +1,5 @@
 <div id="headerContent" @class([
-    "w-full bg-white flex items-center xl:justify-between justify-center gap-4 p-4 px-default relative",
+    "w-full bg-transparent flex items-center xl:justify-between justify-center gap-4 p-4 px-default relative backdrop-blur",
     "[&>a]:flex [&>a]:items-center [&>a]:justify-center text-flagRed/40 hover:[&>a]:text-flagRed [&>a]:h-fit",
 ])>
 
@@ -17,8 +17,8 @@
         <div @class([
             "flex gap-6", {{-- Both --}}
             "[&>a]:items-center [&>a]:justify-center text-white/50 xl:text-flagRed xl:hover:[&>a]:text-flagRed xl:hover:[&>a]:underline hover:[&>a]:text-white [&>a]:h-fit", {{-- Children --}}
-            "xl:flex-row xl:bg-white xl:p-0 xl:h-full xl:items-center xl:w-full xl:static xl:w-fit xl:justify-end", {{-- Computer --}}
-            "flex-col p-4 bg-flagRed items-start left-0 top-0 h-full relative", {{-- Phone --}}
+            "xl:flex-row xl:bg-transparent xl:p-0 xl:h-full xl:items-center xl:w-full xl:static xl:w-fit xl:justify-end", {{-- Computer --}}
+            "flex-col p-4 bg-flagRed items-start left-0 top-0 h-screen relative", {{-- Phone --}}
         ])>
 
             <button title="@lang('menu.toggle.title')" class="absolute right-0 top-0 p-4 xl:hidden sidebar-toggle">
@@ -83,11 +83,11 @@
 
             <div class="flex flex-row justify-start xl:p-0 xl:mt-0 mt-auto xl:w-fit w-full rounded-md">
 
-                <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'locale' : 'en'])}}" class="flex gap-2 items-center bg-white p-2 rounded-l-md">
+                <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'locale' : 'en'])}}" class="flex gap-2 items-center xl:bg-transparent bg-white p-2 rounded-l-md">
                     <img src="{{asset('/img/flags/en.jpg')}}" alt="England Flag" height="24" width="32" class="object-cover rounded">
                 </a>
             
-                <a title="@lang('menu.pt.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'local' : 'pt'])}}" class="flex gap-2 items-center bg-white p-2 rounded-r-md">
+                <a title="@lang('menu.pt.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'local' : 'pt'])}}" class="flex gap-2 items-center xl:bg-transparent bg-white p-2 rounded-r-md">
                     <img src="{{asset('/img/flags/pt.jpg')}}" alt="Portugal Flag" height="24" width="32" class="object-cover rounded">
                 </a>
 
