@@ -5,16 +5,19 @@
   <div id="system" class="xl:pb-16 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8 gap-2">
 
     <article id="systemArticle" class="px-default px-0 xl:pt-16">
-      <div class="w-full h-full relative">
-        <div class="w-full h-full absolute xl:bg-white/75 bg-black/75 rounded-md animate-pulse" id="systemLoader"></div>
+
+      <div class="w-full min-h-fit relative systemLoader">
+        <div class="w-full h-full absolute xl:bg-white/75 bg-black/75 rounded-md animate-pulse systemLoader" id="systemLoader"></div>
         <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
       </div>
+
       <script id="jedeyeScript" src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
+      
     </article>
 
     @if ($reviews)
 
-      <span id="home-page"></span>
+      <span class="hidden" id="home-page"></span>
     
       <!-- Reviews Computer -->
       <div class="relative z-10 w-full overflow-x-hidden xl:block hidden">

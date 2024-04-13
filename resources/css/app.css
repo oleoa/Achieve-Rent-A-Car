@@ -48,13 +48,13 @@ body::-webkit-scrollbar {
   @apply 2xl:px-36 px-4;
 }
 
-#systemArticle, #systemLoader {
+#systemArticle, .systemLoader {
   min-height: 355px;
   height: auto;
 }
 
 @media (max-width: 1024px) {
-  #systemArticle, #systemLoader {
+  #systemArticle, .systemLoader {
     min-height: 770px;
     height: auto;
   }
