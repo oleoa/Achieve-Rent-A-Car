@@ -19,11 +19,12 @@
 
   </section>
   
-  <section class="py-20 bg-red">
+  <section class="py-20 bg-blue">
+    <h2 class="text-white px-default text-6xl pb-8">Our Reviews on Google</h2>
     <x-reviews :reviews="$reviews" :language="$language"/>
   </section>
 
-  <section class="pb-80 pt-40 bg-cover bg-top" id="anyrent" style="background-image: url('/img/main/1.jpg');">
+  <section class="py-40 bg-cover bg-top" id="anyrent" style="background-image: url('/img/main/1.jpg');">
 
     <article class="px-default anyrent-height">
 
