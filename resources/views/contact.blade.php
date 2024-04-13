@@ -25,7 +25,7 @@
             <h3 class="font-bold">Email</h3>
             <i class="fa-solid fa-envelope text-3xl"></i>
           </div>
-          <a target="_blank" href="mailto:info@achieverentacar.com" class="text-flagRed underline" title="Send Us An Email">
+          <a target="_blank" href="mailto:info@achieverentacar.com" class="text-red underline" title="Send Us An Email">
             <h3>info@achieverentacar.com</h3>
           </a>
         </div>
@@ -46,15 +46,15 @@
       <h2 class="font-semibold">@lang('contact.form.title')</h2>
       @csrf
 
-      <input class="border-2 border-flagRed shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="name" placeholder="@lang('contact.form.name')">
+      <input class="border-2 border-red shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="name" placeholder="@lang('contact.form.name')">
 
-      <input class="border-2 border-flagRed shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="email" name="email" placeholder="@lang('contact.form.email')">
+      <input class="border-2 border-red shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="email" name="email" placeholder="@lang('contact.form.email')">
 
-      <input class="border-2 border-flagRed shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="phone" placeholder="@lang('contact.form.phone')">
+      <input class="border-2 border-red shadow-lg px-4 py-2 bg-zinc-200 rounded-md" type="text" name="phone" placeholder="@lang('contact.form.phone')">
 
-      <textarea class="border-2 border-flagRed shadow-lg px-4 py-2 bg-zinc-200 rounded-md" name="message" placeholder="@lang('contact.form.message')" cols="30" rows="5"></textarea>
+      <textarea class="border-2 border-red shadow-lg px-4 py-2 bg-zinc-200 rounded-md" name="message" placeholder="@lang('contact.form.message')" cols="30" rows="5"></textarea>
 
-      <input class="shadow-lg px-4 py-2 bg-flagYellow rounded-md hover:text-black hover:cursor-pointer hover:shadow-xl text-center load" type="submit" value="@lang('contact.form.submit')">
+      <input class="shadow-lg px-4 py-2 bg-yellow rounded-md hover:text-black hover:cursor-pointer hover:shadow-xl text-center load" type="submit" value="@lang('contact.form.submit')">
 
       @if(session('success'))
         <div class="alert alert-success text-green-600">

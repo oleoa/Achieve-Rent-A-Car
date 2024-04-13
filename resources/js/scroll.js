@@ -9,3 +9,14 @@ scrollToTopBtns.forEach(function(btn) {
     });
   });
 });
+
+let scrollToAnyrent = document.querySelectorAll(".anyrent-scroll");
+if (scrollToAnyrent) {
+  scrollToAnyrent.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      document.getElementById("anyrent").scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+}

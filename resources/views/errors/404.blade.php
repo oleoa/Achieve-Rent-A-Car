@@ -12,9 +12,9 @@
     <body class="h-screen flex items-center justify-center">
 
       <main class="flex flex-col items-center justify-center gap-6">
-        <h1 class="text-9xl font-black"><span class="text-flagBlue">4</span></span><span class="text-flagYellow">0</span><span class="text-flagBlue">4</span></h1>
+        <h1 class="text-9xl font-black"><span class="text-blue">4</span></span><span class="text-yellow">0</span><span class="text-blue">4</span></h1>
         <h2 class="text-4xl">Page not found</h2>
-        <a title="Click to go to the home page" href="{{route('home', ['en'])}}" class="px-4 py-2 bg-flagRed rounded-lg text-white text-xl hover:text-white hover:bg-red-400">Home</a>
+        <a title="Click to go to the home page" href="{{route('home', ['en'])}}" class="px-4 py-2 bg-red rounded-lg text-white text-xl hover:text-white hover:bg-red-400">Home</a>
       </main>
 
     </body>

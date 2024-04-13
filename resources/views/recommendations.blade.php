@@ -17,8 +17,8 @@
             <h2>{{$r['name']}}</h2>
             <p class="text-start hidden">{{$r['description']}}</p>
             <div class="flex xl:justify-start justify-center w-full gap-4">
-              <a target="_blank" href="{{$r['local']}}" class="flex px-4 py-2 items-center gap-2 transition-all duration-300 rounded-md bg-flagBlue text-white w-fit hover:text-flagBlue hover:bg-white border-2 border-flagBlue cursor-pointer"><i class="fa-solid fa-map-location-dot"></i>@lang('recommendations.find')</a>
-              <a target="_blank" href="{{$r['website']}}" class="flex px-4 py-2 items-center gap-2 transition-all duration-300 rounded-md bg-flagRed text-white w-fit hover:text-flagRed hover:bg-white border-2 border-flagRed cursor-pointer"><i class="fa-solid fa-circle-info"></i>@lang('recommendations.know')</a>
+              <a target="_blank" href="{{$r['local']}}" class="flex px-4 py-2 items-center gap-2 transition-all duration-300 rounded-md bg-blue text-white w-fit hover:text-blue hover:bg-white border-2 border-blue cursor-pointer"><i class="fa-solid fa-map-location-dot"></i>@lang('recommendations.find')</a>
+              <a target="_blank" href="{{$r['website']}}" class="flex px-4 py-2 items-center gap-2 transition-all duration-300 rounded-md bg-red text-white w-fit hover:text-red hover:bg-white border-2 border-red cursor-pointer"><i class="fa-solid fa-circle-info"></i>@lang('recommendations.know')</a>
             </div>
           </div>
         </div>

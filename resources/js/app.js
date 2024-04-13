@@ -6,5 +6,5 @@ import './carousel';
 import './sidebar';
 import './scroll';
 import './fleet';
-import './banner';
+//import './banner';
 import './system';

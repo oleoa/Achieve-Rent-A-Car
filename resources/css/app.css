@@ -18,26 +18,13 @@
 
     h6 { @apply text-base; }
 
-    /*Links*/
-    a { @apply hover:text-red-400; }
-
-    /*Section Paragraph*/
-    p { @apply text-justify; }
-
-    /*Section Paragraph*/
     ul { @apply list-disc list-inside; }
 
-    /* Input Default */
     input { 
       @apply px-4 py-2 bg-zinc-600 rounded shadow;
       color-scheme: dark;
      }
     textarea { @apply px-4 py-2 bg-zinc-600 rounded shadow; }
-  
-}
-
-body::-webkit-scrollbar {
-  width: 0rem;
 }
 
 #anyrentBookingsIframe {
@@ -45,17 +32,72 @@ body::-webkit-scrollbar {
 }
 
 .px-default {
-  @apply 2xl:px-36 px-4;
+  @apply laptop:px-36 tablet:px-20 px-4;
 }
 
-#systemArticle, .systemLoader {
+.anyrent-height {
   min-height: 355px;
   height: auto;
 }
 
 @media (max-width: 1024px) {
-  #systemArticle, .systemLoader {
+  .anyrent-height {
     min-height: 770px;
     height: auto;
   }
+}
+
+.achieve {
+  text-shadow:
+    1px 1px 0 #DA291C,
+    -1px 1px 0 #DA291C,
+    -1px -1px 0 #DA291C,
+    1px -1px 0 #DA291C;
+  
+}
+
+.outline-white {
+  text-shadow:
+    1px 1px 0 #fff,
+    -1px 1px 0 #fff,
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff;
+}
+
+.outline-black {
+  text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #DA291C;
+}
+
+::-moz-selection {
+  color: #ffffff;
+  background-color: #DA291C;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #DA291C;
+}
+
+.achieve::selection {
+  color: #ffffff;
+  background-color: #263E78;
+}
+
+.achieve::-moz-selection {
+  color: #ffffff;
+  background-color: #263E78;
+}
+
+.achieve::selection {
+  color: #ffffff;
+  background-color: #263E78;
 }

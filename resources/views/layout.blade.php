@@ -55,10 +55,14 @@
     <script src="https://kit.fontawesome.com/cf64f43fc0.js" crossorigin="anonymous" defer></script>
 
     <style>
-  
-      @media (min-width: 1280px) {
-        #system {
-          background-image: url("{{ asset('/img/main/1.jpg') }}");
+
+      #hero {
+        background-image: url('/img/pages/home/hero-phone.webp');
+      }
+
+      @media (min-width: 768px) {
+        #hero {
+          background-image: url('/img/pages/home/hero.jpg');
         }
       }
 
@@ -132,7 +136,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full px-default bg-flagRed min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-20">
+    <footer class="w-full px-default bg-red min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-20">
 
       <!-- Links -->
       <div class="hidden gap-4 text-white justify-center items-center">
@@ -150,7 +154,7 @@
       </div>
 
       <!-- Separator -->
-      <div class="bg-flagYellow w-full h-1 rounded hidden"></div>
+      <div class="bg-yellow w-full h-1 rounded hidden"></div>
 
       <!-- Legal -->
       <p class="text-white flex md:flex-row flex-col gap-1 text-lg">

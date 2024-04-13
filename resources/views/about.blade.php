@@ -12,12 +12,12 @@
       <div class="flex flex-col">
         <h2 class="font-semibold">
           @lang('about.item.1.title')
-          <span class="w-full h-0.5 my-2 bg-flagRed/50 rounded-full flex"></span>
+          <span class="w-full h-0.5 my-2 bg-red/50 rounded-full flex"></span>
         </h2>
         <p class="pb-8">@lang('about.item.1.paragraph')</p>
         <h2 class="font-semibold">
           @lang('about.item.2.title')
-          <span class="w-full h-0.5 my-2 bg-flagRed/50 rounded-full flex"></span>
+          <span class="w-full h-0.5 my-2 bg-red/50 rounded-full flex"></span>
         </h2>
         <p>@lang('about.item.2.paragraph')</p>
       </div>
