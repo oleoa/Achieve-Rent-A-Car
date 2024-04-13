@@ -16,7 +16,7 @@
 
         <div @class([
             "flex gap-6", {{-- Both --}}
-            "[&>a]:flex [&>a]:items-center [&>a]:justify-center text-white/50 xl:text-flagRed xl:hover:[&>a]:text-flagRed xl:hover:[&>a]:underline hover:[&>a]:text-white [&>a]:h-fit", {{-- Children --}}
+            "[&>a]:items-center [&>a]:justify-center text-white/50 xl:text-flagRed xl:hover:[&>a]:text-flagRed xl:hover:[&>a]:underline hover:[&>a]:text-white [&>a]:h-fit", {{-- Children --}}
             "xl:flex-row xl:bg-white xl:p-0 xl:h-full xl:items-center xl:w-full xl:static xl:w-fit xl:justify-end", {{-- Computer --}}
             "flex-col p-4 bg-flagRed items-start left-0 top-0 h-full relative", {{-- Phone --}}
         ])>
@@ -34,7 +34,7 @@
             </a>
 
             <a title="@lang('menu.fleet.title')" href="{{route('fleet', ['locale' => $locale])}}" @class([
-                "flex gap-2",
+                "hidden gap-2",
                 "xl:text-flagRed text-white underline" => $current == 'fleet',
             ])>
                 <i class="fa-solid fa-car xl:min-w-min min-w-8 flex items-center justify-start"></i>
