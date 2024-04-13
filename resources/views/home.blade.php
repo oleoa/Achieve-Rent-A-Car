@@ -2,7 +2,7 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <div id="system" class="xl:pb-16 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-8 gap-2">
+  <div id="system" class="xl:pb-16 bg-no-repeat bg-cover bg-bottom lg:px-0 flex flex-col xl:gap-16 gap-2">
 
     <article id="systemArticle" class="px-default px-0 xl:pt-16">
 
