@@ -2,24 +2,24 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <section id="hero" class="px-default text-center tablet:text-start flex flex-col gap-4 items-start justify-center bg-center tablet:py-64 pb-80 pt-28 text-white bg-cover">
+  <section id="hero" class="px-default text-center tablet:text-start flex flex-col gap-0 items-start justify-center bg-center computer:py-80 laptop:py-72 tablet:py-64 pb-80 pt-28 text-white bg-cover">
 
-    <h2 class="font-bold text-blue w-full"><span class="achieve text-white">Achieve </span>Rent a Car</h2>
+    <h2 class="font-bold text-blue w-full text-lg"><span class="achieve text-white">Achieve </span>Rent a Car</h2>
 
-    <h1 class="tablet:text-7xl font-bold w-full text-5xl">Rent a Car<br>Madeira Island</h1>
+    <h1 class="tablet:text-7xl font-bold w-full text-5xl pb-4">Rent a Car on<br>Madeira Island</h1>
 
-    <p>
+    <p class="pb-4">
       Um serviço especializado de aluguer de carros na Ilha da Madeira.<span class="tablet:inline hidden"><br></span>Com uma frota de veículos novos e uma equipa de profissionais pronta para o ajudar.
     </p>
 
     <div class="flex gap-4 justify-center tablet:justify-start w-full">
       <button class="anyrent-scroll rounded-md px-4 py-2 bg-red text-white hover:scale-110 duration-300">Book Now</button>
-      <button class="rounded-md px-4 py-2 bg-white text-red hover:scale-110 duration-300">Know More</button>
+      <button class="why-us-scroll rounded-md px-4 py-2 bg-white text-red hover:scale-110 duration-300">Why Us?</button>
     </div>
 
   </section>
   
-  <section class="py-8 bg-blue">
+  <section class="py-8 bg-[#0386D4]">
 
     <h2 class="text-white text-center tablet:text-start text-4xl font-bold pb-8 px-default">What our clients say</h2>
     
@@ -77,7 +77,7 @@
 
   </section>
 
-  <section class="py-40 bg-cover bg-top" id="anyrent" style="background-image: url('/img/main/1.jpg');">
+  <section class="py-20 bg-top" id="anyrent">
 
     <article class="px-default anyrent-height">
 
@@ -92,7 +92,7 @@
 
   </section>
 
-  <section class="flex flex-col px-default gap-4 py-16">
+  <section class="flex flex-col px-default gap-4 py-16 pt-20" id="why-us">
 
     <h2 class="text-5xl">@lang('home.why.achieve.title')</h2>
 
@@ -100,7 +100,7 @@
 
     <div class="flex gap-4">
 
-      <button title="@lang('home.why.achieve.book.now.title')" class="scrollToTopBtn flex gap-2 items-center text-red hover:text-red-400 font-bold underline" href="#system">@lang('home.why.achieve.book.now')</button>
+      <button title="@lang('home.why.achieve.book.now.title')" class="anyrent-scroll flex gap-2 items-center text-red hover:text-red-400 font-bold underline" href="#system">@lang('home.why.achieve.book.now')</button>
 
       <a title="@lang('home.why.achieve.contact.us.title')" class="text-red flex items-center gap-2 font-bold underline" href="{{route('contact', ['locale' => $locale])}}">@lang('home.why.achieve.contact.us')</a>
 

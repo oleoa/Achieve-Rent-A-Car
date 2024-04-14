@@ -20,3 +20,14 @@ if (scrollToAnyrent) {
     });
   });
 }
+
+let scrollToWhyUs = document.querySelectorAll(".why-us-scroll");
+if (scrollToWhyUs) {
+  scrollToWhyUs.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      document.getElementById("why-us").scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+}

@@ -24,8 +24,9 @@ export default {
         'spin-slow': 'spin 2s linear infinite',
       },
       screens: {
+        'computer': '1900px',
         'laptop': '1440px',
-        'tablet': '768px'
+        'tablet': '768px',
       }
     },
   },
