@@ -15,6 +15,12 @@ class Home extends Controller
     $this->setDiscount();
     $this->createView();
     $this->data['reviews'] = Review::all()->toArray();
+
+    $compareOrder = function($a, $b) {
+      return $a['order'] - $b['order'];
+    };
+  
+    usort($this->data['reviews'], $compareOrder);
     
     return view('home', $this->data);
   }

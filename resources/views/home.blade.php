@@ -19,9 +19,62 @@
 
   </section>
   
-  <section class="py-20 bg-blue">
-    <h2 class="text-white px-default text-6xl pb-8">Our Reviews on Google</h2>
-    <x-reviews :reviews="$reviews" :language="$language"/>
+  <section class="py-8 bg-blue">
+
+    <h2 class="text-white text-center tablet:text-start text-4xl font-bold pb-8 px-default">What our clients say</h2>
+    
+    <div class="swiper" style="width: 90vw;">
+      
+      <div class="swiper-wrapper">
+
+        @foreach ($reviews as $review)
+
+          <div class="swiper-slide">
+        
+            <div class="flex flex-col justify-start items-center h-full p-4 pb-8 gap-4 rounded-lg bg-white">
+
+              <div class="flex w-full gap-8 items-center">
+                  
+                <img src="{{$review['image']}}" alt="Valentina Vucicic" class="h-20 w-20">
+                
+                <div class="flex flex-col">
+
+                  <h2 class="font-bold text-xl">{{$review['name']}}</h2>
+                  
+                  <a href="{{$review['url']}}" target="_blank" class="w-fit">
+                    <img src="{{asset('/img/pages/home/reviews.webp')}}" alt="Google Reviews" height="64" width="114" class="object-cover">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <p class="font-semibold text-start w-full">
+
+                @if ($language == 'pt')
+
+                {{$review['comentario']}}  
+
+                @elseif ($language == 'en')
+
+                {{$review['comment']}}
+
+                @endif
+
+              </p>
+    
+            </div>
+
+          </div>
+            
+        @endforeach
+        
+      </div>
+      
+      <div class="swiper-pagination"></div>
+
+    </div>
+
   </section>
 
   <section class="py-40 bg-cover bg-top" id="anyrent" style="background-image: url('/img/main/1.jpg');">

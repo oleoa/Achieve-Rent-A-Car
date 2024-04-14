@@ -101,3 +101,8 @@
   color: #ffffff;
   background-color: #263E78;
 }
+
+.swiper-slide {
+  min-height: 100% !important;
+  height: auto !important;
+}
