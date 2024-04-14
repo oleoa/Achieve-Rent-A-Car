@@ -1,4 +1,4 @@
-<nav class="w-full fixed top-0 left-0 h-20 bg-white/50 backdrop-blur flex items-center justify-between px-default laptop:hidden">
+<nav class="w-full h-20 bg-white/50 backdrop-blur flex items-center justify-between px-default laptop:hidden">
 
   <img src="{{asset('/img/navbar/computer.webp')}}" alt="Achieve Rent a Car Log" height="48" width="306" class="object-cover">
 

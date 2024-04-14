@@ -5,6 +5,6 @@ import './faq';
 import './sidebar';
 import './scroll';
 import './fleet';
-//import './banner';
+import './discount';
 import './system';
 import './swiper';

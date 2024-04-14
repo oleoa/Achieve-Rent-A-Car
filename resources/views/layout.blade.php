@@ -84,7 +84,7 @@
 
       <!-- Discounts -->
       @if(isset($discount) && $discount)
-        <div class="text-xs md:text-xl w-full py-3 md:px-64 px-4 flex justify-center items-center font-semibold" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
+        <div id="discount" class="text-xs md:text-xl w-full py-3 md:px-64 px-4 flex justify-center items-center font-semibold" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
           <p class="w-full h-full text-center md:block hidden">
             @if ($language=='en')
               @lang($discount['text'])
