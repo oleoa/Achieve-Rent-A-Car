@@ -1,17 +1,17 @@
 var currentURL = window.location.href.split('/')[4];
 var headerContent = document.querySelector('#discount');
 if(headerContent){
-  updatePadding();
+  updatePaddingDiscount();
   
   window.addEventListener('resize', function () {
-    updatePadding();
+    updatePaddingDiscount();
   });
   
   window.onload = function () {
-    updatePadding();
+    updatePaddingDiscount();
   };
   
-  function updatePadding() {
+  function updatePaddingDiscount() {
     var headerContent = document.querySelector('#discount');
     let navbar = (!currentURL) ? 0 : 80;
     document.querySelector('#mainContent').style.paddingTop = headerContent.clientHeight + navbar + 'px';
