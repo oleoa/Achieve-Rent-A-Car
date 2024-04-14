@@ -6,15 +6,15 @@
 
     <h2 class="font-bold text-blue w-full text-lg"><span class="achieve text-white">Achieve </span>Rent a Car</h2>
 
-    <h1 class="tablet:text-7xl font-bold w-full text-5xl pb-4">Rent a Car on<br>Madeira Island</h1>
+    <h1 class="tablet:text-7xl font-bold w-full text-5xl pb-4">@lang('home.hero.title')</h1>
 
     <p class="pb-4">
-      Um serviço especializado de aluguer de carros na Ilha da Madeira.<span class="tablet:inline hidden"><br></span>Com uma frota de veículos novos e uma equipa de profissionais pronta para o ajudar.
+      @lang('home.hero.paragraph')
     </p>
 
     <div class="flex gap-4 justify-center tablet:justify-start w-full">
-      <button class="anyrent-scroll rounded-md px-4 py-2 bg-red text-white hover:scale-110 duration-300">Book Now</button>
-      <button class="why-us-scroll rounded-md px-4 py-2 bg-white text-red hover:scale-110 duration-300">Why Us?</button>
+      <button class="anyrent-scroll rounded-md px-4 py-2 bg-red text-white hover:scale-110 duration-300">@lang('home.hero.book.now')</button>
+      <button class="why-us-scroll rounded-md px-4 py-2 bg-white text-red hover:scale-110 duration-300">@lang('home.hero.why.us')</button>
     </div>
 
   </section>
@@ -92,7 +92,7 @@
 
   </section>
 
-  <section class="flex flex-col px-default gap-4 py-16 pt-20" id="why-us">
+  <section class="bg-blue/5 flex flex-col px-default gap-4 py-16 pt-20" id="why-us">
 
     <h2 class="text-5xl">@lang('home.why.achieve.title')</h2>
 
