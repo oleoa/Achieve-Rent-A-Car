@@ -49,7 +49,7 @@
 
               </div>
 
-              <p class="font-semibold text-start w-full">
+              <p class="font-semibold text-start">
 
                 @if ($language == 'pt')
 
