@@ -19,11 +19,11 @@
 
   </section>
   
-  <section class="py-8 bg-[#0386D4]">
+  <section class="py-8 bg-blue/5">
 
-    <h2 class="text-white text-center tablet:text-start text-4xl font-bold pb-8 px-default">What our clients say</h2>
+    <h2 class="text-center tablet:text-start text-4xl font-bold pb-8 px-default">@lang('home.reviews.title')</h2>
     
-    <div class="swiper" style="width: 90vw;">
+    <div class="swiper" id="review">
       
       <div class="swiper-wrapper">
 
@@ -31,7 +31,7 @@
 
           <div class="swiper-slide">
         
-            <div class="flex flex-col justify-start items-center h-full p-4 pb-8 gap-4 rounded-lg bg-white">
+            <div class="flex flex-col justify-start items-center h-full p-4 pb-8 gap-4 rounded-lg bg-white border-b-4 border-red">
 
               <div class="flex w-full gap-8 items-center">
                   

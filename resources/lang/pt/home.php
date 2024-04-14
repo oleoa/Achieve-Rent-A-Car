@@ -9,7 +9,7 @@ return
   'hero.why.us.title' => 'Clique aqui para saber por que escolher a Achieve Rent A Car',
   'hero.paragraph' => 'Receba e devolva em local de sua escolha, com um atendimento avaliado em 5 estrelas.<br>Preços com tudo incluído, sem franquia, sem caução, sem cartão de crédito.<br>Segurança e tranquilidade para a sua estadia.',
 
-  'reviews.title' => 'O que os nossos clientes dizem',
+  'reviews.title' => 'O que dizem os nossos clientes',
 
   'why.achieve.title' => 'Por que escolher a Achieve Rent A Car?',
   'why.achieve.paragraph' => 'Porque para nós <b>você é muito mais</b> do apenas um aluguer de carro.<br>Priorizamos <b>a sua satisfação</b> e fazemos o nosso melhor para que você <b>sinta-se acolhido</b> e <b>alcance</b> os objetivos que deseja para a sua viagem.<br>Enviaremos todas as informações de que precisa para sentir-se <b>seguro</b>, <b>bem acompanhado</b> e <b>orientado</b>.<br>Confira como os nossos clientes sentem-se em relação aos nossos serviços, aceda ao nosso <a target="_blank" class="text-red underline font-bold" title="Clique aqui para ver as nossas reviews" href=":link">Google Reviews</a>.',

@@ -9,7 +9,7 @@ return
   'hero.why.us.title' => 'Click here to find out why choose Achieve Rent A Car',
   'hero.paragraph' => 'Pick up and drop off wherever you like, with top-notch service rated 5 stars.<br>All-inclusive prices, no extra fees, no deposit, no credit card needed.<br>Enjoy a safe and worry-free stay.',
 
-  'reviews.title' => 'Our customer reviews',
+  'reviews.title' => 'What our customers say',
 
   'why.achieve.title' => 'Why Choose Achieve Rent A Car?',
   'why.achieve.paragraph' => 'Because for us <b>you are much more</b> than just a car rental.<br>We prioritize <b>your satisfaction</b> and do our best to make you <b>feel welcomed</b> and <b>achieve</b> the goals you desire for your trip.<br>We will provide all the information you need to feel <b>safe</b>, <b>well accompanied</b>, and <b>guided</b>.<br>Check out how our customers feel about our services, access our <a target="_blank" class="text-red underline font-bold" title="Click here to see our reviews" href=":link">Google Reviews</a>.',
