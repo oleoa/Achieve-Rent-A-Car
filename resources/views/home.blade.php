@@ -19,7 +19,7 @@
 
   </section>
   
-  <section class="py-8 bg-blue/5">
+  <section class="py-8 bg-red/5">
 
     <h2 class="text-center tablet:text-start text-4xl font-bold pb-8 px-default">@lang('home.reviews.title')</h2>
     
@@ -92,7 +92,7 @@
 
   </section>
 
-  <section class="bg-blue/5 flex flex-col px-default gap-4 py-16 pt-20" id="why-us">
+  <section class="bg-red/5 flex flex-col px-default gap-4 py-16 pt-20" id="why-us">
 
     <h2 class="text-5xl">@lang('home.why.achieve.title')</h2>
 
