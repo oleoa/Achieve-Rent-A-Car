@@ -12,7 +12,6 @@ if(headerContent){
   };
   
   function updatePaddingDiscount() {
-    var headerContent = document.querySelector('#discount');
     let navbar = (!currentURL) ? 0 : 80;
     document.querySelector('#mainContent').style.paddingTop = headerContent.clientHeight + navbar + 'px';
   }
