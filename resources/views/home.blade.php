@@ -43,14 +43,14 @@
 
               <div class="flex w-full gap-8 items-center">
                   
-                <img src="{{$review['image']}}" alt="Valentina Vucicic" class="h-20 w-20">
+                <img src="{{$review['image']}}" alt="{{$review['name']}}" class="h-20 w-20">
                 
                 <div class="flex flex-col">
 
                   <h2 class="font-bold text-xl">{{$review['name']}}</h2>
                   
                   <a href="{{$review['url']}}" target="_blank" class="w-fit">
-                    <img src="{{asset('/img/pages/home/reviews.webp')}}" alt="Google Reviews" height="64" width="114" class="object-cover">
+                    <img src="{{asset('/img/pages/home/reviews.webp')}}" alt="Google Reviews" height="64" width="114" class="object- border-b-4 rounded-md border-red">
                   </a>
 
                 </div>
