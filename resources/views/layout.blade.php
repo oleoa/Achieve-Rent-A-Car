@@ -62,7 +62,7 @@
 
       @media (min-width: 768px) {
         #hero {
-          background-image: url('/img/pages/home/hero.webp');
+          background-image: url('/img/pages/home/new-hero.webp');
         }
       }
 

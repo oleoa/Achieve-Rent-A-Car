@@ -7,7 +7,13 @@ return
   'hero.book.now.title' => 'Click here to book now',
   'hero.why.us' => 'Why Us?',
   'hero.why.us.title' => 'Click here to find out why choose Achieve Rent A Car',
-  'hero.paragraph' => 'Pick up and drop off wherever you like, with top-notch service rated 5 stars.<br>All-inclusive prices, no extra fees, no deposit, no credit card needed.<br>Enjoy a safe and worry-free stay.',
+  'hero.paragraph' => 'Receive and return at the location of your choice, with 5-star service.<br>Prices with Premium insurance included, no deductible, no deposit, no credit card.<br>Unlimited mileage and free additional drivers.<br> Security and tranquility for your stay.',
+  'hero.paragraph.phone.1' => '5 stars rated service',
+  'hero.paragraph.phone.2' => 'Pick up and drop off anywhere you like',
+  'hero.paragraph.phone.3' => 'Premium Insurance included',
+  'hero.paragraph.phone.4' => 'No excess, no credit card needed',
+  'hero.paragraph.phone.5' => 'Unlimited mileage',
+  'hero.paragraph.phone.6' => 'Free additional driver',
 
   'reviews.title' => 'What our customers say',
 

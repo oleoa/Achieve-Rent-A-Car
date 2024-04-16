@@ -8,9 +8,17 @@
 
     <h1 class="tablet:text-7xl font-bold w-full text-5xl pb-4">@lang('home.hero.title')</h1>
 
-    <p class="pb-4">
+    <p class="pb-4 tablet:block hidden">
       @lang('home.hero.paragraph')
     </p>
+    <ul class="pb-4 tablet:hidden list-none text-center w-full flex flex-col items-start">
+      @for ($i = 1; $i <= 6; $i++)
+        <li class="flex items-center gap-2 font-bold w-fit text-start">
+          <i class="fa-solid fa-check text-2xl"></i>
+          @lang('home.hero.paragraph.phone.'.$i)
+        </li>
+      @endfor
+    </ul>
 
     <div class="flex gap-4 justify-center tablet:justify-start w-full">
       <button class="anyrent-scroll rounded-md px-4 py-2 bg-red text-white hover:scale-110 duration-300">@lang('home.hero.book.now')</button>

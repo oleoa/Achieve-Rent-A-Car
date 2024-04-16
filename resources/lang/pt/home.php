@@ -7,7 +7,13 @@ return
   'hero.book.now.title' => 'Clique aqui para reservar agora',
   'hero.why.us' => 'Por que Nós?',
   'hero.why.us.title' => 'Clique aqui para saber por que escolher a Achieve Rent A Car',
-  'hero.paragraph' => 'Receba e devolva em local de sua escolha, com um atendimento avaliado em 5 estrelas.<br>Preços com tudo incluído, sem franquia, sem caução, sem cartão de crédito.<br>Segurança e tranquilidade para a sua estadia.',
+  'hero.paragraph' => 'Receba e devolva em local de sua escolha, com um atendimento avaliado em 5 estrelas.<br>Preços com seguro Premium incluído, sem franquia, sem caução, sem cartão de crédito.<br>Quilometragem ilimitada e condutores adicionais gratuítos.<br>Segurança e tranquilidade para a sua estadia.',
+  'hero.paragraph.phone.1' => 'Atendimento avaliado em 5 estrelas',
+  'hero.paragraph.phone.2' => 'Receba e devolva onde quiser',
+  'hero.paragraph.phone.3' => 'Valor com seguro Premium incluído',
+  'hero.paragraph.phone.4' => 'Sem franquia, sem cartão de crédito',
+  'hero.paragraph.phone.5' => 'Quilometragem ilimitada',
+  'hero.paragraph.phone.6' => 'Condutor adicional gratuito',
 
   'reviews.title' => 'O que dizem os nossos clientes',
 
