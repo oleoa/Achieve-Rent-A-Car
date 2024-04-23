@@ -110,6 +110,9 @@
 
     </nav>
 
+    <!-- Whatsapp Button -->
+    <x-whatsapp-button/>
+
     <!-- Loader -->
     <div role="status" id="loading" class="hidden h-screen w-screen bg-zinc-200/70 z-50 fixed top-0 left-0 items-center justify-center">
       <img src="{{url('/img/loader/car.webp')}}" alt="Loader" class="animate-spin-slow absolute z-30 w-28">
