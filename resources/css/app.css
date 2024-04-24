@@ -36,13 +36,41 @@
 }
 
 .anyrent-height {
-  min-height: 355px;
+  min-height: 779px;
   height: auto;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 928px) {
+  .anyrent-height {
+    min-height: 659px;
+    height: auto;
+  }
+}
+
+@media (min-width: 929px) {
+  .anyrent-height {
+    min-height: 769px;
+    height: auto;
+  }
+}
+
+@media (min-width: 961px) {
   .anyrent-height {
     min-height: 770px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1152px) {
+  .anyrent-height {
+    min-height: 479px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1153px) {
+  .anyrent-height {
+    min-height: 355px;
     height: auto;
   }
 }
