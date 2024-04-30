@@ -17,7 +17,7 @@
             <h3 class="font-bold">WhatsApp</h3>
             <i class="fa-brands fa-whatsapp text-3xl" style="color: #25d366;"></i>
           </div>
-          <h3>+351 968 178 109</h3>
+          <h3>+351 938 342 970</h3>
         </div>
   
         <div class="xl:px-0">
