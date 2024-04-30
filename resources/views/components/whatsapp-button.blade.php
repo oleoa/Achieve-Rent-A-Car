@@ -16,7 +16,7 @@
   
     </div>
   
-    <a title="@lang('whatsapp.title')" href="https://wa.me/351968178109" target="_blank" class="bg-[#25D366] h-16 w-16 rounded-3xl flex items-center justify-center">
+    <a title="@lang('whatsapp.title')" href="https://wa.me/938342970" target="_blank" class="bg-[#25D366] h-16 w-16 rounded-3xl flex items-center justify-center">
   
       <i class="fa-brands fa-whatsapp text-white text-4xl"></i>
   
