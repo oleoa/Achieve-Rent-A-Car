@@ -3,14 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Models\FAQ as FAQModel;
 
 class FAQ extends Controller
 {
   public function index($locale)
   {
-    $faq = FAQModel::all()->toArray();
+    $path = public_path('files/faq.json');
+    if(file_exists($path)) {
+      $faq = file_get_contents($path);
+      $faq = json_decode($faq, true);
+    } else {
+      $faq = [];
+    }
     $this->data['faq'] = $faq;
     $this->setLocale($locale);
     $this->isCurrent('faq');

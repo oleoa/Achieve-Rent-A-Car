@@ -1,0 +1,92 @@
+[
+  {
+    "id": 5,
+    "question": "How do I rent a car from Achieve Rent a Car?",
+    "pergunta": "Como devo proceder para alugar um carro na Achieve Rent a Car?",
+    "answer": "You can get a quote and complete your reservation quickly, right here on the website.<br>You can also send us a message via Whatsapp or email and we will respond as soon as possible.",
+    "resposta": "Pode obter um orçamento e concluir sua reserva rapidamente, aqui mesmo pelo site.<br>Pode também enviar-nos uma mensagem por Whatsapp ou por e-mail e responderemos o mais breve possível.",
+    "created_at": "2024-02-08T16:07:20.000000Z",
+    "updated_at": "2024-02-08T16:07:20.000000Z"
+  },
+  {
+    "id": 7,
+    "question": "What is the permitted mileage?",
+    "pergunta": "Qual é a quilometragem permitida?",
+    "answer": "The mileage is unlimited, so you can explore our Island to the fullest.",
+    "resposta": "A quilometragem é ilimitada, para que possa explorar ao máximo a nossa Ilha.",
+    "created_at": "2024-02-08T16:25:36.000000Z",
+    "updated_at": "2024-02-08T16:25:36.000000Z"
+  },
+  {
+    "id": 8,
+    "question": "What is the fuel policy?",
+    "pergunta": "Qual é a política de combustível?",
+    "answer": "You will receive the vehicle with a full fuel tank and must return it in the same way.",
+    "resposta": "Você receberá a viatura com o depósito de combustível cheio e deverá devolvê-lo da mesma forma.",
+    "created_at": "2024-02-09T09:06:56.000000Z",
+    "updated_at": "2024-02-09T09:06:56.000000Z"
+  },
+  {
+    "id": 9,
+    "question": "What is the minimum rental period?",
+    "pergunta": "Qual é o período mínimo de aluguer?",
+    "answer": "The minimum rental period is 1 (one) day, 24 hours.",
+    "resposta": "O período mínimo de aluguer é de 1 (um) dia, 24 horas.",
+    "created_at": "2024-02-09T09:08:31.000000Z",
+    "updated_at": "2024-02-09T09:08:31.000000Z"
+  },
+  {
+    "id": 10,
+    "question": "What are the Premium insurance coverages?",
+    "pergunta": "Quais são as coberturas e exclusões do seguro Premium?",
+    "answer": "To find out more about all the coverage and exclusions of Premium insurance, which is included in all our rentals, please consult our Terms and Conditions, the link to which can be found at the footer of the website and go to the Premium Insurance section. If you have any questions, feel free to send us your questions via Whatsapp or by email to info@achieverentacar.com",
+    "resposta": "Para saber mais sobre todas as coberturas e exclusões do seguro Premium, que está incluído em todos os nossos alugueres, por favor consulte os nossos Termos e Condições, cujo link encontra-se no rodapé do site e vá até a seção Seguro Premium. Caso tenha dúvidas, sinta-se à vontade para nos enviar suas questões via Whatsapp ou por e-mail, para info@achieverentacar.com",
+    "created_at": "2024-02-09T09:14:50.000000Z",
+    "updated_at": "2024-02-09T09:14:50.000000Z"
+  },
+  {
+    "id": 11,
+    "question": "What if I receive fines or penalties?",
+    "pergunta": "E se eu receber multas ou penalidades?",
+    "answer": "Unless the cause of the fine or penalty is something related to the vehicle itself, fines and penalties will be the responsibility of the customer and must be paid by them.",
+    "resposta": "Exceto se a causa da multa ou penalidade for por algo relacionado à própria viatura, as multas e penalidades serão de responsabilidade do cliente e deverão ser pagas por ele.",
+    "created_at": "2024-02-09T09:19:21.000000Z",
+    "updated_at": "2024-02-09T09:19:21.000000Z"
+  },
+  {
+    "id": 12,
+    "question": "What is the procedure in case of damage to the vehicle?",
+    "pergunta": "Qual é o procedimento em caso de danos à viatura?",
+    "answer": "In any situation in which there is damage to the vehicle, the customer must notify Achieve Rent a Car as soon as possible. The customer will not pay for damages that are covered by Premium insurance. Damages that are not covered by Premium insurance will be paid by the customer. The insurance does not cover any damage caused by negligent driving or violation of the Driving Laws in force in Portugal. To find out more, see our Terms and Conditions.",
+    "resposta": "Em qualquer situação em que hajam danos à viatura, o cliente deverá comunicar a Achieve Rent a Car o mais breve que lhe for possível. O cliente não pagará pelos danos que estão cobertos pelo seguro Premium. Os danos que não estejam cobertos pelo seguro Premium, serão pagos pelo cliente. O seguro não cobre nenhum dano causado por condução negligente ou por violação das Leis de Condução vigentes em Portugal. Para saber mais, consulte os nossos Termos e Condições.",
+    "created_at": "2024-02-09T09:27:20.000000Z",
+    "updated_at": "2024-02-09T09:27:20.000000Z"
+  },
+  {
+    "id": 13,
+    "question": "What are the opening hours for vehicle deliveries and collections?",
+    "pergunta": "Qual é o horário de funcionamento para entregas e recolhas das viaturas?",
+    "answer": "Opening hours for receiving and returning vehicles are Monday to Sunday, from 08:00 to 18:00.<br>To receive and return vehicles in São Vicente, Santana, Porto Moniz and Calheta, the opening hours are from 09:00 to 18:00.<br>When booking, you can choose to receive or return the vehicle during periods beyond these opening hours.<br>An additional fee for out-of-hours services will be charged.",
+    "resposta": "O horário de funcionamento para receber e devolver viaturas é de segunda a domingo, das 08:00 às 18:00.<br>Para receber e devolver viaturas em São Vicente, Santana, Porto Moniz e Calheta o horário é das 09:00 às 18:00.<br>Ao fazer a reserva poderá optar por receber ou devolver a viatura em períodos para além desses horários de funcionamento.<br>Uma taxa adicional de serviços fora de horas será cobrada.",
+    "created_at": "2024-02-09T09:37:02.000000Z",
+    "updated_at": "2024-02-09T09:37:02.000000Z"
+  },
+  {
+    "id": 14,
+    "question": "What documents should I provide?",
+    "pergunta": "Quais documentos devo fornecer?",
+    "answer": "Drivers must be at least 20 years old and must present:<br>- valid driving license in Portugal, at least 2 years of experience;<br>- ID or passport.",
+    "resposta": "Os condutores devem ter no mínimo 20 anos de idade. É necessário que apresentem:<br>- carta de condução válida em Portugal, com no mínimo 2 anos de experiência;<br>- Cartão de cidadão, bilhete de identidade ou passaporte.",
+    "created_at": "2024-02-13T10:54:49.000000Z",
+    "updated_at": "2024-02-13T10:54:49.000000Z"
+  },
+  {
+    "id": 15,
+    "question": "Do I need to present a credit card to rent a car from Achieve Rent a Car?",
+    "pergunta": "Preciso apresentar um cartão de crédito para alugar um carro na Achieve Rent a Car?",
+    "answer": "Because we do not require a deposit, you do not need to present a credit card to rent a car with us.<br>You can always pay by credit card, debit card, cash and even bank transfer.",
+    "resposta": "Pelo facto de não exigirmos caução, não precisa de apresentar um cartão de crédito para alugar um carro connosco.<br>Pode sempre pagar com cartão de crédito, cartão de débito, em dinheiro e até por transferência bancária.",
+    "created_at": "2024-02-14T09:56:23.000000Z",
+    "updated_at": "2024-02-14T09:56:23.000000Z"
+  }
+]
