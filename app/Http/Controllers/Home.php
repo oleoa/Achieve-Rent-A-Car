@@ -12,8 +12,6 @@ class Home extends Controller
   {
     $this->setLocale($locale);
     $this->isCurrent('home');
-    $this->setDiscount();
-    $this->createView();
     $this->data['reviews'] = Review::all()->toArray();
 
     $compareOrder = function($a, $b) {

@@ -11,8 +11,6 @@ class Seats extends Controller
   {
     $this->setLocale($locale);
     $this->isCurrent('seats');
-    $this->setDiscount();
-    $this->createView();
     return view('seats', $this->data);
   }
 }

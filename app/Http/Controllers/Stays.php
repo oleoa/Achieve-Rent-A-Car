@@ -10,8 +10,6 @@ class Stays extends Controller
     {
         $this->setLocale($locale);
         $this->isCurrent('stays');
-        $this->setDiscount();
-        $this->createView();
         return view('stays', $this->data);
     }
 }

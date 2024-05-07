@@ -11,8 +11,6 @@ class Fleet extends Controller
   {
     $this->setLocale($locale);
     $this->isCurrent('fleet');
-    $this->setDiscount();
-    $this->createView();
     return view('fleet', $this->data);
   }
 }

@@ -11,8 +11,6 @@ class Recommendations extends Controller
     {
         $this->setLocale($locale);
         $this->isCurrent('recommendations');
-        $this->setDiscount();
-        $this->createView();
 
         $pathTorecommendations = public_path('recommendations.json');
         if (File::exists($pathTorecommendations)) {

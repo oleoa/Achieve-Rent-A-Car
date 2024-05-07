@@ -10,8 +10,6 @@ class About extends Controller
   {
     $this->setLocale($locale);
     $this->isCurrent('about');
-    $this->setDiscount();
-    $this->createView();
     return view('about', $this->data);
   }
 }

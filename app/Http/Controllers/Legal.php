@@ -10,8 +10,6 @@ class Legal extends Controller
   {
     $this->setLocale($locale);
     $this->isCurrent('terms');
-    $this->setDiscount();
-    $this->createView();
     return view('terms', $this->data);
   }
 
@@ -19,8 +17,6 @@ class Legal extends Controller
   {
     $this->setLocale($locale);
     $this->isCurrent('privacy');
-    $this->setDiscount();
-    $this->createView();
     return view('privacy', $this->data);
   }
 }

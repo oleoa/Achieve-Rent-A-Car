@@ -14,8 +14,6 @@ class FAQ extends Controller
     $this->data['faq'] = $faq;
     $this->setLocale($locale);
     $this->isCurrent('faq');
-    $this->setDiscount();
-    $this->createView();
     return view('faq', $this->data);
   }
 }

@@ -13,8 +13,6 @@ class Contact extends Controller
   {
     $this->setLocale($locale);
     $this->isCurrent('contact');
-    $this->setDiscount();
-    $this->createView();
     return view('contact', $this->data);
   }
 
