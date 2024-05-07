@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\File;
-use App\Models\Review;
 
 class Home extends Controller
 {
@@ -12,7 +10,15 @@ class Home extends Controller
   {
     $this->setLocale($locale);
     $this->isCurrent('home');
-    $this->data['reviews'] = Review::all()->toArray();
+    
+    $path = public_path('files/reviews.json');
+    if(file_exists($path)) {
+      $reviews = file_get_contents($path);
+      $reviews = json_decode($reviews, true);
+    } else {
+      $reviews = [];
+    }
+    $this->data['reviews'] = $reviews;
 
     $compareOrder = function($a, $b) {
       return $a['order'] - $b['order'];
