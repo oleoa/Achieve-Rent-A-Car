@@ -8,14 +8,22 @@
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ad0b7cd2-7f52-40fc-b5c2-ce61f1f7b361" data-blockingmode="auto" type="text/javascript"></script>
     
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96H568THTJ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-32GDE3BVJE"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-96H568THTJ');
+      gtag('config', 'G-32GDE3BVJE');
     </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PJSKCCJL');</script>
+    <!-- End Google Tag Manager -->
 
     <!-- Favicon Google Ads -->
     <link rel="icon" href="{{asset('/favicon.ico')}}">
@@ -92,6 +100,11 @@
 
   <!-- Body -->
   <body class="min-h-screen grid grid-rows-1">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJSKCCJL"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header Content -->
     <nav class="fixed top-0 left-0 w-full flex flex-col z-30">
