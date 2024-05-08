@@ -33,7 +33,7 @@
     
     <div class="swiper" id="review">
       
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper pt-4">
 
         @foreach ($reviews as $review)
 
@@ -50,7 +50,7 @@
                   <h2 class="font-bold text-xl">{{$review['name']}}</h2>
                   
                   <a href="{{$review['url']}}" target="_blank" class="w-fit">
-                    <img src="{{asset('/img/pages/home/reviews.webp')}}" alt="Google Reviews" height="64" width="114" class="object- border-b-4 rounded-md border-red">
+                    <img src="{{asset('/img/pages/home/reviews.webp')}}" alt="Google Reviews" height="64" width="114" class="rounded-md border-red">
                   </a>
 
                 </div>
@@ -89,9 +89,7 @@
 
     <article class="px-default anyrent-height">
 
-      <div class="w-full min-h-fit relative anyrent-height">
-        <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
-      </div>
+      <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
 
       <script id="jedeyeScript" src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
       
