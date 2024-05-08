@@ -71,10 +71,21 @@
     <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96H568THTJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-96H568THTJ');
+    </script>
+
     <!-- Page Title -->
     <title>@lang($title)</title>
 
   </head>
+
 
   <!-- Body -->
   <body class="min-h-screen grid grid-rows-1">
