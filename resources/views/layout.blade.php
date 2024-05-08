@@ -28,7 +28,7 @@
     <!-- Description For Search Engine Optimization -->
     <meta name="description" content="@lang('meta.description')">
 
-    <!-- Languages For Search Engine Optimization -->
+    <!-- locales For Search Engine Optimization -->
     <link rel="alternate" href="{{env('APP_URL')}}/" hreflang="x-default"/>
     <link rel="alternate" href="{{env('APP_URL')}}/en" hreflang="en"/>
     <link rel="alternate" href="{{env('APP_URL')}}/en/about" hreflang="en"/>
@@ -103,16 +103,16 @@
       @if(isset($discount) && $discount)
         <div id="discount" class="text-xs md:text-xl w-full py-3 md:px-64 px-4 flex justify-center items-center font-semibold" style="background-color: {{$discount['color']}}; color: {{$discount['text_color']}};">
           <p class="w-full h-full text-center md:block hidden">
-            @if ($language=='en')
+            @if ($locale=='en')
               @lang($discount['text'])
-            @elseif ($language=='pt')
+            @elseif ($locale=='pt')
               @lang($discount['texto'])
             @endif
           </p>
           <p class="w-full h-full text-start md:hidden block">
-            @if ($language=='en')
+            @if ($locale=='en')
               @lang($discount['text_mobile'])
-            @elseif ($language=='pt')
+            @elseif ($locale=='pt')
               @lang($discount['texto_mobile'])
             @endif
           </p>
@@ -120,10 +120,10 @@
       @endif
 
       <!-- Navbar -->
-      <x-navbar :locale="$locale" :language="$language"/>
+      <x-navbar :locale="$locale"/>
 
       <!-- Sidebar -->
-      <x-sidebar :locale="$locale" :language="$language"/>
+      <x-sidebar :locale="$locale"/>
 
     </nav>
 

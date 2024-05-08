@@ -33,13 +33,13 @@
 
           <!-- Question -->
           <div id="question_box" class="select-none cursor-pointer w-full bg-red/70 p-4 rounded-lg shadow flex items-center justify-between">
-            <span class="text-lg font-semibold">@lang($language=='en'?$f['question']:$f['pergunta'])</span>
+            <span class="text-lg font-semibold">@lang($locale=='en'?$f['question']:$f['pergunta'])</span>
             <span class="">+</span>
           </div>
 
           <!-- Answer -->
           <div class="bg-yellow/70 p-4 rounded hidden answer">
-            <p class="text-black font-medium">@lang($language=='en'?$f['answer']:$f['resposta'])</p>
+            <p class="text-black font-medium">@lang($locale=='en'?$f['answer']:$f['resposta'])</p>
           </div>
 
         </div>

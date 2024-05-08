@@ -11,16 +11,14 @@ class Sidebar extends Component
 {
     public $current;
     public $locale;
-    public $language;
 
     /**
      * Create a new component instance.
      */
-    public function __construct($locale, $language)
+    public function __construct($locale)
     {
         $this->current = Route::currentRouteName();
         $this->locale = $locale;
-        $this->language = $language;
     }
 
     /**

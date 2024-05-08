@@ -19,13 +19,9 @@ class Controller extends BaseController
 
   protected function setLocale(String $locale): void
   {
-    $localeExists = in_array($locale, ['en', 'pt', 'local', 'locale'])? true : false;
+    $localeExists = in_array($locale, ['en', 'pt'])? true : false;
     if(!$localeExists) abort(404);
     $this->data['locale'] = $locale;
-    $this->data['language'] = '';
-    if($locale == 'locale') $this->data['language'] = 'en';
-    else if($locale == 'local') $this->data['language'] = 'pt';
-    else $this->data['language'] = $locale;
-    app()->setLocale($this->data['language']);
+    app()->setLocale($this->data['locale']);
   }
 }

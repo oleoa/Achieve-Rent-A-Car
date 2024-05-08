@@ -33,11 +33,11 @@
 
             <p class="font-semibold text-start w-full">
 
-                @if ($language == 'pt')
+                @if ($locale == 'pt')
 
                 {{$review['comentario']}}  
 
-                @elseif ($language == 'en')
+                @elseif ($locale == 'en')
 
                 {{$review['comment']}}
 
@@ -90,9 +90,9 @@
             </a>
             
             <p>
-                @if ($language == 'pt')
+                @if ($locale == 'pt')
                 {{$review['comentario']}}  
-                @elseif ($language == 'en')
+                @elseif ($locale == 'en')
                 {{$review['comment']}}
                 @endif
             </p>

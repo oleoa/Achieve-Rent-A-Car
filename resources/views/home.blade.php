@@ -59,11 +59,11 @@
 
               <p class="font-semibold text-start">
 
-                @if ($language == 'pt')
+                @if ($locale == 'pt')
 
                 {{$review['comentario']}}  
 
-                @elseif ($language == 'en')
+                @elseif ($locale == 'en')
 
                 {{$review['comment']}}
 
@@ -91,7 +91,7 @@
 
       <div class="w-full min-h-fit relative anyrent-height">
         <div class="w-full h-full absolute xl:bg-red/75 bg-black/75 rounded-md animate-pulse anyrent-height" id="anyrent-skeleton"></div>
-        <anyrent-iframe data-locale="{{$language}}"></anyrent-iframe>
+        <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
       </div>
 
       <script id="jedeyeScript" src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
