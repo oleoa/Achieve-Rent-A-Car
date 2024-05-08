@@ -3,7 +3,20 @@
 
   <!-- Head -->
   <head>
+
+    <!-- CookieBot -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ad0b7cd2-7f52-40fc-b5c2-ce61f1f7b361" data-blockingmode="auto" type="text/javascript"></script>
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96H568THTJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-96H568THTJ');
+    </script>
+
     <!-- Favicon Google Ads -->
     <link rel="icon" href="{{asset('/favicon.ico')}}">
 
@@ -70,16 +83,6 @@
   
     <!-- Resources (CSS and JS) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96H568THTJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-96H568THTJ');
-    </script>
 
     <!-- Page Title -->
     <title>@lang($title)</title>
