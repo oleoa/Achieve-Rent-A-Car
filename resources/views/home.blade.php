@@ -90,7 +90,6 @@
     <article class="px-default anyrent-height">
 
       <div class="w-full min-h-fit relative anyrent-height">
-        <div class="w-full h-full absolute xl:bg-red/75 bg-black/75 rounded-md animate-pulse anyrent-height" id="anyrent-skeleton"></div>
         <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
       </div>
 
