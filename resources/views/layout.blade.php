@@ -6,16 +6,6 @@
 
     <!-- CookieBot -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ad0b7cd2-7f52-40fc-b5c2-ce61f1f7b361" data-blockingmode="auto" type="text/javascript"></script>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-32GDE3BVJE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-32GDE3BVJE');
-    </script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
