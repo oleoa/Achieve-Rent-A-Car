@@ -27,9 +27,9 @@
 
   </section>
   
-  <section class="py-8">
+  <section class="py-16 bg-red/5">
 
-    <h2 class="text-center tablet:text-start text-4xl font-bold pb-8 px-default">@lang('home.reviews.title')</h2>
+    <h2 class="text-center w-full text-red text-5xl font-bold laptop:pb-20 pb-4 underline px-default">@lang('home.reviews.title')</h2>
     
     <div class="swiper" id="review">
       
@@ -39,7 +39,7 @@
 
           <div class="swiper-slide">
         
-            <div class="flex flex-col justify-start items-center h-full p-4 pb-8 gap-4 rounded-lg bg-white border-b-4 border-red">
+            <div class="flex flex-col justify-start items-center h-full py-4 px-8 pb-8 gap-4 rounded-lg bg-white border-b-4 border-red">
 
               <div class="flex w-full gap-8 items-center">
                   
@@ -60,12 +60,12 @@
               <p class="font-semibold text-start">
 
                 @if ($locale == 'pt')
-
-                {{$review['comentario']}}  
+                
+                  @lang($review['comentario'])
 
                 @elseif ($locale == 'en')
 
-                {{$review['comment']}}
+                  @lang($review['comment'])
 
                 @endif
 
@@ -85,7 +85,7 @@
 
   </section>
 
-  <section class="py-20 bg-top bg-red/5" id="anyrent">
+  <section class="py-20 bg-top bg-red/10" id="anyrent">
 
     <article class="px-default anyrent-height">
 
@@ -97,7 +97,7 @@
 
   </section>
 
-  <section class="flex flex-col px-default gap-4 py-16 pt-20" id="why-us">
+  <section class="flex flex-col px-default gap-8 py-16 pt-20" id="why-us">
 
     <h2 class="text-5xl">@lang('home.why.achieve.title')</h2>
 
@@ -111,7 +111,7 @@
 
     </div>
 
-    <div class="grid lg:grid-cols-3 gap-8 py-4">
+    <div class="grid lg:grid-cols-3 gap-12 py-4">
 
       @for ($i = 1; $i <= 6; $i++)
       

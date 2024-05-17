@@ -1,145 +1,50 @@
 [
   {
-    "id": 8,
-    "created_at": "2024-04-01T12:27:12.000000Z",
-    "updated_at": "2024-04-05T11:41:35.000000Z",
-    "image": "https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w80-h80-p-rp-mo-br100",
-    "order": "1",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjW0TBIq-Scl9aAa5UlCeR81auknNArt0JRfMSHi_DHeN3A=w120-h120-p-rp-mo-br100",
+    "order": "0",
     "name": "Valentina Vucicic",
     "comment": "Highly recommended! We rented and enjoyed it from the start till the end. Everything was super, it went smoothly, and the customer service was very attentive, helping us with all the questions we had. Madeira is an incredible island. We will come again and we will book again!",
     "comentario": "Altamente recomendado! Alugamos e aproveitamos do início ao fim. Foi tudo super, correu bem e o atendimento foi muito atencioso, ajudando-nos com todas as dúvidas que tínhamos. A Madeira é uma ilha incrível. Voltaremos e reservaremos novamente!",
     "url": "https://g.co/kgs/MFLFEsD"
   },
   {
-    "id": 9,
-    "created_at": "2024-04-01T12:35:09.000000Z",
-    "updated_at": "2024-04-14T13:48:26.000000Z",
-    "image": "https://lh3.googleusercontent.com/a-/ALV-UjUGFeGXzYyfRv0CbY_WNEBIdRESzuV4hQ5RLIC-p2MORA=w80-h80-p-rp-mo-br100",
-    "order": "7",
-    "name": "Mario Keglevic",
-    "comment": "Top service, clean car. Even on non working hours, the staff was very supportive when we needed.",
-    "comentario": "Atendimento top, carro limpo. Mesmo fora do horário de trabalho, a equipe nos apoiou muito quando precisávamos.",
-    "url": "https://g.co/kgs/59x2p4G"
-  },
-  {
-    "id": 10,
-    "created_at": "2024-04-01T12:48:47.000000Z",
-    "updated_at": "2024-04-08T15:30:14.000000Z",
-    "image": "https://lh3.googleusercontent.com/a/ACg8ocKDHyMm2A0_AJ72osSpxkKh6pXem6XgJ0fgp9J54KRA=w80-h80-p-rp-mo-br100",
-    "order": "2",
-    "name": "Rui Valderrama",
-    "comment": "Hello. Despite the bad luck of not landing at the airport the first time. There are evils that come with good, as I found an excellent service with Mr. Luciano taking care of everything personally and being very helpful. It was one of the positive things about my stay. I will recommend it to friends and family. Pleasure and see you any day.",
-    "comentario": "Olá. Apesar do azar de não ter aterrado a primeira vez no aeroporto. Há males que vêem por bem, pois encontrei um serviço de excelência com o Sr. Luciano a tratar de tudo pessoalmente e bastante prestável. Foi das coisas positivas na minha estadia. Vou recomendar a amigos e familiares",
-    "url": "https://g.co/kgs/SngcJbe"
-  },
-  {
-    "id": 11,
-    "created_at": "2024-04-01T13:10:20.000000Z",
-    "updated_at": "2024-04-14T13:47:57.000000Z",
-    "image": "https://lh3.googleusercontent.com/a/ACg8ocI7k2zRlOsqO0l1ddFBugo0cF6MBf_JoyMegE5gUqrt=w80-h80-p-rp-mo-br100",
-    "order": "8",
-    "name": "RGA ORTOPEDICA",
-    "comment": "The staff are very helpful, the quality of the cars. I recommend",
-    "comentario": "O Pessoal atende muito bem , qualidade dos carros . Recomendo",
-    "url": "https://g.co/kgs/gEQwBty"
-  },
-  {
-    "id": 12,
-    "created_at": "2024-04-01T13:11:10.000000Z",
-    "updated_at": "2024-04-14T13:47:57.000000Z",
-    "image": "https://lh3.googleusercontent.com/a/ACg8ocIBuCHZR404CjQVSQHx7dh_BNamfNs2NQV4nYPUyonC=w80-h80-p-rp-mo-ba3-br100",
-    "order": "9",
-    "name": "Niki Veliki",
-    "comment": "Very punctual with clear instructions about everything, staff is great 💯",
-    "comentario": "Muito pontual com instruções claras sobre tudo, a equipe é ótima 💯",
-    "url": "https://g.co/kgs/o9Qp9cx"
-  },
-  {
-    "id": 13,
-    "created_at": "2024-04-01T13:11:56.000000Z",
-    "updated_at": "2024-04-14T13:47:57.000000Z",
-    "image": "https://lh3.googleusercontent.com/a-/ALV-UjVBNXXElhW9dc3-viOoWCdwK1ecsXahcxnxF0fnzkMV5w=w80-h80-p-rp-mo-br100",
-    "order": "10",
-    "name": "Hanna Ellola",
-    "comment": "Excellent service! Good vehicles, we got what we needed.",
-    "comentario": "Serviço excelente! Bons veículos, conseguimos o que precisávamos.",
-    "url": "https://g.co/kgs/2G8kPM6"
-  },
-  {
-    "id": 14,
-    "created_at": "2024-04-01T13:12:39.000000Z",
-    "updated_at": "2024-04-14T13:47:57.000000Z",
-    "image": "https://lh3.googleusercontent.com/a/ACg8ocKjUsOSW3wBLEkkbcAmZvGyXMBODoBlZmN70KLBy5rv=w80-h80-p-rp-mo-br100",
-    "order": "11",
-    "name": "Nuno Martins",
-    "comment": "Simply amazing! 5-star serviceAchieve rent a car impeccable! I recommend!",
-    "comentario": "Simplesmente fantástico! Serviço 5 estrelasAchieve rent a car impecáveis! Recomendo!",
-    "url": "https://g.co/kgs/cioVdsq"
-  },
-  {
-    "id": 15,
-    "created_at": "2024-04-01T13:13:32.000000Z",
-    "updated_at": "2024-04-14T13:47:57.000000Z",
-    "image": "https://lh3.googleusercontent.com/a/ACg8ocKKb-pUF1gbwVZBL7cwxFMnT3MnJGgmURKxssiYEGjJ=w80-h80-p-rp-mo-br100",
-    "order": "12",
-    "name": "Kinga Bugajska",
-    "comment": "All OK. No suprises, documents per Internet. Good cooperation.",
-    "comentario": "Tudo bem. Sem surpresas, documentos por Internet. Boa cooperação.",
-    "url": "https://g.co/kgs/CJLX3ie"
-  },
-  {
-    "id": 16,
-    "created_at": "2024-04-01T13:14:03.000000Z",
-    "updated_at": "2024-04-08T15:30:43.000000Z",
-    "image": "https://lh3.googleusercontent.com/a/ACg8ocJOeabxjth4vQqRquMSQyd2kxcH0lZ8NcL8wr_9jE85=w80-h80-p-rp-mo-br100",
-    "order": "4",
-    "name": "Mário Navalho",
-    "comment": "Another good experience. Very simple and fast rental process, new vehicles and hassle-free delivery and return process at the airport. I recommend.",
-    "comentario": "Mais uma boa experiência. Processo de aluguer muito simples e rápido, viaturas novas e processo de entrega e devolução no aeroporto sem problemas. Recomendo.",
-    "url": "https://g.co/kgs/CysYqNW"
-  },
-  {
-    "id": 17,
-    "created_at": "2024-04-02T23:56:04.000000Z",
-    "updated_at": "2024-04-05T11:37:35.000000Z",
-    "image": "https://lh3.googleusercontent.com/a-/ALV-UjWiiWSG3I-NHYt26aBczZo0vvRDxAjBFxw54cJtL3LU1Fw=w80-h80-p-rp-mo-br100",
-    "order": "0",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjWiiWSG3I-NHYt26aBczZo0vvRDxAjBFxw54cJtL3LU1Fw=w120-h120-p-rp-mo-br100",
+    "order": "1",
     "name": "Ulises de Freitas",
     "comment": "Before you decide to rent a car, it's essential to be aware of my exceptional experience with Achieve Rent a Car. From the outset, there were no hidden extra charges, and the vehicles provided were in prime condition, appearing practically new.",
     "comentario": "Antes de decidir alugar um carro, é essencial conhecer minha experiência excepcional com a Achieve Rent a Car. Desde o início não houve cobranças extras ocultas e os veículos disponibilizados estavam em ótimas condições, parecendo praticamente novos.",
     "url": "https://g.co/kgs/aa1TE92"
   },
   {
-    "id": 18,
-    "created_at": "2024-04-04T18:38:48.000000Z",
-    "updated_at": "2024-04-08T15:30:43.000000Z",
-    "image": "https://lh3.googleusercontent.com/a/ACg8ocL-BriNrlumJz23UTjcwWmLMmFTFJiQcFPfheWnwtql3TFOKg=w80-h80-p-rp-mo-br100",
-    "order": "5",
-    "name": "Ümit Yüksel",
-    "comment": "The service was excellent!The whole experience was perfect!Communication was easy and kind.We will definitely choose this agency again!!Thanks again!",
-    "comentario": "O serviço foi excelente! Toda a experiência foi perfeita! A comunicação foi fácil e gentil. Definitivamente escolheremos esta agência novamente!! Mais uma vez obrigado!",
-    "url": "https://g.co/kgs/GgsBJKc"
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjWTMu4n-6beLNukIYAC-KAkRZb7rCrtrxSlldXLaMvLHlhB58vp=w120-h120-p-rp-mo-br100",
+    "order": "2",
+    "name": "Pedro Sousa",
+    "comment": "Extremely friendly, attentive and professional company. Car rental without any complications, vehicle in excellent condition and very clean. <br/> Very good price and quality. <br/> I recommend 👍",
+    "comentario": "Empresa extremamente simpática, atenciosa e profissional. No aluguer da viatura sem qualquer tipo de complicação, viatura em excelente condições e muito limpa. <br/> Preço e qualidade muito bom. <br/> Recomendo 👍",
+    "url": "https://g.co/kgs/bj1iCPC"
   },
   {
-    "id": 19,
-    "created_at": "2024-04-08T15:12:59.000000Z",
-    "updated_at": "2024-04-08T15:30:43.000000Z",
-    "image": "https://lh3.googleusercontent.com/a/ACg8ocKJzrPdz_uXf2sy9TWwdF34ZOflubmXgLveF6P5trI3ZuVqpGc=w80-h80-p-rp-mo-br100",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjX9r9VIafT2WoQfZw4RaUYWylG0onE5VDAQWKlDZvlJinY2L5tsCA=w120-h120-p-rp-mo-br100",
     "order": "3",
-    "name": "Tessy Soares",
-    "comment": "Good experience, impeccable car, Mr Luciano always available to all possible questions and responds quickly, perfect price for small budgets, I highly recommend it.",
-    "comentario": "Boa experiência, carro impecável, sr luciano sempre disponível a todas as perguntas possíveis e responde rapido, preço perfeito para pequenos budgets, recomendo muito.",
-    "url": "https://g.co/kgs/jTrkXky"
+    "name": "Mara Oliveira",
+    "comment": "Excellent service! Luciano is always attentive and helpful, always facilitating procedures to better serve us! Without bureaucracy and with lots of affection, respect and flexibility until the end! I highly recommend it! Service like I've never seen! A gentleman! I will definitely rent here again! I gained a friend! Thank you ☺️",
+    "comentario": "Excelente atendimento! Sempre atento e prestativo o Luciano, facilitando os procedimentos sempre para melhor nos atender! Sem burocracias e com muito carinho, respeito e flexibilidade até o fim! Recomendo muito! Atendimento igual nunca vi! Um gentlemam! Voltarei a alugar aqui com certeza! Ganhei um amigo! Obrigada ☺️",
+    "url": "https://g.co/kgs/CXaKh1P"
   },
   {
-    "id": 21,
-    "created_at": "2024-04-14T13:47:45.000000Z",
-    "updated_at": "2024-04-14T13:48:26.000000Z",
-    "image": "https://lh3.googleusercontent.com/a-/ALV-UjWJ6TmUI_0ERe1wwdBaXJjH9VtxFCSM3GPlNfVXlOu0fiCe-G5S=w80-h80-p-rp-mo-br100",
-    "order": "6",
-    "name": "Samuel Brandao",
-    "comment": "We love it. Excellent and very affordable service. We will be regular customers. Thank you for everything!",
-    "comentario": "Adoramos. Serviço excelente e muito acessível. Vamos ser clientes assíduos. Obrigado por tudo!",
-    "url": "https://g.co/kgs/WVuS4QU"
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjXxN8KyTmNE7v2BxrbjwjREiygS0rRM1DRTcDbWuE_l8qLCKKk=w120-h120-p-rp-mo-br100",
+    "order": "4",
+    "name": "Andreia Dória",
+    "comment": "I highly recommend it. <br/> From the first contact, Mr Luciano was always very accessible and friendly. We had to extend the rental several times, and Mr Luciano was very understanding and patient. <br/> I will definitely recommend it to my clients as well, as I work in tourism. <br/> I thank Mr Luciano once again. <br/> Compliments",
+    "comentario": "Recomendo vivamente. <br/> Desde o primeiro contacto, o Sr Luciano foi sempre muito acessível e cordial. Tivemos que por várias vezes prolongar o aluguer, e o Sr Luciano foi muito compreensivo e paciente. <br/> Recomendarei com certeza também aos meus clientes, pois trabalho com turismo. <br/> Agradeço mais uma vez ao Sr Luciano. <br/> Cumprimentos",
+    "url": "https://g.co/kgs/s512otW"
+  },
+  {
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocLnEa9TCTM7_SJnj4HscrEqlOCGEagHRXNI7-0tXtYhEC0XEQ=w60-h60-p-rp-mo-br100",
+    "order": "5",
+    "name": "Robert Silva",
+    "comment": "5-star service, very friendly, punctual and uncomplicated. <br/> The car met the requirements as well as being modern and practical 😊 <br/> I recommend it 100% <br/> I will book again 👌",
+    "comentario": "Atendimento 5 estrelas, muita simpatia, pontuais e descomplicados. <br/> O carro cumpriu com os requesitos alem de moderno e pratico 😊 <br/> Recomendo ao 100% <br/> Voltarei a reservar 👌",
+    "url": "https://g.co/kgs/GSnhYDt"
   }
 ]

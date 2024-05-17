@@ -135,8 +135,9 @@
   height: auto !important;
   width: 33.333% !important;
 }
+
 #review {
-  width: 100vw;
+  width: 99vw;
 }
 
 @media (max-width: 1024px) {
