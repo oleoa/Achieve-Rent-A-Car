@@ -133,20 +133,4 @@
 .swiper-slide {
   min-height: 100% !important;
   height: auto !important;
-  width: 33.333% !important;
-}
-
-#review {
-  width: 99vw;
-}
-
-@media (max-width: 1024px) {
-  .swiper-slide {
-    min-height: 100% !important;
-    height: auto !important;
-    width: 100% !important;
-  }
-  #review {
-    width: 90vw;
-  }
 }

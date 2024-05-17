@@ -29,9 +29,9 @@
   
   <section class="py-16 bg-red/5">
 
-    <h2 class="text-center w-full text-red text-5xl font-bold laptop:pb-20 pb-4 underline px-default">@lang('home.reviews.title')</h2>
+    <a target="_blank" href="https://www.google.com/search?sca_esv=3cf5305f7235dc23&hl=en-GB&authuser=0&tbm=lcl&sxsrf=ADLYWIJqt3UFOggBkFXRs9rICQgV1MoWLA:1715971617656&q=Achieve%20Rent%20a%20Car%20Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2NDEzM7UwNjQxMDMxMrU0NjMz2MDI-IpRyjE5IzO1LFUhKDWvRCFRwTmxCMgsy0wtL17EikcSAB9GV0BUAAAA&rldimm=9466583140642593660&sa=X&ved=0CAUQ5foLahcKEwjQvbHIrJWGAxUAAAAAHQAAAAAQBw&biw=1697&bih=1035&dpr=1#lkt=LocalPoiReviews&arid=ChZDSUhNMG9nS0VJQ0FnSUM5enB2OVhBEAE"><h2 class="text-center w-full text-red text-5xl font-bold laptop:pb-20 pb-4 underline px-default">@lang('home.reviews.title')</h2></a>
     
-    <div class="swiper" id="review">
+    <div class="swiper px-4" style="width: 95vw" id="review">
       
       <div class="swiper-wrapper pt-4">
 
