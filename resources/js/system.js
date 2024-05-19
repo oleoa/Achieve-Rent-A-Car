@@ -9,6 +9,7 @@ if (system) {
         var newURL = event.data.url;
         //console.debug("URL mudou: " + newURL);
         console.log(JSON.stringify(event.data));
+        console.log('is the first time?'+firstTime);
         if(!firstTime) {
           document.getElementById("anyrent-system-scroller").scrollIntoView({
             behavior: "smooth"
