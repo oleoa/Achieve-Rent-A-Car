@@ -9,7 +9,7 @@ if (system) {
         //console.debug("URL mudou: " + newURL);
         //console.log(JSON.stringify(event.data));
         if(!firstTime) {
-          document.getElementById("anyrent").scrollIntoView({
+          document.getElementById("anyrent-system-scroller").scrollIntoView({
             behavior: "smooth"
           });
         }

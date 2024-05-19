@@ -95,7 +95,9 @@
 
     <h2 class="text-center w-full text-red laptop:text-5xl text-3xl font-bold laptop:pb-16 pb-4 px-default">@lang('home.anyrent.title')</h2>
 
-    <article class="px-default anyrent-height">
+    <article class="px-default anyrent-height relative">
+
+      <span id="anyrent-system-scroller" class="absolute" style="top: -80px"></span>
 
       <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
 
