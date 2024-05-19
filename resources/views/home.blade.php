@@ -91,7 +91,7 @@
 
   <section class="laptop:py-16 py-8 bg-red/10 relative" id="anyrent">
 
-    <span id="anyrent-scroller" class="absolute" style="top: -80px"></span>
+    <span id="anyrent-scroller" class="absolute block" style="top: -80px"></span>
 
     <h2 class="text-center w-full text-red laptop:text-5xl text-3xl font-bold laptop:pb-16 pb-4 px-default">@lang('home.anyrent.title')</h2>
 
