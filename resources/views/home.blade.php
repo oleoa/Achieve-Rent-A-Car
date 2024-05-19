@@ -27,9 +27,11 @@
 
   </section>
   
-  <section class="py-16 bg-red/5">
+  <section class="laptop:py-16 py-8 bg-red/5">
 
-    <a target="_blank" href="https://www.google.com/search?sca_esv=3cf5305f7235dc23&tbm=lcl&sxsrf=ADLYWIIjpL3gnJgjuGz15oNC7DzYxm7K5g:1715971983926&q=Achieve+Rent+a+Car+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2NDEzM7UwNjQxMDMxMrU0NjMz2MDI-IpRyjE5IzO1LFUhKDWvRCFRwTmxCMgsy0wtL17EikcSAB9GV0BUAAAA&rldimm=9466583140642593660&hl=en-PT&sa=X&ved=2ahUKEwj49a7krZWGAxUzbKQEHX2PCgwQ9fQKegQILRAF#lkt=LocalPoiReviews"><h2 class="text-center w-full text-red text-5xl font-bold laptop:pb-20 pb-4 underline px-default">@lang('home.reviews.title')</h2></a>
+    <a target="_blank" href="https://www.google.com/search?sca_esv=3cf5305f7235dc23&tbm=lcl&sxsrf=ADLYWIIjpL3gnJgjuGz15oNC7DzYxm7K5g:1715971983926&q=Achieve+Rent+a+Car+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2NDEzM7UwNjQxMDMxMrU0NjMz2MDI-IpRyjE5IzO1LFUhKDWvRCFRwTmxCMgsy0wtL17EikcSAB9GV0BUAAAA&rldimm=9466583140642593660&hl=en-PT&sa=X&ved=2ahUKEwj49a7krZWGAxUzbKQEHX2PCgwQ9fQKegQILRAF#lkt=LocalPoiReviews">
+      <h2 class="text-center w-full text-red laptop:text-5xl text-2xl font-bold laptop:pb-20 pb-4 underline px-default">@lang('home.reviews.title')</h2>
+    </a>
     
     <div class="swiper px-4" style="width: 95vw" id="review">
       
@@ -85,7 +87,11 @@
 
   </section>
 
-  <section class="py-20 bg-top bg-red/10" id="anyrent">
+  <section class="laptop:py-16 py-8 bg-red/10 relative" id="anyrent">
+
+    <span id="anyrent-scroller" class="absolute" style="top: -80px"></span>
+
+    <h2 class="text-center w-full text-red laptop:text-5xl text-3xl font-bold laptop:pb-16 pb-4 px-default">@lang('home.anyrent.title')</h2>
 
     <article class="px-default anyrent-height">
 
@@ -97,9 +103,9 @@
 
   </section>
 
-  <section class="flex flex-col px-default gap-8 py-16 pt-20" id="why-us">
+  <section class="flex flex-col px-default laptop:gap-8 gap-4 laptop:py-16 py-8" id="why-us">
 
-    <h2 class="text-5xl">@lang('home.why.achieve.title')</h2>
+    <h2 class="laptop:text-5xl text-4xl">@lang('home.why.achieve.title')</h2>
 
     <p class="text-start">@lang('home.why.achieve.paragraph', ['link' => "https://www.google.com/search?sca_esv=a9443e757acfc69c&tbm=lcl&sxsrf=ACQVn0_ttAqFgT9Dzfq9tWv6-mqFV0U1xw:1711973259387&q=Achieve+Rent+a+Car+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2NDEzM7UwNjQxMDMxMrU0NjMz2MDI-IpRyjE5IzO1LFUhKDWvRCFRwTmxCMgsy0wtL17EikcSAB9GV0BUAAAA&rldimm=9466583140642593660&hl=en-PT&sa=X&ved=2ahUKEwiogPav_aCFAxVsRqQEHXMyAkIQ9fQKegQIPxAF&biw=1626&bih=1035&dpr=1#lkt=LocalPoiReviews"])</p>
 
@@ -111,7 +117,7 @@
 
     </div>
 
-    <div class="grid lg:grid-cols-3 gap-12 py-4">
+    <div class="grid lg:grid-cols-3 gap-8 py-4">
 
       @for ($i = 1; $i <= 6; $i++)
       
