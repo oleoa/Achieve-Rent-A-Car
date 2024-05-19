@@ -2,6 +2,8 @@ let system = document.getElementById('anyrentBookingsIframe');
 if (system) {
   system.title = 'Anyrent Bookings System';
   let firstTime = true;
+  let anyrentSystemScroller = document.getElementById("anyrent-system-scroller");
+  console.log(anyrentSystemScroller);
   window.addEventListener("message", function(event) {
     if (event.source === system.contentWindow) {
       if (event.data.type === "arIframeUrlChange") {
@@ -10,12 +12,10 @@ if (system) {
         //console.debug("URL mudou: " + newURL);
         console.log(JSON.stringify(event.data));
         console.log('is the first time?'+firstTime);
-        if(!firstTime) {
-          alert('should scroll')
-          document.getElementById("anyrent-system-scroller").scrollIntoView({
+        if(!firstTime) 
+          anyrentSystemScroller.scrollIntoView({
             behavior: "smooth"
           });
-        }
         firstTime = false;
       }
     }
