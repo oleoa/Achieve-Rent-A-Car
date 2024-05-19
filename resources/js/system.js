@@ -11,9 +11,11 @@ if (system) {
         //console.log(JSON.stringify(event.data));
         if(!firstTime){
           console.log('should scroll to '+anyrentSystemScroller);
-          anyrentSystemScroller.scrollIntoView({
-            behavior: "smooth"
-          });
+          setTimeout(function(){
+            anyrentSystemScroller.scrollIntoView({
+              behavior: "smooth"
+            });
+          }, 500)
         }
         firstTime = false;
       }
