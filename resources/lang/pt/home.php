@@ -17,6 +17,8 @@ return
 
   'reviews.title' => 'O que dizem os nossos clientes',
 
+  'anyrent.title' => 'Achieve the best.<br/>Reserve connosco.',
+
   'why.achieve.title' => 'Por que escolher a Achieve Rent A Car?',
   'why.achieve.paragraph' => 'Porque para nós <b>você é muito mais</b> do apenas um aluguer de carro.<br>Priorizamos <b>a sua satisfação</b> e fazemos o nosso melhor para que você <b>sinta-se acolhido</b> e <b>alcance</b> os objetivos que deseja para a sua viagem.<br>Enviaremos todas as informações de que precisa para sentir-se <b>seguro</b>, <b>bem acompanhado</b> e <b>orientado</b>.<br>Confira como os nossos clientes sentem-se em relação aos nossos serviços, aceda ao nosso <a target="_blank" class="text-red underline font-bold" title="Clique aqui para ver as nossas reviews" href=":link">Google Reviews</a>.',
   'why.achieve.book.now' => 'Reserve Agora',
