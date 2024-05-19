@@ -7,7 +7,7 @@ if (system) {
       if (event.data.type === "arIframeUrlChange") {
         var newURL = event.data.url;
         //console.debug("URL mudou: " + newURL);
-        //console.log(JSON.stringify(event.data));
+        console.log(JSON.stringify(event.data));
         if(!firstTime) {
           document.getElementById("anyrent-system-scroller").scrollIntoView({
             behavior: "smooth"
