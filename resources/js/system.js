@@ -11,6 +11,7 @@ if (system) {
         console.log(JSON.stringify(event.data));
         console.log('is the first time?'+firstTime);
         if(!firstTime) {
+          this.alert('should scroll')
           document.getElementById("anyrent-system-scroller").scrollIntoView({
             behavior: "smooth"
           });
