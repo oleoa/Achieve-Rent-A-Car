@@ -27,7 +27,7 @@
 
   </section>
   
-  <section class="laptop:py-16 py-8 bg-red/5">
+  <section class="laptop:py-16 py-8 bg-red/5 select-none">
 
     <a target="_blank" href="https://www.google.com/search?sca_esv=3cf5305f7235dc23&tbm=lcl&sxsrf=ADLYWIIjpL3gnJgjuGz15oNC7DzYxm7K5g:1715971983926&q=Achieve+Rent+a+Car+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2NDEzM7UwNjQxMDMxMrU0NjMz2MDI-IpRyjE5IzO1LFUhKDWvRCFRwTmxCMgsy0wtL17EikcSAB9GV0BUAAAA&rldimm=9466583140642593660&hl=en-PT&sa=X&ved=2ahUKEwj49a7krZWGAxUzbKQEHX2PCgwQ9fQKegQILRAF#lkt=LocalPoiReviews">
       <h2 class="text-center w-full text-red laptop:text-5xl text-2xl font-bold laptop:pb-20 pb-4 underline px-default">@lang('home.reviews.title')</h2>
