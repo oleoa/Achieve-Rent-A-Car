@@ -9,3 +9,4 @@ import './discount';
 import './system';
 import './swiper';
 import './whats';
+import './purchase';
