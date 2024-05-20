@@ -10,7 +10,6 @@ if (system) {
         //console.debug("URL mudou: " + newURL);
         //console.log(JSON.stringify(event.data));
         if(!firstTime){
-          console.log('should scroll to '+anyrentSystemScroller);
           setTimeout(function(){
             anyrentSystemScroller.scrollIntoView({
               behavior: "smooth"
