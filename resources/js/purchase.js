@@ -8,19 +8,7 @@ if (system) {
         let pickup_station = event.data.booking_data.pickup_station;
         let dropoff_station = event.data.booking_data.dropoff_station;
         let drivers = event.data.booking_data.drivers;
-
-        // Define the URL and the data you want to send
-        const url = 'https://leonardoabreu.com/api';
         const data = JSON.stringify(event.data)
-
-        // Make the POST request using fetch
-        fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json' // Specify the content type as JSON
-          },
-          body: JSON.stringify(data) // Convert the data object to a JSON string
-        })
       }
     }
   }, false);
