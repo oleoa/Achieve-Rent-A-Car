@@ -23,5 +23,13 @@ class Controller extends BaseController
     if(!$localeExists) abort(404);
     $this->data['locale'] = $locale;
     app()->setLocale($this->data['locale']);
+    $this->data['discount'] = array(
+      "text" => "Enjoy! | Free Baby Car Seats | Book now",
+      "texto" => "Aproveite a promoção! | Cadeiras Auto Gratuitas | Reserve já",
+      "text_mobile" => "Enjoy! | Free Baby Car Seats | Book now",
+      "texto_mobile" => "Aproveite a promoção! | Cadeiras Auto Gratuitas | Reserve já",
+      "color" => "red",
+      "text_color" => "white",
+    );
   }
 }
