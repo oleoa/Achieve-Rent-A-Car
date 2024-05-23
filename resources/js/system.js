@@ -6,9 +6,20 @@ if (system) {
   window.addEventListener("message", function(event) {
     if (event.source === system.contentWindow) {
       if (event.data.type === "arIframeUrlChange") {
+
+        /*
+        const lang = window.location.href.split('/')[3];
+        if(event.data.step == ""){
+          window.location.href = "/"+lang+"/about";
+          return;
+        }
+        */
+
         //var newURL = event.data.url;
         //console.debug("URL mudou: " + newURL);
         //console.log(JSON.stringify(event.data));
+        //console.log(JSON.stringify(event.data));
+
         if(!firstTime){
           setTimeout(function(){
             anyrentSystemScroller.scrollIntoView({
@@ -22,7 +33,6 @@ if (system) {
         const data = {
           "debug": JSON.stringify(event.data)
         }
-        console.log(JSON.stringify(data));
         const options = {
           method: 'POST',
           headers: {
@@ -31,23 +41,6 @@ if (system) {
           body: JSON.stringify(data)
         };
         fetch(url, options)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok ' + response.statusText);
-            }
-            return response.json();
-          })
-          .then(data => {
-            console.log('Success:', data);
-          })
-          .catch(error => {
-            if (error.name === 'TypeError') {
-              console.error('Network error or CORS issue:', error);
-            } else {
-              console.error('Error:', error);
-            }
-          });
-
       }
     }
   }, false);
