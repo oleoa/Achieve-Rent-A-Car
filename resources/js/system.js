@@ -14,7 +14,7 @@ if (system) {
             anyrentSystemScroller.scrollIntoView({
               behavior: "smooth"
             });
-          }, 500)
+          }, 100)
         }
         firstTime = false;
       }
