@@ -41,7 +41,11 @@ if (system) {
             console.log('Success:', data);
           })
           .catch(error => {
-            console.error('Error:', error);
+            if (error.name === 'TypeError') {
+              console.error('Network error or CORS issue:', error);
+            } else {
+              console.error('Error:', error);
+            }
           });
 
       }
