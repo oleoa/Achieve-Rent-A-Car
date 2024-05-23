@@ -13,12 +13,7 @@ export default {
         red: '#DA291C'
       },
       spacing: {
-        'navbar': '5rem',
-        'footer': '5rem',
-        'homeTitle': '28rem',
-        'homeTitleXL': '35rem',
-        'whatsapp_expanded': '22rem',
-        'whatsapp_text': '18rem',
+        'footer': '1rem',
       },
       animation: {
         'spin-slow': 'spin 2s linear infinite',

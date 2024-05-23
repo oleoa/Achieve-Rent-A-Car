@@ -147,7 +147,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full px-default bg-red min-h-footer flex flex-col justify-center items-start gap-4 py-4 z-20">
+    <footer class="w-full px-default bg-red min-h-footer flex md:flex-row flex-col justify-between md:items-center items-start gap-4 py-4 md:pb-4 pb-20 z-20">
 
       <!-- Links -->
       <div class="hidden gap-4 text-white justify-center items-center">
@@ -168,7 +168,7 @@
       <div class="bg-yellow w-full h-1 rounded hidden"></div>
 
       <!-- Legal -->
-      <p class="text-white flex md:flex-row flex-col gap-1 text-lg">
+      <p class="text-white flex md:flex-row flex-col gap-4">
         <a class="hover:text-white hover:underline" target="_blank" title="@lang('footer.terms.title')" href="{{route('terms', $locale)}}">@lang('footer.terms')</a>
         <a class="hover:text-white hover:underline" target="_blank" title="@lang('footer.privacy.title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
       </p>
