@@ -42,14 +42,6 @@
         @lang('menu.about')
     </a>
     
-    <a title="@lang('menu.faq.title')" href="{{route('faq', ['locale' => $locale])}}" @class([
-        "flex justify-center items-center gap-2 text-red hover:underline",
-        "underline" => $current == 'faq',
-    ])>
-        <i class="fa-solid fa-circle-question laptop:min-w-min min-w-8 flex items-center justify-start"></i>
-        @lang('menu.faq')
-    </a>
-    
     <a title="@lang('menu.contact.title')" href="{{route('contact', ['locale' => $locale])}}" @class([
         "flex justify-center items-center gap-2 text-red hover:underline",
         "underline" => $current == 'contact',

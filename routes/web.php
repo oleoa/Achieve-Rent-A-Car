@@ -42,7 +42,7 @@ Route::prefix('/{locale}')->group(function(){
 
   Route::get('/about', [About::class, 'index'])->name('about');
   
-  Route::get('/faq', [FAQ::class, 'index'])->name('faq');
+  //Route::get('/faq', [FAQ::class, 'index'])->name('faq');
   
   Route::get('/contact', [Contact::class, 'index'])->name('contact');
   
