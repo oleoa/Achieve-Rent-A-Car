@@ -28,19 +28,6 @@ if (system) {
           }, 100)
         }
         firstTime = false;
-
-        const url = 'https://my-api-production-a7ab.up.railway.app/anyrent';
-        const data = {
-          "debug": JSON.stringify(event.data)
-        }
-        const options = {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        };
-        fetch(url, options)
       }
     }
   }, false);
