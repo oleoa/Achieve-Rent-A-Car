@@ -8,9 +8,10 @@ if (system) {
       if (event.data.type === "arIframeUrlChange") {
 
         /*
+        // THE FOLLOWING LINES REDIRECT THE USER TO THE INSTRUCTIONS PAGE WHEN FINISHED PAYING, THIS PAGE DOES NOT EXISTS YET
         const lang = window.location.href.split('/')[3];
-        if(event.data.step == "step3"){ //finish
-          window.location.href = "/"+lang+"/about";
+        if(event.data.step == "finish"){
+          window.location.href = "/"+lang+"/instructions";
           return;
         }
         */
