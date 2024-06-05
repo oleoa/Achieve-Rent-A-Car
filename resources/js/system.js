@@ -9,7 +9,7 @@ if (system) {
 
         /*
         const lang = window.location.href.split('/')[3];
-        if(event.data.step == ""){
+        if(event.data.step == "step3"){ //finish
           window.location.href = "/"+lang+"/about";
           return;
         }

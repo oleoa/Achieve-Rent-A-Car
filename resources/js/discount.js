@@ -18,3 +18,9 @@ if(headerContent){
     document.querySelector('#anyrent-scroller').style.top = '-' + (headerContent.clientHeight + 80) + 'px';
   }
 }
+else {
+  let navbar = (!currentURL) ? 0 : 80;
+  document.querySelector('#mainContent').style.paddingTop = navbar + 'px';
+  document.querySelector('#anyrent-system-scroller').style.top = '-' + 80 + 'px';
+  document.querySelector('#anyrent-scroller').style.top = '-' + 80 + 'px';
+}
