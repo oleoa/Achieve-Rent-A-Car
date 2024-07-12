@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Http\Request;
 
 class Home extends Controller
 {
@@ -27,5 +29,27 @@ class Home extends Controller
     usort($this->data['reviews'], $compareOrder);
     
     return view('home', $this->data);
+  }
+
+  public function anyrent($locale)
+  {
+    $this->setLocale($locale);
+    $this->isCurrent('booking');
+    return view('booking', $this->data);
+  }
+
+  public function booking(Request $request, $locale)
+  {
+    $this->validate($request, [
+      'id' => 'required'
+    ]);
+
+    $data = $request->all();
+
+    $response = Http::post('https://my-api-production-a7ab.up.railway.app/email', [
+      'id' => $data['id'],
+    ]);
+
+    return redirect()->back()->with('success', 'Reservation Added');
   }
 }
