@@ -46,7 +46,7 @@ class Home extends Controller
 
     $data = $request->all();
 
-    $response = Http::post('https://my-api-production-a7ab.up.railway.app/email', [
+    $response = Http::post('https://my-api-production-a7ab.up.railway.app/add', [
       'id' => $data['id'],
     ]);
 
