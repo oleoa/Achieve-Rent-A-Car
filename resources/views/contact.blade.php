@@ -39,8 +39,6 @@
         <br/>
         <h4 class="font-medium leading-8">@lang('contact.opening.hours.deliveries.title')</h4>
         <h5>@lang('contact.opening.hours.deliveries.paragraph')</h5>
-        <h5>@lang('contact.opening.hours.deliveries.paragraph.airport')</h5>
-        <h5>@lang('contact.opening.hours.deliveries.paragraph.funchal')</h5>
       </div>
 
     </div>
