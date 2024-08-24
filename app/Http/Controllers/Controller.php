@@ -12,9 +12,10 @@ class Controller extends BaseController
 
   protected Array $data = array();
 
-  protected function isCurrent(String $current): void
+  protected function isCurrent(String $current, Array $data = []): void
   {
-    $this->data['current'] = $current;
+    $this->data['current']['url'] = $current;
+    $this->data['current']['data'] = $data;
   }
 
   protected function setLocale(String $locale): void

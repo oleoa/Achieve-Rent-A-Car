@@ -63,11 +63,11 @@
 
     <div class="flex justify-end">
 
-      <a title="@lang('menu.en.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'locale' : 'en'])}}" class="flex gap-2 items-center laptop:bg-transparent bg-white p-2 rounded-l-md">
+      <a title="@lang('menu.en.title')" href="{{route($current['url'], ['locale' => 'en']+$current['data'])}}" class="flex gap-2 items-center laptop:bg-transparent bg-white p-2 rounded-l-md">
         <img src="{{asset('/img/flags/en.jpg')}}" alt="England Flag" height="24" width="32" class="object-cover rounded">
       </a>
   
-      <a title="@lang('menu.pt.title')" href="{{route($current, ['locale' => ($locale == 'locale' || $locale == 'local') ? 'local' : 'pt'])}}" class="flex gap-2 items-center laptop:bg-transparent bg-white p-2 rounded-r-md">
+      <a title="@lang('menu.pt.title')" href="{{route($current['url'], ['locale' => 'pt']+$current['data'])}}" class="flex gap-2 items-center laptop:bg-transparent bg-white p-2 rounded-r-md">
         <img src="{{asset('/img/flags/pt.jpg')}}" alt="Portugal Flag" height="24" width="32" class="object-cover rounded">
       </a>
 

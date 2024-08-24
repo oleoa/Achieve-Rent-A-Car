@@ -11,6 +11,7 @@ use App\Http\Controllers\About;
 use App\Http\Controllers\FAQ;
 use App\Http\Controllers\Contact;
 use App\Http\Controllers\Legal;
+use App\Http\Controllers\Instructions;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,8 @@ Route::get('/', function(){
 Route::prefix('/{locale}')->group(function(){
     
   Route::get('/', [Home::class, 'index'])->name('home');
+    
+  Route::get('/instructions/{arrival}/{departure}', [Instructions::class, 'index'])->name('instructions');
   
   Route::get('/fleet', [Fleet::class, 'index'])->name('fleet');
   

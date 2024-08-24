@@ -77,6 +77,14 @@
         }
       }
 
+      #plane {
+        background-image: url('/img/pages/instructions/plane.jpeg');
+      }
+
+      #hotel {
+        background-image: url('/img/pages/instructions/hotel.jpg');
+      }
+
     </style>
   
     <!-- Resources (CSS and JS) -->
@@ -120,10 +128,10 @@
       @endif
 
       <!-- Navbar -->
-      <x-navbar :locale="$locale"/>
+      <x-navbar :locale="$locale" :current="$current"/>
 
       <!-- Sidebar -->
-      <x-sidebar :locale="$locale"/>
+      <x-sidebar :locale="$locale" :current="$current"/>
 
     </nav>
 
