@@ -52,4 +52,11 @@ class Home extends Controller
 
     return redirect()->back()->with('success', 'Reservation Added');
   }
+
+  public function vehicles(Request $request, $locale)
+  {
+    $response = Http::get('https://my-api-production-a7ab.up.railway.app/vehicles');
+
+    return redirect()->back()->with('success', 'Vehicles Km updated');
+  }
 }

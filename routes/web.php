@@ -56,6 +56,7 @@ Route::prefix('/{locale}')->group(function(){
   Route::get('/privacy', [Legal::class, 'privacy'])->name('privacy');
 
   Route::get('/booking', [Home::class, 'anyrent'])->name('booking');
+  Route::get('/vehiclesUpdate', [Home::class, 'vehicles'])->name('vehicles');
   Route::post('/booking', [Home::class, 'booking'])->name('booking');
     
 });
