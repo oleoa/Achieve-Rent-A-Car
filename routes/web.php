@@ -51,12 +51,12 @@ Route::prefix('/{locale}')->group(function(){
   
   Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
   
-  Route::get('/terms', [Legal::class, 'terms'])->name('terms');
+  //Route::get('/terms', [Legal::class, 'terms'])->name('terms');
   
   Route::get('/privacy', [Legal::class, 'privacy'])->name('privacy');
 
   Route::get('/booking', [Home::class, 'anyrent'])->name('booking');
-  Route::get('/vehiclesUpdate', [Home::class, 'vehicles'])->name('vehicles');
   Route::post('/booking', [Home::class, 'booking'])->name('booking');
+  Route::get('/vehiclesUpdate', [Home::class, 'vehicles'])->name('vehicles');
     
 });
