@@ -12,6 +12,7 @@ use App\Http\Controllers\FAQ;
 use App\Http\Controllers\Contact;
 use App\Http\Controllers\Legal;
 use App\Http\Controllers\Instructions;
+use App\Http\Controllers\Videos;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +45,8 @@ Route::prefix('/{locale}')->group(function(){
   Route::get('/recommendations', [Recommendations::class, 'index'])->name('recommendations');
 
   Route::get('/about', [About::class, 'index'])->name('about');
+
+  Route::get('/video/{name}', [Videos::class, 'index'])->name('videos');
   
   //Route::get('/faq', [FAQ::class, 'index'])->name('faq');
   
