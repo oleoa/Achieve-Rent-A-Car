@@ -10,7 +10,7 @@ class Videos extends Controller
     {
       $this->setLocale($locale);
       $this->isCurrent('videos', ["name" => $name]);
-      $this->data['video'] = strtoupper($name);
+      $this->data['video'] = strtolower($name);
       return view('videos', $this->data);
     }
 }
