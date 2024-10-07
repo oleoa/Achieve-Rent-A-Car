@@ -5,14 +5,6 @@
       "en": "Group A1",
       "pt": "Grupo A1"
     },
-    "price": {
-      "en": "Start from €28.00 / per day",
-      "pt": "A partir de €28.00 / por dia"
-    },
-    "description": {
-      "en": "Fiat Panda or similar. Versatility  is the best adjective to describe this vehicle. With great perfomance and relation price/quality. This is the white version of Fiat Panda.",
-      "pt": "Fiat Panda ou similar. Versatilidade é o melhor adjetivo para descrever este veículo. Com ótimo desempenho e relação preço / qualidade. Esta é a versão branca do Fiat Panda."
-    },
     "infos": {
       "year": "2024",
       "fuel": {
@@ -27,14 +19,6 @@
     "group": {
       "en": "Group A2",
       "pt": "Grupo A2"
-    },
-    "price": {
-      "en": "Start from €30.00 / per day",
-      "pt": "A partir de €30.00 / por dia"
-    },
-    "description": {
-      "en": "Fiat Panda or similar. Versatility  is the best adjective to describe this vehicle. With great perfomance and relation price/quality. This is the white version of Fiat Panda.",
-      "pt": "Fiat Panda ou similar. Versatilidade é o melhor adjetivo para descrever este veículo. Com ótimo desempenho e relação preço / qualidade. Esta é a versão branca do Fiat Panda."
     },
     "infos": {
       "year": "2023",
@@ -51,14 +35,6 @@
       "en": "Group A3",
       "pt": "Grupo A3"
     },
-    "price": {
-      "en": "Start from €30.00 / per day",
-      "pt": "A partir de €30.00 / por dia"
-    },
-    "description": {
-      "en": "Fiat Panda or similar. Versatility  is the best adjective to describe this vehicle. With great perfomance and relation price/quality. This is the white version of Fiat Panda.",
-      "pt": "Fiat Panda ou similar. Versatilidade é o melhor adjetivo para descrever este veículo. Com ótimo desempenho e relação preço / qualidade. Esta é a versão branca do Fiat Panda."
-    },
     "infos": {
       "year": "2024",
       "fuel": {
@@ -73,14 +49,6 @@
     "group": {
       "en": "Group B1",
       "pt": "Grupo B1"
-    },
-    "price": {
-      "en": "Start from €30.00 / per day",
-      "pt": "A partir de €30.00 / por dia"
-    },
-    "description": {
-      "en": "Fiat Panda or similar. Versatility  is the best adjective to describe this vehicle. With great perfomance and relation price/quality. This is the white version of Fiat Panda.",
-      "pt": "Fiat Panda ou similar. Versatilidade é o melhor adjetivo para descrever este veículo. Com ótimo desempenho e relação preço / qualidade. Esta é a versão branca do Fiat Panda."
     },
     "infos": {
       "year": "2023",
@@ -97,13 +65,20 @@
       "en": "Group C1",
       "pt": "Grupo C1"
     },
-    "price": {
-      "en": "Start from €30.00 / per day",
-      "pt": "A partir de €30.00 / por dia"
-    },
-    "description": {
-      "en": "Fiat Panda or similar. Versatility  is the best adjective to describe this vehicle. With great perfomance and relation price/quality. This is the white version of Fiat Panda.",
-      "pt": "Fiat Panda ou similar. Versatilidade é o melhor adjetivo para descrever este veículo. Com ótimo desempenho e relação preço / qualidade. Esta é a versão branca do Fiat Panda."
+    "infos": {
+      "year": "2023",
+      "fuel": {
+        "en": "Petrol 95",
+        "pt": "Gasolina 95"
+      },
+      "cluth": "Manual"
+    }
+  },
+  {
+    "image": "6.png",
+    "group": {
+      "en": "Group C2",
+      "pt": "Grupo C2"
     },
     "infos": {
       "year": "2023",

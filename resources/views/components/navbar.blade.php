@@ -9,6 +9,14 @@
         <i class="fa-solid fa-house laptop:min-w-min min-w-8 flex items-center justify-start"></i>
         @lang('menu.home')
     </a>
+   
+    <a title="@lang('menu.fleet.title')" href="{{route('fleet', ['locale' => $locale])}}" @class([
+        "flex justify-center items-center gap-2 text-red hover:underline",
+        "underline" => $current == 'fleet',
+    ])>
+        <i class="fa-solid fa-car laptop:min-w-min min-w-8 flex items-center justify-start"></i>
+        @lang('menu.fleet')
+    </a>
 
     <a title="@lang('menu.fleet.title')" href="{{route('fleet', ['locale' => $locale])}}" @class([
         "justify-center items-center gap-2 text-red hover:underline hidden",
