@@ -6,7 +6,7 @@
     <h1 class="text-white text-center font-black text-6xl">@lang('fleet.title')</h1>
   </div>
 
-  <article class="grid grid-cols-3 px-default gap-12 py-4">
+  <article class="grid laptop:grid-cols-3 tablet:grid-cols-2 px-default gap-12 py-4">
 
     @foreach ($fleet as $vehicle)
 
@@ -18,7 +18,7 @@
           <span class="flex gap-2 items-center justify-center pr-2"><i class="fa-solid fa-gas-pump"></i>{{$vehicle['infos']['fuel'][$locale]}}<span>|</span></span>
           <span class="flex gap-2 items-center justify-center pr-2"><i class="fa-solid fa-gears"></i>{{$vehicle['infos']['cluth']}}</span>
         </div>
-        <a target="_blank" href="{{"https://wa.me/+351938342970?text=".$text.$vehicle['group'][$locale]}}" class="px-4 py-2 rounded-lg bg-green-600 hover:bg-green-400 w-fit text-white">Quero alugar esse carro</a>
+        <a target="_blank" href="{{"https://wa.me/+351938342970?text=".$text.$vehicle['group'][$locale]}}" class="px-4 py-2 rounded-lg bg-green-600 hover:bg-green-400 w-fit text-white">@lang('fleet.button')</a>
       </div>
 
     @endforeach
