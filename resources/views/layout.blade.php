@@ -177,8 +177,8 @@
 
       <!-- Legal -->
       <p class="text-white flex md:flex-row flex-col gap-4">
-        <a class="hover:text-white hover:underline" target="_blank" title="@lang('footer.terms.title')" href="{{asset('/files/terms'.strtoupper($locale).'.pdf')}}?#toolbar=0">@lang('footer.terms')</a>
-        <a class="hover:text-white hover:underline" target="_blank" title="@lang('footer.privacy.title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
+        <a class="hover:text-white hover:underline" title="@lang('footer.terms.title')" href="{{route('terms', $locale)}}">@lang('footer.terms')</a>
+        <a class="hover:text-white hover:underline" title="@lang('footer.privacy.title')" href="{{route('privacy', $locale)}}">@lang('footer.privacy')</a>
       </p>
 
       <!-- Reserved -->
