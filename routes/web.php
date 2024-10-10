@@ -54,7 +54,7 @@ Route::prefix('/{locale}')->group(function(){
   
   Route::post('/contact', [Contact::class, 'send'])->name('contact-send');
   
-  //Route::get('/terms', [Legal::class, 'terms'])->name('terms');
+  Route::get('/terms', [Legal::class, 'terms'])->name('terms');
   
   Route::get('/privacy', [Legal::class, 'privacy'])->name('privacy');
 
