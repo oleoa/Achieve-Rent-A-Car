@@ -6,12 +6,17 @@
       "pt": "Grupo A1"
     },
     "infos": {
-      "year": "2024",
+      "doors": "05",
+      "cluth": "Manual",
+      "cc": "1.0 cc",
+      "cond": "Air Conditioning",
+      "people": "05",
       "fuel": {
         "en": "Petrol 95",
         "pt": "Gasolina 95"
       },
-      "cluth": "Manual"
+      "horse": "70hp",
+      "steering": "Power Steering"
     }
   },
   {
@@ -21,12 +26,17 @@
       "pt": "Grupo A2"
     },
     "infos": {
-      "year": "2023",
+      "doors": "05",
+      "cluth": "Manual",
+      "cc": "1.0 cc",
+      "cond": "Air Conditioning",
+      "people": "04",
       "fuel": {
         "en": "Petrol 95",
         "pt": "Gasolina 95"
       },
-      "cluth": "Manual"
+      "horse": "65hp",
+      "steering": "Power Steering"
     }
   },
   {
@@ -36,12 +46,17 @@
       "pt": "Grupo A3"
     },
     "infos": {
-      "year": "2024",
+      "doors": "05",
+      "cluth": "Manual",
+      "cc": "1.0 cc",
+      "cond": "Air Conditioning",
+      "people": "04",
       "fuel": {
         "en": "Petrol 95",
         "pt": "Gasolina 95"
       },
-      "cluth": "Manual"
+      "horse": "70hp",
+      "steering": "Power Steering"
     }
   },
   {
@@ -51,12 +66,17 @@
       "pt": "Grupo B1"
     },
     "infos": {
-      "year": "2023",
+      "doors": "05",
+      "cluth": "Manual",
+      "cc": "1.2 cc",
+      "cond": "Air Conditioning",
+      "people": "05",
       "fuel": {
         "en": "Petrol 95",
         "pt": "Gasolina 95"
       },
-      "cluth": "Manual"
+      "horse": "80hp",
+      "steering": "Power Steering"
     }
   },
   {
@@ -66,12 +86,17 @@
       "pt": "Grupo C1"
     },
     "infos": {
-      "year": "2023",
+      "doors": "05",
+      "cluth": "Manual",
+      "cc": "1.0 cc",
+      "cond": "Air Conditioning",
+      "people": "05",
       "fuel": {
         "en": "Petrol 95",
         "pt": "Gasolina 95"
       },
-      "cluth": "Manual"
+      "horse": "100hp",
+      "steering": "Power Steering"
     }
   },
   {
@@ -81,12 +106,17 @@
       "pt": "Grupo C2"
     },
     "infos": {
-      "year": "2023",
+      "doors": "05",
+      "cluth": "Manual",
+      "cc": "1.0 cc",
+      "cond": "Air Conditioning",
+      "people": "05",
       "fuel": {
         "en": "Petrol 95",
         "pt": "Gasolina 95"
       },
-      "cluth": "Manual"
+      "horse": "90hp",
+      "steering": "Power Steering"
     }
   }
 ]
