@@ -32,12 +32,12 @@
         <div class="laptop:hidden flex">
           <span class="flex gap-2 items-center justify-center pr-2"><img src="{{asset('/img/pages/fleet/door.svg')}}" alt="CC" class="h-4"></i>{{$vehicle['infos']['doors']}}<span>|</span></span>
           <span class="flex gap-2 items-center justify-center pr-2"><img src="{{asset('/img/pages/fleet/cluth.svg')}}" alt="CC" class="h-4">{{$vehicle['infos']['cluth']}}<span>|</span></span>
-          <span class="flex gap-2 items-center justify-center pr-2"><img src="{{asset('/img/pages/fleet/cc.svg')}}" alt="CC" class="h-4">{{$vehicle['infos']['cc']}}<span>|</span></span>
+          <span class="flex gap-2 items-center justify-center pr-2"><img src="{{asset('/img/pages/fleet/cc.svg')}}" alt="CC" class="h-4">{{$vehicle['infos']['cc']}}</span>
         </div>
         <div class="laptop:hidden flex">
-          <span class="flex gap-2 items-center justify-center pr-2"><i class="fa-solid fa-snowflake"></i>{{$vehicle['infos']['cond']}}</span>
+          <span class="flex gap-2 items-center justify-center pr-2"><i class="fa-solid fa-snowflake"></i>{{$vehicle['infos']['cond']}}<span>|</span></span>
           <span class="flex gap-2 items-center justify-center pr-2"><i class="fa-solid fa-users"></i>{{$vehicle['infos']['people']}}<span>|</span></span>
-          <span class="flex gap-2 items-center justify-center pr-2"><i class="fa-solid fa-gas-pump"></i>{{$vehicle['infos']['fuel'][$locale]}}<span>|</span></span>
+          <span class="flex gap-2 items-center justify-center pr-2"><i class="fa-solid fa-gas-pump"></i>{{$vehicle['infos']['fuel'][$locale]}}</span>
         </div>
         <div class="laptop:hidden flex">
           <span class="flex gap-2 items-center justify-center pr-2"><i class="fa-solid fa-horse-head"></i>{{$vehicle['infos']['horse']}}<span>|</span></span>
