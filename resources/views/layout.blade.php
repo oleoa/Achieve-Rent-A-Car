@@ -4,6 +4,10 @@
   <!-- Head -->
   <head>
 
+    <!-- Fathom - beautiful, simple website analytics -->
+      <script src="https://cdn.usefathom.com/script.js" data-site="WPLBBPVU" defer></script>
+    <!-- / Fathom -->
+
     <!-- CookieBot -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ad0b7cd2-7f52-40fc-b5c2-ce61f1f7b361" data-blockingmode="auto" type="text/javascript"></script>
 
