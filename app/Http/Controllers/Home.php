@@ -38,6 +38,12 @@ class Home extends Controller
     return view('booking', $this->data);
   }
 
+  public function verification($locale)
+  {
+    $response = Http::get('https://my-api-production-a7ab.up.railway.app/verification');
+    return view('verification', ["status" => $response['status']]);
+  }
+
   public function booking(Request $request, $locale)
   {
     $this->validate($request, [

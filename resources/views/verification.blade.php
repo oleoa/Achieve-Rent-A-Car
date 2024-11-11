@@ -1,0 +1,1 @@
+<img src="{{asset('/img/verification/'.$status.'.png')}}" alt="Status">
