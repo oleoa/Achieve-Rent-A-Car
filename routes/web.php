@@ -61,6 +61,7 @@ Route::prefix('/{locale}')->group(function(){
   Route::get('/booking', [Home::class, 'anyrent'])->name('booking');
   Route::post('/booking', [Home::class, 'booking'])->name('booking');
   Route::get('/vehiclesUpdate', [Home::class, 'vehicles'])->name('vehicles');
-  Route::get('/verification', [Home::class, 'verification'])->name('vehicles');
+  Route::get('/verification', [Home::class, 'verification'])->name('verification');
+  Route::get('/verification2', [Home::class, 'verification2'])->name('verification2');
     
 });
