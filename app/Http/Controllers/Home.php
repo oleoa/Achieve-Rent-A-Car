@@ -40,8 +40,11 @@ class Home extends Controller
 
   public function verification($locale)
   {
+    $this->setLocale($locale);
+    $this->isCurrent('booking');
     $response = Http::get('https://my-api-production-a7ab.up.railway.app/verification');
-    return view('verification', ["status" => $response['status']]);
+    $this->data['status'] = $response['status'];
+    return view('verification', $this->data);
   }
 
   public function booking(Request $request, $locale)
