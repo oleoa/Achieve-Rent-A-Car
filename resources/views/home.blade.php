@@ -2,17 +2,17 @@
 @php $title = 'title.home'; @endphp
 @section('main')
 
-  <section id="hero" class="px-default text-center tablet:text-start flex flex-col gap-0 items-start justify-center bg-center computer:py-80 laptop:py-72 tablet:py-64 pb-80 pt-28 text-white bg-cover">
+  <section id="hero" class="px-default text-center tablet:text-start flex flex-col gap-0 items-start justify-center bg-center pb-64 pt-32 text-white bg-cover">
 
     <h2 class="font-bold text-blue w-full text-lg"><span class="achieve text-white">Achieve </span>Rent a Car</h2>
 
     <h1 class="tablet:text-7xl font-bold w-full text-5xl pb-4">@lang('home.hero.title')</h1>
 
-    <p class="pb-4 tablet:block hidden">
+    <p class="pb-4 hidden">
       @lang('home.hero.paragraph')
     </p>
-    <ul class="pb-4 tablet:hidden list-none text-center w-full flex flex-col items-start">
-      @for ($i = 1; $i <= 6; $i++)
+    <ul class="pb-4 tablet:block list-none text-center w-full flex flex-col items-start">
+      @for ($i = 1; $i <= 7; $i++)
         <li class="flex items-center gap-2 font-bold w-fit text-start">
           <i class="fa-solid fa-check text-2xl"></i>
           @lang('home.hero.paragraph.phone.'.$i)

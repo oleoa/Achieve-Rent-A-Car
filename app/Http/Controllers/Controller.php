@@ -24,16 +24,16 @@ class Controller extends BaseController
     if(!$localeExists) abort(404);
     $this->data['locale'] = $locale;
     app()->setLocale($this->data['locale']);
-    /*
+    
     $this->data['discount'] = array(
-      "text" => "FREE BABY CAR SEATS | FREE ADDITIONAL DRIVER | UNLIMITED MILEAGE",
-      "texto" => "CADEIRAS PARA BEBÉS GRATUITAS | CONDUTORES ADICIONAIS GRATUITOS | QUILOMETRAGEM ILIMITADA",
-      "text_mobile" => "FREE BABY CAR SEATS | FREE ADDITIONAL DRIVER | UNLIMITED MILEAGE",
-      "texto_mobile" => "CADEIRAS PARA BEBÉS GRATUITAS | CONDUTORES ADICIONAIS GRATUITOS | QUILOMETRAGEM ILIMITADA",
+      "text" => "Get 10€ Off! Use the code FALL24 (Min 3 days, until Dec 20º) <br> Free baby seats <br> Book now!",
+      "texto" => "Ganha 10€ de desconto! Introduza o código FALL24 (Min. 3 dias, até 20 dez) <br> Cadeiras para bebés gratuitas <br> Reserve já",
+      "text_mobile" => "Get 10€ Off! Use the code FALL24 * <br> *(Min 3 days, until Dec 20º) <br> Free baby seats <br> Book now!",
+      "texto_mobile" => "Ganha 10€ de desconto! Introduza o código FALL24 * <br> *(Min. 3 dias, até 20 dez) <br> Cadeiras para bebés gratuitas <br> Reserve já",
       "color" => "red",
       "text_color" => "white",
     );
-    */
+    
   }
 }
  

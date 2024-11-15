@@ -14,6 +14,7 @@ return
   'hero.paragraph.phone.4' => 'No excess, no credit card needed',
   'hero.paragraph.phone.5' => 'Unlimited mileage',
   'hero.paragraph.phone.6' => 'Free additional driver',
+  'hero.paragraph.phone.7' => '24/7 Roadside Assistance',
 
   'reviews.title' => 'What our customers say',
 

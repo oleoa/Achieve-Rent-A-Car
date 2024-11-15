@@ -14,6 +14,7 @@ return
   'hero.paragraph.phone.4' => 'Sem franquia, sem cartão de crédito',
   'hero.paragraph.phone.5' => 'Quilometragem ilimitada',
   'hero.paragraph.phone.6' => 'Condutor adicional gratuito',
+  'hero.paragraph.phone.7' => 'Assistência Rodoviária 24/7',
 
   'reviews.title' => 'O que dizem os nossos clientes',
 
