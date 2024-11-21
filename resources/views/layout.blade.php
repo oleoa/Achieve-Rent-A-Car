@@ -121,7 +121,7 @@
               @lang($discount['texto'])
             @endif
           </p>
-          <p class="w-full h-full text-start md:hidden block">
+          <p class="w-full h-full text-start md:hidden block text-base">
             @if ($locale=='en')
               @lang($discount['text_mobile'])
             @elseif ($locale=='pt')

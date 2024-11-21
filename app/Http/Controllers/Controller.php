@@ -26,10 +26,10 @@ class Controller extends BaseController
     app()->setLocale($this->data['locale']);
     
     $this->data['discount'] = array(
-      "text" => "Get 10€ Off! Use the code FALL24 (Min 3 days, until Dec 20º) <br> Free baby seats <br> Book now!",
-      "texto" => "Ganha 10€ de desconto! Introduza o código FALL24 (Min. 3 dias, até 20 dez) <br> Cadeiras para bebés gratuitas <br> Reserve já",
-      "text_mobile" => "Get 10€ Off! Use the code FALL24 * <br> *(Min 3 days, until Dec 20º) <br> Free baby seats <br> Book now!",
-      "texto_mobile" => "Ganha 10€ de desconto! Introduza o código FALL24 * <br> *(Min. 3 dias, até 20 dez) <br> Cadeiras para bebés gratuitas <br> Reserve já",
+      "text" => "Get 10€ Off! Use the code FALL24 (Min 3 days, until Dec 20º) | Free baby seats | Book now!",
+      "texto" => "Ganha 10€ de desconto! Introduza o código FALL24 (Min. 3 dias, até 20 dez) | Cadeiras para bebés gratuitas | Reserve já",
+      "text_mobile" => "Get 10€ Off! Use the code FALL24 * <br> *(Min 3 days, until Dec 20º) <br> Free baby seats | Book now!",
+      "texto_mobile" => "Ganha 10€ de desconto! Introduza o código FALL24 * <br> *(Min. 3 dias, até 20 dez) <br> Cadeiras para bebés gratuitas | Reserve já",
       "color" => "red",
       "text_color" => "white",
     );
