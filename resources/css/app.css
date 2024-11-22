@@ -134,3 +134,8 @@
   min-height: 100% !important;
   height: auto !important;
 }
+
+.insurance {
+  transform: scale(2);
+  transform-origin: top left;
+}
