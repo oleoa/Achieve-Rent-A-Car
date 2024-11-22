@@ -13,6 +13,7 @@ use App\Http\Controllers\Contact;
 use App\Http\Controllers\Legal;
 use App\Http\Controllers\Instructions;
 use App\Http\Controllers\Videos;
+use App\Http\Controllers\Insurance;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,4 +65,6 @@ Route::prefix('/{locale}')->group(function(){
   Route::get('/verification', [Home::class, 'verification'])->name('verification');
   Route::get('/verification2', [Home::class, 'verification2'])->name('verification2');
     
+  Route::get('/insurance/{vehicle}', [Insurance::class, 'insurance'])->name('insurance');
+
 });
