@@ -24,9 +24,8 @@
       <button class="anyrent-scroll rounded-md px-4 py-2 bg-red text-white hover:scale-110 duration-300">@lang('home.hero.book.now')</button>
       <button class="why-us-scroll rounded-md px-4 py-2 bg-white text-red hover:scale-110 duration-300">@lang('home.hero.why.us')</button>
     </div>
-
   </section>
-  
+
   <section class="laptop:py-16 py-8 bg-red/5 select-none">
 
     <div class="px-default w-full flex justify-center items-center">
@@ -34,25 +33,25 @@
         <h2 class="w-fit text-center text-red laptop:text-5xl text-2xl font-bold laptop:pb-20 pb-4 underline">@lang('home.reviews.title')</h2>
       </a>
     </div>
-    
+
     <div class="swiper px-4" style="width: 95vw" id="review">
-      
+
       <div class="swiper-wrapper pt-4">
 
         @foreach ($reviews as $review)
 
           <div class="swiper-slide">
-        
+
             <div class="flex flex-col justify-start items-center h-full py-4 px-8 pb-8 gap-4 rounded-lg bg-white border-b-4 border-red">
 
               <div class="flex w-full gap-8 items-center">
-                  
+
                 <img src="{{$review['image']}}" alt="{{$review['name']}}" class="h-20 w-20">
-                
+
                 <div class="flex flex-col">
 
                   <h2 class="font-bold text-xl">{{$review['name']}}</h2>
-                  
+
                   <a href="{{$review['url']}}" target="_blank" class="w-fit">
                     <img src="{{asset('/img/pages/home/reviews.webp')}}" alt="Google Reviews" height="64" width="114" class="rounded-md border-red">
                   </a>
@@ -64,7 +63,7 @@
               <p class="font-semibold text-start">
 
                 @if ($locale == 'pt')
-                
+
                   @lang($review['comentario'])
 
                 @elseif ($locale == 'en')
@@ -74,19 +73,18 @@
                 @endif
 
               </p>
-    
+
             </div>
 
           </div>
-            
+
         @endforeach
-        
+
       </div>
-      
+
       <div class="swiper-pagination"></div>
 
     </div>
-
   </section>
 
   <section class="laptop:py-16 py-8 bg-red/10 relative" id="anyrent">
@@ -102,7 +100,7 @@
       <anyrent-iframe data-locale="{{$locale}}"></anyrent-iframe>
 
       <script id="jedeyeScript" src="https://reservas.achieverentacar.com/themes/iframe/assets/vendor/anyrent-booking-engine.min.js"></script>
-      
+
     </article>
 
   </section>
@@ -124,7 +122,7 @@
     <div class="grid lg:grid-cols-3 gap-8 py-4">
 
       @for ($i = 1; $i <= 6; $i++)
-      
+
         <div class="shadow-2xl border-b-4 py-12 border-red p-4 flex gap-4 items-center flex-col justify-start rounded-md">
           @if($i == 1)
             <x-font-awesome.hand-holding-car/>

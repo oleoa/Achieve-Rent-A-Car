@@ -1,6 +1,6 @@
 <?php
 
 return [
-  'paragraph' => "Didn't find an available car? Contact us!",
+  'paragraph' => "Book via Whatsapp and pay only upon pickup!",
   'title' => 'Click to chat with one of us via WhatsApp',
 ];
